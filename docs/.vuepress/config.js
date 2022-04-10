@@ -18,20 +18,51 @@ module.exports = {
         ],
         sidebar: [
             {
-                title: 'mysql',
+                title: '总结',
                 path: '/',
                 collapsable: false, // 不折叠
                 children: [
-                    { title: "前言", path: "/mysql/brief"},
+                    { title: "基础", path: "/summary/base"},
                 ]
             },
-
             {
-                title: '关于我',
+                title: '简历',
                 path: '/',
                 collapsable: false, // 不折叠
                 children: [
-                    { title: "公众号", path: "/about/brief"},
+                    { title: "基础", path: "/resume/base"},
+                ]
+            },
+            {
+                title: 'Java',
+                path: '/',
+                collapsable: false, // 不折叠
+                children: [
+                    { title: "基础", path: "/java/base"},
+                ]
+            },
+            {
+                title: '算法',
+                path: '/',
+                collapsable: false, // 不折叠
+                children: [
+                    { title: "基础", path: "/algorithm/base"},
+                ]
+            },
+            {
+                title: '数据库',
+                path: '/',
+                collapsable: false, // 不折叠
+                children: [
+                    { title: "基础", path: "/datasource/base"},
+                ]
+            },
+            {
+                title: '作者',
+                path: '/',
+                collapsable: false, // 不折叠
+                children: [
+                    { title: "基础", path: "/author/base"},
                 ]
             }
         ]
