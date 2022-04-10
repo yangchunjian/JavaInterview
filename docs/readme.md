@@ -1,16 +1,3 @@
----
-home: true
-icon: home
-title: 主页
-heroImage: /logo.svg
-heroText: JavaInterview
-tagline: 「Java面试+Java学习」首选 JavaInterview！
-actions:
-  - text: 开始阅读
-    link: /home/
-    type: primary
-    
----
 
 ## 必看专栏
 
