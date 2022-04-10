@@ -1,17 +1,22 @@
 {
   "name": "JavaInterview",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "2.0.0-alpha.40",
+  "private": true,
+  "description": "JavaInterview",
   "license": "MIT",
-  "devDependencies": {
-    "vuepress": "^1.9.7",
-    "vuepress-theme-reco": "^1.6.11"
-  },
+  "author": "春建",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "vite-build": "vuepress-vite build docs",
+    "vite-clean-serve": "vuepress-vite dev docs --clean-cache",
+    "vite-serve": "vuepress-vite dev docs",
+    "webpack-build": "vuepress-webpack build docs",
+    "webpack-clean-serve": "vuepress-webpack dev docs --clean-cache",
+    "webpack-serve": "vuepress-webpack dev docs"
   },
-  "dependencies": {
-    "vuepress-theme-vue": "^1.1.1"
+  "devDependencies": {
+    "vuepress-theme-hope": "2.0.0-beta.13",
+    "vuepress-vite": "2.0.0-beta.36",
+    "vuepress-webpack": "2.0.0-beta.36",
+    "@vuepress/plugin-search": "^2.0.0-beta.36"
   }
 }
