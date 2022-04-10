@@ -54,7 +54,7 @@ module.exports = {
                 path: '/',
                 collapsable: false, // 不折叠
                 children: [
-                    { title: "基础", path: "/datasource/base"},
+                    { title: "基础", path: "/database/base"},
                 ]
             },
             {
