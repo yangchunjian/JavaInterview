@@ -15,14 +15,14 @@ module.exports = {
             clientSecret: '506208acc8a176516aab50d7347e5cad9db66dcc',
         },
         nav: [
-            { text: '首页', link: '/' },
+            {text: '首页', link: '/'},
             {
                 text: '作者',
                 items: [
-                    { text: 'CSDN', link: 'https://yangchunjian.blog.csdn.net' },
-                    { text: '文档箱', link: 'https://yangchunjian.com' },
-                    { text: '微信号', link: 'https://www.yangchunjian.com/docbook/imgs/dearlocation.jpeg' },
-                    { text: '公众号', link: 'https://www.yangchunjian.com/docbook/imgs/qrcode_for_gh_8756901e5b12_344.jpg' }
+                    {text: 'CSDN', link: 'https://yangchunjian.blog.csdn.net'},
+                    {text: '文档箱', link: 'https://yangchunjian.com'},
+                    {text: '微信号', link: 'https://www.yangchunjian.com/docbook/imgs/dearlocation.jpeg'},
+                    {text: '公众号', link: 'https://www.yangchunjian.com/docbook/imgs/qrcode_for_gh_8756901e5b12_344.jpg'}
                 ]
             }
         ],
@@ -32,7 +32,7 @@ module.exports = {
                 path: '/',
                 collapsable: false, // 不折叠
                 children: [
-                    { title: "基础", path: "/summary/base"},
+                    {title: "基础", path: "/summary/base"},
                 ]
             },
             {
@@ -40,7 +40,7 @@ module.exports = {
                 path: '/',
                 collapsable: false, // 不折叠
                 children: [
-                    { title: "基础", path: "/resume/base"},
+                    {title: "基础", path: "/resume/base"},
                 ]
             },
             {
@@ -48,7 +48,16 @@ module.exports = {
                 path: '/',
                 collapsable: false, // 不折叠
                 children: [
-                    { title: "基础", path: "/java/base"},
+                    {title: "基础", path: "/java/base"},
+                ]
+            },
+            {
+                title: '源码',
+                path: '/',
+                collapsable: false, // 不折叠
+                children: [
+                    {title: "基础", path: "/sourcecode/base"},
+                    {title: "JDK1.8包结构", path: "/sourcecode/JDK1.8包结构", collapsable: false},
                 ]
             },
             {
@@ -56,7 +65,7 @@ module.exports = {
                 path: '/',
                 collapsable: false, // 不折叠
                 children: [
-                    { title: "基础", path: "/algorithm/base"},
+                    {title: "基础", path: "/algorithm/base"},
                 ]
             },
             {
@@ -64,7 +73,7 @@ module.exports = {
                 path: '/',
                 collapsable: false, // 不折叠
                 children: [
-                    { title: "基础", path: "/database/base"},
+                    {title: "基础", path: "/database/base"},
                 ]
             },
             {
@@ -72,7 +81,7 @@ module.exports = {
                 path: '/',
                 collapsable: false, // 不折叠
                 children: [
-                    { title: "基础", path: "/author/base"},
+                    {title: "基础", path: "/author/base"},
                 ]
             }
         ]
