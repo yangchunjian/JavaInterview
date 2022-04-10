@@ -4,6 +4,16 @@ module.exports = {
     theme: 'reco',
     base: '/JavaInterview/',
     themeConfig: {
+        themeConfig: {
+            subSidebar: 'auto'
+        },
+        vssueConfig: {
+            platform: 'github',
+            owner: 'yangchunjian',
+            repo: 'JavaInterview',
+            clientId: '0ff2fd7fd8f8787afd10',
+            clientSecret: '506208acc8a176516aab50d7347e5cad9db66dcc',
+        },
         nav: [
             { text: '首页', link: '/' },
             {
