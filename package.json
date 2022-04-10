@@ -5,7 +5,6 @@
   "description": "JavaInterview",
   "license": "MIT",
   "author": "春建",
-
   "devDependencies": {
     "vuepress": "^1.9.7",
     "vuepress-theme-reco": "^1.6.11"
