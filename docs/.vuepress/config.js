@@ -56,7 +56,6 @@ module.exports = {
                 path: '/',
                 collapsable: false, // 不折叠
                 children: [
-                    {title: "基础", path: "/sourcecode/base"},
                     {title: "JDK1.8包结构", path: "/sourcecode/JDK1.8包结构", collapsable: false},
                 ]
             },
