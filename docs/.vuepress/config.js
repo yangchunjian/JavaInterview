@@ -56,7 +56,8 @@ module.exports = {
                 path: '/',
                 collapsable: false, // 不折叠
                 children: [
-                    {title: "JDK1.8包结构", path: "/sourcecode/JDK1.8包结构", collapsable: false},
+                    {title: "JDK1.8包结构", path: "/sourcecode/jdk1.8", collapsable: false},
+                    {title: "ConcurrentHashMap", path: "/sourcecode/ConcurrentHashMap", collapsable: false},
                 ]
             },
             {
