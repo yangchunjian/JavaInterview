@@ -72,7 +72,9 @@ module.exports = {
                 path: '/',
                 collapsable: false, // 不折叠
                 children: [
-                    {title: "基础", path: "/database/base"},
+                    {title: "MySQL", path: "/database/mysql", collapsable: false},
+                    {title: "Redis", path: "/database/redis", collapsable: false},
+                    {title: "Elasticsearch", path: "/database/elasticsearch", collapsable: false},
                 ]
             },
             {
