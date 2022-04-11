@@ -32,7 +32,7 @@ module.exports = {
                 path: '/',
                 collapsable: false, // 不折叠
                 children: [
-                    {title: "基础", path: "/summary/base"},
+                    {title: "重构", path: "/summary/refactor"},
                 ]
             },
             {
