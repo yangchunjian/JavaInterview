@@ -23,5 +23,24 @@ date: '2022-4-10'
 ```
 4. 
 
+## 2. Node操作（增删改查）
+1. `volatile`修饰的变量
+2. `transient`修饰的内部类
+```java
+    // views
+    private transient KeySetView<K,V> keySet;
+    private transient ValuesView<K,V> values;
+    private transient EntrySetView<K,V> entrySet;
+
+```
+3. `final V putVal(K key, V value, boolean onlyIfAbsent) `添加数据方法
+    1. 算出key的hashcode值
+    2. 初始化表initTable()
+    3. 扩容`helpTransfer`时，Node<K,V>[]数组拷贝赋值
+    4. `synchronized (f) `f是Node<K,V> f，对节点加锁
+    5. `compareAndSwapLong`等控制并发
+    6. `addCount(1L, binCount);`添加到计数中，如果表太小并且尚未调整大小，则启动传输
+    
+    
 
 
