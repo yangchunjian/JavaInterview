@@ -32,7 +32,7 @@ module.exports = {
                 path: '/',
                 collapsable: false, // 不折叠
                 children: [
-                    {title: "重构", path: "/summary/refactor"},
+                    {title: "重构", path: "/summary/refactor", collapsable: false},
                 ]
             },
             {
@@ -40,7 +40,7 @@ module.exports = {
                 path: '/',
                 collapsable: false, // 不折叠
                 children: [
-                    {title: "基础", path: "/resume/base"},
+                    {title: "基础", path: "/resume/base", collapsable: false},
                 ]
             },
             {
@@ -48,7 +48,7 @@ module.exports = {
                 path: '/',
                 collapsable: false, // 不折叠
                 children: [
-                    {title: "基础", path: "/java/base"},
+                    {title: "语法", path: "/java/grammar", collapsable: false},
                 ]
             },
             {
@@ -66,7 +66,7 @@ module.exports = {
                 path: '/',
                 collapsable: false, // 不折叠
                 children: [
-                    {title: "基础", path: "/algorithm/base"},
+                    {title: "基础", path: "/algorithm/base", collapsable: false},
                 ]
             },
             {
@@ -84,7 +84,7 @@ module.exports = {
                 path: '/',
                 collapsable: false, // 不折叠
                 children: [
-                    {title: "基础", path: "/author/base"},
+                    {title: "基础", path: "/author/base", collapsable: false},
                 ]
             }
         ]
