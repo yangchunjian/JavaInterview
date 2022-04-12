@@ -59,6 +59,8 @@ module.exports = {
                     {title: "JDK1.8包结构", path: "/sourcecode/jdk1.8", collapsable: false},
                     {title: "ConcurrentHashMap", path: "/sourcecode/ConcurrentHashMap", collapsable: false},
                     {title: "ThreadLocal", path: "/sourcecode/ThreadLocal", collapsable: false},
+                    {title: "Object", path: "/sourcecode/Object", collapsable: false},
+                    {title: "Integer", path: "/sourcecode/Integer", collapsable: false},
                 ]
             },
             {
