@@ -40,7 +40,7 @@ module.exports = {
                 path: '/',
                 collapsable: false, // 不折叠
                 children: [
-                    {title: "基础", path: "/resume/base", collapsable: false},
+                    {title: "简历", path: "/resume/resume", collapsable: false},
                 ]
             },
             {
