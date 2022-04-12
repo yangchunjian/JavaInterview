@@ -58,6 +58,7 @@ module.exports = {
                 children: [
                     {title: "JDK1.8包结构", path: "/sourcecode/jdk1.8", collapsable: false},
                     {title: "ConcurrentHashMap", path: "/sourcecode/ConcurrentHashMap", collapsable: false},
+                    {title: "ThreadLocal", path: "/sourcecode/ThreadLocal", collapsable: false},
                 ]
             },
             {
