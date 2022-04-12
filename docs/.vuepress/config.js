@@ -66,7 +66,8 @@ module.exports = {
                 path: '/',
                 collapsable: false, // 不折叠
                 children: [
-                    {title: "基础", path: "/algorithm/base", collapsable: false},
+                    {title: "查找", path: "/algorithm/search", collapsable: false},
+                    {title: "排序", path: "/algorithm/sort", collapsable: false},
                     // {title: "算法工程", path: "../javainterview-algorithm/README", collapsable: false},
                 ]
             },
@@ -85,7 +86,7 @@ module.exports = {
                 path: '/',
                 collapsable: false, // 不折叠
                 children: [
-                    {title: "基础", path: "/author/base", collapsable: false},
+                    {title: "简介", path: "/author/author", collapsable: false},
                 ]
             }
         ]
