@@ -40,7 +40,21 @@ date: '2022-4-10'
     4. `synchronized (f) `f是Node<K,V> f，对节点加锁
     5. `compareAndSwapLong`等控制并发
     6. `addCount(1L, binCount);`添加到计数中，如果表太小并且尚未调整大小，则启动传输
-    
+    7. `sun.misc.Unsafe U;`加锁控制
+        ```java
+            private static final long LOCKSTATE;
+            static {
+                try {
+                    U = sun.misc.Unsafe.getUnsafe();
+                    Class<?> k = TreeBin.class;
+                    LOCKSTATE = U.objectFieldOffset
+                        (k.getDeclaredField("lockState"));
+                } catch (Exception e) {
+                    throw new Error(e);
+                }
+            }
+
+        ```
     
 
 
