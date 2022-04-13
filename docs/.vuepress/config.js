@@ -4,7 +4,7 @@ module.exports = {
     theme: 'reco',
     base: '/',
     head: [
-        ['link', { rel: 'icon', href: '../media/pictures/logo.png' }] // 需要被注入到当前页面的 HTML <head> 中的标签
+        ['link', {rel: 'icon', href: '../media/pictures/logo.png'}] // 需要被注入到当前页面的 HTML <head> 中的标签
     ],
     themeConfig: {
         themeConfig: {
@@ -92,18 +92,20 @@ module.exports = {
                 path: '/',
                 collapsable: false,
                 children: [
-                    {title: "消息队列", path: "/", collapsable: false,
-                    children: [
-                        {title: "Kafka", path: "/middleware/mq/kafka/kafka", collapsable: false},
-                        {title: "Rocket", path: "/middleware/mq/rocket/rocket", collapsable: false},
-                    ]
+                    {
+                        title: "消息队列", path: "/", collapsable: false,
+                        children: [
+                            {title: "Kafka", path: "/middleware/mq/kafka/kafka", collapsable: false},
+                            {title: "Rocket", path: "/middleware/mq/rocket/rocket", collapsable: false},
+                        ]
                     },
-                    {title: "配置中心", path: "/middleware/config/apollo/apollo", collapsable: false},
-                    // children: [
-                    //     {title: "Apollo", path: "/apollo", collapsable: false},
-                    // ]
+                    {
+                        title: "配置中心", path: "/", collapsable: false,
+                        children: [
+                            {title: "Apollo", path: "/middleware/config/apollo/apollo", collapsable: false},
+                        ]
 
-
+                    },
                 ]
             },
             {
