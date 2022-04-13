@@ -94,11 +94,11 @@ module.exports = {
                 children: [
                     {title: "消息队列", path: "/mq", collapsable: false,
                     children: [
-                        {title: "Kafka", path: "/kafka", collapsable: false},
-                        {title: "Rocket", path: "/rocket", collapsable: false},
+                        {title: "Kafka", path: "/kafka/kafka", collapsable: false},
+                        {title: "Rocket", path: "/rocket/rocket", collapsable: false},
                     ]
                     },
-                    {title: "配置中心", path: "/config", collapsable: false},
+                    {title: "配置中心", path: "/config/apollo/apollo", collapsable: false},
                     // children: [
                     //     {title: "Apollo", path: "/apollo", collapsable: false},
                     // ]
