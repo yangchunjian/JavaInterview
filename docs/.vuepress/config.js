@@ -83,6 +83,27 @@ module.exports = {
                     {title: "Redis", path: "/database/redis/redis", collapsable: false},
                     {title: "Elasticsearch", path: "/database/elasticsearch/elasticsearch", collapsable: false},
                 ]
+            }, ,
+            {
+                title: '中间件',
+                path: '/middleware',
+                collapsable: false,
+                children: [
+                    {
+                        title: "消息队列", path: "/mq", collapsable: false,
+                        children: [
+                            {title: "Kafka", path: "/kafka", collapsable: false},
+                            {title: "Rocket", path: "/rocket", collapsable: false},
+                        ]
+                    },
+                    {
+                        title: "配置中心", path: "/config", collapsable: false,
+                        children: [
+                            {title: "Apollo", path: "/apollo", collapsable: false},
+                        ]
+                    },
+
+                ]
             },
             {
                 title: '作者',
