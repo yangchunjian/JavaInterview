@@ -4,7 +4,7 @@ module.exports = {
     theme: 'reco',
     base: '/',
     head: [
-        ['link', {rel: 'icon', href: '../media/pictures/logo.png'}] // 需要被注入到当前页面的 HTML <head> 中的标签
+        ['link', {rel: 'icon', href: '/logo.png'}] // 需要被注入到当前页面的 HTML <head> 中的标签
     ],
     themeConfig: {
         themeConfig: {
