@@ -103,6 +103,7 @@ module.exports = {
                         title: "配置中心", path: "/", collapsable: false,
                         children: [
                             {title: "Apollo", path: "/middleware/config/apollo/apollo", collapsable: false},
+                            {title: "Apollo", path: "/middleware/config/apollo/apollo", collapsable: false},
                         ]
 
                     },
