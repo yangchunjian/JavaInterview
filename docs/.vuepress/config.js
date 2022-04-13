@@ -3,9 +3,6 @@ module.exports = {
     description: 'java，面试，春建，杨春建，后端，JavaInterview，interview，技术',
     theme: 'reco',
     base: '/',
-    head: [
-        ['link', { rel: 'icon', href: '../media/pictures/logo.png' }] // 需要被注入到当前页面的 HTML <head> 中的标签
-    ],
     themeConfig: {
         themeConfig: {
             subSidebar: 'auto'
@@ -85,25 +82,6 @@ module.exports = {
                     {title: "MySQL", path: "/database/mysql/mysql", collapsable: false},
                     {title: "Redis", path: "/database/redis/redis", collapsable: false},
                     {title: "Elasticsearch", path: "/database/elasticsearch/elasticsearch", collapsable: false},
-                ]
-            },
-            {
-                title: '中间件',
-                path: '/',
-                collapsable: false,
-                children: [
-                    {title: "消息队列", path: "/middleware/mq", collapsable: false},
-                        // children: [
-                        //     {title: "Kafka", path: "/kafka", collapsable: false},
-                        //     {title: "Rocket", path: "/rocket", collapsable: false},
-                        // ]
-
-                    {title: "配置中心", path: "/middleware/config", collapsable: false},
-                        // children: [
-                        //     {title: "Apollo", path: "/apollo", collapsable: false},
-                        // ]
-
-
                 ]
             },
             {
