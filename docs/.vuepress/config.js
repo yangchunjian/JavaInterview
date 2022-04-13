@@ -33,6 +33,7 @@ module.exports = {
                 collapsable: false, // 不折叠
                 children: [
                     {title: "重构", path: "/summary/refactor", collapsable: false},
+                    {title: "规范", path: "/summary/standard", collapsable: false},
                 ]
             },
             {
