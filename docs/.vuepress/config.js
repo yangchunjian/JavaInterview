@@ -86,7 +86,7 @@ module.exports = {
                     {title: "Redis", path: "/database/redis/redis", collapsable: false},
                     {title: "Elasticsearch", path: "/database/elasticsearch/elasticsearch", collapsable: false},
                 ]
-            }, ,
+            },
             {
                 title: '中间件',
                 path: '/',
