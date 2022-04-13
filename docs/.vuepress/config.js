@@ -89,16 +89,16 @@ module.exports = {
             },
             {
                 title: '中间件',
-                path: '/middleware',
+                path: '/',
                 collapsable: false,
                 children: [
-                    {title: "消息队列", path: "/mq", collapsable: false,
+                    {title: "消息队列", path: "/", collapsable: false,
                     children: [
-                        {title: "Kafka", path: "/kafka/kafka", collapsable: false},
-                        {title: "Rocket", path: "/rocket/rocket", collapsable: false},
+                        {title: "Kafka", path: "/middleware/mq/kafka/kafka", collapsable: false},
+                        {title: "Rocket", path: "/middleware/mq/rocket/rocket", collapsable: false},
                     ]
                     },
-                    {title: "配置中心", path: "/config/apollo/apollo", collapsable: false},
+                    {title: "配置中心", path: "/middleware/config/apollo/apollo", collapsable: false},
                     // children: [
                     //     {title: "Apollo", path: "/apollo", collapsable: false},
                     // ]
