@@ -32,78 +32,77 @@ module.exports = {
         sidebar: [
             {
                 title: '总结',
-                path: '/',
-                collapsable: false, // 不折叠
+                path: '/summary/',
+                collapsable: true, // 不折叠
                 children: [
-                    {title: "重构", path: "/summary/refactor", collapsable: false},
-                    {title: "规范", path: "/summary/standard", collapsable: false},
+                    "/summary/refactor",
+                    "/summary/standard",
                 ]
             },
             {
                 title: '简历',
-                path: '/',
-                collapsable: false, // 不折叠
+                path: '/resume/',
+                collapsable: true, // 不折叠
                 children: [
-                    {title: "简历", path: "/resume/resume", collapsable: false},
+                    "/resume/resume",
                 ]
             },
             {
                 title: 'Java',
-                path: '/',
-                collapsable: false, // 不折叠
+                path: '/java/',
+                collapsable: true, // 不折叠
                 children: [
-                    {title: "语法", path: "/java/grammar", collapsable: false},
+                    '/java/grammar',
                 ]
             },
             {
                 title: '源码',
-                path: '/',
-                collapsable: false, // 不折叠
+                path: '/sourcecode/',
+                collapsable: true, // 不折叠
                 children: [
-                    {title: "JDK1.8包结构", path: "/sourcecode/jdk1.8", collapsable: false},
-                    {title: "ConcurrentHashMap", path: "/sourcecode/ConcurrentHashMap", collapsable: false},
-                    {title: "ThreadLocal", path: "/sourcecode/ThreadLocal", collapsable: false},
-                    {title: "Object", path: "/sourcecode/Object", collapsable: false},
-                    {title: "Integer", path: "/sourcecode/Integer", collapsable: false},
+                    "/sourcecode/jdk1.8",
+                    "/sourcecode/ConcurrentHashMap",
+                    "/sourcecode/ThreadLocal",
+                    "/sourcecode/Object",
+                    "/sourcecode/Integer",
                 ]
             },
             {
                 title: '算法',
-                path: '/',
-                collapsable: false, // 不折叠
+                path: '/algorithm/',
+                collapsable: true, // 不折叠
                 children: [
-                    {title: "查找", path: "/algorithm/search", collapsable: false},
-                    {title: "排序", path: "/algorithm/sort", collapsable: false},
-                    // {title: "算法工程", path: "../javainterview-algorithm/README", collapsable: false},
+                    "/algorithm/search",
+                    "/algorithm/sort",
                 ]
             },
             {
                 title: '数据库',
-                path: '/',
-                collapsable: false, // 不折叠
+                path: '/database/',
+                collapsable: true, // 不折叠
                 children: [
-                    {title: "MySQL", path: "/database/mysql/mysql", collapsable: false},
-                    {title: "Redis", path: "/database/redis/redis", collapsable: false},
-                    {title: "Elasticsearch", path: "/database/elasticsearch/elasticsearch", collapsable: false},
+                    "/database/mysql/mysql",
+                    "/database/redis/redis",
+                    "/database/elasticsearch/elasticsearch",
                 ]
             },
             {
                 title: '中间件',
-                path: '/',
-                collapsable: false,
+                path: '/middleware/',
+                collapsable: true,
                 children: [
                     {
-                        title: "消息队列", path: "/", collapsable: false,
+                        title: "消息队列", path: "/middleware/mq/", collapsable: true,
                         children: [
-                            {title: "Kafka", path: "/middleware/mq/kafka/kafka", collapsable: false},
-                            {title: "Rocket", path: "/middleware/mq/rocket/rocket", collapsable: false},
+                            "/middleware/mq/kafka/kafka",
+                            "/middleware/mq/rocket/rocket",
                         ]
                     },
                     {
-                        title: "配置中心", path: "/", collapsable: false,
+                        title: "配置中心", path: "/middleware/config/", collapsable: false,
                         children: [
-                            {title: "Apollo", path: "/middleware/config/apollo/apollo", collapsable: false},
-                            {title: "Apollo", path: "/middleware/config/apollo/apollo", collapsable: false},
+                            "/middleware/config/apollo/apollo",
+                            "/middleware/config/disconf/disconf"
                         ]
 
                     },
@@ -111,10 +110,10 @@ module.exports = {
             },
             {
                 title: '作者',
-                path: '/',
-                collapsable: false, // 不折叠
+                path: '/author/',
+                collapsable: true, // 不折叠
                 children: [
-                    {title: "简介", path: "/author/author", collapsable: false},
+                    "/author/author",
                 ]
             }
         ]
