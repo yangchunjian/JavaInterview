@@ -29,93 +29,91 @@ module.exports = {
                 ]
             }
         ],
-        sidebar: [
-            {
-                title: '总结',
-                path: '/summary/',
-                collapsable: true, // 不折叠
-                children: [
-                    "/summary/refactor",
-                    "/summary/standard",
-                ]
-            },
-            {
-                title: '简历',
-                path: '/resume/',
-                collapsable: true, // 不折叠
-                children: [
-                    "/resume/resume",
-                ]
-            },
-            {
-                title: 'Java',
-                path: '/java/',
-                collapsable: true, // 不折叠
-                children: [
-                    '/java/grammar',
-                ]
-            },
-            {
-                title: '源码',
-                path: '/sourcecode/',
-                collapsable: true, // 不折叠
-                children: [
-                    "/sourcecode/jdk1.8",
-                    "/sourcecode/ConcurrentHashMap",
-                    "/sourcecode/ThreadLocal",
-                    "/sourcecode/Object",
-                    "/sourcecode/Integer",
-                ]
-            },
-            {
-                title: '算法',
-                path: '/algorithm/',
-                collapsable: true, // 不折叠
-                children: [
-                    "/algorithm/search",
-                    "/algorithm/sort",
-                ]
-            },
-            {
-                title: '数据库',
-                path: '/database/',
-                collapsable: true, // 不折叠
-                children: [
-                    "/database/mysql/mysql",
-                    "/database/redis/redis",
-                    "/database/elasticsearch/elasticsearch",
-                ]
-            },
-            {
-                title: '中间件',
-                path: '/middleware/',
-                collapsable: true,
-                children: [
-                    {
-                        title: "消息队列", path: "/middleware/mq/", collapsable: true,
-                        children: [
-                            "/middleware/mq/kafka/kafka",
-                            "/middleware/mq/rocket/rocket",
-                        ]
-                    },
-                    {
-                        title: "配置中心", path: "/middleware/config/", collapsable: false,
-                        children: [
-                            "/middleware/config/apollo/apollo",
-                            "/middleware/config/disconf/disconf"
-                        ]
+        sidebar: {
+            "/summary/": [
+                {
+                    title: '总结',
+                    collapsable: true, // 折叠
+                    children: [
+                        "/summary/refactor",
+                        "/summary/standard",
+                    ]
+                }],
+            "/resume/": [
+                {
+                    title: '简历',
+                    collapsable: true, // 折叠
+                    children: [
+                        "/resume/resume",
+                    ]
+                },
+            ],
+            "/java/": [
+                {
+                    title: 'Java',
+                    collapsable: true, // 折叠
+                    children: [
+                        '/java/grammar',
+                    ]
+                },
+            ],
+            "/sourcecode/": [
+                {
+                    title: '源码',
+                    collapsable: true, // 折叠
+                    children: [
+                        "/sourcecode/jdk1.8",
+                        "/sourcecode/ConcurrentHashMap",
+                        "/sourcecode/ThreadLocal",
+                        "/sourcecode/Object",
+                        "/sourcecode/Integer",
+                    ]
+                }
+            ],
+            "/algorithm/": [
+                {
+                    title: '算法',
+                    collapsable: true, // 折叠
+                    children: [
+                        "/algorithm/search",
+                        "/algorithm/sort",
+                    ]
+                }
+            ],
+            "/database/": [
+                {
+                    title: '数据库',
+                    collapsable: true, // 折叠
+                    children: [
+                        "/database/mysql/mysql",
+                        "/database/redis/redis",
+                        "/database/elasticsearch/elasticsearch",
+                    ]
+                }
+            ],
+            "/middleware/": [
+                {
+                    title: '中间件',
+                    collapsable: true,
+                    children: [
+                        {
+                            title: "消息队列", path: "/middleware/mq/", collapsable: true,
+                            children: [
+                                "/middleware/mq/kafka/kafka",
+                                "/middleware/mq/rocket/rocket",
+                            ]
+                        },
+                        {
+                            title: "配置中心", path: "/middleware/config/", collapsable: false,
+                            children: [
+                                "/middleware/config/apollo/apollo",
+                                "/middleware/config/disconf/disconf"
+                            ]
 
-                    },
-                ]
-            },
-            {
-                title: '作者',
-                path: '/author/',
-                collapsable: true, // 不折叠
-                children: [
-                    "/author/author",
-                ]
-            }
-        ]
+                        },
+                    ]
+                }
+            ]
+        }
     }
 }
