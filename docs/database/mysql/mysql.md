@@ -1,12 +1,16 @@
 ---
 title: MySQL
+category: MySQL
+tag:
+  - MySQL
 author: interview
 date: '2022-4-10'
 ---
 
 
 
-# 0.概要
-- 1.基础
+# 基础
+MySQL是关系型数据库，解决结构型数据的存储及查询问题。
 
-## 1.基础
+
+## 索引

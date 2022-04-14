@@ -1,12 +1,16 @@
 ---
 title: Elasticsearch
+category: Elasticsearch
+tag:
+  - Elasticsearch
 author: interview
 date: '2022-4-10'
 ---
 
 
 
-# 0.概要
-- 1.基础
+# 基础
+Elasticsearch是搜索引擎，解决大数据量的存储及查询问题。
 
-## 1.基础
+
+## 索引
