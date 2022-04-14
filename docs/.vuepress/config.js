@@ -80,7 +80,7 @@ module.exports = {
             {
                 title: '数据库',
                 path: '/',
-                collapsable: false, // 不折叠
+                collapsable: true, // 不折叠
                 children: [
                     {title: "MySQL", path: "/database/mysql/mysql", collapsable: false},
                     {title: "Redis", path: "/database/redis/redis", collapsable: false},
