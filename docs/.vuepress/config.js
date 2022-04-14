@@ -33,7 +33,7 @@ module.exports = {
             {
                 title: '总结',
                 path: '/',
-                collapsable: false, // 不折叠
+                collapsable: true, // 不折叠
                 children: [
                     {title: "重构", path: "/summary/refactor", collapsable: false},
                     {title: "规范", path: "/summary/standard", collapsable: false},
@@ -42,7 +42,7 @@ module.exports = {
             {
                 title: '简历',
                 path: '/',
-                collapsable: false, // 不折叠
+                collapsable: true, // 不折叠
                 children: [
                     {title: "简历", path: "/resume/resume", collapsable: false},
                 ]
@@ -50,7 +50,7 @@ module.exports = {
             {
                 title: 'Java',
                 path: '/',
-                collapsable: false, // 不折叠
+                collapsable: true, // 不折叠
                 children: [
                     {title: "语法", path: "/java/grammar", collapsable: false},
                 ]
@@ -58,7 +58,7 @@ module.exports = {
             {
                 title: '源码',
                 path: '/',
-                collapsable: false, // 不折叠
+                collapsable: true, // 不折叠
                 children: [
                     {title: "JDK1.8包结构", path: "/sourcecode/jdk1.8", collapsable: false},
                     {title: "ConcurrentHashMap", path: "/sourcecode/ConcurrentHashMap", collapsable: false},
@@ -70,7 +70,7 @@ module.exports = {
             {
                 title: '算法',
                 path: '/',
-                collapsable: false, // 不折叠
+                collapsable: true, // 不折叠
                 children: [
                     {title: "查找", path: "/algorithm/search", collapsable: false},
                     {title: "排序", path: "/algorithm/sort", collapsable: false},
@@ -80,7 +80,7 @@ module.exports = {
             {
                 title: '数据库',
                 path: '/',
-                collapsable: false, // 不折叠
+                collapsable: true, // 不折叠
                 children: [
                     {title: "MySQL", path: "/database/mysql/mysql", collapsable: false},
                     {title: "Redis", path: "/database/redis/redis", collapsable: false},
@@ -90,7 +90,7 @@ module.exports = {
             {
                 title: '中间件',
                 path: '/',
-                collapsable: false,
+                collapsable: true,
                 children: [
                     {
                         title: "消息队列", path: "/", collapsable: false,
@@ -103,7 +103,7 @@ module.exports = {
                         title: "配置中心", path: "/", collapsable: false,
                         children: [
                             {title: "Apollo", path: "/middleware/config/apollo/apollo", collapsable: false},
-                            {title: "Apollo", path: "/middleware/config/apollo/apollo", collapsable: false},
+                            {title: "Disconf", path: "/middleware/config/disconf/disconf", collapsable: false},
                         ]
 
                     },
@@ -112,7 +112,7 @@ module.exports = {
             {
                 title: '作者',
                 path: '/',
-                collapsable: false, // 不折叠
+                collapsable: true, // 不折叠
                 children: [
                     {title: "简介", path: "/author/author", collapsable: false},
                 ]
