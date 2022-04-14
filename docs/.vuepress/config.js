@@ -29,7 +29,7 @@ module.exports = {
             }
         ],
         sidebar: [
-            {text: '首页', path: '/'},
+            {title: '首页', path: '/'},
 
             {
                 title: '总结',// 必要的
@@ -106,14 +106,6 @@ module.exports = {
 
                     },
 
-                ]
-            },
-            {
-                title: '作者',
-                // path: '/',
-                // collapsable: false, // 不折叠
-                children: [
-                    "/author/author",
                 ]
             }
         ]
