@@ -176,6 +176,11 @@
 									<!--<keyname>${gpg.keyname}</keyname>-->
 									<!--<passphraseServerId>${gpg.keyname}</passphraseServerId>-->
 								<!--</configuration>-->
+								<!--<configuration>-->
+								<!--<keyname>0x98421B02</keyname>-->
+								<!--<passphraseServerId>0x98421B02</passphraseServerId>-->
+								<!--</configuration>-->
+
 							</execution>
 						</executions>
 					</plugin>
