@@ -9,12 +9,22 @@
     <parent>
         <groupId>cn.javainterview</groupId>
         <artifactId>javainterview-parent</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
     </parent>
 
     <artifactId>javainterview-algorithm</artifactId>
     <name>${project.artifactId}</name>
     <description>JavaInterview算法</description>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/releases</url>
+        </repository>
+    </distributionManagement>
 
 
 </project>
