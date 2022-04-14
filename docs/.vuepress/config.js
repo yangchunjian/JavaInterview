@@ -32,7 +32,7 @@ module.exports = {
         sidebar: [
             {
                 title: '总结',
-                path: '/',
+                path: '/summary/',
                 collapsable: true, // 不折叠
                 children: [
                     {title: "重构", path: "/summary/refactor", collapsable: false},
@@ -41,7 +41,7 @@ module.exports = {
             },
             {
                 title: '简历',
-                path: '/',
+                path: '/resume/',
                 collapsable: true, // 不折叠
                 children: [
                     {title: "简历", path: "/resume/resume", collapsable: false},
@@ -49,7 +49,7 @@ module.exports = {
             },
             {
                 title: 'Java',
-                path: '/',
+                path: '/java/',
                 collapsable: true, // 不折叠
                 children: [
                     {title: "语法", path: "/java/grammar", collapsable: false},
@@ -57,7 +57,7 @@ module.exports = {
             },
             {
                 title: '源码',
-                path: '/',
+                path: '/sourcecode/',
                 collapsable: true, // 不折叠
                 children: [
                     {title: "JDK1.8包结构", path: "/sourcecode/jdk1.8", collapsable: false},
@@ -69,7 +69,7 @@ module.exports = {
             },
             {
                 title: '算法',
-                path: '/',
+                path: '/algorithm/',
                 collapsable: true, // 不折叠
                 children: [
                     {title: "查找", path: "/algorithm/search", collapsable: false},
@@ -79,7 +79,7 @@ module.exports = {
             },
             {
                 title: '数据库',
-                path: '/',
+                path: '/database/',
                 collapsable: true, // 不折叠
                 children: [
                     {title: "MySQL", path: "/database/mysql/mysql", collapsable: false},
@@ -89,18 +89,18 @@ module.exports = {
             },
             {
                 title: '中间件',
-                path: '/',
+                path: '/middleware/',
                 collapsable: true,
                 children: [
                     {
-                        title: "消息队列", path: "/", collapsable: false,
+                        title: "消息队列", path: "/middleware/mq/", collapsable: false,
                         children: [
                             {title: "Kafka", path: "/middleware/mq/kafka/kafka", collapsable: false},
                             {title: "Rocket", path: "/middleware/mq/rocket/rocket", collapsable: false},
                         ]
                     },
                     {
-                        title: "配置中心", path: "/", collapsable: false,
+                        title: "配置中心", path: "/middleware/config/", collapsable: false,
                         children: [
                             {title: "Apollo", path: "/middleware/config/apollo/apollo", collapsable: false},
                             {title: "Disconf", path: "/middleware/config/disconf/disconf", collapsable: false},
@@ -111,7 +111,7 @@ module.exports = {
             },
             {
                 title: '作者',
-                path: '/',
+                path: '/author/',
                 collapsable: true, // 不折叠
                 children: [
                     {title: "简介", path: "/author/author", collapsable: false},
