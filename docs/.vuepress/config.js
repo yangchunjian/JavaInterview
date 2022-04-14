@@ -31,9 +31,11 @@ module.exports = {
         ],
         sidebar: [
             {
-                title: '总结',
-                // path: '/',
-                // collapsable: false, // 不折叠
+                title: '总结',// 必要的
+
+                // path: '/', // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+                // collapsable: false, // 不折叠 / 可选的, 默认值是 true,
+                // sidebarDepth: 1,    // 可选的, 默认值是 1
                 children: [
                     {title: "重构", path: "/summary/refactor", collapsable: false},
                     {title: "规范", path: "/summary/standard", collapsable: false},
@@ -60,11 +62,16 @@ module.exports = {
                 // path: '/',
                 // collapsable: false, // 不折叠
                 children: [
-                    {title: "JDK1.8包结构", path: "/sourcecode/jdk1.8", collapsable: false},
-                    {title: "ConcurrentHashMap", path: "/sourcecode/ConcurrentHashMap", collapsable: false},
-                    {title: "ThreadLocal", path: "/sourcecode/ThreadLocal", collapsable: false},
-                    {title: "Object", path: "/sourcecode/Object", collapsable: false},
-                    {title: "Integer", path: "/sourcecode/Integer", collapsable: false},
+                    "/sourcecode/jdk1.8",
+                    "/sourcecode/ConcurrentHashMap",
+                    "/sourcecode/ThreadLocal",
+                    "/sourcecode/Object",
+                    "/sourcecode/Integer",
+                    // {title: "JDK1.8包结构", path: "/sourcecode/jdk1.8", collapsable: false},
+                    // {title: "ConcurrentHashMap", path: "/sourcecode/ConcurrentHashMap", collapsable: false},
+                    // {title: "ThreadLocal", path: "/sourcecode/ThreadLocal", collapsable: false},
+                    // {title: "Object", path: "/sourcecode/Object", collapsable: false},
+                    // {title: "Integer", path: "/sourcecode/Integer", collapsable: false},
                 ]
             },
             {

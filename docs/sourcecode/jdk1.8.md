@@ -1,5 +1,5 @@
 ---
-title: JDK1.8包结构
+title: JDK1.8包
 author: interview
 date: '2022-4-10'
 ---
