@@ -32,8 +32,8 @@ module.exports = {
         sidebar: [
             {
                 title: '总结',
-                path: '/',
-                collapsable: false, // 不折叠
+                // path: '/',
+                // collapsable: false, // 不折叠
                 children: [
                     {title: "重构", path: "/summary/refactor", collapsable: false},
                     {title: "规范", path: "/summary/standard", collapsable: false},
@@ -41,24 +41,24 @@ module.exports = {
             },
             {
                 title: '简历',
-                path: '/',
-                collapsable: false, // 不折叠
+                // path: '/',
+                // collapsable: false, // 不折叠
                 children: [
                     {title: "简历", path: "/resume/resume", collapsable: false},
                 ]
             },
             {
                 title: 'Java',
-                path: '/',
-                collapsable: false, // 不折叠
+                // path: '/',
+                // collapsable: false, // 不折叠
                 children: [
                     {title: "语法", path: "/java/grammar", collapsable: false},
                 ]
             },
             {
                 title: '源码',
-                path: '/',
-                collapsable: false, // 不折叠
+                // path: '/',
+                // collapsable: false, // 不折叠
                 children: [
                     {title: "JDK1.8包结构", path: "/sourcecode/jdk1.8", collapsable: false},
                     {title: "ConcurrentHashMap", path: "/sourcecode/ConcurrentHashMap", collapsable: false},
@@ -69,8 +69,8 @@ module.exports = {
             },
             {
                 title: '算法',
-                path: '/',
-                collapsable: false, // 不折叠
+                // path: '/',
+                // collapsable: false, // 不折叠
                 children: [
                     {title: "查找", path: "/algorithm/search", collapsable: false},
                     {title: "排序", path: "/algorithm/sort", collapsable: false},
@@ -89,18 +89,18 @@ module.exports = {
             },
             {
                 title: '中间件',
-                path: '/',
-                collapsable: false,
+                // path: '/',
+                // collapsable: false,
                 children: [
                     {
-                        title: "消息队列", path: "/", collapsable: false,
+                        title: "消息队列",
                         children: [
                             {title: "Kafka", path: "/middleware/mq/kafka/kafka", collapsable: false},
                             {title: "Rocket", path: "/middleware/mq/rocket/rocket", collapsable: false},
                         ]
                     },
                     {
-                        title: "配置中心", path: "/", collapsable: false,
+                        title: "配置中心",
                         children: [
                             {title: "Apollo", path: "/middleware/config/apollo/apollo", collapsable: false},
                             {title: "Disconf", path: "/middleware/config/disconf/disconf", collapsable: false},
@@ -108,7 +108,7 @@ module.exports = {
 
                     },
                     {
-                        title: "Spring", path: "/", collapsable: false,
+                        title: "Spring",
                         children: [
                             {title: "SpringBoot", path: "/middleware/spring/springboot/springboot", collapsable: false},
                             {title: "SpringCloud", path: "/middleware/spring/springcloud/springcloud", collapsable: false},
@@ -120,8 +120,8 @@ module.exports = {
             },
             {
                 title: '作者',
-                path: '/',
-                collapsable: false, // 不折叠
+                // path: '/',
+                // collapsable: false, // 不折叠
                 children: [
                     {title: "简介", path: "/author/author", collapsable: false},
                 ]
