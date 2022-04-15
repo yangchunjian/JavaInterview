@@ -71,6 +71,8 @@ module.exports = {
                 children: [
                     "/algorithm/search",
                     "/algorithm/sort",
+                    "/algorithm/leetcode",
+                    "/algorithm/nowcoder",
                 ]
             },
             {
