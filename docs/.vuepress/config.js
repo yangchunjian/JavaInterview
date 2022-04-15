@@ -100,6 +100,7 @@ module.exports = {
                     {
                         title: "Spring",
                         children: [
+                            "/middleware/spring/springmvc/springmvc",
                             "/middleware/spring/springboot/springboot",
                             "/middleware/spring/springcloud/springcloud",
                         ]
