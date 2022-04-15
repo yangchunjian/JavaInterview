@@ -74,6 +74,13 @@ module.exports = {
                 ]
             },
             {
+                title: '运维',
+                children: [
+                    "/operation/command",
+                    "/operation/deploy",
+                ]
+            },
+            {
                 title: '数据库',
                 children: [
                     "/database/mysql/mysql",
