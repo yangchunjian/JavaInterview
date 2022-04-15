@@ -62,6 +62,8 @@ module.exports = {
                     "/sourcecode/ThreadLocal",
                     "/sourcecode/Object",
                     "/sourcecode/Integer",
+                    "/sourcecode/AtomicInteger",
+                    "/sourcecode/LockSupport",
                 ]
             },
             {
