@@ -3,7 +3,7 @@ title: Elasticsearch
 category: Elasticsearch
 tag:
   - Elasticsearch
-author: interview
+author: JavaInterview.cn
 date: '2022-4-10'
 ---
 

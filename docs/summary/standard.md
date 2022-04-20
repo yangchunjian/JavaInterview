@@ -3,7 +3,7 @@ title: 规范
 category: Java
 tag:
   - JavaInterview规范
-author: interview
+author: JavaInterview.cn
 date: '2022-4-10'
 ---
 

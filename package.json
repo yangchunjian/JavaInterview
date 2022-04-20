@@ -7,6 +7,7 @@
   "author": "春建",
   "devDependencies": {
     "vuepress": "^1.9.7",
+    "vuepress-plugin-copyright": "^1.0.2",
     "vuepress-theme-reco": "^1.6.11"
   },
   "scripts": {

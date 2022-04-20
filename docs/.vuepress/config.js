@@ -6,7 +6,18 @@ module.exports = {
     head: [
         ['link', {rel: 'icon', href: '/logo.png'}] // 需要被注入到当前页面的 HTML <head> 中的标签
     ],
-    themeConfig: {
+    plugins: [
+        [
+            'copyright',
+            {
+                authorName: 'JavaInterview.cn', // 选中的文字将无法被复制
+                minLength: 30, // 如果长度超过  30 个字符
+            },
+        ]
+
+    ],
+
+themeConfig: {
         themeConfig: {
             subSidebar: 'auto'
         },

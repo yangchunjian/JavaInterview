@@ -3,7 +3,7 @@ title: java.lang.Class
 category: Java
 tag:
   - Java基础
-author: interview
+author: JavaInterview.cn
 date: '2022-4-10'
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: JDK1.8包
-author: interview
+author: JavaInterview.cn
 date: '2022-4-10'
 ---
 

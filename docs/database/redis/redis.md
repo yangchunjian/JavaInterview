@@ -3,7 +3,7 @@ title: Redis
 category: Redis
 tag:
   - Redis
-author: interview
+author: JavaInterview.cn
 date: '2022-4-10'
 ---
 
