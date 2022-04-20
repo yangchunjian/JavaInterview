@@ -13,6 +13,12 @@ module.exports = {
                 authorName: 'JavaInterview.cn', // 选中的文字将无法被复制
                 minLength: 20, // 如果长度超过  30 个字符
             },
+        ],
+        [
+            'reading-progress',
+            {
+
+            },
         ]
 
     ],
@@ -21,6 +27,7 @@ themeConfig: {
         themeConfig: {
             subSidebar: 'auto'
         },
+        lastUpdated: '上次编辑于:',
         vssueConfig: {
             platform: 'github',
             owner: 'yangchunjian',
