@@ -39,13 +39,15 @@ module.exports = {
                 // sidebarDepth: 1,    // 可选的, 默认值是 1
                 children: [
                     "/summary/refactor",
+                    "/summary/framework",
                     "/summary/standard",
                 ]
             },
             {
                 title: '简历',
                 children: [
-                    "/resume/resume",
+                    "/resume/core",
+                    "/resume/sample",
                 ]
             },
             {

@@ -1,8 +1,9 @@
 ---
-title: 简历
+title: 核心
 category: Java
 tag:
   - 简历
+  - 核心
 author: interview
 date: '2022-4-10'
 ---
