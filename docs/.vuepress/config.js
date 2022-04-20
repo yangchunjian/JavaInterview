@@ -11,7 +11,7 @@ module.exports = {
             'copyright',
             {
                 authorName: 'JavaInterview.cn', // 选中的文字将无法被复制
-                minLength: 30, // 如果长度超过  30 个字符
+                minLength: 20, // 如果长度超过  30 个字符
             },
         ]
 
