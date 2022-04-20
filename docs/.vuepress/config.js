@@ -27,7 +27,7 @@ themeConfig: {
         themeConfig: {
             subSidebar: 'auto'
         },
-        lastUpdated: '上次编辑于:',
+        lastUpdated: '上次编辑于',
         vssueConfig: {
             platform: 'github',
             owner: 'yangchunjian',
