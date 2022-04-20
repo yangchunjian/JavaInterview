@@ -65,6 +65,7 @@ module.exports = {
                     "/sourcecode/AtomicInteger",
                     "/sourcecode/LockSupport",
                     "/sourcecode/LinkedList",
+                    "/sourcecode/Class",
                 ]
             },
             {
