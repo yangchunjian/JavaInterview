@@ -37,7 +37,8 @@ module.exports = {
     ],
 
 themeConfig: {
-        themeConfig: {
+    sidebar: 'structuring', //  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义
+    themeConfig: {
             subSidebar: 'auto'
         },
         lastUpdated: '上次编辑于',
