@@ -36,11 +36,11 @@ module.exports = {
 
     ],
 
-themeConfig: {
-    sidebar: 'structuring', //  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义
     themeConfig: {
-            subSidebar: 'auto'
-        },
+        sidebar: 'auto', //  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义
+    // themeConfig: {
+    //         subSidebar: 'auto'
+    //     },
         lastUpdated: '上次编辑于',
         // vssueConfig: {
         //     platform: 'github',
@@ -54,18 +54,18 @@ themeConfig: {
         //     appId: '5buJqOd3oGvBI3ccC5N5tPIN-gzGzoHsz',
         //     appKey: 'OyUWJytBypOoxyxyPMsTCygT',
         // },
-        nav: [
-            {
-                text: '作者',
-                items: [
-                    {text: 'CSDN', link: 'https://yangchunjian.blog.csdn.net'},
-                    {text: '文档箱', link: 'https://yangchunjian.com'},
-                    {text: '微信号', link: 'https://www.yangchunjian.com/docbook/imgs/dearlocation.jpeg'},
-                    {text: '公众号', link: 'https://www.yangchunjian.com/docbook/imgs/qrcode_for_gh_8756901e5b12_344.jpg'}
-                ]
-            }
-        ],
-        sidebar: [
+    nav: [
+        {
+            text: '作者',
+            items: [
+                {text: 'CSDN', link: 'https://yangchunjian.blog.csdn.net'},
+                {text: '文档箱', link: 'https://yangchunjian.com'},
+                {text: '微信号', link: 'https://www.yangchunjian.com/docbook/imgs/dearlocation.jpeg'},
+                {text: '公众号', link: 'https://www.yangchunjian.com/docbook/imgs/qrcode_for_gh_8756901e5b12_344.jpg'}
+            ]
+        }
+    ],
+    sidebar: [
             {title: '首页', path: '/'},
 
             {
