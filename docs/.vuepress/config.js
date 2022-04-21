@@ -20,6 +20,18 @@ module.exports = {
             {
 
             },
+        ],
+        [
+            'vuepress-plugin-comment',
+            {
+                choosen: 'valine',
+                // options选项中的所有参数，会传给Valine的配置
+                options: {
+                    el: '#valine-vuepress-comment',
+                    appId: '5buJqOd3oGvBI3ccC5N5tPIN-gzGzoHsz',
+                    appKey: 'OyUWJytBypOoxyxyPMsTCygT'
+                }
+            }
         ]
 
     ],
@@ -29,13 +41,18 @@ themeConfig: {
             subSidebar: 'auto'
         },
         lastUpdated: '上次编辑于',
-        vssueConfig: {
-            platform: 'github',
-            owner: 'yangchunjian',
-            repo: 'JavaInterview',
-            clientId: '0ff2fd7fd8f8787afd10',
-            clientSecret: '506208acc8a176516aab50d7347e5cad9db66dcc',
-        },
+        // vssueConfig: {
+        //     platform: 'github',
+        //     owner: 'yangchunjian',
+        //     repo: 'JavaInterview',
+        //     clientId: '0ff2fd7fd8f8787afd10',
+        //     clientSecret: '506208acc8a176516aab50d7347e5cad9db66dcc',
+        // },
+        //
+        // valineConfig: {
+        //     appId: '5buJqOd3oGvBI3ccC5N5tPIN-gzGzoHsz',
+        //     appKey: 'OyUWJytBypOoxyxyPMsTCygT',
+        // },
         nav: [
             {
                 text: '作者',
