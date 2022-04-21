@@ -1,10 +1,17 @@
 ---
 title: Rocket
 category: Rocket
-tag:
+tag: 
   - Rocket
 author: JavaInterview.cn
-date: '2022-4-10'
+date: 2022-4-10
+permalink: /pages/e57b80/
+categories: 
+  - middleware
+  - mq
+  - rocket
+tags: 
+  - 
 ---
 
 # 基础概念

@@ -1,10 +1,15 @@
 ---
 title: 查找
 category: Java
-tag:
+tag: 
   - 查找
 author: JavaInterview.cn
-date: '2022-4-10'
+date: 2022-4-10
+permalink: /pages/c284f1/
+categories: 
+  - algorithm
+tags: 
+  - 
 ---
 
 # 二分查找

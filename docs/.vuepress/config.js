@@ -1,7 +1,8 @@
 module.exports = {
     title: 'Java面试',
     description: 'java，面试，春建，杨春建，后端，JavaInterview，interview，技术',
-    theme: 'reco',
+    // theme: 'reco',
+    theme: 'vdoing',
     base: '/',
     head: [
         ['link', {rel: 'icon', href: '/logo.png'}] // 需要被注入到当前页面的 HTML <head> 中的标签

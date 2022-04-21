@@ -1,7 +1,12 @@
 ---
 title: 架构
 author: JavaInterview.cn
-date: '2022-4-10'
+date: 2022-4-10
+permalink: /pages/5169a2/
+categories: 
+  - summary
+tags: 
+  - 
 ---
 
 

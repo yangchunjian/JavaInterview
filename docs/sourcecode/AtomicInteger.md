@@ -1,10 +1,15 @@
 ---
 title: java.util.concurrent.atomic.AtomicInteger
 category: Java
-tag:
+tag: 
   - Java基础
 author: JavaInterview.cn
-date: '2022-4-10'
+date: 2022-4-10
+permalink: /pages/b54825/
+categories: 
+  - sourcecode
+tags: 
+  - 
 ---
 
 

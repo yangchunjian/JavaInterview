@@ -1,11 +1,16 @@
 ---
 title: 核心
 category: Java
-tag:
+tag: 
   - 简历
   - 核心
 author: JavaInterview.cn
-date: '2022-4-10'
+date: 2022-4-10
+permalink: /pages/fee1dd/
+categories: 
+  - resume
+tags: 
+  - 
 ---
 
 

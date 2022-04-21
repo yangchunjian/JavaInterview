@@ -1,10 +1,16 @@
 ---
 title: MySQL
 category: MySQL
-tag:
+tag: 
   - MySQL
 author: JavaInterview.cn
-date: '2022-4-10'
+date: 2022-4-10
+permalink: /pages/38fa0e/
+categories: 
+  - database
+  - mysql
+tags: 
+  - 
 ---
 
 

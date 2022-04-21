@@ -1,10 +1,15 @@
 ---
 title: java.lang.Integer
 category: Java
-tag:
+tag: 
   - Java源码
 author: JavaInterview.cn
-date: '2022-4-10'
+date: 2022-4-10
+permalink: /pages/a15c96/
+categories: 
+  - sourcecode
+tags: 
+  - 
 ---
 
 

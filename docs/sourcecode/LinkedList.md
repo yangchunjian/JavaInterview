@@ -1,10 +1,15 @@
 ---
 title: java.util.LinkedList
 category: Java
-tag:
+tag: 
   - Java基础
 author: JavaInterview.cn
-date: '2022-4-10'
+date: 2022-4-10
+permalink: /pages/0aafc4/
+categories: 
+  - sourcecode
+tags: 
+  - 
 ---
 
 ## 定义

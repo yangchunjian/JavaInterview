@@ -1,12 +1,17 @@
 ---
 title: 命令
 category: Linux
-tag:
+tag: 
   - 运维
   - 命令
   - Linux
 author: JavaInterview.cn
-date: '2022-4-10'
+date: 2022-4-10
+permalink: /pages/9b58cc/
+categories: 
+  - operation
+tags: 
+  - 
 ---
 
 

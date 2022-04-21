@@ -1,10 +1,15 @@
 ---
 title: java.lang.Class
 category: Java
-tag:
+tag: 
   - Java基础
 author: JavaInterview.cn
-date: '2022-4-10'
+date: 2022-4-10
+permalink: /pages/4fce6c/
+categories: 
+  - sourcecode
+tags: 
+  - 
 ---
 
 ## 定义

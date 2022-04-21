@@ -1,7 +1,12 @@
 ---
 title: 重构
 author: JavaInterview.cn
-date: '2022-4-10'
+date: 2022-4-10
+permalink: /pages/7ec176/
+categories: 
+  - summary
+tags: 
+  - 
 ---
 
 

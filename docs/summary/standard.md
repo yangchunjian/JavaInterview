@@ -1,10 +1,15 @@
 ---
 title: 规范
 category: Java
-tag:
+tag: 
   - JavaInterview规范
 author: JavaInterview.cn
-date: '2022-4-10'
+date: 2022-4-10
+permalink: /pages/f87cc3/
+categories: 
+  - summary
+tags: 
+  - 
 ---
 
 

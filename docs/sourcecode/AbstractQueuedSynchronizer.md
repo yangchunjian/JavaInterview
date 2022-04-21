@@ -1,10 +1,15 @@
 ---
 title: java.util.concurrent.locks.AbstractQueuedSynchronizer
 category: Java
-tag:
+tag: 
   - Java基础
 author: JavaInterview.cn
-date: '2022-4-10'
+date: 2022-4-10
+permalink: /pages/9e3b1a/
+categories: 
+  - sourcecode
+tags: 
+  - 
 ---
 
 

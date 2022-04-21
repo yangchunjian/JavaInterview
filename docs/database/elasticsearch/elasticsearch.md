@@ -1,10 +1,16 @@
 ---
 title: Elasticsearch
 category: Elasticsearch
-tag:
+tag: 
   - Elasticsearch
 author: JavaInterview.cn
-date: '2022-4-10'
+date: 2022-4-10
+permalink: /pages/ba91be/
+categories: 
+  - database
+  - elasticsearch
+tags: 
+  - 
 ---
 
 

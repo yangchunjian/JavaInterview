@@ -1,12 +1,17 @@
 ---
 title: 部署
 category: Linux
-tag:
+tag: 
   - 运维
   - 部署
   - Linux
 author: JavaInterview.cn
-date: '2022-4-10'
+date: 2022-4-10
+permalink: /pages/f33116/
+categories: 
+  - operation
+tags: 
+  - 
 ---
 
 

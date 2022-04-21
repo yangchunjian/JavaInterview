@@ -1,10 +1,15 @@
 ---
 title: java.lang.Object
 category: Java
-tag:
+tag: 
   - Java源码
 author: JavaInterview.cn
-date: '2022-4-10'
+date: 2022-4-10
+permalink: /pages/098918/
+categories: 
+  - sourcecode
+tags: 
+  - 
 ---
 
 

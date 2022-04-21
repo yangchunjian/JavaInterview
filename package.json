@@ -8,7 +8,8 @@
   "devDependencies": {
     "vuepress": "^1.9.7",
     "vuepress-plugin-copyright": "^1.0.2",
-    "vuepress-theme-reco": "^1.6.11"
+    "vuepress-theme-reco": "^1.6.11",
+    "vuepress-theme-vdoing": "^1.11.2"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
