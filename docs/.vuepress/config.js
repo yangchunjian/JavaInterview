@@ -17,9 +17,7 @@ module.exports = {
         ],
         [
             'reading-progress',
-            {
-
-            },
+            {},
         ],
         [
             'vuepress-plugin-comment',
@@ -38,9 +36,9 @@ module.exports = {
 
     themeConfig: {
         sidebar: 'auto', //  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义
-    // themeConfig: {
-    //         subSidebar: 'auto'
-    //     },
+        // themeConfig: {
+        //         subSidebar: 'auto'
+        //     },
         lastUpdated: '上次编辑于',
         // vssueConfig: {
         //     platform: 'github',
@@ -54,18 +52,18 @@ module.exports = {
         //     appId: '5buJqOd3oGvBI3ccC5N5tPIN-gzGzoHsz',
         //     appKey: 'OyUWJytBypOoxyxyPMsTCygT',
         // },
-    nav: [
-        {
-            text: '作者',
-            items: [
-                {text: 'CSDN', link: 'https://yangchunjian.blog.csdn.net'},
-                {text: '文档箱', link: 'https://yangchunjian.com'},
-                {text: '微信号', link: 'https://www.yangchunjian.com/docbook/imgs/dearlocation.jpeg'},
-                {text: '公众号', link: 'https://www.yangchunjian.com/docbook/imgs/qrcode_for_gh_8756901e5b12_344.jpg'}
-            ]
-        }
-    ],
-    sidebar: [
+        nav: [
+            {
+                text: '作者',
+                items: [
+                    {text: 'CSDN', link: 'https://yangchunjian.blog.csdn.net'},
+                    {text: '文档箱', link: 'https://yangchunjian.com'},
+                    {text: '微信号', link: 'https://www.yangchunjian.com/docbook/imgs/dearlocation.jpeg'},
+                    {text: '公众号', link: 'https://www.yangchunjian.com/docbook/imgs/qrcode_for_gh_8756901e5b12_344.jpg'}
+                ]
+            }
+        ],
+        sidebar: [
             {title: '首页', path: '/'},
 
             {
@@ -161,6 +159,18 @@ module.exports = {
 
                 ]
             }
-        ]
+        ],
+
+        // 页脚信息
+        footer: {
+            createYear: 2019, // 博客创建年份
+            copyrightInfo: '<a href="http://JavaInterview.cn" target="_blank">JavaInterview.cn</a>', // 博客版权信息，支持a标签或换行标签</br>
+        },
+        // 博主信息 (显示在首页侧边栏)
+        blogger: {
+            avatar: 'https://www.yangchunjian.com/docbook/imgs/dearlocation.jpeg',
+            name: 'JavaInterview',
+            slogan: '『Java面试+Java学习』',
+        },
     }
 }
