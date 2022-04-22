@@ -53,6 +53,7 @@ module.exports = {
         //     appKey: 'OyUWJytBypOoxyxyPMsTCygT',
         // },
         nav: [
+            {text: '首页', link: '/'},
             {
                 text: '作者',
                 items: [
@@ -64,7 +65,7 @@ module.exports = {
             }
         ],
         sidebar: [
-            {title: '首页', path: '/'},
+            {title: '必读', path: '/read/read'},
 
             {
                 title: '总结',// 必要的
@@ -168,7 +169,8 @@ module.exports = {
         },
         // 博主信息 (显示在首页侧边栏)
         blogger: {
-            avatar: 'https://www.yangchunjian.com/docbook/imgs/dearlocation.jpeg',
+            // avatar: 'https://www.yangchunjian.com/docbook/imgs/dearlocation.jpeg',
+            avatar: '/weixin.jpeg',
             name: 'JavaInterview',
             slogan: '『Java面试+Java学习』',
         },
