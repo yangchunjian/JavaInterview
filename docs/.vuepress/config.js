@@ -30,7 +30,9 @@ module.exports = {
                     appKey: 'OyUWJytBypOoxyxyPMsTCygT'
                 }
             }
-        ]
+        ],
+        //代码复制
+        ['vuepress-plugin-code-copy', true]
 
     ],
 
