@@ -37,7 +37,7 @@ author:
 root 树上的节点数量范围是 [1, 2000]\
 subRoot 树上的节点数量范围是 [1, 1000]\
 -10<sup>4</sup> <= root.val <= 10<sup>4</sup>\
--10<sup>4</sup> <= subRoot.val <= 10<sup>4</sup>\
+-10<sup>4</sup> <= subRoot.val <= 10<sup>4</sup>
 :::
 
 ## 思路
