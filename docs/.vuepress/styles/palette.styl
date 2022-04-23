@@ -17,18 +17,30 @@
 */
 
 //设置归档文件距离左侧菜单距离
-/*
-.main-wrapper .main-left {
-  margin-left: 135px;
+
+/*手机*/
+@media screen and (max-width:600px) {
+
 }
-*/
+/*平板*/
+@media screen and (min-width:600px) and (max-width:960px) {
+
+}
+/*PC*/
+@media screen and (min-width:960px){
+  .main-wrapper .main-left {
+    margin-left: 135px;
+  }
+}
 
 //设置底部不展示
-.no-sidebar .footer {
-  display :none;
-}
-.sidebar-open .footer {
-  display :none;
+@media screen {
+  .no-sidebar .footer {
+    display :none;
+  }
+  .sidebar-open .footer {
+    display :none;
+  }
 }
 
 //设置评论底部不可见
