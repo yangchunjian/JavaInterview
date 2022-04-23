@@ -95,7 +95,31 @@ module.exports = {
             {
                 title: 'Java',
                 children: [
-                    "/java/grammar",
+                    {
+                        title: "Java1.8",
+                        children: [
+                            "/java/java1.8/grammar",
+                        ]
+                    },
+                    {
+                        title: "Java1.9",
+                        children: [
+                            "/java/java1.9/grammar",
+                        ]
+                    },
+                    {
+                        title: "Java1.10",
+                        children: [
+                            "/java/java1.10/grammar",
+                        ]
+                    },
+                    {
+                        title: "Java1.11",
+                        children: [
+                            "/java/java1.11/grammar",
+                        ]
+                    },
+
                 ]
             },
             {
