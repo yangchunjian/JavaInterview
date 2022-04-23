@@ -16,3 +16,9 @@
 2. 其它需要SunCertPathBuilderException处理的域名同理(例如https://repo.maven.apache.org/maven2)，生成文件名要区分开
 3. 发布命令mvn clean deploy -B -Djavax.net.ssl.trustStore=/生成的文件路径/文件名 -Djavax.net.ssl.trustStorePassword=changeit，例如：mvn clean deploy -B -Djavax.net.ssl.trustStore=/Users/xxx/ownprojects/JavaInterview/jssecacerts_sso -Djavax.net.ssl.trustStorePassword=changeit
 4. 发布命令在root module目录下执行
+5. 发布成功后查询地址：
+```java
+    https://search.maven.org/search (一般这个10-2小时同步，我查时大约3小时，好像慢了点)
+    https://mvnrepository.com/search（一般这个时间更久，一天吧）
+    https://s01.oss.sonatype.org/
+```        
