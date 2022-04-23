@@ -127,6 +127,7 @@ module.exports = {
                         title: "牛客",
                         children: [
                             "/algorithm/nowcoder/nowcoder",
+                            "/algorithm/nowcoder/nowcoder-BM4.合并两个排序的链表",
                         ]
                     },
                     "/algorithm/search",
