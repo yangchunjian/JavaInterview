@@ -31,6 +31,9 @@ module.exports = {
                 }
             }
         ],
+        
+        //全文搜索
+        ['fulltext-search'],
         //代码复制
         ['vuepress-plugin-code-copy', {
             // align: "top",
