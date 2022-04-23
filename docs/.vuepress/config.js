@@ -113,7 +113,13 @@ module.exports = {
                 children: [
                     "/algorithm/search",
                     "/algorithm/sort",
-                    "/algorithm/leetcode",
+                    {
+                        title: "力扣",
+                        children: [
+                            "/algorithm/leetcode/leetcode",
+                            "/algorithm/leetcode/leetcode-572. 另一棵树的子树",
+                        ]
+                    },
                     "/algorithm/nowcoder",
                 ]
             },
