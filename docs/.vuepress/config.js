@@ -104,6 +104,7 @@ module.exports = {
                     "/sourcecode/LockSupport",
                     "/sourcecode/LinkedList",
                     "/sourcecode/Class",
+                    "/sourcecode/File",
                 ]
             },
             {
