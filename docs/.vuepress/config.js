@@ -36,9 +36,12 @@ module.exports = {
 
     themeConfig: {
         sidebar: 'auto', //  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义
-        // themeConfig: {
-        //         subSidebar: 'auto'
-        //     },
+        // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
+        author: {
+            name: 'JavaInterview.cn', // 必需
+            link: 'http://JavaInterview.cn', // 可选的
+        },
+
         lastUpdated: '上次编辑于',
         // vssueConfig: {
         //     platform: 'github',
@@ -48,10 +51,7 @@ module.exports = {
         //     clientSecret: '506208acc8a176516aab50d7347e5cad9db66dcc',
         // },
         //
-        // valineConfig: {
-        //     appId: '5buJqOd3oGvBI3ccC5N5tPIN-gzGzoHsz',
-        //     appKey: 'OyUWJytBypOoxyxyPMsTCygT',
-        // },
+
         nav: [
             {text: '首页', link: '/'},
             {
@@ -174,6 +174,13 @@ module.exports = {
             avatar: '/weixin.jpeg',
             name: 'JavaInterview',
             slogan: '『Java面试+Java学习』',
+        },
+        // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
+        extendFrontmatter: {
+            author: {
+                name: 'JavaInterview.cn', // 必需
+                link: 'http://JavaInterview.cn', // 可选的
+            }
         },
     }
 }
