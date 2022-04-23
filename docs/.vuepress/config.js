@@ -181,10 +181,11 @@ module.exports = {
             author: {
                 name: 'JavaInterview.cn', // 必需
                 link: 'http://JavaInterview.cn', // 可选的
-            },
+            }
+            /*,
             tags: {
                 line: 'Java', // 必需
-            }
+            }*/
 
         },
     }
