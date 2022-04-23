@@ -183,7 +183,7 @@ module.exports = {
                 link: 'http://JavaInterview.cn', // 可选的
             },
             tags: {
-                name: 'Java', // 必需
+                line: 'Java', // 必需
             }
 
         },
