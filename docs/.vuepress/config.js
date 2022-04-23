@@ -32,7 +32,10 @@ module.exports = {
             }
         ],
         //代码复制
-        ['vuepress-plugin-code-copy', true]
+        ['vuepress-plugin-code-copy', {
+            align: "top",
+            successText: "已复制！"
+        }]
 
     ],
 
