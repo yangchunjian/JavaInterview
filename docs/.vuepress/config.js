@@ -54,6 +54,7 @@ module.exports = {
 
         nav: [
             {text: '首页', link: '/'},
+            {text: '目录', link: '/categories'},
             {
                 text: '作者',
                 items: [
