@@ -31,7 +31,7 @@ module.exports = {
                 }
             }
         ],
-        
+
         //全文搜索
         ['fulltext-search'],
         //代码复制
