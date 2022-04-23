@@ -25,4 +25,7 @@ tagline: 「Java面试+Java学习」
 # postList: detailed
 # simplePostListLength: 10 # 简约版文章列表显示的文章数量，默认10。（仅在postList设置为simple时生效）
 # hideRightBar: true # 是否隐藏右侧边栏
+            
+footer: Copyright © 2018-2022 JavaInterview.cn
+
 ---
