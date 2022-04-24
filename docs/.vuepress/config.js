@@ -144,6 +144,14 @@ module.exports = {
             {
                 title: '算法',
                 children: [
+
+                    {
+                        title: "经典",
+                        children: [
+                            "/algorithm/classic/search",
+                            "/algorithm/classic/sort",
+                        ]
+                    },
                     {
                         title: "力扣",
                         children: [
@@ -158,8 +166,13 @@ module.exports = {
                             "/algorithm/nowcoder/nowcoder-BM4.合并两个排序的链表",
                         ]
                     },
-                    "/algorithm/search",
-                    "/algorithm/sort",
+                    {
+                        title: "设计模式",
+                        children: [
+                            "/algorithm/designpattern/adapter",
+                        ]
+                    },
+
                 ]
             },
             {
