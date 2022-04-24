@@ -1,5 +1,5 @@
 ---
-title: lang.Throwable
+title: java.lang.Throwable
 date: 2022-04-24 20:26:18
 permalink: /pages/034f5f/
 categories:
