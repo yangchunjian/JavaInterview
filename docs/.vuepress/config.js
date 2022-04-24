@@ -38,7 +38,11 @@ module.exports = {
         ['vuepress-plugin-code-copy', {
             // align: "top",
             successText: "已复制！"
-        }]
+        }],
+        //百度自动推送
+        [
+            'vuepress-plugin-baidu-autopush'
+        ]
 
     ],
 
