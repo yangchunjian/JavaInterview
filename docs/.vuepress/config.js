@@ -160,7 +160,8 @@ module.exports = {
                         title: "力扣",
                         children: [
                             "/algorithm/leetcode/leetcode",
-                            "/algorithm/leetcode/leetcode-572. 另一棵树的子树",
+                            "/algorithm/leetcode/leetcode-404.左叶子之和",
+                            "/algorithm/leetcode/leetcode-572.另一棵树的子树",
                         ]
                     },
                     {
