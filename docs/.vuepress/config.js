@@ -174,6 +174,7 @@ module.exports = {
                         title: "设计模式",
                         children: [
                             "/algorithm/designpattern/adapter",
+                            "/algorithm/designpattern/strategy",
                         ]
                     },
 
