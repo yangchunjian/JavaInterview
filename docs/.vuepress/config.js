@@ -163,6 +163,7 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-404.左叶子之和",
                             "/algorithm/leetcode/leetcode-572.另一棵树的子树",
                             "/algorithm/leetcode/leetcode-559.N叉树的最大深度",
+                            "/algorithm/leetcode/leetcode-563.二叉树的坡度",
                         ]
                     },
                     {
