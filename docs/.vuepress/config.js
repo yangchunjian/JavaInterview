@@ -5,8 +5,7 @@ module.exports = {
     theme: 'vdoing',
     base: '/',
     head: [
-        ['link', {rel: 'icon', href: '/logo.png'}], // 需要被注入到当前页面的 HTML <head> 中的标签
-        ['meta', {name: 'referrer', content: 'no-referrer-when-downgrade'}]
+        ['link', {rel: 'icon', href: '/logo.png'}] // 需要被注入到当前页面的 HTML <head> 中的标签
     ],
     plugins: [
         [
@@ -167,6 +166,7 @@ module.exports = {
                         title: "力扣",
                         children: [
                             "/algorithm/leetcode/leetcode",
+                            "/algorithm/leetcode/leetcode-316.去除重复字母",
                             "/algorithm/leetcode/leetcode-404.左叶子之和",
                             "/algorithm/leetcode/leetcode-572.另一棵树的子树",
                             "/algorithm/leetcode/leetcode-559.N叉树的最大深度",
