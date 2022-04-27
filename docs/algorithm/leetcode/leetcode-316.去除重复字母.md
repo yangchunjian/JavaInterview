@@ -30,18 +30,16 @@ permalink: /pages/4988df/
 
 提示：
 ::: warning
-1 <= s.length <= 10<sup>4</sup>
+1 <= s.length <= 10<sup>4</sup>\
 s 由小写英文字母组成
-::: 
-
-
+:::
 
 ## 思路
 单调栈
 
 ## 解法
-```java
 
+```java
 class Solution {
     public String removeDuplicateLetters(String s) {
         char[] chars = s.toCharArray();
