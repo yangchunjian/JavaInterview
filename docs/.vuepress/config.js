@@ -42,7 +42,11 @@ module.exports = {
         //百度自动推送
         [
             'vuepress-plugin-baidu-autopush'
-        ]
+        ],
+        //百度统计
+        ['vuepress-plugin-baidu-tongji', {
+            hm: '03cb08758bea6323509b897a0e0442df'
+        }]
 
     ],
 
