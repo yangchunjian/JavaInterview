@@ -149,7 +149,8 @@ module.exports = {
                     "/sourcecode/LinkedList",
                     "/sourcecode/Class",
                     "/sourcecode/File",
-                    "/sourcecode/java.lang.Throwable",
+                    "/sourcecode/Throwable",
+                    "/sourcecode/InputStream",
                 ]
             },
             {
