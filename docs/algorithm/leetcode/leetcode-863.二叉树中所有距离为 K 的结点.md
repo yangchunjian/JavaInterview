@@ -33,10 +33,10 @@ permalink: /pages/e64aa9/
 
 提示:
 ::: warning
-节点数在 [1, 500] 范围内
-0 <= Node.val <= 500
-Node.val 中所有值 不同
-目标结点 target 是树上的结点。
+节点数在 [1, 500] 范围内\
+0 <= Node.val <= 500\
+Node.val 中所有值 不同\
+目标结点 target 是树上的结点。\
 0 <= k <= 1000
 :::
 
