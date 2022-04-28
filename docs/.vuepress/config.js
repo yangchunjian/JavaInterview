@@ -1,5 +1,5 @@
 module.exports = {
-    title: 'Java面试',
+    title: 'JavaInterview',
     description: 'java，面试，春建，杨春建，后端，JavaInterview，interview，技术',
     // theme: 'reco',
     theme: 'vdoing',
@@ -249,7 +249,7 @@ module.exports = {
             // avatar: 'https://www.yangchunjian.com/docbook/imgs/dearlocation.jpeg',
             avatar: '/weixin.jpeg',
             name: 'JavaInterview',
-            slogan: '『Java面试+Java学习』',
+            slogan: '『JavaInterview+Java学习』',
         },
         // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
         extendFrontmatter: {
