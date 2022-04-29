@@ -1,11 +1,20 @@
 module.exports = {
     title: 'JavaInterview',
-    description: 'java，面试，春建，杨春建，后端，JavaInterview，interview，技术',
+    description: 'java,面试,春建,杨春建,后端,JavaInterview,interview,技术',
     // theme: 'reco',
     theme: 'vdoing',
     base: '/',
     head: [
-        ['link', {rel: 'icon', href: '/logo.png'}] // 需要被注入到当前页面的 HTML <head> 中的标签
+        ['link', {rel: 'icon', href: '/logo.png'}], // 需要被注入到当前页面的 HTML <head> 中的标签
+        [
+            'meta',
+            {
+                name: 'keywords',
+                content: 'java,面试,春建,杨春建,后端,JavaInterview,interview,技术,后端博客,个人技术博客,后端,后端开发,后端框架,web前端,后端面试题,技术文档,学习,面试,Spring,Kafka,MySQL,MQ,Redis,Elasticsearch,git,github,markdown',
+            },
+        ],
+        ['meta', { name: 'baidu-site-verification', content: 'code-eayeNGiLhC' }], // 百度统计的站长验证（你可以去掉）
+
     ],
     plugins: [
         [
@@ -46,7 +55,12 @@ module.exports = {
         //百度统计
         ['vuepress-plugin-baidu-tongji', {
             hm: '03cb08758bea6323509b897a0e0442df'
-        }]
+        }],
+        [
+            'sitemap', {
+                hostname: 'https://javainterview.cn'
+            }
+        ]
 
     ],
 
