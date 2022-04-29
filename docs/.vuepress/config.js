@@ -13,7 +13,7 @@ module.exports = {
                 content: 'java,面试,春建,杨春建,后端,JavaInterview,interview,技术,后端博客,个人技术博客,后端,后端开发,后端框架,web前端,后端面试题,技术文档,学习,面试,Spring,Kafka,MySQL,MQ,Redis,Elasticsearch,git,github,markdown',
             },
         ],
-        ['meta', { name: 'baidu-site-verification', content: 'code-eayeNGiLhC' }], // 百度统计的站长验证（你可以去掉）
+        ['meta', { name: 'baidu-site-verification', content: 'code-dbbt0zdlBh' }], // 百度统计的站长验证（你可以去掉）
 
     ],
     plugins: [
