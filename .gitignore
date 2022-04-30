@@ -2,36 +2,36 @@
 node_modules
 /package-lock.json
 .DS_Store
-# VS Code Config file
+## VS Code Config file
 .vscode/
-# Vuepress Cache
+## Vuepress Cache
 .cache/
-# Vuepress Temp
+## Vuepress Temp
 .temp/
-# Vuepress Output
+## Vuepress Output
 dist/
-# Build files
+## Build files
 packages/*/lib/
 
 .idea
 *.iml
 
 
-# Created by .ignore support plugin (hsz.mobi)
+## Created by .ignore support plugin (hsz.mobi)
 ### Java template
-# Compiled class file
+## Compiled class file
 *.class
 /.DS_Store
-# Log file
+## Log file
 *.log
 
-# BlueJ files
+## BlueJ files
 *.ctxt
 
-# Mobile Tools for Java (J2ME)
+## Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+## Package Files #
 *.jar
 *.war
 *.nar
@@ -40,7 +40,7 @@ packages/*/lib/
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+## virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
 *.iml
