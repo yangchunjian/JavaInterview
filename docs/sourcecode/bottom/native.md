@@ -47,7 +47,9 @@ public class JavaInterviewJNI {
 
 
     public static void main(String[] args) {
-        System.out.println("java.library.path=" + System.getProperty("java.library.path")); //输出的值是以:分隔的，区分多个路径，生成的libjavainterview.jnilib文件放在任意一个路径下就行
+        //输出的值是以:分隔的，区分多个路径，生成的libjavainterview.jnilib文件放在任意一个路径下就行
+        System.out.println("java.library.path=" + System.getProperty("java.library.path")); 
+
         JavaInterviewJNI javaInterviewJNI = new JavaInterviewJNI();
         javaInterviewJNI.print("Hello JavaInterview ！！！");
     }
@@ -65,7 +67,7 @@ javac cn.javainterview.core.jni.JavaInterviewJNI.java
 
 3. 执行javah cn.javainterview.core.jni.JavaInterviewJNI命令生成cn.javainterview.core.jni.JavaInterviewJNI.h文件
 ```java
-javah -classpath /Users/yangchunjian/ownprojects/JavaInterview/javainterview-core/src/main/java cn.javainterview.core.jni.JavaInterviewJNI
+javah -classpath /Users/javainterview/ownprojects/JavaInterview/javainterview-core/src/main/java cn.javainterview.core.jni.JavaInterviewJNI
 
 ```
 
