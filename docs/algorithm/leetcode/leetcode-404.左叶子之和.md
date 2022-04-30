@@ -7,7 +7,7 @@ tags:
   - 左叶子之和
 author: 
   name: JavaInterview.cn
-  link: http://JavaInterview.cn
+  link: https://JavaInterview.cn
 date: 2022-04-25 23:55:09
 permalink: /pages/4e3946/
 ---

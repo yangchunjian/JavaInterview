@@ -7,7 +7,7 @@ tags:
   - 去除重复字母
 author: 
   name: JavaInterview.cn
-  link: http://JavaInterview.cn
+  link: https://JavaInterview.cn
 date: 2022-04-27 23:44:33
 permalink: /pages/4988df/
 ---

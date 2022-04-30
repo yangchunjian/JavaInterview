@@ -7,7 +7,7 @@ tags:
   - N叉树的最大深度
 author: 
   name: JavaInterview.cn
-  link: http://JavaInterview.cn
+  link: https://JavaInterview.cn
 date: 2022-04-26 23:35:39
 permalink: /pages/85529e/
 ---

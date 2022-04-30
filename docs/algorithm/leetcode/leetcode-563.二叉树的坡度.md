@@ -7,7 +7,7 @@ tags:
   - 二叉树的坡度
 author: 
   name: JavaInterview.cn
-  link: http://JavaInterview.cn
+  link: https://JavaInterview.cn
 date: 2022-04-26 23:54:43
 permalink: /pages/fef54d/
 ---
