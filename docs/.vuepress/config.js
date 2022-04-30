@@ -72,9 +72,9 @@ module.exports = {
             name: 'JavaInterview.cn', // 必需
             link: 'http://JavaInterview.cn', // 可选的
         },
-        /*docsDir: 'docs', // 编辑的文件夹
+        docsDir: 'docs', // 编辑的文件夹
         editLinks: true, // 启用编辑
-        editLinkText: '编辑',*/
+        editLinkText: '编辑此页',
 
         lastUpdated: '上次编辑于',
         // vssueConfig: {
