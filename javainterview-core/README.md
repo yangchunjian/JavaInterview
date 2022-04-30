@@ -11,3 +11,6 @@
 ```
 
 ## 功能
+###原生方法 
+1. 打印字符串
+[cn.javainterview.core.jni.JavaInterviewJNI.print](https://javainterview.cn/pages/65ab2d/)
