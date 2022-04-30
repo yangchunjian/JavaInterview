@@ -6,9 +6,8 @@
 <dependency>
     <groupId>cn.javainterview</groupId>
     <artifactId>javainterview-core</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.4</version>
 </dependency>
 ```
 
 ## 功能
-1. 核心相关
