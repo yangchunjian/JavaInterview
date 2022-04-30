@@ -1,5 +1,5 @@
 ---
-title: 二（N2）叉树中所有距离为 K 的结点
+title: 二叉树中所有距离为 K 的结点
 categories: 
   - algorithm
 tags: 
