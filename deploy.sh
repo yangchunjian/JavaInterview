@@ -26,3 +26,4 @@ git add -A
 git commit -m 'deploy'
 
 git push -f git@github.com:yangchunjian/JavaInterview.git master:master
+git push -f git@github.com:yangchunjian/JavaInterview.git main:main
