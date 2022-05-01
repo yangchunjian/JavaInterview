@@ -177,6 +177,7 @@ module.exports = {
                             "/sourcecode/jdk/File",
                             "/sourcecode/jdk/Throwable",
                             "/sourcecode/jdk/InputStream",
+                            "/sourcecode/jdk/ThreadPoolExecutor",
                         ]
                     }
 
