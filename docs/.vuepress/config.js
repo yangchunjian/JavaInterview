@@ -5,7 +5,7 @@ module.exports = {
     theme: 'vdoing',
     base: '/',
     head: [
-        ['link', {rel: 'icon', href: '/assets/icon/logo50x50.png'}], // 需要被注入到当前页面的 HTML <head> 中的标签
+        ['link', {rel: 'icon', href: '/assets/icon/logo_title50x50.png'}], // 需要被注入到当前页面的 HTML <head> 中的标签
         [
             'meta',
             {
