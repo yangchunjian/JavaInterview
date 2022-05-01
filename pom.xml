@@ -10,7 +10,7 @@
 	<artifactId>javainterview-parent</artifactId>
 	<version>1.0.5</version>
 	<name>JavaInterview</name>
-	<description>JavaInterview是【JavaInterview+java学习】仓库。</description>
+	<description>JavaInterview是【Java面试+Java学习】仓库。</description>
 	<url>https://github.com/yangchunjian/JavaInterview</url>
 
 	<modules>

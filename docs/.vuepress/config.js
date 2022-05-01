@@ -65,7 +65,7 @@ module.exports = {
     ],
 
     themeConfig: {
-        logo: '/assets/icon/logo500x500.png',
+        logo: '/assets/icon/logo200x100.png',
         sidebar: 'auto', //  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义
         // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
         author: {
@@ -279,7 +279,7 @@ module.exports = {
             // avatar: 'https://www.yangchunjian.com/docbook/imgs/dearlocation.jpeg',
             avatar: '/weixin.jpeg',
             name: 'JavaInterview',
-            slogan: '『JavaInterview+Java学习』',
+            slogan: '『Java面试+Java学习』',
         },
         // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
         extendFrontmatter: {
