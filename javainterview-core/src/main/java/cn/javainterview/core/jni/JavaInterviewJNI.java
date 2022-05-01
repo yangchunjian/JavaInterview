@@ -1,7 +1,7 @@
 package cn.javainterview.core.jni;
 
 /**
- * @author Yang Chunjian
+ * @author JavaInterview.cn
  * @email 1091938307@qq.com
  * @created 2022-04-30
  * @timed 21:22

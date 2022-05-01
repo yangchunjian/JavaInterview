@@ -3,7 +3,7 @@ package cn.javainterview.algorithm.designpattern;
 /**
  * 适配器模式
  *
- * @author Yang Chunjian
+ * @author JavaInterview.cn
  * @email 1091938307@qq.com
  * @created 2022-04-25
  * @timed 16:15
