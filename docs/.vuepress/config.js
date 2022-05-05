@@ -215,6 +215,7 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-863.二叉树中所有距离为 K 的结点",
                             "/algorithm/leetcode/leetcode-889.根据前序和后序遍历构造二叉树",
                             "/algorithm/leetcode/leetcode-951.翻转等价二叉树",
+                            "/algorithm/leetcode/leetcode-968.监控二叉树",
                         ]
                     },
                     {
