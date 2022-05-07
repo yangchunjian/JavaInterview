@@ -191,6 +191,24 @@ module.exports = {
 
                 ]
             },
+
+            {
+                title: '技术',
+                children: [
+                    {
+                        title: "工具",
+                        children: [
+                            "/skill/tool/goproject",
+                        ]
+                    },
+                    {
+                        title: "随笔",
+                        children: [
+                            "/skill/essay/essay",
+                        ]
+                    }
+                ]
+            },
             {
                 title: '算法',
                 children: [
