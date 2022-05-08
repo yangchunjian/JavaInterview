@@ -235,6 +235,7 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-951.翻转等价二叉树",
                             "/algorithm/leetcode/leetcode-968.监控二叉树",
                             "/algorithm/leetcode/leetcode-872.叶子相似的树",
+                            "/algorithm/leetcode/leetcode-987.二叉树的垂序遍历",
                         ]
                     },
                     {
