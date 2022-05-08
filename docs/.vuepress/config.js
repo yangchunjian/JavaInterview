@@ -72,9 +72,9 @@ module.exports = {
             name: 'JavaInterview.cn', // 必需
             link: 'https://JavaInterview.cn', // 可选的
         },
-        tags:   {
+        /*tags:   {
             name : 'Java'
-        },
+        },*/
         /*docsDir: 'docs', // 编辑的文件夹
          editLinks: true, // 启用编辑
          editLinkText: '编辑此页',*/
