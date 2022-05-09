@@ -57,11 +57,7 @@ author:
 
 ## 思路
 
-计算所有的大于等于当前结点val的所有结点val之和并替换，体现在BST中就是：该结点val+右子树val之和——>该结点val
-
-那么要计算右子树，且是一个累计的过程，所以我们可以从最右下开始
-一个合理的计算顺序：右->根->左
-
+用LinkedList存储当前节点的路径，往栈中push node节点，最后返回栈中的根节点
 ## 解法
 ```java
 
@@ -79,21 +75,52 @@ author:
  *         this.right = right;
  *     }
  * }
- * 
  */
 class Solution {
-    
-    //inorder: right - root - left
-    private int pre = 0;
-    public TreeNode bstToGst(TreeNode root) {
-        if (root == null){
-            return null;
+     public TreeNode recoverFromPreorder(String S) {
+        // 存储当前节点的路径
+        Deque<TreeNode> path = new LinkedList<TreeNode>();
+        // 存储字符串中的位置
+        int pos = 0;
+        while (pos < S.length()) {
+            // 获取当前层数
+            int level = 0;
+            while (S.charAt(pos) == '-') {
+                ++level;
+                ++pos;
+            }
+            // 获取节点值
+            int value = 0;
+            while (pos < S.length() && Character.isDigit(S.charAt(pos))) {
+                value = value * 10 + (S.charAt(pos) - '0');
+                ++pos;
+            }
+            // 构造当前节点
+            TreeNode node = new TreeNode(value);
+            if (level == path.size()) {
+                //如果当前节点的深度==当前路径长度（前一个节点是当前节点的父节点）
+                if (!path.isEmpty()) {
+                    //如果不是第一个节点，前一个节点的左子节点为当前节点
+                    path.peek().left = node;
+                }
+            }else {
+                //如果当前节点的深度！=当前路径长度（前一个节点不是当前节点的父节点）
+                while (level != path.size()) {
+                    //通过queue弹出其他子节点，找到当前节点的父节点
+                    path.pop();
+                }
+                // 找到父节点，因为此时左子节点已确定，所以赋值给右子节点
+                path.peek().right = node;
+            }
+            // 放入queue中
+            path.push(node);
         }
-        bstToGst(root.right);
-        pre += root.val;
-        root.val = pre;
-        bstToGst(root.left);
-        return root;
+        // 全部弹出，只剩根节点
+        while (path.size() > 1) {
+            path.pop();
+        }
+        // 返回根
+        return path.peek();
     }
 }
 ```
