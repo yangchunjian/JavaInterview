@@ -29,4 +29,11 @@ public interface Future<V> extends java.util.concurrent.Future<V> {
 
 ```java
 
+    /**
+     * Adds the specified listener to this future.  The
+     * specified listener is notified when this future is
+     * {@linkplain #isDone() done}.  If this future is already
+     * completed, the specified listener is notified immediately.
+     */
+    Future<V> addListener(GenericFutureListener<? extends Future<? super V>> listener);
 ```
