@@ -1,12 +1,12 @@
 ---
-title: netty
+title: Netty代码写法总结
 date: 2022-05-09 14:12:45
 permalink: /pages/a1918b/
 categories:
   - sourcecode
   - netty
 tags:
-  - 
+  - Java
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
@@ -173,4 +173,218 @@ public interface ChannelHandlerInvoker {
         this.childGroup = childGroup;
         return this;
     }
+```
+
+### 抽象类实现多个接口
+
+实现JDK接口Comparable做比较，抽象类里可以写抽象方法
+```java
+
+@SuppressWarnings("ClassMayBeInterface")
+public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
+
+```
+
+### 数组、集合、字符等输入输出
+
+```java
+
+    /**
+     * Exposes this buffer's bytes as an NIO {@link ByteBuffer}'s for the specified index and length
+     * The returned buffer shares the content with this buffer, while changing the position and limit
+     * of the returned NIO buffer does not affect the indexes and marks of this buffer. This method does
+     * not modify {@code readerIndex} or {@code writerIndex} of this buffer.  Please note that the
+     * returned NIO buffer will not see the changes of this buffer if this buffer is a dynamic
+     * buffer and it adjusted its capacity.
+     *
+     * @throws UnsupportedOperationException
+     *         if this buffer cannot create a {@link ByteBuffer} that shares the content with itself
+     *
+     * @see #nioBufferCount()
+     * @see #nioBuffer()
+     * @see #nioBuffer(int, int)
+     */
+    public abstract ByteBuffer[] nioBuffers(int index, int length);
+```
+
+### 方法没有实现直接返回异常Exception
+
+```java
+
+    @Override
+    public ByteBuf setMedium(int index, int value) {
+        throw new ReadOnlyBufferException();
+    }
+
+    @Override
+    protected void _setMedium(int index, int value) {
+        throw new ReadOnlyBufferException();
+    }
+```
+
+### 构造函数中设置属性值
+
+```java
+class ReadOnlyByteBufferBuf extends AbstractReferenceCountedByteBuf {
+
+    protected final ByteBuffer buffer;
+    private final ByteBufAllocator allocator;
+    private ByteBuffer tmpNioBuf;
+
+    ReadOnlyByteBufferBuf(ByteBufAllocator allocator, ByteBuffer buffer) {
+        super(buffer.remaining());
+        if (!buffer.isReadOnly()) {
+            throw new IllegalArgumentException("must be a readonly buffer: " + StringUtil.simpleClassName(buffer));
+        }
+
+        this.allocator = allocator;
+        this.buffer = buffer.slice().order(ByteOrder.BIG_ENDIAN);
+        writerIndex(this.buffer.limit());
+    }
+```
+
+### 组合操作，方法返回this 
+
+```java
+final class SimpleLeakAwareByteBuf extends WrappedByteBuf {
+
+    private final ResourceLeak leak;
+
+    SimpleLeakAwareByteBuf(ByteBuf buf, ResourceLeak leak) {
+        super(buf);
+        this.leak = leak;
+    }
+
+    @Override
+    public ByteBuf touch() {
+        return this;
+    }
+
+```
+
+### 组合，子类继承父类，并子类组合父类，构造函数里有父类 
+
+```java
+/**
+ * Wrapper which swap the {@link ByteOrder} of a {@link ByteBuf}.
+ */
+public class SwappedByteBuf extends ByteBuf {
+
+    private final ByteBuf buf;
+    private final ByteOrder order;
+
+    public SwappedByteBuf(ByteBuf buf) {
+        if (buf == null) {
+            throw new NullPointerException("buf");
+        }
+        this.buf = buf;
+        if (buf.order() == ByteOrder.BIG_ENDIAN) {
+            order = ByteOrder.LITTLE_ENDIAN;
+        } else {
+            order = ByteOrder.BIG_ENDIAN;
+        }
+    }
+
+    @Override
+    public ByteOrder order() {
+        return order;
+    }
+```
+
+### Final类及Final常量,16进制
+
+```java
+
+final class HAProxyConstants {
+
+    /**
+     * Command byte constants
+     */
+    static final byte COMMAND_LOCAL_BYTE = 0x00;
+    static final byte COMMAND_PROXY_BYTE = 0x01;
+
+```
+### Switch语句使用
+
+```java
+
+    /**
+     * Validate an address (IPv4, IPv6, Unix Socket)
+     *
+     * @param address                    human-readable address
+     * @param addrFamily                 the {@link AddressFamily} to check the address against
+     * @throws HAProxyProtocolException  if the address is invalid
+     */
+    private static void checkAddress(String address, AddressFamily addrFamily) {
+        if (addrFamily == null) {
+            throw new NullPointerException("addrFamily");
+        }
+
+        switch (addrFamily) {
+            case AF_UNSPEC:
+                if (address != null) {
+                    throw new HAProxyProtocolException("unable to validate an AF_UNSPEC address: " + address);
+                }
+                return;
+            case AF_UNIX:
+                return;
+        }
+
+        if (address == null) {
+            throw new NullPointerException("address");
+        }
+```
+
+### 重写方法Override
+
+```java
+
+/**
+ * A typical {@code AsciiString} multimap used by protocols that use binary headers (such as HTTP/2) for the
+ * representation of arbitrary key-value data. {@link AsciiString} is just a wrapper around a byte array but provides
+ * some additional utility when handling text data.
+ */
+public interface BinaryHeaders extends Headers<AsciiString> {
+    /**
+     * A visitor that helps reduce GC pressure while iterating over a collection of {@link Headers}.
+     */
+    interface EntryVisitor extends Headers.EntryVisitor<AsciiString> {
+    }
+
+    /**
+     * A visitor that helps reduce GC pressure while iterating over a collection of {@link Headers}.
+     */
+    interface NameVisitor extends Headers.NameVisitor<AsciiString> {
+    }
+
+    @Override
+    BinaryHeaders add(AsciiString name, AsciiString value);
+
+    @Override
+    BinaryHeaders add(AsciiString name, Iterable<? extends AsciiString> values);
+
+    @Override
+    BinaryHeaders add(AsciiString name, AsciiString... values);
+```
+
+### 接口的空实现
+
+```java
+public class EmptyHeaders<T> implements Headers<T> {
+    @Override
+    public T get(T name) {
+        return null;
+    }
+
+    @Override
+    public T get(T name, T defaultValue) {
+        return null;
+    }
+
+    @Override
+    public T getAndRemove(T name) {
+        return null;
+    }
+
+
 ```
