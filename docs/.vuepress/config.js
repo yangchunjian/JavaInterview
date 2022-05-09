@@ -186,6 +186,12 @@ module.exports = {
                         ]
                     },
                     {
+                        title: "Netty",
+                        children: [
+                            "/sourcecode/netty/netty",
+                        ]
+                    },
+                    {
                         title: "C/C++",
                         children: [
                             "/sourcecode/c/c++",
