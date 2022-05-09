@@ -17,7 +17,8 @@
 		<module>javainterview-all</module>
 		<module>javainterview-core</module>
 		<module>javainterview-algorithm</module>
-	</modules>
+        <module>javainterview-code</module>
+    </modules>
 
 	<properties>
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
