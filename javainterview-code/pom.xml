@@ -10,7 +10,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>javainterview-code</artifactId>
-    <name>javainterview-code</name>
+    <name>${project.artifactId}</name>
+    <description>JavaInterview源码及依赖的第三方源码学习等</description>
+
 
     <dependencies>
         <dependency>
