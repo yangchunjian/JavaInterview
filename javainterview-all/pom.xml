@@ -19,13 +19,19 @@
 
     <dependencies>
         <dependency>
-            <groupId>cn.javainterview</groupId>
+            <groupId>${project.groupId}</groupId>
             <artifactId>javainterview-core</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>
-            <groupId>cn.javainterview</groupId>
+            <groupId>${project.groupId}</groupId>
             <artifactId>javainterview-algorithm</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>javainterview-code</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
     </dependencies>
