@@ -188,7 +188,8 @@ module.exports = {
                     {
                         title: "Netty",
                         children: [
-                            "/sourcecode/netty/netty",
+                            "/sourcecode/netty/netty_1",
+                            "/sourcecode/netty/netty_2",
                         ]
                     },
                     {

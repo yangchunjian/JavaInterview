@@ -1,5 +1,5 @@
 ---
-title: Netty代码写法总结
+title: Netty代码写法总结1
 date: 2022-05-09 14:12:45
 permalink: /pages/a1918b/
 categories:
@@ -12,7 +12,7 @@ author:
   link: https://JavaInterview.cn
 ---
 
-## 总结
+## 总结1
 
 ### 可以定义和JDK类名一样的类
 ```java
