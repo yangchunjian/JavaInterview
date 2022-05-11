@@ -73,8 +73,8 @@ module.exports = {
             link: 'https://JavaInterview.cn', // 可选的
         },
         /*tags:   {
-            name : 'Java'
-        },*/
+         name : 'Java'
+         },*/
         /*docsDir: 'docs', // 编辑的文件夹
          editLinks: true, // 启用编辑
          editLinkText: '编辑此页',*/
@@ -242,6 +242,7 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-559.N叉树的最大深度",
                             "/algorithm/leetcode/leetcode-563.二叉树的坡度",
                             "/algorithm/leetcode/leetcode-623.在二叉树中增加一行",
+                            "/algorithm/leetcode/leetcode-687.最长同值路径",
                             "/algorithm/leetcode/leetcode-863.二叉树中所有距离为 K 的结点",
                             "/algorithm/leetcode/leetcode-889.根据前序和后序遍历构造二叉树",
                             "/algorithm/leetcode/leetcode-951.翻转等价二叉树",
