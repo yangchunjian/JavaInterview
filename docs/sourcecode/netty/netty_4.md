@@ -50,5 +50,67 @@ public final class ProxyConnectionEvent {
     }
 ```
 
-### 
+### Epoll调用原生方法
+ 
+```java
+/**
+ * Tells if <a href="http://netty.io/wiki/native-transports.html">{@code netty-transport-native-epoll}</a> is supported.
+ */
+public final class Epoll {
 
+    private static final Throwable UNAVAILABILITY_CAUSE;
+
+    static  {
+        Throwable cause = null;
+        int epollFd = -1;
+        int eventFd = -1;
+        try {
+            epollFd = Native.epollCreate();
+            eventFd = Native.eventFd();
+        } catch (Throwable t) {
+            cause = t;
+        } finally {
+            if (epollFd != -1) {
+                try {
+                    Native.close(epollFd);
+                } catch (Exception ignore) {
+                    // ignore
+                }
+            }
+            if (eventFd != -1) {
+                try {
+                    Native.close(eventFd);
+                } catch (Exception ignore) {
+                    // ignore
+                }
+            }
+        }
+
+        if (cause != null) {
+            UNAVAILABILITY_CAUSE = cause;
+        } else {
+            UNAVAILABILITY_CAUSE = null;
+        }
+    }
+    
+```
+原生方法： 
+```java
+
+final class Native {
+
+    static {
+        String name = SystemPropertyUtil.get("os.name").toLowerCase(Locale.UK).trim();
+        if (!name.startsWith("linux")) {
+            throw new IllegalStateException("Only supported on Linux");
+        }
+        NativeLibraryLoader.load("netty-transport-native-epoll", PlatformDependent.getClassLoader(Native.class));
+    }
+    
+
+    public static native int eventFd();
+    public static native void eventFdWrite(int fd, long value);
+    public static native void eventFdRead(int fd);
+    public static native int epollCreate();
+
+```
