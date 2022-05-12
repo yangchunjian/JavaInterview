@@ -237,6 +237,7 @@ module.exports = {
                             "/algorithm/leetcode/leetcode",
                             "/algorithm/leetcode/leetcode-316.去除重复字母",
                             "/algorithm/leetcode/leetcode-404.左叶子之和",
+                            "/algorithm/leetcode/leetcode-437.路径总和III",
                             "/algorithm/leetcode/leetcode-449.序列化和反序列化二叉搜索树",
                             "/algorithm/leetcode/leetcode-572.另一棵树的子树",
                             "/algorithm/leetcode/leetcode-559.N叉树的最大深度",
