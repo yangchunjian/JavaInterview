@@ -114,3 +114,56 @@ final class Native {
     public static native int epollCreate();
 
 ```
+
+### 自定义实现集合，并可以比较
+
+```java
+
+public interface ChannelGroup extends Set<Channel>, Comparable<ChannelGroup> {
+
+    /**
+     * Returns the name of this group.  A group name is purely for helping
+     * you to distinguish one group from others.
+     */
+    String name();
+
+    /**
+     * Returns the {@link Channel} which has the specified {@link ChannelId}.
+     *
+     * @return the matching {@link Channel} if found. {@code null} otherwise.
+     */
+    Channel find(ChannelId id);
+```
+
+### 自定义迭代器
+
+```java
+
+/**
+ * {@link ChannelException} which holds {@link ChannelFuture}s that failed because of an error.
+ */
+public class ChannelGroupException extends ChannelException implements Iterable<Map.Entry<Channel, Throwable>> {
+    private static final long serialVersionUID = -4093064295562629453L;
+    private final Collection<Map.Entry<Channel, Throwable>> failed;
+
+    public ChannelGroupException(Collection<Map.Entry<Channel, Throwable>> causes) {
+        if (causes == null) {
+            throw new NullPointerException("causes");
+        }
+        if (causes.isEmpty()) {
+            throw new IllegalArgumentException("causes must be non empty");
+        }
+        failed = Collections.unmodifiableCollection(causes);
+    }
+
+    /**
+     * Returns a {@link Iterator} which contains all the {@link Throwable} that was a cause of the failure and the
+     * related id of the {@link Channel}.
+     */
+    @Override
+    public Iterator<Map.Entry<Channel, Throwable>> iterator() {
+        return failed.iterator();
+    }
+}
+
+```
