@@ -1,3 +1,16 @@
+---
+title: 删点成林
+date: 2022-05-13 23:53:36
+permalink: /pages/d9fa23/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+---
 
 ## 题目
 给出二叉树的根节点 root，树上每个节点都有一个不同的值。
