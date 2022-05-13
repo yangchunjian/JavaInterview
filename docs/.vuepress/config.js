@@ -255,6 +255,7 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-1038.从二叉搜索树到更大和树",
                             "/algorithm/leetcode/leetcode-1028.从先序遍历还原二叉树",
                             "/algorithm/leetcode/leetcode-1104.二叉树寻路",
+                            "/algorithm/leetcode/leetcode-1110.删点成林",
                         ]
                     },
                     {
