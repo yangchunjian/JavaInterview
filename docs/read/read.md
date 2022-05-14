@@ -33,9 +33,10 @@ JavaInterview的目标贴合面试重难点、高频点、底层源码、算法�
 
 | 模块                       |    介绍                                              |
 | -------------------        |---------------------------------------------------- |
-| [JavaInterview-core](../javainterview-core/README.md)         |     核心                                             |
-| [JavaInterview-code](../javainterview-code/README.md)         |     源码                                              |
-| [JavaInterview-algorithm](../javainterview-algorithm/README.md)    |     算法                                            |
+| [JavaInterview-all](../jar/javainterview-all/README.md)           |     所有                                             |
+| [JavaInterview-core](../jar/javainterview-core/README.md)         |     核心                                             |
+| [JavaInterview-code](../jar/javainterview-code/README.md)         |     源码                                              |
+| [JavaInterview-algorithm](../jar/javainterview-algorithm/README.md)    |     算法                                            |
 
 
 ## 📦安装

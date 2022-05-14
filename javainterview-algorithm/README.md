@@ -1,14 +1,2 @@
 
-## javainterview-algorithm
-
-## 坐标
-```java
-<dependency>
-    <groupId>cn.javainterview</groupId>
-    <artifactId>javainterview-algorithm</artifactId>
-    <version>1.0.6</version>
-</dependency>
-```
-
-## 功能
-1. 算法相关
+## [文档链接](https://javainterview.cn/jar/javainterview-algorithm)
