@@ -46,8 +46,7 @@ author:
 
 ## 思路
 
-广度遍历二叉树，当出现 null 值时停止遍历，如果此时还有没有遍历到的结点，说明该树非完全二叉树。
-
+层序遍历，设置一个停止标志，遇到空节点，停止标志为真，如果停止标志为真，再遍历遇到非空节点，则非完全二叉树。
 ## 解法
 ```java
 /**
@@ -66,21 +65,22 @@ author:
  * }
  */
 class Solution {
-    /**
-     * 广度遍历二叉树，当出现 null 值时停止遍历，如果此时还有没有遍历到的结点，说明该树非完全二叉树。
-     */
+
     public boolean isCompleteTree(TreeNode root) {
+        if (root == null) return true;
         Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
-        TreeNode cur;
-        while ((cur = queue.poll()) != null) {
-            queue.offer(cur.left);
-            queue.offer(cur.right);
-        }
+        queue.add(root);
+        TreeNode temp;
+        boolean flag = false;
         while (!queue.isEmpty()) {
-            if (queue.poll() != null) {
-                return false;
+            temp = queue.remove();
+            if (temp == null){
+                flag = true;
+                continue;
             }
+            if (flag) return false;
+            queue.add(temp.left);
+            queue.add(temp.right);
         }
         return true;
     }
