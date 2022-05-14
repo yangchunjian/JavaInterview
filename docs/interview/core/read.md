@@ -1,12 +1,13 @@
 ---
-title: README
+title: JavaInterview核心
 date: 2022-05-09 11:38:37
 permalink: /pages/a1adf4/
 categories:
   - jar
   - javainterview-core
 tags:
-  - 
+  - Java
+  - JavaInterview
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn

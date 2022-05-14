@@ -1,2 +1,2 @@
 
-## [文档链接](https://javainterview.cn/jar/javainterview-algorithm)
+## [文档链接](https://javainterview.cn/interview/algorithm/read)

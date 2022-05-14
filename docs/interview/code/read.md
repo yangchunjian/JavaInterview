@@ -1,12 +1,13 @@
 ---
-title: README
+title: JavaInterview源码
 date: 2022-05-09 11:38:37
 permalink: /pages/911b51/
 categories:
   - jar
   - javainterview-code
 tags:
-  - 
+  - Java
+  - JavaInterview
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
@@ -18,7 +19,7 @@ author:
 ```java
 <dependency>
     <groupId>cn.javainterview</groupId>
-    <artifactId>javainterview-core</artifactId>
+    <artifactId>javainterview-code</artifactId>
     <version>1.0.6</version>
 </dependency>
 ```
