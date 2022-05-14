@@ -1,7 +1,7 @@
 ---
 title: 必读
 date: 2022-04-22 23:46:20
-permalink: /pages/1c042a/
+permalink: /read/
 categories: 
   - read
 tags: 
