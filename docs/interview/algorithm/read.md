@@ -1,7 +1,7 @@
 ---
-title: read
+title: JavaInterview算法
 date: 2022-05-15 00:41:21
-permalink: /pages/4b3cc0/
+permalink: /interview/algorithm/read
 categories:
   - interview
   - algorithm

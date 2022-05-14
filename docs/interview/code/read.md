@@ -1,7 +1,7 @@
 ---
-title: read
+title: JavaInterview源码
 date: 2022-05-15 00:41:36
-permalink: /pages/bb2c57/
+permalink: /interview/code/read
 categories:
   - interview
   - code

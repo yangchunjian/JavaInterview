@@ -1,7 +1,7 @@
 ---
-title: read
+title: JavaInterview核心
 date: 2022-05-15 00:41:49
-permalink: /pages/e8a848/
+permalink: /interview/core/read
 categories:
   - interview
   - core

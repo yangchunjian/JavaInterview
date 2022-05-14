@@ -1,7 +1,7 @@
 ---
-title: read
+title: JavaInterview所有
 date: 2022-05-15 00:41:30
-permalink: /pages/811054/
+permalink: /interview/all/read
 categories:
   - interview
   - all
