@@ -33,10 +33,10 @@ JavaInterview的目标贴合面试重难点、高频点、底层源码、算法�
 
 | 模块                       |    介绍                                              |
 | -------------------        |---------------------------------------------------- |
-| [JavaInterview-all](../interview/all/read)           |     所有                                             |
-| [JavaInterview-core](../interview/core/read)         |     核心                                             |
-| [JavaInterview-code](../interview/code/read)         |     源码                                              |
-| [JavaInterview-algorithm](../interview/algorithm/read)    |     算法                                            |
+| [JavaInterview-all](https://javainterview.cn/interview/all/read)           |     所有                                             |
+| [JavaInterview-core](https://javainterview.cn/interview/core/read)         |     核心                                             |
+| [JavaInterview-code](https://javainterview.cn/interview/code/read)         |     源码                                              |
+| [JavaInterview-algorithm](https://javainterview.cn/interview/algorithm/read)    |     算法                                            |
 
 
 ## 📦安装
@@ -48,7 +48,7 @@ JavaInterview的目标贴合面试重难点、高频点、底层源码、算法�
 <dependency>
     <groupId>cn.javainterview</groupId>
     <artifactId>javainterview-all</artifactId>
-    <version>1.0.6</version>
+    <version>1.0.7</version>
 </dependency>
 ```
 

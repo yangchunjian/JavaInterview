@@ -19,7 +19,7 @@ author:
 <dependency>
     <groupId>cn.javainterview</groupId>
     <artifactId>javainterview-code</artifactId>
-    <version>1.0.6</version>
+    <version>1.0.7</version>
 </dependency>
 ```
 
