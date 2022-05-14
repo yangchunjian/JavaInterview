@@ -54,14 +54,14 @@ JavaInterview的目标贴合面试重难点、高频点、底层源码、算法�
 
 ### 🍐Gradle
 ```
-implementation 'cn.javainterview:javainterview-all:1.0.6'
+implementation 'cn.javainterview:javainterview-all:1.0.7'
 ```
 
 ### 📥下载jar
 
 点击以下链接，下载`javainterview-all-X.X.X.jar`即可：
 
-- [Maven中央库](https://repo1.maven.org/maven2/cn/javainterview/javainterview-all/1.0.6/)
+- [Maven中央库](https://repo1.maven.org/maven2/cn/javainterview/javainterview-all/1.0.7/)
 
 
 
