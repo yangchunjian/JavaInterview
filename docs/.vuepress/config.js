@@ -252,6 +252,7 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-968.监控二叉树",
                             "/algorithm/leetcode/leetcode-872.叶子相似的树",
                             "/algorithm/leetcode/leetcode-987.二叉树的垂序遍历",
+                            "/algorithm/leetcode/leetcode-988.从叶结点开始的最小字符串",
                             "/algorithm/leetcode/leetcode-1038.从二叉搜索树到更大和树",
                             "/algorithm/leetcode/leetcode-1028.从先序遍历还原二叉树",
                             "/algorithm/leetcode/leetcode-1104.二叉树寻路",
