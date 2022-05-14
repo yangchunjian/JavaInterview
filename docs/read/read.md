@@ -16,7 +16,7 @@ author:
 - **[《JavaInterview》](../README.md)** : JavaInterview！
 
 ## 📚简介
-JavaInterview是一个「Java面试+Java学习」工具类库。提供核心、第三方源码、算法等JAR。提高面试和学习效率。
+JavaInterview是一个「Java面试+Java学习」工具类库。提供核心、源码、算法等JAR。提高面试和学习效率。
 
 ### 🎁JavaInterview名称的由来
 
@@ -33,9 +33,9 @@ JavaInterview的目标贴合面试重难点、高频点、底层源码、算法�
 
 | 模块                       |    介绍                                              |
 | -------------------        |---------------------------------------------------- |
-| javainterview-core         |     核心                                             |
-| javainterview-code         |     依赖的第三方源码                                  |
-| javainterview-algorithm    |     算法                                            |
+| [JavaInterview-core](../javainterview-core/README.md)         |     核心                                             |
+| [JavaInterview-code](../javainterview-code/README.md)         |     源码                                              |
+| [JavaInterview-algorithm](../javainterview-algorithm/README.md)    |     算法                                            |
 
 
 ## 📦安装
