@@ -1,16 +1,15 @@
 ---
-title: JavaInterview算法
-categories: 
-  - jar
-  - javainterview-algorithm
-tags: 
-  - Java
-  - JavaInterview
+title: read
+date: 2022-05-15 00:41:21
+permalink: /pages/4b3cc0/
+categories:
+  - interview
+  - algorithm
+tags:
+  - 
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
-date: 2022-05-15 00:30:43
-permalink: /pages/46cd2d/
 ---
 
 ## javainterview-algorithm

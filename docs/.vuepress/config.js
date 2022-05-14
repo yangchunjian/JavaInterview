@@ -157,7 +157,7 @@ module.exports = {
                 ]
             },
             {
-                title: 'Interview',
+                title: '面试',
                 children: [
                     {
                         title: "所有",
