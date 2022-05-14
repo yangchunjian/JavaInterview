@@ -7,15 +7,15 @@ tagline: 「Java面试+Java学习」
 ## actionLink: /web/
 ## bannerBg: auto ## auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
 
-#features: ## 可选的
-#  - title: 前端
-#    details: JavaScript、ES6、Vue框架等前端技术
-#    link: /web/ ## 可选
-#    imgUrl: /img/web.png ## 可选
-#  - title: 页面
-#    details: html(5)/css(3)，前端页面相关技术
-#    link: /ui/
-#    imgUrl: /img/ui.png
+features: ## 可选的
+  - title: 工程码
+    details: 所有&算法&代码&核心
+    link: /jar/ ## 可选
+    imgUrl: /assets/icon/logo_title50x50.png
+  - title: 文档箱
+    details: 思想总结&程序总结
+    link: yangchunjian.com
+    imgUrl: /features/qin_200x200.jpeg
 #  - title: 技术
 #    details: 技术文档、教程、技巧、总结等文章
 #    link: /technology/
