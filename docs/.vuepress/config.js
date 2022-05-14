@@ -156,6 +156,36 @@ module.exports = {
 
                 ]
             },
+            {
+                title: 'Interview',
+                children: [
+                    {
+                        title: "所有",
+                        children: [
+                            "/interview/all/read",
+                        ]
+                    },
+                    {
+                        title: "核心",
+                        children: [
+                            "/interview/core/read",
+                        ]
+                    },
+                    {
+                        title: "源码",
+                        children: [
+                            "/interview/code/read",
+                        ]
+                    },
+                    {
+                        title: "算法",
+                        children: [
+                            "/interview/algorithm/read",
+                        ]
+                    },
+
+                ]
+            },
             /*{
                 title: 'Interview',
                 children: [
