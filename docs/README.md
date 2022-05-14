@@ -15,7 +15,7 @@ features: ## 可选的
   - title: 文档箱
     details: 思想总结&程序总结
     link: https://yangchunjian.com/
-    imgUrl: ../../../media/features/qin_200x200.jpeg
+    imgUrl: /assets/icon/qin_200x200.jpeg
 #  - title: 技术
 #    details: 技术文档、教程、技巧、总结等文章
 #    link: /technology/
