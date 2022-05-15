@@ -186,36 +186,6 @@ module.exports = {
 
                 ]
             },
-            /*{
-                title: 'Interview',
-                children: [
-                    {
-                        title: "所有",
-                        children: [
-                            "/interview/all/readme",
-                        ]
-                    },
-                    {
-                        title: "核心",
-                        children: [
-                            "/interview/core/readme",
-                        ]
-                    },
-                    {
-                        title: "源码",
-                        children: [
-                            "/interview/code/readme",
-                        ]
-                    },
-                    {
-                        title: "算法",
-                        children: [
-                            "/interview/algorithm/readme",
-                        ]
-                    },
-
-                ]
-            },*/
             {
                 title: '源码',
                 children: [
@@ -301,6 +271,7 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-423.从英文中重建数字",
                             "/algorithm/leetcode/leetcode-437.路径总和III",
                             "/algorithm/leetcode/leetcode-449.序列化和反序列化二叉搜索树",
+                            "/algorithm/leetcode/leetcode-508.出现次数最多的子树元素和",
                             "/algorithm/leetcode/leetcode-572.另一棵树的子树",
                             "/algorithm/leetcode/leetcode-559.N叉树的最大深度",
                             "/algorithm/leetcode/leetcode-563.二叉树的坡度",
