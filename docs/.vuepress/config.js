@@ -70,6 +70,7 @@ module.exports = {
             fallbackImage: 'https://javainterview.cn/assets/icon/logo200x100.png',
             autoQuote: true,
             isPlain: true,
+            icon: 'https://javainterview.cn/assets/icon/logo200x100.png',
         }],
 
     ],
