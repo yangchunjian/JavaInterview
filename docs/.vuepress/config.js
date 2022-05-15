@@ -348,6 +348,14 @@ module.exports = {
                         ]
 
                     },
+
+                    {
+                        title: "定时任务",
+                        children: [
+                            "/middleware/time/xxljob/xxljob",
+                        ]
+
+                    },
                     {
                         title: "Spring",
                         children: [
