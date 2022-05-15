@@ -64,7 +64,13 @@ module.exports = {
         }
         ],
         //分享
-        ['social-share'],
+        ['social-share', {
+            networks: ['qq', 'weibo', 'douban', 'wechat', 'email'],
+            email: '1091938307@qq.com',
+            fallbackImage: 'https://javainterview.cn/assets/icon/logo200x100.png',
+            autoQuote: true,
+            isPlain: true,
+        }],
 
     ],
 
