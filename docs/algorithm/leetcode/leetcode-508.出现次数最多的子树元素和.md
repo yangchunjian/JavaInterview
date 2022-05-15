@@ -23,13 +23,14 @@ author:
 
 示例 1：
 
+![](../../../media/pictures/leetcode/freq1-tree.png)
 
 
     输入: root = [5,2,-3]
     输出: [2,-3,4]
 示例 2：
 
-
+![](../../../media/pictures/leetcode/freq2-tree.png)
 
     输入: root = [5,2,-5]
     输出: [2]
