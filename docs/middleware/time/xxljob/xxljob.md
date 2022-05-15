@@ -1,5 +1,5 @@
 ---
-title: xxljob
+title: xxljob配置等
 date: 2022-05-15 20:25:25
 permalink: /pages/e7fc7e/
 categories:
