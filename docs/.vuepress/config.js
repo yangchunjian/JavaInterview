@@ -17,6 +17,17 @@ module.exports = {
         ],
         ['meta', {name: 'baidu-site-verification', content: 'code-dbbt0zdlBh'}], // 百度统计的站长验证（你可以去掉）
 
+        ['script', {}, `
+            var _hmt = _hmt || [];
+            (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?03cb08758bea6323509b897a0e0442df";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+
+            })();
+        `]
+
     ],
     plugins: [
         [
