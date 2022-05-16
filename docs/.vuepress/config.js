@@ -314,6 +314,7 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-1104.二叉树寻路",
                             "/algorithm/leetcode/leetcode-1110.删点成林",
                             "/algorithm/leetcode/leetcode-1161.最大层内元素和",
+                            "/algorithm/leetcode/leetcode-1261.在受污染的二叉树中查找元素",
                         ]
                     },
                     {
