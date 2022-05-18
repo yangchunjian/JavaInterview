@@ -68,7 +68,7 @@ implementation 'cn.javainterview:javainterview-all:1.0.7'
 
 ## 公众号
 
-推荐一波~
+干货微信公众号**JavaInterviewCn**，推荐一波~
 
 ![我的公众号](/img/qrcode_for_gh_82720717e427_344.jpg)
 
@@ -76,4 +76,4 @@ implementation 'cn.javainterview:javainterview-all:1.0.7'
 
 交流/加群/互看朋友圈，欢迎添加我的微信（备注“JavaInterview”即可）。
 
-![](../../media/pictures/weixin.jpeg)
+![](/img/weixin.jpeg)
