@@ -70,7 +70,7 @@ implementation 'cn.javainterview:javainterview-all:1.0.7'
 
 推荐一波~
 
-![我的公众号](https://www.yangchunjian.com/docbook/imgs/qrcode_for_gh_8756901e5b12_344.jpg)
+![我的公众号](/img/qrcode_for_gh_82720717e427_344.jpg)
 
 ## 联系我
 
