@@ -320,6 +320,7 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-1186.删除一次得到子数组最大和",
                             "/algorithm/leetcode/leetcode-1261.在受污染的二叉树中查找元素",
                             "/algorithm/leetcode/leetcode-1302.层数最深叶子节点的和",
+                            "/algorithm/leetcode/leetcode-1339.分裂二叉树的最大乘积",
                         ]
                     },
                     {
