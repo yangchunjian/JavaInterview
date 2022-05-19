@@ -324,6 +324,7 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-1302.层数最深叶子节点的和",
                             "/algorithm/leetcode/leetcode-1339.分裂二叉树的最大乘积",
                             "/algorithm/leetcode/leetcode-1361.验证二叉树",
+                            "/algorithm/leetcode/leetcode-1367.二叉树中的列表",
                         ]
                     },
                     {
