@@ -1,13 +1,15 @@
 ---
 title: Netty代码写法总结6
-categories:
+categories: 
   - sourcecode
   - netty
-tags:
+tags: 
   - Java
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+date: 2022-05-18 23:34:30
+permalink: /pages/173567/
 ---
 
 
