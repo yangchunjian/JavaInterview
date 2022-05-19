@@ -29,6 +29,7 @@ module.exports = {
         `]
 
     ],
+    compact: false,
     plugins: [
         [
             'copyright',
