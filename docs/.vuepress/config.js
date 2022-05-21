@@ -293,6 +293,7 @@ module.exports = {
                         children: [
                             "/algorithm/leetcode/leetcode",
                             "/algorithm/leetcode/leetcode-68.文本左右对齐",
+                            "/algorithm/leetcode/leetcode-87.扰乱字符串",
                             "/algorithm/leetcode/leetcode-316.去除重复字母",
                             "/algorithm/leetcode/leetcode-404.左叶子之和",
                             "/algorithm/leetcode/leetcode-423.从英文中重建数字",
