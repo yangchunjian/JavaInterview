@@ -295,6 +295,8 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-68.文本左右对齐",
                             "/algorithm/leetcode/leetcode-87.扰乱字符串",
                             "/algorithm/leetcode/leetcode-123.买卖股票的最佳时机III",
+                            "/algorithm/leetcode/leetcode-126.单词接龙II",
+                            "/algorithm/leetcode/leetcode-127.单词接龙",
                             "/algorithm/leetcode/leetcode-316.去除重复字母",
                             "/algorithm/leetcode/leetcode-404.左叶子之和",
                             "/algorithm/leetcode/leetcode-423.从英文中重建数字",
