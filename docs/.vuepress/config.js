@@ -298,6 +298,7 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-126.单词接龙II",
                             "/algorithm/leetcode/leetcode-127.单词接龙",
                             "/algorithm/leetcode/leetcode-134.加油站",
+                            "/algorithm/leetcode/leetcode-135.分发糖果",
                             "/algorithm/leetcode/leetcode-316.去除重复字母",
                             "/algorithm/leetcode/leetcode-404.左叶子之和",
                             "/algorithm/leetcode/leetcode-423.从英文中重建数字",
