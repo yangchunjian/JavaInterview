@@ -300,6 +300,8 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-134.加油站",
                             "/algorithm/leetcode/leetcode-135.分发糖果",
                             "/algorithm/leetcode/leetcode-140.单词拆分II",
+                            "/algorithm/leetcode/leetcode-174.地下城游戏",
+                            "/algorithm/leetcode/leetcode-188.买卖股票的最佳时机IV",
                             "/algorithm/leetcode/leetcode-316.去除重复字母",
                             "/algorithm/leetcode/leetcode-404.左叶子之和",
                             "/algorithm/leetcode/leetcode-423.从英文中重建数字",
