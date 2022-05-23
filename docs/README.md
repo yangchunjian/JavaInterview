@@ -8,13 +8,30 @@ tagline: 「Java面试+Java学习」
 ## bannerBg: auto ## auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
 
 features: ## 可选的
-  - title: 工程码
-    details: 所有&算法&代码&核心
-#    link: /read/ ## 可选
+#  - title: 工程码
+#    details: 所有&算法&代码&核心
+##    link: /read/ ## 可选
+#    imgUrl: /assets/icon/logo_title50x50.png
+#  - title: 文档箱
+#    details: 思想总结&程序总结
+##    link: /read/ ## 可选
+#    imgUrl: /assets/icon/logo_title50x50.png
+
+  - title: 必读
+    details: 必读总结
+    link: /read/ ## 可选
     imgUrl: /assets/icon/logo_title50x50.png
-  - title: 文档箱
-    details: 思想总结&程序总结
-#    link: /read/ ## 可选
+  - title: 分类
+    details: 分类总结
+    link: /categories/ ## 可选
+    imgUrl: /assets/icon/logo_title50x50.png
+  - title: 标签
+    details: 标签总结
+    link: /tags/ ## 可选
+    imgUrl: /assets/icon/logo_title50x50.png
+  - title: 归档
+    details: 归档总结
+    link: /archives/ ## 可选
     imgUrl: /assets/icon/logo_title50x50.png
 
 
