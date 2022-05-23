@@ -355,6 +355,7 @@ module.exports = {
                         children: [
                             "/algorithm/designpattern/adapter",
                             "/algorithm/designpattern/strategy",
+                            "/algorithm/designpattern/observer",
                         ]
                     },
 
