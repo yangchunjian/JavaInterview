@@ -10,12 +10,12 @@ tagline: 「Java面试+Java学习」
 features: ## 可选的
   - title: 工程码
     details: 所有&算法&代码&核心
-    link: /interview/all/read/
+#    link: /interview/all/read/
     imgUrl: /assets/icon/logo_title50x50.png
   - title: 文档箱
     details: 思想总结&程序总结
 #    link: /read/ ## 可选
-    url: https://www.yangchunjian.com/
+#    url: https://www.yangchunjian.com/
     imgUrl: /assets/icon/logo_title50x50.png
 
 #  - title: 必读
