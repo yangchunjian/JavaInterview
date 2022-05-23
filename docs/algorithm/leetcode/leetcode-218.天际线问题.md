@@ -1,3 +1,16 @@
+---
+title: 天际线问题
+date: 2022-05-23 20:02:57
+permalink: /pages/56081d/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+---
 
 ## 题目
 城市的 天际线 是从远处观看该城市中所有建筑物形成的轮廓的外部轮廓。给你所有建筑物的位置和高度，请返回 由这些建筑物形成的 天际线 。
