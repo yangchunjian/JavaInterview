@@ -304,6 +304,7 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-188.买卖股票的最佳时机IV",
                             "/algorithm/leetcode/leetcode-207.课程表",
                             "/algorithm/leetcode/leetcode-210.课程表II",
+                            "/algorithm/leetcode/leetcode-212.单词搜索II",
                             "/algorithm/leetcode/leetcode-316.去除重复字母",
                             "/algorithm/leetcode/leetcode-404.左叶子之和",
                             "/algorithm/leetcode/leetcode-423.从英文中重建数字",
