@@ -1,5 +1,5 @@
 ---
-title: 随笔
+title: 随笔总结
 category: Java
 author: JavaInterview.cn
 tags: 
@@ -12,5 +12,11 @@ categories:
 ---
 
 ## 状态
+
+1. 积沙成塔
+2. 读万卷书
+3. 提竞争力
+4. 厚积薄发 
+
 
 
