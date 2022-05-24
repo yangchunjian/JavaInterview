@@ -1,3 +1,16 @@
+---
+title: 矩形面积
+date: 2022-05-24 17:24:27
+permalink: /pages/f91c78/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+---
 
 
 ## 题目
