@@ -308,6 +308,7 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-218.天际线问题",
                             "/algorithm/leetcode/leetcode-220.存在重复元素III",
                             "/algorithm/leetcode/leetcode-221.最大正方形",
+                            "/algorithm/leetcode/leetcode-223.矩形面积",
                             "/algorithm/leetcode/leetcode-316.去除重复字母",
                             "/algorithm/leetcode/leetcode-404.左叶子之和",
                             "/algorithm/leetcode/leetcode-423.从英文中重建数字",
