@@ -314,6 +314,7 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-273.整数转换英文表示",
                             "/algorithm/leetcode/leetcode-274.H指数",
                             "/algorithm/leetcode/leetcode-275.H指数II",
+                            "/algorithm/leetcode/leetcode-279.完全平方数",
                             "/algorithm/leetcode/leetcode-316.去除重复字母",
                             "/algorithm/leetcode/leetcode-404.左叶子之和",
                             "/algorithm/leetcode/leetcode-423.从英文中重建数字",
