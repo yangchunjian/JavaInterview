@@ -1,3 +1,16 @@
+---
+title: 单词规律
+date: 2022-06-02 23:45:13
+permalink: /pages/d394c0/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+---
 
 
 
