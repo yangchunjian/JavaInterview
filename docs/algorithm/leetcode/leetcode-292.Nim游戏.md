@@ -1,3 +1,16 @@
+---
+title: Nim游戏
+date: 2022-06-02 23:52:34
+permalink: /pages/210df6/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+---
 
 
 ## 题目
