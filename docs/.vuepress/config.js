@@ -317,6 +317,7 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-279.完全平方数",
                             "/algorithm/leetcode/leetcode-282.给表达式添加运算符",
                             "/algorithm/leetcode/leetcode-290.单词规律",
+                            "/algorithm/leetcode/leetcode-292.Nim游戏",
                             "/algorithm/leetcode/leetcode-316.去除重复字母",
                             "/algorithm/leetcode/leetcode-404.左叶子之和",
                             "/algorithm/leetcode/leetcode-423.从英文中重建数字",
