@@ -1,3 +1,16 @@
+---
+title: 寻找重复数
+date: 2022-06-05 22:33:25
+permalink: /pages/f47519/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+---
 
 
 
