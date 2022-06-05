@@ -316,6 +316,8 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-275.H指数II",
                             "/algorithm/leetcode/leetcode-279.完全平方数",
                             "/algorithm/leetcode/leetcode-282.给表达式添加运算符",
+                            "/algorithm/leetcode/leetcode-287.寻找重复数",
+                            "/algorithm/leetcode/leetcode-289.生命游戏",
                             "/algorithm/leetcode/leetcode-290.单词规律",
                             "/algorithm/leetcode/leetcode-292.Nim游戏",
                             "/algorithm/leetcode/leetcode-316.去除重复字母",
