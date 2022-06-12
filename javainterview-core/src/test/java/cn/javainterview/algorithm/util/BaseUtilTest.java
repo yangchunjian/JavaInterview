@@ -6,6 +6,13 @@ package cn.javainterview.algorithm.util;
  *
  */
 public class BaseUtilTest {
-	
 
+    public static void main(String[] args) {
+        String i = "";
+
+//        i.startsWith();
+//        i.substring();
+
+//        Integer.parseInt()
+    }
 }
