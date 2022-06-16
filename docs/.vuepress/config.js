@@ -353,6 +353,7 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-436.寻找右区间",
                             "/algorithm/leetcode/leetcode-437.路径总和III",
                             "/algorithm/leetcode/leetcode-438.找到字符串中所有字母异位词",
+                            "/algorithm/leetcode/leetcode-440.字典序的第K小数字",
                             "/algorithm/leetcode/leetcode-442.数组中重复的数据",
                             "/algorithm/leetcode/leetcode-445.两数相加II",
                             "/algorithm/leetcode/leetcode-449.序列化和反序列化二叉搜索树",
