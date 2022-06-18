@@ -362,6 +362,8 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-445.两数相加II",
                             "/algorithm/leetcode/leetcode-449.序列化和反序列化二叉搜索树",
                             "/algorithm/leetcode/leetcode-451.根据字符出现频率排序",
+                            "/algorithm/leetcode/leetcode-452.用最少数量的箭引爆气球",
+                            "/algorithm/leetcode/leetcode-454.四数相加 II",
                             "/algorithm/leetcode/leetcode-461.汉明距离",
                             "/algorithm/leetcode/leetcode-478.在圆内随机生成点",
                             "/algorithm/leetcode/leetcode-482.密钥格式化",
