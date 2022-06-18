@@ -346,6 +346,7 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-380.O(1) 时间插入、删除和获取随机元素",
                             "/algorithm/leetcode/leetcode-381.O(1) 时间插入、删除和获取随机元素 - 允许重复",
                             "/algorithm/leetcode/leetcode-383.赎金信",
+                            "/algorithm/leetcode/leetcode-395.至少有 K 个重复字符的最长子串",
                             "/algorithm/leetcode/leetcode-404.左叶子之和",
                             "/algorithm/leetcode/leetcode-421.数组中两个数的最大异或值",
                             "/algorithm/leetcode/leetcode-423.从英文中重建数字",
