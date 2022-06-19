@@ -327,6 +327,8 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-306.累加数",
                             "/algorithm/leetcode/leetcode-307.区域和检索 - 数组可修改",
                             "/algorithm/leetcode/leetcode-316.去除重复字母",
+                            "/algorithm/leetcode/leetcode-318.最大单词长度乘积",
+                            "/algorithm/leetcode/leetcode-321.拼接最大数",
                             "/algorithm/leetcode/leetcode-322.零钱兑换",
                             "/algorithm/leetcode/leetcode-324.摆动排序 II",
                             "/algorithm/leetcode/leetcode-334.递增的三元子序列",
