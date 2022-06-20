@@ -405,8 +405,10 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-1315.祖父节点值为偶数的节点和",
                             "/algorithm/leetcode/leetcode-1339.分裂二叉树的最大乘积",
                             "/algorithm/leetcode/leetcode-1361.验证二叉树",
+                            "/algorithm/leetcode/leetcode-1362.最接近的因数",
                             "/algorithm/leetcode/leetcode-1367.二叉树中的列表",
                             "/algorithm/leetcode/leetcode-1372.二叉树中的最长交错路径",
+                            "/algorithm/leetcode/leetcode-1376.通知所有员工所需的时间",
                             "/algorithm/leetcode/leetcode-1448.统计二叉树中好节点的数目",
                             "/algorithm/leetcode/leetcode-1530.好叶子节点对的数量",
                         ]
