@@ -403,6 +403,8 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-1361.验证二叉树",
                             "/algorithm/leetcode/leetcode-1367.二叉树中的列表",
                             "/algorithm/leetcode/leetcode-1372.二叉树中的最长交错路径",
+                            "/algorithm/leetcode/leetcode-1448.统计二叉树中好节点的数目",
+                            "/algorithm/leetcode/leetcode-1530.好叶子节点对的数量",
                         ]
                     },
                     {
