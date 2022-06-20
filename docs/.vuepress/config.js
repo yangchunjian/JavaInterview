@@ -248,6 +248,10 @@ module.exports = {
                             "/sourcecode/netty/netty_4",
                             "/sourcecode/netty/netty_5",
                             "/sourcecode/netty/netty_6",
+                            "/sourcecode/netty/netty_7",
+                            "/sourcecode/netty/netty_8",
+                            "/sourcecode/netty/netty_9",
+                            "/sourcecode/netty/netty_10",
                         ]
                     },
                     {
