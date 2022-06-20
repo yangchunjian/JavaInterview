@@ -25,7 +25,7 @@ author:
 示例 1：
 
  
-![](../../../media/pictures/leetcode/e1.png)
+![](../../../media/pictures/leetcode/e1.jpeg)
 
 
 
@@ -34,7 +34,7 @@ author:
     解释：树的叶节点是 3 和 4 ，它们之间的最短路径的长度是 3 。这是唯一的好叶子节点对。
 示例 2：
 
-![](../../../media/pictures/leetcode/e2.png)
+![](../../../media/pictures/leetcode/e2.jpeg)
 
 
     输入：root = [1,2,3,4,5,6,7], distance = 3
