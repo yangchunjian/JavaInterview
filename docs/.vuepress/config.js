@@ -356,6 +356,7 @@ module.exports = {
                             "/algorithm/leetcode/leetcode-384.打乱数组",
                             "/algorithm/leetcode/leetcode-386.字典序排数",
                             "/algorithm/leetcode/leetcode-388.文件的最长绝对路径",
+                            "/algorithm/leetcode/leetcode-390.消除游戏",
                             "/algorithm/leetcode/leetcode-395.至少有 K 个重复字符的最长子串",
                             "/algorithm/leetcode/leetcode-404.左叶子之和",
                             "/algorithm/leetcode/leetcode-421.数组中两个数的最大异或值",
