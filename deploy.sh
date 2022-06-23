@@ -17,8 +17,8 @@ if [ -z "$GITHUB_TOKEN" ]; then
 else
   msg='来自github actions的自动部署'
   githubUrl=https://yangchunjian:${GITHUB_TOKEN}@github.com/yangchunjian/JavaInterview.git
-  git config --global user.email "1091938307@qq.com"
   git config --global user.name "JavaInterview.cn"
+  git config --global user.email "1091938307@qq.com"
 fi
 git init
 git add -A
