@@ -10,7 +10,7 @@ const urlsRoot = path.join(__dirname, '..', 'urls.txt'); // 百度链接推送�
 const DOMAIN = process.argv.splice(2)[0]; // 获取命令行传入的参数
 
 if (!DOMAIN) {
-  console.log(chalk.red('node utils/baiduPush.js https://wggz.top'))
+  console.log(chalk.red('node utils/baiduPush.js https://javainterview.cn'))
   return
 }
 
