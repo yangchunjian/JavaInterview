@@ -12,9 +12,10 @@ cd docs/.vuepress/dist
 # deploy to github
 echo 'javainterview.cn' > CNAME
 if [ -z "$GITHUB_TOKEN" ]; then
-  msg='deploy' ${GITHUB_TOKEN}
-  echo ${msg}
-  githubUrl=git@github.com:yangchunjian/JavaInterview.git
+  msg='deploy'
+  echo ${msg} ${GITHUB_TOKEN}
+  #githubUrl=git@github.com:yangchunjian/JavaInterview.git
+  githubUrl=https://${GITHUB_TOKEN}@github.com/yangchunjian/JavaInterview.git
   echo ${msg} "end"
 else
   msg='来自github actions的自动部署'
