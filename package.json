@@ -25,7 +25,10 @@
     "docs:build": "vuepress build docs",
     "deploy": "bash deploy.sh",
     "baiduPush": "node utils/baiduPush.js https://javainterview.cn && bash baiduPush.sh",
-    "editFm": "node utils/editFrontmatter.js"
+    "editFm": "node utils/editFrontmatter.js",
+    "publish": "cd theme-vdoing && npm publish && cd ../ && npm run updateTheme",
+    "updateTheme": "npm uninstall vuepress-theme-vdoing && rm -rf node_modules && npm i && npm i vuepress-theme-vdoing -D"
+
   },
   "dependencies": {
     "busuanzi.pure.js": "^1.0.3",
