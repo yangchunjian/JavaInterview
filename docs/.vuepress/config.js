@@ -31,6 +31,7 @@ module.exports = {
     ],
     compact: false,
     plugins: [
+        [require('./plugins/read')], // 阅读时间插件
         [
             'copyright',
             {
