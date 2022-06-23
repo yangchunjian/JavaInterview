@@ -18,6 +18,9 @@
     "vuepress-theme-vdoing": "^1.12.3"
   },
   "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "deploy": "bash deploy.sh",
