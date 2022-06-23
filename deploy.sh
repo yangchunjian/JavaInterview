@@ -27,7 +27,9 @@ git config --global user.email "1091938307@qq.com"
 git init
 git add -A
 git commit -m "${msg}"
-git push -f $githubUrl master:gh-pages # 推送到github
+echo "start githubURL" ${githubUrl}
+git push -f $githubUrl main:gh-pages # 推送到github
+#git push -f $githubUrl master:gh-pages # 推送到github
 
 # deploy to coding
 # echo 'masongsong.cn' > CNAME  # 自定义域名
