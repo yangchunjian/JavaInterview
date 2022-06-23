@@ -19,7 +19,10 @@
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh",
+    "baiduPush": "node utils/baiduPush.js https://javainterview.cn && bash baiduPush.sh",
+    "editFm": "node utils/editFrontmatter.js"
   },
   "dependencies": {
     "busuanzi.pure.js": "^1.0.3",
