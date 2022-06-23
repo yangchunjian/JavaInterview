@@ -12,13 +12,17 @@ cd docs/.vuepress/dist
 # deploy to github
 echo 'javainterview.cn' > CNAME
 if [ -z "$GITHUB_TOKEN" ]; then
-  msg='deploy'
+  msg='deploy' ${GITHUB_TOKEN}
+  echo ${msg}
   githubUrl=git@github.com:yangchunjian/JavaInterview.git
+  echo ${msg} "end"
 else
   msg='来自github actions的自动部署'
+  echo ${msg} ${GITHUB_TOKEN}
   githubUrl=https://yangchunjian:${GITHUB_TOKEN}@github.com/yangchunjian/JavaInterview.git
   git config --global user.name "yangchunjian"
   git config --global user.email "1091938307@qq.com"
+  echo ${msg} "end"
 fi
 git init
 git add -A
