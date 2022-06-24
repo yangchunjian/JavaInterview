@@ -2,7 +2,16 @@
 module.exports = [
   // 本地插件
   // [require('../plugins/read')], // 阅读时间插件
-  ['@vuepress/medium-zoom'],//图片缩放
+  [
+    'vuepress-plugin-zooming', // 放大图片
+    {
+      selector: '.theme-vdoing-content img:not(.no-zoom)', // 排除class是no-zoom的图片
+      options: {
+        bgColor: 'rgba(0,0,0,0.6)',
+      },
+    },
+  ],
+  // ['@vuepress/medium-zoom'],//图片缩放
   // 阅读时间插件
   ['vuepress-plugin-reading-time'],
   //   [
