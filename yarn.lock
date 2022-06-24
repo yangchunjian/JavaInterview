@@ -10846,6 +10846,11 @@ vuepress-plugin-reading-progress@^1.0.10:
   resolved "https://registry.npmmirror.com/vuepress-plugin-reading-progress/-/vuepress-plugin-reading-progress-1.0.10.tgz"
   integrity sha512-7OxcjNEDf9gqFTns0YnXrqPnTRlX6wvxWFr7D8tlfyMPpsZwJkh/MkJveRrEaKcU0gk8QGmPHnXLAZ3soTThVg==
 
+vuepress-plugin-reading-time1@^1.31.0-beta.1:
+  version "1.31.0-beta.1"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-reading-time1/-/vuepress-plugin-reading-time1-1.31.0-beta.1.tgz#fb54edea418678fbc5413a96c6d7a232f7588684"
+  integrity sha512-GDlcKOP6X2k0l6J8FNyln/SxgSIS+7o212lXNNM9zrW1z6ZvC6YPWDrhqPA9gX1l6IPEp9+X6gZ5ShFR+aNxpw==
+
 vuepress-plugin-sitemap@^2.3.1:
   version "2.3.1"
   resolved "https://registry.npmmirror.com/vuepress-plugin-sitemap/-/vuepress-plugin-sitemap-2.3.1.tgz#51298aca77a5de96396fdbd1103e1637dd61ae6a"
