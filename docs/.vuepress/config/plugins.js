@@ -2,6 +2,7 @@
 module.exports = [
   // 本地插件
   // [require('../plugins/read')], // 阅读时间插件
+  ['@vuepress/medium-zoom'],//图片缩放
   // 阅读时间插件
   ['vuepress-plugin-reading-time'],
   //   [
