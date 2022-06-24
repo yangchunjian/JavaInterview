@@ -12,13 +12,6 @@ module.exports = {
     name: 'JavaInterview.cn', // 必需
     link: 'https://JavaInterview.cn', // 可选的
   },
-  /*tags:   {
-   name : 'Java'
-   },*/
-  /*docsDir: 'docs', // 编辑的文件夹
-   editLinks: true, // 启用编辑
-   editLinkText: '编辑此页',*/
-
   lastUpdated: '上次编辑于',
   // vssueConfig: {
   //     platform: 'github',
@@ -32,22 +25,6 @@ module.exports = {
   // wordsPerMinute: 100, // 每分钟阅读的字数 默认是 300
   // isShowReadCount: true, // 是否开启阅读量统计
 
-  nav: [
-    {text: '首页', link: '/'},
-    {text: '必读', link: '/read/'},
-    {text: '分类', link: '/categories/'},
-    {text: '标签', link: '/tags/'},
-    {text: '归档', link: '/archives/'},
-    {
-      text: '作者',
-      items: [
-        {text: 'CSDN', link: 'https://yangchunjian.blog.csdn.net'},
-        {text: '文档箱', link: 'https://yangchunjian.com'},
-        {text: '微信号', link: 'https://www.yangchunjian.com/docbook/imgs/dearlocation.jpeg'},
-        {text: '公众号', link: 'https://www.yangchunjian.com/docbook/imgs/qrcode_for_gh_8756901e5b12_344.jpg'}
-      ]
-    }
-  ],
   sidebar: [
     {title: '必读', path: '/read/read'},
 
