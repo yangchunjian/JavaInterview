@@ -8925,6 +8925,11 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
+reading-time@1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/reading-time/-/reading-time-1.1.3.tgz#47de143074245be6f65e2b3c9b63b78d9ab8ec7a"
+  integrity sha512-SYy+cuoGy1MTLjIbgwTZ+DkDiDq/dE1OnqBQFYytXgNWRZROuqtBdu7HoJ+HbGMnoAinOHnHnqbEUYnpSho5aA==
+
 reduce@^1.0.1:
   version "1.0.2"
   resolved "https://registry.npmmirror.com/reduce/-/reduce-1.0.2.tgz"
@@ -10850,6 +10855,13 @@ vuepress-plugin-reading-time1@^1.31.0-beta.1:
   version "1.31.0-beta.1"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-reading-time1/-/vuepress-plugin-reading-time1-1.31.0-beta.1.tgz#fb54edea418678fbc5413a96c6d7a232f7588684"
   integrity sha512-GDlcKOP6X2k0l6J8FNyln/SxgSIS+7o212lXNNM9zrW1z6ZvC6YPWDrhqPA9gX1l6IPEp9+X6gZ5ShFR+aNxpw==
+
+vuepress-plugin-reading-time@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-reading-time/-/vuepress-plugin-reading-time-0.1.1.tgz#3ea3dcded424a00c1d5175a50af8d5694899f1ea"
+  integrity sha512-j94utmn4nojYWyOVqfUF3eLWOMTAmZpR0G1gUlmast6KFu/VLevJvxFgJfa6DVaSlTpUH1DMLYspcjLv5pHhDw==
+  dependencies:
+    reading-time "1.1.3"
 
 vuepress-plugin-sitemap@^2.3.1:
   version "2.3.1"

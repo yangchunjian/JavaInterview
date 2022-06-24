@@ -3,12 +3,13 @@ module.exports = [
   // 本地插件
   // [require('../plugins/read')], // 阅读时间插件
   // 阅读时间插件
-  [
-    "reading-time1",
-    {
-      // your options
-    },
-  ],
+  ['vuepress-plugin-reading-time'],
+  //   [
+  //   "reading-time1",
+  //   {
+  //     // your options
+  //   },
+  // ],
   [
     'copyright',
     {
