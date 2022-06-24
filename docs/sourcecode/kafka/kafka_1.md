@@ -1,13 +1,15 @@
 ---
 title: Kafka代码写法总结1
-categories:
+categories: 
   - sourcecode
   - kafka
-tags:
+tags: 
   - Java
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+date: 2022-06-08 09:00:58
+permalink: /pages/2f686f/
 ---
 
 ## 总结1
