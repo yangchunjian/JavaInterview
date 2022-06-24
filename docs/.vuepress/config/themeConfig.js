@@ -33,7 +33,7 @@ module.exports = {
     // '/img/bg/2.jpg',
     // '/img/bg/4.jpg',
     // '/img/5.jpg',
-    '/img/6.jpg',
+    '/img/6.jpeg',
     // '/img/bg/bg7.jpg',
   ], // body背景大图，默认无。 单张图片 String || 多张图片 Array, 多张图片时每隔15秒换一张。
   bodyBgImgOpacity: 1, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
