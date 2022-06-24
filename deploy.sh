@@ -23,14 +23,8 @@ git add -A
 git commit -m 'deploy'
 
 ## 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:yangchunjian/JavaInterview.git master:gh-pages
+git push -f git@github.com:yangchunjian/JavaInterview.git main:gh-pages # 推送到github
 
 
-cd -
-
-git init
-git add -A
-git commit -m 'deploy'
-
-git push -f git@github.com:yangchunjian/JavaInterview.git master:master
-git push -f git@github.com:yangchunjian/JavaInterview.git main:main
+cd - # 退回开始所在目录
+rm -rf docs/.vuepress/dist
