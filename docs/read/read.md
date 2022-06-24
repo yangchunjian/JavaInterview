@@ -48,7 +48,7 @@ JavaInterview的目标贴合面试重难点、高频点、底层源码、算法�
 <dependency>
     <groupId>cn.javainterview</groupId>
     <artifactId>javainterview-all</artifactId>
-    <version>1.0.7</version>
+    <version>1.0.8</version>
 </dependency>
 ```
 
