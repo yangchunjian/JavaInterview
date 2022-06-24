@@ -28,6 +28,14 @@ module.exports = {
   // isShowReadTime: true, // 是否展示阅读时间
   // wordsPerMinute: 100, // 每分钟阅读的字数 默认是 300
   // isShowReadCount: true, // 是否开启阅读量统计
+  bodyBgImg: [
+    // '/img/bg/1.jpg',
+    // '/img/bg/2.jpg',
+    // '/img/bg/4.jpg',
+    '/img/5.jpg',
+    // '/img/bg/bg7.jpg',
+  ], // body背景大图，默认无。 单张图片 String || 多张图片 Array, 多张图片时每隔15秒换一张。
+  bodyBgImgOpacity: 1, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
 
   sidebar: [
     {title: '必读', path: '/read/read'},
