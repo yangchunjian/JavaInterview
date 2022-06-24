@@ -251,6 +251,7 @@ module.exports = {
             "/algorithm/leetcode/leetcode-322.零钱兑换",
             "/algorithm/leetcode/leetcode-324.摆动排序 II",
             "/algorithm/leetcode/leetcode-334.递增的三元子序列",
+            "/algorithm/leetcode/leetcode-343.整数拆分",
             "/algorithm/leetcode/leetcode-347.前 K 个高频元素",
             "/algorithm/leetcode/leetcode-349.两个数组的交集",
             "/algorithm/leetcode/leetcode-350.两个数组的交集 II",
