@@ -28,7 +28,7 @@ git init
 git add -A
 git commit -m "${msg}"
 echo "start githubURL" ${githubUrl}
-git push -f $githubUrl main:gh-pages # 推送到github
+git push -f $githubUrl master:gh-pages # 推送到github
 #git push -f $githubUrl master:gh-pages # 推送到github
 
 # deploy to coding
