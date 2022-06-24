@@ -6,6 +6,7 @@
   "license": "MIT",
   "author": "春建",
   "devDependencies": {
+    "@vuepress/plugin-last-updated": "^1.9.7",
     "vuepress": "^1.9.7",
     "vuepress-plugin-baidu-autopush": "^1.0.1",
     "vuepress-plugin-baidu-tongji": "^1.0.1",
@@ -20,16 +21,15 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "deploy": "bash deploy.sh",
     "baiduPush": "node utils/baiduPush.js https://javainterview.cn && bash baiduPush.sh",
     "editFm": "node utils/editFrontmatter.js"
-
   },
   "dependencies": {
     "busuanzi.pure.js": "^1.0.3",
+    "dayjs": "^1.11.3",
     "vuepress-plugin-code-copy": "^1.0.6",
     "vuepress-plugin-reading-progress": "^1.0.10",
     "vuepress-theme-vue": "^1.1.1"

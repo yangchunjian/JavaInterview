@@ -55,14 +55,14 @@ module.exports = [
     isPlain: true,
     icon: 'https://javainterview.cn/assets/icon/logo200x100.png',
   }],
-  // [
-  //   '@vuepress/last-updated', // "上次更新"时间格式
-  //   {
-  //     transformer: (timestamp, lang) => {
-  //       const dayjs = require('dayjs') // https://day.js.org/
-  //       return dayjs(timestamp).format('YYYY/MM/DD, HH:mm:ss')
-  //     },
-  //   },
-  // ],
+  [
+    '@vuepress/last-updated', // "上次更新"时间格式
+    {
+      transformer: (timestamp, lang) => {
+        const dayjs = require('dayjs') // https://day.js.org/
+        return dayjs(timestamp).format('YYYY/MM/DD, HH:mm:ss')
+      },
+    },
+  ],
 
 ]
