@@ -457,6 +457,5 @@ module.exports = {
 
     titleTag: 'Java',
   },
-  tags: ["Java"],
   // htmlModules // 插入hmtl(广告)模块
 }
