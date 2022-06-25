@@ -48,6 +48,11 @@ import java.security.cert.X509Certificate;
 public class InstallCert {
 
     public static void main(String[] args) throws Exception {
+        args = new String[]{"repo.maven.apache.org"};
+
+        main0(args);
+    }
+    public static void main0(String[] args) throws Exception {
         String host;
         int port;
         char[] passphrase;
