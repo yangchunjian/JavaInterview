@@ -6,6 +6,7 @@ const nav = require('./themeConfig/nav.js');
 module.exports = {
   nav,
   logo: '/assets/icon/logo200x100.png',
+  hostname: "https://javainterview.cn/",
   sidebar: 'auto', //  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义
   // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
   author: {
@@ -21,6 +22,7 @@ module.exports = {
   //     clientSecret: '506208acc8a176516aab50d7347e5cad9db66dcc',
   // },
   //
+  repo: "https://github.com/yangchunjian/JavaInterview",
   docsDir: 'docs', // 编辑的文件夹
   editLinks: true, // 启用编辑
   docsBranch: 'main', // 编辑的文件所在分支，默认master。 注意：如果你的分支是main则修改为main
