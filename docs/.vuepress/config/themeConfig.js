@@ -454,9 +454,9 @@ module.exports = {
       name: 'JavaInterview.cn', // 必需
       link: 'https://JavaInterview.cn', // 可选的
     },
-    tags: ["Java"],
+
     titleTag: 'Java',
   },
-
+  tags: ["Java"],
   // htmlModules // 插入hmtl(广告)模块
 }
