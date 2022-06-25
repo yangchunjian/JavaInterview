@@ -6,7 +6,7 @@ categories:
   - algorithm
   - leetcode
 tags:
-  - 
+  - Java
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
@@ -48,7 +48,7 @@ author:
 
 ## 思路
 
-设定两个变量a，b=Integer.MAX_VALUE
+设定两个变量a，b=Integer.MAX_VALUE，然后交换赋值
 
 ## 解法
 ```java
