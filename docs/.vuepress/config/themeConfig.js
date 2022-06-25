@@ -57,7 +57,7 @@ module.exports = {
   // bodyBgImgOpacity: 1, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
 
   sidebar: [
-    {title: '必读', path: '/read/read'},
+    {title: '指南', path: '/read/read'},
 
     {
       title: '总结',// 必要的

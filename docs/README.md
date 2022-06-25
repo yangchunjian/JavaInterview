@@ -19,7 +19,7 @@ features: ## 可选的
 #    url: https://www.yangchunjian.com/
     imgUrl: /assets/icon/logo_title50x50.png
 
-#  - title: 必读
+#  - title: 指南
 #    details: 必读总结
 #    link: /read/ ## 可选
 #    imgUrl: /assets/icon/logo_title50x50.png
