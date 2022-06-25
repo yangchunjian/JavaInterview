@@ -21,9 +21,9 @@ module.exports = {
   //     clientSecret: '506208acc8a176516aab50d7347e5cad9db66dcc',
   // },
   //
-  // docsDir: 'docs', // 编辑的文件夹
-  // editLinks: true, // 启用编辑
-  // editLinkText: '编辑',
+  docsDir: 'docs', // 编辑的文件夹
+  editLinks: true, // 启用编辑
+  editLinkText: '编辑',
   //
   // isShowReadTime: true, // 是否展示阅读时间
   // wordsPerMinute: 100, // 每分钟阅读的字数 默认是 300
