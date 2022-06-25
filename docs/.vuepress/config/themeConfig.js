@@ -27,19 +27,20 @@ module.exports = {
   editLinks: true, // 启用编辑
   docsBranch: 'main', // 编辑的文件所在分支，默认master。 注意：如果你的分支是main则修改为main
   editLinkText: '编辑此页',
-  tags: 'Java',
+  // tags: 'Java',
 
   // 博客配置
-  blogConfig: {
-    category: {
-      location: 2, // 在导航栏菜单中所占的位置，默认2
-      text: "JavaInterview", // 默认文案 “分类”
-    },
-    tag: {
-      location: 4, // 在导航栏菜单中所占的位置，默认3
-      text: "Java", // 默认文案 “标签”
-    },
+  category: {
+    // location: 2, // 在导航栏菜单中所占的位置，默认2
+    text: "JavaInterview", // 默认文案 “分类”
   },
+  tag: {
+    // location: 4, // 在导航栏菜单中所占的位置，默认3
+    text: "Java", // 默认文案 “标签”
+  },
+  // blogConfig: {
+  //
+  // },
 
   //
   // isShowReadTime: true, // 是否展示阅读时间
