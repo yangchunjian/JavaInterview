@@ -57,7 +57,7 @@ JavaInterview的目标贴合面试重难点、高频点、底层源码、算法�
 
 ### 🍐Gradle
 ```
-implementation 'cn.javainterview:javainterview-all:1.0.7'
+implementation 'cn.javainterview:javainterview-all:1.0.8'
 ```
 
 ### 📥下载
