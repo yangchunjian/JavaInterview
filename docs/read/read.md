@@ -73,10 +73,10 @@ implementation 'cn.javainterview:javainterview-all:1.0.8'
 
 干货微信公众号**JavaInterviewCn**，推荐一波~
 
-![我的公众号](/img/qrcode_for_gh_82720717e427_344.jpg)
+![我的公众号](https://javainterview.cn/img/qrcode_for_gh_82720717e427_344.jpg)
 
 ## 联系我
 
 交流/加群/互看朋友圈，欢迎添加我的微信（备注“JavaInterview”即可）。
 
-![](/img/weixin.jpeg)
+![](https://javainterview.cn/img/weixin.jpeg)
