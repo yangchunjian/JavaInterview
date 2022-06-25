@@ -48,7 +48,8 @@ import java.security.cert.X509Certificate;
 public class InstallCert {
 
     public static void main(String[] args) throws Exception {
-        args = new String[]{"repo.maven.apache.org"};
+        args = new String[]{"s01.oss.sonatype.org"};
+//        args = new String[]{"repo.maven.apache.org"};
 
         main0(args);
     }
@@ -67,12 +68,12 @@ public class InstallCert {
             return;
         }
 
-        File file = new File("jssecacerts_sso");
+        File file = new File("jssecacerts");
         if (file.isFile() == false) {
             char SEP = File.separatorChar;
             File dir = new File(System.getProperty("java.home") + SEP + "lib"
                     + SEP + "security");
-            file = new File(dir, "jssecacerts_sso");
+            file = new File(dir, "jssecacerts");
             if (file.isFile() == false) {
                 file = new File(dir, "cacerts");
             }
@@ -149,7 +150,7 @@ public class InstallCert {
         String alias = host + "-" + (k + 1);
         ks.setCertificateEntry(alias, cert);
 
-        OutputStream out = new FileOutputStream("jssecacerts_sso");
+        OutputStream out = new FileOutputStream("jssecacerts");
         ks.store(out, passphrase);
         out.close();
 
@@ -157,7 +158,7 @@ public class InstallCert {
         System.out.println(cert);
         System.out.println();
         System.out
-                .println("Added certificate to keystore 'jssecacerts_sso' using alias '"
+                .println("Added certificate to keystore 'jssecacerts' using alias '"
                         + alias + "'");
     }
 
