@@ -18,7 +18,7 @@ titleTag: Java
 - **[《JavaInterview》](../README.md)** : JavaInterview！
 
 ## 📚简介
-JavaInterview是一个「Java面试+Java学习」工具类库。提供核心、源码、算法等JAR。提高面试和学习效率。
+JavaInterview是一个「Java面试+Java学习」工具类库。提供核心、源码、算法等JAR。提高面试和学习效率，对Java从业者提供便利。
 
 ### 🎁名称
 
@@ -40,6 +40,8 @@ JavaInterview的目标贴合面试重难点、高频点、底层源码、算法�
 | [JavaInterview-core](https://javainterview.cn/interview/core/read)         |     核心                                             |
 | [JavaInterview-code](https://javainterview.cn/interview/code/read)         |     源码                                              |
 | [JavaInterview-algorithm](https://javainterview.cn/interview/algorithm/read)    |     算法                                            |
+
+组件会不定期更新，后期如果有新增模块，也敬请关注。
 
 
 ## 📦安装
@@ -71,7 +73,7 @@ implementation 'cn.javainterview:javainterview-all:1.0.8'
 
 ## 公众号
 
-干货微信公众号**JavaInterviewCn**，推荐一波~
+微信公众号**JavaInterviewCn**，会发布一些技术、面经、职场等经验干货，欢迎关注，推荐一波~
 
 ![我的公众号](https://javainterview.cn/img/qrcode_for_gh_82720717e427_344.jpg)
 
