@@ -23,6 +23,7 @@ module.exports = {
   //
   docsDir: 'docs', // 编辑的文件夹
   editLinks: true, // 启用编辑
+  docsBranch: 'main', // 编辑的文件所在分支，默认master。 注意：如果你的分支是main则修改为main
   editLinkText: '编辑',
   //
   // isShowReadTime: true, // 是否展示阅读时间
