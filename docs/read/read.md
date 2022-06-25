@@ -64,7 +64,7 @@ implementation 'cn.javainterview:javainterview-all:1.0.7'
 
 点击以下链接，下载`javainterview-all-X.X.X.jar`即可：
 
-- [Maven中央库](https://repo1.maven.org/maven2/cn/javainterview/javainterview-all/1.0.7/)
+- [Maven中央库](https://repo1.maven.org/maven2/cn/javainterview/javainterview-all/1.0.8/)
 
 
 
