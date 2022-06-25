@@ -1,5 +1,5 @@
 ---
-title: 整数拆分4
+title: 整数拆分
 date: 2022-06-23 19:52:55
 permalink: /pages/4476f3/
 editLink: true
