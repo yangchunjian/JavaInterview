@@ -10,6 +10,8 @@ author:
 categories: 
   - java
   - 9
+tag: 
+  text: java
 ---
 
 

@@ -2,14 +2,16 @@
 title: 最长同值路径
 date: 2022-05-12 00:10:16
 permalink: /pages/a1ad32/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

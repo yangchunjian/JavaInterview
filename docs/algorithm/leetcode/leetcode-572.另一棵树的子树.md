@@ -1,14 +1,16 @@
 ---
-title:  另一棵树的子树
+title: 另一棵树的子树
 date: 2022-04-23 15:30:09
 permalink: /pages/53f70d/
-categories:
+categories: 
   - algorithm
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

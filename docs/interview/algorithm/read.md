@@ -2,14 +2,16 @@
 title: JavaInterview算法
 date: 2022-05-15 00:41:21
 permalink: /interview/algorithm/read
-categories:
+categories: 
   - interview
   - algorithm
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 ## javainterview-algorithm

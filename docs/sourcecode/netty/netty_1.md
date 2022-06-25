@@ -2,14 +2,16 @@
 title: Netty代码写法总结1
 date: 2022-05-09 14:12:45
 permalink: /pages/a1918b/
-categories:
+categories: 
   - sourcecode
   - netty
-tags:
+tags: 
   - Java
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 ## 总结1

@@ -2,14 +2,16 @@
 title: 二叉树中的列表
 date: 2022-05-19 23:25:02
 permalink: /pages/4fe6a7/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

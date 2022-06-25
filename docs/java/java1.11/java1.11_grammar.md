@@ -10,6 +10,8 @@ categories:
   - 11
 tags: 
   - Java
+tag: 
+  text: java
 ---
 
 Java 11是自Java 8以来的又一个LTS版本，是目前全球使用最多的LTS版本之一。下边我们看一下JAVA11的新特性

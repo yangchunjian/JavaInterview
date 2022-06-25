@@ -2,14 +2,16 @@
 title: 买卖股票的最佳时机IV
 date: 2022-05-23 14:39:58
 permalink: /pages/e01068/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
+tags: 
   - Java
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

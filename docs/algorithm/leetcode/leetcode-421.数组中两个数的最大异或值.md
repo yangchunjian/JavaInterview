@@ -2,14 +2,16 @@
 title: 数组中两个数的最大异或值
 date: 2022-06-15 23:59:28
 permalink: /pages/9f58b6/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 ## 题目

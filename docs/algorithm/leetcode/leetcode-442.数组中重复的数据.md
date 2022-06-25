@@ -2,14 +2,16 @@
 title: 数组中重复的数据
 date: 2022-06-15 23:35:10
 permalink: /pages/8fc0bf/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 ## 题目

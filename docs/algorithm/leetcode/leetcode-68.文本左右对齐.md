@@ -2,14 +2,16 @@
 title: 文本左右对齐
 date: 2022-05-21 12:57:49
 permalink: /pages/825c0b/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

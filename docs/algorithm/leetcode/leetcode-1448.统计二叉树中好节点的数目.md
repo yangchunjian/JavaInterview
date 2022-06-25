@@ -2,14 +2,16 @@
 title: 统计二叉树中好节点的数目
 date: 2022-06-20 09:16:58
 permalink: /pages/307760/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 ## 题目

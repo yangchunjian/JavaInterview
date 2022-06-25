@@ -2,14 +2,16 @@
 title: 二叉树的完全性检验
 date: 2022-05-14 22:02:35
 permalink: /pages/d28c4f/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
+tags: 
   - Java
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

@@ -2,14 +2,16 @@
 title: 字典序排数
 date: 2022-06-21 23:31:21
 permalink: /pages/d4c623/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 ## 题目

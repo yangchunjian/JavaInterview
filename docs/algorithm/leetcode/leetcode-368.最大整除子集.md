@@ -2,14 +2,16 @@
 title: 最大整除子集
 date: 2022-06-16 00:09:44
 permalink: /pages/e0098b/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 ## 题目

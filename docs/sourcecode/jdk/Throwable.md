@@ -2,13 +2,15 @@
 title: java.lang.Throwable
 date: 2022-04-24 20:26:18
 permalink: /pages/034f5f/
-categories:
+categories: 
   - sourcecode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

@@ -2,14 +2,16 @@
 title: 累加数
 date: 2022-06-16 00:17:21
 permalink: /pages/720c0b/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

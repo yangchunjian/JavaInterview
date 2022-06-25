@@ -2,14 +2,16 @@
 title: 单词规律
 date: 2022-06-02 23:45:13
 permalink: /pages/d394c0/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

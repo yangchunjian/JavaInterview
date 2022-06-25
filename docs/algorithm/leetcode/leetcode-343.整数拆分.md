@@ -3,14 +3,16 @@ title: 整数拆分
 date: 2022-06-23 19:52:55
 permalink: /pages/4476f3/
 editLink: true
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 ## 题目

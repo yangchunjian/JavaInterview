@@ -2,14 +2,16 @@
 title: 修剪二叉搜索树
 date: 2022-06-23 09:29:34
 permalink: /pages/f785c9/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

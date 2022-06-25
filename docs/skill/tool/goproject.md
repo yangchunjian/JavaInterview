@@ -9,6 +9,8 @@ permalink: /pages/7c1903/
 categories: 
   - skill
   - tool
+tag: 
+  text: java
 ---
 
 ## 怎么配置

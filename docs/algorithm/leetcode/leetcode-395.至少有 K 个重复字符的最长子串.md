@@ -2,14 +2,16 @@
 title: 至少有 K 个重复字符的最长子串
 date: 2022-06-18 21:07:54
 permalink: /pages/00fab4/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 ## 题目

@@ -2,14 +2,16 @@
 title: 从先序遍历还原二叉树
 date: 2022-05-09 23:33:09
 permalink: /pages/6590c3/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
+tags: 
   - Java
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

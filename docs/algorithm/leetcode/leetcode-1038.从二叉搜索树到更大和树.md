@@ -2,14 +2,16 @@
 title: 从二叉搜索树到更大和树
 date: 2022-05-09 23:03:54
 permalink: /pages/d55e09/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
+tags: 
   - Java
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

@@ -2,14 +2,16 @@
 title: 生命游戏
 date: 2022-06-05 22:51:28
 permalink: /pages/1eb9b8/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

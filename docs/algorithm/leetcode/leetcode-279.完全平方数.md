@@ -2,14 +2,16 @@
 title: 完全平方数
 date: 2022-05-25 22:47:56
 permalink: /pages/df2ee3/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

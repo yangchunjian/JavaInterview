@@ -2,14 +2,16 @@
 title: 二叉树最大宽度
 date: 2022-05-15 21:40:32
 permalink: /pages/d84bc2/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
+tags: 
   - Java
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

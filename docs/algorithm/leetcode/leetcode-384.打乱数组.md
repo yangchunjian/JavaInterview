@@ -2,14 +2,16 @@
 title: 打乱数组
 date: 2022-06-21 23:21:58
 permalink: /pages/af3975/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 ## 题目

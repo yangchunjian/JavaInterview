@@ -2,14 +2,16 @@
 title: 132模式
 date: 2022-06-23 19:52:55
 permalink: /pages/89e1e4/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 ## 题目

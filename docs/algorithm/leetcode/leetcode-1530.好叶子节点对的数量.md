@@ -2,14 +2,16 @@
 title: 好叶子节点对的数量
 date: 2022-06-20 09:22:02
 permalink: /pages/5b7678/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 ## 题目

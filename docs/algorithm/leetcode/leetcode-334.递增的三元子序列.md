@@ -2,14 +2,16 @@
 title: 递增的三元子序列
 date: 2022-06-16 00:13:39
 permalink: /pages/df3d4a/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
+tags: 
   - Java
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

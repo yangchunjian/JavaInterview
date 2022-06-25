@@ -2,14 +2,16 @@
 title: 排列硬币
 date: 2022-06-17 22:31:25
 permalink: /pages/da241c/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

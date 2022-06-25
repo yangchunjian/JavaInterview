@@ -2,14 +2,16 @@
 title: 祖父节点值为偶数的节点和
 date: 2022-06-20 00:04:06
 permalink: /pages/cc7370/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

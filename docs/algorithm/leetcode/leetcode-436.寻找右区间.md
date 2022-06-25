@@ -2,14 +2,16 @@
 title: 寻找右区间
 date: 2022-06-16 23:37:18
 permalink: /pages/9c992d/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

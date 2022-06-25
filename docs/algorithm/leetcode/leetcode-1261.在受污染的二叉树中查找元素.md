@@ -2,14 +2,16 @@
 title: 在受污染的二叉树中查找元素
 date: 2022-05-16 22:51:27
 permalink: /pages/e64848/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

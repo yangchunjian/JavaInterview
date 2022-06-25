@@ -2,14 +2,16 @@
 title: O(1) 时间插入、删除和获取随机元素 - 允许重复
 date: 2022-06-17 09:20:12
 permalink: /pages/2955cb/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

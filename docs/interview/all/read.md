@@ -2,14 +2,16 @@
 title: JavaInterview所有
 date: 2022-05-15 00:41:30
 permalink: /interview/all/read
-categories:
+categories: 
   - interview
   - all
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 ## javainterview-all

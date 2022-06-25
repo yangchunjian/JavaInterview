@@ -2,14 +2,16 @@
 title: 摆动序列
 date: 2022-06-15 23:40:15
 permalink: /pages/81a741/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 ## 题目

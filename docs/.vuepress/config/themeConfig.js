@@ -30,14 +30,14 @@ module.exports = {
   // tags: 'Java',
 
   // 博客配置
-  category: {
-    // location: 2, // 在导航栏菜单中所占的位置，默认2
-    text: "JavaInterview", // 默认文案 “分类”
-  },
-  tag: {
-    // location: 4, // 在导航栏菜单中所占的位置，默认3
-    text: "Java", // 默认文案 “标签”
-  },
+  // category: {
+  //   // location: 2, // 在导航栏菜单中所占的位置，默认2
+  //   text: "JavaInterview", // 默认文案 “分类”
+  // },
+  // tag: {
+  //   // location: 4, // 在导航栏菜单中所占的位置，默认3
+  //   text: "Java", // 默认文案 “标签”
+  // },
   // blogConfig: {
   //
   // },
@@ -453,6 +453,9 @@ module.exports = {
     author: {
       name: 'JavaInterview.cn', // 必需
       link: 'https://JavaInterview.cn', // 可选的
+    },
+    tag:{
+      text: 'java'
     }
   },
 

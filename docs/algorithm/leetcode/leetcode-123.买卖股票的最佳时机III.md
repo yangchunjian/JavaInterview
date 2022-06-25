@@ -1,15 +1,17 @@
 ---
-title: 买卖股票的最佳时机III 
+title: 买卖股票的最佳时机III
 date: 2022-05-21 13:56:50
 permalink: /pages/412042/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 ## 题目

@@ -10,6 +10,8 @@ tags:
   - 适配器模式
 date: 2022-04-24 23:52:42
 permalink: /pages/806a85/
+tag: 
+  text: java
 ---
 
 

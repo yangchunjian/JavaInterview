@@ -2,14 +2,16 @@
 title: 水壶问题
 date: 2022-06-16 00:12:24
 permalink: /pages/e41601/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

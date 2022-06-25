@@ -2,14 +2,16 @@
 title: 二叉树寻路
 date: 2022-05-13 23:33:11
 permalink: /pages/e7b3a8/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

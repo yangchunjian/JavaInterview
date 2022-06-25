@@ -2,14 +2,16 @@
 title: 超级次方
 date: 2022-06-16 00:06:55
 permalink: /pages/858af1/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

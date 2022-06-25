@@ -2,14 +2,16 @@
 title: 验证二叉树
 date: 2022-05-19 23:15:03
 permalink: /pages/525b47/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

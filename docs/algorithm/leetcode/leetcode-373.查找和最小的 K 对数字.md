@@ -2,14 +2,16 @@
 title: 查找和最小的 K 对数字
 date: 2022-06-16 00:04:49
 permalink: /pages/eaed60/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 ## 题目

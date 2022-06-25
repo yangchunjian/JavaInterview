@@ -2,15 +2,17 @@
 title: xxljob配置等
 date: 2022-05-15 20:25:25
 permalink: /pages/e7fc7e/
-categories:
+categories: 
   - middleware
   - time
   - xxljob
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

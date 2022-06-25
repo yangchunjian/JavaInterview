@@ -2,14 +2,16 @@
 title: 字典序的第K小数字
 date: 2022-06-16 23:53:16
 permalink: /pages/1156cd/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 

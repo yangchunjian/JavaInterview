@@ -2,14 +2,16 @@
 title: 最大正方形
 date: 2022-05-24 17:08:26
 permalink: /pages/e3aa98/
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
+tags: 
   - Java
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
+tag: 
+  text: java
 ---
 
 ## 题目
