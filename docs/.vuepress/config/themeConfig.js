@@ -316,6 +316,7 @@ module.exports = {
             "/algorithm/leetcode/leetcode-482.密钥格式化",
             "/algorithm/leetcode/leetcode-485.最大连续 1 的个数",
             "/algorithm/leetcode/leetcode-508.出现次数最多的子树元素和",
+            "/algorithm/leetcode/leetcode-525.连续数组",
             "/algorithm/leetcode/leetcode-572.另一棵树的子树",
             "/algorithm/leetcode/leetcode-559.N叉树的最大深度",
             "/algorithm/leetcode/leetcode-563.二叉树的坡度",
