@@ -296,6 +296,8 @@ module.exports = {
             "/algorithm/leetcode/leetcode-396.旋转函数",
             "/algorithm/leetcode/leetcode-397.整数替换",
             "/algorithm/leetcode/leetcode-398.随机数索引",
+            "/algorithm/leetcode/leetcode-399.除法求值",
+            "/algorithm/leetcode/leetcode-400.第 N 位数字",
             "/algorithm/leetcode/leetcode-404.左叶子之和",
             "/algorithm/leetcode/leetcode-421.数组中两个数的最大异或值",
             "/algorithm/leetcode/leetcode-423.从英文中重建数字",
