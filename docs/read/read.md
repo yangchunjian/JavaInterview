@@ -28,7 +28,7 @@ JavaInterview = Java + Interview。
 
 寓意 = 学习扬帆起航 + 面试一帆风顺
 
-![](https://javainterview.cn//assets/icon/logo200x100.svg)
+![](https://javainterview.cn//assets/icon/logo200x100.png)
 
 ### 🍺目标
 
