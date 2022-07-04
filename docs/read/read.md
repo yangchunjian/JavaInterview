@@ -24,6 +24,9 @@ JavaInterview是一个「Java面试+Java学习」工具类库。提供核心、�
 
 JavaInterview = Java + Interview。
 
+### 🎁LOGO
+
+寓意 = 学习扬帆起航 + 面试一帆风顺
 
 ### 🍺目标
 
