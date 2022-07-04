@@ -155,6 +155,7 @@ module.exports = {
             "/sourcecode/jdk/jdk_1",
             "/sourcecode/jdk/jdk_2",
             "/sourcecode/jdk/jdk_3",
+            "/sourcecode/jdk/jdk_4",
             "/sourcecode/jdk/jdk1.8",
             "/sourcecode/jdk/ConcurrentHashMap",
             "/sourcecode/jdk/ThreadLocal",
