@@ -1,3 +1,17 @@
+---
+title: UTF-8编码验证
+date: 2022-06-29 23:09:53
+permalink: /pages/7c87e8/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 ## 题目
 
 给定一个表示数据的整数数组 data ，返回它是否为有效的 UTF-8 编码。

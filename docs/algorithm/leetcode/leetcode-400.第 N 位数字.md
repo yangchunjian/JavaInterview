@@ -1,3 +1,17 @@
+---
+title: 第 N 位数字
+date: 2022-06-30 23:15:17
+permalink: /pages/5c4b2c/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

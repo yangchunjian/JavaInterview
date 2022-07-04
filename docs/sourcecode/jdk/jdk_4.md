@@ -1,3 +1,17 @@
+---
+title: jdk_4
+date: 2022-06-27 14:11:15
+permalink: /pages/2b9c36/
+categories:
+  - sourcecode
+  - jdk
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 总结4
 
@@ -658,3 +672,46 @@ public interface JConsoleContext {
 }
 
 ```
+
+### 适配器类中增加Cache
+```java
+
+public class JUnit4TestAdapter implements Test, Filterable, Orderable, Describable {
+    private final Class<?> fNewTestClass;
+    private final Runner fRunner;
+    private final JUnit4TestAdapterCache fCache;
+
+    public JUnit4TestAdapter(Class<?> newTestClass) {
+        this(newTestClass, JUnit4TestAdapterCache.getDefault());
+    }
+
+    public JUnit4TestAdapter(Class<?> newTestClass, JUnit4TestAdapterCache cache) {
+        this.fCache = cache;
+        this.fNewTestClass = newTestClass;
+        this.fRunner = Request.classWithoutSuiteMethod(newTestClass).getRunner();
+    }
+
+    public int countTestCases() {
+        return this.fRunner.testCount();
+    }
+
+    public void run(TestResult result) {
+        this.fRunner.run(this.fCache.getNotifier(result, this));
+    }
+
+    public List<Test> getTests() {
+        return this.fCache.asTestList(this.getDescription());
+    }
+
+    public Class<?> getTestClass() {
+        return this.fNewTestClass;
+    }
+
+    public Description getDescription() {
+        Description description = this.fRunner.getDescription();
+        return this.removeIgnored(description);
+    }
+
+```
+
+### 

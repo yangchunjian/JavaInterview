@@ -1,3 +1,17 @@
+---
+title: 移掉 K 位数字
+date: 2022-07-01 21:19:07
+permalink: /pages/aa63d3/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
