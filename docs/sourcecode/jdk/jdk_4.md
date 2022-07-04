@@ -714,4 +714,30 @@ public class JUnit4TestAdapter implements Test, Filterable, Orderable, Describab
 
 ```
 
-### 
+### 门面类
+```java
+public class JUnit4TestCaseFacade implements Test, Describable {
+    private final Description fDescription;
+
+    JUnit4TestCaseFacade(Description description) {
+        this.fDescription = description;
+    }
+
+    public String toString() {
+        return this.getDescription().toString();
+    }
+
+    public int countTestCases() {
+        return 1;
+    }
+
+    public void run(TestResult result) {
+        throw new RuntimeException("This test stub created only for informational purposes.");
+    }
+
+    public Description getDescription() {
+        return this.fDescription;
+    }
+}
+
+```
