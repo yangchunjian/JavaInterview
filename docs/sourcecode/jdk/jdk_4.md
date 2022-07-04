@@ -632,4 +632,29 @@ public class SimpleBindings implements Bindings {
 }
 ```
 
-### 
+### 多级注解使用
+```java
+@Exported
+public interface JConsoleContext {
+    String CONNECTION_STATE_PROPERTY = "connectionState";
+
+    MBeanServerConnection getMBeanServerConnection();
+
+    JConsoleContext.ConnectionState getConnectionState();
+
+    void addPropertyChangeListener(PropertyChangeListener var1);
+
+    void removePropertyChangeListener(PropertyChangeListener var1);
+
+    @Exported
+    public static enum ConnectionState {
+        CONNECTED,
+        DISCONNECTED,
+        CONNECTING;
+
+        private ConnectionState() {
+        }
+    }
+}
+
+```
