@@ -324,6 +324,7 @@ module.exports = {
             "/algorithm/leetcode/leetcode-457.环形数组是否存在循环",
             "/algorithm/leetcode/leetcode-461.汉明距离",
             "/algorithm/leetcode/leetcode-470.用 Rand7() 实现 Rand10()",
+            "/algorithm/leetcode/leetcode-477.汉明距离总和",
             "/algorithm/leetcode/leetcode-478.在圆内随机生成点",
             "/algorithm/leetcode/leetcode-482.密钥格式化",
             "/algorithm/leetcode/leetcode-485.最大连续 1 的个数",
