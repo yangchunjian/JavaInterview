@@ -1,5 +1,5 @@
 ---
-title: 用 Rand7() 实现 Rand10()
+title: 用 Rand7() 去实现 Rand10()
 date: 2022-07-04 22:21:37
 permalink: /pages/015782/
 categories:
