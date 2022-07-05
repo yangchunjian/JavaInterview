@@ -169,6 +169,7 @@ module.exports = {
             "/sourcecode/jdk/Throwable",
             "/sourcecode/jdk/InputStream",
             "/sourcecode/jdk/ThreadPoolExecutor",
+            "/sourcecode/jdk/BlockingQueue",
           ]
         },
         {
