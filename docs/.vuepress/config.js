@@ -8,6 +8,7 @@ module.exports = {
     title: "JavaInterview",
     description: 'java,面试,春建,杨春建,后端,JavaInterview,interview,技术',
     //base: '/JavaInterview/', // 格式：'/<仓库名>/'， 默认'/'
+    base:"",
     markdown: {
         lineNumbers: true, // 代码行号
     },
