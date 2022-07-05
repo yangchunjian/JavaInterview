@@ -392,3 +392,115 @@ public class ByteArrayDeserializer implements Deserializer<byte[]> {
 
 ```
 
+### 远程接口的子类
+
+```java
+public abstract class ActivationGroup
+        extends UnicastRemoteObject
+        implements ActivationInstantiator
+{
+    /**
+     * @serial the group's identifier
+     */
+    private ActivationGroupID groupID;
+
+    /**
+     * @serial the group's monitor
+     */
+    private ActivationMonitor monitor;
+
+    /**
+     * @serial the group's incarnation number
+     */
+    private long incarnation;
+
+    /** the current activation group for this VM */
+    private static ActivationGroup currGroup;
+    /** the current group's identifier */
+    private static ActivationGroupID currGroupID;
+    /** the current group's activation system */
+    private static ActivationSystem currSystem;
+    /** used to control a group being created only once */
+    private static boolean canCreate = true;
+
+    /** indicate compatibility with the Java 2 SDK v1.2 version of class */
+    private static final long serialVersionUID = -7696947875314805420L;
+```
+
+### UID生成类
+```java
+public final class UID implements Serializable {
+
+    private static int hostUnique;
+    private static boolean hostUniqueSet = false;
+
+    private static final Object lock = new Object();
+    private static long lastTime = System.currentTimeMillis();
+    private static short lastCount = Short.MIN_VALUE;
+
+    /** indicate compatibility with JDK 1.1.x version of class */
+    private static final long serialVersionUID = 1086053664494604050L;
+
+    /**
+     * number that uniquely identifies the VM that this <code>UID</code>
+     * was generated in with respect to its host and at the given time
+     * @serial
+     */
+    private final int unique;
+
+    /**
+     * a time (as returned by {@link System#currentTimeMillis()}) at which
+     * the VM that this <code>UID</code> was generated in was alive
+     * @serial
+     */
+    private final long time;
+
+    /**
+     * 16-bit number to distinguish <code>UID</code> instances created
+     * in the same VM with the same time value
+     * @serial
+     */
+    private final short count;
+
+    /**
+     * Generates a <code>UID</code> that is unique over time with
+     * respect to the host that it was generated on.
+     */
+    public UID() {
+
+        synchronized (lock) {
+            if (!hostUniqueSet) {
+                hostUnique = (new SecureRandom()).nextInt();
+                hostUniqueSet = true;
+            }
+            unique = hostUnique;
+            if (lastCount == Short.MAX_VALUE) {
+                boolean interrupted = Thread.interrupted();
+                boolean done = false;
+                while (!done) {
+                    long now = System.currentTimeMillis();
+                    if (now == lastTime) {
+                        // wait for time to change
+                        try {
+                            Thread.sleep(1);
+                        } catch (InterruptedException e) {
+                            interrupted = true;
+                        }
+                    } else {
+                        // If system time has gone backwards increase
+                        // original by 1ms to maintain uniqueness
+                        lastTime = (now < lastTime) ? lastTime+1 : now;
+                        lastCount = Short.MIN_VALUE;
+                        done = true;
+                    }
+                }
+                if (interrupted) {
+                    Thread.currentThread().interrupt();
+                }
+            }
+            time = lastTime;
+            count = lastCount++;
+        }
+    }
+
+```
