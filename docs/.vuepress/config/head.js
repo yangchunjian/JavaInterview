@@ -34,14 +34,14 @@ module.exports = [
             })();
   `],
   //重定向
-  [
-    'script', {}, `
-        (function() {
-	         if (location.href.indexOf('yangchunjian.com') > -1 || location.href.indexOf('yangchunjian.com') > -1) {
-           		location.href = 'https://yangchunjian.com'
-           }
-        })();
-        `
-  ]
+  // [
+  //   'script', {}, `
+  //       (function() {
+	//          if (location.href.indexOf('yangchunjian.com') > -1 || location.href.indexOf('yangchunjian.com') > -1) {
+  //          		location.href = 'https://yangchunjian.com'
+  //          }
+  //       })();
+  //       `
+  // ]
 
 ]
