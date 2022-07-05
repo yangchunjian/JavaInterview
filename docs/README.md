@@ -15,7 +15,7 @@ features: ## 可选的
     imgUrl: /assets/icon/logo_title50x50.png
   - title: 文档箱
     details: 思想总结&程序总结
-    link: https://www.yangchunjian.com
+    link: https://yangchunjian.com
     imgUrl: /assets/icon/logo_title50x50.png
 
 #  - title: 指南
