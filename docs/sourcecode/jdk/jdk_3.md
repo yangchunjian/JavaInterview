@@ -1,5 +1,5 @@
 ---
-title: jdk_3
+title: JDK代码写法总结3
 date: 2022-06-25 11:05:42
 permalink: /pages/47a1d3/
 categories:
