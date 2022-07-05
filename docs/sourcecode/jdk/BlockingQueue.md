@@ -233,3 +233,118 @@ public interface BlockingQueue<E> extends Queue<E> {
 
 ![](../../../media/pictures/java/blockingqueue.png)
 
+### java.util.concurrent.ArrayBlockingQueue
+```java
+
+public class ArrayBlockingQueue<E> extends AbstractQueue<E>
+        implements BlockingQueue<E>, java.io.Serializable {
+
+    /**
+     * Serialization ID. This class relies on default serialization
+     * even for the items array, which is default-serialized, even if
+     * it is empty. Otherwise it could not be declared final, which is
+     * necessary here.
+     */
+    private static final long serialVersionUID = -817911632652898426L;
+
+    /** The queued items */
+    final Object[] items;
+
+    /** items index for next take, poll, peek or remove */
+    int takeIndex;
+
+    /** items index for next put, offer, or add */
+    int putIndex;
+
+    /** Number of elements in the queue */
+    int count;
+
+    /*
+     * Concurrency control uses the classic two-condition algorithm
+     * found in any textbook.
+     */
+
+    /** Main lock guarding all access */
+    final ReentrantLock lock;
+
+    /** Condition for waiting takes */
+    private final Condition notEmpty;
+
+    /** Condition for waiting puts */
+    private final Condition notFull;
+
+    /**
+     * Shared state for currently active iterators, or null if there
+     * are known not to be any.  Allows queue operations to update
+     * iterator state.
+     */
+    transient Itrs itrs = null;
+
+
+
+    /**
+     * Inserts element at current put position, advances, and signals.
+     * Call only when holding lock.
+     */
+    private void enqueue(E x) {
+        // assert lock.getHoldCount() == 1;
+        // assert items[putIndex] == null;
+        final Object[] items = this.items;
+        items[putIndex] = x;
+        if (++putIndex == items.length)
+            putIndex = 0;
+        count++;
+        notEmpty.signal();
+    }
+
+
+    /**
+     * Extracts element at current take position, advances, and signals.
+     * Call only when holding lock.
+     */
+    private E dequeue() {
+        // assert lock.getHoldCount() == 1;
+        // assert items[takeIndex] != null;
+        final Object[] items = this.items;
+        @SuppressWarnings("unchecked")
+        E x = (E) items[takeIndex];
+        items[takeIndex] = null;
+        if (++takeIndex == items.length)
+            takeIndex = 0;
+        count--;
+        if (itrs != null)
+            itrs.elementDequeued();
+        notFull.signal();
+        return x;
+    }
+
+加锁的转换
+
+    @SuppressWarnings("unchecked")
+    public <T> T[] toArray(T[] a) {
+        final Object[] items = this.items;
+        final ReentrantLock lock = this.lock;
+        lock.lock();
+        try {
+            final int count = this.count;
+            final int len = a.length;
+            if (len < count)
+                a = (T[])java.lang.reflect.Array.newInstance(
+                    a.getClass().getComponentType(), count);
+            int n = items.length - takeIndex;
+            if (count <= n)
+                System.arraycopy(items, takeIndex, a, 0, count);
+            else {
+                System.arraycopy(items, takeIndex, a, 0, n);
+                System.arraycopy(items, 0, a, n, count - n);
+            }
+            if (len > count)
+                a[count] = null;
+        } finally {
+            lock.unlock();
+        }
+        return a;
+    }
+```
+
+
