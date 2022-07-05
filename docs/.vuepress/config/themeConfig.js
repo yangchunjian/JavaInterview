@@ -304,6 +304,7 @@ module.exports = {
             "/algorithm/leetcode/leetcode-402.移掉 K 位数字",
             "/algorithm/leetcode/leetcode-404.左叶子之和",
             "/algorithm/leetcode/leetcode-406.根据身高重建队列",
+            "/algorithm/leetcode/leetcode-417.太平洋大西洋水流问题",
             "/algorithm/leetcode/leetcode-421.数组中两个数的最大异或值",
             "/algorithm/leetcode/leetcode-423.从英文中重建数字",
             "/algorithm/leetcode/leetcode-424.替换后的最长重复字符",
