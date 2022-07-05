@@ -74,3 +74,20 @@ public class AdminApiDriver<K, V> {
         }
     }
 ``` 
+### Node节点定义
+```java
+public class Node {
+
+    private static final Node NO_NODE = new Node(-1, "", -1);
+
+    private final int id;
+    private final String idString;
+    private final String host;
+    private final int port;
+    private final String rack;
+
+    // Cache hashCode as it is called in performance sensitive parts of the code (e.g. RecordAccumulator.ready)
+    private Integer hash;
+```
+
+### 
