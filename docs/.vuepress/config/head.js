@@ -7,7 +7,8 @@ module.exports = [
            if (location.href.indexOf('docbox') > -1) {
                    location.href = 'https://yangchunjian.com'
            }
-           var links = document.getElementsByTagName("a"); for (var i = 0; i < links.length; i++) { 
+           var links = document.getElementsByTagName("a"); 
+           for (var i = 0; i < links.length; i++) { 
              if(links[i].href.indexOf('docbox') > -1){
                 links[i].href = "https://yangchunjian.com"; 
              }
