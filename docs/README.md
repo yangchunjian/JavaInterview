@@ -12,11 +12,11 @@ features: ## 可选的
   - title: 工程码
     details: 所有&算法&代码&核心
     link: /interview/all/read/
-    imgUrl: /assets/icon/book.png
+    imgUrl: /assets/icon/more.png
   - title: 文档箱
     details: 思想总结&程序总结
     #link: https://yangchunjian.com
-    imgUrl: /assets/icon/book.png
+    imgUrl: /assets/icon/other.png
 
 #  - title: 指南
 #    details: 必读总结
