@@ -4,12 +4,12 @@ module.exports = [
   [
     'script', {}, `
         (function() {
-             if (location.href.indexOf('yangchunjian.com') > -1) {
+             if (location.href.indexOf('https://javainterview.cn/https://yangchunjian.com') > -1) {
                    location.href = 'https://yangchunjian.com'
            }
         })();
         `
-  ]
+  ],
   // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
   ['link', { rel: 'icon', href: '/assets/icon/logo_title50x50.png' }], //favicons，资源放在public文件夹
   // ['link', { rel: 'stylesheet', href: 'https://unpkg.com/mssui@0.1.13/lib/theme-chalk/index.css' }],

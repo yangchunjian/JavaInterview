@@ -1,5 +1,5 @@
 ---
-title: 太平洋大西洋水流问题.
+title: 太平洋大西洋水流问题
 date: 2022-06-25 11:56:31
 permalink: /pages/06c3df/
 categories:
