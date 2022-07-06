@@ -15,7 +15,7 @@ features: ## 可选的
     imgUrl: /assets/icon/more.png
   - title: 文档箱
     details: 思想总结&程序总结
-    link: /docbox/
+    link: https://javainterview.cn/docbox
     imgUrl: /assets/icon/other.png
 
 #  - title: 指南
