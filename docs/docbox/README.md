@@ -1,5 +1,5 @@
 ---
-title: 文档
+title: 文档箱
 category: Java
 tag: 
   - Java
@@ -7,4 +7,4 @@ author: JavaInterview.cn
 titleTag: Java
 ---
 
-## 文档
+## 文档箱

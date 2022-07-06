@@ -3,8 +3,8 @@ home: true
 ## heroImage: /img/web.png
 heroText: JavaInterview
 tagline: 「Java面试+Java学习」
-## actionText: 立刻进入 →
-## actionLink: /web/
+actionText: 立刻进入 →
+actionLink: /read/
 ## bannerBg: auto ## auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
 bannerBg: background:#999 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABOSURBVFhH7c6xCQAgDAVRR9A6E4hLu4uLiWJ7tSnuQcIvr2TRYsw3/zOGGEOMIcYQY4gxxBhiDDGGGEOMIcYQY4gxxBhiDLkx52W4Gn1tuslCtHJvL54AAAAASUVORK5CYII=)
 
@@ -15,7 +15,7 @@ features: ## 可选的
     imgUrl: /assets/icon/more.png
   - title: 文档箱
     details: 思想总结&程序总结
-    link: https://yangchunjian.com
+    link: /docbox/
     imgUrl: /assets/icon/other.png
 
 #  - title: 指南

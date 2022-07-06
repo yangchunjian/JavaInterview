@@ -4,7 +4,7 @@ module.exports = [
   [
     'script', {}, `
         (function() {
-             if (location.href.indexOf('https://javainterview.cn/https://yangchunjian.com') > -1) {
+             if (location.href.indexOf('docbox') > -1) {
                    location.href = 'https://yangchunjian.com'
            }
         })();
