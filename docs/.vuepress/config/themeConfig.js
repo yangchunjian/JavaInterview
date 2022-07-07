@@ -329,6 +329,7 @@ module.exports = {
             "/algorithm/leetcode/leetcode-461.汉明距离",
             "/algorithm/leetcode/leetcode-470.用 Rand7() 实现 Rand10()",
             "/algorithm/leetcode/leetcode-473.火柴拼正方形",
+            "/algorithm/leetcode/leetcode-475.供暖器",
             "/algorithm/leetcode/leetcode-477.汉明距离总和",
             "/algorithm/leetcode/leetcode-478.在圆内随机生成点",
             "/algorithm/leetcode/leetcode-482.密钥格式化",
