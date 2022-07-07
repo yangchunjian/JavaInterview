@@ -22,11 +22,13 @@ module.exports = {
   //     clientSecret: '506208acc8a176516aab50d7347e5cad9db66dcc',
   // },
   //
-  repo: "https://github.com/yangchunjian/JavaInterview",
-  docsDir: 'docs', // 编辑的文件夹
-  editLinks: true, // 启用编辑
-  docsBranch: 'main', // 编辑的文件所在分支，默认master。 注意：如果你的分支是main则修改为main
-  editLinkText: '编辑此页',
+
+  // repo: "https://github.com/yangchunjian/JavaInterview",
+  // docsDir: 'docs', // 编辑的文件夹
+  // editLinks: true, // 启用编辑
+  // docsBranch: 'main', // 编辑的文件所在分支，默认master。 注意：如果你的分支是main则修改为main
+  // editLinkText: '编辑此页',
+
   // tags: 'Java',
 
   // 博客配置
@@ -326,6 +328,7 @@ module.exports = {
             "/algorithm/leetcode/leetcode-457.环形数组是否存在循环",
             "/algorithm/leetcode/leetcode-461.汉明距离",
             "/algorithm/leetcode/leetcode-470.用 Rand7() 实现 Rand10()",
+            "/algorithm/leetcode/leetcode-473.火柴拼正方形",
             "/algorithm/leetcode/leetcode-477.汉明距离总和",
             "/algorithm/leetcode/leetcode-478.在圆内随机生成点",
             "/algorithm/leetcode/leetcode-482.密钥格式化",
