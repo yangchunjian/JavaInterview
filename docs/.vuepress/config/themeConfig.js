@@ -13,6 +13,7 @@ module.exports = {
     name: 'JavaInterview.cn', // 必需
     link: 'https://JavaInterview.cn', // 可选的
   },
+  lang: "zh-CN",
   lastUpdated: '上次编辑于',
   // vssueConfig: {
   //     platform: 'github',
