@@ -1,3 +1,17 @@
+---
+title: 分割数组的最大值
+date: 2022-07-09 21:34:06
+permalink: /pages/545509/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

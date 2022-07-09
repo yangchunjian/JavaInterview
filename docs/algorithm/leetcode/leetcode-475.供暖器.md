@@ -1,3 +1,17 @@
+---
+title: 供暖器
+date: 2022-06-25 11:56:31
+permalink: /pages/37793c/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
