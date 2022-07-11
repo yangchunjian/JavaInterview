@@ -380,6 +380,7 @@ module.exports = {
             "/algorithm/leetcode/leetcode-1372.二叉树中的最长交错路径",
             "/algorithm/leetcode/leetcode-1373.二叉搜索子树的最大键值和",
             "/algorithm/leetcode/leetcode-1376.通知所有员工所需的时间",
+            "/algorithm/leetcode/leetcode-1377.T 秒后青蛙的位置",
             "/algorithm/leetcode/leetcode-1379.找出克隆二叉树中的相同节点",
             "/algorithm/leetcode/leetcode-1380.矩阵中的幸运数",
             "/algorithm/leetcode/leetcode-1448.统计二叉树中好节点的数目",

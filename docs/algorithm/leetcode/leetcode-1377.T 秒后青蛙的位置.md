@@ -1,125 +1,86 @@
 
 ## 题目
 
-给你一棵以 root 为根的 二叉树 ，请你返回 任意 二叉搜索子树的最大键值和。
+给你一棵由 n 个顶点组成的无向树，顶点编号从 1 到 n。青蛙从 顶点 1 开始起跳。规则如下：
 
-二叉搜索树的定义如下：
+    在一秒内，青蛙从它所在的当前顶点跳到另一个 未访问 过的顶点（如果它们直接相连）。
+    青蛙无法跳回已经访问过的顶点。
+    如果青蛙可以跳到多个不同顶点，那么它跳到其中任意一个顶点上的机率都相同。
+    如果青蛙不能跳到任何未访问过的顶点上，那么它每次跳跃都会停留在原地。
+    无向树的边用数组 edges 描述，其中 edges[i] = [fromi, toi] 意味着存在一条直接连通 fromi 和 toi 两个顶点的边。
 
-任意节点的左子树中的键值都 小于 此节点的键值。
-任意节点的右子树中的键值都 大于 此节点的键值。
-任意节点的左子树和右子树都是二叉搜索树。
+返回青蛙在 t 秒后位于目标顶点 target 上的概率。
+
  
 
 示例 1：
 
-![](../../../media/pictures/leetcode/sample_1_1709.png)
+![](../../../media/pictures/leetcode/frog1.jpeg)
 
-    输入：root = [1,4,3,2,4,2,5,null,null,null,null,null,null,4,6]
-    输出：20
-    解释：键值为 3 的子树是和最大的二叉搜索树。
+
+    输入：n = 7, edges = [[1,2],[1,3],[1,7],[2,4],[2,6],[3,5]], t = 2, target = 4
+    输出：0.16666666666666666 
+    解释：上图显示了青蛙的跳跃路径。青蛙从顶点 1 起跳，第 1 秒 有 1/3 的概率跳到顶点 2 ，然后第 2 秒 有 1/2 的概率跳到顶点 4，因此青蛙在 2 秒后位于顶点 4 的概率是 1/3 * 1/2 = 1/6 = 0.16666666666666666 。 
 示例 2：
 
+![](../../../media/pictures/leetcode/frog2.jpeg)
 
+    输入：n = 7, edges = [[1,2],[1,3],[1,7],[2,4],[2,6],[3,5]], t = 1, target = 7
+    输出：0.3333333333333333
+    解释：上图显示了青蛙的跳跃路径。青蛙从顶点 1 起跳，有 1/3 = 0.3333333333333333 的概率能够 1 秒 后跳到顶点 7 。 
+ 
 
-    输入：root = [4,3,null,1,2]
-    输出：2
-    解释：键值为 2 的单节点子树是和最大的二叉搜索树。
-示例 3：
-
-    输入：root = [-4,-2,-5]
-    输出：0
-    解释：所有节点键值都为负数，和最大的二叉搜索树为空。
-示例 4：
-
-    输入：root = [2,1,3]
-    输出：6
-示例 5：
-
-    输入：root = [5,4,8,3,null,6,3]
-    输出：7
  
 
 提示：
 
-- 每棵树有 1 到 40000 个节点。
-- 每个节点的键值在 [-4 * 10^4 , 4 * 10^4] 之间。
-
+- 1 <= n <= 100
+- edges.length == n - 1
+- edges[i].length == 2
+- 1 <= ai, bi <= n
+- 1 <= t <= 50
+- 1 <= target <= n
 
 
 ## 思路
 
-int[] res = new int[4];
-
-后序遍历
+dfs
 
 ## 解法
 ```java
 
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
 class Solution {
-    //全局变量，记录 BST 最大节点之和
-    int maxSum = 0;
+    public double frogPosition(int n, int[][] edges, int t, int target) {
 
-    public int maxSumBST(TreeNode root) {
-        traverse(root);
-        return maxSum;
+            boolean[] visited = new boolean[n + 1];
+        Map<Integer, List<Integer>> map = new HashMap<>();
+        for (int[] e: edges) {
+            map.putIfAbsent(e[0], new LinkedList<>());
+            map.get(e[0]).add(e[1]);
+            map.putIfAbsent(e[1], new LinkedList<>());
+            map.get(e[1]).add(e[0]);
+        }
+        return dfs(map, visited, t, target, 1, 1);
     }
 
-
-    public int[] traverse(TreeNode root) {
-        if (root == null) {
-            return new int[]{
-                    1, Integer.MAX_VALUE, Integer.MIN_VALUE, 0
-            };
+    public double dfs(Map<Integer, List<Integer>> map, boolean[] visited, int t, int target, int cur, double p) {
+        if (t < 0) {
+            return 0;
         }
-
-        //递归计算左右子树
-        int[] left = traverse(root.left);
-        int[] right = traverse(root.right);
-
-        /**
-         * res[0] 记录以 root 为根的二叉树是否是 BST，若为1则说明是 BST，若为0则说明不是 BST
-         * res[1] 记录以 root 为根的二叉树所有节点中的最小值
-         * res[2] 记录以 root 为根的二叉树所有节点中的最大值
-         * res[3] 记录以 root 为根的二叉树所有节点值之和
-         */
-        /************* 后序遍历位置 ****************/
-        int[] res = new int[4];
-        //这个 if 在判断以 root 为根的二叉树是不是 BST
-        //BST的根节点是大于左子树的最大值，小于右子树的最小值
-        if (left[0] == 1 && right[0] == 1 &&
-                root.val > left[2] && root.val < right[1]) {
-            //以 root 为根的二叉树是 BST
-            res[0] = 1;
-            //计算以 root 为根的这棵 BST 的最小值
-            res[1] = Math.min(left[1], root.val);
-            //计算以 root 为根的这棵 BST 的最大值
-            res[2] = Math.max(right[2], root.val);
-            //计算以 root 为根的这棵 BST 所有节点之和
-            res[3] = left[3] + right[3] + root.val;
-            //更新全局变量
-            maxSum = Math.max(maxSum, res[3]);
-        } else {
-            //以 root 为根的二叉树不是 BST
-            res[0] = 0;
+        List<Integer> next = map.getOrDefault(cur, Collections.emptyList()).stream().filter(i -> !visited[i]).collect(Collectors.toList());
+        if (t == 0 || next.size() == 0) {
+            return cur == target ? p : 0;
         }
-        /*****************************************/
-
-        return res;
+        double res = 0;
+        p /= next.size();
+        visited[cur] = true;
+        for (Integer n: next) {
+            if ((res = dfs(map, visited, t - 1, target, n, p)) > 0) {
+                return res;
+            }
+        }
+        visited[cur] = false;
+        return 0;
     }
 }
 ```
