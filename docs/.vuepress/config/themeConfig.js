@@ -395,6 +395,7 @@ module.exports = {
             "/algorithm/leetcode/leetcode-1380.矩阵中的幸运数",
             "/algorithm/leetcode/leetcode-1448.统计二叉树中好节点的数目",
             "/algorithm/leetcode/leetcode-1530.好叶子节点对的数量",
+            "/algorithm/leetcode/leetcode-1569.将子数组重新排序得到同一个二叉查找树的方案数",
           ]
         },
         {
