@@ -194,6 +194,15 @@ module.exports = {
           ]
         },
         {
+          title: "Kafka",
+          children: [
+            "/sourcecode/kafka/kafka_1",
+            "/sourcecode/kafka/kafka_2",
+            "/sourcecode/kafka/kafka_3",
+
+          ]
+        },
+        {
           title: "C/C++",
           children: [
             "/sourcecode/c/c++",
