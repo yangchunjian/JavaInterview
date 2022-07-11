@@ -1,3 +1,17 @@
+---
+title: 最深叶节点的最近公共祖先
+date: 2022-07-11 08:58:11
+permalink: /pages/41e433/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

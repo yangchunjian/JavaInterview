@@ -1,3 +1,17 @@
+---
+title: T 秒后青蛙的位置
+date: 2022-07-11 09:09:02
+permalink: /pages/4baea0/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

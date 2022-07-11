@@ -12,6 +12,7 @@ date: 2022-06-08 09:00:58
 tag: 
   text: java
 titleTag: Java
+permalink: /pages/be84ac/
 ---
 
 ## 总结2

@@ -1,3 +1,17 @@
+---
+title: 二叉树着色游戏
+date: 2022-07-11 08:58:11
+permalink: /pages/f3e84d/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
