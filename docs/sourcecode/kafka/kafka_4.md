@@ -39,3 +39,48 @@ public class AbstractConfig {
     private static final String CONFIG_PROVIDERS_PARAM = ".param.";
 
 ```
+
+### Metadata
+```java
+public class Metadata implements Closeable {
+    private final Logger log;
+    private final long refreshBackoffMs;
+    private final long metadataExpireMs;
+    private int updateVersion;  // bumped on every metadata response
+    private int requestVersion; // bumped on every new topic addition
+    private long lastRefreshMs;
+    private long lastSuccessfulRefreshMs;
+    private KafkaException fatalException;
+    private Set<String> invalidTopics;
+    private Set<String> unauthorizedTopics;
+    private MetadataCache cache = MetadataCache.empty();
+    private boolean needFullUpdate;
+    private boolean needPartialUpdate;
+    private final ClusterResourceListeners clusterResourceListeners;
+    private boolean isClosed;
+    private final Map<TopicPartition, Integer> lastSeenLeaderEpochs;
+```
+
+### KafkaFutureImpl任务
+
+```java
+
+/**
+ * A flexible future which supports call chaining and other asynchronous programming patterns.
+ */
+public class KafkaFutureImpl<T> extends KafkaFuture<T> {
+
+    private final KafkaCompletableFuture<T> completableFuture;
+
+    private final boolean isDependant;
+
+    public KafkaFutureImpl() {
+        this(false, new KafkaCompletableFuture<>());
+    }
+
+    private KafkaFutureImpl(boolean isDependant, KafkaCompletableFuture<T> completableFuture) {
+        this.isDependant = isDependant;
+        this.completableFuture = completableFuture;
+    }
+```
+
