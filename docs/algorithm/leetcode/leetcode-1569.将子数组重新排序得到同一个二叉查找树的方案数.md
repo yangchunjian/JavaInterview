@@ -1,3 +1,17 @@
+---
+title: 将子数组重新排序得到同一个二叉查找树的方案数
+date: 2022-07-13 09:09:52
+permalink: /pages/1ddb6d/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

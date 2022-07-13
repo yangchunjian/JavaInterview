@@ -7,6 +7,10 @@ author:
   name: JavaInterview.cn
   link: https://JavaInterview.cn
 titleTag: Java
+date: 2022-07-11 16:30:50
+permalink: /pages/f87e0f/
+tags: 
+  - 
 ---
 
 ## 总结5
@@ -131,3 +135,24 @@ public class Node {
 
 ```
  
+### RecordMetadata类
+```java
+public final class RecordMetadata {
+
+    /**
+     * Partition value for record without partition assigned
+     */
+    public static final int UNKNOWN_PARTITION = -1;
+
+    private final long offset;
+    // The timestamp of the message.
+    // If LogAppendTime is used for the topic, the timestamp will be the timestamp returned by the broker.
+    // If CreateTime is used for the topic, the timestamp is the timestamp in the corresponding ProducerRecord if the
+    // user provided one. Otherwise, it will be the producer local time when the producer record was handed to the
+    // producer.
+    private final long timestamp;
+    private final int serializedKeySize;
+    private final int serializedValueSize;
+    private final TopicPartition topicPartition;
+
+```

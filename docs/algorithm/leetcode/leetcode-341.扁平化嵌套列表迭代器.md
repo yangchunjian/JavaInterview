@@ -1,3 +1,17 @@
+---
+title: 扁平化嵌套列表迭代器
+date: 2022-07-13 09:09:52
+permalink: /pages/310597/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
