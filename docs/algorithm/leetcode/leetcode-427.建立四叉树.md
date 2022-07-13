@@ -1,3 +1,17 @@
+---
+title: 建立四叉树
+date: 2022-07-12 21:56:40
+permalink: /pages/e6e3bc/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

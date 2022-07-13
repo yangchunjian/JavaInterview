@@ -1,3 +1,17 @@
+---
+title: 奇偶树
+date: 2022-07-13 23:54:19
+permalink: /pages/77d973/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
