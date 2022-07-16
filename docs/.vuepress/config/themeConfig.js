@@ -314,6 +314,7 @@ module.exports = {
             "/algorithm/leetcode/leetcode-389.找不同",
             "/algorithm/leetcode/leetcode-390.消除游戏",
             "/algorithm/leetcode/leetcode-391.完美矩形",
+            "/algorithm/leetcode/leetcode-392.判断子序列",
             "/algorithm/leetcode/leetcode-393.UTF-8编码验证",
             "/algorithm/leetcode/leetcode-394.字符串解码",
             "/algorithm/leetcode/leetcode-395.至少有 K 个重复字符的最长子串",
