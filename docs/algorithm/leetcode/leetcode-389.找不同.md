@@ -1,3 +1,17 @@
+---
+title: 找不同
+date: 2022-07-16 20:52:54
+permalink: /pages/d48a5d/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

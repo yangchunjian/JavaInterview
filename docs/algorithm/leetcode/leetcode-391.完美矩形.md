@@ -1,3 +1,17 @@
+---
+title: 完美矩形
+date: 2022-07-16 21:00:06
+permalink: /pages/be6bba/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目
@@ -23,7 +37,7 @@
     解释：两个矩形之间有间隔，无法覆盖成一个矩形。
 示例 3：
 
-![](../../../media/pictures/leetcode/perfectrec4-plane.jpeg)
+![](../../../media/pictures/leetcode/perfecrrec4-plane.jpeg)
 
     输入：rectangles = [[1,1,3,3],[3,1,4,2],[1,3,2,4],[2,2,4,4]] 输出：false
     解释：因为中间有相交区域，虽然形成了矩形，但不是精确覆盖。
