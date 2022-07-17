@@ -280,6 +280,7 @@ module.exports = {
             "/algorithm/leetcode/leetcode-304.二维区域和检索 - 矩阵不可变",
             "/algorithm/leetcode/leetcode-306.累加数",
             "/algorithm/leetcode/leetcode-307.区域和检索 - 数组可修改",
+            "/algorithm/leetcode/leetcode-312.戳气球",
             "/algorithm/leetcode/leetcode-313.超级丑数",
             "/algorithm/leetcode/leetcode-316.去除重复字母",
             "/algorithm/leetcode/leetcode-318.最大单词长度乘积",
