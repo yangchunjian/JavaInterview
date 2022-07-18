@@ -99,3 +99,43 @@ public class BoundField {
     final Schema schema;
 
 ```
+
+### Action类
+```java
+@InterfaceStability.Evolving
+public class Action {
+
+    private final ResourcePattern resourcePattern;
+    private final AclOperation operation;
+    private final int resourceReferenceCount;
+    private final boolean logIfAllowed;
+    private final boolean logIfDenied;
+
+
+```
+
+### Optional类包装
+```java
+@InterfaceStability.Evolving
+public class AclCreateResult {
+    public static final AclCreateResult SUCCESS = new AclCreateResult();
+
+    private final ApiException exception;
+
+    private AclCreateResult() {
+        this(null);
+    }
+
+    public AclCreateResult(ApiException exception) {
+        this.exception = exception;
+    }
+
+    /**
+     * Returns any exception during create. If exception is empty, the request has succeeded.
+     */
+    public Optional<ApiException> exception() {
+        return exception == null ? Optional.empty() : Optional.of(exception);
+    }
+}
+
+```
