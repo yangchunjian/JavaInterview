@@ -24,11 +24,11 @@ module.exports = {
   // },
   //
 
-  // repo: "https://github.com/yangchunjian/JavaInterview",
-  // docsDir: 'docs', // 编辑的文件夹
-  // editLinks: true, // 启用编辑
-  // docsBranch: 'main', // 编辑的文件所在分支，默认master。 注意：如果你的分支是main则修改为main
-  // editLinkText: '编辑此页',
+  repo: "https://github.com/yangchunjian/JavaInterview",
+  docsDir: 'docs', // 编辑的文件夹
+  editLinks: true, // 启用编辑
+  docsBranch: 'main', // 编辑的文件所在分支，默认master。 注意：如果你的分支是main则修改为main
+  editLinkText: '编辑此页',
 
   // tags: 'Java',
 
@@ -201,6 +201,7 @@ module.exports = {
             "/sourcecode/kafka/kafka_3",
             "/sourcecode/kafka/kafka_4",
             "/sourcecode/kafka/kafka_5",
+            "/sourcecode/kafka/kafka_6",
 
           ]
         },
