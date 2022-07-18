@@ -139,3 +139,387 @@ public class AclCreateResult {
 }
 
 ```
+
+
+### AbortTransactionSpec类
+```java
+@InterfaceStability.Evolving
+public class AbortTransactionSpec {
+    private final TopicPartition topicPartition;
+    private final long producerId;
+    private final short producerEpoch;
+    private final int coordinatorEpoch;
+
+
+```
+
+### FeatureMetadata类
+```java
+
+/**
+ * Encapsulates details about finalized as well as supported features. This is particularly useful
+ * to hold the result returned by the {@link Admin#describeFeatures(DescribeFeaturesOptions)} API.
+ */
+public class FeatureMetadata {
+
+    private final Map<String, FinalizedVersionRange> finalizedFeatures;
+
+    private final Optional<Long> finalizedFeaturesEpoch;
+
+    private final Map<String, SupportedVersionRange> supportedFeatures;
+
+```
+
+### 消费者配置
+```java
+
+/**
+ * The consumer configuration keys
+ */
+public class ConsumerConfig extends AbstractConfig {
+    private static final ConfigDef CONFIG;
+
+    // a list contains all the assignor names that only assign subscribed topics to consumer. Should be updated when new assignor added.
+    // This is to help optimize ConsumerCoordinator#performAssignment method
+    public static final List<String> ASSIGN_FROM_SUBSCRIBED_ASSIGNORS =
+        Collections.unmodifiableList(Arrays.asList(
+            RANGE_ASSIGNOR_NAME,
+            ROUNDROBIN_ASSIGNOR_NAME,
+            STICKY_ASSIGNOR_NAME,
+            COOPERATIVE_STICKY_ASSIGNOR_NAME
+        ));
+```
+
+### Consumer接口 
+```java
+/**
+ * @see KafkaConsumer
+ * @see MockConsumer
+ */
+public interface Consumer<K, V> extends Closeable {
+
+    /**
+     * @see KafkaConsumer#assignment()
+     */
+    Set<TopicPartition> assignment();
+
+    /**
+     * @see KafkaConsumer#subscription()
+     */
+    Set<String> subscription();
+
+    /**
+     * @see KafkaConsumer#subscribe(Collection)
+     */
+    void subscribe(Collection<String> topics);
+
+    /**
+     * @see KafkaConsumer#subscribe(Collection, ConsumerRebalanceListener)
+     */
+    void subscribe(Collection<String> topics, ConsumerRebalanceListener callback);
+
+    /**
+     * @see KafkaConsumer#assign(Collection)
+     */
+    void assign(Collection<TopicPartition> partitions);
+
+    /**
+    * @see KafkaConsumer#subscribe(Pattern, ConsumerRebalanceListener)
+    */
+    void subscribe(Pattern pattern, ConsumerRebalanceListener callback);
+
+    /**
+    * @see KafkaConsumer#subscribe(Pattern)
+    */
+    void subscribe(Pattern pattern);
+
+    /**
+     * @see KafkaConsumer#unsubscribe()
+     */
+    void unsubscribe();
+
+    /**
+     * @see KafkaConsumer#poll(long)
+     */
+    @Deprecated
+    ConsumerRecords<K, V> poll(long timeout);
+
+    /**
+     * @see KafkaConsumer#poll(Duration)
+     */
+    ConsumerRecords<K, V> poll(Duration timeout);
+
+    /**
+     * @see KafkaConsumer#commitSync()
+     */
+    void commitSync();
+
+    /**
+     * @see KafkaConsumer#commitSync(Duration)
+     */
+    void commitSync(Duration timeout);
+
+    /**
+     * @see KafkaConsumer#commitSync(Map)
+     */
+    void commitSync(Map<TopicPartition, OffsetAndMetadata> offsets);
+
+    /**
+     * @see KafkaConsumer#commitSync(Map, Duration)
+     */
+    void commitSync(final Map<TopicPartition, OffsetAndMetadata> offsets, final Duration timeout);
+    /**
+     * @see KafkaConsumer#commitAsync()
+     */
+    void commitAsync();
+
+    /**
+     * @see KafkaConsumer#commitAsync(OffsetCommitCallback)
+     */
+    void commitAsync(OffsetCommitCallback callback);
+
+    /**
+     * @see KafkaConsumer#commitAsync(Map, OffsetCommitCallback)
+     */
+    void commitAsync(Map<TopicPartition, OffsetAndMetadata> offsets, OffsetCommitCallback callback);
+
+    /**
+     * @see KafkaConsumer#seek(TopicPartition, long)
+     */
+    void seek(TopicPartition partition, long offset);
+
+    /**
+     * @see KafkaConsumer#seek(TopicPartition, OffsetAndMetadata)
+     */
+    void seek(TopicPartition partition, OffsetAndMetadata offsetAndMetadata);
+
+    /**
+     * @see KafkaConsumer#seekToBeginning(Collection)
+     */
+    void seekToBeginning(Collection<TopicPartition> partitions);
+
+    /**
+     * @see KafkaConsumer#seekToEnd(Collection)
+     */
+    void seekToEnd(Collection<TopicPartition> partitions);
+
+    /**
+     * @see KafkaConsumer#position(TopicPartition)
+     */
+    long position(TopicPartition partition);
+    
+    /**
+     * @see KafkaConsumer#position(TopicPartition, Duration)
+     */
+    long position(TopicPartition partition, final Duration timeout);
+
+    /**
+     * @see KafkaConsumer#committed(TopicPartition)
+     */
+    @Deprecated
+    OffsetAndMetadata committed(TopicPartition partition);
+
+    /**
+     * @see KafkaConsumer#committed(TopicPartition, Duration)
+     */
+    @Deprecated
+    OffsetAndMetadata committed(TopicPartition partition, final Duration timeout);
+
+    /**
+     * @see KafkaConsumer#committed(Set)
+     */
+    Map<TopicPartition, OffsetAndMetadata> committed(Set<TopicPartition> partitions);
+
+    /**
+     * @see KafkaConsumer#committed(Set, Duration)
+     */
+    Map<TopicPartition, OffsetAndMetadata> committed(Set<TopicPartition> partitions, final Duration timeout);
+
+    /**
+     * @see KafkaConsumer#metrics()
+     */
+    Map<MetricName, ? extends Metric> metrics();
+
+    /**
+     * @see KafkaConsumer#partitionsFor(String)
+     */
+    List<PartitionInfo> partitionsFor(String topic);
+
+    /**
+     * @see KafkaConsumer#partitionsFor(String, Duration)
+     */
+    List<PartitionInfo> partitionsFor(String topic, Duration timeout);
+
+    /**
+     * @see KafkaConsumer#listTopics()
+     */
+    Map<String, List<PartitionInfo>> listTopics();
+
+    /**
+     * @see KafkaConsumer#listTopics(Duration)
+     */
+    Map<String, List<PartitionInfo>> listTopics(Duration timeout);
+
+    /**
+     * @see KafkaConsumer#paused()
+     */
+    Set<TopicPartition> paused();
+
+    /**
+     * @see KafkaConsumer#pause(Collection)
+     */
+    void pause(Collection<TopicPartition> partitions);
+
+    /**
+     * @see KafkaConsumer#resume(Collection)
+     */
+    void resume(Collection<TopicPartition> partitions);
+
+    /**
+     * @see KafkaConsumer#offsetsForTimes(Map)
+     */
+    Map<TopicPartition, OffsetAndTimestamp> offsetsForTimes(Map<TopicPartition, Long> timestampsToSearch);
+
+    /**
+     * @see KafkaConsumer#offsetsForTimes(Map, Duration)
+     */
+    Map<TopicPartition, OffsetAndTimestamp> offsetsForTimes(Map<TopicPartition, Long> timestampsToSearch, Duration timeout);
+
+    /**
+     * @see KafkaConsumer#beginningOffsets(Collection)
+     */
+    Map<TopicPartition, Long> beginningOffsets(Collection<TopicPartition> partitions);
+
+    /**
+     * @see KafkaConsumer#beginningOffsets(Collection, Duration)
+     */
+    Map<TopicPartition, Long> beginningOffsets(Collection<TopicPartition> partitions, Duration timeout);
+
+    /**
+     * @see KafkaConsumer#endOffsets(Collection)
+     */
+    Map<TopicPartition, Long> endOffsets(Collection<TopicPartition> partitions);
+
+    /**
+     * @see KafkaConsumer#endOffsets(Collection, Duration)
+     */
+    Map<TopicPartition, Long> endOffsets(Collection<TopicPartition> partitions, Duration timeout);
+
+    /**
+     * @see KafkaConsumer#currentLag(TopicPartition)
+     */
+    OptionalLong currentLag(TopicPartition topicPartition);
+
+    /**
+     * @see KafkaConsumer#groupMetadata()
+     */
+    ConsumerGroupMetadata groupMetadata();
+
+    /**
+     * @see KafkaConsumer#enforceRebalance()
+     */
+    void enforceRebalance();
+
+    /**
+     * @see KafkaConsumer#enforceRebalance(String)
+     */
+    void enforceRebalance(final String reason);
+
+    /**
+     * @see KafkaConsumer#close()
+     */
+    void close();
+
+    /**
+     * @see KafkaConsumer#close(Duration)
+     */
+    void close(Duration timeout);
+
+    /**
+     * @see KafkaConsumer#wakeup()
+     */
+    void wakeup();
+
+}
+
+```
+
+### Fetcher<K,V>类
+```java
+public class Fetcher<K, V> implements Closeable {
+    private final Logger log;
+    private final LogContext logContext;
+    private final ConsumerNetworkClient client;
+    private final Time time;
+    private final int minBytes;
+    private final int maxBytes;
+    private final int maxWaitMs;
+    private final int fetchSize;
+    private final long retryBackoffMs;
+    private final long requestTimeoutMs;
+    private final int maxPollRecords;
+    private final boolean checkCrcs;
+    private final String clientRackId;
+    private final ConsumerMetadata metadata;
+    private final FetchManagerMetrics sensors;
+    private final SubscriptionState subscriptions;
+    private final ConcurrentLinkedQueue<CompletedFetch> completedFetches;
+    private final BufferSupplier decompressionBufferSupplier = BufferSupplier.create();
+    private final Deserializer<K> keyDeserializer;
+    private final Deserializer<V> valueDeserializer;
+    private final IsolationLevel isolationLevel;
+    private final Map<Integer, FetchSessionHandler> sessionHandlers;
+    private final AtomicReference<RuntimeException> cachedListOffsetsException = new AtomicReference<>();
+    private final AtomicReference<RuntimeException> cachedOffsetForLeaderException = new AtomicReference<>();
+    private final OffsetsForLeaderEpochClient offsetsForLeaderEpochClient;
+    private final Set<Integer> nodesWithPendingFetchRequests;
+    private final ApiVersions apiVersions;
+    private final AtomicInteger metadataUpdateVersion = new AtomicInteger(-1);
+
+    private CompletedFetch nextInLineFetch = null;
+
+```
+
+### Heartbeat心跳
+```java
+/**
+ * A helper class for managing the heartbeat to the coordinator
+ */
+public final class Heartbeat {
+    private final int maxPollIntervalMs;
+    private final GroupRebalanceConfig rebalanceConfig;
+    private final Time time;
+    private final Timer heartbeatTimer;
+    private final Timer sessionTimer;
+    private final Timer pollTimer;
+    private final Logger log;
+
+    private volatile long lastHeartbeatSend = 0L;
+    private volatile boolean heartbeatInFlight = false;
+
+
+```
+
+### RequestFuture<T>
+```java
+public class RequestFuture<T> implements ConsumerNetworkClient.PollCondition {
+
+    private static final Object INCOMPLETE_SENTINEL = new Object();
+    private final AtomicReference<Object> result = new AtomicReference<>(INCOMPLETE_SENTINEL);
+    private final ConcurrentLinkedQueue<RequestFutureListener<T>> listeners = new ConcurrentLinkedQueue<>();
+    private final CountDownLatch completedLatch = new CountDownLatch(1);
+
+    /**
+     * Check whether the response is ready to be handled
+     * @return true if the response is ready, false otherwise
+     */
+    public boolean isDone() {
+        return result.get() != INCOMPLETE_SENTINEL;
+    }
+
+    public boolean awaitDone(long timeout, TimeUnit unit) throws InterruptedException {
+        return completedLatch.await(timeout, unit);
+    }
+
+```
+
