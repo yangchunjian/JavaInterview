@@ -202,6 +202,7 @@ module.exports = {
             "/sourcecode/kafka/kafka_4",
             "/sourcecode/kafka/kafka_5",
             "/sourcecode/kafka/kafka_6",
+            "/sourcecode/kafka/kafka_7",
 
           ]
         },
