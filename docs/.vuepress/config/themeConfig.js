@@ -299,6 +299,7 @@ module.exports = {
             "/algorithm/leetcode/leetcode-347.前 K 个高频元素",
             "/algorithm/leetcode/leetcode-349.两个数组的交集",
             "/algorithm/leetcode/leetcode-350.两个数组的交集 II",
+            "/algorithm/leetcode/leetcode-355.设计推特",
             "/algorithm/leetcode/leetcode-365.水壶问题",
             "/algorithm/leetcode/leetcode-368.最大整除子集",
             "/algorithm/leetcode/leetcode-371.两整数之和",
