@@ -292,6 +292,7 @@ module.exports = {
             "/algorithm/leetcode/leetcode-327.区间和的个数",
             "/algorithm/leetcode/leetcode-329.矩阵中的最长递增路径",
             "/algorithm/leetcode/leetcode-330.按要求补齐数组",
+            "/algorithm/leetcode/leetcode-332.重新安排行程",
             "/algorithm/leetcode/leetcode-334.递增的三元子序列",
             "/algorithm/leetcode/leetcode-338.比特位计数",
             "/algorithm/leetcode/leetcode-341.扁平化嵌套列表迭代器",
