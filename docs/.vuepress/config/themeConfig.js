@@ -294,6 +294,7 @@ module.exports = {
             "/algorithm/leetcode/leetcode-330.按要求补齐数组",
             "/algorithm/leetcode/leetcode-332.重新安排行程",
             "/algorithm/leetcode/leetcode-334.递增的三元子序列",
+            "/algorithm/leetcode/leetcode-335.路径交叉",
             "/algorithm/leetcode/leetcode-338.比特位计数",
             "/algorithm/leetcode/leetcode-341.扁平化嵌套列表迭代器",
             "/algorithm/leetcode/leetcode-343.整数拆分",
