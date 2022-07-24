@@ -15,14 +15,19 @@ titleTag: Java
 
 ## 题目
 
+
 给你一个大小为 m x n 的网格和一个球。球的起始坐标为 [startRow, startColumn] 。你可以将球移到在四个方向上相邻的单元格内（可以穿过网格边界到达网格之外）。你 最多 可以移动 maxMove 次球。
 
 给你五个整数 m、n、maxMove、startRow 以及 startColumn
-，找出并返回可以将球移出边界的路径数量。因为答案可能非常大，返回对 10<sup>9</sup>
+，找出并返回可以将球移出边界的路径数量。因为答案可能非常大，
+返回对 10<sup>9</sup>
 \+ 7 取余 后的结果。
 
- 
 
+
+来源：力扣（LeetCode）
+链接：https://leetcode.cn/problems/out-of-boundary-paths
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 示例 1：
 
 ![](../../../media/pictures/leetcode/out_of_boundary_paths_1.png)
@@ -48,105 +53,69 @@ titleTag: Java
 
 ## 思路
 
-        /**
-        动态规划, dp[i][j][k]表示从(i, j)开始在k步内移除边界的路径数. 
-        可知dp[i][j][k]只与(i, j)四周邻接点在k-1步内移除边界的路径数有关. 
-        dp[i][j][k] = dp[i-1][j][k-1] + dp[i+1][j][k-1] + dp[i][j-1][k-1] + dp[i][j+1][k-1];
-        空间优化: 可以看出重复利用一个二维数组储存路径数即可(k-1步更新之后就无需保存)
-        **/
-        
-        /* 无空间优化版
-        if(N <= 0) return 0;
-        int mod = 1000000007;
-        int[][][] dp = new int[m][n][N+1];
-        
-        int[][] dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
-        
-        for(int k = 1; k <= N; ++k) {
-            for(int x = 0; x < m; ++x) {
-                for(int y = 0; y < n; ++y) {
-                    for(int[] dir : dirs) {
-                        int nx = x + dir[0];
-                        int ny = y + dir[1];
-                        // 边界处理, 无论在第几步只要位置处于边界都包含一步出界的情况
-                        if(nx < 0 || nx >= m || ny < 0 || ny >= n) 
-                            dp[x][y][k] += 1;
-                        else
-                            dp[x][y][k] = (dp[x][y][k] + dp[nx][ny][k-1]) % mod;
-                    }
-                }
-            }
-        }
-        
-        return dp[i][j][N];
-        */
+        /*
+        动态规划:
+        出界是指内部的格子再移动一格后就不是内部的格子，因此可以统计出起点到边缘格子的路径数总和
+        但是移出界还要多一次，因此移动到边界最多maxMove-1次
+        1.状态定义:f[i][j][k]表示从[startRow,startCol]移动k次到[i,j]的路径数
+        2.状态转移:显然f[i][j][k]要依赖于f[?][?][k-1]
+            遍历所有f[i][j][k-1]的状态，若是有效值(不为0)则可以向上下左右4个方向移动
+            f[newI][newJ][k]+=f[i][j][k-1]
+        3.初始化:初值覆盖0，表示没有路径到达该格子，并且f[startRow][startCol][0]=1
+        4.遍历顺序:先k正序，后i与j任意
+        5.返回形式:∑f[0][j][<maxMove]+∑f[m-1][j][<maxMove]+∑f[i][0][<maxMove]+∑f[i][n-1][<maxMove] 其中i∈[0,m-1]，j∈[0,n-1]
+        时间复杂度:O(m*n*maxRove) 空间复杂度:O(m*n*maxMove)
+         */
 
 ## 解法
 ```java
-
 class Solution {
-    public int findPaths(int m, int n, int N, int i, int j) {
-
-        /**
-        动态规划, dp[i][j][k]表示从(i, j)开始在k步内移除边界的路径数. 
-        可知dp[i][j][k]只与(i, j)四周邻接点在k-1步内移除边界的路径数有关. 
-        dp[i][j][k] = dp[i-1][j][k-1] + dp[i+1][j][k-1] + dp[i][j-1][k-1] + dp[i][j+1][k-1];
-        空间优化: 可以看出重复利用一个二维数组储存路径数即可(k-1步更新之后就无需保存)
-        **/
-        
-        /* 无空间优化版
-        if(N <= 0) return 0;
-        int mod = 1000000007;
-        int[][][] dp = new int[m][n][N+1];
-        
-        int[][] dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
-        
-        for(int k = 1; k <= N; ++k) {
-            for(int x = 0; x < m; ++x) {
-                for(int y = 0; y < n; ++y) {
-                    for(int[] dir : dirs) {
-                        int nx = x + dir[0];
-                        int ny = y + dir[1];
-                        // 边界处理, 无论在第几步只要位置处于边界都包含一步出界的情况
-                        if(nx < 0 || nx >= m || ny < 0 || ny >= n) 
-                            dp[x][y][k] += 1;
-                        else
-                            dp[x][y][k] = (dp[x][y][k] + dp[nx][ny][k-1]) % mod;
+        public int findPaths(int m, int n, int maxMove, int startRow, int startCol) {
+        /*
+        动态规划:
+        出界是指内部的格子再移动一格后就不是内部的格子，因此可以统计出起点到边缘格子的路径数总和
+        但是移出界还要多一次，因此移动到边界最多maxMove-1次
+        1.状态定义:f[i][j][k]表示从[startRow,startCol]移动k次到[i,j]的路径数
+        2.状态转移:显然f[i][j][k]要依赖于f[?][?][k-1]
+            遍历所有f[i][j][k-1]的状态，若是有效值(不为0)则可以向上下左右4个方向移动
+            f[newI][newJ][k]+=f[i][j][k-1]
+        3.初始化:初值覆盖0，表示没有路径到达该格子，并且f[startRow][startCol][0]=1
+        4.遍历顺序:先k正序，后i与j任意
+        5.返回形式:∑f[0][j][<maxMove]+∑f[m-1][j][<maxMove]+∑f[i][0][<maxMove]+∑f[i][n-1][<maxMove] 其中i∈[0,m-1]，j∈[0,n-1]
+        时间复杂度:O(m*n*maxRove) 空间复杂度:O(m*n*maxMove)
+         */
+        if (maxMove == 0) return 0; // 无法移动就出界不了
+        int MOD = (int) 1e9 + 7;
+        int[][] dirs = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+        long[][][] f = new long[m][n][maxMove];
+        f[startRow][startCol][0] = 1L;
+        for (int k = 1; k < maxMove; k++) {
+            for (int i = 0; i < m; i++) {
+                for (int j = 0; j < n; j++) {
+                    for (int[] dir : dirs) {
+                        int newI = i + dir[0], newJ = j + dir[1];
+                        // 前面的格子在区域内且有效才进行转移
+                        if (newI >= 0 && newI <= m - 1 && newJ >= 0 && newJ <= n - 1 && f[i][j][k - 1] != 0) {
+                            f[newI][newJ][k] = (f[newI][newJ][k] + f[i][j][k - 1]) % MOD;
+                        }
                     }
                 }
             }
         }
-        
-        return dp[i][j][N];
-        */
-        
-        // 带有空间优化
-        if(N <= 0) return 0;
-        int mod = 1000000007;
-        int ret = 0;
-        int[][] dp = new int[m][n]; // 保存第k步的结果
-        int[][] dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
-        
-        for(int k = 1; k <= N; ++k) {
-            int[][] temp = new int[m][n]; // 保存第k-1步的结果
-            for(int x = 0; x < m; ++x) {
-                for(int y = 0; y < n; ++y) {
-                    for(int[] dir : dirs) {
-                        int nx = x + dir[0];
-                        int ny = y + dir[1];
-                        if(nx < 0 || nx >= m || ny < 0 || ny >= n)
-                            temp[x][y] += 1;
-                        else
-                            temp[x][y] = (dp[nx][ny] + temp[x][y]) % mod;
-                    }
-                }
+        // System.out.println(Arrays.deepToString(f));
+        long res = 0;
+        for (int k = 0; k < maxMove; k++) {
+            for (int i = 0; i < m; i++) {
+                res = (res + f[i][0][k]) % MOD;
+                res = (res + f[i][n - 1][k]) % MOD;
             }
-            dp = temp;
+            for (int j = 0; j < n; j++) {
+                res = (res + f[0][j][k]) % MOD;
+                res = (res + f[m - 1][j][k]) % MOD;
+            }
         }
-        
-        return dp[i][j];
-    }
-}
+        return (int) res;
+}}
 ```
 
 ## 总结
