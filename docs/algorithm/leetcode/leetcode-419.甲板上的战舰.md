@@ -1,3 +1,17 @@
+---
+title: 甲板上的战舰
+date: 2022-07-24 15:55:56
+permalink: /pages/80aa96/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目
@@ -10,6 +24,7 @@
 
 示例 1：
 
+![](../../../media/pictures/leetcode/battelship-grid.jpeg)
 
     输入：board = [["X",".",".","X"],[".",".",".","X"],[".",".",".","X"]]
     输出：2
@@ -33,12 +48,38 @@
 
 ## 思路
 
-
+当遍历到X时，只需要判断top和left是否为X，如果不是，就表示当前X是一个ship，因为不会给出错误测试用例，所以一次遍历即可
 
 ## 解法
 ```java
 
-
+class Solution {
+    // 当遍历到X时，只需要判断top和left是否为X，如果不是，就表示当前X是一个ship，因为不会给出错误测试用例，所以一次遍历即可
+    public int countBattleships(char[][] board) {
+        int count = 0;
+        for(int i = 0 ; i < board.length ; i ++) {
+            for(int j = 0 ; j < board[0].length ; j ++) {
+                if(board[i][j] == 'X') {
+                    Boolean isShip = true;
+                    if(i != 0) {
+                        if(board[i - 1][j] == 'X') {
+                            isShip = false;
+                        }
+                    }
+                    if(j != 0) {
+                        if(board[i][j - 1] == 'X') {
+                            isShip = false;
+                        }
+                    }
+                    if(isShip) {
+                        count ++;
+                    }
+                }
+            }
+        }
+        return count;
+    }
+}
 ```
 
 ## 总结

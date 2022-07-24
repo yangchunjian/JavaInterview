@@ -341,6 +341,7 @@ module.exports = {
             "/algorithm/leetcode/leetcode-407.接雨水 II",
             "/algorithm/leetcode/leetcode-410.分割数组的最大值",
             "/algorithm/leetcode/leetcode-417.太平洋大西洋水流问题",
+            "/algorithm/leetcode/leetcode-419.甲板上的战舰",
             "/algorithm/leetcode/leetcode-421.数组中两个数的最大异或值",
             "/algorithm/leetcode/leetcode-423.从英文中重建数字",
             "/algorithm/leetcode/leetcode-424.替换后的最长重复字符",
