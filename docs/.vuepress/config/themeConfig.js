@@ -345,6 +345,7 @@ module.exports = {
             "/algorithm/leetcode/leetcode-423.从英文中重建数字",
             "/algorithm/leetcode/leetcode-424.替换后的最长重复字符",
             "/algorithm/leetcode/leetcode-427.建立四叉树",
+            "/algorithm/leetcode/leetcode-433.最小基因变化",
             "/algorithm/leetcode/leetcode-434.字符串中的单词数",
             "/algorithm/leetcode/leetcode-435.无重叠区间",
             "/algorithm/leetcode/leetcode-436.寻找右区间",

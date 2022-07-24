@@ -1,3 +1,17 @@
+---
+title: 回文对
+date: 2022-07-23 23:29:04
+permalink: /pages/9e577f/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
