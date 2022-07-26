@@ -70,7 +70,7 @@ module.exports = [
     email: '1091938307@qq.com',
     fallbackImage: 'https://javainterview.cn/assets/icon/logo200x100.png',
     autoQuote: true,
-    isPlain: true,
+    isPlain: false,
     icon: 'https://javainterview.cn/assets/icon/logo200x100.png',
   }],
   [
