@@ -305,6 +305,8 @@ module.exports = {
             "/algorithm/leetcode/leetcode-347.前 K 个高频元素",
             "/algorithm/leetcode/leetcode-349.两个数组的交集",
             "/algorithm/leetcode/leetcode-350.两个数组的交集 II",
+            "/algorithm/leetcode/leetcode-352.将数据流变为多个不相交区间",
+            "/algorithm/leetcode/leetcode-354.俄罗斯套娃信封问题",
             "/algorithm/leetcode/leetcode-355.设计推特",
             "/algorithm/leetcode/leetcode-365.水壶问题",
             "/algorithm/leetcode/leetcode-368.最大整除子集",
