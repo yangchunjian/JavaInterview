@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Footer from "@theme/components/Footer.vue";
-import * as config from "./package.json"
+// import * as config from "./package.json"
 
 //代码高亮文件引入
 /* import hljs from 'highlight.js' */
@@ -17,15 +17,15 @@ Vue.directive('highlight', function (el) {
 })
 
 // 阻止启动生产环境消息
-Vue.config.productionTip = false
+// Vue.config.productionTip = false
 // 注册Vue全局组件
 // 暂时不能把Footer声明在这里，不然会导致比Document先执行(我放在mounted()函数里执行完美解决)
 Vue.component('Footer', Footer)
 
 // 自定义扩展参数
-Vue.prototype.$appName = config.name;
-Vue.prototype.$appUrl = config.repository;
-Vue.prototype.$appDescription = config.description;
+// Vue.prototype.$appName = config.name;
+// Vue.prototype.$appUrl = config.repository;
+// Vue.prototype.$appDescription = config.description;
 
 export default ({
   Vue, // VuePress 正在使用的 Vue 构造函数
