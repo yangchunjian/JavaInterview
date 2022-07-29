@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Footer from "@theme/components/Footer.vue";
+import Footer from "./components/Footer.vue";
 // import * as config from "./package.json"
 
 //代码高亮文件引入
