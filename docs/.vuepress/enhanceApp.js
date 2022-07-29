@@ -1,5 +1,4 @@
 import Vue from 'vue'
-import ForkMe from "@theme/components/ForkMe.vue";
 import Footer from "@theme/components/Footer.vue";
 import * as config from "./package.json"
 
@@ -20,7 +19,6 @@ Vue.directive('highlight', function (el) {
 // 阻止启动生产环境消息
 Vue.config.productionTip = false
 // 注册Vue全局组件
-// Vue.component('ForkMe', ForkMe)
 // 暂时不能把Footer声明在这里，不然会导致比Document先执行(我放在mounted()函数里执行完美解决)
 Vue.component('Footer', Footer)
 
