@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Busuanzi from "./Busuanzi.vue";
+import Busuanzi from "@theme/components/Busuanzi.vue";
 
 export default {
   components: {
