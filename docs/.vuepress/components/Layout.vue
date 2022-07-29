@@ -7,7 +7,7 @@
 
 <script>
 
-import ParentLayout from "@parent-theme/layouts/Layout.vue";
+import ParentLayout from "./Layout.vue";
 
 export default {
   components: {
