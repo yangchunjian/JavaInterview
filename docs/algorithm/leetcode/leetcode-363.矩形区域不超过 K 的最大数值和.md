@@ -1,0 +1,93 @@
+---
+title: 矩形区域不超过 K 的最大数值和
+date: 2022-07-30 14:19:29
+permalink: /pages/9662f9/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
+
+
+## 题目
+
+给你一个 m x n 的矩阵 matrix 和一个整数 k ，找出并返回矩阵内部矩形区域的不超过 k 的最大数值和。
+
+题目数据保证总会存在一个数值和不超过 k 的矩形区域。
+
+ 
+
+示例 1：
+
+![](../../../media/pictures/leetcode/sum-grid.jpeg)
+
+    输入：matrix = [[1,0,1],[0,-2,3]], k = 2
+    输出：2
+    解释：蓝色边框圈出来的矩形区域 [[0, 1], [-2, 3]] 的数值和是 2，且 2 是不超过 k 的最大数字（k = 2）。
+示例 2：
+
+    输入：matrix = [[2,2,-1]], k = 3
+    输出：3
+ 
+
+提示：
+
+- m == matrix.length
+- n == matrix[i].length
+- 1 <= m, n <= 100
+- -100 <= matrix[i][j] <= 100
+- -10<sup>5</sup> <= k <= 10<sup>5</sup>
+
+
+
+## 思路
+
+    // 枚举所有 的小矩形
+
+## 解法
+```java
+
+class Solution {
+    // 枚举所有 的小矩形
+
+
+    public int maxSumSubmatrix(int[][] matrix, int k) {
+
+        int xlen = matrix.length;
+        if(xlen == 0){
+            return 0;
+        }
+        int ylen = matrix[0].length;
+        int[][] sum = new int[xlen + 1][ylen + 1];
+        for(int i = 0; i < xlen; i++) {
+            for (int j = 0; j < ylen; j++){
+                sum[i+1][j+1] = sum[i][j+1] + sum[i+1][j] + matrix[i][j] - sum[i][j];
+                System.out.println(sum[i+1][j+1]);
+            }
+        }
+         int ans = Integer.MIN_VALUE;
+        for (int i = 0; i <= xlen; i++) {
+            for (int j = 0; j <= ylen; j++) {
+                for (int p = i; p < xlen; p++) {
+                    for (int q = j; q < ylen; q++) {
+                        int cur = sum[p+1][q+1] - sum[i][q+1] - sum[p+1][j] + sum[i][j];
+                        if (cur <= k) {
+                            ans = Math.max(ans, cur);
+                        } 
+                    }
+                }
+            }
+        }
+        return ans;
+    }
+}
+```
+
+## 总结
+
+- 分析出几种情况，然后分别对各个情况实现 
