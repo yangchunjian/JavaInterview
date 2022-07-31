@@ -79,3 +79,59 @@ public class Selector implements Selectable, AutoCloseable {
     private boolean madeReadProgressLastPoll = true;
 
 ```
+
+### 批量操作
+
+```java
+public final class ProducerBatch {
+    private static final Logger log = LoggerFactory.getLogger(ProducerBatch.class);
+    final long createdMs;
+    final TopicPartition topicPartition;
+    final ProduceRequestResult produceFuture;
+    private final List<ProducerBatch.Thunk> thunks;
+    private final MemoryRecordsBuilder recordsBuilder;
+    private final AtomicInteger attempts;
+    private final boolean isSplitBatch;
+    private final AtomicReference<ProducerBatch.FinalState> finalState;
+    int recordCount;
+    int maxRecordSize;
+    private long lastAttemptMs;
+    private long lastAppendTime;
+    private long drainedMs;
+    private boolean retry;
+    private boolean reopened;
+```
+
+### ErrorLoggingCallback错误回调类
+
+```java
+public class ErrorLoggingCallback implements Callback {
+    private static final Logger log = LoggerFactory.getLogger(ErrorLoggingCallback.class);
+    private String topic;
+    private byte[] key;
+    private byte[] value;
+    private int valueLength;
+    private boolean logAsString;
+
+    public ErrorLoggingCallback(String topic, byte[] key, byte[] value, boolean logAsString) {
+        this.topic = topic;
+        this.key = key;
+        if(logAsString) {
+            this.value = value;
+        }
+
+        this.valueLength = value == null?-1:value.length;
+        this.logAsString = logAsString;
+    }
+
+    public void onCompletion(RecordMetadata metadata, Exception e) {
+        if(e != null) {
+            String keyString = this.key == null?"null":(this.logAsString?new String(this.key, StandardCharsets.UTF_8):this.key.length + " bytes");
+            String valueString = this.valueLength == -1?"null":(this.logAsString?new String(this.value, StandardCharsets.UTF_8):this.valueLength + " bytes");
+            log.error("Error when sending message to topic {} with key: {}, value: {} with error:", new Object[]{this.topic, keyString, valueString, e});
+        }
+
+    }
+}
+
+```
