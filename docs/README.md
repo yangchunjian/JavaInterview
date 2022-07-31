@@ -50,9 +50,9 @@ footer: Copyright © 2018-2022 JavaInterview.cn
         👀 本站总访问量:<span id="busuanzi_value_site_pv"></span> 次
     </span>
     <span id="busuanzi_container_site_uv" style='display:none'>
-        | 🚴 本站总访客数:<span id="busuanzi_value_site_uv"></span> 人
+        | 🚴 本站总访客数:<span id="busuanzi_value_site_uv"></span> 人 | 
     </span>
     <span>
-        | Copyright © 2022 <a href="https://JavaInterview.cn" target="_blank">JavaInterview.cn</a>
+        Copyright © 2022 <a href="https://JavaInterview.cn" target="_blank">JavaInterview.cn</a>
     </span>
 </div>
