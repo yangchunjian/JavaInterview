@@ -371,6 +371,7 @@ module.exports = {
             "/algorithm/leetcode/leetcode-456.132模式",
             "/algorithm/leetcode/leetcode-457.环形数组是否存在循环",
             "/algorithm/leetcode/leetcode-461.汉明距离",
+            "/algorithm/leetcode/leetcode-462.最少移动次数使数组元素相等 II",
             "/algorithm/leetcode/leetcode-464.我能赢吗",
             "/algorithm/leetcode/leetcode-470.用 Rand7() 实现 Rand10()",
             "/algorithm/leetcode/leetcode-473.火柴拼正方形",
