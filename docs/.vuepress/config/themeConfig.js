@@ -286,6 +286,7 @@ module.exports = {
             "/algorithm/leetcode/leetcode-306.累加数",
             "/algorithm/leetcode/leetcode-307.区域和检索 - 数组可修改",
             "/algorithm/leetcode/leetcode-309.最佳买卖股票时机含冷冻期",
+            "/algorithm/leetcode/leetcode-310.最小高度树",
             "/algorithm/leetcode/leetcode-312.戳气球",
             "/algorithm/leetcode/leetcode-313.超级丑数",
             "/algorithm/leetcode/leetcode-315.计算右侧小于当前元素的个数",
