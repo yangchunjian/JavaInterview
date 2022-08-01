@@ -378,6 +378,7 @@ module.exports = {
             "/algorithm/leetcode/leetcode-464.我能赢吗",
             "/algorithm/leetcode/leetcode-468.验证IP地址",
             "/algorithm/leetcode/leetcode-470.用 Rand7() 实现 Rand10()",
+            "/algorithm/leetcode/leetcode-472.连接词",
             "/algorithm/leetcode/leetcode-473.火柴拼正方形",
             "/algorithm/leetcode/leetcode-475.供暖器",
             "/algorithm/leetcode/leetcode-477.汉明距离总和",
