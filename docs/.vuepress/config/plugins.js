@@ -28,7 +28,7 @@ module.exports = [
       animateSections: false
     },
     ribbonShow: false, //  点击彩带  true显示  false为不显示
-    ribbonAnimationShow: false  // 滑动彩带
+    ribbonAnimationShow: true  // 滑动彩带
   }],
   // 本地插件
   // [require('../plugins/read')], // 阅读时间插件
