@@ -13,11 +13,11 @@ module.exports = [
       // 带状颜色不透明度
       colorAlpha: 0.65,
       // 在HSL颜色空间中循环显示颜色的速度有多快
-      colorCycleSpeed: 6,
+      colorCycleSpeed: 60,
       // 从哪一侧开始Y轴 (top|min, middle|center, bottom|max, random)
       verticalPosition: "center",
       // 到达屏幕另一侧的速度有多快
-      horizontalSpeed: 200,
+      horizontalSpeed: 20000,
       // 在任何给定时间，屏幕上会保留多少条带
       ribbonCount: 2,
       // 添加笔划以及色带填充颜色
@@ -25,10 +25,10 @@ module.exports = [
       // 通过页面滚动上的因子垂直移动色带
       parallaxAmount: -0.5,
       // 随着时间的推移，为每个功能区添加动画效果
-      animateSections: true
+      animateSections: false
     },
     ribbonShow: false, //  点击彩带  true显示  false为不显示
-    ribbonAnimationShow: true  // 滑动彩带
+    ribbonAnimationShow: false  // 滑动彩带
   }],
   // 本地插件
   // [require('../plugins/read')], // 阅读时间插件
