@@ -367,6 +367,7 @@ module.exports = {
             "/algorithm/leetcode/leetcode-442.数组中重复的数据",
             "/algorithm/leetcode/leetcode-443.压缩字符串",
             "/algorithm/leetcode/leetcode-445.两数相加II",
+            "/algorithm/leetcode/leetcode-447.回旋镖的数量",
             "/algorithm/leetcode/leetcode-449.序列化和反序列化二叉搜索树",
             "/algorithm/leetcode/leetcode-451.根据字符出现频率排序",
             "/algorithm/leetcode/leetcode-452.用最少数量的箭引爆气球",
