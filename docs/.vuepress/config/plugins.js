@@ -1,5 +1,14 @@
 // 插件配置
 module.exports = [
+  //一条线插件
+  [
+    'ribbon',
+    {
+      size: 90, // width of the ribbon, default: 90
+      opacity: 0.8, // opacity of the ribbon, default: 0.3
+      zIndex: -1, // z-index property of the background, default: -1
+    },
+  ],
   // 本地插件
   // [require('../plugins/read')], // 阅读时间插件
   [
