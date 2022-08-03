@@ -114,8 +114,8 @@ module.exports = [
                 var timezone = require('dayjs/plugin/timezone'); // dependent on utc plugin
                 dayjs.extend(utc);
                 dayjs.extend(timezone);
-                var nowTime = dayjs(timestamp).format('YYYY-MM-DD HH:mm');
-                return dayjs(nowTime).tz('Asia/Shanghai').format("YYYY-MM-DD HH:mm");
+                // var nowTime = dayjs(timestamp).format('YYYY-MM-DD HH:mm');
+                return dayjs(timestamp).tz('Asia/Shanghai').format("YYYY-MM-DD HH:mm");
             },
         },
     ],
