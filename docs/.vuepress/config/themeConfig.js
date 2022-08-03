@@ -388,6 +388,7 @@ module.exports = {
             "/algorithm/leetcode/leetcode-481.神奇字符串",
             "/algorithm/leetcode/leetcode-482.密钥格式化",
             "/algorithm/leetcode/leetcode-485.最大连续 1 的个数",
+            "/algorithm/leetcode/leetcode-497.非重叠矩形中的随机点",
             "/algorithm/leetcode/leetcode-502.IPO",
             "/algorithm/leetcode/leetcode-503.下一个更大元素 II",
             "/algorithm/leetcode/leetcode-508.出现次数最多的子树元素和",
