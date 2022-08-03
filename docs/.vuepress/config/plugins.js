@@ -108,8 +108,14 @@ module.exports = [
         '@vuepress/last-updated', // "上次更新"时间格式
         {
             transformer: (timestamp, lang) => {
-                const dayjs = require('dayjs') // https://day.js.org/
-                return dayjs(timestamp).tz("PRC").format('YYYY/MM/DD, HH:mm:ss') //中国时间
+                const dayjs = require('dayjs'); // https://day.js.org/
+                // return dayjs(timestamp).format('YYYY/MM/DD, HH:mm') //中国时间
+                var utc = require('dayjs/plugin/utc');
+                var timezone = require('dayjs/plugin/timezone'); // dependent on utc plugin
+                dayjs.extend(utc);
+                dayjs.extend(timezone);
+                var nowTime = dayjs(timestamp).format('YYYY-MM-DD HH:mm');
+                return dayjs(nowTime).tz('Asia/Shanghai').format("YYYY-MM-DD HH:mm");
             },
         },
     ],
