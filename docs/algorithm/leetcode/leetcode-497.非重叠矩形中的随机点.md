@@ -1,3 +1,17 @@
+---
+title: 非重叠矩形中的随机点
+date: 2022-08-04 00:07:59
+permalink: /pages/6ddc9f/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

@@ -393,6 +393,7 @@ module.exports = {
             "/algorithm/leetcode/leetcode-503.下一个更大元素 II",
             "/algorithm/leetcode/leetcode-508.出现次数最多的子树元素和",
             "/algorithm/leetcode/leetcode-514.自由之路",
+            "/algorithm/leetcode/leetcode-516.最长回文子序列",
             "/algorithm/leetcode/leetcode-518.零钱兑换 II",
             "/algorithm/leetcode/leetcode-525.连续数组",
             "/algorithm/leetcode/leetcode-526.优美的排列",
