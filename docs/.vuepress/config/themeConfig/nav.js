@@ -8,6 +8,7 @@ module.exports = [
   {
     text: '作者',
     items: [
+      {text: '相亲交友', link: 'https://dearlocation.com/me/'},
       {text: 'CSDN', link: 'https://yangchunjian.blog.csdn.net'},
       {text: '文档箱', link: 'https://yangchunjian.com'},
       {text: '亲位网', link: 'https://dearlocation.com'},
