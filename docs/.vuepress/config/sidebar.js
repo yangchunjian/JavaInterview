@@ -385,6 +385,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1377.T 秒后青蛙的位置",
                     "/algorithm/leetcode/leetcode-1379.找出克隆二叉树中的相同节点",
                     "/algorithm/leetcode/leetcode-1380.矩阵中的幸运数",
+                    "/algorithm/leetcode/leetcode-1443.收集树上所有苹果的最少时间",
                     "/algorithm/leetcode/leetcode-1448.统计二叉树中好节点的数目",
                     "/algorithm/leetcode/leetcode-1530.好叶子节点对的数量",
                     "/algorithm/leetcode/leetcode-1569.将子数组重新排序得到同一个二叉查找树的方案数",
