@@ -357,6 +357,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-872.叶子相似的树",
                     "/algorithm/leetcode/leetcode-889.根据前序和后序遍历构造二叉树",
                     "/algorithm/leetcode/leetcode-915.分割数组",
+                    "/algorithm/leetcode/leetcode-918.环形子数组的最大和",
                     "/algorithm/leetcode/leetcode-919.完全二叉树插入器",
                     "/algorithm/leetcode/leetcode-951.翻转等价二叉树",
                     "/algorithm/leetcode/leetcode-958.二叉树的完全性检验",
