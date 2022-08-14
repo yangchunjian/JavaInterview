@@ -57,12 +57,50 @@ titleTag: Java
 
 ## 思路
 
-
+递归
 
 ## 解法
 ```java
 
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public TreeNode subtreeWithAllDeepest(TreeNode root) {
 
+           if(root==null)
+    	   return null;
+       else {
+    	   int ldep=maxDepth(root.left),rdep=maxDepth(root.right);
+    	   if(ldep==rdep)
+    		   return root;
+    	   else if(ldep>rdep)
+    		   return subtreeWithAllDeepest(root.left);
+    	   else
+    		   return subtreeWithAllDeepest(root.right);
+       }
+    }
+    
+    
+    int maxDepth(TreeNode root) {
+    	if(root==null)
+    		return 0;
+    	else
+    		return Math.max(maxDepth(root.left), maxDepth(root.right))+1;
+    }
+}
 ```
 
 ## 总结
