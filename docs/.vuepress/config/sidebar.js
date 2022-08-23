@@ -347,6 +347,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-606.根据二叉树创建字符串",
                     "/algorithm/leetcode/leetcode-622.设计循环队列",
                     "/algorithm/leetcode/leetcode-623.在二叉树中增加一行",
+                    "/algorithm/leetcode/leetcode-641.设计循环双端队列",
                     "/algorithm/leetcode/leetcode-655.输出二叉树",
                     "/algorithm/leetcode/leetcode-662.二叉树最大宽度",
                     "/algorithm/leetcode/leetcode-669.修剪二叉搜索树",
