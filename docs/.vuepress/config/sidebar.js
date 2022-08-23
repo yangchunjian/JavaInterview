@@ -345,6 +345,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-567.字符串的排列",
                     "/algorithm/leetcode/leetcode-576.出界的路径数",
                     "/algorithm/leetcode/leetcode-606.根据二叉树创建字符串",
+                    "/algorithm/leetcode/leetcode-622.设计循环队列",
                     "/algorithm/leetcode/leetcode-623.在二叉树中增加一行",
                     "/algorithm/leetcode/leetcode-655.输出二叉树",
                     "/algorithm/leetcode/leetcode-662.二叉树最大宽度",
