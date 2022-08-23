@@ -353,6 +353,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-669.修剪二叉搜索树",
                     "/algorithm/leetcode/leetcode-687.最长同值路径",
                     "/algorithm/leetcode/leetcode-715.Range 模块",
+                    "/algorithm/leetcode/leetcode-725.分隔链表",
                     "/algorithm/leetcode/leetcode-752.打开转盘锁",
                     "/algorithm/leetcode/leetcode-753.破解保险箱",
                     "/algorithm/leetcode/leetcode-863.二叉树中所有距离为 K 的结点",
