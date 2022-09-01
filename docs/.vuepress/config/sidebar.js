@@ -352,6 +352,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-662.二叉树最大宽度",
                     "/algorithm/leetcode/leetcode-669.修剪二叉搜索树",
                     "/algorithm/leetcode/leetcode-687.最长同值路径",
+                    "/algorithm/leetcode/leetcode-705.设计哈希集合",
                     "/algorithm/leetcode/leetcode-715.Range 模块",
                     "/algorithm/leetcode/leetcode-725.分隔链表",
                     "/algorithm/leetcode/leetcode-752.打开转盘锁",
