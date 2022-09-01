@@ -1,3 +1,17 @@
+---
+title: 设计前中后队列
+date: 2022-09-01 22:08:31
+permalink: /pages/932ea5/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
