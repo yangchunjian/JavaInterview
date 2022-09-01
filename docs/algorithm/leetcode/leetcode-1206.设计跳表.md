@@ -76,88 +76,92 @@ Artyom Kalinin [CC BY-SA 3.0], via Wikimedia Commons
 ```java
 
 class Skiplist {
-   static final int MAX_LEVEL = 32;
-    static final double P_FACTOR = 0.25;
-    Node head;
-    int level;
-    Random random = new Random();
+        final int maxLevel = 5;
 
-    public Skiplist() {
-        head = new Node(-1, MAX_LEVEL);
-    }
+        Random random = new Random();
 
-    public boolean search(int target) {
-        Node curr = head;
-        for (int i = level - 1; i >= 0; i--) {
-            while (curr.forward[i] != null && curr.forward[i].val < target) {
-                curr = curr.forward[i];
+        SkipNode head = new SkipNode(-1, maxLevel); //头节点
+
+        int level = 1; // 当前的层级，默认有一层
+
+        class SkipNode {
+            int val;
+            SkipNode[] forwards;
+
+            public SkipNode(int val, int level) {
+                this.val = val;
+                forwards = new SkipNode[level];
             }
         }
-        curr = curr.forward[0];
-        return curr != null && curr.val == target;
-    }
 
-    public void add(int num) {
-        Node[] upload = new Node[MAX_LEVEL];
-        Arrays.fill(upload, head);
-        Node curr = head;
-        for (int i = level - 1; i >= 0; i--) {
-            while (curr.forward[i] != null && curr.forward[i].val < num) {
-                curr = curr.forward[i];
+        public boolean search(int target) {
+            SkipNode current = head;
+            for (int i = level -1; i >= 0; i--) {
+                while (current.forwards[i] != null && (current.forwards[i].val < target)) {
+                    current = current.forwards[i];
+                }
             }
-            upload[i] = curr;
+            return current.forwards[0] != null && current.forwards[0].val == target;
         }
-        int lv = randomLevel();
-        level = Math.max(level, lv);
-        Node newNode = new Node(num, lv);
-        for (int i = 0; i < lv; i++) {
-            newNode.forward[i] = upload[i].forward[i];
-            upload[i].forward[i] = newNode;
-        }
-    }
 
-    public boolean erase(int num) {
-        Node[] upload = new Node[MAX_LEVEL];
-        Node curr = head;
-        for (int i = level - 1; i >= 0; i--) {
-            while (curr.forward[i] != null && curr.forward[i].val < num) {
-                curr = curr.forward[i];
+        public boolean erase(int num) {
+            // 记录跳表中每一个层级的前序位置
+            SkipNode[] levelPres = new SkipNode[maxLevel];
+            SkipNode current = head;
+            for (int i = level -1; i >= 0; i--) {
+                while (current.forwards[i] != null && (current.forwards[i].val < num)) {
+                    current = current.forwards[i];
+                }
+                levelPres[i] = current;
             }
-            upload[i] = curr;
-        }
-        curr = curr.forward[0];
-        if (curr == null || curr.val != num) {
-            return false;
-        }
-        for (int i = 0; i < level; i++) {
-            if (upload[i].forward[i] != curr) {
-                break;
+            SkipNode removeData = levelPres[0].forwards[0];
+            if (removeData == null || removeData.val != num) {
+                return false;
             }
-            upload[i].forward[i] = curr.forward[i];
+            for (int i = 0; i < level; i++) {
+                if (levelPres[i].forwards[i] != removeData) {
+                    break;
+                }
+                levelPres[i].forwards[i] = removeData.forwards[i];
+            }
+            // 更新当前的 level
+            while (level > 1 && head.forwards[level - 1] == null) {
+                level--;
+            }
+            return true;
         }
-        while (level > 1 && head.forward[level - 1] == null) {
-            level--;
-        }
-        return true;
-    }
 
-    int randomLevel() {
-        int lv = 1;
-        while (random.nextDouble() < P_FACTOR && lv < MAX_LEVEL) {
-            lv++;
-        }
-        return lv;
-    }
+        public void add(int num) {
+            // 记录跳表中每一个层级的前序位置
+            SkipNode[] levelPres = new SkipNode[maxLevel];
+            Arrays.fill(levelPres, head);
 
-    static class Node {
-        int val;
-        Node[] forward;
+            SkipNode current = head;
+            // 当前使用的层级 i 遍历每一层
+            for (int i = level -1 ; i >= 0 ; i--) {
+                // 遍历当前层级小于传入数据中最大的一个元素，即当前层级可以插入的位置的后面
+                while (current.forwards[i] !=null && current.forwards[i].val < num) {
+                    current = current.forwards[i];
+                }
+                levelPres[i] = current;
+            }
 
-        public Node(int val, int maxLevel) {
-            this.val = val;
-            forward = new Node[maxLevel];
+            // 当前数据需要落到第几层
+            int lv = randomLv();
+            // 当前最大的层级数需要更新一下
+            level = Math.max(lv, level);
+
+            SkipNode newNode = new SkipNode(num, lv);
+            for (int i = 0; i < lv; i++) {
+                newNode.forwards[i] = levelPres[i].forwards[i];
+                levelPres[i].forwards[i] = newNode;
+            }
         }
-    }
+
+        private int randomLv() {
+          return random.nextInt(maxLevel) + 1;
+        }
+
 }
 
 /**
