@@ -104,12 +104,74 @@ titleTag: Java
 
 ## 思路
 
-
+递归
 
 ## 解法
 ```java
 
+/*
+// Definition for a QuadTree node.
+class Node {
+    public boolean val;
+    public boolean isLeaf;
+    public Node topLeft;
+    public Node topRight;
+    public Node bottomLeft;
+    public Node bottomRight;
 
+    public Node() {}
+
+    public Node(boolean _val,boolean _isLeaf,Node _topLeft,Node _topRight,Node _bottomLeft,Node _bottomRight) {
+        val = _val;
+        isLeaf = _isLeaf;
+        topLeft = _topLeft;
+        topRight = _topRight;
+        bottomLeft = _bottomLeft;
+        bottomRight = _bottomRight;
+    }
+};
+*/
+
+class Solution {
+    public Node intersect(Node quadTree1, Node quadTree2) {
+        
+            return build(quadTree1, quadTree2);
+    }
+
+    private Node build(Node quadTree1, Node quadTree2) {
+        if (quadTree1.isLeaf || quadTree2.isLeaf) {
+            // 两个都是叶子节点
+            if (quadTree1.isLeaf && quadTree2.isLeaf) {
+                return new Node(quadTree1.val | quadTree2.val, true, null, null, null, null);
+            } else {
+                // 其中一个是一个不是
+                if (quadTree1.isLeaf) {
+                    if (quadTree1.val) {
+                        return new Node(true, true, null, null, null, null);
+                    } else {
+                        return quadTree2;
+                    }
+                } else {
+                    if (quadTree2.val) {
+                        return new Node(true, true, null, null, null, null);
+                    } else {
+                        return quadTree1;
+                    }
+                }
+            }
+        } else {
+            Node topLeft = build(quadTree1.topLeft, quadTree2.topLeft);
+            Node topRight = build(quadTree1.topRight, quadTree2.topRight);
+            Node bottomLeft = build(quadTree1.bottomLeft, quadTree2.bottomLeft);
+            Node bottomRight = build(quadTree1.bottomRight, quadTree2.bottomRight);
+            if (topLeft.val && topLeft.isLeaf && topRight.val && topRight.isLeaf && bottomLeft.val && bottomLeft.isLeaf && bottomRight.val && bottomRight.isLeaf) {
+                return new Node(true, true, null, null, null, null);
+            } else {
+                return new Node(false, false, topLeft, topRight, bottomLeft, bottomRight);
+            }
+        }
+    }
+}
 ```
 
 ## 总结
