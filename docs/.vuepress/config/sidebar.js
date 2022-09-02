@@ -407,6 +407,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-2058.找出临界点之间的最小和最大距离",
                     "/algorithm/leetcode/leetcode-2181.合并零之间的节点",
                     "/algorithm/leetcode/leetcode-2289.使数组按非递减顺序排列",
+                    "/algorithm/leetcode/leetcode-2326.螺旋矩阵 IV",
                 ]
             },
             {
