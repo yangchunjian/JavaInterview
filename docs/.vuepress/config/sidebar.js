@@ -361,6 +361,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-725.分隔链表",
                     "/algorithm/leetcode/leetcode-752.打开转盘锁",
                     "/algorithm/leetcode/leetcode-753.破解保险箱",
+                    "/algorithm/leetcode/leetcode-761.特殊的二进制序列",
                     "/algorithm/leetcode/leetcode-817.链表组件",
                     "/algorithm/leetcode/leetcode-834.树中距离之和",
                     "/algorithm/leetcode/leetcode-863.二叉树中所有距离为 K 的结点",
