@@ -341,6 +341,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-522.最长特殊序列 II",
                     "/algorithm/leetcode/leetcode-525.连续数组",
                     "/algorithm/leetcode/leetcode-526.优美的排列",
+                    "/algorithm/leetcode/leetcode-542.01矩阵",
                     "/algorithm/leetcode/leetcode-572.另一棵树的子树",
                     "/algorithm/leetcode/leetcode-558.四叉树交集",
                     "/algorithm/leetcode/leetcode-559.N叉树的最大深度",
