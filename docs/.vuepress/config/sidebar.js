@@ -349,6 +349,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-542.01矩阵",
                     "/algorithm/leetcode/leetcode-547.省份数量",
                     "/algorithm/leetcode/leetcode-553.最优除法",
+                    "/algorithm/leetcode/leetcode-556.下一个更大元素 III",
                     "/algorithm/leetcode/leetcode-572.另一棵树的子树",
                     "/algorithm/leetcode/leetcode-558.四叉树交集",
                     "/algorithm/leetcode/leetcode-559.N叉树的最大深度",
