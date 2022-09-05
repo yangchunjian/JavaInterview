@@ -332,6 +332,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-485.最大连续 1 的个数",
                     "/algorithm/leetcode/leetcode-486.预测赢家",
                     "/algorithm/leetcode/leetcode-497.非重叠矩形中的随机点",
+                    "/algorithm/leetcode/leetcode-498.对角线遍历",
                     "/algorithm/leetcode/leetcode-502.IPO",
                     "/algorithm/leetcode/leetcode-503.下一个更大元素 II",
                     "/algorithm/leetcode/leetcode-508.出现次数最多的子树元素和",
