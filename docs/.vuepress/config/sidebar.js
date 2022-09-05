@@ -345,6 +345,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-523.连续的子数组和",
                     "/algorithm/leetcode/leetcode-525.连续数组",
                     "/algorithm/leetcode/leetcode-526.优美的排列",
+                    "/algorithm/leetcode/leetcode-528.按权重随机选择",
                     "/algorithm/leetcode/leetcode-542.01矩阵",
                     "/algorithm/leetcode/leetcode-547.省份数量",
                     "/algorithm/leetcode/leetcode-572.另一棵树的子树",
