@@ -342,6 +342,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-518.零钱兑换 II",
                     "/algorithm/leetcode/leetcode-519.随机翻转矩阵",
                     "/algorithm/leetcode/leetcode-522.最长特殊序列 II",
+                    "/algorithm/leetcode/leetcode-523.连续的子数组和",
                     "/algorithm/leetcode/leetcode-525.连续数组",
                     "/algorithm/leetcode/leetcode-526.优美的排列",
                     "/algorithm/leetcode/leetcode-542.01矩阵",
