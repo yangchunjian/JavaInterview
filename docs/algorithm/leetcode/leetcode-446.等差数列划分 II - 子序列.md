@@ -1,3 +1,17 @@
+---
+title: 等差数列划分 II - 子序列
+date: 2022-09-05 21:51:36
+permalink: /pages/3552c1/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
