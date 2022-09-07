@@ -329,6 +329,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-475.供暖器",
                     "/algorithm/leetcode/leetcode-477.汉明距离总和",
                     "/algorithm/leetcode/leetcode-478.在圆内随机生成点",
+                    "/algorithm/leetcode/leetcode-479.最大回文数乘积",
                     "/algorithm/leetcode/leetcode-480.滑动窗口中位数",
                     "/algorithm/leetcode/leetcode-481.神奇字符串",
                     "/algorithm/leetcode/leetcode-482.密钥格式化",
