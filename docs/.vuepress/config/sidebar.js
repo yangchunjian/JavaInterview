@@ -369,6 +369,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-662.二叉树最大宽度",
                     "/algorithm/leetcode/leetcode-669.修剪二叉搜索树",
                     "/algorithm/leetcode/leetcode-687.最长同值路径",
+                    "/algorithm/leetcode/leetcode-695.岛屿的最大面积",
                     "/algorithm/leetcode/leetcode-705.设计哈希集合",
                     "/algorithm/leetcode/leetcode-706.设计哈希映射",
                     "/algorithm/leetcode/leetcode-707.设计链表",
