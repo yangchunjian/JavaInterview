@@ -1,7 +1,7 @@
 ---
 title: 二进制矩阵中的最短路径
-date: 2022-09-07 18:22:51
-permalink: /pages/a36c5b/
+date: 2022-09-07 18:27:10
+permalink: /pages/1044de/
 categories:
   - algorithm
   - leetcode
