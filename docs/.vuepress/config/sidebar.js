@@ -81,7 +81,7 @@ module.exports = [
             {
                 title: "高频",
                 children: [
-                    "/interview/hf/READ",
+                    "/interview/hf/read",
                 ]
             },
 
