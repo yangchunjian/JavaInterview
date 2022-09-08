@@ -78,6 +78,12 @@ module.exports = [
                     "/interview/algorithm/read",
                 ]
             },
+            {
+                title: "高频",
+                children: [
+                    "/interview/hf/READ",
+                ]
+            },
 
         ]
     },
