@@ -82,6 +82,7 @@ module.exports = [
                 title: "高频",
                 children: [
                     "/interview/hf/read",
+                    "/interview/hf/MySQL自身如何处理死锁",
                 ]
             },
 
