@@ -292,6 +292,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-398.随机数索引",
                     "/algorithm/leetcode/leetcode-399.除法求值",
                     "/algorithm/leetcode/leetcode-400.第 N 位数字",
+                    "/algorithm/leetcode/leetcode-401.二进制手表",
                     "/algorithm/leetcode/leetcode-402.移掉 K 位数字",
                     "/algorithm/leetcode/leetcode-403.青蛙过河",
                     "/algorithm/leetcode/leetcode-404.左叶子之和",
