@@ -1,3 +1,17 @@
+---
+title: 二进制手表
+date: 2022-09-12 00:11:20
+permalink: /pages/f45fde/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

@@ -296,6 +296,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-402.移掉 K 位数字",
                     "/algorithm/leetcode/leetcode-403.青蛙过河",
                     "/algorithm/leetcode/leetcode-404.左叶子之和",
+                    "/algorithm/leetcode/leetcode-405.数字转换为十六进制数",
                     "/algorithm/leetcode/leetcode-406.根据身高重建队列",
                     "/algorithm/leetcode/leetcode-407.接雨水 II",
                     "/algorithm/leetcode/leetcode-410.分割数组的最大值",
