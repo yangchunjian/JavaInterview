@@ -228,6 +228,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-290.单词规律",
                     "/algorithm/leetcode/leetcode-292.Nim游戏",
                     "/algorithm/leetcode/leetcode-295.数据流的中位数",
+                    "/algorithm/leetcode/leetcode-299.猜数字游戏",
                     "/algorithm/leetcode/leetcode-303.区域和检索 - 数组不可变",
                     "/algorithm/leetcode/leetcode-304.二维区域和检索 - 矩阵不可变",
                     "/algorithm/leetcode/leetcode-306.累加数",

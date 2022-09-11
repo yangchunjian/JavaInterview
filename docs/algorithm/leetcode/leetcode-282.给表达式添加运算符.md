@@ -58,39 +58,46 @@ titleTag: Java
 
 
 class Solution {
-    public List<String> addOperators(String num, int target) {
+    List<String> res = new ArrayList<>();
+    StringBuilder sb = new StringBuilder();
 
-            List<String> res = new ArrayList<>();
-        if (num == null || num.length() == 0) {
-            return res;
-        }
-        
-        help(num, target, 0, 0, 0, "", res);
+    public List<String> addOperators(String num, int target) {
+        if (num.length() == 0) return res;
+        backTracking(num, 0, 0, 0, target);
         return res;
     }
-    
-    private void help(String num, int target, long curRes, long diff, int start, String curExp, List<String> expressions) {
-        if (start == num.length() && (long)target == curRes) {
-            expressions.add(new String(curExp));
+
+    public void backTracking(String num, int start, long pre, long sum, int target) {
+        if (start == num.length()) {
+            if (sum == target) res.add(new StringBuilder(sb).toString());
+            return;
         }
-        
+
         for (int i = start; i < num.length(); i++) {
-            String cur = num.substring(start, i + 1);
-            if (cur.length() > 1 && cur.charAt(0) == '0') {
-                break;
-            }
-            
-            if (curExp.length() > 0) {
-                help(num, target, curRes + Long.valueOf(cur), Long.valueOf(cur), i + 1, curExp + "+" + cur, expressions);
-                help(num, target, curRes - Long.valueOf(cur), -Long.valueOf(cur), i + 1, curExp + "-" + cur, expressions);
-                help(num, target, (curRes - diff) + diff * Long.valueOf(cur), diff * Long.valueOf(cur),
-                      i + 1, curExp + "*" + cur, expressions);
+            if (num.charAt(start) == '0' && i != start) break;
+            String str = num.substring(start, i + 1);
+            long val = Long.valueOf(str);
+            if (start == 0) {
+                sb.append(str);
+                backTracking(num, i + 1, val, sum + val, target);
+                sb.delete(sb.length() - str.length(), sb.length());
             } else {
-                help(num, target, Long.valueOf(cur), Long.valueOf(cur), i + 1, cur, expressions);
+                sb.append("+").append(str);
+                backTracking(num, i + 1, val, sum + val, target);
+                sb.delete(sb.length() - str.length() - 1, sb.length());
+
+                sb.append("-").append(str);
+                backTracking(num, i + 1, -val, sum - val, target);
+                sb.delete(sb.length() - str.length() - 1, sb.length());
+
+                sb.append("*").append(str);
+                backTracking(num, i + 1, val * pre, sum - pre + val * pre, target);
+                sb.delete(sb.length() - str.length() - 1, sb.length());
             }
         }
     }
 }
+
 ```
 
 ## 总结
