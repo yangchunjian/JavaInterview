@@ -1,3 +1,17 @@
+---
+title: 找到所有数组中消失的数字
+date: 2022-09-12 00:25:47
+permalink: /pages/bbdddd/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
@@ -26,12 +40,27 @@
 
 ## 思路
 
-
+数转成负数
 
 ## 解法
 ```java
 
-
+class Solution {
+    public List<Integer> findDisappearedNumbers(int[] nums) {
+        List<Integer> results = new ArrayList<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[Math.abs(nums[i]) - 1] > 0) {
+                nums[Math.abs(nums[i]) - 1] = - nums[Math.abs(nums[i]) - 1];
+            }
+        }
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] > 0) {
+                results.add(i + 1);
+            }
+        }
+        return results;
+    }
+}
 ```
 
 ## 总结
