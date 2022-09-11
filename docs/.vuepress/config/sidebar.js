@@ -300,7 +300,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-406.根据身高重建队列",
                     "/algorithm/leetcode/leetcode-407.接雨水 II",
                     "/algorithm/leetcode/leetcode-410.分割数组的最大值",
-                    "/algorithm/leetcode/leetcode-410.分割数组的最大值",
+                    "/algorithm/leetcode/leetcode-412.Fizz Buzz",
                     "/algorithm/leetcode/leetcode-413.等差数列划分",
                     "/algorithm/leetcode/leetcode-416.分割等和子集",
                     "/algorithm/leetcode/leetcode-417.太平洋大西洋水流问题",
