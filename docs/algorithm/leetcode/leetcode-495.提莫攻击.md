@@ -1,3 +1,17 @@
+---
+title: 提莫攻击
+date: 2022-09-12 22:41:49
+permalink: /pages/020027/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
@@ -41,12 +55,24 @@
 
 ## 思路
 
-
+遍历
 
 ## 解法
 ```java
 
-
+class Solution {
+    public int findPoisonedDuration(int[] timeSeries, int duration) {
+        int times=duration;//至少中毒duration秒
+        for(int i=1;i<timeSeries.length;i++){//从数组第二个元素开始遍历
+            if(timeSeries[i]-timeSeries[i-1]>=duration){//攻击时间间隔大于等于duration   直接加上duration
+                times=times+duration;
+            }else{//攻击时间间隔小于duration  则只要加上时间间隔即可
+                times=times+timeSeries[i]-timeSeries[i-1];
+            }
+        }
+        return times;
+    }
+}
 ```
 
 ## 总结

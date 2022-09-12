@@ -359,6 +359,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-488.祖玛游戏",
                     "/algorithm/leetcode/leetcode-492.构造矩形",
                     "/algorithm/leetcode/leetcode-493.翻转对",
+                    "/algorithm/leetcode/leetcode-495.提莫攻击",
                     "/algorithm/leetcode/leetcode-497.非重叠矩形中的随机点",
                     "/algorithm/leetcode/leetcode-498.对角线遍历",
                     "/algorithm/leetcode/leetcode-502.IPO",
