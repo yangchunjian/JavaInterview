@@ -1,3 +1,17 @@
+---
+title: 重复的子字符串
+date: 2022-09-12 19:26:29
+permalink: /pages/132ed8/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
