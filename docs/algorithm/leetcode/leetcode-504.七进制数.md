@@ -1,3 +1,17 @@
+---
+title: 七进制数
+date: 2022-09-12 22:59:32
+permalink: /pages/0c5521/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
@@ -22,12 +36,29 @@
 
 ## 思路
 
-
+Integer.toString(num, 7);
 
 ## 解法
 ```java
 
+class Solution {
+    public String convertToBase7(int num) {
+        return Integer.toString(num, 7); 
 
+
+        // StringBuilder sb = new StringBuilder();
+        // if (num == 0) return "0";
+        // boolean flag = num < 0;
+        // num = Math.abs(num);
+        // while (num != 0) {
+        //     sb.append(num % 7);
+        //     num /= 7;
+        // }
+        // if (flag)
+        //     sb.append("-");
+        // return sb.reverse().toString();
+    }
+}
 ```
 
 ## 总结

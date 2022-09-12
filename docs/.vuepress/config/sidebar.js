@@ -366,6 +366,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-500.键盘行",
                     "/algorithm/leetcode/leetcode-502.IPO",
                     "/algorithm/leetcode/leetcode-503.下一个更大元素 II",
+                    "/algorithm/leetcode/leetcode-504.七进制数",
                     "/algorithm/leetcode/leetcode-508.出现次数最多的子树元素和",
                     "/algorithm/leetcode/leetcode-514.自由之路",
                     "/algorithm/leetcode/leetcode-516.最长回文子序列",
