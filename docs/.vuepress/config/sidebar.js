@@ -356,6 +356,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-483.最小好进制",
                     "/algorithm/leetcode/leetcode-485.最大连续 1 的个数",
                     "/algorithm/leetcode/leetcode-486.预测赢家",
+                    "/algorithm/leetcode/leetcode-488.祖玛游戏",
                     "/algorithm/leetcode/leetcode-497.非重叠矩形中的随机点",
                     "/algorithm/leetcode/leetcode-498.对角线遍历",
                     "/algorithm/leetcode/leetcode-502.IPO",
