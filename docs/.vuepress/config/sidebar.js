@@ -339,6 +339,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-462.最少移动次数使数组元素相等 II",
                     "/algorithm/leetcode/leetcode-463.岛屿的周长",
                     "/algorithm/leetcode/leetcode-464.我能赢吗",
+                    "/algorithm/leetcode/leetcode-466.统计重复个数",
                     "/algorithm/leetcode/leetcode-467.环绕字符串中唯一的子字符串",
                     "/algorithm/leetcode/leetcode-468.验证IP地址",
                     "/algorithm/leetcode/leetcode-470.用 Rand7() 实现 Rand10()",
