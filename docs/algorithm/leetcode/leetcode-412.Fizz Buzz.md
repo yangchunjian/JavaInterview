@@ -1,3 +1,17 @@
+---
+title: Fizz Buzz
+date: 2022-09-12 00:20:53
+permalink: /pages/cfadd6/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目
