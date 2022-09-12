@@ -337,6 +337,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-459.重复的子字符串",
                     "/algorithm/leetcode/leetcode-461.汉明距离",
                     "/algorithm/leetcode/leetcode-462.最少移动次数使数组元素相等 II",
+                    "/algorithm/leetcode/leetcode-463.岛屿的周长",
                     "/algorithm/leetcode/leetcode-464.我能赢吗",
                     "/algorithm/leetcode/leetcode-467.环绕字符串中唯一的子字符串",
                     "/algorithm/leetcode/leetcode-468.验证IP地址",
