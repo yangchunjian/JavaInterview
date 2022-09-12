@@ -1,3 +1,17 @@
+---
+title: 构造矩形
+date: 2022-09-12 22:22:25
+permalink: /pages/454ca1/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
