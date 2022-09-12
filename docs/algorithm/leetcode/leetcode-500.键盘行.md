@@ -1,3 +1,17 @@
+---
+title: 键盘行
+date: 2022-09-12 22:52:28
+permalink: /pages/e4d4c8/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
@@ -36,7 +50,7 @@
 
 ## 思路
 
-
+list.toArray(new String[list.size()]);
 
 ## 解法
 ```java
