@@ -346,6 +346,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-472.连接词",
                     "/algorithm/leetcode/leetcode-473.火柴拼正方形",
                     "/algorithm/leetcode/leetcode-475.供暖器",
+                    "/algorithm/leetcode/leetcode-476.数字的补数",
                     "/algorithm/leetcode/leetcode-477.汉明距离总和",
                     "/algorithm/leetcode/leetcode-478.在圆内随机生成点",
                     "/algorithm/leetcode/leetcode-479.最大回文数乘积",
