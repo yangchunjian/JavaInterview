@@ -1,3 +1,17 @@
+---
+title: 扫雷游戏
+date: 2022-09-13 20:25:32
+permalink: /pages/7bc94d/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目
@@ -22,11 +36,13 @@
 
 示例 1：
 
+![](../../../media/pictures/leetcode/minesweeper_example_1.png)
 
 输入：board = [["E","E","E","E","E"],["E","E","M","E","E"],["E","E","E","E","E"],["E","E","E","E","E"]], click = [3,0]
 输出：[["B","1","E","1","B"],["B","1","M","1","B"],["B","1","1","1","B"],["B","B","B","B","B"]]
 示例 2：
 
+![](../../../media/pictures/leetcode/minesweeper_example_2.png)
 
 输入：board = [["B","1","E","1","B"],["B","1","M","1","B"],["B","1","1","1","B"],["B","B","B","B","B"]], click = [1,2]
 输出：[["B","1","E","1","B"],["B","1","X","1","B"],["B","1","1","1","B"],["B","B","B","B","B"]]
@@ -46,12 +62,45 @@
 
 ## 思路
 
-
+dfs
 
 ## 解法
 ```java
 
+class Solution {
+    int[][] dirs = new int[][]{{-1, 0}, {1, 0}, {0, -1}, {0, 1}, {-1, -1}, {1, -1}, {-1, 1}, {1, 1}};
+    public char[][] updateBoard(char[][] board, int[] click) {
+        //单独处理点击***
+        if(board[click[0]][click[1]] == 'M') {
+            board[click[0]][click[1]] = 'X';
+            return board;
+        }
+        dfs(board, click[0], click[1]);
+        return board;
+    }
 
+    public void dfs(char[][] board, int i, int j) {
+        if(i < 0 || j < 0 || i >= board.length || j >= board[0].length) return;
+        if(board[i][j] == 'E') board[i][j] = 'B';
+        else return;    //如果不是E那就是数字，说明已经访问过了，直接返回
+        int M = 0;
+        //计算周围***的数量
+        for(int k = 0; k < 8; ++k){
+            int ni = i + dirs[k][0], nj = j + dirs[k][1];
+            if(ni < 0 || nj < 0 || ni >= board.length || nj >= board[0].length) continue;
+            if(board[ni][nj] == 'M') ++M;
+        }
+        //有***就更新字符，然后返回，因为有***就不能继续翻E了
+        if(M > 0) {
+            board[i][j] = (char)(M + '0');
+            return;
+        }
+        //周围没有***，往八个方向翻E
+        for(int k = 0; k < 8; ++k){
+            dfs(board, i + dirs[k][0], j + dirs[k][1]);
+        }
+    }
+}
 ```
 
 ## 总结
