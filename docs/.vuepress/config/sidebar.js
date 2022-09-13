@@ -372,6 +372,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-506.相对名次",
                     "/algorithm/leetcode/leetcode-507.完美数",
                     "/algorithm/leetcode/leetcode-508.出现次数最多的子树元素和",
+                    "/algorithm/leetcode/leetcode-509.斐波那契数",
+                    "/algorithm/leetcode/leetcode-511.游戏玩法分析 I",
                     "/algorithm/leetcode/leetcode-514.自由之路",
                     "/algorithm/leetcode/leetcode-516.最长回文子序列",
                     "/algorithm/leetcode/leetcode-517.超级洗衣机",
