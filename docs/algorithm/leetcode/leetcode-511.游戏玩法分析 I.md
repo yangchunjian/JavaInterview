@@ -1,18 +1,17 @@
 ---
-title: leetcode-0
-date: 2022-06-16 00:10:06
-permalink: /pages/7b6a24/
-categories: 
+title: 游戏玩法分析 I
+date: 2022-09-13 20:07:12
+permalink: /pages/e261c7/
+categories:
   - algorithm
   - leetcode
+tags:
+  - 
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
 titleTag: Java
-tags: 
-  - 
 ---
-
 
 ## 题目
 

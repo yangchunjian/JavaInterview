@@ -383,6 +383,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-521.最长特殊序列 Ⅰ",
                     "/algorithm/leetcode/leetcode-522.最长特殊序列 II",
                     "/algorithm/leetcode/leetcode-523.连续的子数组和",
+                    "/algorithm/leetcode/leetcode-524.通过删除字母匹配到字典里最长单词",
                     "/algorithm/leetcode/leetcode-525.连续数组",
                     "/algorithm/leetcode/leetcode-526.优美的排列",
                     "/algorithm/leetcode/leetcode-528.按权重随机选择",

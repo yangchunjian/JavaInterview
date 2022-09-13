@@ -1,3 +1,17 @@
+---
+title: 检测大写字母
+date: 2022-09-13 19:58:36
+permalink: /pages/9ae583/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
