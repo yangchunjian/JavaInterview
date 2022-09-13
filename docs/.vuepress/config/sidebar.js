@@ -388,6 +388,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-526.优美的排列",
                     "/algorithm/leetcode/leetcode-528.按权重随机选择",
                     "/algorithm/leetcode/leetcode-529.扫雷游戏",
+                    "/algorithm/leetcode/leetcode-532.数组中的 k-diff 数对",
                     "/algorithm/leetcode/leetcode-539.最小时间差",
                     "/algorithm/leetcode/leetcode-540.有序数组中的单一元素",
                     "/algorithm/leetcode/leetcode-542.01矩阵",
