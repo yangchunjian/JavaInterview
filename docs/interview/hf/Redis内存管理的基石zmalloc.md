@@ -30,7 +30,8 @@ zmalloc.c文件的内容如下：
         本文中我提到的8字节对齐是针对64位系统而言的，如果是32位系统那么就是4字节对齐。实际上Redis源码中的字节对齐是软编码，而非硬编码。里面多用sizeof(long)或sizeof(size_t)来表示。size_t（gcc中其值为long unsigned int）和long的长度是一样的，long的长度就是计算机的字长。这样在未来的系统中如果字长（long的大小）不是8个字节了，该段代码依然能保证相应代码可用。
 
 ### zmalloc
-    辅助的函数：
+辅助的函数：
+
     malloc()
     zmalloc_oom_handler【函数指针】
     zmalloc_default_oom()【被上面的函数指针所指向】
