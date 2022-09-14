@@ -86,6 +86,7 @@ module.exports = [
                     "/interview/hf/为什么是先添加队列而不是先创建最大线程",
                     "/interview/hf/数据库常用的锁有哪些",
                     "/interview/hf/生产者和消费者5种实现方式",
+                    "/interview/hf/Redis内存管理的基石zmallc.c",
                 ]
             },
 
