@@ -1,5 +1,5 @@
 ---
-title: c
+title: Redis内存管理的基石zmalloc
 date: 2022-09-14 09:07:02
 permalink: /pages/34b37f/
 categories:
