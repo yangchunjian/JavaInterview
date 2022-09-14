@@ -81,12 +81,12 @@ module.exports = [
             {
                 title: "高频",
                 children: [
-                    "/interview/hf/read",
                     "/interview/hf/MySQL自身如何处理死锁",
                     "/interview/hf/为什么是先添加队列而不是先创建最大线程",
                     "/interview/hf/数据库常用的锁有哪些",
                     "/interview/hf/生产者和消费者5种实现方式",
                     "/interview/hf/Redis内存管理的基石zmallc.c",
+                    "/interview/hf/如何动态修改线程池参数",
                 ]
             },
 
