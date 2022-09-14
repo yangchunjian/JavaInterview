@@ -1,3 +1,17 @@
+---
+title: 数组拆分
+date: 2022-09-14 23:03:52
+permalink: /pages/35d2bf/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
@@ -32,13 +46,13 @@
 
 ## 思路
 
-
+// 其实就是把从a1到an数组下标为奇数的数都加起来
 
 ## 解法
 ```java
 
 class Solution {
-    // 其实就是把从a1到an数组下标为奇数的数都加起来，题目花里胡哨的
+    // 其实就是把从a1到an数组下标为奇数的数都加起来
 
 
     public int arrayPairSum(int[] nums) {
