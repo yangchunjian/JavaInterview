@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>命令 | JavaInterview</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/assets/icon/logo_title50x50.png">
+    <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script>
+            var _hmt = _hmt || [];
+            (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?03cb08758bea6323509b897a0e0442df";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+
+            })();
+  </script>
+    <meta name="description" content="java,面试,春建,杨春建,后端,JavaInterview,interview,技术">
+    <meta name="keywords" content="java,面试,春建,杨春建,后端,JavaInterview,interview,技术,后端博客,个人技术博客,后端,后端开发,后端框架,web前端,后端面试题,技术文档,学习,面试,Spring,Kafka,MySQL,MQ,Redis,Elasticsearch,git,github,markdown">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="baidu-site-verification" content="code-dbbt0zdlBh">
+    <meta name="theme-color" content="#339af0">
+    
+    <link rel="preload" href="/assets/css/0.styles.45858b4b.css" as="style"><link rel="preload" href="/assets/js/app.74e86e54.js" as="script"><link rel="preload" href="/assets/js/2.762fe63e.js" as="script"><link rel="preload" href="/assets/js/333.2a42d8e6.js" as="script"><link rel="prefetch" href="/assets/js/10.df42e645.js"><link rel="prefetch" href="/assets/js/100.96750f63.js"><link rel="prefetch" href="/assets/js/101.73dbbc45.js"><link rel="prefetch" href="/assets/js/102.90894888.js"><link rel="prefetch" href="/assets/js/103.c590b0e9.js"><link rel="prefetch" href="/assets/js/104.bfaaae0f.js"><link rel="prefetch" href="/assets/js/105.318e58a8.js"><link rel="prefetch" href="/assets/js/106.8ff00565.js"><link rel="prefetch" href="/assets/js/107.8a520bc6.js"><link rel="prefetch" href="/assets/js/108.c209b371.js"><link rel="prefetch" href="/assets/js/109.4dba3233.js"><link rel="prefetch" href="/assets/js/11.95bb1eeb.js"><link rel="prefetch" href="/assets/js/110.9b6ff357.js"><link rel="prefetch" href="/assets/js/111.e665f6f1.js"><link rel="prefetch" href="/assets/js/112.3e7aba26.js"><link rel="prefetch" href="/assets/js/113.b9ce192a.js"><link rel="prefetch" href="/assets/js/114.567fa787.js"><link rel="prefetch" href="/assets/js/115.6fe8810f.js"><link rel="prefetch" href="/assets/js/116.d73f29b4.js"><link rel="prefetch" href="/assets/js/117.226cb453.js"><link rel="prefetch" href="/assets/js/118.60b02025.js"><link rel="prefetch" href="/assets/js/119.68d0204a.js"><link rel="prefetch" href="/assets/js/12.c3db6491.js"><link rel="prefetch" href="/assets/js/120.0add9678.js"><link rel="prefetch" href="/assets/js/121.38213502.js"><link rel="prefetch" href="/assets/js/122.9ac97684.js"><link rel="prefetch" href="/assets/js/123.8930e6dd.js"><link rel="prefetch" href="/assets/js/124.868e1ff5.js"><link rel="prefetch" href="/assets/js/125.4d47658c.js"><link rel="prefetch" href="/assets/js/126.78a96a4e.js"><link rel="prefetch" href="/assets/js/127.3596b162.js"><link rel="prefetch" href="/assets/js/128.f26cb3e9.js"><link rel="prefetch" href="/assets/js/129.97049192.js"><link rel="prefetch" href="/assets/js/13.6d08cfc8.js"><link rel="prefetch" href="/assets/js/130.6bebdd4f.js"><link rel="prefetch" href="/assets/js/131.571e172a.js"><link rel="prefetch" href="/assets/js/132.0c46d4aa.js"><link rel="prefetch" href="/assets/js/133.ce0385ed.js"><link rel="prefetch" href="/assets/js/134.761c2bab.js"><link rel="prefetch" href="/assets/js/135.1d767c82.js"><link rel="prefetch" href="/assets/js/136.bd32135f.js"><link rel="prefetch" href="/assets/js/137.55150cf9.js"><link rel="prefetch" href="/assets/js/138.1e064934.js"><link rel="prefetch" href="/assets/js/139.6fd555ce.js"><link rel="prefetch" href="/assets/js/14.1c5fa4b6.js"><link rel="prefetch" href="/assets/js/140.c18f0d6b.js"><link rel="prefetch" href="/assets/js/141.9c731f9c.js"><link rel="prefetch" href="/assets/js/142.c3418f70.js"><link rel="prefetch" href="/assets/js/143.038ccefe.js"><link rel="prefetch" href="/assets/js/144.f1c53d2e.js"><link rel="prefetch" href="/assets/js/145.4bf043be.js"><link rel="prefetch" href="/assets/js/146.1b526bb7.js"><link rel="prefetch" href="/assets/js/147.f273368a.js"><link rel="prefetch" href="/assets/js/148.a41f6249.js"><link rel="prefetch" href="/assets/js/149.6008edd1.js"><link rel="prefetch" href="/assets/js/15.8f47cc79.js"><link rel="prefetch" href="/assets/js/150.68543a10.js"><link rel="prefetch" href="/assets/js/151.700075a6.js"><link rel="prefetch" href="/assets/js/152.2ae92dba.js"><link rel="prefetch" href="/assets/js/153.f38c3100.js"><link rel="prefetch" href="/assets/js/154.18d08d17.js"><link rel="prefetch" href="/assets/js/155.e1a80124.js"><link rel="prefetch" href="/assets/js/156.55a71d2d.js"><link rel="prefetch" href="/assets/js/157.a86e0cc1.js"><link rel="prefetch" href="/assets/js/158.9390a01a.js"><link rel="prefetch" href="/assets/js/159.4a0cd1a8.js"><link rel="prefetch" href="/assets/js/16.fdfe4aac.js"><link rel="prefetch" href="/assets/js/160.4bd8cfef.js"><link rel="prefetch" href="/assets/js/161.92cb14ba.js"><link rel="prefetch" href="/assets/js/162.9f9df01a.js"><link rel="prefetch" href="/assets/js/163.6c2198a7.js"><link rel="prefetch" href="/assets/js/164.e21ff2d6.js"><link rel="prefetch" href="/assets/js/165.8541376c.js"><link rel="prefetch" href="/assets/js/166.6b8446b1.js"><link rel="prefetch" href="/assets/js/167.7fd9ad92.js"><link rel="prefetch" href="/assets/js/168.e42e78a1.js"><link rel="prefetch" href="/assets/js/169.c61561c0.js"><link rel="prefetch" href="/assets/js/17.910e5e6e.js"><link rel="prefetch" href="/assets/js/170.876b27f4.js"><link rel="prefetch" href="/assets/js/171.563e7bcd.js"><link rel="prefetch" href="/assets/js/172.dee7551c.js"><link rel="prefetch" href="/assets/js/173.a4130164.js"><link rel="prefetch" href="/assets/js/174.58fe66a9.js"><link rel="prefetch" href="/assets/js/175.e14b3f31.js"><link rel="prefetch" href="/assets/js/176.6641579a.js"><link rel="prefetch" href="/assets/js/177.339ed6d2.js"><link rel="prefetch" href="/assets/js/178.01b52eee.js"><link rel="prefetch" href="/assets/js/179.e3b21a54.js"><link rel="prefetch" href="/assets/js/18.4c9b10be.js"><link rel="prefetch" href="/assets/js/180.6a0feaca.js"><link rel="prefetch" href="/assets/js/181.76bff4e3.js"><link rel="prefetch" href="/assets/js/182.36944ad2.js"><link rel="prefetch" href="/assets/js/183.3c822f75.js"><link rel="prefetch" href="/assets/js/184.2dfcd056.js"><link rel="prefetch" href="/assets/js/185.54828564.js"><link rel="prefetch" href="/assets/js/186.c574ecdb.js"><link rel="prefetch" href="/assets/js/187.50879cee.js"><link rel="prefetch" href="/assets/js/188.dbaef5d5.js"><link rel="prefetch" href="/assets/js/189.b713b980.js"><link rel="prefetch" href="/assets/js/19.093dcfa9.js"><link rel="prefetch" href="/assets/js/190.1f336bac.js"><link rel="prefetch" href="/assets/js/191.f66f789a.js"><link rel="prefetch" href="/assets/js/192.5ceec552.js"><link rel="prefetch" href="/assets/js/193.c42a30ec.js"><link rel="prefetch" href="/assets/js/194.a5aaabb3.js"><link rel="prefetch" href="/assets/js/195.a1152b12.js"><link rel="prefetch" href="/assets/js/196.db5ce49a.js"><link rel="prefetch" href="/assets/js/197.d080c3dd.js"><link rel="prefetch" href="/assets/js/198.102f4b7d.js"><link rel="prefetch" href="/assets/js/199.b260a229.js"><link rel="prefetch" href="/assets/js/20.e264b4ea.js"><link rel="prefetch" href="/assets/js/200.0be2ca61.js"><link rel="prefetch" href="/assets/js/201.ad55eb2c.js"><link rel="prefetch" href="/assets/js/202.cf33c728.js"><link rel="prefetch" href="/assets/js/203.b91b3b60.js"><link rel="prefetch" href="/assets/js/204.dbd3fd31.js"><link rel="prefetch" href="/assets/js/205.62f599aa.js"><link rel="prefetch" href="/assets/js/206.f7c9b24c.js"><link rel="prefetch" href="/assets/js/207.f5871fb6.js"><link rel="prefetch" href="/assets/js/208.c338d85c.js"><link rel="prefetch" href="/assets/js/209.5db319b1.js"><link rel="prefetch" href="/assets/js/21.0054e1bf.js"><link rel="prefetch" href="/assets/js/210.7c77fa76.js"><link rel="prefetch" href="/assets/js/211.571aa814.js"><link rel="prefetch" href="/assets/js/212.212ceeb1.js"><link rel="prefetch" href="/assets/js/213.59a871cc.js"><link rel="prefetch" href="/assets/js/214.7a28d841.js"><link rel="prefetch" href="/assets/js/215.c2cb5178.js"><link rel="prefetch" href="/assets/js/216.54ec1134.js"><link rel="prefetch" href="/assets/js/217.0ba2f985.js"><link rel="prefetch" href="/assets/js/218.be697ef2.js"><link rel="prefetch" href="/assets/js/219.1e4531f2.js"><link rel="prefetch" href="/assets/js/22.3bb23a59.js"><link rel="prefetch" href="/assets/js/220.dc7613ed.js"><link rel="prefetch" href="/assets/js/221.15990ca0.js"><link rel="prefetch" href="/assets/js/222.73dde6bf.js"><link rel="prefetch" href="/assets/js/223.720ddfb8.js"><link rel="prefetch" href="/assets/js/224.aa9c8815.js"><link rel="prefetch" href="/assets/js/225.5a9bc5cb.js"><link rel="prefetch" href="/assets/js/226.9602f702.js"><link rel="prefetch" href="/assets/js/227.142c1532.js"><link rel="prefetch" href="/assets/js/228.06192993.js"><link rel="prefetch" href="/assets/js/229.ffecb839.js"><link rel="prefetch" href="/assets/js/23.6b139ac4.js"><link rel="prefetch" href="/assets/js/230.082e1b26.js"><link rel="prefetch" href="/assets/js/231.c7069c42.js"><link rel="prefetch" href="/assets/js/232.debf3b6b.js"><link rel="prefetch" href="/assets/js/233.6d42c5eb.js"><link rel="prefetch" href="/assets/js/234.2bbb9fa4.js"><link rel="prefetch" href="/assets/js/235.ec65a7ea.js"><link rel="prefetch" href="/assets/js/236.3f729963.js"><link rel="prefetch" href="/assets/js/237.74cce0bf.js"><link rel="prefetch" href="/assets/js/238.3da76698.js"><link rel="prefetch" href="/assets/js/239.9b4b5dc5.js"><link rel="prefetch" href="/assets/js/24.4ecc7179.js"><link rel="prefetch" href="/assets/js/240.bc2f4788.js"><link rel="prefetch" href="/assets/js/241.b0f48b8b.js"><link rel="prefetch" href="/assets/js/242.1eab9672.js"><link rel="prefetch" href="/assets/js/243.65bb3049.js"><link rel="prefetch" href="/assets/js/244.1a2f266e.js"><link rel="prefetch" href="/assets/js/245.c729e959.js"><link rel="prefetch" href="/assets/js/246.f2b5d6d1.js"><link rel="prefetch" href="/assets/js/247.f45ccddc.js"><link rel="prefetch" href="/assets/js/248.e6b87845.js"><link rel="prefetch" href="/assets/js/249.f73a9708.js"><link rel="prefetch" href="/assets/js/25.a4605197.js"><link rel="prefetch" href="/assets/js/250.0a5c613b.js"><link rel="prefetch" href="/assets/js/251.bb45a62a.js"><link rel="prefetch" href="/assets/js/252.b0f440a4.js"><link rel="prefetch" href="/assets/js/253.b884de6d.js"><link rel="prefetch" href="/assets/js/254.2cacfcb9.js"><link rel="prefetch" href="/assets/js/255.460f5503.js"><link rel="prefetch" href="/assets/js/256.d02eab85.js"><link rel="prefetch" href="/assets/js/257.5a0dc074.js"><link rel="prefetch" href="/assets/js/258.d159216c.js"><link rel="prefetch" href="/assets/js/259.be74f9ac.js"><link rel="prefetch" href="/assets/js/26.c0ccf15c.js"><link rel="prefetch" href="/assets/js/260.f98204b6.js"><link rel="prefetch" href="/assets/js/261.00075996.js"><link rel="prefetch" href="/assets/js/262.a9e1f45c.js"><link rel="prefetch" href="/assets/js/263.4f8dfa89.js"><link rel="prefetch" href="/assets/js/264.bf3554ea.js"><link rel="prefetch" href="/assets/js/265.91038891.js"><link rel="prefetch" href="/assets/js/266.6f953b54.js"><link rel="prefetch" href="/assets/js/267.55fe4b1f.js"><link rel="prefetch" href="/assets/js/268.115ebea7.js"><link rel="prefetch" href="/assets/js/269.53a51a10.js"><link rel="prefetch" href="/assets/js/27.5f891a2a.js"><link rel="prefetch" href="/assets/js/270.6ca0241a.js"><link rel="prefetch" href="/assets/js/271.04e71a31.js"><link rel="prefetch" href="/assets/js/272.109eaad3.js"><link rel="prefetch" href="/assets/js/273.98f9d052.js"><link rel="prefetch" href="/assets/js/274.50aefb3e.js"><link rel="prefetch" href="/assets/js/275.bbe1dc1c.js"><link rel="prefetch" href="/assets/js/276.ea29ae06.js"><link rel="prefetch" href="/assets/js/277.b5f194a8.js"><link rel="prefetch" href="/assets/js/278.5426b70b.js"><link rel="prefetch" href="/assets/js/279.9d32ec75.js"><link rel="prefetch" href="/assets/js/28.1bf8ecd8.js"><link rel="prefetch" href="/assets/js/280.e1516cb8.js"><link rel="prefetch" href="/assets/js/281.62c227bf.js"><link rel="prefetch" href="/assets/js/282.1b6b199b.js"><link rel="prefetch" href="/assets/js/283.92b7f2da.js"><link rel="prefetch" href="/assets/js/284.6e381729.js"><link rel="prefetch" href="/assets/js/285.133c1772.js"><link rel="prefetch" href="/assets/js/286.8b0a561a.js"><link rel="prefetch" href="/assets/js/287.c965d105.js"><link rel="prefetch" href="/assets/js/288.6e4943e6.js"><link rel="prefetch" href="/assets/js/289.955c4bd9.js"><link rel="prefetch" href="/assets/js/29.2b8ba9f5.js"><link rel="prefetch" href="/assets/js/290.65ca76a6.js"><link rel="prefetch" href="/assets/js/291.056a95d0.js"><link rel="prefetch" href="/assets/js/292.10fa5fcc.js"><link rel="prefetch" href="/assets/js/293.9468c6de.js"><link rel="prefetch" href="/assets/js/294.ee60452c.js"><link rel="prefetch" href="/assets/js/295.b50ea587.js"><link rel="prefetch" href="/assets/js/296.44436e42.js"><link rel="prefetch" href="/assets/js/297.327209a1.js"><link rel="prefetch" href="/assets/js/298.8ce699d2.js"><link rel="prefetch" href="/assets/js/299.320e941f.js"><link rel="prefetch" href="/assets/js/3.0f9daba8.js"><link rel="prefetch" href="/assets/js/30.c7ad61db.js"><link rel="prefetch" href="/assets/js/300.eeb12fd2.js"><link rel="prefetch" href="/assets/js/301.a5a265d0.js"><link rel="prefetch" href="/assets/js/302.cba6c1fe.js"><link rel="prefetch" href="/assets/js/303.0e142d0c.js"><link rel="prefetch" href="/assets/js/304.c6ea3134.js"><link rel="prefetch" href="/assets/js/305.791a4968.js"><link rel="prefetch" href="/assets/js/306.082f8c87.js"><link rel="prefetch" href="/assets/js/307.55a1dfc0.js"><link rel="prefetch" href="/assets/js/308.2d0fb566.js"><link rel="prefetch" href="/assets/js/309.d086574f.js"><link rel="prefetch" href="/assets/js/31.4d570bb8.js"><link rel="prefetch" href="/assets/js/310.ada50e2b.js"><link rel="prefetch" href="/assets/js/311.5510e27f.js"><link rel="prefetch" href="/assets/js/312.2ce9209a.js"><link rel="prefetch" href="/assets/js/313.64a672f9.js"><link rel="prefetch" href="/assets/js/314.1ae9508d.js"><link rel="prefetch" href="/assets/js/315.9fbe50ca.js"><link rel="prefetch" href="/assets/js/316.b9316af2.js"><link rel="prefetch" href="/assets/js/317.7c2b0da9.js"><link rel="prefetch" href="/assets/js/318.33e9b536.js"><link rel="prefetch" href="/assets/js/319.18aed5ce.js"><link rel="prefetch" href="/assets/js/32.28923a8c.js"><link rel="prefetch" href="/assets/js/320.4fc25ac6.js"><link rel="prefetch" href="/assets/js/321.dae738d8.js"><link rel="prefetch" href="/assets/js/322.04299f14.js"><link rel="prefetch" href="/assets/js/323.a6df357f.js"><link rel="prefetch" href="/assets/js/324.d7ceecb2.js"><link rel="prefetch" href="/assets/js/325.e266c28f.js"><link rel="prefetch" href="/assets/js/326.1fe72070.js"><link rel="prefetch" href="/assets/js/327.f6b9788b.js"><link rel="prefetch" href="/assets/js/328.c37f51d9.js"><link rel="prefetch" href="/assets/js/329.a57996e5.js"><link rel="prefetch" href="/assets/js/33.da4be0db.js"><link rel="prefetch" href="/assets/js/330.e0708d2d.js"><link rel="prefetch" href="/assets/js/331.36651127.js"><link rel="prefetch" href="/assets/js/332.3e02f724.js"><link rel="prefetch" href="/assets/js/334.eba4be23.js"><link rel="prefetch" href="/assets/js/335.751a6bb5.js"><link rel="prefetch" href="/assets/js/336.117dcb49.js"><link rel="prefetch" href="/assets/js/337.bcc2a4e4.js"><link rel="prefetch" href="/assets/js/338.b0a77137.js"><link rel="prefetch" href="/assets/js/339.dc010e2b.js"><link rel="prefetch" href="/assets/js/34.6c1d0123.js"><link rel="prefetch" href="/assets/js/340.74f34174.js"><link rel="prefetch" href="/assets/js/341.f4da4e20.js"><link rel="prefetch" href="/assets/js/342.779976ee.js"><link rel="prefetch" href="/assets/js/343.1c4ed7b3.js"><link rel="prefetch" href="/assets/js/344.367689e6.js"><link rel="prefetch" href="/assets/js/345.c0999df4.js"><link rel="prefetch" href="/assets/js/346.9ef14923.js"><link rel="prefetch" href="/assets/js/347.de68e818.js"><link rel="prefetch" href="/assets/js/348.4a414070.js"><link rel="prefetch" href="/assets/js/349.687600d5.js"><link rel="prefetch" href="/assets/js/35.b6b1cde1.js"><link rel="prefetch" href="/assets/js/350.ad018848.js"><link rel="prefetch" href="/assets/js/351.bcd4c0cf.js"><link rel="prefetch" href="/assets/js/352.acb06be0.js"><link rel="prefetch" href="/assets/js/353.b6bea51b.js"><link rel="prefetch" href="/assets/js/354.29cdc70a.js"><link rel="prefetch" href="/assets/js/355.18c62046.js"><link rel="prefetch" href="/assets/js/356.f693e08c.js"><link rel="prefetch" href="/assets/js/357.17aeb87c.js"><link rel="prefetch" href="/assets/js/358.26a3a6c4.js"><link rel="prefetch" href="/assets/js/359.c4f2049f.js"><link rel="prefetch" href="/assets/js/36.c4f0149b.js"><link rel="prefetch" href="/assets/js/360.3b9a7718.js"><link rel="prefetch" href="/assets/js/361.4b587233.js"><link rel="prefetch" href="/assets/js/362.751e5ad3.js"><link rel="prefetch" href="/assets/js/363.1a364e10.js"><link rel="prefetch" href="/assets/js/364.f90aed9f.js"><link rel="prefetch" href="/assets/js/365.fb224180.js"><link rel="prefetch" href="/assets/js/366.74c1b424.js"><link rel="prefetch" href="/assets/js/367.a2f7d94f.js"><link rel="prefetch" href="/assets/js/368.e8a9dde3.js"><link rel="prefetch" href="/assets/js/369.8b376dde.js"><link rel="prefetch" href="/assets/js/37.a18b7d94.js"><link rel="prefetch" href="/assets/js/370.756d7b93.js"><link rel="prefetch" href="/assets/js/371.03759e44.js"><link rel="prefetch" href="/assets/js/372.ff5c9e04.js"><link rel="prefetch" href="/assets/js/373.3747143c.js"><link rel="prefetch" href="/assets/js/374.2945e5c8.js"><link rel="prefetch" href="/assets/js/375.24978e72.js"><link rel="prefetch" href="/assets/js/376.f7f6a877.js"><link rel="prefetch" href="/assets/js/377.a12869ba.js"><link rel="prefetch" href="/assets/js/378.d465b930.js"><link rel="prefetch" href="/assets/js/379.2a919f6c.js"><link rel="prefetch" href="/assets/js/38.8c657b0b.js"><link rel="prefetch" href="/assets/js/380.0239098f.js"><link rel="prefetch" href="/assets/js/381.354640f5.js"><link rel="prefetch" href="/assets/js/382.43db6c0e.js"><link rel="prefetch" href="/assets/js/383.d05c1077.js"><link rel="prefetch" href="/assets/js/384.0dba63a9.js"><link rel="prefetch" href="/assets/js/385.335a01aa.js"><link rel="prefetch" href="/assets/js/386.90eafed7.js"><link rel="prefetch" href="/assets/js/387.fd5b3389.js"><link rel="prefetch" href="/assets/js/388.d20e4394.js"><link rel="prefetch" href="/assets/js/389.56a2f367.js"><link rel="prefetch" href="/assets/js/39.c6294cb6.js"><link rel="prefetch" href="/assets/js/4.9ad67bad.js"><link rel="prefetch" href="/assets/js/40.86852d7d.js"><link rel="prefetch" href="/assets/js/41.04e475bc.js"><link rel="prefetch" href="/assets/js/42.d06f8a29.js"><link rel="prefetch" href="/assets/js/43.8d24ec41.js"><link rel="prefetch" href="/assets/js/44.b5e1a627.js"><link rel="prefetch" href="/assets/js/45.8e0dcfce.js"><link rel="prefetch" href="/assets/js/46.1e03eabd.js"><link rel="prefetch" href="/assets/js/47.a85dbe76.js"><link rel="prefetch" href="/assets/js/48.38ac1d0d.js"><link rel="prefetch" href="/assets/js/49.ed5f8f59.js"><link rel="prefetch" href="/assets/js/5.d302260f.js"><link rel="prefetch" href="/assets/js/50.bfc286ca.js"><link rel="prefetch" href="/assets/js/51.076d90f5.js"><link rel="prefetch" href="/assets/js/52.66983e41.js"><link rel="prefetch" href="/assets/js/53.728c3073.js"><link rel="prefetch" href="/assets/js/54.7e2469ca.js"><link rel="prefetch" href="/assets/js/55.b3661998.js"><link rel="prefetch" href="/assets/js/56.bffb23f0.js"><link rel="prefetch" href="/assets/js/57.7609982b.js"><link rel="prefetch" href="/assets/js/58.20e8ef39.js"><link rel="prefetch" href="/assets/js/59.bd6ceb8c.js"><link rel="prefetch" href="/assets/js/6.b4bf3b6c.js"><link rel="prefetch" href="/assets/js/60.9f57c787.js"><link rel="prefetch" href="/assets/js/61.85397754.js"><link rel="prefetch" href="/assets/js/62.7bd6e0d1.js"><link rel="prefetch" href="/assets/js/63.1b346118.js"><link rel="prefetch" href="/assets/js/64.a4583ef8.js"><link rel="prefetch" href="/assets/js/65.2384b672.js"><link rel="prefetch" href="/assets/js/66.c860740f.js"><link rel="prefetch" href="/assets/js/67.afbd1d0f.js"><link rel="prefetch" href="/assets/js/68.655e93dd.js"><link rel="prefetch" href="/assets/js/69.2c10c376.js"><link rel="prefetch" href="/assets/js/7.8a56a20e.js"><link rel="prefetch" href="/assets/js/70.a26d42dd.js"><link rel="prefetch" href="/assets/js/71.f28195fe.js"><link rel="prefetch" href="/assets/js/72.d8bcd467.js"><link rel="prefetch" href="/assets/js/73.1ac41152.js"><link rel="prefetch" href="/assets/js/74.16a8770f.js"><link rel="prefetch" href="/assets/js/75.382904be.js"><link rel="prefetch" href="/assets/js/76.f0767339.js"><link rel="prefetch" href="/assets/js/77.9d571d1c.js"><link rel="prefetch" href="/assets/js/78.dd137c17.js"><link rel="prefetch" href="/assets/js/79.edfcc1c9.js"><link rel="prefetch" href="/assets/js/8.7f62d199.js"><link rel="prefetch" href="/assets/js/80.0630c7b8.js"><link rel="prefetch" href="/assets/js/81.9b8a0f60.js"><link rel="prefetch" href="/assets/js/82.cdc416ce.js"><link rel="prefetch" href="/assets/js/83.5a25d525.js"><link rel="prefetch" href="/assets/js/84.2fd02ebd.js"><link rel="prefetch" href="/assets/js/85.ffe09b39.js"><link rel="prefetch" href="/assets/js/86.444027c3.js"><link rel="prefetch" href="/assets/js/87.3fca9d24.js"><link rel="prefetch" href="/assets/js/88.8804b67d.js"><link rel="prefetch" href="/assets/js/89.0cf26bc0.js"><link rel="prefetch" href="/assets/js/9.bcc75584.js"><link rel="prefetch" href="/assets/js/90.c78ed67f.js"><link rel="prefetch" href="/assets/js/91.439e2583.js"><link rel="prefetch" href="/assets/js/92.fbc05d32.js"><link rel="prefetch" href="/assets/js/93.b789d989.js"><link rel="prefetch" href="/assets/js/94.36d664ec.js"><link rel="prefetch" href="/assets/js/95.de6a7e43.js"><link rel="prefetch" href="/assets/js/96.a3d4e445.js"><link rel="prefetch" href="/assets/js/97.9fb124b7.js"><link rel="prefetch" href="/assets/js/98.5d661e2a.js"><link rel="prefetch" href="/assets/js/99.24e1a1bf.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.45858b4b.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/icon/logo200x100.png" alt="JavaInterview" class="logo"> <span class="site-name can-hide">JavaInterview</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/read/" class="nav-link">指南</a></div><div class="nav-item"><a href="/categories/" class="nav-link">分类</a></div><div class="nav-item"><a href="/tags/" class="nav-link">标签</a></div><div class="nav-item"><a href="/archives/" class="nav-link">归档</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="作者" class="dropdown-title"><!----> <span class="title" style="display:;">作者</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://dearlocation.com/me/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  相亲交友
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://yangchunjian.blog.csdn.net" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://yangchunjian.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  文档箱
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://dearlocation.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  亲位网
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.yangchunjian.com/docbook/imgs/dearlocation.jpeg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  微信号
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.yangchunjian.com/docbook/imgs/qrcode_for_gh_8756901e5b12_344.jpg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  公众号
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="/img/weixin.jpeg"> <div class="blogger-info"><h3>JavaInterview</h3> <span>『Java面试+Java学习』</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/read/" class="nav-link">指南</a></div><div class="nav-item"><a href="/categories/" class="nav-link">分类</a></div><div class="nav-item"><a href="/tags/" class="nav-link">标签</a></div><div class="nav-item"><a href="/archives/" class="nav-link">归档</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="作者" class="dropdown-title"><!----> <span class="title" style="display:;">作者</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://dearlocation.com/me/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  相亲交友
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://yangchunjian.blog.csdn.net" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://yangchunjian.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  文档箱
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://dearlocation.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  亲位网
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.yangchunjian.com/docbook/imgs/dearlocation.jpeg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  微信号
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.yangchunjian.com/docbook/imgs/qrcode_for_gh_8756901e5b12_344.jpg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  公众号
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/read/" class="sidebar-link">指南</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>总结</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>简历</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Java</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>面试</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>源码</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>技术</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>算法</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>运维</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/9b58cc/" aria-current="page" class="active sidebar-link">命令</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/pages/9b58cc/#基础命令" class="sidebar-link">基础命令</a></li><li class="sidebar-sub-header level2"><a href="/pages/9b58cc/#高级命令" class="sidebar-link">高级命令</a></li></ul></li><li><a href="/pages/f33116/" class="sidebar-link">部署</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>测试</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数据库</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>中间件</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-1baff76c><div class="articleInfo" data-v-1baff76c><ul class="breadcrumbs" data-v-1baff76c><li data-v-1baff76c><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-1baff76c></a></li> <li data-v-1baff76c><a href="/categories/?category=operation" title="分类" data-v-1baff76c>operation</a></li></ul> <div class="info" data-v-1baff76c><div title="作者" class="author iconfont icon-touxiang" data-v-1baff76c><a href="javascript:;" data-v-1baff76c>JavaInterview.cn</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-1baff76c><a href="javascript:;" data-v-1baff76c>2022-04-21</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABGpJREFUSA3tVVtoXFUU3fvOI53UlmCaKIFmwEhsE7QK0ipFEdHEKpXaZGrp15SINsXUWvBDpBgQRKi0+KKoFeJHfZA+ED9KKoIU2gYD9UejTW4rVIzm0VSTziPzuNu1z507dibTTjL4U/DAzLn3nL3X2o91ziX6f9wMFdh6Jvbm9nNSV0msViVO6tN1Rm7NMu2OpeJ9lWBUTDxrJbYTS0hInuwciu9eLHlFxCLCZEk3MegsJmZ5K/JD6t7FkFdEvGUo1g7qJoG3MHImqRIn8/nzY1K9UPKKiJmtnUqHVE3Gbuay6vJE/N2FEmuxFjW2nUuE0yQXRRxLiTUAzs36zhZvOXJPdX850EVnnLZkB8prodQoM5JGj7Xk2mvC7JB8tG04Ef5PiXtG0UtxupRQSfTnBoCy554x18yJHI6I+G5Eru4LHmPJZEQsrvPUbMiA8G/WgMK7w7I+ez7++o2ANfbrjvaOl1tFMs+htG3IrZH9/hDX1Pr8Tc0UvH8tcX29KzAgIGcEkINyW5BF9x891hw6VYqgJHEk0huccS7vh3C6gTiODL+26huuBtbct8eZnqLML8PkxGYpuPZBqtqwkSjgc4mB5gbgig5i+y0UDK35LMxXisn9xQtK+nd26gTIHsHe/oblK/b29fUmN/8Y+9jAQrnBp56m1LcDlDp9irKTExSKduXJVWSqdBMA08pEJnEIOB3FPPMybu/oeV8zFeYN3xx576Q6RH+VmplE4ncQV5v+5rzSoyOU7PuEAg8g803PwBJ0CExno/jcMbN8tONYeOmHiuUNryvm3fRUy4tMPVLdAGkUhNWuggGrJcXPv+ouCjz0MKUHz1J2/E8IC9nqTabcxgaBYM0hPhD5Y65FsbxRQKxCQrDjDctW7PUM3HuZunFyifSAqEfuzCp48Il24luWUWZoyJCaPR82jE0+kFA643wRFVni4RYSq3ohJO2pZ7B5dO4xkDWbEpossJPLSrPjYID8rS2UHTlvyNxqIGsg674XJJ7vnh5L7PNwC4hh2sjCI96mzszOTpxLF0T7l88Yz7lAuK6OnL8gXLOnTvpzSb22YG8W7us3jSebFHeeqnXRG1vt+MoUM84LQIBmMsCTAcOauTh0T0l0neQK7m2bLMt2mGxU3HYssS0J2cdv5wljlPsrIuZLAG/2DOZIXgCYT8uMGZN+e2kSirfxZOPCsC0f24nTZzspnVn9VePS1Z5vubmAGGXG8ZFno9Hel0yfA5ZPhF7Dh972BQJ2qCpgH67lmWtBYbvk6sz02wjky2vXyz0XErP/kFB619js1BtwfOV4OPRqOQBjy3Qbk18vigUPPSD5ceHnwck7W9bhAqZdd7SuG7w4/P2F/GaJh8c7e9qgow+Q7cGBo+98WsLkuktFqiZabtXuQTu/Y5ETbR0v7tNSFnvrmu6pjdoan2KjMu8q/Hmj1EfCO2ZGfEIbIXKUlw8qaX9/b2oeSJmFksSeT/Fn0V3nSypChh4Gjh74ybO9aeZ/AN2dwciu2/MhAAAAAElFTkSuQmCC">命令<span class="title-tag">Java</span></h1> <!----> <div class="theme-vdoing-content content__default"><h2 id="基础命令"><a href="#基础命令" class="header-anchor">#</a> 基础命令</h2> <h3 id="ls-列出文件list"><a href="#ls-列出文件list" class="header-anchor">#</a> ls：列出文件list</h3> <p>List列出当前路径下的文件与文件夹。</p> <div class="language- extra-class"><pre><code>ls 常用参数：
+-l：列出文件的详细信息
+-a：all，列出所有文件，包括隐藏文件
+注：参数可以叠加使用，如-la表示列出所有文件及其详细信息
+</code></pre></div><h3 id="cd-切换目录change-directory"><a href="#cd-切换目录change-directory" class="header-anchor">#</a> cd：切换目录change directory</h3> <div class="language- extra-class"><pre><code>cd /home		# 切换/进入home目录
+cd ..			# 到上一目录（父目录）
+cd ../..		# 到父目录的父目录
+cd .			# 进入当前目录（其实啥都不做）
+</code></pre></div><h3 id="cp-复制copy"><a href="#cp-复制copy" class="header-anchor">#</a> cp：复制copy</h3> <div class="language- extra-class"><pre><code>cp 常用参数：
+-i：interactive mode，若有同名文件，会询问是否覆盖（如果没这个参数，会不提示，直接覆盖）
+-r：recursive copy，复制文件夹时连同子文件（夹）一起复制，如果是对文件夹进行操作，一定要带这个参数
+
+cp -ir sourceDir/ home/targetDir/	# 把当前路径下的sourceDir文件夹复制到home目录下，取名为targetDir，且带参数-i和-r
+</code></pre></div><h3 id="mv-移动move"><a href="#mv-移动move" class="header-anchor">#</a> mv：移动move</h3> <p>即剪切操作。源文件会被删除。</p> <div class="language- extra-class"><pre><code>mv 参数：
+-i： interactive mode，同cp的-i参数，若覆盖会询问
+
+mv -i sourceFile /home/targetFile	# 把当前目录下的sourceFile剪切到/home目录下并命名为targetFile
+</code></pre></div><h3 id="rm-移除-删除remove"><a href="#rm-移除-删除remove" class="header-anchor">#</a> rm：移除，删除remove</h3> <div class="language- extra-class"><pre><code>rm 参数：
+-i：interactive，同上，若覆盖，先询问
+-r：recursive mode，删除所有子文件（夹）
+
+rm Dir/	# 删除Dir文件夹（错误示例，会报错）
+rm -r Dir/	# 删除Dir文件夹（正确，对文件夹操作一定要带-r）
+</code></pre></div><h3 id="mkdir-创建文件夹make-directory"><a href="#mkdir-创建文件夹make-directory" class="header-anchor">#</a> mkdir：创建文件夹make directory</h3> <div class="language- extra-class"><pre><code>mkdir newDir/	# 在当前路径创建一个空文件夹newDir/
+</code></pre></div><h3 id="rmdir-移除-删除文件夹remove-directory"><a href="#rmdir-移除-删除文件夹remove-directory" class="header-anchor">#</a> rmdir：移除，删除文件夹remove directory</h3> <div class="language- extra-class"><pre><code>rmdir oldDir/	# 在当前路径删除oldDir文件夹及其子文件（夹）
+</code></pre></div><h3 id="chown-更改所有者change-owner"><a href="#chown-更改所有者change-owner" class="header-anchor">#</a> chown：更改所有者change owner</h3> <div class="language- extra-class"><pre><code>chown 参数：
+-R： 同-r，recursive
+
+chown user -R myDir/	# 把文件夹myDir的所有者改成user
+</code></pre></div><h3 id="chmod-更改文件的权限模式change-mode"><a href="#chmod-更改文件的权限模式change-mode" class="header-anchor">#</a> chmod：更改文件的权限模式change mode</h3> <p>文件权限模式针对三类对象：当前用户user（这里也是文件的所有者），组group，其他用户other。
+文件权限有读Read，写Write，执行Execute。</p> <p>chmod参数：</p> <div class="language- extra-class"><pre><code>u: user，权限对象为当前用户（这里是所有者）
+g：group，权限对象为所有者和组
+o：other，权限对象为其他用户
+r：read = 4，读权限
+w：write = 2，写权限
+e：execute = 1，执行权限
++：u/g/o与r/w/e组合使用，加入
+-：删除
+=：设置
+4：仅读
+5：仅读+执行
+6：仅读+写
+7：读+写+执行
+
+chmod 754 myDir/	# 当前用户（所有者）可读+写+执行，组group可读+执行，其他用户可读
+chmod g+w myDir/	# 为组group添加写write权限
+chmod -R 777 myDir/ # 给myDir/及其所有子目录添加所有权限
+ls -n # 可以查看当前目录下各子目录的文件权限
+</code></pre></div><h3 id="find-查找"><a href="#find-查找" class="header-anchor">#</a> find：查找</h3> <div class="language- extra-class"><pre><code>find 常用参数：
+-name：根据文件名查找
+-mtime n：n为数字，表示找出在n天前的当天被更改过的文件（0表示今天）
+-mtime +n：查找在n天前（不包括n天当天）被改过的文件
+-mtime -n：查找在n天之内（包括n天当天）被改过的文件
+-size +/-：查找比XXsize大/小的文件
+
+find /home -name myFile		# 在/home目录下查找文件名为myFile的文件（注：myFile也可以搭配正则表达式使用）
+find /home -name *.txt		# 在/home目录下查找以txt为后缀的文件
+find /home -mtime 0			# 在/home目录下查找今天内被改过的文件
+find /home -mtime +1		# 在/home目录下查找昨天之前（不包括昨天）被改过的文件
+find /home -mtime -1		# 在/home目录下查找昨天至今（即昨天和今天）被改过的文件
+find /home -size +100M		# 在/home目录下查找大于100MB的文件，注意c表示byte
+</code></pre></div><h3 id="管道"><a href="#管道" class="header-anchor">#</a> |：管道</h3> <p>将前一个命令的输出结果像管道一样传递给后一个命令作为输入</p> <div class="language- extra-class"><pre><code>ls | find -name myFile	# 列出当前路径的文件（夹）并查找名字为“myFile”的，打印出来
+</code></pre></div><h3 id="grep-按行查找并匹配"><a href="#grep-按行查找并匹配" class="header-anchor">#</a> grep：按行查找并匹配</h3> <div class="language- extra-class"><pre><code>grep参数：
+-r：recursive，查找所有子文件（夹）
+-n：number，显示行号
+-w：word，完整匹配整个单词
+-i：insensitive search，忽略大小写
+-l：显示文件名称，而非匹配到的行的内容
+-v：反向选择，显示出没匹配到的行的内容
+
+grep -i mystring file.txt	# 忽略大小写，在file.txt中查找并打印出有“mystring”的行
+ls -l | grep -i mystring	# 在ls -l的输出中把有“mystring”的行打印出来（忽略大小写）
+</code></pre></div><h3 id="tar-打包-压缩-解压"><a href="#tar-打包-压缩-解压" class="header-anchor">#</a> tar：打包，压缩，解压</h3> <div class="language- extra-class"><pre><code>tar常用参数
+-jcv：压缩
+-jxv：解压
+
+tar -jcv myDir/		# 压缩myDir文件夹
+tar -jxv DownloadDir.tar.gz myDir/	# 解压DownloadDir.tar.gz到当前文件夹下，并命令为myDir
+</code></pre></div><h3 id="cat-打印文件内容"><a href="#cat-打印文件内容" class="header-anchor">#</a> cat：打印文件内容</h3> <div class="language- extra-class"><pre><code>cat myFile	# 显示myFile
+</code></pre></div><h3 id="ps-查看进程process-select"><a href="#ps-查看进程process-select" class="header-anchor">#</a> ps：查看进程process select</h3> <div class="language- extra-class"><pre><code>ps 常用参数：
+-A：显示所有进程
+-a：不与terminal有关的所有进程
+-u：有效用户的相关进程
+-x：一般与-a一起用，列出完整的进程信息
+-l：long，详细列出PID的信息
+
+ps Aux 	# 查看系统所有的进程数据
+ps ax	
+</code></pre></div><h3 id="kill-杀死进程"><a href="#kill-杀死进程" class="header-anchor">#</a> kill：杀死进程</h3> <div class="language- extra-class"><pre><code>kill常用参数：
+-SIGHUP：启动被终止的进程
+-SIGINT：相当于ctrl+c，中断进程
+-SIGKILL：强制中断进程
+-SIGTERM：以正常的结束进程方式来终止进程
+-SIGSTOP：相当于ctrl+z，暂停进程
+
+kill -SIGKILL 10876	# 强制中断PID=10876的进程（PID可以通过ps查到，有时可以加上| grep进行筛选）
+</code></pre></div><h3 id="passwd-修改密码password"><a href="#passwd-修改密码password" class="header-anchor">#</a> passwd：修改密码password</h3> <div class="language- extra-class"><pre><code>passwd	# 修改当前用户的密码
+</code></pre></div><h3 id="pwd-显示工作目录print-work-directory"><a href="#pwd-显示工作目录print-work-directory" class="header-anchor">#</a> pwd：显示工作目录print work directory</h3> <div class="language- extra-class"><pre><code>pwd	# 显示当前路径的具体位置
+</code></pre></div><h3 id="tee-显示并保存"><a href="#tee-显示并保存" class="header-anchor">#</a> tee：显示并保存</h3> <p>显示内容并将内容保存在文件中。</p> <div class="language- extra-class"><pre><code>python3.6 test.py | tee result.log	# 运行test.py文件，显示编译与运行结果并保存成result.log文件
+</code></pre></div><h3 id="reboot-重启"><a href="#reboot-重启" class="header-anchor">#</a> reboot：重启</h3> <div class="language- extra-class"><pre><code>reboot	# 输完立马重启（记得保存文件）
+</code></pre></div><p>其他命令</p> <div class="language- extra-class"><pre><code>alias 设置别名
+alias cp='cp -i'  # 输入cp默认调用cp -i
+alias rm='rm -i'
+alias mv='mv -i'
+
+bg查看后端运行的进程 background
+bg #会显示后端进程的号码
+kill %1 #强制杀死1号进程
+</code></pre></div><h3 id="touch创建新文件"><a href="#touch创建新文件" class="header-anchor">#</a> touch创建新文件</h3> <div class="language- extra-class"><pre><code>touch new_file.txt # 创建一个new_file.txt文件
+</code></pre></div><h3 id="du"><a href="#du" class="header-anchor">#</a> du</h3> <div class="language- extra-class"><pre><code>du -h 打印文件/文件夹的大小
+du -h #打印当前目录下所有子目录与子文件夹的大小
+du -h --max-depth=0 #打印当前目录的大小
+du -h --max-depth=1 #打印当前目录下所有子目录的大小 
+</code></pre></div><h2 id="高级命令"><a href="#高级命令" class="header-anchor">#</a> 高级命令</h2> <h3 id="重定向命令"><a href="#重定向命令" class="header-anchor">#</a> 重定向命令</h3> <p>重定向命令介绍
+重定向也称为输出重定向，把在终端执行命令的结果保存到目标文件。
+重定向命令使用</p> <div class="language- extra-class"><pre><code>命令	说明
+&gt;	如果文件存在会覆盖原有的’w’ 模式
+&gt;&gt;	如果文件存在会追加写入的’a’模式
+</code></pre></div><p>说明只要在终端能显示信息的命令都可以使用重定向，比如：tree。
+小结</p> <div class="language- extra-class"><pre><code>终端内容保存到文件使用重定向有两种方式：&gt;和&gt;&gt;
+&gt;表示每次只写入最新的数据，原有数据不保留。
+&gt;&gt;表示每次在原有数据的基础上进行追加，原有数据会保留。
+</code></pre></div><h3 id="查看文件内容命令"><a href="#查看文件内容命令" class="header-anchor">#</a> 查看文件内容命令</h3> <p>查看文件内容命令的使用</p> <div class="language- extra-class"><pre><code>命令	说明
+cat	查看小型文件
+more	分屏查看大型文件
+
+cat命令结合重定向可以完成多个文件的合并
+gedit文件编辑命令，可以查看和编辑文件
+</code></pre></div><p>查看内容信息过长无法在一屏上显示，可以使用more命令。在终端分配显示文件内容。</p> <p>操作键说明</p> <div class="language- extra-class"><pre><code>操作键	说明
+空格	显示下一屏信息
+回车	显示下一行信息
+b	显示上一屏信息
+f	显示下一屏信息
+q	退出
+</code></pre></div><p>管道(|)命令的使用</p> <div class="language- extra-class"><pre><code>管道（|）：一个命令的输出可以通过管道做为另一个命令的输入，可以理解成是一个容器，存放在终端显示的内容。
+说明：管道（|）一般结合more命令使用，主要是分配查看终端显示内容。
+</code></pre></div><p>小结</p> <div class="language- extra-class"><pre><code>查看小文件使用cat命令
+分屏查看大型文件使用more命令
+查看终端显示内容并分屏展示，使用 管道(|) 结合 more 命令。
+</code></pre></div><h3 id="链接命令"><a href="#链接命令" class="header-anchor">#</a> 链接命令</h3> <p>链接命令介绍
+链接命令是创建链接文件，链接文件分为：</p> <div class="language- extra-class"><pre><code>软链接
+硬链接
+命令	说明
+ln -s	创建软连接
+ln	创建硬链接
+</code></pre></div><p>软链接：
+类似于Windows下的快捷方式，当一个源文件的目录层级比较深，我们想要方便使用它可以给源文件创建一个软链接。</p> <p>注意点:</p> <div class="language- extra-class"><pre><code>• 如果软链接和源文件不在同一个目录，源文件要使用绝对路径，不能使用相对路径。
+• 删除源文件则软链接失效
+• 可以给目录创建软链接
+</code></pre></div><p>软链接小结</p> <div class="language- extra-class"><pre><code>• 软链接的作用是方便文件的快速访问，比如:给一个复杂路径下的文件创建一个软链接，以后就可以通过软链接完成快速访问操作。
+• 创建软链接命令格式: ln -s 源文件路径(使用绝对路径) 软链接
+</code></pre></div><p>硬链接</p> <div class="language- extra-class"><pre><code>类似于源文件的一个别名，也就是说这两个名字指向的是同一个文件数据。
+</code></pre></div><p>注意点:</p> <div class="language- extra-class"><pre><code>• 创建硬链接使用相对路径和绝对路径都可以
+• 删除源文件，硬链接还可以访问到数据。
+• 创建硬链接，硬链接数会加1，删除源文件或者硬链接，硬链接数会减1。
+• 创建软链接，硬链接数不会加1
+• 不能给目录创建硬链接
+</code></pre></div><p>硬链接数:
+硬链接数就是文件数据被文件名使用的次数, 好比引用计数</p> <p>硬链接小结</p> <div class="language- extra-class"><pre><code>• 硬链接的作用是可以给重要文件创建硬链接，能够防止文件数据被误删。
+• 删除源文件，软链接失效，但是硬链接依然可以使用。
+• 创建硬链接命令格式: ln 源文件路径 硬链接
+</code></pre></div><h3 id="文本搜索命令"><a href="#文本搜索命令" class="header-anchor">#</a> 文本搜索命令</h3> <p>grep命令的使用</p> <div class="language- extra-class"><pre><code>命令	说明
+grep	文本搜索
+grep命令选项的使用
+
+命令选项	说明
+-i	忽略大小写
+-n	显示匹配行号
+-v	显示不包含匹配文本的所有行
+</code></pre></div><p>grep命令结合正则表达式的使用</p> <div class="language- extra-class"><pre><code>正则表达式	说明
+^	以指定字符串开头
+$	以指定字符串结尾
+.	匹配一个非换行符的字符
+</code></pre></div><p>扩展</p> <div class="language- extra-class"><pre><code>grep 命令还可以文本搜索管道中的内容，比如: ls / | grep ‘lib’
+在使用 grep 命令的时候还可以省略搜索内容的引号，比如: ls / | grep lib， grep hello 1.txt
+</code></pre></div><p>小结</p> <div class="language- extra-class"><pre><code>grep 命令是完成文本搜索操作的
+文本搜索的命令格式：grep 选项 文本搜索内容
+</code></pre></div><h3 id="查找文件命令"><a href="#查找文件命令" class="header-anchor">#</a> 查找文件命令</h3> <p>find命令及选项的使用</p> <div class="language- extra-class"><pre><code>命令	说明
+find	在指定目录下查找文件(包括目录)
+</code></pre></div><p>find命令选项</p> <div class="language- extra-class"><pre><code>选项	说明
+-name	根据文件名(包括目录名)字查找
+find命令结合通配符的使用
+</code></pre></div><p>通配符
+是一种特殊语句，主要有星号(*)和问号(?)，用来模糊搜索文件</p> <div class="language- extra-class"><pre><code>通配符	说明
+*	代表0个或多个任意字符
+/	代表任意一个字符
+</code></pre></div><p>扩展</p> <p>通配符不仅能结合 find 命令使用，还可以结合其它命令使用, 比如: ls、mv、cp 等，这里需要注意只有 find 命令使用通配符需要加上引号。
+小结</p> <div class="language- extra-class"><pre><code>• find命令是完成查找文件操作的
+• 查找文件的命令格式: find 指定查找目录 -name “文件名”
+</code></pre></div><h3 id="压缩和解压命令"><a href="#压缩和解压命令" class="header-anchor">#</a> 压缩和解压命令</h3> <p>压缩格式的介绍
+Linux默认支持的压缩格式</p> <div class="language- extra-class"><pre><code>.gz
+.bz2
+.zip
+</code></pre></div><p>说明</p> <div class="language- extra-class"><pre><code>.gz和.bz2的压缩包需要使用tar命令来压缩和解压缩
+.zip的压缩包需要使用zip命令来压缩，使用unzip命令来解压缩
+</code></pre></div><p>压缩的目的</p> <div class="language- extra-class"><pre><code>为了节省自盘的空间
+</code></pre></div><p>tar命令及选项的使用</p> <div class="language- extra-class"><pre><code>命令	说明
+tar	压缩和解压缩命令
+tar命令选项
+
+选项	说明
+-c	创建打包文件
+-v	显示打包或者解包的详细信息
+-f	指定文件名称, 必须放到所有选项后面
+-z	压缩或解压缩(.gz)
+-j	压缩或解压缩(.bz2)
+-x	解包
+-C	解压缩到指定目录
+</code></pre></div><p>zip和unzip命令及选项的使用</p> <div class="language- extra-class"><pre><code>命令	说明
+zip	压缩成.zip格式文件
+unzip	解压缩.zip格式文件
+</code></pre></div><p>unzip</p> <div class="language- extra-class"><pre><code>选项	说明
+-d	解压缩到指定木目录
+</code></pre></div><p>说明</p> <div class="language- extra-class"><pre><code>压缩文件尽量使用.gz格式，因为占用空间较少
+使用zip命令压缩的文件占用空间比较多, 当时比较通用，操作更加简单。
+</code></pre></div><p>小结</p> <div class="language- extra-class"><pre><code>.gz和.bz2的压缩文件使用tar命令来完成压缩和解压缩
+.zip的压缩文件使用zip和unzip命令来完成压缩和解压缩
+</code></pre></div><h3 id="文件权限命令"><a href="#文件权限命令" class="header-anchor">#</a> 文件权限命令</h3> <p>chmod</p> <div class="language- extra-class"><pre><code>命令	说明
+chmod	修改文件权限
+</code></pre></div><p>chmod修改文件权限有两种方式</p> <div class="language- extra-class"><pre><code>字母法
+数字法
+</code></pre></div><p>chmod字母法的使用
+角色说明</p> <div class="language- extra-class"><pre><code>角色	说明
+u	user, 表示该文件的所有者
+g	group, 表示用户组
+o	other, 表示其他用户
+a	all, 表示所有用户
+</code></pre></div><p>权限设置说明</p> <div class="language- extra-class"><pre><code>操作符	说明
++	增加权限
+-	撤销权限
+=	设置权限
+</code></pre></div><p>权限说明</p> <div class="language- extra-class"><pre><code>权限	说明
+r	可读
+w	可写
+x	可执行
+-	无任何权限
+</code></pre></div><p>chmod数字法的使用</p> <div class="language- extra-class"><pre><code>数字法就是“rwx” 这些权限也可以用数字来代替
+</code></pre></div><p>权限说明</p> <div class="language- extra-class"><pre><code>权限	说明
+r	可读，权限值是4
+w	可写，权限值是2
+x	可执行，权限值是1
+-	无任何权限，权限值是0
+</code></pre></div><p>小结</p> <div class="language- extra-class"><pre><code>利用chmod命令可以控制文件的操作权限
+字母法格式：chmod 不同角色设置的权限 文件
+数字法格式: chmod 不同角色的权限值 文件名
+</code></pre></div><h3 id="获取管理员的相关命令"><a href="#获取管理员的相关命令" class="header-anchor">#</a> 获取管理员的相关命令</h3> <p>sudo</p> <div class="language- extra-class"><pre><code>命令	说明
+sudo -s	切换到root用户，获取管理员权限
+sudo	某个命令的执行需要获取管理员权限可以在执行命令前面加上sudo
+</code></pre></div><p>说明</p> <div class="language- extra-class"><pre><code>如果只是某次操作需要使用管理员权限建议使用 sudo , 也就是说临时使用管理器权限。
+如果大量操作都需要使用管理员权限 sudo –s, 但是操作需谨慎
+</code></pre></div><p>whoami命令的使用</p> <div class="language- extra-class"><pre><code>命令	说明
+whoami	查看当前用户限
+</code></pre></div><p>exit命令的使用</p> <div class="language- extra-class"><pre><code>命令	说明
+exit	退出登录用户
+</code></pre></div><p>说明:</p> <div class="language- extra-class"><pre><code>• 如果是切换后的登陆用户，退出则返回上一个登陆账号。
+• 如果是终端界面，退出当前终端。
+</code></pre></div><p>who命令的使用</p> <div class="language- extra-class"><pre><code>命令	说明
+who	查看所有的登录用户
+</code></pre></div><p>passwd命令的使用</p> <div class="language- extra-class"><pre><code>命令	说明
+passwd	修改用户密码，不指定用户默认修改当前登录用户密码
+</code></pre></div><p>which命令的使用</p> <div class="language- extra-class"><pre><code>命令	说明
+which	查看命令位置
+</code></pre></div><p>关机和重启命令的使用</p> <div class="language- extra-class"><pre><code>命令	说明
+shutdown -h now	立刻关机
+</code></pre></div><p>reboot	重启</p> <h3 id="用户相关操作"><a href="#用户相关操作" class="header-anchor">#</a> 用户相关操作</h3> <p>创建用户</p> <div class="language- extra-class"><pre><code>命令	说明
+useradd	创建(添加用户)
+useradd命令选项
+
+选项	说明
+-m	自动创建用户主目录,主目录的名字就是用户名
+-g	指定用户所属的用户组，默认不指定会自动创建一个同名的用户组
+</code></pre></div><p>说明</p> <div class="language- extra-class"><pre><code>• useradd 命令的使用需要使用管理员权限，前面需要加上 sudo
+• 创建用户如果不指定用户组，默认会自动创建一个同名的用户组
+• 查看用户是否创建成功，可以查看/etc/passwd这个文件
+• 查看用户组是否创建成功，可以查看/etc/group这个文件
+</code></pre></div><p>passwd文件中的每项信息说明,以root❌0:0:root:/root:/bin/bash为例</p> <div class="language- extra-class"><pre><code>• 第一个：用户名
+• 第二个：密码占位符
+• 第三个：uid, 用户id
+• 第四个：gid, 用户所在组id
+• 第五个：用户描述, 可选，
+• 第六个：用户的主目录所在位置
+• 第七个：用户所用 shell 的类型，一般由bash或者sh，默认不设置是sh类型
+</code></pre></div><p>group文件中的每项信息说明, 以laowang❌1001:为例</p> <div class="language- extra-class"><pre><code>• 第一个：用户组名
+• 第二个：用户组密码占位符，一般Linux系统的用户组都没有密码的
+• 第三个：组id
+</code></pre></div><p>id命令查看用户信息</p> <p>命令	说明
+id	查看用户信息</p> <div class="language- extra-class"><pre><code>每项信息说明
+uid=1001(laowang) gid=1001(laowang) 组=1001(laowang)
+• 第一个: uid 表示用户id
+• 第二个: gid 表示用户组id
+• 第三个: 组 表示用户所在的用户组
+</code></pre></div><p>设置密码
+给其它用户设置密码，需要使用: sudo passwd 用户名</p> <p>切换用户</p> <div class="language- extra-class"><pre><code>命令	说明
+su	切换用户
+</code></pre></div><p>语法格式: su - 用户名
+修改用户信息</p> <div class="language- extra-class"><pre><code>命令	说明
+usermod	修改用户信息
+</code></pre></div><p>usermod</p> <div class="language- extra-class"><pre><code>命令	说明
+-G	设置一个附加值
+-g	修改用户组
+</code></pre></div><p>删除用户</p> <div class="language- extra-class"><pre><code>命令	说明
+userdel	删除用户
+</code></pre></div><p>userdel命令选项</p> <div class="language- extra-class"><pre><code>命令	说明
+-r 用户名	删除用户主目录，必须要设置，否则用户主目录不会删除
+</code></pre></div><p>说明:</p> <p>删除用户，默认同名的用户组也会被删除
+小结</p> <div class="language- extra-class"><pre><code>创建用户命令格式：sudo useradd -m 用户名，默认会创建一个同名的用户组
+查看用户信息使用 id 命令或者 /etc/passwd文件
+查看用户组信息使用 /etc/group文件
+给用户设置密码使用 sudo passwd 用户名
+切换用户使用 su - 用户名
+设置附加组使用 sudo usermod -G 组名 用户名
+删除用户使用 sudo userdel -r 用户名，默认会删除同名的用户组。
+</code></pre></div><h3 id="用户组相关操作"><a href="#用户组相关操作" class="header-anchor">#</a> 用户组相关操作</h3> <p>创建用户组</p> <div class="language- extra-class"><pre><code>命令	说明
+groupadd	创建(添加)用户
+</code></pre></div><p>创建用户并指定用户组</p> <div class="language- extra-class"><pre><code>sudo useradd -m -g test lizhe
+</code></pre></div><p>修改用户组</p> <div class="language- extra-class"><pre><code>sudo groupadd abc
+sudo usermod -g abc laowang
+</code></pre></div><p>删除用户组</p> <div class="language- extra-class"><pre><code>命令	说明
+groupdel	删除用户组
+sudo groupdel test
+</code></pre></div><p>说明:如果用户组下面有用户先删除用户在删除用户组
+小结</p> <div class="language- extra-class"><pre><code>创建用户组使用: sudo groupadd 用户组名
+创建用户并指定用户组使用: sudo useradd -m -g 用户组 用户名
+修改用户组使用: sudo usermod -g 用户组 用户名
+删除用户组使用: sudo groupdel 用户组名
+</code></pre></div><h3 id="软件安装"><a href="#软件安装" class="header-anchor">#</a> 软件安装</h3> <p>软件安装的介绍</p> <p>Ubuntu软件安装有两种方式:离线安装(deb文件格式安装）、在线安装(apt-get方式安装)
+deb文件格式安装
+是 Ubuntu 的安装包格式，可以使用 dpkg 命令进行软件的安装和卸载。</p> <div class="language- extra-class"><pre><code>命令	说明
+dpkg	安装和卸载deb安装包
+dpkg命令选项
+
+选项	说明
+-i	离线安装deb安装包
+</code></pre></div><p><strong>apt-get方式安装</strong>
+是在线安装deb软件包的命令，主要用于在线从互联网的软件仓库中搜索、安装、升级、卸载软件。
+在线安装软件命令格式:</p> <div class="language- extra-class"><pre><code>sudo apt–get install 安装包 , 表示在线安装deb安装包
+</code></pre></div><p>更改镜像源</p> <p>因为使用 apt-get 命令默认是从国外的服务器下载安装软件的，会导致下载安装速度很慢，所以需要更改成国内的镜像源服务器。</p> <div class="language- extra-class"><pre><code>镜像源说明：镜像源就是下载软件来源的服务器。
+</code></pre></div><p>更改镜像源的方式</p> <div class="language- extra-class"><pre><code>可视化方式更改镜像源
+手动方式更改镜像源
+https://mirrors.tuna.tsinghua.edu.cn/
+</code></pre></div><p>说明</p> <div class="language- extra-class"><pre><code>手动修改镜像源，配置完成以后需要执行 sudo apt-get update 这个命令，更新镜像源保证可以下载最新的软件。
+使用apt-get方式安装软件一定要联网
+</code></pre></div><p>小结
+Ubuntu 操作系统安装软件有两种方式:</p> <div class="language- extra-class"><pre><code>sudo dpkg -i 安装包 命令
+sudo apt-get install 安装包 命令卸载
+使用 apt-get 命令也就是在线安装需要更改镜像源，提高下载和安装速度。
+</code></pre></div><h3 id="编辑器-vim"><a href="#编辑器-vim" class="header-anchor">#</a> 编辑器 vim</h3> <p>vim介绍
+vim 是一款功能强大的文本编辑器，也是早年 Vi 编辑器的加强版，它的最大特色就是使用命令进行编辑，完全脱离了鼠标的操作。</p> <p>vim的工作模式</p> <div class="language- extra-class"><pre><code>命令模式
+编辑模式
+末行模式
+</code></pre></div><p>说明</p> <p>vim打开文件进入的是命令模式</p> <p>注意点:编辑模式和末行模式之间不能直接进行切换，都需要通过命令模式来完成。</p> <div class="language- extra-class"><pre><code>vim的末行模式命令
+:w 保存
+:wq 保存退出
+:x 保存退出
+:q! 强制退出
+</code></pre></div><p>vim常用命令</p> <div class="language- extra-class"><pre><code>命令	说明
+yy	复制光标所在行
+p	粘贴
+dd	删除/剪贴当前行
+V	按行选中
+u	撤销
+ctrl + r	反撤销
+&gt;&gt;	向右缩进
+&lt;&lt;	向左缩进
+:/搜索的内容	搜索指定内容
+:%s/要替换的内容/替换后的内容/g	全局替换
+:开始行数,结束行数s/要替换的内容/替换后的内容	局部替换
+.	重复上一次命令操作
+G	回到最后一行
+gg	回到第一行
+数字 + G	回到指定行
+shift + 6	回到当前行的行首
+shift + 4	回到当前行的行末
+ctrl + f	下一屏
+ctrl + b	上一屏
+</code></pre></div></div></div> <!----> <div class="page-edit"><!----> <div class="tags"><a href="/tags/?tag=Java" title="标签">#Java</a></div> <div class="last-updated"><span class="prefix">上次编辑于:</span> <span class="time">2022-06-25 11:07</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/cdfd31/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">观察者模式</div></a> <a href="/pages/f33116/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">部署</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/cdfd31/" class="prev">观察者模式</a></span> <span class="next"><a href="/pages/f33116/">部署</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/8f308f/"><div>
+            种花问题
+            <span class="title-tag">
+              Java
+            </span></div></a> <span class="date">09-15</span></dt></dl><dl><dd>02</dd> <dt><a href="/pages/e50a94/"><div>
+            数组嵌套
+            <span class="title-tag">
+              Java
+            </span></div></a> <span class="date">09-14</span></dt></dl><dl><dd>03</dd> <dt><a href="/pages/271800/"><div>
+            寻找最近的回文数
+            <span class="title-tag">
+              Java
+            </span></div></a> <span class="date">09-14</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><!----> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2019-2022
+    <span><a href="https://JavaInterview.cn" target="_blank">JavaInterview.cn</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"><!----><div></div><!----></div></div>
+    <script src="/assets/js/app.74e86e54.js" defer></script><script src="/assets/js/2.762fe63e.js" defer></script><script src="/assets/js/333.2a42d8e6.js" defer></script>
+  </body>
+</html>
