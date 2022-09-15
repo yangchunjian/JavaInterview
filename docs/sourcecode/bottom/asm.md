@@ -1,5 +1,5 @@
 ---
-title: Java字节码操控框架AMS介绍
+title: Java字节码操控框架ASM介绍
 category: Java
 author: JavaInterview.cn
 categories: 
