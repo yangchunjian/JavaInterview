@@ -1,3 +1,17 @@
+---
+title: 树节点
+date: 2022-09-15 23:19:24
+permalink: /pages/cf6af7/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 

@@ -1,3 +1,17 @@
+---
+title: 有趣的电影
+date: 2022-09-15 23:35:26
+permalink: /pages/af1997/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

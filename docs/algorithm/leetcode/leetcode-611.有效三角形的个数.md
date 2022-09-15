@@ -1,3 +1,17 @@
+---
+title: 有效三角形的个数
+date: 2022-09-15 23:28:05
+permalink: /pages/b4da36/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

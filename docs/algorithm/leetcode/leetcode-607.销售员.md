@@ -1,3 +1,17 @@
+---
+title: 销售员
+date: 2022-09-15 23:13:58
+permalink: /pages/470b7d/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

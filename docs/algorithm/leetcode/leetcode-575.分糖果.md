@@ -1,3 +1,17 @@
+---
+title: 分糖果
+date: 2022-09-15 23:47:03
+permalink: /pages/1a59a9/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
