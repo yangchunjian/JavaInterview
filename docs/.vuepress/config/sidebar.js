@@ -210,6 +210,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-134.加油站",
                     "/algorithm/leetcode/leetcode-135.分发糖果",
                     "/algorithm/leetcode/leetcode-140.单词拆分II",
+                    "/algorithm/leetcode/leetcode-146.LRU 缓存",
                     "/algorithm/leetcode/leetcode-174.地下城游戏",
                     "/algorithm/leetcode/leetcode-188.买卖股票的最佳时机IV",
                     "/algorithm/leetcode/leetcode-207.课程表",
@@ -339,6 +340,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-457.环形数组是否存在循环",
                     "/algorithm/leetcode/leetcode-458.可怜的小猪",
                     "/algorithm/leetcode/leetcode-459.重复的子字符串",
+                    "/algorithm/leetcode/leetcode-460.LFU 缓存",
                     "/algorithm/leetcode/leetcode-461.汉明距离",
                     "/algorithm/leetcode/leetcode-462.最少移动次数使数组元素相等 II",
                     "/algorithm/leetcode/leetcode-463.岛屿的周长",
@@ -497,6 +499,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-2181.合并零之间的节点",
                     "/algorithm/leetcode/leetcode-2289.使数组按非递减顺序排列",
                     "/algorithm/leetcode/leetcode-2326.螺旋矩阵 IV",
+                    "/algorithm/leetcode/leetcode-面试题LRU 缓存",
                 ]
             },
             {
