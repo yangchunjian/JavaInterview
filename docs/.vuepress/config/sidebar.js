@@ -446,6 +446,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-636.函数的独占时间",
                     "/algorithm/leetcode/leetcode-637.二叉树的层平均值",
                     "/algorithm/leetcode/leetcode-638.大礼包",
+                    "/algorithm/leetcode/leetcode-639.解码方法 II",
                     "/algorithm/leetcode/leetcode-641.设计循环双端队列",
                     "/algorithm/leetcode/leetcode-655.输出二叉树",
                     "/algorithm/leetcode/leetcode-662.二叉树最大宽度",
