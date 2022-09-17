@@ -1,3 +1,17 @@
+---
+title: LRU 缓存
+date: 2022-09-17 11:02:10
+permalink: /pages/dfb2d3/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

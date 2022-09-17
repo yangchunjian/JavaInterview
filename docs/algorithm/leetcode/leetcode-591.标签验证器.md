@@ -1,3 +1,17 @@
+---
+title: 标签验证器
+date: 2022-09-17 12:53:37
+permalink: /pages/358f8a/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

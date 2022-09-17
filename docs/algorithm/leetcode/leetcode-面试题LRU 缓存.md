@@ -1,3 +1,17 @@
+---
+title: 面试题LRU 缓存
+date: 2022-09-17 11:13:52
+permalink: /pages/68993e/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
