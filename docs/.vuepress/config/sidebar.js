@@ -424,6 +424,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-584.寻找用户推荐人",
                     "/algorithm/leetcode/leetcode-586.订单最多的客户",
                     "/algorithm/leetcode/leetcode-587.安装栅栏",
+                    "/algorithm/leetcode/leetcode-591.标签验证器",
                     "/algorithm/leetcode/leetcode-605.种花问题",
                     "/algorithm/leetcode/leetcode-606.根据二叉树创建字符串",
                     "/algorithm/leetcode/leetcode-607.销售员",
