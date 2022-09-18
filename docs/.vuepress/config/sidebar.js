@@ -464,6 +464,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-661.图片平滑器",
                     "/algorithm/leetcode/leetcode-662.二叉树最大宽度",
                     "/algorithm/leetcode/leetcode-664.奇怪的打印机",
+                    "/algorithm/leetcode/leetcode-665.非递减数列",
                     "/algorithm/leetcode/leetcode-669.修剪二叉搜索树",
                     "/algorithm/leetcode/leetcode-687.最长同值路径",
                     "/algorithm/leetcode/leetcode-695.岛屿的最大面积",
