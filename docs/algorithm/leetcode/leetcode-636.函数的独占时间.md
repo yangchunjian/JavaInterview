@@ -1,3 +1,17 @@
+---
+title: 函数的独占时间
+date: 2022-09-17 21:32:55
+permalink: /pages/9a980d/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 

@@ -1,3 +1,17 @@
+---
+title: 平方数之和
+date: 2022-09-17 21:30:23
+permalink: /pages/44aaa7/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目
