@@ -454,6 +454,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-646.最长数对链",
                     "/algorithm/leetcode/leetcode-647.回文子串",
                     "/algorithm/leetcode/leetcode-648.单词替换",
+                    "/algorithm/leetcode/leetcode-649.Dota2 参议院",
                     "/algorithm/leetcode/leetcode-655.输出二叉树",
                     "/algorithm/leetcode/leetcode-662.二叉树最大宽度",
                     "/algorithm/leetcode/leetcode-669.修剪二叉搜索树",
