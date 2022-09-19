@@ -87,6 +87,7 @@ module.exports = [
                     "/interview/hf/生产者和消费者5种实现方式",
                     "/interview/hf/Redis内存管理的基石zmalloc",
                     "/interview/hf/如何动态修改线程池参数",
+                    "/interview/hf/流量高峰时的性能瓶颈有哪些以及如何来解决",
                 ]
             },
 
@@ -426,6 +427,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-587.安装栅栏",
                     "/algorithm/leetcode/leetcode-591.标签验证器",
                     "/algorithm/leetcode/leetcode-592.分数加减运算",
+                    "/algorithm/leetcode/leetcode-593.有效的正方形",
+                    "/algorithm/leetcode/leetcode-594.最长和谐子序列",
                     "/algorithm/leetcode/leetcode-605.种花问题",
                     "/algorithm/leetcode/leetcode-606.根据二叉树创建字符串",
                     "/algorithm/leetcode/leetcode-607.销售员",
