@@ -469,6 +469,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-664.奇怪的打印机",
                     "/algorithm/leetcode/leetcode-665.非递减数列",
                     "/algorithm/leetcode/leetcode-669.修剪二叉搜索树",
+                    "/algorithm/leetcode/leetcode-673.最长递增子序列的个数",
                     "/algorithm/leetcode/leetcode-687.最长同值路径",
                     "/algorithm/leetcode/leetcode-695.岛屿的最大面积",
                     "/algorithm/leetcode/leetcode-698.划分为k个相等的子集",
