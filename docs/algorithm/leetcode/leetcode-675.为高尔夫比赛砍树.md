@@ -1,0 +1,136 @@
+---
+title: 为高尔夫比赛砍树
+date: 2022-09-19 23:08:26
+permalink: /pages/ef0c0c/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
+
+## 题目
+
+你被请来给一个要举办高尔夫比赛的树林砍树。树林由一个 m x n 的矩阵表示， 在这个矩阵中：
+
+- 0 表示障碍，无法触碰
+- 1 表示地面，可以行走
+- 比 1 大的数 表示有树的单元格，可以行走，数值表示树的高度
+
+每一步，你都可以向上、下、左、右四个方向之一移动一个单位，如果你站的地方有一棵树，那么你可以决定是否要砍倒它。
+
+你需要按照树的高度从低向高砍掉所有的树，每砍过一颗树，该单元格的值变为 1（即变为地面）。
+
+你将从 (0, 0) 点开始工作，返回你砍完所有树需要走的最小步数。 如果你无法砍完所有的树，返回 -1 。
+
+可以保证的是，没有两棵树的高度是相同的，并且你至少需要砍倒一棵树。
+
+ 
+
+示例 1：
+
+![](../../../media/pictures/leetcode/trees1.jpeg)
+
+    输入：forest = [[1,2,3],[0,0,4],[7,6,5]]
+    输出：6
+    解释：沿着上面的路径，你可以用 6 步，按从最矮到最高的顺序砍掉这些树。
+示例 2：
+
+![](../../../media/pictures/leetcode/trees2.jpeg)
+
+    输入：forest = [[1,2,3],[0,0,0],[7,6,5]]
+    输出：-1
+    解释：由于中间一行被障碍阻塞，无法访问最下面一行中的树。
+示例 3：
+
+    输入：forest = [[2,3,4],[0,0,5],[8,7,6]]
+    输出：6
+    解释：可以按与示例 1 相同的路径来砍掉所有的树。
+    (0,0) 位置的树，可以直接砍去，不用算步数。
+ 
+
+提示：
+
+- m == forest.length
+- n == forest[i].length
+- 1 <= m, n <= 50
+- 0 <= forest[i][j] <= 10<sup>9</sup>
+
+
+
+## 思路
+
+创建Node节点类
+
+
+
+// 先把题读懂：砍树要按从矮到高的顺序，路过某棵树不一定非要砍
+
+// 排序+暴力BFS：
+
+
+## 解法
+```java
+
+import java.util.*;
+// 先把题读懂：砍树要按从矮到高的顺序，路过某棵树不一定非要砍
+
+// 排序+暴力BFS：
+
+class Solution {
+    int move[][]={{-1,0},{1,0},{0,1},{0,-1}};
+    public int cutOffTree(List<List<Integer>> forest) {
+        List<int[]> list=new ArrayList<>();
+        list.add(new int[]{0,0,forest.get(0).get(0)});
+        for(int i=0;i<forest.size();i++){
+            for(int j=0;j<forest.get(i).size();j++){
+                int a=forest.get(i).get(j);
+                if(a>1){list.add(new int[]{i,j,a});}
+            }
+        }
+        Collections.sort(list,(a,b)->a[2]-b[2]);
+        int ans=minSteps(new int[]{0,0},list.get(0),forest);
+        if(ans==-1){return -1;}
+        for(int i=1;i<list.size();i++){
+            int d=minSteps(list.get(i-1),list.get(i),forest);
+            if(d==-1){return -1;}
+            ans+=d;
+        }
+        return ans;
+    }
+    public int minSteps(int a[],int b[],List<List<Integer>> forest){
+        //BFS计算从a到b点需要的最短路程，假如无法到达，则返回-1；
+        if(a[0]==b[0]&&a[1]==b[1]){return 0;}
+        Queue<int[]> q=new LinkedList<>();
+        boolean cameBefore[][]=new boolean[55][55];
+        q.add(a);
+        cameBefore[a[0]][a[1]]=true;
+        int ans=0;
+        while(q.size()>0){
+            ans++;
+            int size=q.size();
+            for(int i=0;i<size;i++){
+                int p[]=q.poll();
+                for(int j=0;j<4;j++){
+                    int x=p[0]+move[j][0],y=p[1]+move[j][1];
+                    if(x>=0&&x<forest.size()&&y>=0&&y<forest.get(0).size()&&forest.get(x).get(y)!=0&&!cameBefore[x][y]){
+                        if(x==b[0]&&y==b[1]){return ans;}
+                        q.add(new int[]{x,y});
+                        cameBefore[x][y]=true;
+                    }
+                }
+            }
+        }
+        return -1;
+    }
+
+}
+```
+
+## 总结
+
+- 分析出几种情况，然后分别对各个情况实现 
