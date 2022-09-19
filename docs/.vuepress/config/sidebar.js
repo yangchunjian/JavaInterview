@@ -432,6 +432,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-595.大的国家",
                     "/algorithm/leetcode/leetcode-596.超过5名学生的课",
                     "/algorithm/leetcode/leetcode-598.范围求和 II",
+                    "/algorithm/leetcode/leetcode-599.两个列表的最小索引总和",
                     "/algorithm/leetcode/leetcode-605.种花问题",
                     "/algorithm/leetcode/leetcode-606.根据二叉树创建字符串",
                     "/algorithm/leetcode/leetcode-607.销售员",
