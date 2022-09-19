@@ -1,3 +1,17 @@
+---
+title: 有效的正方形
+date: 2022-09-19 19:12:00
+permalink: /pages/57c9f6/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

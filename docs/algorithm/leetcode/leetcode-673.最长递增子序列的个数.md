@@ -1,3 +1,17 @@
+---
+title: 最长递增子序列的个数
+date: 2022-09-19 22:25:46
+permalink: /pages/c7d08a/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

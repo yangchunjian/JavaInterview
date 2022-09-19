@@ -1,3 +1,17 @@
+---
+title: 最长和谐子序列
+date: 2022-09-19 19:16:44
+permalink: /pages/47cf68/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目
