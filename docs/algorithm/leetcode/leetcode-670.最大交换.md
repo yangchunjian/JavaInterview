@@ -1,3 +1,17 @@
+---
+title: 最大交换
+date: 2022-09-20 21:52:29
+permalink: /pages/eff615/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

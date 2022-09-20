@@ -1,3 +1,17 @@
+---
+title: 优美的排列 II
+date: 2022-09-20 21:33:08
+permalink: /pages/ab13bb/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

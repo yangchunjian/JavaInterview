@@ -1,3 +1,17 @@
+---
+title: 乘法表中第k小的数
+date: 2022-09-20 21:40:09
+permalink: /pages/af2e20/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
