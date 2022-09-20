@@ -482,6 +482,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-675.为高尔夫比赛砍树",
                     "/algorithm/leetcode/leetcode-677.键值映射",
                     "/algorithm/leetcode/leetcode-678.有效的括号字符串",
+                    "/algorithm/leetcode/leetcode-679.24 点游戏",
                     "/algorithm/leetcode/leetcode-687.最长同值路径",
                     "/algorithm/leetcode/leetcode-695.岛屿的最大面积",
                     "/algorithm/leetcode/leetcode-698.划分为k个相等的子集",
