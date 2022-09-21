@@ -489,6 +489,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-685.冗余连接 II",
                     "/algorithm/leetcode/leetcode-686.重复叠加字符串匹配",
                     "/algorithm/leetcode/leetcode-687.最长同值路径",
+                    "/algorithm/leetcode/leetcode-688.骑士在棋盘上的概率",
                     "/algorithm/leetcode/leetcode-695.岛屿的最大面积",
                     "/algorithm/leetcode/leetcode-698.划分为k个相等的子集",
                     "/algorithm/leetcode/leetcode-705.设计哈希集合",
