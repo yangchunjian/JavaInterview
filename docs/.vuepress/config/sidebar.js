@@ -203,6 +203,10 @@ module.exports = [
                 title: "力扣",
                 children: [
                     "/algorithm/leetcode/leetcode",
+                    "/algorithm/leetcode/leetcode-19.删除链表的倒数第 N 个结点",
+                    "/algorithm/leetcode/leetcode-21.合并两个有序链表",
+                    "/algorithm/leetcode/leetcode-23.合并K个升序链表",
+                    "/algorithm/leetcode/leetcode-24.两两交换链表中的节点",
                     "/algorithm/leetcode/leetcode-68.文本左右对齐",
                     "/algorithm/leetcode/leetcode-87.扰乱字符串",
                     "/algorithm/leetcode/leetcode-123.买卖股票的最佳时机III",
