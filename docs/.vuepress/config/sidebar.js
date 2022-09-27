@@ -232,6 +232,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-146.LRU 缓存",
                     "/algorithm/leetcode/leetcode-147.对链表进行插入排序",
                     "/algorithm/leetcode/leetcode-148.排序链表",
+                    "/algorithm/leetcode/leetcode-149.直线上最多的点数",
+                    "/algorithm/leetcode/leetcode-150.逆波兰表达式求值",
                     "/algorithm/leetcode/leetcode-174.地下城游戏",
                     "/algorithm/leetcode/leetcode-188.买卖股票的最佳时机IV",
                     "/algorithm/leetcode/leetcode-207.课程表",
