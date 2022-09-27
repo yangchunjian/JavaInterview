@@ -230,6 +230,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-144.二叉树的前序遍历",
                     "/algorithm/leetcode/leetcode-145.二叉树的后序遍历",
                     "/algorithm/leetcode/leetcode-146.LRU 缓存",
+                    "/algorithm/leetcode/leetcode-147.对链表进行插入排序",
+                    "/algorithm/leetcode/leetcode-148.排序链表",
                     "/algorithm/leetcode/leetcode-174.地下城游戏",
                     "/algorithm/leetcode/leetcode-188.买卖股票的最佳时机IV",
                     "/algorithm/leetcode/leetcode-207.课程表",
