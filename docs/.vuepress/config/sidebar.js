@@ -224,6 +224,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-135.分发糖果",
                     "/algorithm/leetcode/leetcode-138.复制带随机指针的链表",
                     "/algorithm/leetcode/leetcode-140.单词拆分II",
+                    "/algorithm/leetcode/leetcode-141.环形链表",
+                    "/algorithm/leetcode/leetcode-142.环形链表 II",
                     "/algorithm/leetcode/leetcode-146.LRU 缓存",
                     "/algorithm/leetcode/leetcode-174.地下城游戏",
                     "/algorithm/leetcode/leetcode-188.买卖股票的最佳时机IV",
