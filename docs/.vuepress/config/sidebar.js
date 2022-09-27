@@ -222,6 +222,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-127.单词接龙",
                     "/algorithm/leetcode/leetcode-134.加油站",
                     "/algorithm/leetcode/leetcode-135.分发糖果",
+                    "/algorithm/leetcode/leetcode-138.复制带随机指针的链表",
                     "/algorithm/leetcode/leetcode-140.单词拆分II",
                     "/algorithm/leetcode/leetcode-146.LRU 缓存",
                     "/algorithm/leetcode/leetcode-174.地下城游戏",
