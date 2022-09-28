@@ -29,6 +29,7 @@ titleTag: Java
 
 示例 1：
 
+![](../../../media/pictures/leetcode/fallingsq1-plane.jpeg)
 
     输入：positions = [[1,2],[2,3],[6,1]]
     输出：[2,5,5]
