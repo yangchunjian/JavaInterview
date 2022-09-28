@@ -518,6 +518,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-692.前K个高频单词",
                     "/algorithm/leetcode/leetcode-693.交替位二进制数",
                     "/algorithm/leetcode/leetcode-695.岛屿的最大面积",
+                    "/algorithm/leetcode/leetcode-696.计数二进制子串",
                     "/algorithm/leetcode/leetcode-698.划分为k个相等的子集",
                     "/algorithm/leetcode/leetcode-705.设计哈希集合",
                     "/algorithm/leetcode/leetcode-706.设计哈希映射",
