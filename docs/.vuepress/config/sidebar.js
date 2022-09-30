@@ -539,6 +539,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-753.破解保险箱",
                     "/algorithm/leetcode/leetcode-756.金字塔转换矩阵",
                     "/algorithm/leetcode/leetcode-761.特殊的二进制序列",
+                    "/algorithm/leetcode/leetcode-762.二进制表示中质数个计算置位",
                     "/algorithm/leetcode/leetcode-817.链表组件",
                     "/algorithm/leetcode/leetcode-834.树中距离之和",
                     "/algorithm/leetcode/leetcode-863.二叉树中所有距离为 K 的结点",
