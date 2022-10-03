@@ -531,6 +531,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-710.黑名单中的随机数",
                     "/algorithm/leetcode/leetcode-712.两个字符串的最小ASCII删除和",
                     "/algorithm/leetcode/leetcode-713.乘积小于 K 的子数组",
+                    "/algorithm/leetcode/leetcode-714.买卖股票的最佳时机含手续费",
                     "/algorithm/leetcode/leetcode-715.Range 模块",
                     "/algorithm/leetcode/leetcode-725.分隔链表",
                     "/algorithm/leetcode/leetcode-739.每日温度",

@@ -1,3 +1,17 @@
+---
+title: 设置交集大小至少为2
+date: 2022-09-30 09:01:25
+permalink: /pages/6b561b/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目
