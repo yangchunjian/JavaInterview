@@ -533,6 +533,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-713.乘积小于 K 的子数组",
                     "/algorithm/leetcode/leetcode-714.买卖股票的最佳时机含手续费",
                     "/algorithm/leetcode/leetcode-715.Range 模块",
+                    "/algorithm/leetcode/leetcode-717.1 比特与 2 比特字符",
                     "/algorithm/leetcode/leetcode-725.分隔链表",
                     "/algorithm/leetcode/leetcode-739.每日温度",
                     "/algorithm/leetcode/leetcode-740.删除并获得点数",
