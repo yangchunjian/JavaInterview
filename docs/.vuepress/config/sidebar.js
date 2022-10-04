@@ -177,7 +177,8 @@ module.exports = [
             {
                 title: "工具",
                 children: [
-                    "/skill/tool/goproject",
+                    "/skill/tool/GoLand配置go工程环境(或idea配置go工程环境)",
+                    "/skill/tool/picoCTF平台学习及使用",
                 ]
             },
             {
