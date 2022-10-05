@@ -164,7 +164,8 @@ module.exports = [
             {
                 title: "C/C++",
                 children: [
-                    "/sourcecode/c/c++",
+                    "/sourcecode/c/C++语法",
+                    "/sourcecode/c/C++代码示例",
                 ]
             },
 
