@@ -548,6 +548,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-729.我的日程安排表 I",
                     "/algorithm/leetcode/leetcode-730.统计不同回文子序列",
                     "/algorithm/leetcode/leetcode-731.我的日程安排表 II",
+                    "/algorithm/leetcode/leetcode-732.我的日程安排表 III",
+                    "/algorithm/leetcode/leetcode-733.图像渲染",
                     "/algorithm/leetcode/leetcode-739.每日温度",
                     "/algorithm/leetcode/leetcode-740.删除并获得点数",
                     "/algorithm/leetcode/leetcode-752.打开转盘锁",
