@@ -53,12 +53,30 @@ titleTag: Java
 
 ## 思路
 
-
+while(true){
 
 ## 解法
 ```java
 
-
+class Solution {
+    public int networkDelayTime(int[][] times, int n, int k) {
+        int[] results = new int[n];
+        Arrays.fill(results,Integer.MAX_VALUE);
+        results[k - 1] = 0;
+        while(true){
+            boolean end = true;
+            for (int[] time : times){
+                if (results[time[0] - 1] == Integer.MAX_VALUE) continue;
+                if (results[time[0] - 1] + time[2] >= results[time[1] -1]) continue;
+                results[time[1] - 1] = results[time[0] - 1] + time[2];
+                end = false;
+            }
+            if (end)  break;
+        }
+        int num = Arrays.stream(results).max().getAsInt();
+        return num ==  Integer.MAX_VALUE ? -1 : num;
+    }
+}
 ```
 
 ## 总结

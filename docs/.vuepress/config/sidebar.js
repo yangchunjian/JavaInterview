@@ -557,6 +557,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-740.删除并获得点数",
                     "/algorithm/leetcode/leetcode-741.摘樱桃",
                     "/algorithm/leetcode/leetcode-743.网络延迟时间",
+                    "/algorithm/leetcode/leetcode-744.寻找比目标字母大的最小字母",
+                    "/algorithm/leetcode/leetcode-745.前缀和后缀搜索",
                     "/algorithm/leetcode/leetcode-752.打开转盘锁",
                     "/algorithm/leetcode/leetcode-753.破解保险箱",
                     "/algorithm/leetcode/leetcode-756.金字塔转换矩阵",
