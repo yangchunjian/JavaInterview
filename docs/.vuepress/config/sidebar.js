@@ -538,6 +538,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-717.1 比特与 2 比特字符",
                     "/algorithm/leetcode/leetcode-718.最长重复子数组",
                     "/algorithm/leetcode/leetcode-719.找出第 K 小的数对距离",
+                    "/algorithm/leetcode/leetcode-720.词典中最长的单词",
+                    "/algorithm/leetcode/leetcode-721.账户合并",
                     "/algorithm/leetcode/leetcode-725.分隔链表",
                     "/algorithm/leetcode/leetcode-739.每日温度",
                     "/algorithm/leetcode/leetcode-740.删除并获得点数",
