@@ -57,14 +57,14 @@ titleTag: Java
 ## 思路
 重写map的removeEldestEntry方法
 
-this.map = new LinkedHashMap(capacity,0.75f,true){
-            @Override
-            public boolean removeEldestEntry(Map.Entry entry){
-                return map.size() > capacity;
-
-            }
-
-        };
+    this.map = new LinkedHashMap(capacity,0.75f,true){
+                @Override
+                public boolean removeEldestEntry(Map.Entry entry){
+                    return map.size() > capacity;
+    
+                }
+    
+            };
 
 ## 解法
 ```java
