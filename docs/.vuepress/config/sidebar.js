@@ -572,6 +572,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-762.二进制表示中质数个计算置位",
                     "/algorithm/leetcode/leetcode-763.划分字母区间",
                     "/algorithm/leetcode/leetcode-764.最大加号标志",
+                    "/algorithm/leetcode/leetcode-766.托普利茨矩阵",
                     "/algorithm/leetcode/leetcode-817.链表组件",
                     "/algorithm/leetcode/leetcode-834.树中距离之和",
                     "/algorithm/leetcode/leetcode-863.二叉树中所有距离为 K 的结点",
