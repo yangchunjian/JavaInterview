@@ -580,6 +580,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-771.宝石与石头",
                     "/algorithm/leetcode/leetcode-773.滑动谜题",
                     "/algorithm/leetcode/leetcode-777.在LR字符串中交换相邻字符",
+                    "/algorithm/leetcode/leetcode-778.水位上升的泳池中游泳",
                     "/algorithm/leetcode/leetcode-817.链表组件",
                     "/algorithm/leetcode/leetcode-834.树中距离之和",
                     "/algorithm/leetcode/leetcode-863.二叉树中所有距离为 K 的结点",
