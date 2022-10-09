@@ -247,6 +247,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-221.最大正方形",
                     "/algorithm/leetcode/leetcode-223.矩形面积",
                     "/algorithm/leetcode/leetcode-224.基本计算器",
+                    "/algorithm/leetcode/leetcode-225.用队列实现栈",
+                    "/algorithm/leetcode/leetcode-232.用栈实现队列",
                     "/algorithm/leetcode/leetcode-262.行程和用户",
                     "/algorithm/leetcode/leetcode-273.整数转换英文表示",
                     "/algorithm/leetcode/leetcode-274.H指数",
