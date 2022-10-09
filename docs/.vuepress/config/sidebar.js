@@ -88,6 +88,7 @@ module.exports = [
                     "/interview/hf/Redis内存管理的基石zmalloc",
                     "/interview/hf/如何动态修改线程池参数",
                     "/interview/hf/流量高峰时的性能瓶颈有哪些以及如何来解决",
+                    "/interview/hf/Java SPI与Dubbo SPI有什么区别",
                 ]
             },
 
