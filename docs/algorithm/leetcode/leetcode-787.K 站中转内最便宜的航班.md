@@ -1,0 +1,101 @@
+---
+title: K 站中转内最便宜的航班
+date: 2022-10-13 22:59:09
+permalink: /pages/30f0bd/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
+
+## 题目
+
+有 n 个城市通过一些航班连接。给你一个数组 flights ，其中 flights[i] = [fromi, toi, pricei] ，表示该航班都从城市 fromi 开始，以价格 pricei 抵达 toi。
+
+现在给定所有的城市和航班，以及出发城市 src 和目的地 dst，你的任务是找到出一条最多经过 k 站中转的路线，使得从 src 到 dst 的 价格最便宜 ，并返回该价格。 如果不存在这样的路线，则输出 -1。
+
+ 
+
+示例 1：
+
+输入: 
+n = 3, edges = [[0,1,100],[1,2,100],[0,2,500]]
+src = 0, dst = 2, k = 1
+输出: 200
+解释: 
+城市航班图如下
+
+![](../../../media/pictures/leetcode/995.png)
+
+从城市 0 到城市 2 在 1 站中转以内的最便宜价格是 200，如图中红色所示。
+示例 2：
+
+输入: 
+n = 3, edges = [[0,1,100],[1,2,100],[0,2,500]]
+src = 0, dst = 2, k = 0
+输出: 500
+解释: 
+城市航班图如下
+
+![](../../../media/pictures/leetcode/995.png)
+
+从城市 0 到城市 2 在 0 站中转以内的最便宜价格是 500，如图中蓝色所示。
+ 
+
+提示：
+
+- 1 <= n <= 100
+- 0 <= flights.length <= (n * (n - 1) / 2)
+- flights[i].length == 3
+- 0 <= fromi, toi < n
+- fromi != toi
+- 1 <= pricei <= 10<sup>4</sup>
+- 航班没有重复，且不存在自环
+- 0 <= src, dst, k < n
+- src != dst
+
+
+## 思路
+
+//使用动态规划求解
+
+## 解法
+```java
+
+class Solution {
+    
+
+    //使用动态规划求解
+
+    public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
+        //dp[i][j]表示用了i次从src到达j地需要的最少花费
+        int[][] dp = new int[k+2][n];
+        //二维表格全部铺设成高昂价格
+        for(int i = 0 ; i < dp.length ; i++){
+            Arrays.fill(dp[i],Integer.MAX_VALUE-10000);
+        }
+        //无论几次，从出发点到出发点总是花费为0
+        for(int i = 0 ; i < dp.length ; i++){
+            dp[i][src] = 0;
+        }
+        //核心代码：
+        for(int i = 1 ; i < dp.length ; i++){
+            for(int[] now : flights){
+                //到达该航线目的地的最小花费，要么是本次值不变，要么是用了少一次到达本次航线的出发点的最少花费加上本条航线要的钱
+                dp[i][now[1]] = Math.min(dp[i][now[1]],dp[i-1][now[0]] + now[2]);
+            }
+        }
+        return dp[k+1][dst] == Integer.MAX_VALUE - 10000 ? -1 : dp[k+1][dst];
+  
+    }
+}
+```
+
+## 总结
+
+- 分析出几种情况，然后分别对各个情况实现 
