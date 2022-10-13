@@ -82,6 +82,7 @@ module.exports = [
                 title: "高频",
                 children: [
                     "/interview/hf/笔试基础题",
+                    "/interview/hf/MySQL各个版本区别",
                     "/interview/hf/MySQL自身如何处理死锁",
                     "/interview/hf/为什么是先添加队列而不是先创建最大线程",
                     "/interview/hf/数据库常用的锁有哪些",
