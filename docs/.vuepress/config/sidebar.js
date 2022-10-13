@@ -592,6 +592,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-779.第K个语法符号",
                     "/algorithm/leetcode/leetcode-780.到达终点",
                     "/algorithm/leetcode/leetcode-781.森林中的兔子",
+                    "/algorithm/leetcode/leetcode-782.变为棋盘",
+                    "/algorithm/leetcode/leetcode-785.判断二分图",
                     "/algorithm/leetcode/leetcode-817.链表组件",
                     "/algorithm/leetcode/leetcode-834.树中距离之和",
                     "/algorithm/leetcode/leetcode-863.二叉树中所有距离为 K 的结点",
