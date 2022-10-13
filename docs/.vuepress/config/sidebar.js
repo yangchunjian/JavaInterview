@@ -596,6 +596,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-785.判断二分图",
                     "/algorithm/leetcode/leetcode-786.第 K 个最小的素数分数",
                     "/algorithm/leetcode/leetcode-787.K 站中转内最便宜的航班",
+                    "/algorithm/leetcode/leetcode-788.旋转数字",
                     "/algorithm/leetcode/leetcode-817.链表组件",
                     "/algorithm/leetcode/leetcode-834.树中距离之和",
                     "/algorithm/leetcode/leetcode-863.二叉树中所有距离为 K 的结点",
