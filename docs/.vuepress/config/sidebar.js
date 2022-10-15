@@ -602,6 +602,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-791.自定义字符串排序",
                     "/algorithm/leetcode/leetcode-792.匹配子序列的单词数",
                     "/algorithm/leetcode/leetcode-793.阶乘函数后 K 个零",
+                    "/algorithm/leetcode/leetcode-794.有效的井字游戏",
                     "/algorithm/leetcode/leetcode-817.链表组件",
                     "/algorithm/leetcode/leetcode-834.树中距离之和",
                     "/algorithm/leetcode/leetcode-863.二叉树中所有距离为 K 的结点",
