@@ -91,6 +91,8 @@ module.exports = [
                     "/interview/hf/如何动态修改线程池参数",
                     "/interview/hf/流量高峰时的性能瓶颈有哪些以及如何来解决",
                     "/interview/hf/Java SPI与Dubbo SPI有什么区别",
+                    "/interview/hf/JVM运行时数据区(堆、栈、方法区)指向关系",
+                    "/interview/hf/Java new对象过程",
                 ]
             },
 
