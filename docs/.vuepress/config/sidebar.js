@@ -610,6 +610,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-795.区间子数组个数",
                     "/algorithm/leetcode/leetcode-796.旋转字符串",
                     "/algorithm/leetcode/leetcode-797.所有可能的路径",
+                    "/algorithm/leetcode/leetcode-798.得分最高的最小轮调",
                     "/algorithm/leetcode/leetcode-817.链表组件",
                     "/algorithm/leetcode/leetcode-834.树中距离之和",
                     "/algorithm/leetcode/leetcode-863.二叉树中所有距离为 K 的结点",
