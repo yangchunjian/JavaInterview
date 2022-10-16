@@ -93,6 +93,7 @@ module.exports = [
                     "/interview/hf/Java SPI与Dubbo SPI有什么区别",
                     "/interview/hf/JVM运行时数据区(堆、栈、方法区)指向关系",
                     "/interview/hf/Java new对象过程",
+                    "/interview/hf/池化技术(线程池、连接池、内存池)",
                 ]
             },
 
