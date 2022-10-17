@@ -96,6 +96,7 @@ module.exports = [
                     "/interview/hf/池化技术(线程池、连接池、内存池)",
                     "/interview/hf/Spring的三级缓存解决循环依赖",
                     "/interview/hf/K8S面试题大全",
+                    "/interview/hf/服务治理、微服务与Service Mesh",
                 ]
             },
 
