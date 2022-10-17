@@ -99,6 +99,7 @@ module.exports = [
                     "/interview/hf/服务治理、微服务与Service Mesh",
                     "/interview/hf/SpringBoot自定义starter",
                     "/interview/hf/限流原理解析",
+                    "/interview/hf/Redisb部署的三种模式(主从复制、哨兵、集群)",
                 ]
             },
 
