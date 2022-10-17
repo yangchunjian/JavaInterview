@@ -95,6 +95,7 @@ module.exports = [
                     "/interview/hf/Java new对象过程",
                     "/interview/hf/池化技术(线程池、连接池、内存池)",
                     "/interview/hf/Spring的三级缓存解决循环依赖",
+                    "/interview/hf/K8S面试题大全",
                 ]
             },
 
