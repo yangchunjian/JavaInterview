@@ -97,6 +97,7 @@ module.exports = [
                     "/interview/hf/Spring的三级缓存解决循环依赖",
                     "/interview/hf/K8S面试题大全",
                     "/interview/hf/服务治理、微服务与Service Mesh",
+                    "/interview/hf/SpringBoot自定义starter",
                 ]
             },
 
