@@ -19,7 +19,7 @@ titleTag: Java
 
 本系列文章将为大家介绍当下最流行的服务治理、微服务等相关内容，从服务治理、SOA、微服务到最新的服务网格（Service Mesh）进行综合介绍和分析。作为本系列文章的开篇，本文将以Dubbo为例，开始为大家介绍SOA、服务治理等概念，以及Dubbo的基础知识和最新发展情况。
 
-**SOA与服务治理**
+## **SOA与服务治理**
 
 SOA（面向服务的体系结构）概念由来已久，在10多年前便开始进入到我们广大软件开发者的视线中。SOA是一种粗粒度、松耦合服务架构，服务之间通过简单、精确定义接口进行通讯，不涉及底层编程接口和通讯模型。SOA可以看作是B/S模型、Web Service技术之后的自然延伸。
 
@@ -53,7 +53,7 @@ l 服务安全（包括可接受的保护范围）
 
 Dubbo作为阿里巴巴内部的SOA服务化治理方案的核心框架，在2012年时已经每天为2000+个服务提供3,000,000,000+次访问量支持，并被广泛应用于阿里巴巴集团的各成员站点。Dubbo自2011年开源后，已被许多非阿里系公司使用，其中既有当当网、网易考拉等互联网公司，也有中国人寿、青岛海尔等传统企业。
 
-**Dubbo简介**
+## **Dubbo简介**
 
 Dubbo是一个高性能服务框架，致力于提供高性能和透明化的RPC远程服务调用方案，以及SOA服务治理方案，使得应用可通过高性能RPC实现服务的输出和输入功能，和Spring框架可以无缝集成。
 
@@ -84,7 +84,7 @@ Dubbo包含远程通讯、集群容错和自动发现三个核心部分。提供
 
 6. 服务消费者和提供者，在内存中累计调用次数和调用时间，定时每分钟发送一次统计数据到监控中心。
 
-**Dubbo总体架构**
+## **Dubbo总体架构**
 
 Dubbo框架设计共划分了10层，最上面的Service层是留给实际使用Dubbo开发分布式服务的开发者实现业务逻辑的接口层。图中左边淡蓝背景的为服务消费方使用的接口，右边淡绿色背景的为服务提供方使用的接口，位于中轴线上的为双方都用到的接口。
 
@@ -132,7 +132,7 @@ l dubbo-config配置模块：是 Dubbo 对外的 API，用户通过 Config 使�
 
 l dubbo-container容器模块：是一个 Standlone 的容器，以简单的 Main 加载 Spring 启动，因为服务通常不需要 Tomcat/JBoss 等 Web 容器的特性，没必要用 Web 容器去加载服务。
 
-**协议支持**
+## **协议支持**
 
 l Dubbo协议（默认协议）
 
@@ -150,7 +150,7 @@ l Memcached协议
 
 l Redis协议
 
-**注册中心**
+## **注册中心**
 
 （1）Multicast注册中心：
 
@@ -178,7 +178,7 @@ Zookeeper是Apacahe子项目，是一个树型的目录服务，支持变更推�
 
 Simple注册中心本身就是一个普通的Dubbo服务，可以减少第三方依赖，使整体通讯方式一致。只是简单实现，不支持集群，可作为自定义注册中心的参考，但不适合直接用于生产环境。
 
-**远程通信与信息交换**
+## **远程通信与信息交换**
 
 远程通信需要指定通信双方所约定的协议，在保证通信双方理解协议语义的基础上，还要保证高效、稳定的消息传输。Dubbo继承了当前主流的网络通信框架，主要包括如下几个：
 
@@ -204,7 +204,7 @@ l Grizzly
 
 在2018年1月8日，Dubbo 2.6.0版本发布，新版本将之前当当网开源的Dubbo分支Dubbox进行了合并，实现了Dubbo版本的统一整合。
 
-**Dubbo与Spring Cloud**
+## **Dubbo与Spring Cloud**
 
 阿里巴巴负责主导了Dubbo重启维护的研发工程师刘军在接受采访时表示：当前由于RPC协议、注册中心元数据不匹配等问题，在面临微服务基础框架选型时Dubbo与Spring Cloud是只能二选一，这也是为什么大家总是拿Dubbo和Spring Cloud做对比的原因之一。Dubbo之后会积极寻求适配到Spring Cloud生态，比如作为Spring Cloud的二进制通信方案来发挥Dubbo的性能优势，或者Dubbo通过模块化以及对http的支持适配到Spring Cloud。
 
@@ -231,7 +231,7 @@ l Grizzly
 
 Pivotal公司是由EMC和VMware联合成立的一家公司，GE（通用电气）也对Pivotal进行了股权收购，同时GE也是Pivotal的一个重要大客户。除了Spring Framework、Spring Boot和Spring Cloud之外，我们日常开发中经常使用的Reids、RabbitMQ、Greenplum、Gemfire、Cloud Foundry等，目前都是归属于Pivotal公司的产品。其中Gemfire也是被中国铁路总公司12306使用的分布式内存数据库，也就是说你过年回家买不到火车票，这个锅Pivotal的Gemfire也会跟着一起背（开个小玩笑，哈哈）。
 
-**Spring Cloud 之“入门”**
+## **Spring Cloud 之“入门”**
 
 Spring Cloud作为一个微服务的开发框架，其包括了很多的组件，包括：Spring Cloud Netflix（Eureka、Hystrix、Zuul、Archaius）、Spring Cloud Config、Spring Cloud Bus、Spring Cloud Cluster、Spring Cloud Consul、Spring Cloud Security、Spring Cloud Sleuth、Spring Cloud Data Flow、Spring Cloud Stream、Spring Cloud Task、Spring Cloud Zookeeper、Spring Cloud Connectors、Spring Cloud Starters、Spring Cloud CLI等。
 
@@ -323,7 +323,7 @@ APM整体上主要完成3点功能：1.日志追踪、2.监控报警、3.性能�
 
 Spring Cloud可以说是一个完美的微服务入门框架，如果你是在一个中小型项目中应用Spring Cloud，那么你不需要太多的改造和适配，就可以实现微服务的基本功能。但是如果是在大型项目中实践微服务，可能会发现需要处理的问题还是比较多，尤其是项目中老代码比较多，没办法全部直接升级到Spring Boot框架下开发的话，你会非常希望能有一个侵入性更低的方案来实施微服务架构。在这种场景下，Service Mesh将会成为你的最佳选择，经过一段时间的发展，目前Service Mesh这个概念已经开始逐步被大家了解和认知。同时，一些Service Mesh的实现方案也逐步成熟和落地，例如Istio、Linkerd、Envoy等。在本系列文章的下一篇中，将为大家对Service Mesh概念做一个系统的介绍。但是在了解Service Mesh概念之前，还是建议大家先对微服务和Spring Cloud这些概念和框架有一个深入的了解，这样才能体会到应用Service Mesh的价值和意义。
 
-**Spring Cloud 与Dubbo**
+## **Spring Cloud 与Dubbo**
 
 网上关于Spring Cloud和Dubbo对比的文章很多，大多数对比结果都是Spring Cloud压倒性优势战胜Dubbo，下表是对Dubbo和Spring Cloud做的一个基础功能的对比：
 
@@ -333,13 +333,13 @@ Spring Cloud可以说是一个完美的微服务入门框架，如果你是在�
 
 而对Dubbo而言，如果一定要应用到微服务的使用场景中的话，上表中欠缺的大多数功能都可以通过集成第三方应用和组件的方式来实现，跟Spring Cloud相比主要的缺陷在于集成过程中的便利性和兼容性等问题。
 
-**Spring Cloud 与Docker**
+## **Spring Cloud 与Docker**
 
 虽然网上也有很多文章写到如何使用Docker来实现微服务，但是事实上单独使用Docker是没办法完整的实现微服务的所有功能的。在实际上微服务架构中，Spring Cloud和Docker更多的是一种协作的关系，而不是一种竞争的关系。通过Docker容器化技术，可以更好的解决引入Spring Cloud微服务后带来的部署和运维的复杂性。
 
 Spring Cloud生态圈中的Pivotal Cloud Foundry (PCF)作为 PAAS 实现，也提供一些类似于Docker的功能支持，但是无论上功能上还是易用性上和Docker还是存在比较大的差异。Pivotal Cloud Foundry和Docker之间的关系更多的是一种兼容关系，而不是竞争关系，Pivotal Cloud Foundry的主要竞争对手是Red Hat的OpenShift。目前，Pivotal Cloud Foundry支持的IAAS包括：AWS、AZURE、GCP、vSphere、OpenStack等。
 
-**Spring Cloud 与Kubernetes**
+## **Spring Cloud 与Kubernetes**
 
 网上也有一些“Spring Cloud与Kubernetes哪个更好”，“当已经有了Kubernetes之后，还需要使用Spring Cloud么”之类的文章。首先说笔者并不认为Spring Cloud与Kubernetes是竞争关系，但是也不否认二者确实在诸多功能上存在一些重合。下图是对Spring Cloud与Kubernetes在微服务架构中的一些基础功能上的对比。
 
@@ -366,7 +366,7 @@ Spring Cloud生态圈中的Pivotal Cloud Foundry (PCF)作为 PAAS 实现，也�
 
 作为本系列文章的第三篇，本文主要为大家介绍下当前非常火热的Service Mesh概念，最后也会简单介绍一下目前同样非常热门的Serverless概念。Service Mesh目前比较多的翻译为“服务网格”，也有翻译为“服务啮合”。很多人将之称为下一代微服务，或直接称之为微服务2.0。前两篇文章中介绍的Dubbo和Spring Cloud实际上距离真正意义上的微服务还有一定的距离，本文将带你了解在微服务2.0时代，Service Mesh方式是如何实现下一代微服务标准的，并介绍当前比较常见的几种Service Mesh实现方案。
 
-**微服务1.0时代**
+## **微服务1.0时代**
 
 Dubbo本质上只能算是一个服务治理框架，而不能算是一个微服务框架。虽然在未来的Dubbo 3.0中会提供对Spring Cloud，以及对Service Mesh的支持，但是单凭Dubbo仍然是无法搭建一个完整的微服务体系结构。
 
@@ -378,7 +378,7 @@ Spring Cloud则是通过集成众多的组件的形式实现了相对完整的�
 多语言支持不足：对于互联网公司，尤其是快速发展的互联网创业公司，多语言的技术栈、跨语言的服务调用也是常态，但目前开源社区上并没有一套统一的、跨语言的微服务技术栈，而跨语言调用恰恰是微服务概念诞生之初的要实现的一个重要特性之一。
 代码侵入性强：Spring Cloud、Dubbo等主流的微服务框架都对业务代码有一定的侵入性，技术升级替换成本高，导致开发团队配合意愿低，微服务落地困难。
 
-**微服务2.0时代**
+## **微服务2.0时代**
 
 为了解决微服务1.0时代的诸多问题，Service Mesh概念开始走入了开发者的视线中。
 
@@ -400,7 +400,7 @@ Sidecar以一个独立的进程启动，可以每台宿主机共用同一个Side
 
 第二代Service Mesh主要改进集中在更加强大的控制面功能（与之对应的Sidecar Proxy被称之为数据面），典型代表有Istio和Conduit。Istio是Google、IBM和Lyft合作的开源项目，是目前最主流的Service Mesh方案，也是事实上的第二代Service Mesh标准。在Istio中，直接把Envoy作为Sidecar。除了Sidecar，Istio中的控制面组件都是使用Go语言编写。
 
-**Istio简介**
+## **Istio简介**
 
 根据Istio官方文档的介绍，Istio在服务网络中主要提供了以下关键功能：
 
@@ -427,7 +427,7 @@ Istio的设计理念先进，功能也比较强大，加之Google、IBM的影响
 - 目前的Istio大部分能力与Kubernetes是强关联的。而我们在构建微服务的时候往往是希望服务层与容器层是解耦的，服务层在设计上需要能够对接多种容器层平台。
 - Istio至今未有稳定版本，截至本文编写时为止，Istio的最新版本为0.8版本，预计在2018年内会发布1.0版本。
 
-**Conduit简介**
+## **Conduit简介**
 
 我们再来看一下Conduit的实现，下图是Conduit的架构设计图，其中重点由Conduit Data Plane和Conduit Control Plane两部分组成：
 
@@ -435,7 +435,7 @@ Istio的设计理念先进，功能也比较强大，加之Google、IBM的影响
 
 Conduit各方面的设计理念与Istio非常类似，作者使用Rust语言重新编写了Sidecar, 叫做Conduit Data Plane, 控制面则由Go语言编写的Conduit Control Plane接管。从Conduit的架构看，作者号称Conduit吸取了很多Linkerd的教训，比Linkerd更快、更轻、更简单，控制面功能更强。与Istio比较，Conduit的架构一方面比较简单，另一方面对于要解决的问题足够聚焦。
 
-**Serverless简介**
+## **Serverless简介**
 
 Serverless被翻译为“无服务器架构”，这个概念在2012年时便已经存在，比微服务和Service Mesh的概念出现都要早，但是直到微服务概念大红大紫之后，Serverless才重新又被人们所关注。
 

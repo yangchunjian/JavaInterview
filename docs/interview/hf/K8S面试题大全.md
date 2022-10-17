@@ -110,17 +110,17 @@ commit命令来将容器保存为镜像，然后删除临时容器，以此类�
 
 ## Dockerfile的基本指令有哪些？
 
-    FROM 指定基础镜像（必须为第一个指令，因为需要指定使用哪个基础镜像来构建镜像）；
-    MAINTAINER 设置镜像作者相关信息，如作者名字，日期，邮件，联系方式等；
-    COPY 复制文件到镜像；
-    ADD 复制文件到镜像（ADD与COPY的区别在于，ADD会自动解压tar、zip、tgz、xz等归档文件，而COPY不会，同时ADD指令还可以接一个url下载文件地址，一般建议使用COPY复制文件即可，文件在宿主机上是什么样子复制到镜像里面就是什么样子这样比较好）；
-    ENV 设置环境变量；
-    EXPOSE 暴露容器进程的端口，仅仅是提示别人容器使用的哪个端口，没有过多作用；
-    VOLUME 数据卷持久化，挂载一个目录；
-    WORKDIR 设置工作目录，如果目录不在，则会自动创建目录；
-    RUN 在容器中运行命令，RUN指令会创建新的镜像层，RUN指令经常被用于安装软件包；
-    CMD 指定容器启动时默认运行哪些命令，如果有多个CMD，则只有最后一个生效，另外，CMD指令可以被docker run之后的参数替换；
-    ENTRYOINT 指定容器启动时运行哪些命令，如果有多个ENTRYOINT，则只有最后一个生效，另外，如果Dockerfile中同时存在CMD和ENTRYOINT，那么CMD或docker run之后的参数将被当做参数传递给ENTRYOINT；
+- FROM 指定基础镜像（必须为第一个指令，因为需要指定使用哪个基础镜像来构建镜像）；
+- MAINTAINER 设置镜像作者相关信息，如作者名字，日期，邮件，联系方式等；
+- COPY 复制文件到镜像；
+- ADD 复制文件到镜像（ADD与COPY的区别在于，ADD会自动解压tar、zip、tgz、xz等归档文件，而COPY不会，同时ADD指令还可以接一个url下载文件地址，一般建议使用COPY复制文件即可，文件在宿主机上是什么样子复制到镜像里面就是什么样子这样比较好）；
+- ENV 设置环境变量；
+- EXPOSE 暴露容器进程的端口，仅仅是提示别人容器使用的哪个端口，没有过多作用；
+- VOLUME 数据卷持久化，挂载一个目录；
+- WORKDIR 设置工作目录，如果目录不在，则会自动创建目录；
+- RUN 在容器中运行命令，RUN指令会创建新的镜像层，RUN指令经常被用于安装软件包；
+- CMD 指定容器启动时默认运行哪些命令，如果有多个CMD，则只有最后一个生效，另外，CMD指令可以被docker run之后的参数替换；
+- ENTRYOINT 指定容器启动时运行哪些命令，如果有多个ENTRYOINT，则只有最后一个生效，另外，如果Dockerfile中同时存在CMD和ENTRYOINT，那么CMD或docker run之后的参数将被当做参数传递给ENTRYOINT；
 
 ## 如何进入容器？使用哪个命令
 进入容器有两种方法：docker attach、docker exec；
@@ -192,12 +192,12 @@ k8s通过将集群内部的资源分配到不同的namespace中，可以形成�
 好的。kubernetes proxy api接口，从名称中可以得知，proxy是代理的意思，其作用就是代理rest请求；Kubernets API server 将接收到的rest请求转发到某个node上的kubelet守护进程的rest接口，由该kubelet进程负责响应。我们可以使用这种Proxy接口来直接访问某个pod，这对于逐一排查pod异常问题很有帮助。
 下面是一些简单的例子：
 
-    http://<kube-api-server>:<api-sever-port>/api/v1/nodes/node名称/proxy/pods  	#查看指定node的所有pod信息
-    http://<kube-api-server>:<api-sever-port>/api/v1/nodes/node名称/proxy/stats  	#查看指定node的物理资源统计信息
-    http://<kube-api-server>:<api-sever-port>/api/v1/nodes/node名称/proxy/spec  	#查看指定node的概要信息
-    
-    http://<kube-api-server>:<api-sever-port>/api/v1/namespace/命名名称/pods/pod名称/pod服务的url/  	#访问指定pod的程序页面
-    http://<kube-api-server>:<api-sever-port>/api/v1/namespace/命名名称/servers/svc名称/url/  	#访问指定server的url程序页面
+- http://<kube-api-server>:<api-sever-port>/api/v1/nodes/node名称/proxy/pods  	#查看指定node的所有pod信息
+- http://<kube-api-server>:<api-sever-port>/api/v1/nodes/node名称/proxy/stats  	#查看指定node的物理资源统计信息
+- http://<kube-api-server>:<api-sever-port>/api/v1/nodes/node名称/proxy/spec  	#查看指定node的概要信息
+
+- http://<kube-api-server>:<api-sever-port>/api/v1/namespace/命名名称/pods/pod名称/pod服务的url/  	#访问指定pod的程序页面
+- http://<kube-api-server>:<api-sever-port>/api/v1/namespace/命名名称/servers/svc名称/url/  	#访问指定server的url程序页面
 
 ## pod是什么？
 在kubernetes的世界中，k8s并不直接处理容器，而是使用多个容器共存的理念，这组容器就叫做pod。pod是k8s中可以创建和管理的最小单元，是资源对象模型中由用户创建或部署的最小资源对象模型，其他的资源对象都是用来支撑pod对象功能的，比如，pod控制器就是用来管理pod对象的，service或者imgress资源对象是用来暴露pod引用对象的，persistentvolume资源是用来为pod提供存储等等，简而言之，k8s不会直接处理容器，而是pod，pod才是k8s中可以创建和管理的最小单元，也是基本单元。
@@ -254,11 +254,11 @@ TCPSocket：与容器的端口建立TCP Socket链接。
 ## 存活探针的属性参数有哪几个？
 存活探针的附加属性参数有以下几个：
 
-    initialDelaySeconds：表示在容器启动后延时多久秒才开始探测；
-    periodSeconds：表示执行探测的频率，即间隔多少秒探测一次，默认间隔周期是10秒，最小1秒；
-    timeoutSeconds：表示探测超时时间，默认1秒，最小1秒，表示容器必须在超时时间范围内做出响应，否则视为本次探测失败；
-    successThreshold：表示最少连续探测成功多少次才被认定为成功，默认是1，对于liveness必须是1，最小值是1；
-    failureThreshold：表示连续探测失败多少次才被认定为失败，默认是3，连续3次失败，k8s 将根据pod重启策略对容器做出决定；
+- initialDelaySeconds：表示在容器启动后延时多久秒才开始探测；
+- periodSeconds：表示执行探测的频率，即间隔多少秒探测一次，默认间隔周期是10秒，最小1秒；
+- timeoutSeconds：表示探测超时时间，默认1秒，最小1秒，表示容器必须在超时时间范围内做出响应，否则视为本次探测失败；
+- successThreshold：表示最少连续探测成功多少次才被认定为成功，默认是1，对于liveness必须是1，最小值是1；
+- failureThreshold：表示连续探测失败多少次才被认定为失败，默认是3，连续3次失败，k8s 将根据pod重启策略对容器做出决定；
 
 注意：定义存活探针时，一定要设置initialDelaySeconds属性，该属性为初始延时，如果不设置，默认容器启动时探针就开始探测了，这样可能会存在
 应用程序还未启动就绪，就会导致探针检测失败，k8s就会根据pod重启策略杀掉容器然后再重新创建容器的莫名其妙的问题。
@@ -269,18 +269,18 @@ TCPSocket：与容器的端口建立TCP Socket链接。
 
 在pod中的容器定义一个就绪探针，就绪探针周期性检查容器，如果就绪探针检查失败了，说明该pod还未准备就绪，不能接受客户端链接，则该pod将从endpoint列表中移除，被剔除了service就不会把请求分发给该pod，然后就绪探针继续检查，如果随后容器就绪，则再重新把pod加回endpoint列表。k8s提供了3种就绪探针，如下：
 
-    exec：在容器中执行命令并检查命令退出的状态码，如果状态码为0，则说明容器已经准备就绪；
-    httpGet：向容器发送http get请求，通过响应的http状态码判断容器是否准备就绪；
-    tcpSocke：打开一个tcp连接到容器的指定端口，如果连接已建立，则认为容器已经准备就绪。
+- exec：在容器中执行命令并检查命令退出的状态码，如果状态码为0，则说明容器已经准备就绪；
+- httpGet：向容器发送http get请求，通过响应的http状态码判断容器是否准备就绪；
+- tcpSocke：打开一个tcp连接到容器的指定端口，如果连接已建立，则认为容器已经准备就绪。
 
 ## 就绪探针的属性参数有哪些
 就绪探针的附加属性参数有以下几个：
 
-    initialDelaySeconds：延时秒数，即容器启动多少秒后才开始探测，不写默认容器启动就探测；
-    periodSeconds ：执行探测的频率（秒），默认为10秒，最低值为1；
-    timeoutSeconds ：超时时间，表示探测时在超时时间内必须得到响应，负责视为本次探测失败，默认为1秒，最小值为1；
-    failureThreshold ：连续探测失败的次数，视为本次探测失败，默认为3次，最小值为1次；
-    successThreshold ：连续探测成功的次数，视为本次探测成功，默认为1次，最小值为1次；
+- initialDelaySeconds：延时秒数，即容器启动多少秒后才开始探测，不写默认容器启动就探测；
+- periodSeconds ：执行探测的频率（秒），默认为10秒，最低值为1；
+- timeoutSeconds ：超时时间，表示探测时在超时时间内必须得到响应，负责视为本次探测失败，默认为1秒，最小值为1；
+- failureThreshold ：连续探测失败的次数，视为本次探测失败，默认为3次，最小值为1次；
+- successThreshold ：连续探测成功的次数，视为本次探测成功，默认为1次，最小值为1次；
 
 ## 就绪探针与存活探针区别是什么？
 两者作用不一样，存活探针是将检查失败的容器杀死，创建新的启动容器来保持pod正常工作；
@@ -365,10 +365,10 @@ pod的资源请求、资源限制可以直接在pod中定义，主要包括两�
 
 kubernetes中的command、args其实是实现覆盖dockerfile中的ENTRYPOINT的功能的。当
 
-    1、如果command和args均没有写，那么使用Dockerfile的配置；
-    2、如果command写了但args没写，那么Dockerfile默认的配置会被忽略，执行指定的command；
-    3、如果command没写但args写了，那么Dockerfile中的ENTRYPOINT的会被执行，使用当前args的参数；
-    4、如果command和args都写了，那么Dockerfile会被忽略，执行输入的command和args。
+- 1、如果command和args均没有写，那么使用Dockerfile的配置；
+- 2、如果command写了但args没写，那么Dockerfile默认的配置会被忽略，执行指定的command；
+- 3、如果command没写但args写了，那么Dockerfile中的ENTRYPOINT的会被执行，使用当前args的参数；
+- 4、如果command和args都写了，那么Dockerfile会被忽略，执行输入的command和args。
 
 ## 标签及标签选择器是什么，如何使用？
 标签是键值对类型，标签可以附加到任何资源对象上，主要用于管理对象，查询和筛选。标签常被用于标签选择器的匹配度检查，从而完成资源筛选；一个资源可以定义一个或多个标签在其上面。
@@ -391,10 +391,10 @@ pod的DNS域名格式为：<pod-ip>.<namespace>.pod.<clusterdomain> ，其中，
 ## service的类型有哪几种
 service的类型一般有4中，分别是：
 
-    ClusterIP：表示service仅供集群内部使用，默认值就是ClusterIP类型
-    NodePort：表示service可以对外访问应用，会在每个节点上暴露一个端口，这样外部浏览器访问地址为：任意节点的IP：NodePort就能连上service了
-    LoadBalancer：表示service对外访问应用，这种类型的service是公有云环境下的service，此模式需要外部云厂商的支持，需要有一个公网IP地址
-    ExternalName：这种类型的service会把集群外部的服务引入集群内部，这样集群内直接访问service就可以间接的使用集群外部服务了
+- ClusterIP：表示service仅供集群内部使用，默认值就是ClusterIP类型
+- NodePort：表示service可以对外访问应用，会在每个节点上暴露一个端口，这样外部浏览器访问地址为：任意节点的IP：NodePort就能连上service了
+- LoadBalancer：表示service对外访问应用，这种类型的service是公有云环境下的service，此模式需要外部云厂商的支持，需要有一个公网IP地址
+- ExternalName：这种类型的service会把集群外部的服务引入集群内部，这样集群内直接访问service就可以间接的使用集群外部服务了
 
 一般情况下，service都是ClusterIP类型的，通过ingress接入的外部流量。
 
@@ -450,8 +450,8 @@ kube-proxy：kube-proxy运行在node节点上，在Node节点上实现Pod网络�
 ## deployment的滚动更新策略有两个特别主要的参数，解释一下它们是什么意思？
 答：deployment的滚动更新策略，rollingUpdate 策略，主要有两个参数，maxUnavailable、maxSurge。
 
-    maxUnavailable：最大不可用数，maxUnavailable用于指定deployment在更新的过程中不可用状态的pod的最大数量，maxUnavailable的值可以是一个整数值，也可以是pod期望副本的百分比，如25%，计算时向下取整。
-    maxSurge：最大激增数，maxSurge指定deployment在更新的过程中pod的总数量最大能超过pod副本数多少个，maxUnavailable的值可以是一个整数值，也可以是pod期望副本的百分比，如25%，计算时向上取整。
+- maxUnavailable：最大不可用数，maxUnavailable用于指定deployment在更新的过程中不可用状态的pod的最大数量，maxUnavailable的值可以是一个整数值，也可以是pod期望副本的百分比，如25%，计算时向下取整。
+- maxSurge：最大激增数，maxSurge指定deployment在更新的过程中pod的总数量最大能超过pod副本数多少个，maxUnavailable的值可以是一个整数值，也可以是pod期望副本的百分比，如25%，计算时向上取整。
 
 ## deployment更新的命令有哪些？
 答：可以通过三种方式来实现更新deployment。
@@ -510,24 +510,24 @@ ReadWriteMany，简写：RWX	表示，可以被多个节点以读写方式挂载
 ## pv的回收策略有哪几种
 主要有2中回收策略：retain 保留、delete 删除。
 
-    Retain：保留，该策略允许手动回收资源，当删除PVC时，PV仍然存在，PV被视为已释放，管理员可以手动回收卷。
-    Delete：删除，如果Volume插件支持，删除PVC时会同时删除PV，动态卷默认为Delete，目前支持Delete的存储后端包括AWS EBS，GCE PD，Azure Disk，OpenStack Cinder等。
-    Recycle：回收，如果Volume插件支持，Recycle策略会对卷执行rm -rf清理该PV，并使其可用于下一个新的PVC，但是本策略将来会被弃用，目前只有NFS和HostPath支持该策略。（这种策略已经被废弃，不用记）
+- Retain：保留，该策略允许手动回收资源，当删除PVC时，PV仍然存在，PV被视为已释放，管理员可以手动回收卷。
+- Delete：删除，如果Volume插件支持，删除PVC时会同时删除PV，动态卷默认为Delete，目前支持Delete的存储后端包括AWS EBS，GCE PD，Azure Disk，OpenStack Cinder等。
+- Recycle：回收，如果Volume插件支持，Recycle策略会对卷执行rm -rf清理该PV，并使其可用于下一个新的PVC，但是本策略将来会被弃用，目前只有NFS和HostPath支持该策略。（这种策略已经被废弃，不用记）
 
 ## 在pv的生命周期中，一般有几种状态
 pv一共有4中状态，分别是：
 创建pv后，pv的的状态有以下4种：Available（可用）、Bound（已绑定）、Released（已释放）、Failed（失败）
 
-    Available，表示pv已经创建正常，处于可用状态；
-    Bound，表示pv已经被某个pvc绑定，注意，一个pv一旦被某个pvc绑定，那么该pvc就独占该pv，其他pvc不能再与该pv绑定；
-    Released，表示pvc被删除了，pv状态就会变成已释放；
-    Failed，表示pv的自动回收失败；
+- Available，表示pv已经创建正常，处于可用状态；
+- Bound，表示pv已经被某个pvc绑定，注意，一个pv一旦被某个pvc绑定，那么该pvc就独占该pv，其他pvc不能再与该pv绑定；
+- Released，表示pvc被删除了，pv状态就会变成已释放；
+- Failed，表示pv的自动回收失败；
 
 ## 存储类的资源回收策略
 主要有2中回收策略，delete 删除，默认就是delete策略、retain 保留。
 
-    Retain：保留，该策略允许手动回收资源，当删除PVC时，PV仍然存在，PV被视为已释放，管理员可以手动回收卷。
-    Delete：删除，如果Volume插件支持，删除PVC时会同时删除PV，动态卷默认为Delete，目前支持Delete的存储后端包括AWS EBS，GCE PD，Azure Disk，OpenStack Cinder等。
+- Retain：保留，该策略允许手动回收资源，当删除PVC时，PV仍然存在，PV被视为已释放，管理员可以手动回收卷。
+- Delete：删除，如果Volume插件支持，删除PVC时会同时删除PV，动态卷默认为Delete，目前支持Delete的存储后端包括AWS EBS，GCE PD，Azure Disk，OpenStack Cinder等。
 
 注意：使用存储类动态创建的pv默认继承存储类的回收策略，当然当pv创建后你也可以手动修改pv的回收策略。
 
