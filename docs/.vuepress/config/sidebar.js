@@ -621,6 +621,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-799.香槟塔",
                     "/algorithm/leetcode/leetcode-801.使序列递增的最小交换次数",
                     "/algorithm/leetcode/leetcode-802.找到最终的安全状态",
+                    "/algorithm/leetcode/leetcode-803.打砖块",
                     "/algorithm/leetcode/leetcode-817.链表组件",
                     "/algorithm/leetcode/leetcode-834.树中距离之和",
                     "/algorithm/leetcode/leetcode-863.二叉树中所有距离为 K 的结点",
