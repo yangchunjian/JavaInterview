@@ -1,5 +1,5 @@
 ---
-title: Redisb部署的三种模式(主从复制、哨兵、集群)
+title: Redis部署的三种模式(主从复制、哨兵、集群)
 date: 2022-10-17 19:12:54
 permalink: /pages/264059/
 categories:
