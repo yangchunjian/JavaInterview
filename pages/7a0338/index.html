@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Java ClassLoader | JavaInterview</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/assets/icon/logo_title50x50.png">
+    <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script>
+            var _hmt = _hmt || [];
+            (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?03cb08758bea6323509b897a0e0442df";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+
+            })();
+  </script>
+    <meta name="description" content="java,面试,春建,杨春建,后端,JavaInterview,interview,技术">
+    <meta name="keywords" content="java,面试,春建,杨春建,后端,JavaInterview,interview,技术,后端博客,个人技术博客,后端,后端开发,后端框架,web前端,后端面试题,技术文档,学习,面试,Spring,Kafka,MySQL,MQ,Redis,Elasticsearch,git,github,markdown">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="baidu-site-verification" content="code-dbbt0zdlBh">
+    <meta name="theme-color" content="#339af0">
+    
+    <link rel="preload" href="/assets/css/0.styles.6803abc5.css" as="style"><link rel="preload" href="/assets/js/app.c60b0746.js" as="script"><link rel="preload" href="/assets/js/2.49c0a2f6.js" as="script"><link rel="preload" href="/assets/js/6.fe8901f0.js" as="script"><link rel="prefetch" href="/assets/js/10.20f55c93.js"><link rel="prefetch" href="/assets/js/100.ad6683b5.js"><link rel="prefetch" href="/assets/js/101.06ea461e.js"><link rel="prefetch" href="/assets/js/102.744d843c.js"><link rel="prefetch" href="/assets/js/103.f9898de5.js"><link rel="prefetch" href="/assets/js/104.1c744b61.js"><link rel="prefetch" href="/assets/js/105.bb12fb07.js"><link rel="prefetch" href="/assets/js/106.7df961ec.js"><link rel="prefetch" href="/assets/js/107.5baa0cc6.js"><link rel="prefetch" href="/assets/js/108.7c799906.js"><link rel="prefetch" href="/assets/js/109.2e3944b1.js"><link rel="prefetch" href="/assets/js/11.f797f70d.js"><link rel="prefetch" href="/assets/js/110.8eaa34b3.js"><link rel="prefetch" href="/assets/js/111.72557328.js"><link rel="prefetch" href="/assets/js/112.f4008bd8.js"><link rel="prefetch" href="/assets/js/113.ac022059.js"><link rel="prefetch" href="/assets/js/114.036697b6.js"><link rel="prefetch" href="/assets/js/115.9047c5ea.js"><link rel="prefetch" href="/assets/js/116.5c66e9af.js"><link rel="prefetch" href="/assets/js/117.3f2c69a0.js"><link rel="prefetch" href="/assets/js/118.4f6d1c1d.js"><link rel="prefetch" href="/assets/js/119.63e355a1.js"><link rel="prefetch" href="/assets/js/12.748a35b0.js"><link rel="prefetch" href="/assets/js/120.21d7a9aa.js"><link rel="prefetch" href="/assets/js/121.4ee2d311.js"><link rel="prefetch" href="/assets/js/122.f1980607.js"><link rel="prefetch" href="/assets/js/123.4df52c2b.js"><link rel="prefetch" href="/assets/js/124.b1a4df81.js"><link rel="prefetch" href="/assets/js/125.fdf1ccdc.js"><link rel="prefetch" href="/assets/js/126.9af9bc4c.js"><link rel="prefetch" href="/assets/js/127.219ac1a0.js"><link rel="prefetch" href="/assets/js/128.5163406c.js"><link rel="prefetch" href="/assets/js/129.80e8e158.js"><link rel="prefetch" href="/assets/js/13.a25f94be.js"><link rel="prefetch" href="/assets/js/130.2631286f.js"><link rel="prefetch" href="/assets/js/131.06d6e4ed.js"><link rel="prefetch" href="/assets/js/132.d242e01e.js"><link rel="prefetch" href="/assets/js/133.8fb347b5.js"><link rel="prefetch" href="/assets/js/134.a51b199a.js"><link rel="prefetch" href="/assets/js/135.bf6cc2e3.js"><link rel="prefetch" href="/assets/js/136.c61e94d5.js"><link rel="prefetch" href="/assets/js/137.e06c863e.js"><link rel="prefetch" href="/assets/js/138.73420bab.js"><link rel="prefetch" href="/assets/js/139.286597e8.js"><link rel="prefetch" href="/assets/js/14.3884f128.js"><link rel="prefetch" href="/assets/js/140.ff84783f.js"><link rel="prefetch" href="/assets/js/141.09deb596.js"><link rel="prefetch" href="/assets/js/142.5d0228db.js"><link rel="prefetch" href="/assets/js/143.74453ba6.js"><link rel="prefetch" href="/assets/js/144.e541a240.js"><link rel="prefetch" href="/assets/js/145.5bc83b76.js"><link rel="prefetch" href="/assets/js/146.86a1dbb1.js"><link rel="prefetch" href="/assets/js/147.cc5e200d.js"><link rel="prefetch" href="/assets/js/148.8d8b6f00.js"><link rel="prefetch" href="/assets/js/149.4df6c0d4.js"><link rel="prefetch" href="/assets/js/15.c0f83bbf.js"><link rel="prefetch" href="/assets/js/150.8bb0a169.js"><link rel="prefetch" href="/assets/js/151.567041cc.js"><link rel="prefetch" href="/assets/js/152.977bc6c0.js"><link rel="prefetch" href="/assets/js/153.4ad6f4fc.js"><link rel="prefetch" href="/assets/js/154.7c1a84db.js"><link rel="prefetch" href="/assets/js/155.3fa7a8a7.js"><link rel="prefetch" href="/assets/js/156.7f2c64d9.js"><link rel="prefetch" href="/assets/js/157.7164cbe9.js"><link rel="prefetch" href="/assets/js/158.86b059d5.js"><link rel="prefetch" href="/assets/js/159.d1cf4e75.js"><link rel="prefetch" href="/assets/js/16.9c87d0bb.js"><link rel="prefetch" href="/assets/js/160.3418f030.js"><link rel="prefetch" href="/assets/js/161.fa13791b.js"><link rel="prefetch" href="/assets/js/162.737be09d.js"><link rel="prefetch" href="/assets/js/163.5b559931.js"><link rel="prefetch" href="/assets/js/164.f15a1730.js"><link rel="prefetch" href="/assets/js/165.99dc8e01.js"><link rel="prefetch" href="/assets/js/166.c5a2abab.js"><link rel="prefetch" href="/assets/js/167.f4f72372.js"><link rel="prefetch" href="/assets/js/168.2a056e47.js"><link rel="prefetch" href="/assets/js/169.ce6e2774.js"><link rel="prefetch" href="/assets/js/17.24ccd3b2.js"><link rel="prefetch" href="/assets/js/170.a5b407e8.js"><link rel="prefetch" href="/assets/js/171.7332c48e.js"><link rel="prefetch" href="/assets/js/172.17ed085b.js"><link rel="prefetch" href="/assets/js/173.5e27410f.js"><link rel="prefetch" href="/assets/js/174.090997d9.js"><link rel="prefetch" href="/assets/js/175.da08302d.js"><link rel="prefetch" href="/assets/js/176.1d1163c6.js"><link rel="prefetch" href="/assets/js/177.ceb3720b.js"><link rel="prefetch" href="/assets/js/178.8dfbd668.js"><link rel="prefetch" href="/assets/js/179.dba67a17.js"><link rel="prefetch" href="/assets/js/18.7a7386f6.js"><link rel="prefetch" href="/assets/js/180.38924408.js"><link rel="prefetch" href="/assets/js/181.e7202f25.js"><link rel="prefetch" href="/assets/js/182.1e97cf67.js"><link rel="prefetch" href="/assets/js/183.07873ee3.js"><link rel="prefetch" href="/assets/js/184.1ebec67f.js"><link rel="prefetch" href="/assets/js/185.5390acc8.js"><link rel="prefetch" href="/assets/js/186.829174ec.js"><link rel="prefetch" href="/assets/js/187.f2719725.js"><link rel="prefetch" href="/assets/js/188.6ea65d1e.js"><link rel="prefetch" href="/assets/js/189.f55f3115.js"><link rel="prefetch" href="/assets/js/19.af278713.js"><link rel="prefetch" href="/assets/js/190.6df83d56.js"><link rel="prefetch" href="/assets/js/191.4be908bf.js"><link rel="prefetch" href="/assets/js/192.c57cdd51.js"><link rel="prefetch" href="/assets/js/193.19fd16de.js"><link rel="prefetch" href="/assets/js/194.0886ca64.js"><link rel="prefetch" href="/assets/js/195.b94b05c4.js"><link rel="prefetch" href="/assets/js/196.91bd37fe.js"><link rel="prefetch" href="/assets/js/197.992d085f.js"><link rel="prefetch" href="/assets/js/198.3116c35c.js"><link rel="prefetch" href="/assets/js/199.2fd2c1ee.js"><link rel="prefetch" href="/assets/js/20.71210941.js"><link rel="prefetch" href="/assets/js/200.2debd005.js"><link rel="prefetch" href="/assets/js/201.fc9a2ea9.js"><link rel="prefetch" href="/assets/js/202.a48011d3.js"><link rel="prefetch" href="/assets/js/203.648034e1.js"><link rel="prefetch" href="/assets/js/204.c1205a75.js"><link rel="prefetch" href="/assets/js/205.d1995bac.js"><link rel="prefetch" href="/assets/js/206.31e3ac89.js"><link rel="prefetch" href="/assets/js/207.651907dc.js"><link rel="prefetch" href="/assets/js/208.6fb4d8e3.js"><link rel="prefetch" href="/assets/js/209.ee001a99.js"><link rel="prefetch" href="/assets/js/21.2f5d4d05.js"><link rel="prefetch" href="/assets/js/210.7d8022ca.js"><link rel="prefetch" href="/assets/js/211.d0bc1245.js"><link rel="prefetch" href="/assets/js/212.b6a1bf12.js"><link rel="prefetch" href="/assets/js/213.f8dcaa10.js"><link rel="prefetch" href="/assets/js/214.831f96f8.js"><link rel="prefetch" href="/assets/js/215.696acabf.js"><link rel="prefetch" href="/assets/js/216.77e68bff.js"><link rel="prefetch" href="/assets/js/217.55a19f38.js"><link rel="prefetch" href="/assets/js/218.44f372a0.js"><link rel="prefetch" href="/assets/js/219.9dbe1e67.js"><link rel="prefetch" href="/assets/js/22.a550f5c5.js"><link rel="prefetch" href="/assets/js/220.efe69e22.js"><link rel="prefetch" href="/assets/js/221.c1c29b13.js"><link rel="prefetch" href="/assets/js/222.b07a72c5.js"><link rel="prefetch" href="/assets/js/223.3514effd.js"><link rel="prefetch" href="/assets/js/224.c8bef4ae.js"><link rel="prefetch" href="/assets/js/225.a2093f5c.js"><link rel="prefetch" href="/assets/js/226.38edba96.js"><link rel="prefetch" href="/assets/js/227.1e2a3ce5.js"><link rel="prefetch" href="/assets/js/228.67161bf1.js"><link rel="prefetch" href="/assets/js/229.948fd5c2.js"><link rel="prefetch" href="/assets/js/23.45f17947.js"><link rel="prefetch" href="/assets/js/230.b44b9207.js"><link rel="prefetch" href="/assets/js/231.243770b8.js"><link rel="prefetch" href="/assets/js/232.56bce850.js"><link rel="prefetch" href="/assets/js/233.c6efe323.js"><link rel="prefetch" href="/assets/js/234.89f5e794.js"><link rel="prefetch" href="/assets/js/235.97a74509.js"><link rel="prefetch" href="/assets/js/236.57ec3397.js"><link rel="prefetch" href="/assets/js/237.173faf81.js"><link rel="prefetch" href="/assets/js/238.c1464e37.js"><link rel="prefetch" href="/assets/js/239.056fc980.js"><link rel="prefetch" href="/assets/js/24.baa11248.js"><link rel="prefetch" href="/assets/js/240.4b0b2d2b.js"><link rel="prefetch" href="/assets/js/241.b2c4c6e8.js"><link rel="prefetch" href="/assets/js/242.9b1beee4.js"><link rel="prefetch" href="/assets/js/243.2d7dbe9c.js"><link rel="prefetch" href="/assets/js/244.4883a944.js"><link rel="prefetch" href="/assets/js/245.67137438.js"><link rel="prefetch" href="/assets/js/246.3bac9116.js"><link rel="prefetch" href="/assets/js/247.7ec09782.js"><link rel="prefetch" href="/assets/js/248.8d832a5d.js"><link rel="prefetch" href="/assets/js/249.12736e91.js"><link rel="prefetch" href="/assets/js/25.c67de046.js"><link rel="prefetch" href="/assets/js/250.7f884522.js"><link rel="prefetch" href="/assets/js/251.1b09b9c5.js"><link rel="prefetch" href="/assets/js/252.0e829c1b.js"><link rel="prefetch" href="/assets/js/253.9c493918.js"><link rel="prefetch" href="/assets/js/254.37dd9535.js"><link rel="prefetch" href="/assets/js/255.01b753d6.js"><link rel="prefetch" href="/assets/js/256.6f1e9ca5.js"><link rel="prefetch" href="/assets/js/257.12011cdf.js"><link rel="prefetch" href="/assets/js/258.1782d5af.js"><link rel="prefetch" href="/assets/js/259.72787035.js"><link rel="prefetch" href="/assets/js/26.0f21f71c.js"><link rel="prefetch" href="/assets/js/260.5ee79ebc.js"><link rel="prefetch" href="/assets/js/261.80f42cff.js"><link rel="prefetch" href="/assets/js/262.adc35a07.js"><link rel="prefetch" href="/assets/js/263.e2b15783.js"><link rel="prefetch" href="/assets/js/264.bf40c50d.js"><link rel="prefetch" href="/assets/js/265.3dbfef7a.js"><link rel="prefetch" href="/assets/js/266.0636db6a.js"><link rel="prefetch" href="/assets/js/267.c0decfa4.js"><link rel="prefetch" href="/assets/js/268.d8ae1aa9.js"><link rel="prefetch" href="/assets/js/269.3ac947ff.js"><link rel="prefetch" href="/assets/js/27.b7c1dc1f.js"><link rel="prefetch" href="/assets/js/270.a8462bb3.js"><link rel="prefetch" href="/assets/js/271.5460ec52.js"><link rel="prefetch" href="/assets/js/272.40096069.js"><link rel="prefetch" href="/assets/js/273.569582a6.js"><link rel="prefetch" href="/assets/js/274.5b3a3e61.js"><link rel="prefetch" href="/assets/js/275.05dd8f47.js"><link rel="prefetch" href="/assets/js/276.58ee7a62.js"><link rel="prefetch" href="/assets/js/277.ecc4f050.js"><link rel="prefetch" href="/assets/js/278.5c42fc64.js"><link rel="prefetch" href="/assets/js/279.c6c4e1db.js"><link rel="prefetch" href="/assets/js/28.ee4ee3a2.js"><link rel="prefetch" href="/assets/js/280.896320b7.js"><link rel="prefetch" href="/assets/js/281.6c06698d.js"><link rel="prefetch" href="/assets/js/282.64e7062f.js"><link rel="prefetch" href="/assets/js/283.f53635cb.js"><link rel="prefetch" href="/assets/js/284.70a6f908.js"><link rel="prefetch" href="/assets/js/285.c2b2fed4.js"><link rel="prefetch" href="/assets/js/286.524c350f.js"><link rel="prefetch" href="/assets/js/287.18268b77.js"><link rel="prefetch" href="/assets/js/288.aba186f4.js"><link rel="prefetch" href="/assets/js/289.bc82c71e.js"><link rel="prefetch" href="/assets/js/29.10914bf8.js"><link rel="prefetch" href="/assets/js/290.d627c982.js"><link rel="prefetch" href="/assets/js/291.6f57ec6b.js"><link rel="prefetch" href="/assets/js/292.90bc6ce4.js"><link rel="prefetch" href="/assets/js/293.98b37c51.js"><link rel="prefetch" href="/assets/js/294.fc3885f0.js"><link rel="prefetch" href="/assets/js/295.9a729b00.js"><link rel="prefetch" href="/assets/js/296.f618868c.js"><link rel="prefetch" href="/assets/js/297.31403b76.js"><link rel="prefetch" href="/assets/js/298.01fa278f.js"><link rel="prefetch" href="/assets/js/299.1d045807.js"><link rel="prefetch" href="/assets/js/3.501f7343.js"><link rel="prefetch" href="/assets/js/30.c713aadb.js"><link rel="prefetch" href="/assets/js/300.fb43249a.js"><link rel="prefetch" href="/assets/js/301.aa1c5645.js"><link rel="prefetch" href="/assets/js/302.6db19306.js"><link rel="prefetch" href="/assets/js/303.1270553a.js"><link rel="prefetch" href="/assets/js/304.89346d92.js"><link rel="prefetch" href="/assets/js/305.ad2c8670.js"><link rel="prefetch" href="/assets/js/306.719c1097.js"><link rel="prefetch" href="/assets/js/307.d4045a4a.js"><link rel="prefetch" href="/assets/js/308.9afad4cd.js"><link rel="prefetch" href="/assets/js/309.edeff033.js"><link rel="prefetch" href="/assets/js/31.ce9b4455.js"><link rel="prefetch" href="/assets/js/310.e4453f32.js"><link rel="prefetch" href="/assets/js/311.4c032d7d.js"><link rel="prefetch" href="/assets/js/312.f7627d20.js"><link rel="prefetch" href="/assets/js/313.265ecb11.js"><link rel="prefetch" href="/assets/js/314.2263c584.js"><link rel="prefetch" href="/assets/js/315.32bedca2.js"><link rel="prefetch" href="/assets/js/316.1ab2632c.js"><link rel="prefetch" href="/assets/js/317.56a20b3c.js"><link rel="prefetch" href="/assets/js/318.4ff08e91.js"><link rel="prefetch" href="/assets/js/319.ef5ad2ea.js"><link rel="prefetch" href="/assets/js/32.b1c7f82f.js"><link rel="prefetch" href="/assets/js/320.ad832203.js"><link rel="prefetch" href="/assets/js/321.3a4c239c.js"><link rel="prefetch" href="/assets/js/322.e953e5d3.js"><link rel="prefetch" href="/assets/js/323.4f7fe159.js"><link rel="prefetch" href="/assets/js/324.50cc8871.js"><link rel="prefetch" href="/assets/js/325.e27a092e.js"><link rel="prefetch" href="/assets/js/326.39f1baea.js"><link rel="prefetch" href="/assets/js/327.38d79deb.js"><link rel="prefetch" href="/assets/js/328.c3779a71.js"><link rel="prefetch" href="/assets/js/329.a74231e6.js"><link rel="prefetch" href="/assets/js/33.f615a609.js"><link rel="prefetch" href="/assets/js/330.223bc505.js"><link rel="prefetch" href="/assets/js/331.d0e612a4.js"><link rel="prefetch" href="/assets/js/332.73352342.js"><link rel="prefetch" href="/assets/js/333.909ae3f7.js"><link rel="prefetch" href="/assets/js/334.b8c024ad.js"><link rel="prefetch" href="/assets/js/335.db27508e.js"><link rel="prefetch" href="/assets/js/336.9cfd6870.js"><link rel="prefetch" href="/assets/js/337.3e8973fe.js"><link rel="prefetch" href="/assets/js/338.d66c805b.js"><link rel="prefetch" href="/assets/js/339.9c138264.js"><link rel="prefetch" href="/assets/js/34.009df5c0.js"><link rel="prefetch" href="/assets/js/340.e8c521ad.js"><link rel="prefetch" href="/assets/js/341.4c1b710c.js"><link rel="prefetch" href="/assets/js/342.a8623a07.js"><link rel="prefetch" href="/assets/js/343.d0a04b40.js"><link rel="prefetch" href="/assets/js/344.a1b11e9c.js"><link rel="prefetch" href="/assets/js/345.ded6a93f.js"><link rel="prefetch" href="/assets/js/346.b146b89b.js"><link rel="prefetch" href="/assets/js/347.8b47bec9.js"><link rel="prefetch" href="/assets/js/348.a2f35a12.js"><link rel="prefetch" href="/assets/js/349.d8b314cc.js"><link rel="prefetch" href="/assets/js/35.f730ce35.js"><link rel="prefetch" href="/assets/js/350.e53aabea.js"><link rel="prefetch" href="/assets/js/351.b495f397.js"><link rel="prefetch" href="/assets/js/352.b46e8dd3.js"><link rel="prefetch" href="/assets/js/353.64f80216.js"><link rel="prefetch" href="/assets/js/354.16c01a08.js"><link rel="prefetch" href="/assets/js/355.01740f8d.js"><link rel="prefetch" href="/assets/js/356.4c485791.js"><link rel="prefetch" href="/assets/js/357.0f3a2dca.js"><link rel="prefetch" href="/assets/js/358.dedc98b4.js"><link rel="prefetch" href="/assets/js/359.dd7e4d38.js"><link rel="prefetch" href="/assets/js/36.498bef1d.js"><link rel="prefetch" href="/assets/js/360.91a14f83.js"><link rel="prefetch" href="/assets/js/361.3606ff32.js"><link rel="prefetch" href="/assets/js/362.6c2a9989.js"><link rel="prefetch" href="/assets/js/363.f608289e.js"><link rel="prefetch" href="/assets/js/364.986e078c.js"><link rel="prefetch" href="/assets/js/365.2b4c2ae0.js"><link rel="prefetch" href="/assets/js/366.a0b6515b.js"><link rel="prefetch" href="/assets/js/367.7e65c199.js"><link rel="prefetch" href="/assets/js/368.8685ae3f.js"><link rel="prefetch" href="/assets/js/369.36ff471d.js"><link rel="prefetch" href="/assets/js/37.a63e77c0.js"><link rel="prefetch" href="/assets/js/370.26a3e574.js"><link rel="prefetch" href="/assets/js/371.bfe3c1e2.js"><link rel="prefetch" href="/assets/js/372.555b7fa3.js"><link rel="prefetch" href="/assets/js/373.34d9cef3.js"><link rel="prefetch" href="/assets/js/374.138bd60b.js"><link rel="prefetch" href="/assets/js/375.0a40d31f.js"><link rel="prefetch" href="/assets/js/376.52013018.js"><link rel="prefetch" href="/assets/js/377.a447b0a5.js"><link rel="prefetch" href="/assets/js/378.e2c5377b.js"><link rel="prefetch" href="/assets/js/379.6f7e97fb.js"><link rel="prefetch" href="/assets/js/38.955107f5.js"><link rel="prefetch" href="/assets/js/380.b25deca7.js"><link rel="prefetch" href="/assets/js/381.3556953b.js"><link rel="prefetch" href="/assets/js/382.97768d2c.js"><link rel="prefetch" href="/assets/js/383.86cbb33c.js"><link rel="prefetch" href="/assets/js/384.bf272c0b.js"><link rel="prefetch" href="/assets/js/385.2e8f7f50.js"><link rel="prefetch" href="/assets/js/386.aaa7499c.js"><link rel="prefetch" href="/assets/js/387.e0e5bce9.js"><link rel="prefetch" href="/assets/js/388.441cc3fe.js"><link rel="prefetch" href="/assets/js/389.bd2d6634.js"><link rel="prefetch" href="/assets/js/39.b76fcb03.js"><link rel="prefetch" href="/assets/js/390.c4e8517e.js"><link rel="prefetch" href="/assets/js/391.19565f65.js"><link rel="prefetch" href="/assets/js/392.03e9a0b7.js"><link rel="prefetch" href="/assets/js/393.d56224c5.js"><link rel="prefetch" href="/assets/js/394.29467dbd.js"><link rel="prefetch" href="/assets/js/395.c679bf11.js"><link rel="prefetch" href="/assets/js/396.88470016.js"><link rel="prefetch" href="/assets/js/397.951b94c5.js"><link rel="prefetch" href="/assets/js/398.185baa74.js"><link rel="prefetch" href="/assets/js/399.744190c2.js"><link rel="prefetch" href="/assets/js/4.6fa601ca.js"><link rel="prefetch" href="/assets/js/40.4238ae4a.js"><link rel="prefetch" href="/assets/js/400.5eee1542.js"><link rel="prefetch" href="/assets/js/401.80b6aeeb.js"><link rel="prefetch" href="/assets/js/402.ff7cd8b4.js"><link rel="prefetch" href="/assets/js/403.9cb6016a.js"><link rel="prefetch" href="/assets/js/404.5a0d96f2.js"><link rel="prefetch" href="/assets/js/405.ec13f651.js"><link rel="prefetch" href="/assets/js/406.2ffcc11a.js"><link rel="prefetch" href="/assets/js/407.66fb4b3a.js"><link rel="prefetch" href="/assets/js/408.fff02044.js"><link rel="prefetch" href="/assets/js/409.947379f7.js"><link rel="prefetch" href="/assets/js/41.b518dd5d.js"><link rel="prefetch" href="/assets/js/410.c1d5be2a.js"><link rel="prefetch" href="/assets/js/411.44a0eecc.js"><link rel="prefetch" href="/assets/js/412.fa92b4c9.js"><link rel="prefetch" href="/assets/js/413.dddd8da7.js"><link rel="prefetch" href="/assets/js/414.ccde0660.js"><link rel="prefetch" href="/assets/js/415.9422591f.js"><link rel="prefetch" href="/assets/js/416.9fe6597b.js"><link rel="prefetch" href="/assets/js/417.507fb867.js"><link rel="prefetch" href="/assets/js/418.793623c4.js"><link rel="prefetch" href="/assets/js/419.a8c0840f.js"><link rel="prefetch" href="/assets/js/42.50f030c6.js"><link rel="prefetch" href="/assets/js/420.e2e91139.js"><link rel="prefetch" href="/assets/js/421.d286f07f.js"><link rel="prefetch" href="/assets/js/422.d927c5ed.js"><link rel="prefetch" href="/assets/js/423.b02c4212.js"><link rel="prefetch" href="/assets/js/424.61346860.js"><link rel="prefetch" href="/assets/js/425.1a11fa56.js"><link rel="prefetch" href="/assets/js/426.8b5ee5f1.js"><link rel="prefetch" href="/assets/js/427.22a5bc7e.js"><link rel="prefetch" href="/assets/js/428.eee86979.js"><link rel="prefetch" href="/assets/js/429.7071e93e.js"><link rel="prefetch" href="/assets/js/43.0eeb0f2f.js"><link rel="prefetch" href="/assets/js/430.5a9976ee.js"><link rel="prefetch" href="/assets/js/431.53579b6a.js"><link rel="prefetch" href="/assets/js/432.cfe90ae6.js"><link rel="prefetch" href="/assets/js/433.8e9c0b27.js"><link rel="prefetch" href="/assets/js/434.af4384c7.js"><link rel="prefetch" href="/assets/js/435.ac55d9e3.js"><link rel="prefetch" href="/assets/js/436.483e8f93.js"><link rel="prefetch" href="/assets/js/437.10a01bee.js"><link rel="prefetch" href="/assets/js/438.6ecbb09f.js"><link rel="prefetch" href="/assets/js/439.07ea42ca.js"><link rel="prefetch" href="/assets/js/44.da503558.js"><link rel="prefetch" href="/assets/js/440.6bdbc4df.js"><link rel="prefetch" href="/assets/js/441.5c46d53e.js"><link rel="prefetch" href="/assets/js/442.b1ef096d.js"><link rel="prefetch" href="/assets/js/443.87ee1cc6.js"><link rel="prefetch" href="/assets/js/444.17cb3b66.js"><link rel="prefetch" href="/assets/js/445.8137d35a.js"><link rel="prefetch" href="/assets/js/446.75637c9c.js"><link rel="prefetch" href="/assets/js/447.18e60b2a.js"><link rel="prefetch" href="/assets/js/448.b432d928.js"><link rel="prefetch" href="/assets/js/449.980e0c1d.js"><link rel="prefetch" href="/assets/js/45.b99046a7.js"><link rel="prefetch" href="/assets/js/450.c672a19d.js"><link rel="prefetch" href="/assets/js/451.24ae9bc7.js"><link rel="prefetch" href="/assets/js/452.af2aa4c1.js"><link rel="prefetch" href="/assets/js/453.4f860948.js"><link rel="prefetch" href="/assets/js/454.f948183a.js"><link rel="prefetch" href="/assets/js/455.c380efb7.js"><link rel="prefetch" href="/assets/js/456.8cd6d7d7.js"><link rel="prefetch" href="/assets/js/457.f355a01a.js"><link rel="prefetch" href="/assets/js/458.cdfdfa5a.js"><link rel="prefetch" href="/assets/js/459.d564bc9a.js"><link rel="prefetch" href="/assets/js/46.3a9f92f5.js"><link rel="prefetch" href="/assets/js/460.98968ca1.js"><link rel="prefetch" href="/assets/js/461.a4e87d61.js"><link rel="prefetch" href="/assets/js/462.b4c5b369.js"><link rel="prefetch" href="/assets/js/463.d324062a.js"><link rel="prefetch" href="/assets/js/464.20e78299.js"><link rel="prefetch" href="/assets/js/465.77e3fd0f.js"><link rel="prefetch" href="/assets/js/466.3b5d8e3a.js"><link rel="prefetch" href="/assets/js/467.5a8fe8b3.js"><link rel="prefetch" href="/assets/js/468.395758d4.js"><link rel="prefetch" href="/assets/js/469.93c4c335.js"><link rel="prefetch" href="/assets/js/47.d7706b94.js"><link rel="prefetch" href="/assets/js/470.9d8957df.js"><link rel="prefetch" href="/assets/js/471.8a24d492.js"><link rel="prefetch" href="/assets/js/472.5731bc64.js"><link rel="prefetch" href="/assets/js/473.798441ff.js"><link rel="prefetch" href="/assets/js/474.d3cf1769.js"><link rel="prefetch" href="/assets/js/475.9a88b416.js"><link rel="prefetch" href="/assets/js/476.3c789391.js"><link rel="prefetch" href="/assets/js/477.7150d489.js"><link rel="prefetch" href="/assets/js/478.dd6dd623.js"><link rel="prefetch" href="/assets/js/479.8f5e15a1.js"><link rel="prefetch" href="/assets/js/48.8d029411.js"><link rel="prefetch" href="/assets/js/480.0b931dce.js"><link rel="prefetch" href="/assets/js/481.f16a20c2.js"><link rel="prefetch" href="/assets/js/482.a78ad20f.js"><link rel="prefetch" href="/assets/js/483.1fe834b7.js"><link rel="prefetch" href="/assets/js/484.bc1312e1.js"><link rel="prefetch" href="/assets/js/485.04ce49a4.js"><link rel="prefetch" href="/assets/js/486.23824177.js"><link rel="prefetch" href="/assets/js/487.c6b035d8.js"><link rel="prefetch" href="/assets/js/488.932b4b47.js"><link rel="prefetch" href="/assets/js/489.c393d75d.js"><link rel="prefetch" href="/assets/js/49.ca105ece.js"><link rel="prefetch" href="/assets/js/490.b00c2619.js"><link rel="prefetch" href="/assets/js/491.e4447a4e.js"><link rel="prefetch" href="/assets/js/492.2c914e58.js"><link rel="prefetch" href="/assets/js/493.89dfa03e.js"><link rel="prefetch" href="/assets/js/494.f13408f6.js"><link rel="prefetch" href="/assets/js/495.fd51b0df.js"><link rel="prefetch" href="/assets/js/496.8bbb21f1.js"><link rel="prefetch" href="/assets/js/497.5579edba.js"><link rel="prefetch" href="/assets/js/498.a555c65f.js"><link rel="prefetch" href="/assets/js/499.f1439fdf.js"><link rel="prefetch" href="/assets/js/5.c5501caf.js"><link rel="prefetch" href="/assets/js/50.0273019f.js"><link rel="prefetch" href="/assets/js/500.aa11e499.js"><link rel="prefetch" href="/assets/js/501.15b5b3b7.js"><link rel="prefetch" href="/assets/js/502.0d3787d1.js"><link rel="prefetch" href="/assets/js/503.4332189d.js"><link rel="prefetch" href="/assets/js/504.9ae93ca1.js"><link rel="prefetch" href="/assets/js/505.449e6d3c.js"><link rel="prefetch" href="/assets/js/506.4fba1ce7.js"><link rel="prefetch" href="/assets/js/507.2f58dfd2.js"><link rel="prefetch" href="/assets/js/508.0a331cbc.js"><link rel="prefetch" href="/assets/js/509.fa0bac9e.js"><link rel="prefetch" href="/assets/js/51.b52abf6c.js"><link rel="prefetch" href="/assets/js/510.87fc24a1.js"><link rel="prefetch" href="/assets/js/511.b22ca50d.js"><link rel="prefetch" href="/assets/js/512.27b2ae5d.js"><link rel="prefetch" href="/assets/js/513.37acdc6a.js"><link rel="prefetch" href="/assets/js/514.576cdd8b.js"><link rel="prefetch" href="/assets/js/515.d17ad8b5.js"><link rel="prefetch" href="/assets/js/516.7e20c936.js"><link rel="prefetch" href="/assets/js/517.f1e6cc81.js"><link rel="prefetch" href="/assets/js/518.20669e5c.js"><link rel="prefetch" href="/assets/js/519.c6574e2f.js"><link rel="prefetch" href="/assets/js/52.fe388278.js"><link rel="prefetch" href="/assets/js/520.b4f2ad50.js"><link rel="prefetch" href="/assets/js/521.35772b4f.js"><link rel="prefetch" href="/assets/js/522.3e31294c.js"><link rel="prefetch" href="/assets/js/523.b387de1e.js"><link rel="prefetch" href="/assets/js/524.fe5c7333.js"><link rel="prefetch" href="/assets/js/525.0805e15f.js"><link rel="prefetch" href="/assets/js/526.f4d8497c.js"><link rel="prefetch" href="/assets/js/527.ff78c022.js"><link rel="prefetch" href="/assets/js/528.5e668df1.js"><link rel="prefetch" href="/assets/js/529.4d4e7239.js"><link rel="prefetch" href="/assets/js/53.17df72cb.js"><link rel="prefetch" href="/assets/js/530.bfc9da05.js"><link rel="prefetch" href="/assets/js/531.c64ba0b1.js"><link rel="prefetch" href="/assets/js/532.a5f28171.js"><link rel="prefetch" href="/assets/js/533.4cced089.js"><link rel="prefetch" href="/assets/js/534.9e4f99f4.js"><link rel="prefetch" href="/assets/js/535.a968520e.js"><link rel="prefetch" href="/assets/js/536.06da5ae0.js"><link rel="prefetch" href="/assets/js/537.21ca4aec.js"><link rel="prefetch" href="/assets/js/538.5773219c.js"><link rel="prefetch" href="/assets/js/539.e987fb44.js"><link rel="prefetch" href="/assets/js/54.54cdba1b.js"><link rel="prefetch" href="/assets/js/540.67138ea6.js"><link rel="prefetch" href="/assets/js/541.a21bf3f2.js"><link rel="prefetch" href="/assets/js/542.cdf0d6e6.js"><link rel="prefetch" href="/assets/js/543.76c5341a.js"><link rel="prefetch" href="/assets/js/544.93f1e577.js"><link rel="prefetch" href="/assets/js/545.c6b3166a.js"><link rel="prefetch" href="/assets/js/546.48282ce5.js"><link rel="prefetch" href="/assets/js/547.3be770d0.js"><link rel="prefetch" href="/assets/js/548.343f7a16.js"><link rel="prefetch" href="/assets/js/549.8f6a5d07.js"><link rel="prefetch" href="/assets/js/55.46f779db.js"><link rel="prefetch" href="/assets/js/550.5852da95.js"><link rel="prefetch" href="/assets/js/551.b860ff5f.js"><link rel="prefetch" href="/assets/js/552.14389e94.js"><link rel="prefetch" href="/assets/js/553.b92c56d5.js"><link rel="prefetch" href="/assets/js/554.683136d4.js"><link rel="prefetch" href="/assets/js/555.2ba85521.js"><link rel="prefetch" href="/assets/js/556.08786eb5.js"><link rel="prefetch" href="/assets/js/557.eea77275.js"><link rel="prefetch" href="/assets/js/558.0b254044.js"><link rel="prefetch" href="/assets/js/559.0d06a839.js"><link rel="prefetch" href="/assets/js/56.f17ad4f7.js"><link rel="prefetch" href="/assets/js/560.882a58ec.js"><link rel="prefetch" href="/assets/js/561.f8babd08.js"><link rel="prefetch" href="/assets/js/562.4da5efe9.js"><link rel="prefetch" href="/assets/js/563.e7eb47de.js"><link rel="prefetch" href="/assets/js/564.cff87a53.js"><link rel="prefetch" href="/assets/js/565.424241e7.js"><link rel="prefetch" href="/assets/js/566.c167b9d8.js"><link rel="prefetch" href="/assets/js/567.4642979b.js"><link rel="prefetch" href="/assets/js/568.c25edde6.js"><link rel="prefetch" href="/assets/js/569.ed0984f6.js"><link rel="prefetch" href="/assets/js/57.d52b0597.js"><link rel="prefetch" href="/assets/js/570.b30db6aa.js"><link rel="prefetch" href="/assets/js/571.ba279b3c.js"><link rel="prefetch" href="/assets/js/572.417a582d.js"><link rel="prefetch" href="/assets/js/573.a74affe7.js"><link rel="prefetch" href="/assets/js/574.567c222b.js"><link rel="prefetch" href="/assets/js/575.601c4034.js"><link rel="prefetch" href="/assets/js/576.7cd32cb1.js"><link rel="prefetch" href="/assets/js/577.3b3ebfd9.js"><link rel="prefetch" href="/assets/js/578.8df20dfd.js"><link rel="prefetch" href="/assets/js/579.d4eed4a5.js"><link rel="prefetch" href="/assets/js/58.23b5ffe8.js"><link rel="prefetch" href="/assets/js/580.6c45e715.js"><link rel="prefetch" href="/assets/js/581.776edd83.js"><link rel="prefetch" href="/assets/js/582.77b37376.js"><link rel="prefetch" href="/assets/js/583.3b948dbe.js"><link rel="prefetch" href="/assets/js/584.80519496.js"><link rel="prefetch" href="/assets/js/585.f311b6b6.js"><link rel="prefetch" href="/assets/js/586.cf6b4135.js"><link rel="prefetch" href="/assets/js/587.55f9db23.js"><link rel="prefetch" href="/assets/js/588.f07fa9fc.js"><link rel="prefetch" href="/assets/js/589.18816a16.js"><link rel="prefetch" href="/assets/js/59.aeee6fc3.js"><link rel="prefetch" href="/assets/js/60.b654e9a3.js"><link rel="prefetch" href="/assets/js/61.3343820a.js"><link rel="prefetch" href="/assets/js/62.d7fb9f65.js"><link rel="prefetch" href="/assets/js/63.a54ab535.js"><link rel="prefetch" href="/assets/js/64.f00e6c9b.js"><link rel="prefetch" href="/assets/js/65.333b41b5.js"><link rel="prefetch" href="/assets/js/66.8cd73199.js"><link rel="prefetch" href="/assets/js/67.6bd29259.js"><link rel="prefetch" href="/assets/js/68.fd0c51c2.js"><link rel="prefetch" href="/assets/js/69.ce728166.js"><link rel="prefetch" href="/assets/js/7.9236067b.js"><link rel="prefetch" href="/assets/js/70.5a4b0f14.js"><link rel="prefetch" href="/assets/js/71.728dd91d.js"><link rel="prefetch" href="/assets/js/72.d6b62255.js"><link rel="prefetch" href="/assets/js/73.209db3b2.js"><link rel="prefetch" href="/assets/js/74.e9973a9f.js"><link rel="prefetch" href="/assets/js/75.7524e468.js"><link rel="prefetch" href="/assets/js/76.11b6dfbd.js"><link rel="prefetch" href="/assets/js/77.f3cbc00a.js"><link rel="prefetch" href="/assets/js/78.340e8c01.js"><link rel="prefetch" href="/assets/js/79.a02d4f73.js"><link rel="prefetch" href="/assets/js/8.3de3a1fa.js"><link rel="prefetch" href="/assets/js/80.6ad5edae.js"><link rel="prefetch" href="/assets/js/81.bfe9a8cc.js"><link rel="prefetch" href="/assets/js/82.6ebade46.js"><link rel="prefetch" href="/assets/js/83.6403bd80.js"><link rel="prefetch" href="/assets/js/84.1fd778e5.js"><link rel="prefetch" href="/assets/js/85.76830e51.js"><link rel="prefetch" href="/assets/js/86.0c76b17e.js"><link rel="prefetch" href="/assets/js/87.aa516378.js"><link rel="prefetch" href="/assets/js/88.ba084941.js"><link rel="prefetch" href="/assets/js/89.c605f729.js"><link rel="prefetch" href="/assets/js/9.167a6acd.js"><link rel="prefetch" href="/assets/js/90.a58125ff.js"><link rel="prefetch" href="/assets/js/91.c4e5e485.js"><link rel="prefetch" href="/assets/js/92.3459c500.js"><link rel="prefetch" href="/assets/js/93.3d4ea969.js"><link rel="prefetch" href="/assets/js/94.e3b77044.js"><link rel="prefetch" href="/assets/js/95.5fdee5ad.js"><link rel="prefetch" href="/assets/js/96.4b7efc40.js"><link rel="prefetch" href="/assets/js/97.c5c6552c.js"><link rel="prefetch" href="/assets/js/98.33ed1baf.js"><link rel="prefetch" href="/assets/js/99.76632a77.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6803abc5.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/icon/logo200x100.png" alt="JavaInterview" class="logo"> <span class="site-name can-hide">JavaInterview</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/read/" class="nav-link">指南</a></div><div class="nav-item"><a href="/categories/" class="nav-link">分类</a></div><div class="nav-item"><a href="/tags/" class="nav-link">标签</a></div><div class="nav-item"><a href="/archives/" class="nav-link">归档</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="作者" class="dropdown-title"><!----> <span class="title" style="display:;">作者</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://dearlocation.com/me/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  相亲交友
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://yangchunjian.blog.csdn.net" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://yangchunjian.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  文档箱
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://dearlocation.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  亲位网
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.yangchunjian.com/docbook/imgs/dearlocation.jpeg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  微信号
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.yangchunjian.com/docbook/imgs/qrcode_for_gh_8756901e5b12_344.jpg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  公众号
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="/img/weixin.jpeg"> <div class="blogger-info"><h3>JavaInterview</h3> <span>『Java面试+Java学习』</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/read/" class="nav-link">指南</a></div><div class="nav-item"><a href="/categories/" class="nav-link">分类</a></div><div class="nav-item"><a href="/tags/" class="nav-link">标签</a></div><div class="nav-item"><a href="/archives/" class="nav-link">归档</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="作者" class="dropdown-title"><!----> <span class="title" style="display:;">作者</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://dearlocation.com/me/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  相亲交友
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://yangchunjian.blog.csdn.net" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://yangchunjian.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  文档箱
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://dearlocation.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  亲位网
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.yangchunjian.com/docbook/imgs/dearlocation.jpeg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  微信号
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.yangchunjian.com/docbook/imgs/qrcode_for_gh_8756901e5b12_344.jpg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  公众号
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/read/" class="sidebar-link">指南</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>总结</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>简历</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Java</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>面试</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>源码</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>底层</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/65ab2d/" class="sidebar-link">Java编写原生方法</a></li><li><a href="/pages/37e562/" class="sidebar-link">Java字节码操控框架ASM介绍</a></li><li><a href="/pages/21beb6/" class="sidebar-link">Java字节码操控框架ASM源码</a></li><li><a href="/pages/bf0e6b/" class="sidebar-link">Java探针(JavaAgent)</a></li><li><a href="/pages/7a0338/" aria-current="page" class="active sidebar-link">Java ClassLoader</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/pages/7a0338/#class文件的认识" class="sidebar-link">Class文件的认识</a></li><li class="sidebar-sub-header level2"><a href="/pages/7a0338/#你还记得java环境变量吗" class="sidebar-link">你还记得java环境变量吗？</a></li><li class="sidebar-sub-header level2"><a href="/pages/7a0338/#java类加载流程" class="sidebar-link">JAVA类加载流程</a></li><li class="sidebar-sub-header level2"><a href="/pages/7a0338/#加载顺序" class="sidebar-link">加载顺序？</a></li><li class="sidebar-sub-header level2"><a href="/pages/7a0338/#extclassloader源码" class="sidebar-link">ExtClassLoader源码</a></li><li class="sidebar-sub-header level2"><a href="/pages/7a0338/#appclassloader源码" class="sidebar-link">AppClassLoader源码</a></li><li class="sidebar-sub-header level2"><a href="/pages/7a0338/#每个类加载器都有一个父加载器" class="sidebar-link">每个类加载器都有一个父加载器</a></li><li class="sidebar-sub-header level2"><a href="/pages/7a0338/#父加载器不是父类" class="sidebar-link">父加载器不是父类</a></li><li class="sidebar-sub-header level2"><a href="/pages/7a0338/#bootstrap-classloader是由c-编写的。" class="sidebar-link">Bootstrap ClassLoader是由C++编写的。</a></li><li class="sidebar-sub-header level2"><a href="/pages/7a0338/#重要方法" class="sidebar-link">重要方法</a></li><li class="sidebar-sub-header level2"><a href="/pages/7a0338/#自定义classloader" class="sidebar-link">自定义ClassLoader</a></li><li class="sidebar-sub-header level2"><a href="/pages/7a0338/#自定义classloader示例之diskclassloader。" class="sidebar-link">自定义ClassLoader示例之DiskClassLoader。</a></li><li class="sidebar-sub-header level2"><a href="/pages/7a0338/#回首" class="sidebar-link">回首</a></li><li class="sidebar-sub-header level2"><a href="/pages/7a0338/#context-classloader-线程上下文类加载器" class="sidebar-link">Context ClassLoader 线程上下文类加载器</a></li><li class="sidebar-sub-header level2"><a href="/pages/7a0338/#context-classloader的运用时机" class="sidebar-link">Context ClassLoader的运用时机</a></li><li class="sidebar-sub-header level2"><a href="/pages/7a0338/#总结" class="sidebar-link">总结</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>JDK</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>Netty</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>Kafka</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>C/C++</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>技术</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>算法</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>运维</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>测试</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数据库</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>中间件</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-06225672><div class="articleInfo" data-v-06225672><ul class="breadcrumbs" data-v-06225672><li data-v-06225672><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-06225672></a></li> <li data-v-06225672><a href="/categories/?category=sourcecode" title="分类" data-v-06225672>sourcecode</a></li><li data-v-06225672><a href="/categories/?category=bottom" title="分类" data-v-06225672>bottom</a></li></ul> <div class="info" data-v-06225672><div title="作者" class="author iconfont icon-touxiang" data-v-06225672><a href="https://JavaInterview.cn" target="_blank" title="作者" class="beLink" data-v-06225672>JavaInterview.cn</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-06225672><a href="javascript:;" data-v-06225672>2022-10-19</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABKFJREFUSA3tVl1oFVcQnrMbrak3QUgkya1akpJYcrUtIqW1JvFBE9LiQ5v6JmJpolbMg32rVrhgoYK0QiMY6i9Y6EMaW5D+xFJaTYItIuK2Kr3+BJNwkxBj05sQY3b3nM6cs2dv9t7NT/vQJw/sndk5M/PNzJkzewGerP+pAmy+ON8lLzUJgA8ZYxYIYZmGYRnctDaWvJJAmTtfP1pvXsBCCPP8QFcCaRkZYACgDZFO4stNIcBCajEOlmmC9XpJ9bAGCaPaPmzPl32dvLSVu3BWCTQs0XQQ6g0DYgwLIoAZbBCdW/i+781o1VVlm/410mw4h06Y7bIPHNyWDyL4FHkX03Q8SrzNhZTZriieckWt7cL6MM85YcLpsi/7O9/iXFT6MswI0DmmpkSaJ0qLxFIm3+i1THHB3zmBH3PYx9CcykcLOeQVVa7QtdxTgQgEleX2AjHYfwA+2ddV77ruGoJUbhGDI09YSNXyMpUt5ylOzxgbUmtOp7NmbNt8v3arjTBfYELmLUV+M+nSawNNAUqpT3ClJWg5I3BLT+cGW/DXNGCa6tx1aakCGEigArTn4TDIPdrXXYKCZNrHLMCOEPvHBlLQ99s9eHB7EB6NTki73CVPQ2F5MSx/uRQixfmq7rK0wYD8w8E905bnPDfwoWs/rfv93NWN/ZfvwsLIU7A09gxECyISeGJkHAau98L97tuw7NXnoPyNF8FcYGLGKsOs0mN3OEyec9esGW/ZEl945dTP34wlR2FZVQWU1q0Cw8Tr7p+hgLLNL0FPxx/Q35mA8aEUrH6nCgwEl0tn7wUiZYJnNRh6DK4UH/k0lfyrsBKdPVv/AriGIQcEDQZ65LBAGe2Rzui9Ybjz7XUppz1/uKBbyVPGkN3ZAeC6hr0x7Nr38N5+EqkoOm17xpoqR9ohQF55ERSvr4Dkr3chNfC3DMzGJlNBElW8w9nsGQvhNGIzDkXzCg8cLK951xHsFBlTJspJNi3ZFIMF2AeDV3q8DNOB+YHi6QTrChDIWDBRi5U5f+ZMfJLu3ccrqxtdxk4SKH336LFxSmkqefwU5T8fhdSdQf9IVKD6aNiwI/hnmcAZ91isYMJIaCUCx9W098+LgruikeTqzqqxKPUwqJyCPJiyemVVZBOijDGjD38Os0jOiSPL1z3SPjXNANbiNPXAdzTfukjjuknNBbyz3nwgTd3AVFqUJ5hpHlq9MveLnWwttUfoygBmvVjuikxND3znrhsELnZk7k+OjIGxeNEkomyLVta0xxn+HZhjBc4YZ/AFjHjz9u3xRZl2BN4aq9nFwWh16IrQ1aHHEd3j1+4/dB9OtH4e29A2H1DyHQRmOSfQZ1Fy7MHBTGB6J/Djq6p3OxyO2cB+4Car7v/o3GXgfAkj23+x9ID1Teoamo/SXcbvSf2PX7Vc8DdCmE1vN9di+32P9/5YR3vLnhCVGUWBjEkr3yh4H8v9CzmsbdhzOKzsJKM90iFdaTMjRPhGVsakRvOaRidljo6H6G7j+ctrJpsP+4COhDIl0La2+FS4+5mlocBaXY5QnGZysIBYoeSsl5qQzrSj/cgNrfuEzlWBfwA+EjrZyWUvpAAAAABJRU5ErkJggg==">Java ClassLoader<span class="title-tag">Java</span></h1> <!----> <div class="theme-vdoing-content content__default"><p>ClassLoader翻译过来就是类加载器，普通的java开发者其实用到的不多，但对于某些框架开发者来说却非常常见。理解ClassLoader的加载机制，也有利于我们编写出更高效的代码。ClassLoader的具体作用就是将class文件加载到jvm虚拟机中去，程序就可以正确运行了。但是，jvm启动的时候，并不会一次性加载所有的class文件，而是根据需要去动态加载。想想也是的，一次性加载那么多jar包那么多class，那内存不崩溃。本文的目的也是学习ClassLoader这种加载机制。</p> <h2 id="class文件的认识"><a href="#class文件的认识" class="header-anchor">#</a> <strong>Class文件的认识</strong></h2> <p>我们都知道在Java中程序是运行在虚拟机中，我们平常用文本编辑器或者是IDE编写的程序都是.java格式的文件，这是最基础的源码，但这类文件是不能直接运行的。如我们编写一个简单的程序HelloWorld.java</p> <div class="language- extra-class"><pre><code>public class HelloWorld{
+
+    public static void main(String[] args){
+        System.out.println(&quot;Hello world!&quot;);
+    }
+}
+</code></pre></div><p>如图：</p> <p><img src="/assets/img/cl1.42bf4392.png" alt=""></p> <p>然后，我们需要在命令行中进行java文件的编译</p> <div class="language- extra-class"><pre><code>javac HelloWorld.java
+</code></pre></div><p><img src="/assets/img/cl2.c957922b.png" alt=""></p> <p>可以看到目录下生成了.class文件</p> <p>我们再从命令行中执行命令：</p> <div class="language- extra-class"><pre><code>java HelloWorld
+</code></pre></div><p><img src="/assets/img/cl3.343a87c4.png" alt=""></p> <p>上面是基本代码示例，是所有入门JAVA语言时都学过的东西，这里重新拿出来是想让大家将焦点回到class文件上，class文件是字节码格式文件，java虚拟机并不能直接识别我们平常编写的.java源文件，所以需要javac这个命令转换成.class文件。另外，如果用C或者PYTHON编写的程序正确转换成.class文件后，java虚拟机也是可以识别运行的。更多信息大家可以参考这篇。</p> <p>了解了.class文件后，我们再来思考下，我们平常在Eclipse中编写的java程序是如何运行的，也就是我们自己编写的各种类是如何被加载到jvm(java虚拟机)中去的。</p> <h2 id="你还记得java环境变量吗"><a href="#你还记得java环境变量吗" class="header-anchor">#</a> <strong>你还记得java环境变量吗？</strong></h2> <p>初学java的时候，最害怕的就是下载JDK后要配置环境变量了，关键是当时不理解，所以战战兢兢地照着书籍上或者是网络上的介绍进行操作。然后下次再弄的时候，又忘记了而且是必忘。当时，心里的想法很气愤的，想着是–这东西一点也不人性化，为什么非要自己配置环境变量呢？太不照顾菜鸟和新手了，很多菜鸟就是因为卡在环境变量的配置上，遭受了太多的挫败感。</p> <p>因为我是在Windows下编程的，所以只讲Window平台上的环境变量，主要有3个：JAVA_HOME、PATH、CLASSPATH。</p> <p><strong>JAVA_HOME</strong></p> <p>指的是你JDK安装的位置，一般默认安装在C盘，如</p> <div class="language- extra-class"><pre><code>C:\Program Files\Java\jdk1.8.0_91
+</code></pre></div><p><strong>PATH</strong></p> <p>将程序路径包含在PATH当中后，在命令行窗口就可以直接键入它的名字了，而不再需要键入它的全路径,比如上面代码中我用的到javac和java两个命令。
+一般的</p> <div class="language- extra-class"><pre><code>PATH=%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;%PATH%;
+</code></pre></div><p>也就是在原来的PATH路径上添加JDK目录下的bin目录和jre目录的bin.</p> <p><strong>CLASSPATH</strong></p> <div class="language- extra-class"><pre><code>CLASSPATH=.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar
+</code></pre></div><p>一看就是指向jar包路径。
+需要注意的是前面的.;，.代表当前目录。</p> <p><strong>环境变量的设置与查看</strong></p> <p>设置可以右击我的电脑，然后点击属性，再点击高级，然后点击环境变量，具体不明白的自行查阅文档。</p> <p>查看的话可以打开命令行窗口</p> <div class="language- extra-class"><pre><code>echo %JAVA_HOME%
+
+echo %PATH%
+
+echo %CLASSPATH%
+</code></pre></div><p>好了，扯远了，知道了环境变量，特别是CLASSPATH时，我们进入今天的主题Classloader.</p> <h2 id="java类加载流程"><a href="#java类加载流程" class="header-anchor">#</a> <strong>JAVA类加载流程</strong></h2> <p>Java语言系统自带有三个类加载器:</p> <ul><li>Bootstrap ClassLoader 最顶层的加载类，主要加载核心类库，%JRE_HOME%\lib下的rt.jar、resources.jar、charsets.jar和class等。另外需要注意的是可以通过启动jvm时指定-Xbootclasspath和路径来改变Bootstrap ClassLoader的加载目录。比如java -Xbootclasspath/a:path被指定的文件追加到默认的bootstrap路径中。我们可以打开我的电脑，在上面的目录下查看，看看这些jar包是不是存在于这个目录。</li> <li>Extention ClassLoader 扩展的类加载器，加载目录%JRE_HOME%\lib\ext目录下的jar包和class文件。还可以加载-D java.ext.dirs选项指定的目录。</li> <li>Appclass Loader也称为SystemAppClass 加载当前应用的classpath的所有类。</li></ul> <p>我们上面简单介绍了3个ClassLoader。说明了它们加载的路径。并且还提到了-Xbootclasspath和-D java.ext.dirs这两个虚拟机参数选项。</p> <h2 id="加载顺序"><a href="#加载顺序" class="header-anchor">#</a> <strong>加载顺序？</strong></h2> <p>我们看到了系统的3个类加载器，但我们可能不知道具体哪个先行呢？</p> <p>我可以先告诉你答案</p> <ul><li>Bootstrap CLassloder</li> <li>Extention ClassLoader</li> <li>AppClassLoader</li></ul> <p>为了更好的理解，我们可以查看源码。</p> <p>看sun.misc.Launcher,它是一个java虚拟机的入口应用。</p> <div class="language- extra-class"><pre><code>public class Launcher {
+    private static Launcher launcher = new Launcher();
+    private static String bootClassPath =
+        System.getProperty(&quot;sun.boot.class.path&quot;);
+
+    public static Launcher getLauncher() {
+        return launcher;
+    }
+
+    private ClassLoader loader;
+
+    public Launcher() {
+        // Create the extension class loader
+        ClassLoader extcl;
+        try {
+            extcl = ExtClassLoader.getExtClassLoader();
+        } catch (IOException e) {
+            throw new InternalError(
+                &quot;Could not create extension class loader&quot;, e);
+        }
+
+        // Now create the class loader to use to launch the application
+        try {
+            loader = AppClassLoader.getAppClassLoader(extcl);
+        } catch (IOException e) {
+            throw new InternalError(
+                &quot;Could not create application class loader&quot;, e);
+        }
+
+        //设置AppClassLoader为线程上下文类加载器，这个文章后面部分讲解
+        Thread.currentThread().setContextClassLoader(loader);
+    }
+
+    /*
+     * Returns the class loader used to launch the main application.
+     */
+    public ClassLoader getClassLoader() {
+        return loader;
+    }
+    /*
+     * The class loader used for loading installed extensions.
+     */
+    static class ExtClassLoader extends URLClassLoader {}
+
+/**
+     * The class loader used for loading from java.class.path.
+     * runs in a restricted security context.
+     */
+    static class AppClassLoader extends URLClassLoader {}
+</code></pre></div><p>源码有精简，我们可以得到相关的信息。</p> <ul><li>Launcher初始化了ExtClassLoader和AppClassLoader。</li> <li>Launcher中并没有看见BootstrapClassLoader，但通过System.getProperty(&quot;sun.boot.class.path&quot;)得到了字符串bootClassPath,这个应该就是BootstrapClassLoader加载的jar包路径。</li></ul> <p>我们可以先代码测试一下sun.boot.class.path是什么内容。</p> <div class="language- extra-class"><pre><code>System.out.println(System.getProperty(&quot;sun.boot.class.path&quot;));
+</code></pre></div><p>得到的结果是：</p> <div class="language- extra-class"><pre><code>C:\Program Files\Java\jre1.8.0_91\lib\resources.jar;
+C:\Program Files\Java\jre1.8.0_91\lib\rt.jar;
+C:\Program Files\Java\jre1.8.0_91\lib\sunrsasign.jar;
+C:\Program Files\Java\jre1.8.0_91\lib\jsse.jar;
+C:\Program Files\Java\jre1.8.0_91\lib\jce.jar;
+C:\Program Files\Java\jre1.8.0_91\lib\charsets.jar;
+C:\Program Files\Java\jre1.8.0_91\lib\jfr.jar;
+C:\Program Files\Java\jre1.8.0_91\classes
+</code></pre></div><p>可以看到，这些全是JRE目录下的jar包或者是class文件。</p> <h2 id="extclassloader源码"><a href="#extclassloader源码" class="header-anchor">#</a> <strong>ExtClassLoader源码</strong></h2> <p>如果你有足够的好奇心，你应该会对它的源码感兴趣</p> <div class="language- extra-class"><pre><code>/*
+ * The class loader used for loading installed extensions.
+ */
+static class ExtClassLoader extends URLClassLoader {
+
+    static {
+        ClassLoader.registerAsParallelCapable();
+    }
+
+    /**
+     * create an ExtClassLoader. The ExtClassLoader is created
+     * within a context that limits which files it can read
+     */
+    public static ExtClassLoader getExtClassLoader() throws IOException
+    {
+        final File[] dirs = getExtDirs();
+
+        try {
+            // Prior implementations of this doPrivileged() block supplied
+            // aa synthesized ACC via a call to the private method
+            // ExtClassLoader.getContext().
+
+            return AccessController.doPrivileged(
+                new PrivilegedExceptionAction&lt;ExtClassLoader&gt;() {
+                    public ExtClassLoader run() throws IOException {
+                        int len = dirs.length;
+                        for (int i = 0; i &lt; len; i++) {
+                            MetaIndex.registerDirectory(dirs[i]);
+                        }
+                        return new ExtClassLoader(dirs);
+                    }
+                });
+        } catch (java.security.PrivilegedActionException e) {
+            throw (IOException) e.getException();
+        }
+    }
+
+    private static File[] getExtDirs() {
+        String s = System.getProperty(&quot;java.ext.dirs&quot;);
+        File[] dirs;
+        if (s != null) {
+            StringTokenizer st =
+                new StringTokenizer(s, File.pathSeparator);
+            int count = st.countTokens();
+            dirs = new File[count];
+            for (int i = 0; i &lt; count; i++) {
+                dirs[i] = new File(st.nextToken());
+            }
+        } else {
+            dirs = new File[0];
+        }
+        return dirs;
+    }
+
+......
+    }
+</code></pre></div><p>我们先前的内容有说过，可以指定-D java.ext.dirs参数来添加和改变ExtClassLoader的加载路径。这里我们通过可以编写测试代码。</p> <div class="language- extra-class"><pre><code>System.out.println(System.getProperty(&quot;java.ext.dirs&quot;));
+</code></pre></div><p>结果如下：</p> <div class="language- extra-class"><pre><code>C:\Program Files\Java\jre1.8.0_91\lib\ext;C:\Windows\Sun\Java\lib\ext
+</code></pre></div><h2 id="appclassloader源码"><a href="#appclassloader源码" class="header-anchor">#</a> <strong>AppClassLoader源码</strong></h2> <div class="language- extra-class"><pre><code>/**
+ * The class loader used for loading from java.class.path.
+ * runs in a restricted security context.
+ */
+static class AppClassLoader extends URLClassLoader {
+
+
+    public static ClassLoader getAppClassLoader(final ClassLoader extcl)
+        throws IOException
+    {
+        final String s = System.getProperty(&quot;java.class.path&quot;);
+        final File[] path = (s == null) ? new File[0] : getClassPath(s);
+
+ 
+        return AccessController.doPrivileged(
+            new PrivilegedAction&lt;AppClassLoader&gt;() {
+                public AppClassLoader run() {
+                URL[] urls =
+                    (s == null) ? new URL[0] : pathToURLs(path);
+                return new AppClassLoader(urls, extcl);
+            }
+        });
+    }
+
+    ......
+}
+</code></pre></div><p>可以看到AppClassLoader加载的就是java.class.path下的路径。我们同样打印它的值。</p> <div class="language- extra-class"><pre><code>System.out.println(System.getProperty(&quot;java.class.path&quot;));
+</code></pre></div><p>结果：</p> <div class="language- extra-class"><pre><code>D:\workspace\ClassLoaderDemo\bin
+</code></pre></div><p>这个路径其实就是当前java工程目录bin，里面存放的是编译生成的class文件。</p> <p>好了，自此我们已经知道了BootstrapClassLoader、ExtClassLoader、AppClassLoader实际是查阅相应的环境属性sun.boot.class.path、java.ext.dirs和java.class.path来加载资源文件的。</p> <p>接下来我们探讨它们的加载顺序，我们先用Eclipse建立一个java工程。</p> <p><img src="/assets/img/cl4.52c5307a.png" alt=""></p> <p>然后创建一个Test.java文件。</p> <div class="language- extra-class"><pre><code>public class Test{}
+</code></pre></div><p>然后，编写一个ClassLoaderTest.java文件。</p> <div class="language- extra-class"><pre><code>public class ClassLoaderTest {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+    
+        ClassLoader cl = Test.class.getClassLoader();
+        
+        System.out.println(&quot;ClassLoader is:&quot;+cl.toString());
+        
+    }
+
+}
+</code></pre></div><p>我们获取到了Test.class文件的类加载器，然后打印出来。结果是：</p> <div class="language- extra-class"><pre><code>ClassLoader is:sun.misc.Launcher$AppClassLoader@73d16e93  
+</code></pre></div><p>也就是说明Test.class文件是由AppClassLoader加载的。</p> <p>这个Test类是我们自己编写的，那么int.class或者是String.class的加载是由谁完成的呢？
+我们可以在代码中尝试</p> <div class="language- extra-class"><pre><code>public class ClassLoaderTest {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+    
+        ClassLoader cl = Test.class.getClassLoader();
+        
+        System.out.println(&quot;ClassLoader is:&quot;+cl.toString());
+        
+        cl = int.class.getClassLoader();
+        
+        System.out.println(&quot;ClassLoader is:&quot;+cl.toString());
+        
+    }
+
+}
+</code></pre></div><p>运行一下，却报错了</p> <div class="language- extra-class"><pre><code>ClassLoader is:sun.misc.Launcher$AppClassLoader@73d16e93
+Exception in thread &quot;main&quot; java.lang.NullPointerException
+    at ClassLoaderTest.main(ClassLoaderTest.java:15)
+</code></pre></div><p>提示的是空指针，意思是int.class这类基础类没有类加载器加载？</p> <p>当然不是！</p> <p>int.class是由Bootstrap ClassLoader加载的。要想弄明白这些，我们首先得知道一个前提。</p> <h2 id="每个类加载器都有一个父加载器"><a href="#每个类加载器都有一个父加载器" class="header-anchor">#</a> <strong>每个类加载器都有一个父加载器</strong></h2> <p>每个类加载器都有一个父加载器，比如加载Test.class是由AppClassLoader完成，那么AppClassLoader也有一个父加载器，怎么样获取呢？很简单，通过getParent方法。比如代码可以这样编写：</p> <div class="language- extra-class"><pre><code>ClassLoader cl = Test.class.getClassLoader();
+        
+System.out.println(&quot;ClassLoader is:&quot;+cl.toString());
+System.out.println(&quot;ClassLoader\'s parent is:&quot;+cl.getParent().toString());
+</code></pre></div><p>运行结果如下：</p> <div class="language- extra-class"><pre><code>ClassLoader is:sun.misc.Launcher$AppClassLoader@73d16e93
+ClassLoader's parent is:sun.misc.Launcher$ExtClassLoader@15db9742
+</code></pre></div><p>这个说明，AppClassLoader的父加载器是ExtClassLoader。那么ExtClassLoader的父加载器又是谁呢？</p> <div class="language- extra-class"><pre><code>System.out.println(&quot;ClassLoader is:&quot;+cl.toString());
+System.out.println(&quot;ClassLoader\'s parent is:&quot;+cl.getParent().toString());
+System.out.println(&quot;ClassLoader\'s grand father is:&quot;+cl.getParent().getParent().toString());
+</code></pre></div><p>运行如果：</p> <div class="language- extra-class"><pre><code>ClassLoader is:sun.misc.Launcher$AppClassLoader@73d16e93
+Exception in thread &quot;main&quot; ClassLoader's parent is:sun.misc.Launcher$ExtClassLoader@15db9742
+java.lang.NullPointerException
+    at ClassLoaderTest.main(ClassLoaderTest.java:13)
+</code></pre></div><p>又是一个空指针异常，这表明ExtClassLoader也没有父加载器。那么，为什么标题又是每一个加载器都有一个父加载器呢？这不矛盾吗？为了解释这一点，我们还需要看下面的一个基础前提。</p> <h2 id="父加载器不是父类"><a href="#父加载器不是父类" class="header-anchor">#</a> <strong>父加载器不是父类</strong></h2> <p>我们先前已经粘贴了ExtClassLoader和AppClassLoader的代码。</p> <div class="language- extra-class"><pre><code>static class ExtClassLoader extends URLClassLoader {}
+static class AppClassLoader extends URLClassLoader {}
+</code></pre></div><p>可以看见ExtClassLoader和AppClassLoader同样继承自URLClassLoader，但上面一小节代码中，为什么调用AppClassLoader的getParent()代码会得到ExtClassLoader的实例呢？先从URLClassLoader说起，这个类又是什么？</p> <p>先上一张类的继承关系图</p> <p><img src="/assets/img/cl5.a82c04e6.png" alt=""></p> <p>URLClassLoader的源码中并没有找到getParent()方法。这个方法在ClassLoader.java中。</p> <div class="language- extra-class"><pre><code>public abstract class ClassLoader {
+
+// The parent class loader for delegation
+// Note: VM hardcoded the offset of this field, thus all new fields
+// must be added *after* it.
+private final ClassLoader parent;
+// The class loader for the system
+    // @GuardedBy(&quot;ClassLoader.class&quot;)
+private static ClassLoader scl;
+
+private ClassLoader(Void unused, ClassLoader parent) {
+    this.parent = parent;
+    ...
+}
+protected ClassLoader(ClassLoader parent) {
+    this(checkCreateClassLoader(), parent);
+}
+protected ClassLoader() {
+    this(checkCreateClassLoader(), getSystemClassLoader());
+}
+public final ClassLoader getParent() {
+    if (parent == null)
+        return null;
+    return parent;
+}
+public static ClassLoader getSystemClassLoader() {
+    initSystemClassLoader();
+    if (scl == null) {
+        return null;
+    }
+    return scl;
+}
+
+private static synchronized void initSystemClassLoader() {
+    if (!sclSet) {
+        if (scl != null)
+            throw new IllegalStateException(&quot;recursive invocation&quot;);
+        sun.misc.Launcher l = sun.misc.Launcher.getLauncher();
+        if (l != null) {
+            Throwable oops = null;
+            //通过Launcher获取ClassLoader
+            scl = l.getClassLoader();
+            try {
+                scl = AccessController.doPrivileged(
+                    new SystemClassLoaderAction(scl));
+            } catch (PrivilegedActionException pae) {
+                oops = pae.getCause();
+                if (oops instanceof InvocationTargetException) {
+                    oops = oops.getCause();
+                }
+            }
+            if (oops != null) {
+                if (oops instanceof Error) {
+                    throw (Error) oops;
+                } else {
+                    // wrap the exception
+                    throw new Error(oops);
+                }
+            }
+        }
+        sclSet = true;
+    }
+}
+}
+</code></pre></div><p>我们可以看到getParent()实际上返回的就是一个ClassLoader对象parent，parent的赋值是在ClassLoader对象的构造方法中，它有两个情况：</p> <ul><li>由外部类创建ClassLoader时直接指定一个ClassLoader为parent。</li> <li>由getSystemClassLoader()方法生成，也就是在sun.misc.Laucher通过getClassLoader()获取，也就是AppClassLoader。直白的说，一个ClassLoader创建时如果没有指定parent，那么它的parent默认就是AppClassLoader。</li></ul> <p>我们主要研究的是ExtClassLoader与AppClassLoader的parent的来源，正好它们与Launcher类有关，我们上面已经粘贴过Launcher的部分代码。</p> <div class="language- extra-class"><pre><code>public class Launcher {
+    private static URLStreamHandlerFactory factory = new Factory();
+    private static Launcher launcher = new Launcher();
+    private static String bootClassPath =
+        System.getProperty(&quot;sun.boot.class.path&quot;);
+
+    public static Launcher getLauncher() {
+        return launcher;
+    }
+
+    private ClassLoader loader;
+
+    public Launcher() {
+        // Create the extension class loader
+        ClassLoader extcl;
+        try {
+            extcl = ExtClassLoader.getExtClassLoader();
+        } catch (IOException e) {
+            throw new InternalError(
+                &quot;Could not create extension class loader&quot;, e);
+        }
+
+        // Now create the class loader to use to launch the application
+        try {
+        //将ExtClassLoader对象实例传递进去
+            loader = AppClassLoader.getAppClassLoader(extcl);
+        } catch (IOException e) {
+            throw new InternalError(
+                &quot;Could not create application class loader&quot;, e);
+        }
+
+public ClassLoader getClassLoader() {
+        return loader;
+    }
+static class ExtClassLoader extends URLClassLoader {
+
+        /**
+         * create an ExtClassLoader. The ExtClassLoader is created
+         * within a context that limits which files it can read
+         */
+        public static ExtClassLoader getExtClassLoader() throws IOException
+        {
+            final File[] dirs = getExtDirs();
+
+            try {
+                // Prior implementations of this doPrivileged() block supplied
+                // aa synthesized ACC via a call to the private method
+                // ExtClassLoader.getContext().
+
+                return AccessController.doPrivileged(
+                    new PrivilegedExceptionAction&lt;ExtClassLoader&gt;() {
+                        public ExtClassLoader run() throws IOException {
+                            //ExtClassLoader在这里创建
+                            return new ExtClassLoader(dirs);
+                        }
+                    });
+            } catch (java.security.PrivilegedActionException e) {
+                throw (IOException) e.getException();
+            }
+        }
+
+
+        /*
+         * Creates a new ExtClassLoader for the specified directories.
+         */
+        public ExtClassLoader(File[] dirs) throws IOException {
+            super(getExtURLs(dirs), null, factory);
+           
+        }
+        }
+ }
+</code></pre></div><p>我们需要注意的是</p> <div class="language- extra-class"><pre><code>ClassLoader extcl;
+        
+extcl = ExtClassLoader.getExtClassLoader();
+
+loader = AppClassLoader.getAppClassLoader(extcl);
+</code></pre></div><p>代码已经说明了问题AppClassLoader的parent是一个ExtClassLoader实例。</p> <p>ExtClassLoader并没有直接找到对parent的赋值。它调用了它的父类也就是URLClassLoder的构造方法并传递了3个参数。</p> <div class="language- extra-class"><pre><code>public ExtClassLoader(File[] dirs) throws IOException {
+            super(getExtURLs(dirs), null, factory);   
+}
+</code></pre></div><p>对应的代码</p> <div class="language- extra-class"><pre><code>public  URLClassLoader(URL[] urls, ClassLoader parent,
+                          URLStreamHandlerFactory factory) {
+     super(parent);
+}
+</code></pre></div><p>答案已经很明了了，ExtClassLoader的parent为null。</p> <p>上面张贴这么多代码也是为了说明AppClassLoader的parent是ExtClassLoader，ExtClassLoader的parent是null。这符合我们之前编写的测试代码。</p> <p>不过，细心的同学发现，还是有疑问的我们只看到ExtClassLoader和AppClassLoader的创建，那么BootstrapClassLoader呢？</p> <p>还有，ExtClassLoader的父加载器为null,但是Bootstrap CLassLoader却可以当成它的父加载器这又是为何呢？</p> <p>我们继续往下进行。</p> <h2 id="bootstrap-classloader是由c-编写的。"><a href="#bootstrap-classloader是由c-编写的。" class="header-anchor">#</a> <strong>Bootstrap ClassLoader是由C++编写的。</strong></h2> <p>Bootstrap ClassLoader是由C/C++编写的，它本身是虚拟机的一部分，所以它并不是一个JAVA类，也就是无法在java代码中获取它的引用，JVM启动时通过Bootstrap类加载器加载rt.jar等核心jar包中的class文件，之前的int.class,String.class都是由它加载。然后呢，我们前面已经分析了，JVM初始化sun.misc.Launcher并创建Extension ClassLoader和AppClassLoader实例。并将ExtClassLoader设置为AppClassLoader的父加载器。Bootstrap没有父加载器，但是它却可以作用一个ClassLoader的父加载器。比如ExtClassLoader。这也可以解释之前通过ExtClassLoader的getParent方法获取为Null的现象。具体是什么原因，很快就知道答案了。</p> <p><strong>双亲委托</strong></p> <p><strong>双亲委托。</strong></p> <p>我们终于来到了这一步了。</p> <p>一个类加载器查找class和resource时，是通过“委托模式”进行的，它首先判断这个class是不是已经加载成功，如果没有的话它并不是自己进行查找，而是先通过父加载器，然后递归下去，直到Bootstrap ClassLoader，如果Bootstrap classloader找到了，直接返回，如果没有找到，则一级一级返回，最后到达自身去查找这些对象。这种机制就叫做双亲委托。
+整个流程可以如下图所示：</p> <p><img src="/assets/img/cl6.cb878e1e.png" alt=""></p> <p>这张图是用时序图画出来的，不过画出来的结果我却自己都觉得不理想。</p> <p>大家可以看到2根箭头，蓝色的代表类加载器向上委托的方向，如果当前的类加载器没有查询到这个class对象已经加载就请求父加载器（不一定是父类）进行操作，然后以此类推。直到Bootstrap ClassLoader。如果Bootstrap ClassLoader也没有加载过此class实例，那么它就会从它指定的路径中去查找，如果查找成功则返回，如果没有查找成功则交给子类加载器，也就是ExtClassLoader,这样类似操作直到终点，也就是我上图中的红色箭头示例。</p> <p>用序列描述一下：</p> <ul><li>一个AppClassLoader查找资源时，先看看缓存是否有，缓存有从缓存中获取，否则委托给父加载器。</li> <li>递归，重复第1部的操作。</li> <li>如果ExtClassLoader也没有加载过，则由Bootstrap ClassLoader出面，它首先查找缓存，如果没有找到的话，就去找自己的规定的路径下，也就是sun.mic.boot.class下面的路径。找到就返回，没有找到，让子加载器自己去找。</li> <li>Bootstrap ClassLoader如果没有查找成功，则ExtClassLoader自己在java.ext.dirs路径中去查找，查找成功就返回，查找不成功，再向下让子加载器找。</li> <li>ExtClassLoader查找不成功，AppClassLoader就自己查找，在java.class.path路径下查找。找到就返回。如果没有找到就让子类找，如果没有子类会怎么样？抛出各种异常。</li></ul> <p>上面的序列，详细说明了双亲委托的加载流程。我们可以发现委托是从下向上，然后具体查找过程却是自上至下。</p> <p>我说过上面用时序图画的让自己不满意，现在用框图，最原始的方法再画一次。</p> <p><img src="/assets/img/cl7.f8634da8.png" alt=""></p> <p>上面已经详细介绍了加载过程，但具体为什么是这样加载，我们还需要了解几个个重要的方法loadClass()、findLoadedClass()、findClass()、defineClass()。</p> <h2 id="重要方法"><a href="#重要方法" class="header-anchor">#</a> <strong>重要方法</strong></h2> <p><strong>loadClass()</strong></p> <p>JDK文档中是这样写的，通过指定的全限定类名加载class，它通过同名的loadClass(String,boolean)方法。</p> <div class="language- extra-class"><pre><code>protected Class&lt;?&gt; loadClass(String name,
+                             boolean resolve)
+                      throws ClassNotFoundException
+</code></pre></div><p>上面是方法原型，一般实现这个方法的步骤是</p> <ul><li>执行findLoadedClass(String)去检测这个class是不是已经加载过了。</li> <li>执行父加载器的loadClass方法。如果父加载器为null，则jvm内置的加载器去替代，也就是Bootstrap ClassLoader。这也解释了ExtClassLoader的parent为null,但仍然说Bootstrap ClassLoader是它的父加载器。</li> <li>如果向上委托父加载器没有加载成功，则通过findClass(String)查找。</li></ul> <p>如果class在上面的步骤中找到了，参数resolve又是true的话，那么loadClass()又会调用resolveClass(Class)这个方法来生成最终的Class对象。 我们可以从源代码看出这个步骤。</p> <div class="language- extra-class"><pre><code>protected Class&lt;?&gt; loadClass(String name, boolean resolve)
+        throws ClassNotFoundException
+    {
+        synchronized (getClassLoadingLock(name)) {
+            // 首先，检测是否已经加载
+            Class&lt;?&gt; c = findLoadedClass(name);
+            if (c == null) {
+                long t0 = System.nanoTime();
+                try {
+                    if (parent != null) {
+                        //父加载器不为空则调用父加载器的loadClass
+                        c = parent.loadClass(name, false);
+                    } else {
+                        //父加载器为空则调用Bootstrap Classloader
+                        c = findBootstrapClassOrNull(name);
+                    }
+                } catch (ClassNotFoundException e) {
+                    // ClassNotFoundException thrown if class not found
+                    // from the non-null parent class loader
+                }
+
+                if (c == null) {
+                    // If still not found, then invoke findClass in order
+                    // to find the class.
+                    long t1 = System.nanoTime();
+                    //父加载器没有找到，则调用findclass
+                    c = findClass(name);
+
+                    // this is the defining class loader; record the stats
+                    sun.misc.PerfCounter.getParentDelegationTime().addTime(t1 - t0);
+                    sun.misc.PerfCounter.getFindClassTime().addElapsedTimeFrom(t1);
+                    sun.misc.PerfCounter.getFindClasses().increment();
+                }
+            }
+            if (resolve) {
+                //调用resolveClass()
+                resolveClass(c);
+            }
+            return c;
+        }
+    }
+</code></pre></div><p>代码解释了双亲委托。</p> <p>另外，要注意的是如果要编写一个classLoader的子类，也就是自定义一个classloader，建议覆盖findClass()方法，而不要直接改写loadClass()方法。</p> <p>另外</p> <div class="language- extra-class"><pre><code>if (parent != null) {
+    //父加载器不为空则调用父加载器的loadClass
+    c = parent.loadClass(name, false);
+} else {
+    //父加载器为空则调用Bootstrap Classloader
+    c = findBootstrapClassOrNull(name);
+}
+</code></pre></div><p>前面说过ExtClassLoader的parent为null，所以它向上委托时，系统会为它指定Bootstrap ClassLoader。</p> <h2 id="自定义classloader"><a href="#自定义classloader" class="header-anchor">#</a> <strong>自定义ClassLoader</strong></h2> <p>不知道大家有没有发现，不管是Bootstrap ClassLoader还是ExtClassLoader等，这些类加载器都只是加载指定的目录下的jar包或者资源。如果在某种情况下，我们需要动态加载一些东西呢？比如从D盘某个文件夹加载一个class文件，或者从网络上下载class主内容然后再进行加载，这样可以吗？</p> <p>如果要这样做的话，需要我们自定义一个classloader。</p> <p><strong>自定义步骤</strong></p> <ul><li>编写一个类继承自ClassLoader抽象类。</li> <li>复写它的findClass()方法。</li> <li>在findClass()方法中调用defineClass()。</li></ul> <p><strong>defineClass()</strong></p> <p>这个方法在编写自定义classloader的时候非常重要，它能将class二进制内容转换成Class对象，如果不符合要求的会抛出各种异常。</p> <p><strong>注意点：</strong></p> <p>**一个ClassLoader创建时如果没有指定parent，那么它的parent默认就是AppClassLoader。 **</p> <p>上面说的是，如果自定义一个ClassLoader，默认的parent父加载器是AppClassLoader，因为这样就能够保证它能访问系统内置加载器加载成功的class文件。</p> <h2 id="自定义classloader示例之diskclassloader。"><a href="#自定义classloader示例之diskclassloader。" class="header-anchor">#</a> <strong>自定义ClassLoader示例之DiskClassLoader。</strong></h2> <p>假设我们需要一个自定义的classloader,默认加载路径为D:\lib下的jar包和资源。</p> <p>我们写编写一个测试用的类文件，Test.java</p> <p>Test.java</p> <div class="language- extra-class"><pre><code>package com.frank.test;
+
+public class Test {
+    
+    public void say(){
+        System.out.println(&quot;Say Hello&quot;);
+    }
+
+}
+</code></pre></div><p>然后将它编译过年class文件Test.class放到D:\lib这个路径下。</p> <p>DiskClassLoader</p> <p>我们编写DiskClassLoader的代码。</p> <div class="language- extra-class"><pre><code>import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+
+public class DiskClassLoader extends ClassLoader {
+    
+    private String mLibPath;
+    
+    public DiskClassLoader(String path) {
+        // TODO Auto-generated constructor stub
+        mLibPath = path;
+    }
+
+    @Override
+    protected Class&lt;?&gt; findClass(String name) throws ClassNotFoundException {
+        // TODO Auto-generated method stub
+        
+        String fileName = getFileName(name);
+        
+        File file = new File(mLibPath,fileName);
+        
+        try {
+            FileInputStream is = new FileInputStream(file);
+            
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            int len = 0;
+            try {
+                while ((len = is.read()) != -1) {
+                    bos.write(len);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            
+            byte[] data = bos.toByteArray();
+            is.close();
+            bos.close();
+            
+            return defineClass(name,data,0,data.length);
+            
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        
+        return super.findClass(name);
+    }
+
+    //获取要加载 的class文件名
+    private String getFileName(String name) {
+        // TODO Auto-generated method stub
+        int index = name.lastIndexOf('.');
+        if(index == -1){ 
+            return name+&quot;.class&quot;;
+        }else{
+            return name.substring(index+1)+&quot;.class&quot;;
+        }
+    }
+    
+}
+</code></pre></div><p>我们在findClass()方法中定义了查找class的方法，然后数据通过defineClass()生成了Class对象。</p> <p><strong>测试</strong></p> <p>现在我们要编写测试代码。我们知道如果调用一个Test对象的say方法，它会输出&quot;Say Hello&quot;这条字符串。但现在是我们把Test.class放置在应用工程所有的目录之外，我们需要加载它，然后执行它的方法。具体效果如何呢？我们编写的DiskClassLoader能不能顺利完成任务呢？我们拭目以待。</p> <div class="language- extra-class"><pre><code>import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+public class ClassLoaderTest {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+    
+        //创建自定义classloader对象。
+        DiskClassLoader diskLoader = new DiskClassLoader(&quot;D:\\lib&quot;);
+        try {
+            //加载class文件
+            Class c = diskLoader.loadClass(&quot;com.frank.test.Test&quot;);
+            
+            if(c != null){
+                try {
+                    Object obj = c.newInstance();
+                    Method method = c.getDeclaredMethod(&quot;say&quot;,null);
+                    //通过反射调用Test类的say方法
+                    method.invoke(obj, null);
+                } catch (InstantiationException | IllegalAccessException 
+                        | NoSuchMethodException
+                        | SecurityException | 
+                        IllegalArgumentException | 
+                        InvocationTargetException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+            }
+        } catch (ClassNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        
+    }
+
+}
+</code></pre></div><p>我们点击运行按钮，结果显示。</p> <p><img src="/assets/img/cl8.b2264c5b.png" alt=""></p> <p>可以看到，Test类的say方法正确执行，也就是我们写的DiskClassLoader编写成功。</p> <h2 id="回首"><a href="#回首" class="header-anchor">#</a> <strong>回首</strong></h2> <p>讲了这么大的篇幅，自定义ClassLoader才姗姗来迟。 很多同学可能觉得前面有些啰嗦，但我按照自己的思路，我觉得还是有必要的。因为我是围绕一个关键字进行讲解的。</p> <p><strong>关键字是什么？</strong></p> <p><strong>关键字 路径</strong></p> <ul><li>从开篇的环境变量</li> <li>到3个主要的JDK自带的类加载器</li> <li>到自定义的ClassLoader</li></ul> <p>它们的关联部分就是路径，也就是要加载的class或者是资源的路径。</p> <p>BootStrap ClassLoader、ExtClassLoader、AppClassLoader都是加载指定路径下的jar包。如果我们要突破这种限制，实现自己某些特殊的需求，我们就得自定义ClassLoader，自已指定加载的路径，可以是磁盘、内存、网络或者其它。</p> <p><strong>所以，你说路径能不能成为它们的关键字？</strong></p> <p>当然上面的只是我个人的看法，可能不正确，但现阶段，这样有利于自己的学习理解。</p> <p><strong>自定义ClassLoader还能做什么？</strong></p> <p>突破了JDK系统内置加载路径的限制之后，我们就可以编写自定义ClassLoader，然后剩下的就叫给开发者你自己了。你可以按照自己的意愿进行业务的定制，将ClassLoader玩出花样来。</p> <p><strong>玩出花之Class解密类加载器</strong></p> <p>常见的用法是将Class文件按照某种加密手段进行加密，然后按照规则编写自定义的ClassLoader进行解密，这样我们就可以在程序中加载特定了类，并且这个类只能被我们自定义的加载器进行加载，提高了程序的安全性。</p> <p>下面，我们编写代码。</p> <p><strong>1.定义加密解密协议</strong></p> <p>加密和解密的协议有很多种，具体怎么定看业务需要。在这里，为了便于演示，我简单地将加密解密定义为异或运算。当一个文件进行异或运算后，产生了加密文件，再进行一次异或后，就进行了解密。</p> <p><strong>2.编写加密工具类</strong></p> <div class="language- extra-class"><pre><code>import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+
+public class FileUtils {
+    
+    public static void test(String path){
+        File file = new File(path);
+        try {
+            FileInputStream fis = new FileInputStream(file);
+            FileOutputStream fos = new FileOutputStream(path+&quot;en&quot;);
+            int b = 0;
+            int b1 = 0;
+            try {
+                while((b = fis.read()) != -1){
+                    //每一个byte异或一个数字2
+                    fos.write(b ^ 2);
+                }
+                fos.close();
+                fis.close();
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+
+}
+</code></pre></div><p>我们再写测试代码</p> <div class="language- extra-class"><pre><code>FileUtils.test(&quot;D:\\lib\\Test.class&quot;);
+</code></pre></div><p><img src="/assets/img/cl9.cab6a39f.png" alt=""></p> <p>然后可以看见路径D:\lib\Test.class下Test.class生成了Test.classen文件。</p> <p><strong>编写自定义classloader，DeClassLoader</strong></p> <div class="language- extra-class"><pre><code>import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+
+public class DeClassLoader extends ClassLoader {
+    
+    private String mLibPath;
+    
+    public DeClassLoader(String path) {
+        // TODO Auto-generated constructor stub
+        mLibPath = path;
+    }
+
+    @Override
+    protected Class&lt;?&gt; findClass(String name) throws ClassNotFoundException {
+        // TODO Auto-generated method stub
+        
+        String fileName = getFileName(name);
+        
+        File file = new File(mLibPath,fileName);
+        
+        try {
+            FileInputStream is = new FileInputStream(file);
+            
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            int len = 0;
+            byte b = 0;
+            try {
+                while ((len = is.read()) != -1) {
+                    //将数据异或一个数字2进行解密
+                    b = (byte) (len ^ 2);
+                    bos.write(b);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            
+            byte[] data = bos.toByteArray();
+            is.close();
+            bos.close();
+            
+            return defineClass(name,data,0,data.length);
+            
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        
+        return super.findClass(name);
+    }
+
+    //获取要加载 的class文件名
+    private String getFileName(String name) {
+        // TODO Auto-generated method stub
+        int index = name.lastIndexOf('.');
+        if(index == -1){ 
+            return name+&quot;.classen&quot;;
+        }else{
+            return name.substring(index+1)+&quot;.classen&quot;;
+        }
+    }
+    
+}
+</code></pre></div><p><strong>测试</strong></p> <p>我们可以在ClassLoaderTest.java中的main方法中如下编码：</p> <div class="language- extra-class"><pre><code>DeClassLoader diskLoader = new DeClassLoader(&quot;D:\\lib&quot;);
+        try {
+            //加载class文件
+            Class c = diskLoader.loadClass(&quot;com.frank.test.Test&quot;);
+            
+            if(c != null){
+                try {
+                    Object obj = c.newInstance();
+                    Method method = c.getDeclaredMethod(&quot;say&quot;,null);
+                    //通过反射调用Test类的say方法
+                    method.invoke(obj, null);
+                } catch (InstantiationException | IllegalAccessException 
+                        | NoSuchMethodException
+                        | SecurityException | 
+                        IllegalArgumentException | 
+                        InvocationTargetException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+            }
+        } catch (ClassNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+</code></pre></div><p>查看运行结果是：</p> <p><img src="/assets/img/cl10.b2264c5b.png" alt=""></p> <p>可以看到了，同样成功了。现在，我们有两个自定义的ClassLoader:DiskClassLoader和DeClassLoader，我们可以尝试一下，看看DiskClassLoader能不能加载Test.classen文件也就是Test.class加密后的文件。</p> <p>我们首先移除D:\lib\Test.class文件，只剩下一下Test.classen文件，然后进行代码的测试。</p> <div class="language- extra-class"><pre><code>DeClassLoader diskLoader1 = new DeClassLoader(&quot;D:\\lib&quot;);
+        try {
+            //加载class文件
+            Class c = diskLoader1.loadClass(&quot;com.frank.test.Test&quot;);
+            
+            if(c != null){
+                try {
+                    Object obj = c.newInstance();
+                    Method method = c.getDeclaredMethod(&quot;say&quot;,null);
+                    //通过反射调用Test类的say方法
+                    method.invoke(obj, null);
+                } catch (InstantiationException | IllegalAccessException 
+                        | NoSuchMethodException
+                        | SecurityException | 
+                        IllegalArgumentException | 
+                        InvocationTargetException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+            }
+        } catch (ClassNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        
+        DiskClassLoader diskLoader = new DiskClassLoader(&quot;D:\\lib&quot;);
+        try {
+            //加载class文件
+            Class c = diskLoader.loadClass(&quot;com.frank.test.Test&quot;);
+            
+            if(c != null){
+                try {
+                    Object obj = c.newInstance();
+                    Method method = c.getDeclaredMethod(&quot;say&quot;,null);
+                    //通过反射调用Test类的say方法
+                    method.invoke(obj, null);
+                } catch (InstantiationException | IllegalAccessException 
+                        | NoSuchMethodException
+                        | SecurityException | 
+                        IllegalArgumentException | 
+                        InvocationTargetException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+            }
+        } catch (ClassNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        
+    }
+</code></pre></div><p>运行结果：</p> <p><img src="/assets/img/cl11.23a92e1c.png" alt=""></p> <p>我们可以看到。DeClassLoader运行正常，而DiskClassLoader却找不到Test.class的类,并且它也无法加载Test.classen文件。</p> <h2 id="context-classloader-线程上下文类加载器"><a href="#context-classloader-线程上下文类加载器" class="header-anchor">#</a> <strong>Context ClassLoader 线程上下文类加载器</strong></h2> <p>前面讲到过Bootstrap ClassLoader、ExtClassLoader、AppClassLoader，现在又出来这么一个类加载器，这是为什么？</p> <p>前面三个之所以放在前面讲，是因为它们是真实存在的类，而且遵从”双亲委托“的机制。而ContextClassLoader其实只是一个概念。</p> <p>查看Thread.java源码可以发现</p> <div class="language- extra-class"><pre><code>public class Thread implements Runnable {
+
+/* The context ClassLoader for this thread */
+   private ClassLoader contextClassLoader;
+   
+   public void setContextClassLoader(ClassLoader cl) {
+       SecurityManager sm = System.getSecurityManager();
+       if (sm != null) {
+           sm.checkPermission(new RuntimePermission(&quot;setContextClassLoader&quot;));
+       }
+       contextClassLoader = cl;
+   }
+
+   public ClassLoader getContextClassLoader() {
+       if (contextClassLoader == null)
+           return null;
+       SecurityManager sm = System.getSecurityManager();
+       if (sm != null) {
+           ClassLoader.checkClassLoaderPermission(contextClassLoader,
+                                                  Reflection.getCallerClass());
+       }
+       return contextClassLoader;
+   }
+}
+</code></pre></div><p>contextClassLoader只是一个成员变量，通过setContextClassLoader()方法设置，通过getContextClassLoader()设置。</p> <p>每个Thread都有一个相关联的ClassLoader，默认是AppClassLoader。并且子线程默认使用父线程的ClassLoader除非子线程特别设置。</p> <p>我们同样可以编写代码来加深理解。</p> <p>现在有2个SpeakTest.class文件，一个源码是</p> <div class="language- extra-class"><pre><code>package com.frank.test;
+
+public class SpeakTest implements ISpeak {
+
+    @Override
+    public void speak() {
+        // TODO Auto-generated method stub
+        System.out.println(&quot;Test&quot;);
+    }
+
+}
+</code></pre></div><p>它生成的SpeakTest.class文件放置在D:\lib\test目录下。
+另外ISpeak.java代码</p> <div class="language- extra-class"><pre><code>package com.frank.test;
+
+public interface ISpeak {
+    public void speak();
+
+}
+</code></pre></div><p>然后，我们在这里还实现了一个SpeakTest.java</p> <div class="language- extra-class"><pre><code>package com.frank.test;
+
+public class SpeakTest implements ISpeak {
+
+    @Override
+    public void speak() {
+        // TODO Auto-generated method stub
+        System.out.println(&quot;I\' frank&quot;);
+    }
+
+}
+</code></pre></div><p>它生成的SpeakTest.class文件放置在D:\lib目录下。</p> <p>然后我们还要编写另外一个ClassLoader，DiskClassLoader1.java这个ClassLoader的代码和DiskClassLoader.java代码一致，我们要在DiskClassLoader1中加载位置于D:\lib\test中的SpeakTest.class文件。</p> <p>测试代码：</p> <div class="language- extra-class"><pre><code>DiskClassLoader1 diskLoader1 = new DiskClassLoader1(&quot;D:\\lib\\test&quot;);
+Class cls1 = null;
+try {
+//加载class文件
+ cls1 = diskLoader1.loadClass(&quot;com.frank.test.SpeakTest&quot;);
+System.out.println(cls1.getClassLoader().toString());
+if(cls1 != null){
+    try {
+        Object obj = cls1.newInstance();
+        //SpeakTest1 speak = (SpeakTest1) obj;
+        //speak.speak();
+        Method method = cls1.getDeclaredMethod(&quot;speak&quot;,null);
+        //通过反射调用Test类的speak方法
+        method.invoke(obj, null);
+    } catch (InstantiationException | IllegalAccessException 
+            | NoSuchMethodException
+            | SecurityException | 
+            IllegalArgumentException | 
+            InvocationTargetException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+    }
+}
+} catch (ClassNotFoundException e) {
+// TODO Auto-generated catch block
+e.printStackTrace();
+}
+    
+DiskClassLoader diskLoader = new DiskClassLoader(&quot;D:\\lib&quot;);
+System.out.println(&quot;Thread &quot;+Thread.currentThread().getName()+&quot; classloader: &quot;+Thread.currentThread().getContextClassLoader().toString());
+new Thread(new Runnable() {
+    
+    @Override
+    public void run() {
+        System.out.println(&quot;Thread &quot;+Thread.currentThread().getName()+&quot; classloader: &quot;+Thread.currentThread().getContextClassLoader().toString());
+        
+        // TODO Auto-generated method stub
+        try {
+            //加载class文件
+        //	Thread.currentThread().setContextClassLoader(diskLoader);
+            //Class c = diskLoader.loadClass(&quot;com.frank.test.SpeakTest&quot;);
+            ClassLoader cl = Thread.currentThread().getContextClassLoader();
+            Class c = cl.loadClass(&quot;com.frank.test.SpeakTest&quot;);
+            // Class c = Class.forName(&quot;com.frank.test.SpeakTest&quot;);
+            System.out.println(c.getClassLoader().toString());
+            if(c != null){
+                try {
+                    Object obj = c.newInstance();
+                    //SpeakTest1 speak = (SpeakTest1) obj;
+                    //speak.speak();
+                    Method method = c.getDeclaredMethod(&quot;speak&quot;,null);
+                    //通过反射调用Test类的say方法
+                    method.invoke(obj, null);
+                } catch (InstantiationException | IllegalAccessException 
+                        | NoSuchMethodException
+                        | SecurityException | 
+                        IllegalArgumentException | 
+                        InvocationTargetException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+            }
+        } catch (ClassNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+}).start();
+</code></pre></div><p>结果如下：</p> <p><img src="/assets/img/cl12.33b5b7e7.png" alt=""></p> <p>我们可以得到如下的信息：</p> <ul><li>DiskClassLoader1加载成功了SpeakTest.class文件并执行成功。</li> <li>子线程的ContextClassLoader是AppClassLoader。</li> <li>AppClassLoader加载不了父线程当中已经加载的SpeakTest.class内容。</li></ul> <p>我们修改一下代码，在子线程开头处加上这么一句内容。</p> <div class="language- extra-class"><pre><code>Thread.currentThread().setContextClassLoader(diskLoader1);
+</code></pre></div><p>结果如下：</p> <p><img src="/assets/img/cl13.d327343b.png" alt=""></p> <p>可以看到子线程的ContextClassLoader变成了DiskClassLoader。</p> <p>继续改动代码：</p> <div class="language- extra-class"><pre><code>Thread.currentThread().setContextClassLoader(diskLoader);
+</code></pre></div><p>结果：</p> <p><img src="/assets/img/cl14.e1467cb5.png" alt=""></p> <p>可以看到DiskClassLoader1和DiskClassLoader分别加载了自己路径下的SpeakTest.class文件，并且它们的类名是一样的com.frank.test.SpeakTest，但是执行结果不一样，因为它们的实际内容不一样。</p> <h2 id="context-classloader的运用时机"><a href="#context-classloader的运用时机" class="header-anchor">#</a> <strong>Context ClassLoader的运用时机</strong></h2> <p>其实这个我也不是很清楚，我的主业是Android，研究ClassLoader也是为了更好的研究Android。网上的答案说是适应那些Web服务框架软件如Tomcat等。主要为了加载不同的APP，因为加载器不一样，同一份class文件加载后生成的类是不相等的。如果有同学想多了解更多的细节，请自行查阅相关资料。</p> <h2 id="总结"><a href="#总结" class="header-anchor">#</a> <strong>总结</strong></h2> <ul><li>ClassLoader用来加载class文件的。</li> <li>系统内置的ClassLoader通过双亲委托来加载指定路径下的class和资源。</li> <li>可以自定义ClassLoader一般覆盖findClass()方法。</li> <li>ContextClassLoader与线程相关，可以获取和设置，可以绕过双亲委托的机制。</li></ul> <p><strong>下一步</strong></p> <ul><li>你可以研究ClassLoader在Web容器内的应用了，如Tomcat。</li> <li>可以尝试以这个为基础，继续学习Android中的ClassLoader机制。</li></ul></div></div> <!----> <div class="page-edit"><!----> <!----> <div class="last-updated"><span class="prefix">上次编辑于:</span> <span class="time">2022-10-19 12:58</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/bf0e6b/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">Java探针(JavaAgent)</div></a> <a href="/pages/8a1cf5/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">JDK代码写法总结1</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/bf0e6b/" class="prev">Java探针(JavaAgent)</a></span> <span class="next"><a href="/pages/8a1cf5/">JDK代码写法总结1</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/bf0e6b/"><div>
+            Java探针(JavaAgent)
+            <span class="title-tag">
+              Java
+            </span></div></a> <span class="date">10-19</span></dt></dl><dl><dd>02</dd> <dt><a href="/pages/4cdd6b/"><div>
+            唯一摩尔斯密码词
+            <span class="title-tag">
+              Java
+            </span></div></a> <span class="date">10-18</span></dt></dl><dl><dd>03</dd> <dt><a href="/pages/d19161/"><div>
+            打砖块
+            <span class="title-tag">
+              Java
+            </span></div></a> <span class="date">10-18</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><!----> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2019-2022
+    <span><a href="https://JavaInterview.cn" target="_blank">JavaInterview.cn</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"><!----><div></div><!----></div></div>
+    <script src="/assets/js/app.c60b0746.js" defer></script><script src="/assets/js/2.49c0a2f6.js" defer></script><script src="/assets/js/6.fe8901f0.js" defer></script>
+  </body>
+</html>

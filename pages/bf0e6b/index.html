@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Java探针(JavaAgent) | JavaInterview</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/assets/icon/logo_title50x50.png">
+    <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script>
+            var _hmt = _hmt || [];
+            (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?03cb08758bea6323509b897a0e0442df";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+
+            })();
+  </script>
+    <meta name="description" content="java,面试,春建,杨春建,后端,JavaInterview,interview,技术">
+    <meta name="keywords" content="java,面试,春建,杨春建,后端,JavaInterview,interview,技术,后端博客,个人技术博客,后端,后端开发,后端框架,web前端,后端面试题,技术文档,学习,面试,Spring,Kafka,MySQL,MQ,Redis,Elasticsearch,git,github,markdown">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="baidu-site-verification" content="code-dbbt0zdlBh">
+    <meta name="theme-color" content="#339af0">
+    
+    <link rel="preload" href="/assets/css/0.styles.6803abc5.css" as="style"><link rel="preload" href="/assets/js/app.c60b0746.js" as="script"><link rel="preload" href="/assets/js/2.49c0a2f6.js" as="script"><link rel="preload" href="/assets/js/9.167a6acd.js" as="script"><link rel="prefetch" href="/assets/js/10.20f55c93.js"><link rel="prefetch" href="/assets/js/100.ad6683b5.js"><link rel="prefetch" href="/assets/js/101.06ea461e.js"><link rel="prefetch" href="/assets/js/102.744d843c.js"><link rel="prefetch" href="/assets/js/103.f9898de5.js"><link rel="prefetch" href="/assets/js/104.1c744b61.js"><link rel="prefetch" href="/assets/js/105.bb12fb07.js"><link rel="prefetch" href="/assets/js/106.7df961ec.js"><link rel="prefetch" href="/assets/js/107.5baa0cc6.js"><link rel="prefetch" href="/assets/js/108.7c799906.js"><link rel="prefetch" href="/assets/js/109.2e3944b1.js"><link rel="prefetch" href="/assets/js/11.f797f70d.js"><link rel="prefetch" href="/assets/js/110.8eaa34b3.js"><link rel="prefetch" href="/assets/js/111.72557328.js"><link rel="prefetch" href="/assets/js/112.f4008bd8.js"><link rel="prefetch" href="/assets/js/113.ac022059.js"><link rel="prefetch" href="/assets/js/114.036697b6.js"><link rel="prefetch" href="/assets/js/115.9047c5ea.js"><link rel="prefetch" href="/assets/js/116.5c66e9af.js"><link rel="prefetch" href="/assets/js/117.3f2c69a0.js"><link rel="prefetch" href="/assets/js/118.4f6d1c1d.js"><link rel="prefetch" href="/assets/js/119.63e355a1.js"><link rel="prefetch" href="/assets/js/12.748a35b0.js"><link rel="prefetch" href="/assets/js/120.21d7a9aa.js"><link rel="prefetch" href="/assets/js/121.4ee2d311.js"><link rel="prefetch" href="/assets/js/122.f1980607.js"><link rel="prefetch" href="/assets/js/123.4df52c2b.js"><link rel="prefetch" href="/assets/js/124.b1a4df81.js"><link rel="prefetch" href="/assets/js/125.fdf1ccdc.js"><link rel="prefetch" href="/assets/js/126.9af9bc4c.js"><link rel="prefetch" href="/assets/js/127.219ac1a0.js"><link rel="prefetch" href="/assets/js/128.5163406c.js"><link rel="prefetch" href="/assets/js/129.80e8e158.js"><link rel="prefetch" href="/assets/js/13.a25f94be.js"><link rel="prefetch" href="/assets/js/130.2631286f.js"><link rel="prefetch" href="/assets/js/131.06d6e4ed.js"><link rel="prefetch" href="/assets/js/132.d242e01e.js"><link rel="prefetch" href="/assets/js/133.8fb347b5.js"><link rel="prefetch" href="/assets/js/134.a51b199a.js"><link rel="prefetch" href="/assets/js/135.bf6cc2e3.js"><link rel="prefetch" href="/assets/js/136.c61e94d5.js"><link rel="prefetch" href="/assets/js/137.e06c863e.js"><link rel="prefetch" href="/assets/js/138.73420bab.js"><link rel="prefetch" href="/assets/js/139.286597e8.js"><link rel="prefetch" href="/assets/js/14.3884f128.js"><link rel="prefetch" href="/assets/js/140.ff84783f.js"><link rel="prefetch" href="/assets/js/141.09deb596.js"><link rel="prefetch" href="/assets/js/142.5d0228db.js"><link rel="prefetch" href="/assets/js/143.74453ba6.js"><link rel="prefetch" href="/assets/js/144.e541a240.js"><link rel="prefetch" href="/assets/js/145.5bc83b76.js"><link rel="prefetch" href="/assets/js/146.86a1dbb1.js"><link rel="prefetch" href="/assets/js/147.cc5e200d.js"><link rel="prefetch" href="/assets/js/148.8d8b6f00.js"><link rel="prefetch" href="/assets/js/149.4df6c0d4.js"><link rel="prefetch" href="/assets/js/15.c0f83bbf.js"><link rel="prefetch" href="/assets/js/150.8bb0a169.js"><link rel="prefetch" href="/assets/js/151.567041cc.js"><link rel="prefetch" href="/assets/js/152.977bc6c0.js"><link rel="prefetch" href="/assets/js/153.4ad6f4fc.js"><link rel="prefetch" href="/assets/js/154.7c1a84db.js"><link rel="prefetch" href="/assets/js/155.3fa7a8a7.js"><link rel="prefetch" href="/assets/js/156.7f2c64d9.js"><link rel="prefetch" href="/assets/js/157.7164cbe9.js"><link rel="prefetch" href="/assets/js/158.86b059d5.js"><link rel="prefetch" href="/assets/js/159.d1cf4e75.js"><link rel="prefetch" href="/assets/js/16.9c87d0bb.js"><link rel="prefetch" href="/assets/js/160.3418f030.js"><link rel="prefetch" href="/assets/js/161.fa13791b.js"><link rel="prefetch" href="/assets/js/162.737be09d.js"><link rel="prefetch" href="/assets/js/163.5b559931.js"><link rel="prefetch" href="/assets/js/164.f15a1730.js"><link rel="prefetch" href="/assets/js/165.99dc8e01.js"><link rel="prefetch" href="/assets/js/166.c5a2abab.js"><link rel="prefetch" href="/assets/js/167.f4f72372.js"><link rel="prefetch" href="/assets/js/168.2a056e47.js"><link rel="prefetch" href="/assets/js/169.ce6e2774.js"><link rel="prefetch" href="/assets/js/17.24ccd3b2.js"><link rel="prefetch" href="/assets/js/170.a5b407e8.js"><link rel="prefetch" href="/assets/js/171.7332c48e.js"><link rel="prefetch" href="/assets/js/172.17ed085b.js"><link rel="prefetch" href="/assets/js/173.5e27410f.js"><link rel="prefetch" href="/assets/js/174.090997d9.js"><link rel="prefetch" href="/assets/js/175.da08302d.js"><link rel="prefetch" href="/assets/js/176.1d1163c6.js"><link rel="prefetch" href="/assets/js/177.ceb3720b.js"><link rel="prefetch" href="/assets/js/178.8dfbd668.js"><link rel="prefetch" href="/assets/js/179.dba67a17.js"><link rel="prefetch" href="/assets/js/18.7a7386f6.js"><link rel="prefetch" href="/assets/js/180.38924408.js"><link rel="prefetch" href="/assets/js/181.e7202f25.js"><link rel="prefetch" href="/assets/js/182.1e97cf67.js"><link rel="prefetch" href="/assets/js/183.07873ee3.js"><link rel="prefetch" href="/assets/js/184.1ebec67f.js"><link rel="prefetch" href="/assets/js/185.5390acc8.js"><link rel="prefetch" href="/assets/js/186.829174ec.js"><link rel="prefetch" href="/assets/js/187.f2719725.js"><link rel="prefetch" href="/assets/js/188.6ea65d1e.js"><link rel="prefetch" href="/assets/js/189.f55f3115.js"><link rel="prefetch" href="/assets/js/19.af278713.js"><link rel="prefetch" href="/assets/js/190.6df83d56.js"><link rel="prefetch" href="/assets/js/191.4be908bf.js"><link rel="prefetch" href="/assets/js/192.c57cdd51.js"><link rel="prefetch" href="/assets/js/193.19fd16de.js"><link rel="prefetch" href="/assets/js/194.0886ca64.js"><link rel="prefetch" href="/assets/js/195.b94b05c4.js"><link rel="prefetch" href="/assets/js/196.91bd37fe.js"><link rel="prefetch" href="/assets/js/197.992d085f.js"><link rel="prefetch" href="/assets/js/198.3116c35c.js"><link rel="prefetch" href="/assets/js/199.2fd2c1ee.js"><link rel="prefetch" href="/assets/js/20.71210941.js"><link rel="prefetch" href="/assets/js/200.2debd005.js"><link rel="prefetch" href="/assets/js/201.fc9a2ea9.js"><link rel="prefetch" href="/assets/js/202.a48011d3.js"><link rel="prefetch" href="/assets/js/203.648034e1.js"><link rel="prefetch" href="/assets/js/204.c1205a75.js"><link rel="prefetch" href="/assets/js/205.d1995bac.js"><link rel="prefetch" href="/assets/js/206.31e3ac89.js"><link rel="prefetch" href="/assets/js/207.651907dc.js"><link rel="prefetch" href="/assets/js/208.6fb4d8e3.js"><link rel="prefetch" href="/assets/js/209.ee001a99.js"><link rel="prefetch" href="/assets/js/21.2f5d4d05.js"><link rel="prefetch" href="/assets/js/210.7d8022ca.js"><link rel="prefetch" href="/assets/js/211.d0bc1245.js"><link rel="prefetch" href="/assets/js/212.b6a1bf12.js"><link rel="prefetch" href="/assets/js/213.f8dcaa10.js"><link rel="prefetch" href="/assets/js/214.831f96f8.js"><link rel="prefetch" href="/assets/js/215.696acabf.js"><link rel="prefetch" href="/assets/js/216.77e68bff.js"><link rel="prefetch" href="/assets/js/217.55a19f38.js"><link rel="prefetch" href="/assets/js/218.44f372a0.js"><link rel="prefetch" href="/assets/js/219.9dbe1e67.js"><link rel="prefetch" href="/assets/js/22.a550f5c5.js"><link rel="prefetch" href="/assets/js/220.efe69e22.js"><link rel="prefetch" href="/assets/js/221.c1c29b13.js"><link rel="prefetch" href="/assets/js/222.b07a72c5.js"><link rel="prefetch" href="/assets/js/223.3514effd.js"><link rel="prefetch" href="/assets/js/224.c8bef4ae.js"><link rel="prefetch" href="/assets/js/225.a2093f5c.js"><link rel="prefetch" href="/assets/js/226.38edba96.js"><link rel="prefetch" href="/assets/js/227.1e2a3ce5.js"><link rel="prefetch" href="/assets/js/228.67161bf1.js"><link rel="prefetch" href="/assets/js/229.948fd5c2.js"><link rel="prefetch" href="/assets/js/23.45f17947.js"><link rel="prefetch" href="/assets/js/230.b44b9207.js"><link rel="prefetch" href="/assets/js/231.243770b8.js"><link rel="prefetch" href="/assets/js/232.56bce850.js"><link rel="prefetch" href="/assets/js/233.c6efe323.js"><link rel="prefetch" href="/assets/js/234.89f5e794.js"><link rel="prefetch" href="/assets/js/235.97a74509.js"><link rel="prefetch" href="/assets/js/236.57ec3397.js"><link rel="prefetch" href="/assets/js/237.173faf81.js"><link rel="prefetch" href="/assets/js/238.c1464e37.js"><link rel="prefetch" href="/assets/js/239.056fc980.js"><link rel="prefetch" href="/assets/js/24.baa11248.js"><link rel="prefetch" href="/assets/js/240.4b0b2d2b.js"><link rel="prefetch" href="/assets/js/241.b2c4c6e8.js"><link rel="prefetch" href="/assets/js/242.9b1beee4.js"><link rel="prefetch" href="/assets/js/243.2d7dbe9c.js"><link rel="prefetch" href="/assets/js/244.4883a944.js"><link rel="prefetch" href="/assets/js/245.67137438.js"><link rel="prefetch" href="/assets/js/246.3bac9116.js"><link rel="prefetch" href="/assets/js/247.7ec09782.js"><link rel="prefetch" href="/assets/js/248.8d832a5d.js"><link rel="prefetch" href="/assets/js/249.12736e91.js"><link rel="prefetch" href="/assets/js/25.c67de046.js"><link rel="prefetch" href="/assets/js/250.7f884522.js"><link rel="prefetch" href="/assets/js/251.1b09b9c5.js"><link rel="prefetch" href="/assets/js/252.0e829c1b.js"><link rel="prefetch" href="/assets/js/253.9c493918.js"><link rel="prefetch" href="/assets/js/254.37dd9535.js"><link rel="prefetch" href="/assets/js/255.01b753d6.js"><link rel="prefetch" href="/assets/js/256.6f1e9ca5.js"><link rel="prefetch" href="/assets/js/257.12011cdf.js"><link rel="prefetch" href="/assets/js/258.1782d5af.js"><link rel="prefetch" href="/assets/js/259.72787035.js"><link rel="prefetch" href="/assets/js/26.0f21f71c.js"><link rel="prefetch" href="/assets/js/260.5ee79ebc.js"><link rel="prefetch" href="/assets/js/261.80f42cff.js"><link rel="prefetch" href="/assets/js/262.adc35a07.js"><link rel="prefetch" href="/assets/js/263.e2b15783.js"><link rel="prefetch" href="/assets/js/264.bf40c50d.js"><link rel="prefetch" href="/assets/js/265.3dbfef7a.js"><link rel="prefetch" href="/assets/js/266.0636db6a.js"><link rel="prefetch" href="/assets/js/267.c0decfa4.js"><link rel="prefetch" href="/assets/js/268.d8ae1aa9.js"><link rel="prefetch" href="/assets/js/269.3ac947ff.js"><link rel="prefetch" href="/assets/js/27.b7c1dc1f.js"><link rel="prefetch" href="/assets/js/270.a8462bb3.js"><link rel="prefetch" href="/assets/js/271.5460ec52.js"><link rel="prefetch" href="/assets/js/272.40096069.js"><link rel="prefetch" href="/assets/js/273.569582a6.js"><link rel="prefetch" href="/assets/js/274.5b3a3e61.js"><link rel="prefetch" href="/assets/js/275.05dd8f47.js"><link rel="prefetch" href="/assets/js/276.58ee7a62.js"><link rel="prefetch" href="/assets/js/277.ecc4f050.js"><link rel="prefetch" href="/assets/js/278.5c42fc64.js"><link rel="prefetch" href="/assets/js/279.c6c4e1db.js"><link rel="prefetch" href="/assets/js/28.ee4ee3a2.js"><link rel="prefetch" href="/assets/js/280.896320b7.js"><link rel="prefetch" href="/assets/js/281.6c06698d.js"><link rel="prefetch" href="/assets/js/282.64e7062f.js"><link rel="prefetch" href="/assets/js/283.f53635cb.js"><link rel="prefetch" href="/assets/js/284.70a6f908.js"><link rel="prefetch" href="/assets/js/285.c2b2fed4.js"><link rel="prefetch" href="/assets/js/286.524c350f.js"><link rel="prefetch" href="/assets/js/287.18268b77.js"><link rel="prefetch" href="/assets/js/288.aba186f4.js"><link rel="prefetch" href="/assets/js/289.bc82c71e.js"><link rel="prefetch" href="/assets/js/29.10914bf8.js"><link rel="prefetch" href="/assets/js/290.d627c982.js"><link rel="prefetch" href="/assets/js/291.6f57ec6b.js"><link rel="prefetch" href="/assets/js/292.90bc6ce4.js"><link rel="prefetch" href="/assets/js/293.98b37c51.js"><link rel="prefetch" href="/assets/js/294.fc3885f0.js"><link rel="prefetch" href="/assets/js/295.9a729b00.js"><link rel="prefetch" href="/assets/js/296.f618868c.js"><link rel="prefetch" href="/assets/js/297.31403b76.js"><link rel="prefetch" href="/assets/js/298.01fa278f.js"><link rel="prefetch" href="/assets/js/299.1d045807.js"><link rel="prefetch" href="/assets/js/3.501f7343.js"><link rel="prefetch" href="/assets/js/30.c713aadb.js"><link rel="prefetch" href="/assets/js/300.fb43249a.js"><link rel="prefetch" href="/assets/js/301.aa1c5645.js"><link rel="prefetch" href="/assets/js/302.6db19306.js"><link rel="prefetch" href="/assets/js/303.1270553a.js"><link rel="prefetch" href="/assets/js/304.89346d92.js"><link rel="prefetch" href="/assets/js/305.ad2c8670.js"><link rel="prefetch" href="/assets/js/306.719c1097.js"><link rel="prefetch" href="/assets/js/307.d4045a4a.js"><link rel="prefetch" href="/assets/js/308.9afad4cd.js"><link rel="prefetch" href="/assets/js/309.edeff033.js"><link rel="prefetch" href="/assets/js/31.ce9b4455.js"><link rel="prefetch" href="/assets/js/310.e4453f32.js"><link rel="prefetch" href="/assets/js/311.4c032d7d.js"><link rel="prefetch" href="/assets/js/312.f7627d20.js"><link rel="prefetch" href="/assets/js/313.265ecb11.js"><link rel="prefetch" href="/assets/js/314.2263c584.js"><link rel="prefetch" href="/assets/js/315.32bedca2.js"><link rel="prefetch" href="/assets/js/316.1ab2632c.js"><link rel="prefetch" href="/assets/js/317.56a20b3c.js"><link rel="prefetch" href="/assets/js/318.4ff08e91.js"><link rel="prefetch" href="/assets/js/319.ef5ad2ea.js"><link rel="prefetch" href="/assets/js/32.b1c7f82f.js"><link rel="prefetch" href="/assets/js/320.ad832203.js"><link rel="prefetch" href="/assets/js/321.3a4c239c.js"><link rel="prefetch" href="/assets/js/322.e953e5d3.js"><link rel="prefetch" href="/assets/js/323.4f7fe159.js"><link rel="prefetch" href="/assets/js/324.50cc8871.js"><link rel="prefetch" href="/assets/js/325.e27a092e.js"><link rel="prefetch" href="/assets/js/326.39f1baea.js"><link rel="prefetch" href="/assets/js/327.38d79deb.js"><link rel="prefetch" href="/assets/js/328.c3779a71.js"><link rel="prefetch" href="/assets/js/329.a74231e6.js"><link rel="prefetch" href="/assets/js/33.f615a609.js"><link rel="prefetch" href="/assets/js/330.223bc505.js"><link rel="prefetch" href="/assets/js/331.d0e612a4.js"><link rel="prefetch" href="/assets/js/332.73352342.js"><link rel="prefetch" href="/assets/js/333.909ae3f7.js"><link rel="prefetch" href="/assets/js/334.b8c024ad.js"><link rel="prefetch" href="/assets/js/335.db27508e.js"><link rel="prefetch" href="/assets/js/336.9cfd6870.js"><link rel="prefetch" href="/assets/js/337.3e8973fe.js"><link rel="prefetch" href="/assets/js/338.d66c805b.js"><link rel="prefetch" href="/assets/js/339.9c138264.js"><link rel="prefetch" href="/assets/js/34.009df5c0.js"><link rel="prefetch" href="/assets/js/340.e8c521ad.js"><link rel="prefetch" href="/assets/js/341.4c1b710c.js"><link rel="prefetch" href="/assets/js/342.a8623a07.js"><link rel="prefetch" href="/assets/js/343.d0a04b40.js"><link rel="prefetch" href="/assets/js/344.a1b11e9c.js"><link rel="prefetch" href="/assets/js/345.ded6a93f.js"><link rel="prefetch" href="/assets/js/346.b146b89b.js"><link rel="prefetch" href="/assets/js/347.8b47bec9.js"><link rel="prefetch" href="/assets/js/348.a2f35a12.js"><link rel="prefetch" href="/assets/js/349.d8b314cc.js"><link rel="prefetch" href="/assets/js/35.f730ce35.js"><link rel="prefetch" href="/assets/js/350.e53aabea.js"><link rel="prefetch" href="/assets/js/351.b495f397.js"><link rel="prefetch" href="/assets/js/352.b46e8dd3.js"><link rel="prefetch" href="/assets/js/353.64f80216.js"><link rel="prefetch" href="/assets/js/354.16c01a08.js"><link rel="prefetch" href="/assets/js/355.01740f8d.js"><link rel="prefetch" href="/assets/js/356.4c485791.js"><link rel="prefetch" href="/assets/js/357.0f3a2dca.js"><link rel="prefetch" href="/assets/js/358.dedc98b4.js"><link rel="prefetch" href="/assets/js/359.dd7e4d38.js"><link rel="prefetch" href="/assets/js/36.498bef1d.js"><link rel="prefetch" href="/assets/js/360.91a14f83.js"><link rel="prefetch" href="/assets/js/361.3606ff32.js"><link rel="prefetch" href="/assets/js/362.6c2a9989.js"><link rel="prefetch" href="/assets/js/363.f608289e.js"><link rel="prefetch" href="/assets/js/364.986e078c.js"><link rel="prefetch" href="/assets/js/365.2b4c2ae0.js"><link rel="prefetch" href="/assets/js/366.a0b6515b.js"><link rel="prefetch" href="/assets/js/367.7e65c199.js"><link rel="prefetch" href="/assets/js/368.8685ae3f.js"><link rel="prefetch" href="/assets/js/369.36ff471d.js"><link rel="prefetch" href="/assets/js/37.a63e77c0.js"><link rel="prefetch" href="/assets/js/370.26a3e574.js"><link rel="prefetch" href="/assets/js/371.bfe3c1e2.js"><link rel="prefetch" href="/assets/js/372.555b7fa3.js"><link rel="prefetch" href="/assets/js/373.34d9cef3.js"><link rel="prefetch" href="/assets/js/374.138bd60b.js"><link rel="prefetch" href="/assets/js/375.0a40d31f.js"><link rel="prefetch" href="/assets/js/376.52013018.js"><link rel="prefetch" href="/assets/js/377.a447b0a5.js"><link rel="prefetch" href="/assets/js/378.e2c5377b.js"><link rel="prefetch" href="/assets/js/379.6f7e97fb.js"><link rel="prefetch" href="/assets/js/38.955107f5.js"><link rel="prefetch" href="/assets/js/380.b25deca7.js"><link rel="prefetch" href="/assets/js/381.3556953b.js"><link rel="prefetch" href="/assets/js/382.97768d2c.js"><link rel="prefetch" href="/assets/js/383.86cbb33c.js"><link rel="prefetch" href="/assets/js/384.bf272c0b.js"><link rel="prefetch" href="/assets/js/385.2e8f7f50.js"><link rel="prefetch" href="/assets/js/386.aaa7499c.js"><link rel="prefetch" href="/assets/js/387.e0e5bce9.js"><link rel="prefetch" href="/assets/js/388.441cc3fe.js"><link rel="prefetch" href="/assets/js/389.bd2d6634.js"><link rel="prefetch" href="/assets/js/39.b76fcb03.js"><link rel="prefetch" href="/assets/js/390.c4e8517e.js"><link rel="prefetch" href="/assets/js/391.19565f65.js"><link rel="prefetch" href="/assets/js/392.03e9a0b7.js"><link rel="prefetch" href="/assets/js/393.d56224c5.js"><link rel="prefetch" href="/assets/js/394.29467dbd.js"><link rel="prefetch" href="/assets/js/395.c679bf11.js"><link rel="prefetch" href="/assets/js/396.88470016.js"><link rel="prefetch" href="/assets/js/397.951b94c5.js"><link rel="prefetch" href="/assets/js/398.185baa74.js"><link rel="prefetch" href="/assets/js/399.744190c2.js"><link rel="prefetch" href="/assets/js/4.6fa601ca.js"><link rel="prefetch" href="/assets/js/40.4238ae4a.js"><link rel="prefetch" href="/assets/js/400.5eee1542.js"><link rel="prefetch" href="/assets/js/401.80b6aeeb.js"><link rel="prefetch" href="/assets/js/402.ff7cd8b4.js"><link rel="prefetch" href="/assets/js/403.9cb6016a.js"><link rel="prefetch" href="/assets/js/404.5a0d96f2.js"><link rel="prefetch" href="/assets/js/405.ec13f651.js"><link rel="prefetch" href="/assets/js/406.2ffcc11a.js"><link rel="prefetch" href="/assets/js/407.66fb4b3a.js"><link rel="prefetch" href="/assets/js/408.fff02044.js"><link rel="prefetch" href="/assets/js/409.947379f7.js"><link rel="prefetch" href="/assets/js/41.b518dd5d.js"><link rel="prefetch" href="/assets/js/410.c1d5be2a.js"><link rel="prefetch" href="/assets/js/411.44a0eecc.js"><link rel="prefetch" href="/assets/js/412.fa92b4c9.js"><link rel="prefetch" href="/assets/js/413.dddd8da7.js"><link rel="prefetch" href="/assets/js/414.ccde0660.js"><link rel="prefetch" href="/assets/js/415.9422591f.js"><link rel="prefetch" href="/assets/js/416.9fe6597b.js"><link rel="prefetch" href="/assets/js/417.507fb867.js"><link rel="prefetch" href="/assets/js/418.793623c4.js"><link rel="prefetch" href="/assets/js/419.a8c0840f.js"><link rel="prefetch" href="/assets/js/42.50f030c6.js"><link rel="prefetch" href="/assets/js/420.e2e91139.js"><link rel="prefetch" href="/assets/js/421.d286f07f.js"><link rel="prefetch" href="/assets/js/422.d927c5ed.js"><link rel="prefetch" href="/assets/js/423.b02c4212.js"><link rel="prefetch" href="/assets/js/424.61346860.js"><link rel="prefetch" href="/assets/js/425.1a11fa56.js"><link rel="prefetch" href="/assets/js/426.8b5ee5f1.js"><link rel="prefetch" href="/assets/js/427.22a5bc7e.js"><link rel="prefetch" href="/assets/js/428.eee86979.js"><link rel="prefetch" href="/assets/js/429.7071e93e.js"><link rel="prefetch" href="/assets/js/43.0eeb0f2f.js"><link rel="prefetch" href="/assets/js/430.5a9976ee.js"><link rel="prefetch" href="/assets/js/431.53579b6a.js"><link rel="prefetch" href="/assets/js/432.cfe90ae6.js"><link rel="prefetch" href="/assets/js/433.8e9c0b27.js"><link rel="prefetch" href="/assets/js/434.af4384c7.js"><link rel="prefetch" href="/assets/js/435.ac55d9e3.js"><link rel="prefetch" href="/assets/js/436.483e8f93.js"><link rel="prefetch" href="/assets/js/437.10a01bee.js"><link rel="prefetch" href="/assets/js/438.6ecbb09f.js"><link rel="prefetch" href="/assets/js/439.07ea42ca.js"><link rel="prefetch" href="/assets/js/44.da503558.js"><link rel="prefetch" href="/assets/js/440.6bdbc4df.js"><link rel="prefetch" href="/assets/js/441.5c46d53e.js"><link rel="prefetch" href="/assets/js/442.b1ef096d.js"><link rel="prefetch" href="/assets/js/443.87ee1cc6.js"><link rel="prefetch" href="/assets/js/444.17cb3b66.js"><link rel="prefetch" href="/assets/js/445.8137d35a.js"><link rel="prefetch" href="/assets/js/446.75637c9c.js"><link rel="prefetch" href="/assets/js/447.18e60b2a.js"><link rel="prefetch" href="/assets/js/448.b432d928.js"><link rel="prefetch" href="/assets/js/449.980e0c1d.js"><link rel="prefetch" href="/assets/js/45.b99046a7.js"><link rel="prefetch" href="/assets/js/450.c672a19d.js"><link rel="prefetch" href="/assets/js/451.24ae9bc7.js"><link rel="prefetch" href="/assets/js/452.af2aa4c1.js"><link rel="prefetch" href="/assets/js/453.4f860948.js"><link rel="prefetch" href="/assets/js/454.f948183a.js"><link rel="prefetch" href="/assets/js/455.c380efb7.js"><link rel="prefetch" href="/assets/js/456.8cd6d7d7.js"><link rel="prefetch" href="/assets/js/457.f355a01a.js"><link rel="prefetch" href="/assets/js/458.cdfdfa5a.js"><link rel="prefetch" href="/assets/js/459.d564bc9a.js"><link rel="prefetch" href="/assets/js/46.3a9f92f5.js"><link rel="prefetch" href="/assets/js/460.98968ca1.js"><link rel="prefetch" href="/assets/js/461.a4e87d61.js"><link rel="prefetch" href="/assets/js/462.b4c5b369.js"><link rel="prefetch" href="/assets/js/463.d324062a.js"><link rel="prefetch" href="/assets/js/464.20e78299.js"><link rel="prefetch" href="/assets/js/465.77e3fd0f.js"><link rel="prefetch" href="/assets/js/466.3b5d8e3a.js"><link rel="prefetch" href="/assets/js/467.5a8fe8b3.js"><link rel="prefetch" href="/assets/js/468.395758d4.js"><link rel="prefetch" href="/assets/js/469.93c4c335.js"><link rel="prefetch" href="/assets/js/47.d7706b94.js"><link rel="prefetch" href="/assets/js/470.9d8957df.js"><link rel="prefetch" href="/assets/js/471.8a24d492.js"><link rel="prefetch" href="/assets/js/472.5731bc64.js"><link rel="prefetch" href="/assets/js/473.798441ff.js"><link rel="prefetch" href="/assets/js/474.d3cf1769.js"><link rel="prefetch" href="/assets/js/475.9a88b416.js"><link rel="prefetch" href="/assets/js/476.3c789391.js"><link rel="prefetch" href="/assets/js/477.7150d489.js"><link rel="prefetch" href="/assets/js/478.dd6dd623.js"><link rel="prefetch" href="/assets/js/479.8f5e15a1.js"><link rel="prefetch" href="/assets/js/48.8d029411.js"><link rel="prefetch" href="/assets/js/480.0b931dce.js"><link rel="prefetch" href="/assets/js/481.f16a20c2.js"><link rel="prefetch" href="/assets/js/482.a78ad20f.js"><link rel="prefetch" href="/assets/js/483.1fe834b7.js"><link rel="prefetch" href="/assets/js/484.bc1312e1.js"><link rel="prefetch" href="/assets/js/485.04ce49a4.js"><link rel="prefetch" href="/assets/js/486.23824177.js"><link rel="prefetch" href="/assets/js/487.c6b035d8.js"><link rel="prefetch" href="/assets/js/488.932b4b47.js"><link rel="prefetch" href="/assets/js/489.c393d75d.js"><link rel="prefetch" href="/assets/js/49.ca105ece.js"><link rel="prefetch" href="/assets/js/490.b00c2619.js"><link rel="prefetch" href="/assets/js/491.e4447a4e.js"><link rel="prefetch" href="/assets/js/492.2c914e58.js"><link rel="prefetch" href="/assets/js/493.89dfa03e.js"><link rel="prefetch" href="/assets/js/494.f13408f6.js"><link rel="prefetch" href="/assets/js/495.fd51b0df.js"><link rel="prefetch" href="/assets/js/496.8bbb21f1.js"><link rel="prefetch" href="/assets/js/497.5579edba.js"><link rel="prefetch" href="/assets/js/498.a555c65f.js"><link rel="prefetch" href="/assets/js/499.f1439fdf.js"><link rel="prefetch" href="/assets/js/5.c5501caf.js"><link rel="prefetch" href="/assets/js/50.0273019f.js"><link rel="prefetch" href="/assets/js/500.aa11e499.js"><link rel="prefetch" href="/assets/js/501.15b5b3b7.js"><link rel="prefetch" href="/assets/js/502.0d3787d1.js"><link rel="prefetch" href="/assets/js/503.4332189d.js"><link rel="prefetch" href="/assets/js/504.9ae93ca1.js"><link rel="prefetch" href="/assets/js/505.449e6d3c.js"><link rel="prefetch" href="/assets/js/506.4fba1ce7.js"><link rel="prefetch" href="/assets/js/507.2f58dfd2.js"><link rel="prefetch" href="/assets/js/508.0a331cbc.js"><link rel="prefetch" href="/assets/js/509.fa0bac9e.js"><link rel="prefetch" href="/assets/js/51.b52abf6c.js"><link rel="prefetch" href="/assets/js/510.87fc24a1.js"><link rel="prefetch" href="/assets/js/511.b22ca50d.js"><link rel="prefetch" href="/assets/js/512.27b2ae5d.js"><link rel="prefetch" href="/assets/js/513.37acdc6a.js"><link rel="prefetch" href="/assets/js/514.576cdd8b.js"><link rel="prefetch" href="/assets/js/515.d17ad8b5.js"><link rel="prefetch" href="/assets/js/516.7e20c936.js"><link rel="prefetch" href="/assets/js/517.f1e6cc81.js"><link rel="prefetch" href="/assets/js/518.20669e5c.js"><link rel="prefetch" href="/assets/js/519.c6574e2f.js"><link rel="prefetch" href="/assets/js/52.fe388278.js"><link rel="prefetch" href="/assets/js/520.b4f2ad50.js"><link rel="prefetch" href="/assets/js/521.35772b4f.js"><link rel="prefetch" href="/assets/js/522.3e31294c.js"><link rel="prefetch" href="/assets/js/523.b387de1e.js"><link rel="prefetch" href="/assets/js/524.fe5c7333.js"><link rel="prefetch" href="/assets/js/525.0805e15f.js"><link rel="prefetch" href="/assets/js/526.f4d8497c.js"><link rel="prefetch" href="/assets/js/527.ff78c022.js"><link rel="prefetch" href="/assets/js/528.5e668df1.js"><link rel="prefetch" href="/assets/js/529.4d4e7239.js"><link rel="prefetch" href="/assets/js/53.17df72cb.js"><link rel="prefetch" href="/assets/js/530.bfc9da05.js"><link rel="prefetch" href="/assets/js/531.c64ba0b1.js"><link rel="prefetch" href="/assets/js/532.a5f28171.js"><link rel="prefetch" href="/assets/js/533.4cced089.js"><link rel="prefetch" href="/assets/js/534.9e4f99f4.js"><link rel="prefetch" href="/assets/js/535.a968520e.js"><link rel="prefetch" href="/assets/js/536.06da5ae0.js"><link rel="prefetch" href="/assets/js/537.21ca4aec.js"><link rel="prefetch" href="/assets/js/538.5773219c.js"><link rel="prefetch" href="/assets/js/539.e987fb44.js"><link rel="prefetch" href="/assets/js/54.54cdba1b.js"><link rel="prefetch" href="/assets/js/540.67138ea6.js"><link rel="prefetch" href="/assets/js/541.a21bf3f2.js"><link rel="prefetch" href="/assets/js/542.cdf0d6e6.js"><link rel="prefetch" href="/assets/js/543.76c5341a.js"><link rel="prefetch" href="/assets/js/544.93f1e577.js"><link rel="prefetch" href="/assets/js/545.c6b3166a.js"><link rel="prefetch" href="/assets/js/546.48282ce5.js"><link rel="prefetch" href="/assets/js/547.3be770d0.js"><link rel="prefetch" href="/assets/js/548.343f7a16.js"><link rel="prefetch" href="/assets/js/549.8f6a5d07.js"><link rel="prefetch" href="/assets/js/55.46f779db.js"><link rel="prefetch" href="/assets/js/550.5852da95.js"><link rel="prefetch" href="/assets/js/551.b860ff5f.js"><link rel="prefetch" href="/assets/js/552.14389e94.js"><link rel="prefetch" href="/assets/js/553.b92c56d5.js"><link rel="prefetch" href="/assets/js/554.683136d4.js"><link rel="prefetch" href="/assets/js/555.2ba85521.js"><link rel="prefetch" href="/assets/js/556.08786eb5.js"><link rel="prefetch" href="/assets/js/557.eea77275.js"><link rel="prefetch" href="/assets/js/558.0b254044.js"><link rel="prefetch" href="/assets/js/559.0d06a839.js"><link rel="prefetch" href="/assets/js/56.f17ad4f7.js"><link rel="prefetch" href="/assets/js/560.882a58ec.js"><link rel="prefetch" href="/assets/js/561.f8babd08.js"><link rel="prefetch" href="/assets/js/562.4da5efe9.js"><link rel="prefetch" href="/assets/js/563.e7eb47de.js"><link rel="prefetch" href="/assets/js/564.cff87a53.js"><link rel="prefetch" href="/assets/js/565.424241e7.js"><link rel="prefetch" href="/assets/js/566.c167b9d8.js"><link rel="prefetch" href="/assets/js/567.4642979b.js"><link rel="prefetch" href="/assets/js/568.c25edde6.js"><link rel="prefetch" href="/assets/js/569.ed0984f6.js"><link rel="prefetch" href="/assets/js/57.d52b0597.js"><link rel="prefetch" href="/assets/js/570.b30db6aa.js"><link rel="prefetch" href="/assets/js/571.ba279b3c.js"><link rel="prefetch" href="/assets/js/572.417a582d.js"><link rel="prefetch" href="/assets/js/573.a74affe7.js"><link rel="prefetch" href="/assets/js/574.567c222b.js"><link rel="prefetch" href="/assets/js/575.601c4034.js"><link rel="prefetch" href="/assets/js/576.7cd32cb1.js"><link rel="prefetch" href="/assets/js/577.3b3ebfd9.js"><link rel="prefetch" href="/assets/js/578.8df20dfd.js"><link rel="prefetch" href="/assets/js/579.d4eed4a5.js"><link rel="prefetch" href="/assets/js/58.23b5ffe8.js"><link rel="prefetch" href="/assets/js/580.6c45e715.js"><link rel="prefetch" href="/assets/js/581.776edd83.js"><link rel="prefetch" href="/assets/js/582.77b37376.js"><link rel="prefetch" href="/assets/js/583.3b948dbe.js"><link rel="prefetch" href="/assets/js/584.80519496.js"><link rel="prefetch" href="/assets/js/585.f311b6b6.js"><link rel="prefetch" href="/assets/js/586.cf6b4135.js"><link rel="prefetch" href="/assets/js/587.55f9db23.js"><link rel="prefetch" href="/assets/js/588.f07fa9fc.js"><link rel="prefetch" href="/assets/js/589.18816a16.js"><link rel="prefetch" href="/assets/js/59.aeee6fc3.js"><link rel="prefetch" href="/assets/js/6.fe8901f0.js"><link rel="prefetch" href="/assets/js/60.b654e9a3.js"><link rel="prefetch" href="/assets/js/61.3343820a.js"><link rel="prefetch" href="/assets/js/62.d7fb9f65.js"><link rel="prefetch" href="/assets/js/63.a54ab535.js"><link rel="prefetch" href="/assets/js/64.f00e6c9b.js"><link rel="prefetch" href="/assets/js/65.333b41b5.js"><link rel="prefetch" href="/assets/js/66.8cd73199.js"><link rel="prefetch" href="/assets/js/67.6bd29259.js"><link rel="prefetch" href="/assets/js/68.fd0c51c2.js"><link rel="prefetch" href="/assets/js/69.ce728166.js"><link rel="prefetch" href="/assets/js/7.9236067b.js"><link rel="prefetch" href="/assets/js/70.5a4b0f14.js"><link rel="prefetch" href="/assets/js/71.728dd91d.js"><link rel="prefetch" href="/assets/js/72.d6b62255.js"><link rel="prefetch" href="/assets/js/73.209db3b2.js"><link rel="prefetch" href="/assets/js/74.e9973a9f.js"><link rel="prefetch" href="/assets/js/75.7524e468.js"><link rel="prefetch" href="/assets/js/76.11b6dfbd.js"><link rel="prefetch" href="/assets/js/77.f3cbc00a.js"><link rel="prefetch" href="/assets/js/78.340e8c01.js"><link rel="prefetch" href="/assets/js/79.a02d4f73.js"><link rel="prefetch" href="/assets/js/8.3de3a1fa.js"><link rel="prefetch" href="/assets/js/80.6ad5edae.js"><link rel="prefetch" href="/assets/js/81.bfe9a8cc.js"><link rel="prefetch" href="/assets/js/82.6ebade46.js"><link rel="prefetch" href="/assets/js/83.6403bd80.js"><link rel="prefetch" href="/assets/js/84.1fd778e5.js"><link rel="prefetch" href="/assets/js/85.76830e51.js"><link rel="prefetch" href="/assets/js/86.0c76b17e.js"><link rel="prefetch" href="/assets/js/87.aa516378.js"><link rel="prefetch" href="/assets/js/88.ba084941.js"><link rel="prefetch" href="/assets/js/89.c605f729.js"><link rel="prefetch" href="/assets/js/90.a58125ff.js"><link rel="prefetch" href="/assets/js/91.c4e5e485.js"><link rel="prefetch" href="/assets/js/92.3459c500.js"><link rel="prefetch" href="/assets/js/93.3d4ea969.js"><link rel="prefetch" href="/assets/js/94.e3b77044.js"><link rel="prefetch" href="/assets/js/95.5fdee5ad.js"><link rel="prefetch" href="/assets/js/96.4b7efc40.js"><link rel="prefetch" href="/assets/js/97.c5c6552c.js"><link rel="prefetch" href="/assets/js/98.33ed1baf.js"><link rel="prefetch" href="/assets/js/99.76632a77.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6803abc5.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/icon/logo200x100.png" alt="JavaInterview" class="logo"> <span class="site-name can-hide">JavaInterview</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/read/" class="nav-link">指南</a></div><div class="nav-item"><a href="/categories/" class="nav-link">分类</a></div><div class="nav-item"><a href="/tags/" class="nav-link">标签</a></div><div class="nav-item"><a href="/archives/" class="nav-link">归档</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="作者" class="dropdown-title"><!----> <span class="title" style="display:;">作者</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://dearlocation.com/me/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  相亲交友
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://yangchunjian.blog.csdn.net" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://yangchunjian.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  文档箱
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://dearlocation.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  亲位网
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.yangchunjian.com/docbook/imgs/dearlocation.jpeg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  微信号
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.yangchunjian.com/docbook/imgs/qrcode_for_gh_8756901e5b12_344.jpg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  公众号
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="/img/weixin.jpeg"> <div class="blogger-info"><h3>JavaInterview</h3> <span>『Java面试+Java学习』</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/read/" class="nav-link">指南</a></div><div class="nav-item"><a href="/categories/" class="nav-link">分类</a></div><div class="nav-item"><a href="/tags/" class="nav-link">标签</a></div><div class="nav-item"><a href="/archives/" class="nav-link">归档</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="作者" class="dropdown-title"><!----> <span class="title" style="display:;">作者</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://dearlocation.com/me/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  相亲交友
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://yangchunjian.blog.csdn.net" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://yangchunjian.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  文档箱
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://dearlocation.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  亲位网
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.yangchunjian.com/docbook/imgs/dearlocation.jpeg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  微信号
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.yangchunjian.com/docbook/imgs/qrcode_for_gh_8756901e5b12_344.jpg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  公众号
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/read/" class="sidebar-link">指南</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>总结</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>简历</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Java</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>面试</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>源码</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>底层</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/65ab2d/" class="sidebar-link">Java编写原生方法</a></li><li><a href="/pages/37e562/" class="sidebar-link">Java字节码操控框架ASM介绍</a></li><li><a href="/pages/21beb6/" class="sidebar-link">Java字节码操控框架ASM源码</a></li><li><a href="/pages/bf0e6b/" aria-current="page" class="active sidebar-link">Java探针(JavaAgent)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/pages/bf0e6b/#简介" class="sidebar-link">简介</a></li><li class="sidebar-sub-header level2"><a href="/pages/bf0e6b/#javaagent简介" class="sidebar-link">javaagent简介</a></li><li class="sidebar-sub-header level2"><a href="/pages/bf0e6b/#静态agent与动态agent" class="sidebar-link">静态agent与动态agent</a></li><li class="sidebar-sub-header level2"><a href="/pages/bf0e6b/#示例1-简单用法" class="sidebar-link">示例1：简单用法</a></li><li class="sidebar-sub-header level2"><a href="/pages/bf0e6b/#示例2-统计方法的执行时间" class="sidebar-link">示例2：统计方法的执行时间</a></li></ul></li><li><a href="/pages/7a0338/" class="sidebar-link">Java ClassLoader</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>JDK</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>Netty</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>Kafka</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>C/C++</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>技术</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>算法</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>运维</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>测试</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数据库</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>中间件</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-06225672><div class="articleInfo" data-v-06225672><ul class="breadcrumbs" data-v-06225672><li data-v-06225672><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-06225672></a></li> <li data-v-06225672><a href="/categories/?category=sourcecode" title="分类" data-v-06225672>sourcecode</a></li><li data-v-06225672><a href="/categories/?category=bottom" title="分类" data-v-06225672>bottom</a></li></ul> <div class="info" data-v-06225672><div title="作者" class="author iconfont icon-touxiang" data-v-06225672><a href="https://JavaInterview.cn" target="_blank" title="作者" class="beLink" data-v-06225672>JavaInterview.cn</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-06225672><a href="javascript:;" data-v-06225672>2022-10-19</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABKFJREFUSA3tVl1oFVcQnrMbrak3QUgkya1akpJYcrUtIqW1JvFBE9LiQ5v6JmJpolbMg32rVrhgoYK0QiMY6i9Y6EMaW5D+xFJaTYItIuK2Kr3+BJNwkxBj05sQY3b3nM6cs2dv9t7NT/vQJw/sndk5M/PNzJkzewGerP+pAmy+ON8lLzUJgA8ZYxYIYZmGYRnctDaWvJJAmTtfP1pvXsBCCPP8QFcCaRkZYACgDZFO4stNIcBCajEOlmmC9XpJ9bAGCaPaPmzPl32dvLSVu3BWCTQs0XQQ6g0DYgwLIoAZbBCdW/i+781o1VVlm/410mw4h06Y7bIPHNyWDyL4FHkX03Q8SrzNhZTZriieckWt7cL6MM85YcLpsi/7O9/iXFT6MswI0DmmpkSaJ0qLxFIm3+i1THHB3zmBH3PYx9CcykcLOeQVVa7QtdxTgQgEleX2AjHYfwA+2ddV77ruGoJUbhGDI09YSNXyMpUt5ylOzxgbUmtOp7NmbNt8v3arjTBfYELmLUV+M+nSawNNAUqpT3ClJWg5I3BLT+cGW/DXNGCa6tx1aakCGEigArTn4TDIPdrXXYKCZNrHLMCOEPvHBlLQ99s9eHB7EB6NTki73CVPQ2F5MSx/uRQixfmq7rK0wYD8w8E905bnPDfwoWs/rfv93NWN/ZfvwsLIU7A09gxECyISeGJkHAau98L97tuw7NXnoPyNF8FcYGLGKsOs0mN3OEyec9esGW/ZEl945dTP34wlR2FZVQWU1q0Cw8Tr7p+hgLLNL0FPxx/Q35mA8aEUrH6nCgwEl0tn7wUiZYJnNRh6DK4UH/k0lfyrsBKdPVv/AriGIQcEDQZ65LBAGe2Rzui9Ybjz7XUppz1/uKBbyVPGkN3ZAeC6hr0x7Nr38N5+EqkoOm17xpoqR9ohQF55ERSvr4Dkr3chNfC3DMzGJlNBElW8w9nsGQvhNGIzDkXzCg8cLK951xHsFBlTJspJNi3ZFIMF2AeDV3q8DNOB+YHi6QTrChDIWDBRi5U5f+ZMfJLu3ccrqxtdxk4SKH336LFxSmkqefwU5T8fhdSdQf9IVKD6aNiwI/hnmcAZ91isYMJIaCUCx9W098+LgruikeTqzqqxKPUwqJyCPJiyemVVZBOijDGjD38Os0jOiSPL1z3SPjXNANbiNPXAdzTfukjjuknNBbyz3nwgTd3AVFqUJ5hpHlq9MveLnWwttUfoygBmvVjuikxND3znrhsELnZk7k+OjIGxeNEkomyLVta0xxn+HZhjBc4YZ/AFjHjz9u3xRZl2BN4aq9nFwWh16IrQ1aHHEd3j1+4/dB9OtH4e29A2H1DyHQRmOSfQZ1Fy7MHBTGB6J/Djq6p3OxyO2cB+4Car7v/o3GXgfAkj23+x9ID1Teoamo/SXcbvSf2PX7Vc8DdCmE1vN9di+32P9/5YR3vLnhCVGUWBjEkr3yh4H8v9CzmsbdhzOKzsJKM90iFdaTMjRPhGVsakRvOaRidljo6H6G7j+ctrJpsP+4COhDIl0La2+FS4+5mlocBaXY5QnGZysIBYoeSsl5qQzrSj/cgNrfuEzlWBfwA+EjrZyWUvpAAAAABJRU5ErkJggg==">Java探针(JavaAgent)<span class="title-tag">Java</span></h1> <!----> <div class="theme-vdoing-content content__default"><h2 id="简介"><a href="#简介" class="header-anchor">#</a> <strong>简介</strong></h2> <div class="language- extra-class"><pre><code>    本文用示例介绍javaagent的用法。
+</code></pre></div><h2 id="javaagent简介"><a href="#javaagent简介" class="header-anchor">#</a> <strong>javaagent简介</strong></h2> <div class="language- extra-class"><pre><code>    JavaAgent 是JDK 1.5 以后引入的，也叫做Java代理。
+</code></pre></div><p><strong>javaagent的作用</strong></p> <ul><li>可以在加载java文件之前进行拦截，修改字节码。</li> <li>可以在运行期间修改已经加载的类的字节码。</li> <li>这种用法有很多的限制。</li> <li>javaagent结合javassist功能更强大：可以创建类、方法、变量等。</li></ul> <p>这实际上提供了一种虚拟机级别的 AOP 实现方式。通过以上方法就能实现对一些框架或是技术的采集点进行字节码修改，完成这些功能：对应用进行监控，对执行指定方法或是接口时额外添加操作（打印日志、打印方法执行时间、采集方法的入参和结果等）。</p> <p>很多APM监控系统就是基于此实现的，例如：Arthas、SkyWalking。</p> <p><strong>javaagent的使用方式</strong></p> <ul><li><p>方式1：在一个普通 Java 程序（带有 main 函数的 Java 类）运行时，通过 -javaagent 参数指定一个特定的 jar 文件（包含 Instrumentation 代理）来启动 Instrumentation 的代理程序。
+-javaagent 这个参数的个数是不限的，如果指定了多个，则会按指定的先后执行，执行完各个 agent 后，才会执行主程序的 main 方法。例如：</p> <p>java -javaagent:D:\workspace\javaagent.jar=hello1 -javaagent:D:\workspace\javaagent.jar=hello2 -jar D:\workspace\myTest.jar</p></li> <li><p>方式2：在一个普通 Java 程序（带有 main 函数的 Java 类）运行时，通过 Java Tool API 中的 attach 方式指定进程id和特定jar包地址，启动 Instrumentation 的代理程序。</p></li></ul> <p><strong>javaagent其他的功能</strong></p> <ul><li>获取所有已经被加载过的类</li> <li>获取所有已经被初始化过了的类（执行过了clinit方法，是上面的一个子集）</li> <li>获取某个对象的大小</li> <li>将某个jar加入到bootstrapclasspath里作为高优先级被bootstrapClassloader加载</li> <li>将某个jar加入到classpath里供AppClassload去加载</li> <li>设置某些native方法的前缀，主要在查找native方法的时候做规则匹配</li></ul> <h2 id="静态agent与动态agent"><a href="#静态agent与动态agent" class="header-anchor">#</a> <strong>静态agent与动态agent</strong></h2> <p>Agent分为如下两种：</p> <ul><li>静态Instrument：在main加载之前运行的Agent</li> <li>动态Instrument：在main运行之后运行的Agent（JDK1.6以后提供）。</li></ul> <p><strong>静态Instrument（启动时）加载Instrument过程</strong></p> <ul><li><p>创建并初始化 JPLISAgent；</p></li> <li><p>监听VMInit事件，在JVM初始化完成之后做下面的事情：</p> <ul><li>创建InstrumentationImpl对象；</li> <li>监听ClassFileLoadHook事件；</li> <li>调用InstrumentationImpl的loadClassAndCallPremain方法，在这个方法里会去调用javaagent中MANIFEST.MF里指定的Premain-Class类的premain方法 ；</li></ul></li> <li><p>解析javaagent中MANIFEST.MF文件的参数，并根据这些参数来设置JPLISAgent里的一些内容。</p></li></ul> <p><strong>动态Instrument运行时加载Instrument过程</strong></p> <p>通过JVM的attach机制来请求目标JVM加载对应的agent，过程大致如下：</p> <ul><li>创建并初始化JPLISAgent；</li> <li>解析 javaagent 里 MANIFEST.MF 里的参数；</li> <li>创建 InstrumentationImpl 对象；</li> <li>监听 ClassFileLoadHook 事件；</li> <li>调用 InstrumentationImpl 的loadClassAndCallAgentmain方法，在这个方法里会去调用javaagent里 MANIFEST.MF 里指定的Agent-Class类的agentmain方法。</li></ul> <h2 id="示例1-简单用法"><a href="#示例1-简单用法" class="header-anchor">#</a> <strong>示例1：简单用法</strong></h2> <p><strong>agent程序</strong></p> <p>项目结构</p> <p><img src="/assets/img/agent1.f63ce419.png" alt=""></p> <p><strong>1.提供premain方法</strong></p> <div class="language- extra-class"><pre><code>package com.example.a;
+ 
+import java.lang.instrument.Instrumentation;
+ 
+public class DemoAgent {
+    /**
+     * 该方法在main方法之前运行，与main方法运行在同一个JVM中
+     */
+    public static void premain(String arg, Instrumentation instrumentation) {
+        System.out.println(&quot;agent的premain(String arg, Instrumentation instrumentation)方法&quot;);
+    }
+ 
+    /**
+     * 若不存在 premain(String agentArgs, Instrumentation inst)，
+     * 则会执行 premain(String agentArgs)
+     */
+    public static void premain(String arg) {
+        System.out.println(&quot;agent的premain(String arg)方法&quot;);
+    }
+}
+</code></pre></div><p><strong>2.提供META-INF/MANIFEST.MF</strong></p> <p>在src/main/java的同级目录下新建META-INF文件夹，在里边新建MANIFEST.MF文件（注意最后一行必须是空行）</p> <div class="language- extra-class"><pre><code>Manifest-Version: 1.0
+Can-Redefine-Classes: true
+Can-Retransform-Classes: true
+Premain-Class: com.example.a.DemoAgent
+</code></pre></div><ul><li>Premain-Class ：包含 premain 方法的类（类的全路径名）</li> <li>Agent-Class ：包含 agentmain 方法的类（类的全路径名）</li> <li>Boot-Class-Path ：设置引导类加载器搜索的路径列表。查找类的特定于平台的机制失败后，引导类加载器会搜索这些路径。按列出的顺序搜索路径。列表中的路径由一个或多个空格分开。路径使用分层 URI 的路径组件语法。如果该路径以斜杠字符（“/”）开头，则为绝对路径，否则为相对路径。相对路径根据代理 JAR 文件的绝对路径解析。忽略格式不正确的路径和不存在的路径。如果代理是在 VM 启动之后某一时刻启动的，则忽略不表示 JAR 文件的路径。（可选）</li> <li>Can-Redefine-Classes ：true表示能重定义此代理所需的类，默认值为 false（可选）</li> <li>Can-Retransform-Classes ：true 表示能重转换此代理所需的类，默认值为 false （可选）</li> <li>Can-Set-Native-Method-Prefix： true表示能设置此代理所需的本机方法前缀，默认值为 false（可选）</li></ul> <p><strong>3.将其打包为jar包</strong></p> <p>步骤1：打包的配置入口</p> <ul><li>File=&gt; Project Structure=&gt; Project Settings=&gt; Artifacts=&gt; + =&gt; JAR=&gt; From modules with dependencies...</li></ul> <p><img src="/assets/img/agent2.a0e456f3.png" alt=""></p> <p>步骤2：打包的配置</p> <p><img src="/assets/img/agent3.a879ad6e.png" alt=""></p> <p>步骤3：打包</p> <p>Build=&gt; Build Artifacts...=&gt; Build</p> <p>此时会生成out目录，并生成jar包：</p> <p><img src="/assets/img/agent4.a61c7c19.png" alt=""></p> <p><strong>也可使用maven配置META-INF/MANIFEST.MF</strong></p> <p>使用maven，打包方便，而且不用手写META-INF/MANIFEST.MF，用插件即可：</p> <div class="language- extra-class"><pre><code>&lt;build&gt;
+    &lt;plugins&gt;
+        &lt;plugin&gt;
+            &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+            &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+            &lt;version&gt;3.5.1&lt;/version&gt;
+            &lt;!-- 指定maven编译的jdk版本。若不指定,maven3默认用jdk 1.5 maven2默认用jdk1.3 --&gt;
+            &lt;configuration&gt;
+                &lt;source&gt;8&lt;/source&gt;
+                &lt;target&gt;8&lt;/target&gt;
+            &lt;/configuration&gt;
+        &lt;/plugin&gt;
+ 
+        &lt;plugin&gt;
+            &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+            &lt;artifactId&gt;maven-jar-plugin&lt;/artifactId&gt;
+            &lt;version&gt;3.2.0&lt;/version&gt;
+            &lt;configuration&gt;
+                &lt;archive&gt;
+                    &lt;!--自动添加META-INF/MANIFEST.MF --&gt;
+                    &lt;manifest&gt;
+                        &lt;addClasspath&gt;true&lt;/addClasspath&gt;
+                    &lt;/manifest&gt;
+                    &lt;manifestEntries&gt;
+                        &lt;Menifest-Version&gt;1.0&lt;/Menifest-Version&gt;
+                        &lt;Premain-Class&gt;com.example.a.DemoAgent&lt;/Premain-Class&gt;
+                        &lt;Can-Redefine-Classes&gt;true&lt;/Can-Redefine-Classes&gt;
+                        &lt;Can-Retransform-Classes&gt;true&lt;/Can-Retransform-Classes&gt;
+                    &lt;/manifestEntries&gt;
+                &lt;/archive&gt;
+            &lt;/configuration&gt;
+        &lt;/plugin&gt;
+    &lt;/plugins&gt;
+&lt;/build&gt;
+</code></pre></div><p>maven的项目结构为：</p> <p><img src="/assets/img/agent5.3e9df4e9.png" alt=""></p> <p><strong>应用程序</strong>
+项目结构</p> <p><img src="/assets/img/agent6.de28d6e8.png" alt=""></p> <p><strong>1.提供main程序</strong></p> <div class="language- extra-class"><pre><code>package com.example.a;
+ 
+public class Demo {
+    public static void main(String[] args) {
+        System.out.println(&quot;应用的main方法&quot;);
+    }
+}
+</code></pre></div><p><strong>2.打包</strong></p> <p>打包方法和agent的项目略有不同。见：Intellij IDEA--将Java项目打包为jar包--方法/实例_IT利刃出鞘的博客-CSDN博客</p> <p><strong>测试</strong>
+java -javaagent:D:\tmp\demo_javaagent.jar -jar demo_java.jar</p> <p>结果：</p> <p><img src="/assets/img/agent7.5d1b6a5a.png" alt=""></p> <h2 id="示例2-统计方法的执行时间"><a href="#示例2-统计方法的执行时间" class="header-anchor">#</a> <strong>示例2：统计方法的执行时间</strong></h2> <p>需求：写一个agent，统计应用的某个方法的执行时间。（本处要统计的方法是：TimeTest#test方法）</p> <p><strong>agent程序</strong></p> <p><strong>agent代码</strong></p> <div class="language- extra-class"><pre><code>package com.example.a;
+ 
+import java.lang.instrument.Instrumentation;
+ 
+public class DemoAgent {
+    /**
+     * 该方法在main方法之前运行，与main方法运行在同一个JVM中
+     */
+    public static void premain(String arg, Instrumentation instrumentation) {
+        System.out.println(&quot;agent的premain(String arg, Instrumentation instrumentation)方法&quot;);
+ 
+        instrumentation.addTransformer(new MyTransformer());
+    }
+ 
+    /**
+     * 若不存在 premain(String agentArgs, Instrumentation inst)，
+     * 则会执行 premain(String agentArgs)
+     */
+    public static void premain(String arg) {
+        System.out.println(&quot;agent的premain(String arg)方法&quot;);
+    }
+}
+</code></pre></div><p><strong>Transformer代码</strong></p> <div class="language- extra-class"><pre><code>package com.example.a;
+ 
+import javassist.ClassPool;
+import javassist.CtClass;
+import javassist.CtMethod;
+ 
+import java.lang.instrument.ClassFileTransformer;
+import java.lang.instrument.IllegalClassFormatException;
+import java.security.ProtectionDomain;
+ 
+public class MyTransformer implements ClassFileTransformer {
+    private final String injectedClass = &quot;com.example.a.TimeTest&quot;;
+    private final String injectedMethod = &quot;test&quot;;
+ 
+    @Override
+    public byte[] transform(ClassLoader loader,
+                            String className,
+                            Class&lt;?&gt; classBeingRedefined,
+                            ProtectionDomain protectionDomain,
+                            byte[] classfileBuffer) throws IllegalClassFormatException {
+ 
+        String realClassName = className.replace(&quot;/&quot;, &quot;.&quot;);
+ 
+        if (realClassName.equals(injectedClass)) {
+            CtClass ctClass;
+            try {
+                // 使用全称，取得字节码类&lt;使用javassist&gt;
+                ClassPool classPool = ClassPool.getDefault();
+                ctClass = classPool.get(realClassName);
+ 
+                // 得到方法实例
+                CtMethod ctMethod = ctClass.getDeclaredMethod(injectedMethod);
+                // 添加变量
+                ctMethod.addLocalVariable(&quot;time&quot;, CtClass.longType);
+                ctMethod.insertBefore(&quot;System.out.println(\&quot;------------ Before --------\&quot;);&quot;);
+                ctMethod.insertBefore(&quot;time = System.currentTimeMillis();&quot;);
+ 
+                ctMethod.insertAfter(&quot;System.out.println(\&quot;Elapsed Time(ms): \&quot; + (System.currentTimeMillis() - time));&quot;);
+                ctMethod.insertAfter(&quot;System.out.println(\&quot;------------- After --------\&quot;);&quot;);
+ 
+                return ctClass.toBytecode();
+            } catch (Throwable e) { //这里要用Throwable，不要用Exception
+                System.out.println(e.getMessage());
+                e.printStackTrace();
+            }
+        }
+ 
+        // 返回原类字节码
+        return classfileBuffer;
+    }
+}
+</code></pre></div><p><strong>pom.xml</strong></p> <div class="language- extra-class"><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;
+         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+  &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+ 
+  &lt;groupId&gt;com.example&lt;/groupId&gt;
+  &lt;artifactId&gt;demo_javaagent&lt;/artifactId&gt;
+  &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
+ 
+  &lt;dependencies&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;org.javassist&lt;/groupId&gt;
+      &lt;artifactId&gt;javassist&lt;/artifactId&gt;
+      &lt;version&gt;3.28.0-GA&lt;/version&gt;
+    &lt;/dependency&gt;
+  &lt;/dependencies&gt;
+ 
+  &lt;build&gt;
+    &lt;plugins&gt;
+      &lt;plugin&gt;
+        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+        &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+        &lt;version&gt;3.5.1&lt;/version&gt;
+        &lt;!-- 指定maven编译的jdk版本。若不指定,maven3默认用jdk 1.5 maven2默认用jdk1.3 --&gt;
+        &lt;configuration&gt;
+          &lt;source&gt;8&lt;/source&gt;
+          &lt;target&gt;8&lt;/target&gt;
+        &lt;/configuration&gt;
+      &lt;/plugin&gt;
+ 
+      &lt;plugin&gt;
+        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+        &lt;artifactId&gt;maven-jar-plugin&lt;/artifactId&gt;
+        &lt;version&gt;3.2.0&lt;/version&gt;
+        &lt;configuration&gt;
+          &lt;archive&gt;
+            &lt;!--自动添加META-INF/MANIFEST.MF --&gt;
+            &lt;manifest&gt;
+              &lt;addClasspath&gt;true&lt;/addClasspath&gt;
+            &lt;/manifest&gt;
+            &lt;manifestEntries&gt;
+              &lt;Menifest-Version&gt;1.0&lt;/Menifest-Version&gt;
+              &lt;Premain-Class&gt;com.example.a.DemoAgent&lt;/Premain-Class&gt;
+              &lt;Can-Redefine-Classes&gt;true&lt;/Can-Redefine-Classes&gt;
+              &lt;Can-Retransform-Classes&gt;true&lt;/Can-Retransform-Classes&gt;
+            &lt;/manifestEntries&gt;
+          &lt;/archive&gt;
+        &lt;/configuration&gt;
+      &lt;/plugin&gt;
+    &lt;/plugins&gt;
+  &lt;/build&gt;
+ 
+ 
+&lt;/project&gt;
+</code></pre></div><p><strong>应用程序</strong></p> <p><strong>main类</strong></p> <div class="language- extra-class"><pre><code>package com.example.a;
+ 
+public class Demo {
+    public static void main(String[] args) {
+        System.out.println(&quot;应用的main方法&quot;);
+        new TimeTest().test();
+    }
+}
+</code></pre></div><p><strong>测试类</strong></p> <div class="language- extra-class"><pre><code>package com.example.a;
+ 
+public class TimeTest {
+    public void test() {
+        System.out.println(&quot;开始执行TimeTest#test&quot;);
+        System.out.println(&quot;sleep开始&quot;);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println(&quot;sleep结束&quot;);
+    }
+}
+</code></pre></div><p><strong>pom.xml</strong></p> <div class="language- extra-class"><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;
+         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+ 
+    &lt;groupId&gt;com.example&lt;/groupId&gt;
+    &lt;artifactId&gt;demo_maven&lt;/artifactId&gt;
+    &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
+ 
+    &lt;dependencies&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.javassist&lt;/groupId&gt;
+            &lt;artifactId&gt;javassist&lt;/artifactId&gt;
+            &lt;version&gt;3.28.0-GA&lt;/version&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+ 
+    &lt;build&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+                &lt;version&gt;3.5.1&lt;/version&gt;
+                &lt;!-- 指定maven编译的jdk版本。若不指定,maven3默认用jdk 1.5 maven2默认用jdk1.3 --&gt;
+                &lt;configuration&gt;
+                    &lt;source&gt;8&lt;/source&gt;
+                    &lt;target&gt;8&lt;/target&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+ 
+            &lt;plugin&gt;
+                &lt;artifactId&gt;maven-assembly-plugin&lt;/artifactId&gt;
+                &lt;configuration&gt;
+                    &lt;archive&gt;
+                        &lt;manifest&gt;
+                            &lt;mainClass&gt;com.example.a.Demo&lt;/mainClass&gt;
+                        &lt;/manifest&gt;
+                    &lt;/archive&gt;
+                    &lt;descriptorRefs&gt;
+                        &lt;descriptorRef&gt;jar-with-dependencies&lt;/descriptorRef&gt;
+                    &lt;/descriptorRefs&gt;
+                    &lt;appendAssemblyId&gt;false&lt;/appendAssemblyId&gt;
+ 
+                &lt;/configuration&gt;
+ 
+                &lt;executions&gt;
+                    &lt;execution&gt;
+                        &lt;id&gt;make-assembly&lt;/id&gt;
+                        &lt;phase&gt;package&lt;/phase&gt;
+                        &lt;goals&gt;
+                            &lt;goal&gt;assembly&lt;/goal&gt;
+                        &lt;/goals&gt;
+                    &lt;/execution&gt;
+                &lt;/executions&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+&lt;/project&gt;
+</code></pre></div><p><strong>测试</strong></p> <div class="language- extra-class"><pre><code>java -javaagent:D:\tmp\demo_javaagent-1.0-SNAPSHOT.jar -jar demo_maven-1.0-SNAPSHOT.jar
+</code></pre></div><p>结果：
+<img src="/assets/img/agent8.006d45c8.png" alt=""></p></div></div> <!----> <div class="page-edit"><!----> <!----> <div class="last-updated"><span class="prefix">上次编辑于:</span> <span class="time">2022-10-19 12:58</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/21beb6/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">Java字节码操控框架ASM源码</div></a> <a href="/pages/7a0338/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">Java ClassLoader</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/21beb6/" class="prev">Java字节码操控框架ASM源码</a></span> <span class="next"><a href="/pages/7a0338/">Java ClassLoader</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/7a0338/"><div>
+            Java ClassLoader
+            <span class="title-tag">
+              Java
+            </span></div></a> <span class="date">10-19</span></dt></dl><dl><dd>02</dd> <dt><a href="/pages/4cdd6b/"><div>
+            唯一摩尔斯密码词
+            <span class="title-tag">
+              Java
+            </span></div></a> <span class="date">10-18</span></dt></dl><dl><dd>03</dd> <dt><a href="/pages/d19161/"><div>
+            打砖块
+            <span class="title-tag">
+              Java
+            </span></div></a> <span class="date">10-18</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><!----> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2019-2022
+    <span><a href="https://JavaInterview.cn" target="_blank">JavaInterview.cn</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"><!----><div></div><!----></div></div>
+    <script src="/assets/js/app.c60b0746.js" defer></script><script src="/assets/js/2.49c0a2f6.js" defer></script><script src="/assets/js/9.167a6acd.js" defer></script>
+  </body>
+</html>
