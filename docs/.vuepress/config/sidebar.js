@@ -233,6 +233,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-87.扰乱字符串",
                     "/algorithm/leetcode/leetcode-92.反转链表 II",
                     "/algorithm/leetcode/leetcode-109.有序链表转换二叉搜索树",
+                    "/algorithm/leetcode/leetcode-112.路径总和",
                     "/algorithm/leetcode/leetcode-113.路径总和 II",
                     "/algorithm/leetcode/leetcode-114.二叉树展开为链表",
                     "/algorithm/leetcode/leetcode-123.买卖股票的最佳时机III",
