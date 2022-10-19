@@ -634,6 +634,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-811.子域名访问计数",
                     "/algorithm/leetcode/leetcode-812.最大三角形面积",
                     "/algorithm/leetcode/leetcode-813.最大平均值和的分组",
+                    "/algorithm/leetcode/leetcode-815.公交路线",
                     "/algorithm/leetcode/leetcode-817.链表组件",
                     "/algorithm/leetcode/leetcode-834.树中距离之和",
                     "/algorithm/leetcode/leetcode-863.二叉树中所有距离为 K 的结点",
