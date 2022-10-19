@@ -115,6 +115,7 @@ module.exports = [
                     "/sourcecode/bottom/asm",
                     "/sourcecode/bottom/asm_1",
                     "/sourcecode/bottom/Java探针(JavaAgent)",
+                    "/sourcecode/bottom/Java ClassLoader",
                 ]
             },
             {
