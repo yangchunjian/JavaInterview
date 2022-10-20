@@ -187,7 +187,12 @@ module.exports = [
 
         ]
     },
-
+    {
+        title: '原理',
+        children: [
+            "/skill/tool/GoLand配置go工程环境(或idea配置go工程环境)",
+        ]
+    },
     {
         title: '技术',
         children: [
