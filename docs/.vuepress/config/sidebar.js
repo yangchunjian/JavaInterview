@@ -101,6 +101,7 @@ module.exports = [
                     "/interview/hf/限流原理解析",
                     "/interview/hf/Redis部署的三种模式(主从复制、哨兵、集群)",
                     "/interview/hf/敏感词过滤(DFA算法_Trie前缀树)",
+                    "/interview/hf/Java线程间通信方式",
                 ]
             },
 
