@@ -1,3 +1,17 @@
+---
+title: 敏感词过滤(DFA算法_Trie前缀树)
+date: 2022-10-20 09:34:28
+permalink: /pages/2e0e33/
+categories:
+  - sourcecode
+  - bottom
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 解答
  
