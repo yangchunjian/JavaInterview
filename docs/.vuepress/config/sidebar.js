@@ -651,6 +651,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-819.最常见的单词",
                     "/algorithm/leetcode/leetcode-820.单词的压缩编码",
                     "/algorithm/leetcode/leetcode-821.字符的最短距离",
+                    "/algorithm/leetcode/leetcode-822.翻转卡片游戏",
+                    "/algorithm/leetcode/leetcode-823.带因子的二叉树",
                     "/algorithm/leetcode/leetcode-834.树中距离之和",
                     "/algorithm/leetcode/leetcode-863.二叉树中所有距离为 K 的结点",
                     "/algorithm/leetcode/leetcode-865.具有所有最深节点的最小子树",
