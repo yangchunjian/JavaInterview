@@ -37,6 +37,7 @@ titleTag: Java
 
 示例 1：
 
+![](../../../media/pictures/leetcode/833-ex1.png)
 
 
     输入：s = "abcd", indexes = [0,2], sources = ["a","cd"], targets = ["eee","ffff"]
@@ -45,6 +46,8 @@ titleTag: Java
     "a" 从 s 中的索引 0 开始，所以它被替换为 "eee"。
     "cd" 从 s 中的索引 2 开始，所以它被替换为 "ffff"。
 示例 2：
+
+![](../../../media/pictures/leetcode/833-ex2-1.png)
 
     输入：s = "abcd", indexes = [0,2], sources = ["ab","ec"], targets = ["eee","ffff"]
     输出："eeecd"
