@@ -64,32 +64,24 @@ titleTag: Java
 
 ## 解法
 ```java
-
 class Solution {
     public int maxDistToClosest(int[] seats) {
         // 找规律：10001，中间有三个0，其距离为（3-1）/2+1(自己的座位可以算上)
         // 100001,4个0，距离为（4-1）/2+1;
         // 故只需要一次遍历，常数级空间便可
         int len=seats.length;
-        // 记录前一个有人坐的下标
-        int pre=0;
-        int ans=0;
-        boolean isFirst=true;
-        for(int i=0;i<len;i++){
-            if(seats[i]==1){
-                if(isFirst){
-                    ans=Math.max(ans,i-pre);
-                    isFirst=false;
-                } else {
-                    int temp=(i-pre-2)/2+1;
-                    ans=Math.max(temp,ans);
-                }
-                pre=i;
-            }
+        int ans = 1, preOne = -1;
+	for(int i = 0; i < seats.length; i++){
+	    if(seats[i] == 1){
+		if(preOne == -1){
+		    ans = Math.max(ans, i);
+		}else{
+		    ans = Math.max(ans, (i-preOne)/2);
+		}
+	        preOne = i;
+	    }
         }
-        // 针对最后一个有人座的点进行一次特判
-        ans=Math.max(ans,len-1-pre);
-        return ans;
+        return Math.max(ans, seats.length-1-preOne);
     }
 }
 ```
