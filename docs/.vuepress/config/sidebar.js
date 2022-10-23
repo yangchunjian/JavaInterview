@@ -662,6 +662,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-832.翻转图像",
                     "/algorithm/leetcode/leetcode-833.字符串中的查找与替换",
                     "/algorithm/leetcode/leetcode-834.树中距离之和",
+                    "/algorithm/leetcode/leetcode-835.图像重叠",
                     "/algorithm/leetcode/leetcode-863.二叉树中所有距离为 K 的结点",
                     "/algorithm/leetcode/leetcode-865.具有所有最深节点的最小子树",
                     "/algorithm/leetcode/leetcode-872.叶子相似的树",
