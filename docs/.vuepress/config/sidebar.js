@@ -670,6 +670,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-841.钥匙和房间",
                     "/algorithm/leetcode/leetcode-842.将数组拆分成斐波那契序列",
                     "/algorithm/leetcode/leetcode-844.比较含退格的字符串",
+                    "/algorithm/leetcode/leetcode-845.数组中的最长山脉",
+                    "/algorithm/leetcode/leetcode-846.一手顺子",
                     "/algorithm/leetcode/leetcode-863.二叉树中所有距离为 K 的结点",
                     "/algorithm/leetcode/leetcode-865.具有所有最深节点的最小子树",
                     "/algorithm/leetcode/leetcode-872.叶子相似的树",
