@@ -28,12 +28,18 @@ titleTag: Java
 
 示例 1：
 
+![](../../../media/pictures/leetcode/overlap1.jpeg)
 
     输入：img1 = [[1,1,0],[0,1,0],[0,1,0]], img2 = [[0,0,0],[0,1,1],[0,0,1]]
     输出：3
     解释：将 img1 向右移动 1 个单位，再向下移动 1 个单位。
-    
+
+![](../../../media/pictures/leetcode/overlap_step1.jpeg)
+
     两个图像都具有 1 的位置的数目是 3（用红色标识）。
+    
+![](../../../media/pictures/leetcode/overlap_step2.jpeg)
+
 
 示例 2：
 
