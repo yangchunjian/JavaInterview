@@ -672,6 +672,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-844.比较含退格的字符串",
                     "/algorithm/leetcode/leetcode-845.数组中的最长山脉",
                     "/algorithm/leetcode/leetcode-846.一手顺子",
+                    "/algorithm/leetcode/leetcode-848.字母移位",
                     "/algorithm/leetcode/leetcode-863.二叉树中所有距离为 K 的结点",
                     "/algorithm/leetcode/leetcode-865.具有所有最深节点的最小子树",
                     "/algorithm/leetcode/leetcode-872.叶子相似的树",
