@@ -1,3 +1,16 @@
+---
+title: Lombok原理
+date: 2022-10-24 11:48:25
+permalink: /pages/2f70c0/
+categories:
+  - principle
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 解答
 
