@@ -64,17 +64,17 @@ Synchronized是一个同步关键字，在某些多线程场景下，如果不�
 - 实例变量存储的是对象的属性信息，包括父类的属性信息，按照4字节对齐
 - 填充字符，因为虚拟机要求对象字节必须是8字节的整数倍，填充字符就是用于凑齐这个整数倍的
 
-![](../../../media/pictures/hf/sy1.png)
+![](../../../media/pictures/hf/sy1.jpeg)
 
 通过第一部分可以知道，Synchronized不论是修饰方法还是代码块，都是通过持有修饰对象的锁来实现同步，那么Synchronized锁对象是存在哪里的呢？答案是存在锁对象的对象头的MarkWord中。那么MarkWord在对象头中到底长什么样，也就是它到底存储了什么呢？
 
 在32位的虚拟机中：
 
-![](../../../media/pictures/hf/sy2.png)
+![](../../../media/pictures/hf/sy2.jpeg)
 
 在64位的虚拟机中：
 
-![](../../../media/pictures/hf/sy3.png)
+![](../../../media/pictures/hf/sy3.jpeg)
 
 上图中的偏向锁和轻量级锁都是在java6以后对锁机制进行优化时引进的，下文的锁升级部分会具体讲解，Synchronized关键字对应的是重量级锁，接下来对重量级锁在Hotspot JVM中的实现锁讲解。
 
@@ -94,7 +94,7 @@ Synchronized是一个同步关键字，在某些多线程场景下，如果不�
       
 光看这些数据结构对监视器锁的工作机制还是一头雾水，那么我们首先看一下线程在获取锁的几个状态的转换：
 
-![](../../../media/pictures/hf/sy4.png)
+![](../../../media/pictures/hf/sy4.jpeg)
 
 线程的生命周期存在5个状态，`start、running、waiting、blocking和dead`
 
@@ -229,7 +229,7 @@ Synchronized方法同步不再是通过插入monitorentry和monitorexit指令实
 
 **（3）这几种锁的优缺点（偏向锁、轻量级锁、重量级锁）**
 
-![](../../../media/pictures/hf/sy5.png)
+![](../../../media/pictures/hf/sy5.jpeg)
 
 **2、锁粗化**
 
