@@ -7,7 +7,7 @@
 
 现在看一下Lombok官方对其进行的解释：Lombok官网：https://projectlombok.org
 
-![](../../../media/pictures/principle/lo1.png)
+![](../../media/pictures/principle/lo1.png)
 
 
 第一句话，Lombok项目是一种自动接通你的编辑器和构建工具的一个Java库。接着，不用再一次写额外的getter或者equals方法。翻译到这里其实就可以，后面是对Lombok早期应用的介绍。通过这两句话不难理解lombok其实就是帮助我们编写getter或者equals方法的一个“工具”。其实他的魅力并不在于帮助我们简单的编写对应的getter或者更多的方法，还有一点在于，当我们的字段发生改变时，lombok也会对相应的getter方法进行改变。
@@ -26,17 +26,17 @@
 
 在Lombok的官网中，有一个install选项，我们点开它会看到多种安装方式：
 
-![](../../../media/pictures/principle/lo2.png)
+![](../../media/pictures/principle/lo2.png)
 
 大家可以根据自己的项目需求来选择使用哪种方式，这里以Maven为例：
 
 点击Maven会看到一组坐标：
 
-![](../../../media/pictures/principle/lo3.png)
+![](../../media/pictures/principle/lo3.png)
 
 根据它的提示我们将这一组坐标添加到我们的pom文件中：
 
-![](../../../media/pictures/principle/lo4.png)
+![](../../media/pictures/principle/lo4.png)
 
 添加进去以后点击import change，等待Idea把jar包下载完就可以在项目中使用了。
 
@@ -44,13 +44,13 @@
 
 Lombok实现了JSR 269 API规范，javac在Java6开始支持这一规范，只要程序实现了该API，就能在javac运行的时候得到调用，那么Lombok在编译时使用的就是javac，具体流程如下：
 
-![](../../../media/pictures/principle/lo5.png)
+![](../../media/pictures/principle/lo5.png)
 
 首先是项目的源代码文件，在经过编译处理以后，lombok会使用自己的抽象语法树去进行注解的匹配，如果在项目中的某一个类中使用了lombok中的注解，那么注解编译器就会自动去匹配项目中的注解对应到在lombok语法树中的注解文件，并经过自动编译匹配来生成对应类中的getter或者setter方法，达到简化代码的目的。执行顺序就如上图的叠放顺序。
 
 在Javac 解析成抽象语法树之后(AST), Lombok 根据自己的注解处理器，动态的修改 AST，增加新的节点(所谓代码)，最终通过分析和生成字节码。
 
-![](../../../media/pictures/principle/lo6.png)
+![](../../media/pictures/principle/lo6.png)
 
 ## 五、Lombok注解详解
 
