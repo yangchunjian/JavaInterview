@@ -125,6 +125,7 @@ module.exports = [
                     "/sourcecode/bottom/Java探针(JavaAgent)",
                     "/sourcecode/bottom/Java ClassLoader",
                     "/sourcecode/bottom/编译器",
+                    "/sourcecode/bottom/OSGi(开放服务网关协议)",
                 ]
             },
             {
