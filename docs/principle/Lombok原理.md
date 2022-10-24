@@ -5,7 +5,7 @@
 
 ## 一、Lombok是什么
 
-    现在看一下Lombok官方对其进行的解释：Lombok官网：https://projectlombok.org
+现在看一下Lombok官方对其进行的解释：Lombok官网：https://projectlombok.org
 
 ![](../../../media/pictures/principle/lo1.png)
 
@@ -47,6 +47,10 @@ Lombok实现了JSR 269 API规范，javac在Java6开始支持这一规范，只�
 ![](../../../media/pictures/principle/lo5.png)
 
 首先是项目的源代码文件，在经过编译处理以后，lombok会使用自己的抽象语法树去进行注解的匹配，如果在项目中的某一个类中使用了lombok中的注解，那么注解编译器就会自动去匹配项目中的注解对应到在lombok语法树中的注解文件，并经过自动编译匹配来生成对应类中的getter或者setter方法，达到简化代码的目的。执行顺序就如上图的叠放顺序。
+
+在Javac 解析成抽象语法树之后(AST), Lombok 根据自己的注解处理器，动态的修改 AST，增加新的节点(所谓代码)，最终通过分析和生成字节码。
+
+![](../../../media/pictures/principle/lo6.png)
 
 ## 五、Lombok注解详解
 
