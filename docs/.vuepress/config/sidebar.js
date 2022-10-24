@@ -105,6 +105,7 @@ module.exports = [
                     "/interview/hf/CPU占用过高排查",
                     "/interview/hf/线程死锁及解决方案",
                     "/interview/hf/分布式事务",
+                    "/interview/hf/分布式锁",
                 ]
             },
 
