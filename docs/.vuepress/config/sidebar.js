@@ -107,6 +107,7 @@ module.exports = [
                     "/interview/hf/分布式事务",
                     "/interview/hf/分布式锁",
                     "/interview/hf/JVM调优",
+                    "/interview/hf/Synchronized锁升级(锁膨胀)",
                 ]
             },
 
