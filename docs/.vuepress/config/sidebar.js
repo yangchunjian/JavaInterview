@@ -697,6 +697,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-898.子数组按位或操作",
                     "/algorithm/leetcode/leetcode-900.RLE 迭代器",
                     "/algorithm/leetcode/leetcode-901.股票价格跨度",
+                    "/algorithm/leetcode/leetcode-904.水果成篮",
                     "/algorithm/leetcode/leetcode-915.分割数组",
                     "/algorithm/leetcode/leetcode-918.环形子数组的最大和",
                     "/algorithm/leetcode/leetcode-919.完全二叉树插入器",
