@@ -687,6 +687,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-855.考场就座",
                     "/algorithm/leetcode/leetcode-856.括号的分数",
                     "/algorithm/leetcode/leetcode-858.镜面反射",
+                    "/algorithm/leetcode/leetcode-859.亲密字符串",
+                    "/algorithm/leetcode/leetcode-860.柠檬水找零",
                     "/algorithm/leetcode/leetcode-863.二叉树中所有距离为 K 的结点",
                     "/algorithm/leetcode/leetcode-865.具有所有最深节点的最小子树",
                     "/algorithm/leetcode/leetcode-872.叶子相似的树",
