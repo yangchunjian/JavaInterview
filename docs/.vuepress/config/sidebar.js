@@ -685,6 +685,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-852.山脉数组的峰顶索引",
                     "/algorithm/leetcode/leetcode-853.车队",
                     "/algorithm/leetcode/leetcode-855.考场就座",
+                    "/algorithm/leetcode/leetcode-856.括号的分数",
+                    "/algorithm/leetcode/leetcode-858.镜面反射",
                     "/algorithm/leetcode/leetcode-863.二叉树中所有距离为 K 的结点",
                     "/algorithm/leetcode/leetcode-865.具有所有最深节点的最小子树",
                     "/algorithm/leetcode/leetcode-872.叶子相似的树",
