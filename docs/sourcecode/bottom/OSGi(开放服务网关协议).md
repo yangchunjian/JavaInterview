@@ -1,3 +1,17 @@
+---
+title: OSGi(开放服务网关协议)
+date: 2022-10-24 14:59:53
+permalink: /pages/4bb695/
+categories:
+  - sourcecode
+  - bottom
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 解答
 

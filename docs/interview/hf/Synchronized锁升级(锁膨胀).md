@@ -1,3 +1,17 @@
+---
+title: Synchronized锁升级(锁膨胀)
+date: 2022-10-24 14:35:56
+permalink: /pages/6020c4/
+categories:
+  - interview
+  - hf
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 解答
