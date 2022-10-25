@@ -693,6 +693,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-863.二叉树中所有距离为 K 的结点",
                     "/algorithm/leetcode/leetcode-865.具有所有最深节点的最小子树",
                     "/algorithm/leetcode/leetcode-866.回文素数",
+                    "/algorithm/leetcode/leetcode-867.转置矩阵",
+                    "/algorithm/leetcode/leetcode-868.二进制间距",
                     "/algorithm/leetcode/leetcode-872.叶子相似的树",
                     "/algorithm/leetcode/leetcode-889.根据前序和后序遍历构造二叉树",
                     "/algorithm/leetcode/leetcode-895.最大频率栈",
