@@ -52,40 +52,48 @@ Alice 和 Bob 轮流进行，Alice 先开始 。 每回合，玩家从行的 开
 
 ## 思路
 
-    /**
-    dp[i][j]表示从第i到j堆石头，Alex（先手）能领先Lee（后手）的最大分值。
-        1.Alex拿走第j堆，则相当于变成：Alex初始分数为piles[j-1]，第i到j-1堆，且Lee先手。
-            dp[i][j] = piles[j-1] + (-dp[i][j-1])
-        2.Alex拿走第i堆，则相当于变成：Alex初始分数为piles[i-1]，第i+1到j堆，且Lee先手。
-            dp[i][j] = piles[i-1] + (-dp[i+1][j])
-        二者取大。
-     */
-     
+        //dp其实就是存储了递归过程中的数值
+        //dps[i][j]代表从i到j所能获得的最大的绝对分数
+        //（比如为1就说明亚历克斯从i到j可以赢李1分）
+        //如何计算dps[i][j]呢:max(piles[i]-dp[i+1][j],piles[j]-dp[i][j-1]);
+        //这里减去dps数组是因为李也要找到最大的
+        //最后dps=[5 2 4 1]
+        //        [0 3 1 4]
+        //        [0 0 4 1]
+        //        [0 0 0 5]
+
 ## 解法
 ```java
 
 class Solution {
-    /**
-dp[i][j]表示从第i到j堆石头，Alex（先手）能领先Lee（后手）的最大分值。
-    1.Alex拿走第j堆，则相当于变成：Alex初始分数为piles[j-1]，第i到j-1堆，且Lee先手。
-        dp[i][j] = piles[j-1] + (-dp[i][j-1])
-    2.Alex拿走第i堆，则相当于变成：Alex初始分数为piles[i-1]，第i+1到j堆，且Lee先手。
-        dp[i][j] = piles[i-1] + (-dp[i+1][j])
-    二者取大。
- */
+    
     public boolean stoneGame(int[] piles) {
-        int[][] dp = new int[piles.length+1][piles.length+1];
-        for (int i=1; i<=piles.length; ++i){    // 只有一堆石头时，先手能领先的最大分值就是这堆石头的数量。
-            dp[i][i] = piles[i-1];
+        //dp其实就是存储了递归过程中的数值
+        //dps[i][j]代表从i到j所能获得的最大的绝对分数
+        //（比如为1就说明亚历克斯从i到j可以赢李1分）
+        //如何计算dps[i][j]呢:max(piles[i]-dp[i+1][j],piles[j]-dp[i][j-1]);
+        //这里减去dps数组是因为李也要找到最大的
+        //最后dps=[5 2 4 1]
+        //        [0 3 1 4]
+        //        [0 0 4 1]
+        //        [0 0 0 5]
+        int n=piles.length;
+        int [][]dps=new int[n][n];
+        //dps[i][i]存储当前i的石子数
+        for(int i=0;i<n;i++)
+            dps[i][i]=piles[i];
+        //d=1,其实代表，先算两个子的时候
+        for(int d=1;d<n;d++)
+        {
+            //有多少组要比较
+            for(int j=0;j<n-d;j++)
+            {
+                //比较j到d+j
+                dps[j][d+j]=Math.max(piles[j]-dps[j+1][d+j],piles[d+j]-dps[j][d+j-1]);
+            }
         }
-        for (int len=1; len<=piles.length; ++len){  // 先遍历区间长度
-            for (int i=1; i+len<=piles.length; ++i){
-                int j = i+len;
-                dp[i][j] = Math.max(piles[j-1]-dp[i][j-1], piles[i-1]-dp[i+1][j]);
-            }  
-        }
-        return dp[1][piles.length]>=0;    }
-}
+        return dps[0][n-1]>0;
+}}
 ```
 
 ## 总结
