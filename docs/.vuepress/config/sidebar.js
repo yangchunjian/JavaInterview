@@ -700,6 +700,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-872.叶子相似的树",
                     "/algorithm/leetcode/leetcode-873.最长的斐波那契子序列的长度",
                     "/algorithm/leetcode/leetcode-874.模拟行走机器人",
+                    "/algorithm/leetcode/leetcode-875.爱吃香蕉的珂珂",
+                    "/algorithm/leetcode/leetcode-877.石子游戏",
                     "/algorithm/leetcode/leetcode-889.根据前序和后序遍历构造二叉树",
                     "/algorithm/leetcode/leetcode-895.最大频率栈",
                     "/algorithm/leetcode/leetcode-898.子数组按位或操作",
