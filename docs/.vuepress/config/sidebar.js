@@ -707,6 +707,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-883.三维形体投影面积",
                     "/algorithm/leetcode/leetcode-884.两句话中的不常见单词",
                     "/algorithm/leetcode/leetcode-885.螺旋矩阵 III",
+                    "/algorithm/leetcode/leetcode-886.可能的二分法",
                     "/algorithm/leetcode/leetcode-889.根据前序和后序遍历构造二叉树",
                     "/algorithm/leetcode/leetcode-895.最大频率栈",
                     "/algorithm/leetcode/leetcode-898.子数组按位或操作",
