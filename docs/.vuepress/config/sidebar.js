@@ -710,6 +710,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-886.可能的二分法",
                     "/algorithm/leetcode/leetcode-888.公平的糖果交换",
                     "/algorithm/leetcode/leetcode-889.根据前序和后序遍历构造二叉树",
+                    "/algorithm/leetcode/leetcode-890.查找和替换模式",
+                    "/algorithm/leetcode/leetcode-892.三维形体的表面积",
                     "/algorithm/leetcode/leetcode-895.最大频率栈",
                     "/algorithm/leetcode/leetcode-898.子数组按位或操作",
                     "/algorithm/leetcode/leetcode-900.RLE 迭代器",
