@@ -726,6 +726,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-908.最小差值 I",
                     "/algorithm/leetcode/leetcode-909.蛇梯棋",
                     "/algorithm/leetcode/leetcode-910.最小差值 II",
+                    "/algorithm/leetcode/leetcode-911.在线选举",
                     "/algorithm/leetcode/leetcode-915.分割数组",
                     "/algorithm/leetcode/leetcode-918.环形子数组的最大和",
                     "/algorithm/leetcode/leetcode-919.完全二叉树插入器",
