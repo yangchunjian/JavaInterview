@@ -729,6 +729,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-911.在线选举",
                     "/algorithm/leetcode/leetcode-914.卡牌分组",
                     "/algorithm/leetcode/leetcode-915.分割数组",
+                    "/algorithm/leetcode/leetcode-916.单词子集",
                     "/algorithm/leetcode/leetcode-918.环形子数组的最大和",
                     "/algorithm/leetcode/leetcode-919.完全二叉树插入器",
                     "/algorithm/leetcode/leetcode-946.验证栈序列",
