@@ -720,6 +720,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-900.RLE 迭代器",
                     "/algorithm/leetcode/leetcode-901.股票价格跨度",
                     "/algorithm/leetcode/leetcode-902.最大为 N 的数字组合",
+                    "/algorithm/leetcode/leetcode-903.DI 序列的有效排列",
                     "/algorithm/leetcode/leetcode-904.水果成篮",
                     "/algorithm/leetcode/leetcode-907.子数组的最小值之和",
                     "/algorithm/leetcode/leetcode-908.最小差值 I",
