@@ -734,6 +734,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-918.环形子数组的最大和",
                     "/algorithm/leetcode/leetcode-919.完全二叉树插入器",
                     "/algorithm/leetcode/leetcode-921.使括号有效的最少添加",
+                    "/algorithm/leetcode/leetcode-923.三数之和的多种可能",
                     "/algorithm/leetcode/leetcode-946.验证栈序列",
                     "/algorithm/leetcode/leetcode-951.翻转等价二叉树",
                     "/algorithm/leetcode/leetcode-958.二叉树的完全性检验",
