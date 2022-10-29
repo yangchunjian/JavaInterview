@@ -737,6 +737,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-923.三数之和的多种可能",
                     "/algorithm/leetcode/leetcode-925.长按键入",
                     "/algorithm/leetcode/leetcode-926.将字符串翻转到单调递增",
+                    "/algorithm/leetcode/leetcode-929.独特的电子邮件地址",
                     "/algorithm/leetcode/leetcode-946.验证栈序列",
                     "/algorithm/leetcode/leetcode-951.翻转等价二叉树",
                     "/algorithm/leetcode/leetcode-958.二叉树的完全性检验",
