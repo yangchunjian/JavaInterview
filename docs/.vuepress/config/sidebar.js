@@ -741,6 +741,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-930.和相同的二元子数组",
                     "/algorithm/leetcode/leetcode-931.下降路径最小和",
                     "/algorithm/leetcode/leetcode-932.漂亮数组",
+                    "/algorithm/leetcode/leetcode-933.最近的请求次数",
                     "/algorithm/leetcode/leetcode-946.验证栈序列",
                     "/algorithm/leetcode/leetcode-951.翻转等价二叉树",
                     "/algorithm/leetcode/leetcode-958.二叉树的完全性检验",
