@@ -755,6 +755,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-949.给定数字能组成的最大时间",
                     "/algorithm/leetcode/leetcode-950.按递增顺序显示卡牌",
                     "/algorithm/leetcode/leetcode-951.翻转等价二叉树",
+                    "/algorithm/leetcode/leetcode-954.二倍数对数组",
                     "/algorithm/leetcode/leetcode-958.二叉树的完全性检验",
                     "/algorithm/leetcode/leetcode-968.监控二叉树",
                     "/algorithm/leetcode/leetcode-987.二叉树的垂序遍历",
