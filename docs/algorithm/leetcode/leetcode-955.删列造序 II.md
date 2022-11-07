@@ -1,3 +1,17 @@
+---
+title: 删列造序 II
+date: 2022-11-06 19:34:52
+permalink: /pages/92ae43/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
