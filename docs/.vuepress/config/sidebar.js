@@ -762,6 +762,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-961.在长度 2N 的数组中找出重复 N 次的元素",
                     "/algorithm/leetcode/leetcode-962.最大宽度坡",
                     "/algorithm/leetcode/leetcode-963.最小面积矩形 II",
+                    "/algorithm/leetcode/leetcode-966.元音拼写检查器",
+                    "/algorithm/leetcode/leetcode-967.连续差相同的数字",
                     "/algorithm/leetcode/leetcode-968.监控二叉树",
                     "/algorithm/leetcode/leetcode-987.二叉树的垂序遍历",
                     "/algorithm/leetcode/leetcode-988.从叶结点开始的最小字符串",

@@ -1,3 +1,17 @@
+---
+title: 最小面积矩形 II
+date: 2022-11-07 22:21:44
+permalink: /pages/df4ba0/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目
@@ -60,10 +74,10 @@
 ```java
 
 class Solution {
-//     遍历每两个点的组合，记录他俩 对角线的长度 和 中点坐标，拼成字符串存进map的key，把其中一个点的坐标存进value(方便以后计算面积面积)。
+// 遍历每两个点的组合，记录他俩 对角线的长度 和 中点坐标，拼成字符串存进map的key，把其中一个点的坐标存进value(方便以后计算面积面积)。
 // 之后再遇到 长度和中点 相同的一组点，就获取key对应的value(们)， 分别算出面积，取最小的返回，再把当前的一个点坐标和value拼起来覆盖原value
     public double minAreaFreeRect(int[][] polongs) {
-	Map<String,String>state= new HashMap<String,String>();
+	Map<String,String> state= new HashMap<String,String>();
 	double S = Long.MAX_VALUE;
 	for(int i=0;i<polongs.length;++i) {
 		for(int j=i;j<polongs.length;++j) {
