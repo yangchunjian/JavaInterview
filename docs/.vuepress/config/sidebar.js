@@ -759,6 +759,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-957.N 天后的牢房",
                     "/algorithm/leetcode/leetcode-958.二叉树的完全性检验",
                     "/algorithm/leetcode/leetcode-959.由斜杠划分区域",
+                    "/algorithm/leetcode/leetcode-961.在长度 2N 的数组中找出重复 N 次的元素",
+                    "/algorithm/leetcode/leetcode-962.最大宽度坡",
                     "/algorithm/leetcode/leetcode-968.监控二叉树",
                     "/algorithm/leetcode/leetcode-987.二叉树的垂序遍历",
                     "/algorithm/leetcode/leetcode-988.从叶结点开始的最小字符串",
