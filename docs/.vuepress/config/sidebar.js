@@ -767,6 +767,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-966.元音拼写检查器",
                     "/algorithm/leetcode/leetcode-967.连续差相同的数字",
                     "/algorithm/leetcode/leetcode-968.监控二叉树",
+                    "/algorithm/leetcode/leetcode-969.煎饼排序",
                     "/algorithm/leetcode/leetcode-987.二叉树的垂序遍历",
                     "/algorithm/leetcode/leetcode-988.从叶结点开始的最小字符串",
                     "/algorithm/leetcode/leetcode-998.最大二叉树 II",
