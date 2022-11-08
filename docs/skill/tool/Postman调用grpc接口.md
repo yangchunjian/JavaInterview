@@ -1,3 +1,17 @@
+---
+title: Postman调用grpc接口
+date: 2022-11-08 17:30:13
+permalink: /pages/b3b3af/
+categories:
+  - skill
+  - tool
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 解答
 

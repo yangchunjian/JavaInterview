@@ -1,3 +1,17 @@
+---
+title: Mac上修改目录权限的方法
+date: 2022-11-08 15:40:56
+permalink: /pages/596443/
+categories:
+  - skill
+  - tool
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 解答
 
