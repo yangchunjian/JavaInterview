@@ -210,6 +210,7 @@ module.exports = [
                     "/skill/tool/GoLand配置go工程环境(或idea配置go工程环境)",
                     "/skill/tool/picoCTF平台学习及使用",
                     "/skill/tool/Mac上修改目录权限的方法",
+                    "/skill/tool/Postman调用grpc接口",
                 ]
             },
             {
