@@ -1,3 +1,17 @@
+---
+title: 最接近原点的 K 个点
+date: 2022-11-08 21:53:27
+permalink: /pages/82e663/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

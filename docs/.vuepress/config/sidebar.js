@@ -771,6 +771,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-970.强整数",
                     "/algorithm/leetcode/leetcode-971.翻转二叉树以匹配先序遍历",
                     "/algorithm/leetcode/leetcode-973.最接近原点的 K 个点",
+                    "/algorithm/leetcode/leetcode-974.和可被 K 整除的子数组",
                     "/algorithm/leetcode/leetcode-987.二叉树的垂序遍历",
                     "/algorithm/leetcode/leetcode-988.从叶结点开始的最小字符串",
                     "/algorithm/leetcode/leetcode-998.最大二叉树 II",
