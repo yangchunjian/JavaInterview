@@ -211,6 +211,7 @@ module.exports = [
                     "/skill/tool/picoCTF平台学习及使用",
                     "/skill/tool/Mac上修改目录权限的方法",
                     "/skill/tool/Postman调用grpc接口",
+                    "/skill/tool/Mysql启动时tmp下mysql.sock错误解决方法",
                 ]
             },
             {
