@@ -199,6 +199,7 @@ module.exports = [
         title: '原理',
         children: [
             "/principle/Lombok原理",
+            "/principle/GRPC原理",
         ]
     },
     {
