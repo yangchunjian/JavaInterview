@@ -212,6 +212,7 @@ module.exports = [
                     "/skill/tool/Mac上修改目录权限的方法",
                     "/skill/tool/Postman调用grpc接口",
                     "/skill/tool/Mysql启动时tmp下mysql.sock错误解决方法",
+                    "/skill/tool/各种环境(dev、test、sit、uat、prod、pre、fat)",
                 ]
             },
             {
