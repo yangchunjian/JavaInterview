@@ -215,6 +215,7 @@ module.exports = [
                     "/skill/tool/Mysql启动时tmp下mysql.sock错误解决方法",
                     "/skill/tool/各种环境(dev、test、sit、uat、prod、pre、fat)",
                     "/skill/tool/ISC故障演练计划",
+                    "/skill/tool/Mac系统创建home目录提示Read-Only filesystem的解决方案",
                 ]
             },
             {
