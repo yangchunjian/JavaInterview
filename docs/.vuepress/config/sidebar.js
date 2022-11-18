@@ -209,7 +209,7 @@ module.exports = [
             {
                 title: "书籍",
                 children: [
-                    "/skill/book/book",
+                    "/skill/book/书籍列表",
                 ]
             },
             {
