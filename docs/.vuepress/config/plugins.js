@@ -46,7 +46,7 @@ module.exports = [
     // 阅读时间插件
     ['vuepress-plugin-reading-time'],
     //pdf预览
-    ['vuepress-plugin-pdfjs'],
+    // ['vuepress-plugin-pdfjs'],
     //   [
     //   "reading-time1",
     //   {
