@@ -37,6 +37,7 @@
     "busuanzi.pure.js": "^1.0.3",
     "dayjs": "^1.11.3",
     "vuepress-plugin-code-copy": "^1.0.6",
+    "vuepress-plugin-pdfjs": "^0.0.1-beta.2",
     "vuepress-plugin-reading-progress": "^1.0.10",
     "vuepress-theme-vue": "^1.1.1"
   },

@@ -45,6 +45,8 @@ module.exports = [
     // ['@vuepress/medium-zoom'],//图片缩放
     // 阅读时间插件
     ['vuepress-plugin-reading-time'],
+    //pdf预览
+    ['vuepress-plugin-pdfjs'],
     //   [
     //   "reading-time1",
     //   {

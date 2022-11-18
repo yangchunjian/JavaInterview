@@ -209,14 +209,20 @@ module.exports = [
             {
                 title: "工具",
                 children: [
-                    "/skill/tool/GoLand配置go工程环境(或idea配置go工程环境)",
+
                     "/skill/tool/picoCTF平台学习及使用",
                     "/skill/tool/Mac上修改目录权限的方法",
                     "/skill/tool/Postman调用grpc接口",
                     "/skill/tool/Mysql启动时tmp下mysql.sock错误解决方法",
                     "/skill/tool/各种环境(dev、test、sit、uat、prod、pre、fat)",
-                    "/skill/tool/ISC故障演练计划",
+                    "/skill/tool/GoLand配置go工程环境(或idea配置go工程环境)","/skill/tool/ISC故障演练计划",
                     "/skill/tool/Mac系统创建home目录提示Read-Only filesystem的解决方案",
+                ]
+            },
+            {
+                title: "书籍",
+                children: [
+                    "/skill/book/book",
                 ]
             },
             {
