@@ -10751,11 +10751,6 @@
     "jsonp" "^0.2.1"
     "query-string" "^6.9.0"
 
-"vuepress-plugin-pdfjs@^0.0.1-beta.2":
-  "integrity" "sha512-1SGXYR+nl6myE2klw8E/6d8baAk9pQrrCM0rSplDskpzJTpneQPmBTTJL8djsMo583ctLnQMbUq1uBL5PR5ZFA=="
-  "resolved" "https://registry.npmmirror.com/vuepress-plugin-pdfjs/-/vuepress-plugin-pdfjs-0.0.1-beta.2.tgz"
-  "version" "0.0.1-beta.2"
-
 "vuepress-plugin-reading-progress@^1.0.10":
   "integrity" "sha512-7OxcjNEDf9gqFTns0YnXrqPnTRlX6wvxWFr7D8tlfyMPpsZwJkh/MkJveRrEaKcU0gk8QGmPHnXLAZ3soTThVg=="
   "resolved" "https://registry.npmjs.org/vuepress-plugin-reading-progress/-/vuepress-plugin-reading-progress-1.0.10.tgz"
