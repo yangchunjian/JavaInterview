@@ -792,6 +792,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-986.区间列表的交集",
                     "/algorithm/leetcode/leetcode-987.二叉树的垂序遍历",
                     "/algorithm/leetcode/leetcode-988.从叶结点开始的最小字符串",
+                    "/algorithm/leetcode/leetcode-989.数组形式的整数加法",
+                    "/algorithm/leetcode/leetcode-990.等式方程的可满足性",
                     "/algorithm/leetcode/leetcode-998.最大二叉树 II",
                     "/algorithm/leetcode/leetcode-1022.从根到叶的二进制数之和",
                     "/algorithm/leetcode/leetcode-1038.从二叉搜索树到更大和树",
