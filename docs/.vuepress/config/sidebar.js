@@ -788,6 +788,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-977.有序数组的平方",
                     "/algorithm/leetcode/leetcode-978.最长湍流子数组",
                     "/algorithm/leetcode/leetcode-984.不含 AAA 或 BBB 的字符串",
+                    "/algorithm/leetcode/leetcode-985.查询后的偶数和",
+                    "/algorithm/leetcode/leetcode-986.区间列表的交集",
                     "/algorithm/leetcode/leetcode-987.二叉树的垂序遍历",
                     "/algorithm/leetcode/leetcode-988.从叶结点开始的最小字符串",
                     "/algorithm/leetcode/leetcode-998.最大二叉树 II",
