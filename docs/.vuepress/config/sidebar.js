@@ -787,6 +787,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-976.三角形的最大周长",
                     "/algorithm/leetcode/leetcode-977.有序数组的平方",
                     "/algorithm/leetcode/leetcode-978.最长湍流子数组",
+                    "/algorithm/leetcode/leetcode-983.最低票价",
                     "/algorithm/leetcode/leetcode-984.不含 AAA 或 BBB 的字符串",
                     "/algorithm/leetcode/leetcode-985.查询后的偶数和",
                     "/algorithm/leetcode/leetcode-986.区间列表的交集",
