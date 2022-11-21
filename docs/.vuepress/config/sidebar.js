@@ -797,6 +797,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-990.等式方程的可满足性",
                     "/algorithm/leetcode/leetcode-991.坏了的计算器",
                     "/algorithm/leetcode/leetcode-993.二叉树的堂兄弟节点",
+                    "/algorithm/leetcode/leetcode-994.腐烂的橘子",
                     "/algorithm/leetcode/leetcode-998.最大二叉树 II",
                     "/algorithm/leetcode/leetcode-1022.从根到叶的二进制数之和",
                     "/algorithm/leetcode/leetcode-1038.从二叉搜索树到更大和树",
