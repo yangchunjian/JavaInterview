@@ -800,6 +800,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-994.腐烂的橘子",
                     "/algorithm/leetcode/leetcode-997.找到小镇的法官",
                     "/algorithm/leetcode/leetcode-998.最大二叉树 II",
+                    "/algorithm/leetcode/leetcode-999.可以被一步捕获的棋子数",
                     "/algorithm/leetcode/leetcode-1022.从根到叶的二进制数之和",
                     "/algorithm/leetcode/leetcode-1038.从二叉搜索树到更大和树",
                     "/algorithm/leetcode/leetcode-1028.从先序遍历还原二叉树",
