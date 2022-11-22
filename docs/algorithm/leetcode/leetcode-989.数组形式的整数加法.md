@@ -1,3 +1,17 @@
+---
+title: 数组形式的整数加法
+date: 2022-11-20 21:02:46
+permalink: /pages/9a81cc/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

@@ -1,3 +1,17 @@
+---
+title: 最低票价
+date: 2022-11-21 16:34:08
+permalink: /pages/fd2bdc/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

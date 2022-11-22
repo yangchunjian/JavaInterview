@@ -1,3 +1,17 @@
+---
+title: 可以被一步捕获的棋子数
+date: 2022-11-21 17:49:24
+permalink: /pages/f8f43c/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

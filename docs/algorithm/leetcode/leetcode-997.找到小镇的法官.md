@@ -1,3 +1,17 @@
+---
+title: 找到小镇的法官
+date: 2022-11-21 17:41:37
+permalink: /pages/900438/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

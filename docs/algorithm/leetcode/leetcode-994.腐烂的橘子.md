@@ -1,3 +1,17 @@
+---
+title: 腐烂的橘子
+date: 2022-11-21 17:17:05
+permalink: /pages/e4d73d/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

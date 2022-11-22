@@ -1,3 +1,17 @@
+---
+title: 等式方程的可满足性
+date: 2022-11-20 21:07:20
+permalink: /pages/2a7900/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

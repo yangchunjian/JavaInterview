@@ -1,3 +1,17 @@
+---
+title: 坏了的计算器
+date: 2022-11-21 16:37:42
+permalink: /pages/fc1946/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目
