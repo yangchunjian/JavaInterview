@@ -804,6 +804,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1002.查找共用字符",
                     "/algorithm/leetcode/leetcode-1003.检查替换后的词是否有效",
                     "/algorithm/leetcode/leetcode-1004.最大连续1的个数 III",
+                    "/algorithm/leetcode/leetcode-1005.K 次取反后最大化的数组和",
+                    "/algorithm/leetcode/leetcode-1006.笨阶乘",
                     "/algorithm/leetcode/leetcode-1022.从根到叶的二进制数之和",
                     "/algorithm/leetcode/leetcode-1038.从二叉搜索树到更大和树",
                     "/algorithm/leetcode/leetcode-1028.从先序遍历还原二叉树",
