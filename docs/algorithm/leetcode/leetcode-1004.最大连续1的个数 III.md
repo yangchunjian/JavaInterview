@@ -42,24 +42,25 @@ titleTag: Java
 
 ## 思路
 
-while
+滑动窗口
 
 ## 解法
 ```java
 
 class Solution {
-    public int longestOnes(int[] A, int K) {
-        int l = 0, r = 0, res = 0;
-        while (r < A.length) {
-            if (A[r] == 0) {
-                if (K == 0) {
-                    while (A[l] == 1) l++;
-                    l++;
-                } else {
-                    K--;
-                }
+    public int longestOnes(int[] nums, int k) {
+        
+        int left = 0, right = 0;
+        int res = Integer.MIN_VALUE;
+        while(right < nums.length){
+            if(nums[right] == 0)k--;
+            right++;
+
+            while(k < 0){//左边界需要收缩
+                if(nums[left] == 0)k++;
+                left++;    
             }
-            res = Math.max(res, ++r - l);
+            res = Math.max(res, right - left);
         }
         return res;
     }
