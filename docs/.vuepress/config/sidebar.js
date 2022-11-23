@@ -816,6 +816,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1015.可被 K 整除的最小整数",
                     "/algorithm/leetcode/leetcode-1016.子串能表示从 1 到 N 数字的二进制串",
                     "/algorithm/leetcode/leetcode-1017.负二进制转换",
+                    "/algorithm/leetcode/leetcode-1018.可被 5 整除的二进制前缀",
                     "/algorithm/leetcode/leetcode-1022.从根到叶的二进制数之和",
                     "/algorithm/leetcode/leetcode-1038.从二叉搜索树到更大和树",
                     "/algorithm/leetcode/leetcode-1028.从先序遍历还原二叉树",
