@@ -808,6 +808,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1005.K 次取反后最大化的数组和",
                     "/algorithm/leetcode/leetcode-1006.笨阶乘",
                     "/algorithm/leetcode/leetcode-1007.行相等的最少多米诺旋转",
+                    "/algorithm/leetcode/leetcode-1010.总持续时间可被 60 整除的歌曲",
                     "/algorithm/leetcode/leetcode-1022.从根到叶的二进制数之和",
                     "/algorithm/leetcode/leetcode-1038.从二叉搜索树到更大和树",
                     "/algorithm/leetcode/leetcode-1028.从先序遍历还原二叉树",
