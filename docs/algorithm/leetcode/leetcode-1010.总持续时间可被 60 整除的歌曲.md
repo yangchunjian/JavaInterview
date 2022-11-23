@@ -1,3 +1,17 @@
+---
+title: 总持续时间可被 60 整除的歌曲
+date: 2022-11-23 18:13:37
+permalink: /pages/622e99/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
