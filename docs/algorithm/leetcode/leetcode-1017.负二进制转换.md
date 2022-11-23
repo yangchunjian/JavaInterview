@@ -42,13 +42,11 @@ class Solution {
         if(n==0){return "0";}
         StringBuilder ans=new StringBuilder();
         for(int i=0;n>0;i^=1){
+            ans.append(n&1);
             if(i==0){
-                ans.append(n&1);
-                n>>=1;
-            }
-            else{
-                ans.append(n&1);
-                n=(n>>1)+(n&1);
+                n = n>>1;
+            }else{
+                n = (n>>1)+(n&1);
             }
         }
         return ans.reverse().toString();
