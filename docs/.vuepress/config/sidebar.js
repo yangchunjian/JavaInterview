@@ -813,6 +813,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1013.将数组分成和相等的三个部分",
                     "/algorithm/leetcode/leetcode-1014.最佳观光组合",
                     "/algorithm/leetcode/leetcode-1015.可被 K 整除的最小整数",
+                    "/algorithm/leetcode/leetcode-1016.子串能表示从 1 到 N 数字的二进制串",
                     "/algorithm/leetcode/leetcode-1022.从根到叶的二进制数之和",
                     "/algorithm/leetcode/leetcode-1038.从二叉搜索树到更大和树",
                     "/algorithm/leetcode/leetcode-1028.从先序遍历还原二叉树",
