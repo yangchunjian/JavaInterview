@@ -1,17 +1,3 @@
----
-title: Docker命令大全
-date: 2022-11-24 13:03:14
-permalink: /pages/1f0c46/
-categories:
-  - interview
-  - hf
-tags:
-  - 
-author: 
-  name: JavaInterview.cn
-  link: https://JavaInterview.cn
-titleTag: Java
----
 
 
 ## 解答
@@ -23,6 +9,7 @@ titleTag: Java
 ![](../../../media/pictures/hf/do1.png)
 
 ## 二、基本命令
+
 ![](../../../media/pictures/hf/do2.png)
     
     docker version		#显示版本信息

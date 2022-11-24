@@ -109,7 +109,7 @@ module.exports = [
                     "/interview/hf/JVM调优",
                     "/interview/hf/Synchronized锁升级(锁膨胀)",
                     "/interview/hf/Paxos、Raft、ZAB协议",
-                    "/interview/hf/Docker命令大全",
+                    "/interview/hf/Docker命令",
                 ]
             },
 
