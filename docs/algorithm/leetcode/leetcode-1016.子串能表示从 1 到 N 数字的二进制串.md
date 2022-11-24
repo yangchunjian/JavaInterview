@@ -1,3 +1,17 @@
+---
+title: 子串能表示从 1 到 N 数字的二进制串
+date: 2022-11-23 18:57:02
+permalink: /pages/cae0e7/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
     
 ## 题目
 

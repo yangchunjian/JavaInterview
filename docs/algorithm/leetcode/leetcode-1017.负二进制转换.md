@@ -1,3 +1,17 @@
+---
+title: 负二进制转换
+date: 2022-11-23 21:00:49
+permalink: /pages/a0d715/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

@@ -1,3 +1,17 @@
+---
+title: 可被 5 整除的二进制前缀
+date: 2022-11-23 21:04:31
+permalink: /pages/6bb9bf/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

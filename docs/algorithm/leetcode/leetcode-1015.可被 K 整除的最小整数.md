@@ -1,3 +1,17 @@
+---
+title: 可被 K 整除的最小整数
+date: 2022-11-23 18:49:17
+permalink: /pages/26f5b9/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

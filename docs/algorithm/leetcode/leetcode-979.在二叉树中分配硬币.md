@@ -1,3 +1,17 @@
+---
+title: 在二叉树中分配硬币
+date: 2022-11-24 15:59:01
+permalink: /pages/1967a0/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

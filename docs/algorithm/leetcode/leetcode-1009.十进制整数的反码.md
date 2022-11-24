@@ -1,3 +1,17 @@
+---
+title: 十进制整数的反码
+date: 2022-11-23 20:47:34
+permalink: /pages/81ff01/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
