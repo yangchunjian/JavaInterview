@@ -824,6 +824,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1022.从根到叶的二进制数之和",
                     "/algorithm/leetcode/leetcode-1023.驼峰式匹配",
                     "/algorithm/leetcode/leetcode-1024.视频拼接",
+                    "/algorithm/leetcode/leetcode-1025.除数博弈",
+                    "/algorithm/leetcode/leetcode-1026.节点与其祖先之间的最大差值",
                     "/algorithm/leetcode/leetcode-1038.从二叉搜索树到更大和树",
                     "/algorithm/leetcode/leetcode-1028.从先序遍历还原二叉树",
                     "/algorithm/leetcode/leetcode-1080.根到叶路径上的不足节点",
