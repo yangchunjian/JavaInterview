@@ -821,6 +821,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1017.负二进制转换",
                     "/algorithm/leetcode/leetcode-1018.可被 5 整除的二进制前缀",
                     "/algorithm/leetcode/leetcode-1020.飞地的数量",
+                    "/algorithm/leetcode/leetcode-1021.删除最外层的括号",
                     "/algorithm/leetcode/leetcode-1022.从根到叶的二进制数之和",
                     "/algorithm/leetcode/leetcode-1038.从二叉搜索树到更大和树",
                     "/algorithm/leetcode/leetcode-1028.从先序遍历还原二叉树",
