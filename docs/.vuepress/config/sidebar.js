@@ -840,6 +840,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1111.有效括号的嵌套深度",
                     "/algorithm/leetcode/leetcode-1123.最深叶节点的最近公共祖先",
                     "/algorithm/leetcode/leetcode-1124.表现良好的最长时间段",
+                    "/algorithm/leetcode/leetcode-1144.递减元素使数组呈锯齿状",
                     "/algorithm/leetcode/leetcode-1145.二叉树着色游戏",
                     "/algorithm/leetcode/leetcode-1161.最大层内元素和",
                     "/algorithm/leetcode/leetcode-1186.删除一次得到子数组最大和",
