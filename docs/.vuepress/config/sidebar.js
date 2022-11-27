@@ -834,6 +834,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1080.根到叶路径上的不足节点",
                     "/algorithm/leetcode/leetcode-1103.分糖果 II",
                     "/algorithm/leetcode/leetcode-1104.二叉树寻路",
+                    "/algorithm/leetcode/leetcode-1105.填充书架",
                     "/algorithm/leetcode/leetcode-1110.删点成林",
                     "/algorithm/leetcode/leetcode-1123.最深叶节点的最近公共祖先",
                     "/algorithm/leetcode/leetcode-1145.二叉树着色游戏",
