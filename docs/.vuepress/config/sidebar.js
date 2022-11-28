@@ -833,6 +833,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1031.两个非重叠子数组的最大和",
                     "/algorithm/leetcode/leetcode-1033.移动石子直到连续",
                     "/algorithm/leetcode/leetcode-1034.边界着色",
+                    "/algorithm/leetcode/leetcode-1035.不相交的线",
+                    "/algorithm/leetcode/leetcode-1037.有效的回旋镖",
                     "/algorithm/leetcode/leetcode-1038.从二叉搜索树到更大和树",
                     "/algorithm/leetcode/leetcode-1071.字符串的最大公因子",
                     "/algorithm/leetcode/leetcode-1072.按列翻转得到最大值等行数",
