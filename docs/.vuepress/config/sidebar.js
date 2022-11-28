@@ -837,6 +837,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1037.有效的回旋镖",
                     "/algorithm/leetcode/leetcode-1038.从二叉搜索树到更大和树",
                     "/algorithm/leetcode/leetcode-1039.多边形三角剖分的最低得分",
+                    "/algorithm/leetcode/leetcode-1040.移动石子直到连续 II",
+                    "/algorithm/leetcode/leetcode-1041.困于环中的机器人",
                     "/algorithm/leetcode/leetcode-1071.字符串的最大公因子",
                     "/algorithm/leetcode/leetcode-1072.按列翻转得到最大值等行数",
                     "/algorithm/leetcode/leetcode-1073.负二进制数相加",
