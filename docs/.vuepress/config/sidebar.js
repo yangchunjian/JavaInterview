@@ -850,6 +850,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1089.复写零",
                     "/algorithm/leetcode/leetcode-1090.受标签影响的最大值",
                     "/algorithm/leetcode/leetcode-1093.大样本统计",
+                    "/algorithm/leetcode/leetcode-1094.拼车",
                     "/algorithm/leetcode/leetcode-1103.分糖果 II",
                     "/algorithm/leetcode/leetcode-1104.二叉树寻路",
                     "/algorithm/leetcode/leetcode-1105.填充书架",
