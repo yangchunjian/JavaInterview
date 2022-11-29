@@ -855,6 +855,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1104.二叉树寻路",
                     "/algorithm/leetcode/leetcode-1105.填充书架",
                     "/algorithm/leetcode/leetcode-1108.IP 地址无效化",
+                    "/algorithm/leetcode/leetcode-1109.航班预订统计",
                     "/algorithm/leetcode/leetcode-1110.删点成林",
                     "/algorithm/leetcode/leetcode-1111.有效括号的嵌套深度",
                     "/algorithm/leetcode/leetcode-1123.最深叶节点的最近公共祖先",
