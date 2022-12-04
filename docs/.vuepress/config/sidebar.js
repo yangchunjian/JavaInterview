@@ -840,6 +840,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1040.移动石子直到连续 II",
                     "/algorithm/leetcode/leetcode-1041.困于环中的机器人",
                     "/algorithm/leetcode/leetcode-1042.不邻接植花",
+                    "/algorithm/leetcode/leetcode-1052.爱生气的书店老板",
                     "/algorithm/leetcode/leetcode-1071.字符串的最大公因子",
                     "/algorithm/leetcode/leetcode-1072.按列翻转得到最大值等行数",
                     "/algorithm/leetcode/leetcode-1073.负二进制数相加",
