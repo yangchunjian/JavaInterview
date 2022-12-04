@@ -870,6 +870,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1129.颜色交替的最短路径",
                     "/algorithm/leetcode/leetcode-1130.叶值的最小代价生成树",
                     "/algorithm/leetcode/leetcode-1131.绝对值表达式的最大值",
+                    "/algorithm/leetcode/leetcode-1137.第 N 个泰波那契数",
+                    "/algorithm/leetcode/leetcode-1138.字母板上的路径",
                     "/algorithm/leetcode/leetcode-1144.递减元素使数组呈锯齿状",
                     "/algorithm/leetcode/leetcode-1145.二叉树着色游戏",
                     "/algorithm/leetcode/leetcode-1161.最大层内元素和",
