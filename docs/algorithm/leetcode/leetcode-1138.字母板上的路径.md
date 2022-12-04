@@ -6,6 +6,7 @@
 
 在本题里，字母板为board = ["abcde", "fghij", "klmno", "pqrst", "uvwxy", "z"]，如下所示。
 
+![](../../../media/pictures/leetcode/azboard.png)
 
 
 我们可以按下面的指令规则行动：
@@ -23,6 +24,7 @@
  
 
 示例 1：
+
 
     输入：target = "leet"
     输出："DDR!UURRR!!DDD!"
