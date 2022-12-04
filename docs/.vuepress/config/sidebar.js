@@ -842,6 +842,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1042.不邻接植花",
                     "/algorithm/leetcode/leetcode-1052.爱生气的书店老板",
                     "/algorithm/leetcode/leetcode-1053.交换一次的先前排列",
+                    "/algorithm/leetcode/leetcode-1054.距离相等的条形码",
                     "/algorithm/leetcode/leetcode-1071.字符串的最大公因子",
                     "/algorithm/leetcode/leetcode-1072.按列翻转得到最大值等行数",
                     "/algorithm/leetcode/leetcode-1073.负二进制数相加",
