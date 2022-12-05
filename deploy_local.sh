@@ -2,7 +2,7 @@
 
 ## 确保脚本抛出遇到的错误
 set -e
-export NODE_OPTIONS=--max_old_space_size=9592
+export NODE_OPTIONS=--max_old_space_size=9992
 ## 生成静态文件
 npm run docs:build
 
