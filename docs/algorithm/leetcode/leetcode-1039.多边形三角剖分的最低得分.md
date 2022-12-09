@@ -1,3 +1,17 @@
+---
+title: 多边形三角剖分的最低得分
+date: 2022-11-28 22:51:37
+permalink: /pages/00d576/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

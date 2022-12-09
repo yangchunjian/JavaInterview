@@ -1,3 +1,17 @@
+---
+title: 等价多米诺骨牌对的数量
+date: 2022-12-04 20:33:11
+permalink: /pages/6a0e12/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

@@ -1,3 +1,17 @@
+---
+title: 分糖果 II
+date: 2022-11-27 19:54:04
+permalink: /pages/cb6277/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

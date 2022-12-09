@@ -1,3 +1,17 @@
+---
+title: 段式回文
+date: 2022-12-08 20:22:24
+permalink: /pages/78dddd/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

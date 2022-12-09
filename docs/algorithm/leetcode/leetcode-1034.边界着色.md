@@ -1,3 +1,17 @@
+---
+title: 边界着色
+date: 2022-11-28 22:26:57
+permalink: /pages/332ed9/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

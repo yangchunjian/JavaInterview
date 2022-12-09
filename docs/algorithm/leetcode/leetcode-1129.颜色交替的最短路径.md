@@ -1,3 +1,17 @@
+---
+title: 颜色交替的最短路径
+date: 2022-12-04 20:36:21
+permalink: /pages/3cfbc3/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

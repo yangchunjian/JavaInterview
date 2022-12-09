@@ -1,3 +1,17 @@
+---
+title: 有效的回旋镖
+date: 2022-11-28 22:44:10
+permalink: /pages/afbad9/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

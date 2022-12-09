@@ -1,3 +1,17 @@
+---
+title: 叶值的最小代价生成树
+date: 2022-12-04 20:41:43
+permalink: /pages/87fb6d/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

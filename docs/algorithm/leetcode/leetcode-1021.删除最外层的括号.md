@@ -1,3 +1,17 @@
+---
+title: 删除最外层的括号
+date: 2022-11-25 11:55:25
+permalink: /pages/607469/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

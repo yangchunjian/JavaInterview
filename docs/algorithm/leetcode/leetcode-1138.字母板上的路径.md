@@ -1,3 +1,17 @@
+---
+title: 字母板上的路径
+date: 2022-12-04 21:06:07
+permalink: /pages/948706/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

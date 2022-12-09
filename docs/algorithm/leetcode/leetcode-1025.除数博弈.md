@@ -1,3 +1,17 @@
+---
+title: 除数博弈
+date: 2022-11-25 12:14:38
+permalink: /pages/93f6a7/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

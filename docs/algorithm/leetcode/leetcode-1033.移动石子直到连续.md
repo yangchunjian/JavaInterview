@@ -1,3 +1,17 @@
+---
+title: 移动石子直到连续
+date: 2022-11-28 22:20:35
+permalink: /pages/1f5646/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

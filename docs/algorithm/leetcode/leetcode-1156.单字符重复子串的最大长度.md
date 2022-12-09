@@ -1,3 +1,17 @@
+---
+title: 单字符重复子串的最大长度
+date: 2022-12-08 20:35:36
+permalink: /pages/004f7d/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

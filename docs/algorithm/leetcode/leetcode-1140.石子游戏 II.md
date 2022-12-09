@@ -1,3 +1,17 @@
+---
+title: 石子游戏 II
+date: 2022-12-08 20:14:30
+permalink: /pages/504145/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

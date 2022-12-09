@@ -1,3 +1,17 @@
+---
+title: 数组的相对排序
+date: 2022-12-04 20:04:37
+permalink: /pages/cda7ea/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

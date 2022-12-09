@@ -1,3 +1,17 @@
+---
+title: 复写零
+date: 2022-11-29 18:42:56
+permalink: /pages/a2a19c/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

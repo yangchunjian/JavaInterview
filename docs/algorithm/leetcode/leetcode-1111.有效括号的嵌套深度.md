@@ -1,3 +1,17 @@
+---
+title: 有效括号的嵌套深度
+date: 2022-11-27 20:33:56
+permalink: /pages/574aad/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

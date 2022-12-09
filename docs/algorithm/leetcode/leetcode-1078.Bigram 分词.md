@@ -1,3 +1,17 @@
+---
+title: Bigram 分词
+date: 2022-11-29 18:28:19
+permalink: /pages/2c2085/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

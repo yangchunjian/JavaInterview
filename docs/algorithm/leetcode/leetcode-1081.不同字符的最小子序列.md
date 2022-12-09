@@ -1,3 +1,17 @@
+---
+title: 不同字符的最小子序列
+date: 2022-11-29 18:35:39
+permalink: /pages/e47f6f/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

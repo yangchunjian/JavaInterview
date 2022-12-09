@@ -1,3 +1,17 @@
+---
+title: 交换一次的先前排列
+date: 2022-12-04 19:18:50
+permalink: /pages/530c37/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

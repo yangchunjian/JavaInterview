@@ -1,3 +1,17 @@
+---
+title: 掷骰子的N种方法
+date: 2022-12-08 20:32:55
+permalink: /pages/354f06/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

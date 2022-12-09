@@ -1,3 +1,17 @@
+---
+title: 飞地的数量
+date: 2022-11-25 11:48:50
+permalink: /pages/ccc6c2/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

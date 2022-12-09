@@ -1,3 +1,17 @@
+---
+title: 最长等差数列
+date: 2022-11-28 21:53:40
+permalink: /pages/55a23b/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

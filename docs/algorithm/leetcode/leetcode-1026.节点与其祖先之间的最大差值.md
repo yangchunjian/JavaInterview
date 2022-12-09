@@ -1,3 +1,17 @@
+---
+title: 节点与其祖先之间的最大差值
+date: 2022-11-25 12:38:07
+permalink: /pages/c61232/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

@@ -1,3 +1,17 @@
+---
+title: 子数组中占绝大多数的元素
+date: 2022-12-08 20:40:21
+permalink: /pages/bb80fb/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

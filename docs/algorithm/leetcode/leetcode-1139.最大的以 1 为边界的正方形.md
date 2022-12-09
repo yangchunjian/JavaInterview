@@ -1,3 +1,17 @@
+---
+title: 最大的以 1 为边界的正方形
+date: 2022-12-08 20:12:09
+permalink: /pages/b923f7/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

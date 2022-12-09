@@ -1,3 +1,17 @@
+---
+title: 最小的必要团队
+date: 2022-12-04 20:09:19
+permalink: /pages/74c7e2/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

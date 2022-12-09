@@ -1,3 +1,17 @@
+---
+title: The selected directory is not a valid home for Go SDK
+date: 2022-12-05 14:45:19
+permalink: /pages/b298ce/
+categories:
+  - skill
+  - tool
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 解答
 

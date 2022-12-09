@@ -1,3 +1,17 @@
+---
+title: 两地调度
+date: 2022-11-28 21:58:55
+permalink: /pages/bb87c7/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

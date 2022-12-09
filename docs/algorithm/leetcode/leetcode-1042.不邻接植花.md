@@ -1,3 +1,17 @@
+---
+title: 不邻接植花
+date: 2022-11-30 12:36:22
+permalink: /pages/f8c1a5/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

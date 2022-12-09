@@ -1,3 +1,17 @@
+---
+title: 航班预订统计
+date: 2022-11-29 19:36:07
+permalink: /pages/2461fe/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

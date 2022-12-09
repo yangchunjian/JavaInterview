@@ -1,3 +1,17 @@
+---
+title: 不相交的线
+date: 2022-11-28 22:41:37
+permalink: /pages/5951a6/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

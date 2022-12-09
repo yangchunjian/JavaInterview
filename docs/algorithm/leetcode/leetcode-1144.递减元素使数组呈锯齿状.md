@@ -1,3 +1,17 @@
+---
+title: 递减元素使数组呈锯齿状
+date: 2022-11-27 20:57:48
+permalink: /pages/7de600/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

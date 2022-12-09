@@ -1,3 +1,17 @@
+---
+title: 第 N 个泰波那契数
+date: 2022-12-04 20:59:08
+permalink: /pages/cd5799/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

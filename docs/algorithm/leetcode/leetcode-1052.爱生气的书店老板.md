@@ -1,3 +1,17 @@
+---
+title: 爱生气的书店老板
+date: 2022-12-04 19:00:31
+permalink: /pages/7bd6ec/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

@@ -1,3 +1,17 @@
+---
+title: 按列翻转得到最大值等行数
+date: 2022-11-27 19:27:10
+permalink: /pages/073b39/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

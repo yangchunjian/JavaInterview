@@ -1,3 +1,17 @@
+---
+title: 绝对值表达式的最大值
+date: 2022-12-04 20:52:05
+permalink: /pages/ac8c7c/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

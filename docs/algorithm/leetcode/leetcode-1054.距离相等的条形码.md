@@ -1,3 +1,17 @@
+---
+title: 距离相等的条形码
+date: 2022-12-04 20:01:02
+permalink: /pages/ce556c/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
