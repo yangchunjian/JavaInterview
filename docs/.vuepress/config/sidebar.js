@@ -798,6 +798,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-979.在二叉树中分配硬币",
                     "/algorithm/leetcode/leetcode-980.不同路径 III",
                     "/algorithm/leetcode/leetcode-981.基于时间的键值存储",
+                    "/algorithm/leetcode/leetcode-982.按位与为零的三元组",
                     "/algorithm/leetcode/leetcode-983.最低票价",
                     "/algorithm/leetcode/leetcode-984.不含 AAA 或 BBB 的字符串",
                     "/algorithm/leetcode/leetcode-985.查询后的偶数和",
