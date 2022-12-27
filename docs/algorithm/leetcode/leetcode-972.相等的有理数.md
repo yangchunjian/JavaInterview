@@ -1,3 +1,17 @@
+---
+title: 相等的有理数
+date: 2022-12-26 20:34:43
+permalink: /pages/60a92d/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

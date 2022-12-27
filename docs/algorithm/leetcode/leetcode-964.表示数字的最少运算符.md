@@ -1,3 +1,17 @@
+---
+title: 表示数字的最少运算符
+date: 2022-12-26 20:29:01
+permalink: /pages/f1862e/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 

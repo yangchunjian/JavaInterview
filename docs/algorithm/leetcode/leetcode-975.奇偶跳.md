@@ -1,3 +1,17 @@
+---
+title: 奇偶跳
+date: 2022-12-26 20:38:14
+permalink: /pages/4e9188/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

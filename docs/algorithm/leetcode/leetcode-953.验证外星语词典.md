@@ -1,3 +1,17 @@
+---
+title: 验证外星语词典
+date: 2022-12-26 20:02:11
+permalink: /pages/520e5d/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

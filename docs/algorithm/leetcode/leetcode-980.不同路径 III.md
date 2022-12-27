@@ -1,3 +1,17 @@
+---
+title: 不同路径 III
+date: 2022-12-26 20:43:23
+permalink: /pages/219784/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

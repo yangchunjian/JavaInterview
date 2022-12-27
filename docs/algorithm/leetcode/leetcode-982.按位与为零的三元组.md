@@ -1,3 +1,17 @@
+---
+title: 按位与为零的三元组
+date: 2022-12-26 21:03:20
+permalink: /pages/3aafbf/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目
