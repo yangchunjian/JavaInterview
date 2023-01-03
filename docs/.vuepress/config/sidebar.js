@@ -906,6 +906,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1160.拼写单词",
                     "/algorithm/leetcode/leetcode-1161.最大层内元素和",
                     "/algorithm/leetcode/leetcode-1162.地图分析",
+                    "/algorithm/leetcode/leetcode-1169.查询无效交易",
                     "/algorithm/leetcode/leetcode-1186.删除一次得到子数组最大和",
                     "/algorithm/leetcode/leetcode-1206.设计跳表",
                     "/algorithm/leetcode/leetcode-1261.在受污染的二叉树中查找元素",
