@@ -849,6 +849,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1040.移动石子直到连续 II",
                     "/algorithm/leetcode/leetcode-1041.困于环中的机器人",
                     "/algorithm/leetcode/leetcode-1042.不邻接植花",
+                    "/algorithm/leetcode/leetcode-1043.分隔数组以得到最大和",
                     "/algorithm/leetcode/leetcode-1052.爱生气的书店老板",
                     "/algorithm/leetcode/leetcode-1053.交换一次的先前排列",
                     "/algorithm/leetcode/leetcode-1054.距离相等的条形码",
