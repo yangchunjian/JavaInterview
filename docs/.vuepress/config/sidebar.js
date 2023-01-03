@@ -856,6 +856,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1048.最长字符串链",
                     "/algorithm/leetcode/leetcode-1049.最后一块石头的重量 II",
                     "/algorithm/leetcode/leetcode-1050.合作过至少三次的演员和导演",
+                    "/algorithm/leetcode/leetcode-1051.高度检查器",
                     "/algorithm/leetcode/leetcode-1052.爱生气的书店老板",
                     "/algorithm/leetcode/leetcode-1053.交换一次的先前排列",
                     "/algorithm/leetcode/leetcode-1054.距离相等的条形码",
