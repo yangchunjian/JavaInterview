@@ -39,6 +39,10 @@
 
 ## 思路
 
+        //存放要删除的交易的索引
+        Set<Integer> delSet = new HashSet<Integer>();
+        //同名可能有多条记录，这里使用 Map<String, List<Pair>>
+        Map<String, List<Pair>> dataMap = new HashMap<String, List<Pair>>();
 
 
 ## 解法
@@ -47,7 +51,7 @@
 class Solution {
         public List<String> invalidTransactions(String[] transactions) {
 
-            //存放要删除的交易的索引
+        //存放要删除的交易的索引
         Set<Integer> delSet = new HashSet<Integer>();
         //同名可能有多条记录，这里使用 Map<String, List<Pair>>
         Map<String, List<Pair>> dataMap = new HashMap<String, List<Pair>>();
