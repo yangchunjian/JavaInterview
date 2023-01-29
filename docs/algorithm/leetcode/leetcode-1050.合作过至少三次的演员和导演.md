@@ -1,3 +1,17 @@
+---
+title: 合作过至少三次的演员和导演
+date: 2023-01-03 20:31:45
+permalink: /pages/285b16/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

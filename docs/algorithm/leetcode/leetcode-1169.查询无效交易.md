@@ -1,3 +1,17 @@
+---
+title: 查询无效交易
+date: 2023-01-09 11:15:24
+permalink: /pages/cc067f/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

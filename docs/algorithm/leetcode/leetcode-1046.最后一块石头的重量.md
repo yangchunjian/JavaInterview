@@ -1,3 +1,17 @@
+---
+title: 最后一块石头的重量
+date: 2023-01-03 20:15:06
+permalink: /pages/5991e0/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 有一堆石头，每块石头的重量都是正整数。

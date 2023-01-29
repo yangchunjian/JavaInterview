@@ -1,3 +1,17 @@
+---
+title: 按字典序排列最小的等效字符串
+date: 2023-01-28 22:29:04
+permalink: /pages/430862/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

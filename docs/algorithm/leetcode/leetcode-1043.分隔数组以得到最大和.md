@@ -1,3 +1,17 @@
+---
+title: 分隔数组以得到最大和
+date: 2023-01-02 19:26:38
+permalink: /pages/9992f3/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

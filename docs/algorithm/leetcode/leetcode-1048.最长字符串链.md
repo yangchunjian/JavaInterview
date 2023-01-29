@@ -1,3 +1,17 @@
+---
+title: 最长字符串链
+date: 2023-01-03 20:24:36
+permalink: /pages/a19f99/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
