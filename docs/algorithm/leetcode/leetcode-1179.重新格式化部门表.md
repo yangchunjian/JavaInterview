@@ -1,3 +1,17 @@
+---
+title: 重新格式化部门表
+date: 2023-02-08 20:22:59
+permalink: /pages/6059e6/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

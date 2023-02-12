@@ -914,6 +914,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1184.公交站间的距离",
                     "/algorithm/leetcode/leetcode-1186.删除一次得到子数组最大和",
                     "/algorithm/leetcode/leetcode-1206.设计跳表",
+                    "/algorithm/leetcode/leetcode-1207.独一无二的出现次数",
                     "/algorithm/leetcode/leetcode-1261.在受污染的二叉树中查找元素",
                     "/algorithm/leetcode/leetcode-1302.层数最深叶子节点的和",
                     "/algorithm/leetcode/leetcode-1305.两棵二叉搜索树中的所有元素",

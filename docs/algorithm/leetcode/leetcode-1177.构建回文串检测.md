@@ -1,3 +1,17 @@
+---
+title: 构建回文串检测
+date: 2023-02-08 20:20:25
+permalink: /pages/946668/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
