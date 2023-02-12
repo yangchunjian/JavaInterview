@@ -920,6 +920,8 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1237.找出给定方程的正整数解",
                     "/algorithm/leetcode/leetcode-1238.循环码排列",
                     "/algorithm/leetcode/leetcode-1239.串联字符串的最大长度",
+                    "/algorithm/leetcode/leetcode-1248.统计「优美子数组」",
+                    "/algorithm/leetcode/leetcode-1249.移除无效的括号",
                     "/algorithm/leetcode/leetcode-1261.在受污染的二叉树中查找元素",
                     "/algorithm/leetcode/leetcode-1302.层数最深叶子节点的和",
                     "/algorithm/leetcode/leetcode-1305.两棵二叉搜索树中的所有元素",
