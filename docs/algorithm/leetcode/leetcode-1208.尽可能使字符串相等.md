@@ -1,3 +1,17 @@
+---
+title: 尽可能使字符串相等
+date: 2023-02-12 21:18:53
+permalink: /pages/30eb5e/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

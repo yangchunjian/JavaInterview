@@ -1,3 +1,17 @@
+---
+title: 删除字符串中的所有相邻重复项 II
+date: 2023-02-12 21:25:57
+permalink: /pages/c1360b/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

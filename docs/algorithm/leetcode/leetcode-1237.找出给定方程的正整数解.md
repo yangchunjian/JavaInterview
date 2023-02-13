@@ -1,3 +1,17 @@
+---
+title: 找出给定方程的正整数解
+date: 2023-02-12 21:31:57
+permalink: /pages/baa585/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 

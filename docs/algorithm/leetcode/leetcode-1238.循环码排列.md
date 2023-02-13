@@ -1,3 +1,17 @@
+---
+title: 循环码排列
+date: 2023-02-12 21:40:37
+permalink: /pages/069379/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

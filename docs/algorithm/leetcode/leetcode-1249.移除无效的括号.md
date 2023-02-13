@@ -1,3 +1,17 @@
+---
+title: 移除无效的括号
+date: 2023-02-12 21:57:16
+permalink: /pages/1a436e/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目

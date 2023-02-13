@@ -1,3 +1,17 @@
+---
+title: 交换字符使得字符串相同
+date: 2023-02-12 21:49:49
+permalink: /pages/e861cf/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
