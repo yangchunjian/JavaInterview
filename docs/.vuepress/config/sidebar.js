@@ -916,6 +916,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1186.删除一次得到子数组最大和",
                     "/algorithm/leetcode/leetcode-1189.“气球” 的最大数量",
                     "/algorithm/leetcode/leetcode-1190.反转每对括号间的子串",
+                    "/algorithm/leetcode/leetcode-1191.K 次串联后最大子数组之和",
                     "/algorithm/leetcode/leetcode-1206.设计跳表",
                     "/algorithm/leetcode/leetcode-1207.独一无二的出现次数",
                     "/algorithm/leetcode/leetcode-1208.尽可能使字符串相等",
