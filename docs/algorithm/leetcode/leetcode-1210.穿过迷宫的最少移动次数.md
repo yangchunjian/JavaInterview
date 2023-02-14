@@ -1,3 +1,17 @@
+---
+title: 穿过迷宫的最少移动次数
+date: 2023-02-14 21:11:41
+permalink: /pages/200df9/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目
