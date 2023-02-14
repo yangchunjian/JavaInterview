@@ -1,3 +1,17 @@
+---
+title: K 次串联后最大子数组之和
+date: 2023-02-13 21:59:28
+permalink: /pages/1d8c72/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 
