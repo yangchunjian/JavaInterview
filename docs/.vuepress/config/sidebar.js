@@ -929,6 +929,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1217.玩筹码",
                     "/algorithm/leetcode/leetcode-1218.最长定差子序列",
                     "/algorithm/leetcode/leetcode-1219.黄金矿工",
+                    "/algorithm/leetcode/leetcode-1220.统计元音字母序列的数目",
                     "/algorithm/leetcode/leetcode-1237.找出给定方程的正整数解",
                     "/algorithm/leetcode/leetcode-1238.循环码排列",
                     "/algorithm/leetcode/leetcode-1239.串联字符串的最大长度",
