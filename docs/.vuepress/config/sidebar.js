@@ -925,6 +925,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1207.独一无二的出现次数",
                     "/algorithm/leetcode/leetcode-1208.尽可能使字符串相等",
                     "/algorithm/leetcode/leetcode-1209.删除字符串中的所有相邻重复项 II",
+                    "/algorithm/leetcode/leetcode-1210.穿过迷宫的最少移动次数",
                     "/algorithm/leetcode/leetcode-1237.找出给定方程的正整数解",
                     "/algorithm/leetcode/leetcode-1238.循环码排列",
                     "/algorithm/leetcode/leetcode-1239.串联字符串的最大长度",
