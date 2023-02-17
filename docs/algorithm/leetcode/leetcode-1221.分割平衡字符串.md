@@ -30,12 +30,14 @@ titleTag: Java
     输入：s = "RLRRLLRLRL"
     输出：4
     解释：s 可以分割为 "RL"、"RRLL"、"RL"、"RL" ，每个子字符串中都包含相同数量的 'L' 和 'R' 。
+    
 示例 2：
 
     输入：s = "RLRRRLLRLL"
     输出：2
     解释：s 可以分割为 "RL"、"RRRLLRLL"，每个子字符串中都包含相同数量的 'L' 和 'R' 。
     注意，s 无法分割为 "RL"、"RR"、"RL"、"LR"、"LL" 因为第 2 个和第 5 个子字符串不是平衡字符串。
+    
 示例 3：
 
     输入：s = "LLLLRRRR"
