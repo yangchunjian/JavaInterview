@@ -908,6 +908,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1160.拼写单词",
                     "/algorithm/leetcode/leetcode-1161.最大层内元素和",
                     "/algorithm/leetcode/leetcode-1162.地图分析",
+                    "/algorithm/leetcode/leetcode-1163.按字典序排在最后的子串",
                     "/algorithm/leetcode/leetcode-1169.查询无效交易",
                     "/algorithm/leetcode/leetcode-1170.比较字符串最小字母出现频次",
                     "/algorithm/leetcode/leetcode-1175.质数排列",
