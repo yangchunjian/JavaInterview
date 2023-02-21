@@ -1,3 +1,17 @@
+---
+title: 飞机座位分配概率
+date: 2023-02-20 09:37:52
+permalink: /pages/bf64dd/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

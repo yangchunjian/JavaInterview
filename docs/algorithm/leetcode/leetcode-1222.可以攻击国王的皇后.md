@@ -1,3 +1,17 @@
+---
+title: 可以攻击国王的皇后
+date: 2023-02-19 22:05:45
+permalink: /pages/d96cd7/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 

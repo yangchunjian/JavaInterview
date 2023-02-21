@@ -1,3 +1,17 @@
+---
+title: 按字典序排在最后的子串
+date: 2023-02-21 21:31:09
+permalink: /pages/19914f/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 ## 题目
 

@@ -918,6 +918,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1179.重新格式化部门表",
                     "/algorithm/leetcode/leetcode-1184.公交站间的距离",
                     "/algorithm/leetcode/leetcode-1186.删除一次得到子数组最大和",
+                    "/algorithm/leetcode/leetcode-1187.使数组严格递增",
                     "/algorithm/leetcode/leetcode-1189.“气球” 的最大数量",
                     "/algorithm/leetcode/leetcode-1190.反转每对括号间的子串",
                     "/algorithm/leetcode/leetcode-1191.K 次串联后最大子数组之和",

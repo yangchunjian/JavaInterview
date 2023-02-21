@@ -1,3 +1,17 @@
+---
+title: 餐盘栈
+date: 2023-02-21 21:34:19
+permalink: /pages/ebebbc/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
 
 
 ## 题目
