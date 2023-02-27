@@ -938,6 +938,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1221.分割平衡字符串",
                     "/algorithm/leetcode/leetcode-1222.可以攻击国王的皇后",
                     "/algorithm/leetcode/leetcode-1227.飞机座位分配概率",
+                    "/algorithm/leetcode/leetcode-1232.缀点成线",
                     "/algorithm/leetcode/leetcode-1237.找出给定方程的正整数解",
                     "/algorithm/leetcode/leetcode-1238.循环码排列",
                     "/algorithm/leetcode/leetcode-1239.串联字符串的最大长度",
