@@ -64,18 +64,18 @@ module.exports = [
         'reading-progress',
         {},
     ],
-    [
-        'vuepress-plugin-comment',
-        {
-            choosen: 'valine',
-            // options选项中的所有参数，会传给Valine的配置
-            options: {
-                el: '#valine-vuepress-comment',
-                appId: '5buJqOd3oGvBI3ccC5N5tPIN-gzGzoHsz',
-                appKey: 'OyUWJytBypOoxyxyPMsTCygT'
-            }
-        }
-    ],
+    // [
+    //     'vuepress-plugin-comment',
+    //     {
+    //         choosen: 'valine',
+    //         // options选项中的所有参数，会传给Valine的配置
+    //         options: {
+    //             el: '#valine-vuepress-comment',
+    //             appId: '5buJqOd3oGvBI3ccC5N5tPIN-gzGzoHsz',
+    //             appKey: 'OyUWJytBypOoxyxyPMsTCygT'
+    //         }
+    //     }
+    // ],
 
     //全文搜索
     ['fulltext-search'],
