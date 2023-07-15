@@ -3,6 +3,7 @@ const plugins = require('./config/plugins.js');
 const themeConfig = require('./config/themeConfig.js');
 
 module.exports = {
+    compact: false,
     theme: 'vdoing', // 使用依赖包主题
     // theme: require.resolve('../../theme-vdoing'), // 使用本地主题
     title: "JavaInterview",
