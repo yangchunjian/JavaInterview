@@ -15,7 +15,7 @@ titleTag: Java
 
 ## 关键词
 1. abstract、class、interface、for、switch、Integer、String、Date、final、static、Long
-implements、throw、throws、Exception
+implements、throw、throws、Exception.
 
 
 ## 类
