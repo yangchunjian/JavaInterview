@@ -44,20 +44,20 @@ JavaInterview的目标贴合面试重难点、高频点、底层源码、算法�
 <dependency>
     <groupId>cn.javainterview</groupId>
     <artifactId>javainterview-all</artifactId>
-    <version>1.0.8</version>
+    <version>2.0.0</version>
 </dependency>
 ```
 
 ### 🍐Gradle
 ```
-implementation 'cn.javainterview:javainterview-all:1.0.8'
+implementation 'cn.javainterview:javainterview-all:2.0.0'
 ```
 
 ### 📥下载
 
 点击以下链接，下载`javainterview-all-X.X.X.jar`即可：
 
-- [Maven中央库](https://repo1.maven.org/maven2/cn/javainterview/javainterview-all/1.0.8/)
+- [Maven中央库](https://repo1.maven.org/maven2/cn/javainterview/javainterview-all/2.0.0/)
 
 
 
