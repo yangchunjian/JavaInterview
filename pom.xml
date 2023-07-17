@@ -8,16 +8,16 @@
 
 	<groupId>cn.javainterview</groupId>
 	<artifactId>javainterview-parent</artifactId>
-	<version>1.0.8</version>
+	<version>2.0.0</version>
 	<name>JavaInterview</name>
 	<description>JavaInterview是【Java面试+Java学习】仓库。</description>
 	<url>https://github.com/yangchunjian/JavaInterview</url>
 
 	<modules>
-		<module>javainterview-all</module>
 		<module>javainterview-core</module>
 		<module>javainterview-algorithm</module>
         <module>javainterview-code</module>
+		<module>javainterview-all</module>
     </modules>
 
 	<properties>
