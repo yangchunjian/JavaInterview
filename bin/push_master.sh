@@ -8,5 +8,5 @@ git merge v3-dev -m 'Prepare release'
 
 echo -e "\033[32mPush to origin v3-master\033[0m"
 git push origin v3-master
-echo -e "\033[32mPush to osc v3-master\033[0m"
-git push osc v3-master
+#echo -e "\033[32mPush to osc v3-master\033[0m"
+#git push osc v3-master
