@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- * @author JavaInterview.cn
+ * @author JavaInterview
  * @email 1091938307@qq.com
  * @created 2022-05-01
  * @timed 19:38

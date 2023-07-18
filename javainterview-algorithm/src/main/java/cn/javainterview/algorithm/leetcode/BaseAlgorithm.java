@@ -1,7 +1,7 @@
 package cn.javainterview.algorithm.leetcode;
 
 /**
- * @author JavaInterview.cn
+ * @author JavaInterview
  * @email 1091938307@qq.com
  * @created 2022-04-11
  * @timed 22:04

@@ -2,7 +2,7 @@ package cn.javainterview.core.asm.hello;
 
 /**
  * 打印出的HelloWorld的asm码
- * @author JavaInterview.cn
+ * @author JavaInterview
  * @email 1091938307@qq.com
  * @created 2022-05-01
  * @timed 19:43

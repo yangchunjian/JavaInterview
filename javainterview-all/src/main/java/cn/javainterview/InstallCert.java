@@ -1,7 +1,7 @@
 package cn.javainterview;
 
 /**
- * @author JavaInterview.cn
+ * @author JavaInterview
  * @email 1091938307@qq.com
  * @created 2022-04-14
  * @timed 09:29
