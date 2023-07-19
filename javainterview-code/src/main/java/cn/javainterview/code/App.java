@@ -1,4 +1,4 @@
-package cn.javainterview;
+package cn.javainterview.code;
 
 /**
  * Hello world!
