@@ -476,6 +476,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-542.01矩阵",
                     "/algorithm/leetcode/leetcode-546.移除盒子",
                     "/algorithm/leetcode/leetcode-547.省份数量",
+                    "/algorithm/leetcode/leetcode-550.游戏玩法分析 IV",
                     "/algorithm/leetcode/leetcode-551.学生出勤记录 I",
                     "/algorithm/leetcode/leetcode-552.学生出勤记录 II",
                     "/algorithm/leetcode/leetcode-553.最优除法",
