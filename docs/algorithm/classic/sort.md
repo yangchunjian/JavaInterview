@@ -15,14 +15,13 @@ titleTag: Java
 
 
 ## 快速排序
-## 思想
-1、思想
+### 思想
 快速排序将一个数组分成两个数组，再对两个数组独立排序，是个递归算法。
 首先随机选出一个切分元素temp（一般为这个数组的第一个元素），将小于temp的数放在temp的左边，将大于temp的数放在temp的右边。
 快排和堆排序很像，他们都是将一个数组分成两个子数组，都属于递归算法。但是不同之处在于：快排空间复杂度为o（1），而堆排为o（n），
 快排是原地排序，只需要一个很小的辅助栈，时间复杂度为NlogN。
 
-2、代码实现（java）
+### 代码实现
 ```java
 public class Quick {
     
@@ -78,7 +77,83 @@ public class Quick {
 
 ## 冒泡排序
 
+### 思想
+从序列的第一个元素开始，对相邻的两个元素进行比较，如果它们的顺序错误就交换它们的位置，即将较大的元素往后移动，直到遍历到序列的最后一个元素。
+对剩下的元素重复上述步骤，直到整个序列都已经有序。
+### 代码实现
 
+```java
+public class BubbleSort {
+    public static void bubbleSort(int[] arr) {
+        int n = arr.length;
+        for (int i = 0; i < n; i++) {
+            // 每轮遍历将最大的数移到末尾
+            for (int j = 0; j < n - i - 1; j++) {
+                if (arr[j] > arr[j+1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {64, 34, 25, 12, 22, 11, 90};
+        bubbleSort(arr);
+        System.out.println(Arrays.toString(arr));  // [11, 12, 22, 25, 34, 64, 90]
+    }
+}
+
+```
 
 ## 堆排序
 
+### 思想
+堆排序（Heap Sort）是一种基于堆数据结构的排序算法，其核心思想是将待排序的序列构建成一个最大堆（或最小堆），然后将堆顶元素与最后一个元素交换，再将剩余元素重新调整为最大堆（或最小堆），重复以上步骤直到所有元素都有序。
+
+### 代码实现
+```java
+public static void heapSort(int[] arr) {
+    int n = arr.length;
+ 
+    // 构建最大堆
+    for (int i = n / 2 - 1; i >= 0; i--) {
+        heapify(arr, n, i);
+    }
+ 
+    // 排序
+    for (int i = n - 1; i > 0; i--) {
+        // 将堆顶元素与最后一个元素交换
+        int tmp = arr[0];
+        arr[0] = arr[i];
+        arr[i] = tmp;
+ 
+        // 调整剩余元素为最大堆
+        heapify(arr, i, 0);
+    }
+}
+ 
+public static void heapify(int[] arr, int n, int i) {
+    // 将以 i 为根节点的子树调整为最大堆
+    int largest = i;  // 初始化最大元素为根节点
+    int left = 2 * i + 1;  // 左子节点的索引
+    int right = 2 * i + 2;  // 右子节点的索引
+ 
+    // 找出左右子节点中的最大值
+    if (left < n && arr[left] > arr[largest]) {
+        largest = left;
+    }
+    if (right < n && arr[right] > arr[largest]) {
+        largest = right;
+    }
+ 
+    // 如果最大值不是根节点，则交换根节点和最大值，并递归调整子树
+    if (largest != i) {
+        int tmp = arr[i];
+        arr[i] = arr[largest];
+        arr[largest] = tmp;
+        heapify(arr, n, largest);
+    }
+}
+```
