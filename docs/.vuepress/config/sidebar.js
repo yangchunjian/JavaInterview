@@ -492,6 +492,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-565.数组嵌套",
                     "/algorithm/leetcode/leetcode-566.重塑矩阵",
                     "/algorithm/leetcode/leetcode-567.字符串的排列",
+                    "/algorithm/leetcode/leetcode-570.至少有5名直接下属的经理",
                     "/algorithm/leetcode/leetcode-572.另一棵树的子树",
                     "/algorithm/leetcode/leetcode-575.分糖果",
                     "/algorithm/leetcode/leetcode-576.出界的路径数",
