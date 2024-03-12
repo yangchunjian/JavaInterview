@@ -888,6 +888,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-2289.使数组按非递减顺序排列",
                     "/algorithm/leetcode/leetcode-2326.螺旋矩阵 IV",
                     "/algorithm/leetcode/leetcode-面试题LRU 缓存",
+                    "/algorithm/leetcode/leetcode-LCR192.把字符串转换成整数(atoi)",
                 ]
             },
             {
