@@ -516,6 +516,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-607.销售员",
                     "/algorithm/leetcode/leetcode-608.树节点",
                     "/algorithm/leetcode/leetcode-609.在系统中查找重复文件",
+                    "/algorithm/leetcode/leetcode-610.判断三角形",
                     "/algorithm/leetcode/leetcode-611.有效三角形的个数",
                     "/algorithm/leetcode/leetcode-620.有趣的电影",
                     "/algorithm/leetcode/leetcode-621.任务调度器",
