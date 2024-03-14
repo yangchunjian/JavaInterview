@@ -881,6 +881,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-1569.将子数组重新排序得到同一个二叉查找树的方案数",
                     "/algorithm/leetcode/leetcode-1609.奇偶树",
                     "/algorithm/leetcode/leetcode-1670.设计前中后队列",
+                    "/algorithm/leetcode/leetcode-1174.即时食物配送II",
                     "/algorithm/leetcode/leetcode-1922.统计好数字的数目",
                     "/algorithm/leetcode/leetcode-2058.找出临界点之间的最小和最大距离",
                     "/algorithm/leetcode/leetcode-2181.合并零之间的节点",
