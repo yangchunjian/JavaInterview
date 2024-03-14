@@ -673,6 +673,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-815.公交路线",
                     "/algorithm/leetcode/leetcode-816.模糊坐标",
                     "/algorithm/leetcode/leetcode-817.链表组件",
+                    "/algorithm/leetcode/leetcode-818.赛车",
                     "/algorithm/leetcode/leetcode-819.最常见的单词",
                     "/algorithm/leetcode/leetcode-820.单词的压缩编码",
                     "/algorithm/leetcode/leetcode-821.字符的最短距离",
