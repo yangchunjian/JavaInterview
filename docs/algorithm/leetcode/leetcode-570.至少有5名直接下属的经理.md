@@ -1,14 +1,16 @@
 ---
 title: 至少有5名直接下属的经理
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
 titleTag: Java
+date: 2023-07-16 18:36:45
+permalink: /pages/71fc4b/
 ---
 
 ## 题目

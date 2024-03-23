@@ -1,3 +1,17 @@
+---
+title: 游戏玩法分析 IV
+date: 2023-07-16 18:36:45
+permalink: /pages/266e8b/
+categories:
+  - algorithm
+  - leetcode
+tags:
+  - 
+author: 
+  name: JavaInterview.cn
+  link: https://JavaInterview.cn
+titleTag: Java
+---
     
 ## 题目
 

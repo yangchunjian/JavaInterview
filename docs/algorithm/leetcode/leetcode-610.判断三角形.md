@@ -1,13 +1,16 @@
 ---
-categories:
+categories: 
   - algorithm
   - leetcode
-tags:
-  - 
+tags: 
+  - null
 author: 
   name: JavaInterview.cn
   link: https://JavaInterview.cn
 titleTag: Java
+title: 判断三角形
+date: 2023-07-16 18:36:45
+permalink: /pages/9154a3/
 ---
 
 ## 题目
