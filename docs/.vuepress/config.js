@@ -7,7 +7,7 @@ module.exports = {
     theme: 'vdoing', // 使用依赖包主题
     // theme: require.resolve('../../theme-vdoing'), // 使用本地主题
     title: "JavaInterview",
-    description: 'java,面试,春建,杨春建,后端,JavaInterview,interview,技术',
+    description: 'java,面试,后端,JavaInterview,interview,技术',
     //base: '/JavaInterview/', // 格式：'/<仓库名>/'， 默认'/'
     base:"",
     markdown: {
