@@ -8,7 +8,7 @@ module.exports = [
     'meta',
     {
       name: 'keywords',
-      content: 'java,面试,春建,杨春建,后端,JavaInterview,interview,技术,后端博客,个人技术博客,后端,后端开发,后端框架,web前端,后端面试题,技术文档,学习,面试,Spring,Kafka,MySQL,MQ,Redis,Elasticsearch,git,github,markdown',
+      content: 'java,面试,javainterview,后端,JavaInterview,interview,技术,后端博客,个人技术博客,后端,后端开发,后端框架,web前端,后端面试题,技术文档,学习,面试,Spring,Kafka,MySQL,MQ,Redis,Elasticsearch,git,github,markdown',
     },
   ],
   ['meta', {name: 'referrer', content: 'no-referrer-when-downgrade'}], // 不蒜子统计

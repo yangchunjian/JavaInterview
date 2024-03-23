@@ -4,7 +4,7 @@
   "private": true,
   "description": "JavaInterview",
   "license": "MIT",
-  "author": "春建",
+  "author": "javainterview",
   "devDependencies": {
     "@vuepress/plugin-last-updated": "^1.9.7",
     "@vuepress/plugin-medium-zoom": "^1.9.7",
