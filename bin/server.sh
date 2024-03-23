@@ -1,4 +1,6 @@
 #!/bin/bash
 
 # 服务器启动
-vuepress dev docs
+sudo vuepress dev docs
+
+#npm run build

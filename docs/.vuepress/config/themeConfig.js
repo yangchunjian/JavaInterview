@@ -1,5 +1,5 @@
 const nav = require('./themeConfig/nav.js');
-const sidebar = require('./sidebar.js');
+// const sidebar = require('./sidebar.js');
 // const htmlModules = require('./themeConfig/htmlModules.js');
 
 
@@ -8,7 +8,9 @@ module.exports = {
   nav,
   logo: '/assets/icon/logo200x100.png',
   hostname: "https://javainterview.cn/",
-  sidebar: 'auto', //  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义
+  sidebar: 'structuring', //  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义
+  sidebarOpen: true,
+  // sidebar: 'auto', //  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义
   // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
   author: {
     name: 'JavaInterview.cn', // 必需
@@ -60,7 +62,7 @@ module.exports = {
   // ], // body背景大图，默认无。 单张图片 String || 多张图片 Array, 多张图片时每隔15秒换一张。
   // bodyBgImgOpacity: 1, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
 
-  sidebar,
+  // sidebar,
 
   // 页脚信息
   footer: {
