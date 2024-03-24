@@ -499,6 +499,7 @@ module.exports = [
                     "/algorithm/leetcode/leetcode-581.最短无序连续子数组",
                     "/algorithm/leetcode/leetcode-583.两个字符串的删除操作",
                     "/algorithm/leetcode/leetcode-584.寻找用户推荐人",
+                    "/algorithm/leetcode/leetcode-585.2016年的投资",
                     "/algorithm/leetcode/leetcode-586.订单最多的客户",
                     "/algorithm/leetcode/leetcode-587.安装栅栏",
                     "/algorithm/leetcode/leetcode-591.标签验证器",
