@@ -1,19 +1,6 @@
 // sidebar
 module.exports = [
     {title: '指南', path: '/read/read'},
-
-    {
-        title: '总结',// 必要的
-
-        // path: '/', // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-        // collapsable: false, // 不折叠 / 可选的, 默认值是 true,
-        // sidebarDepth: 1,    // 可选的, 默认值是 1
-        children: [
-            "/summary/refactor",
-            "/summary/framework",
-            "/summary/standard",
-        ]
-    },
     {
         title: '简历',
         children: [
