@@ -35,8 +35,8 @@ jobs:
         run: npm install && export NODE_OPTIONS="--openssl-legacy-provider --max_old_space_size=9999"
 
       - name: Clean Docs Directory
-        run: npm run docs:clean-dev
-#        run: rm -rf docs/*
+#        run: npm run docs:clean-dev
+        run: rm -rf docs/*
 
       - name: Build Documentation
         run: npm run docs:build
