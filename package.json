@@ -31,14 +31,16 @@
     "docs:build": "set NODE_OPTIONS=\"--openssl-legacy-provider  --max_old_space_size=9800\" && vuepress build docs",
     "deploy": "set NODE_OPTIONS=\"--openssl-legacy-provider  --max_old_space_size=9800\" && bash deploy.sh",
     "baiduPush": "node utils/baiduPush.js https://javainterview.cn && bash baiduPush.sh",
-    "editFm": "node utils/editFrontmatter.js"
+    "editFm": "node utils/editFrontmatter.js",
+    "fix-memory-limit": "cross-env LIMIT=9800 increase-memory-limit"
   },
   "dependencies": {
     "busuanzi.pure.js": "^1.0.3",
     "dayjs": "^1.11.3",
     "vuepress-plugin-code-copy": "^1.0.6",
     "vuepress-plugin-reading-progress": "^1.0.10",
-    "vuepress-theme-vue": "^1.1.1"
+    "vuepress-theme-vue": "^1.1.1",
+    "increase-memory-limit": "^1.0.6"
   },
   "main": "index.js",
   "repository": "https://github.com/yangchunjian/JavaInterview.git"
