@@ -36,7 +36,7 @@ jobs:
 
       - name: Clean Docs Directory
 #        run: npm run docs:clean-dev
-        run: rm -rf docs/*
+        run: rm -rf docs/.vuepress/dist
 
       - name: Build Documentation
         run: npm run docs:build
