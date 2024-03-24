@@ -248,7 +248,7 @@ module.exports = [
             {
                 title: "力扣",
                 children: [
-                    "/algorithm/leetcode/README",
+                    "/algorithm/leetcode/0.力扣总结",
                     "/algorithm/leetcode/19.删除链表的倒数第 N 个结点",
                     "/algorithm/leetcode/21.合并两个有序链表",
                     "/algorithm/leetcode/23.合并K个升序链表",
