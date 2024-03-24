@@ -14,7 +14,7 @@ features: ## 可选的
     details: 所有&算法&代码&核心
     link: /interview/all/read/
     imgUrl: /assets/icon/more.png
-  - title: 文档箱
+  - title: 文档集合
     details: 思想总结&程序总结
     link: /docbox/
     imgUrl: /assets/icon/other.png
