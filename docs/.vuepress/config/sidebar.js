@@ -248,7 +248,7 @@ module.exports = [
             {
                 title: "力扣",
                 children: [
-                    "/algorithm/leetcode/leetcode",
+                    "/algorithm/leetcode/README",
                     "/algorithm/leetcode/19.删除链表的倒数第 N 个结点",
                     "/algorithm/leetcode/21.合并两个有序链表",
                     "/algorithm/leetcode/23.合并K个升序链表",
@@ -891,9 +891,8 @@ module.exports = [
                     "/algorithm/leetcode/2265.统计值等于子树平均值的节点数",
                     "/algorithm/leetcode/2289.使数组按非递减顺序排列",
                     "/algorithm/leetcode/2326.螺旋矩阵 IV",
-                    "/algorithm/leetcode/面试题LRU 缓存",
-                    "/algorithm/leetcode/LCR192.把字符串转换成整数(atoi)",
                     "/algorithm/leetcode/LCR054.把二叉搜索树转换为累加树",
+                    "/algorithm/leetcode/LCR192.把字符串转换成整数(atoi)",
                 ]
             },
             {
