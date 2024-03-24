@@ -30,9 +30,20 @@ jobs:
           static_list: "JavaInterview"   					# 同步的仓库名称，这里为JavaInterview，意思是会自动同步该仓库到gitee下同名仓库
           debug: true
 
+
+      - name: Install Dependencies
+        run: npm install && export NODE_OPTIONS="--openssl-legacy-provider --max_old_space_size=9999"
+
+      - name: Clean Docs Directory
+        run: npm run docs:clean-dev
+#        run: rm -rf docs/*
+
+      - name: Build Documentation
+        run: npm run docs:build
+
       # 生成静态文件
-      - name: Build
-        run: npm install && export NODE_OPTIONS="--openssl-legacy-provider --max_old_space_size=9999" && npm run docs:build
+#      - name: Build
+#        run: npm install && export NODE_OPTIONS="--openssl-legacy-provider --max_old_space_size=9999" && npm run docs:clean-dev && npm run docs:build
 
       # 部署到 GitHub Pages
       - name: Deploy
