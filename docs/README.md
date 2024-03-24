@@ -10,11 +10,11 @@ actionLink: /read/
 bannerBg: https://javainterview.cn/img/me/home_1.jpeg
 
 features: ## 可选的
-  - title: 工程码
+  - title: 工程编码
     details: 所有&算法&代码&核心
     link: /interview/all/read/
     imgUrl: /assets/icon/more.png
-  - title: 文档箱
+  - title: 文档集合
     details: 思想总结&程序总结
     link: /docbox/
     imgUrl: /assets/icon/other.png

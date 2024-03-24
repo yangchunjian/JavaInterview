@@ -1,5 +1,5 @@
 ---
-title: 文档箱
+title: 文档集合
 date: 2022-06-25 11:56:31
 permalink: /docbox/
 categories:
@@ -12,5 +12,5 @@ author:
 titleTag: Java
 ---
 
-## [点我进文档箱](https://yangchunjian.com)
+## [点我进文档集合](https://yjava.cn)
 
