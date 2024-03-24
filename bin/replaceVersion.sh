@@ -28,7 +28,7 @@ fi
 # 替换README.md中的版本
 sed -i "" -e "s/${old_version}/${new_version}/g" $pwd/README.md
 # 替换docs/js/version.js中的版本
-sed -i "" -e "s/${old_version}/${new_version}/g" $pwd/docs/js/version.js
+#sed -i "" -e "s/${old_version}/${new_version}/g" $pwd/docs/js/version.js
 # 替换docs/interview/all/read.md中的版本
 sed -i "" -e "s/${old_version}/${new_version}/g" $pwd/docs/interview/all/read.md
 
