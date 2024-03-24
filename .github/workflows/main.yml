@@ -32,14 +32,14 @@ jobs:
 
 
       - name: Install Dependencies
-        run: npm install && export NODE_OPTIONS="--openssl-legacy-provider --max_old_space_size=9999"
+        run: npm install
 
       - name: Clean Docs Directory
 #        run: npm run docs:clean-dev
         run: rm -rf docs/.vuepress/dist
 
       - name: Build Documentation
-        run: npm run docs:build
+        run: export NODE_OPTIONS="--openssl-legacy-provider --max_old_space_size=9999" && npm run docs:build
 
       # 生成静态文件
 #      - name: Build
