@@ -32,7 +32,8 @@
     "deploy": "set NODE_OPTIONS=\"--openssl-legacy-provider  --max_old_space_size=9999\" && bash deploy.sh",
     "baiduPush": "node utils/baiduPush.js https://javainterview.cn && bash baiduPush.sh",
     "editFm": "node utils/editFrontmatter.js",
-    "fix-memory-limit": "cross-env LIMIT=9999 increase-memory-limit"
+    "fix-memory-limit": "cross-env LIMIT=9999 increase-memory-limit",
+    "docs:clean-dev": "set NODE_OPTIONS=\"--openssl-legacy-provider  --max_old_space_size=9999\" && vuepress dev docs --clean-cache"
   },
   "dependencies": {
     "busuanzi.pure.js": "^1.0.3",
