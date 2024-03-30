@@ -499,6 +499,7 @@ module.exports = [
                     "/algorithm/leetcode/599.两个列表的最小索引总和",
                     "/algorithm/leetcode/600.不含连续1的非负整数",
                     "/algorithm/leetcode/601.体育馆的人流量",
+                    "/algorithm/leetcode/602.好友申请 II ：谁有最多的好友",
                     "/algorithm/leetcode/605.种花问题",
                     "/algorithm/leetcode/606.根据二叉树创建字符串",
                     "/algorithm/leetcode/607.销售员",
