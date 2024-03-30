@@ -827,6 +827,7 @@ module.exports = [
                     "/algorithm/leetcode/1029.两地调度",
                     "/algorithm/leetcode/1030.距离顺序排列矩阵单元格",
                     "/algorithm/leetcode/1031.两个非重叠子数组的最大和",
+                    "/algorithm/leetcode/1032.字符流",
                     "/algorithm/leetcode/1033.移动石子直到连续",
                     "/algorithm/leetcode/1034.边界着色",
                     "/algorithm/leetcode/1035.不相交的线",
