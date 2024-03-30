@@ -691,6 +691,7 @@ module.exports = [
                     "/algorithm/leetcode/846.一手顺子",
                     "/algorithm/leetcode/848.字母移位",
                     "/algorithm/leetcode/849.到最近的人的最大距离",
+                    "/algorithm/leetcode/850.矩形面积 II",
                     "/algorithm/leetcode/851.喧闹和富有",
                     "/algorithm/leetcode/852.山脉数组的峰顶索引",
                     "/algorithm/leetcode/853.车队",
