@@ -881,6 +881,9 @@ module.exports = [
                     "/algorithm/leetcode/2265.统计值等于子树平均值的节点数",
                     "/algorithm/leetcode/2289.使数组按非递减顺序排列",
                     "/algorithm/leetcode/2326.螺旋矩阵 IV",
+                    "/algorithm/leetcode/2385.感染二叉树需要的总时间",
+                    "/algorithm/leetcode/2440.创建价值相同的连通块",
+                    "/algorithm/leetcode/2458.移除子树后的二叉树高度",
                     "/algorithm/leetcode/LCR054.把二叉搜索树转换为累加树",
                     "/algorithm/leetcode/LCR192.把字符串转换成整数(atoi)",
                 ]
