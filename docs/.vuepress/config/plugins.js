@@ -106,20 +106,20 @@ module.exports = [
         isPlain: false,
         icon: 'https://javainterview.cn/assets/icon/logo200x100.png',
     }],
-    [
-        '@vuepress/last-updated', // "上次更新"时间格式
-        {
-            transformer: (timestamp, lang) => {
-                const dayjs = require('dayjs'); // https://day.js.org/
-                // return dayjs(timestamp).format('YYYY/MM/DD, HH:mm') //中国时间
-                var utc = require('dayjs/plugin/utc');
-                var timezone = require('dayjs/plugin/timezone'); // dependent on utc plugin
-                dayjs.extend(utc);
-                dayjs.extend(timezone);
-                // var nowTime = dayjs(timestamp).format('YYYY-MM-DD HH:mm');
-                return dayjs(timestamp).tz('Asia/Shanghai').format("YYYY-MM-DD HH:mm");
-            },
-        },
-    ],
+    // [
+    //     '@vuepress/last-updated', // "上次更新"时间格式
+    //     {
+    //         transformer: (timestamp, lang) => {
+    //             const dayjs = require('dayjs'); // https://day.js.org/
+    //             // return dayjs(timestamp).format('YYYY/MM/DD, HH:mm') //中国时间
+    //             var utc = require('dayjs/plugin/utc');
+    //             var timezone = require('dayjs/plugin/timezone'); // dependent on utc plugin
+    //             dayjs.extend(utc);
+    //             dayjs.extend(timezone);
+    //             // var nowTime = dayjs(timestamp).format('YYYY-MM-DD HH:mm');
+    //             return dayjs(timestamp).tz('Asia/Shanghai').format("YYYY-MM-DD HH:mm");
+    //         },
+    //     },
+    // ],
 
 ]
