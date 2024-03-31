@@ -16,7 +16,7 @@ module.exports = {
   },
   // lang: "zh-CN",
   // lastUpdated: '上次编辑于',
-  // lastUpdated: false,
+  lastUpdated: false,
   // vssueConfig: {
   //     platform: 'github',
   //     owner: 'yangchunjian',
