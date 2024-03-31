@@ -15,7 +15,8 @@ module.exports = {
     link: 'https://JavaInterview.cn', // 可选的
   },
   // lang: "zh-CN",
-  lastUpdated: '上次编辑于',
+  // lastUpdated: '上次编辑于',
+  lastUpdated: false,
   // vssueConfig: {
   //     platform: 'github',
   //     owner: 'yangchunjian',
