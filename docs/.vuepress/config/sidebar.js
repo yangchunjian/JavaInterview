@@ -875,6 +875,8 @@ module.exports = [
                     "/algorithm/leetcode/1670.设计前中后队列",
                     "/algorithm/leetcode/1670.设计前中后队列",
                     "/algorithm/leetcode/1703.得到连续 K 个 1 的最少相邻交换次数",
+                    "/algorithm/leetcode/1705.吃苹果的最大数目",
+                    "/algorithm/leetcode/1710.卡车上的最大单元数",
                     "/algorithm/leetcode/1922.统计好数字的数目",
                     "/algorithm/leetcode/2058.找出临界点之间的最小和最大距离",
                     "/algorithm/leetcode/2181.合并零之间的节点",
