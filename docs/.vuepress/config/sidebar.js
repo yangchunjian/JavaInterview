@@ -873,6 +873,7 @@ module.exports = [
                     "/algorithm/leetcode/1443.收集树上所有苹果的最少时间",
                     "/algorithm/leetcode/1448.统计二叉树中好节点的数目",
                     "/algorithm/leetcode/1457.二叉树中的伪回文路径",
+                    "/algorithm/leetcode/1483.树节点的第 K 个祖先",
                     "/algorithm/leetcode/1530.好叶子节点对的数量",
                     "/algorithm/leetcode/1569.将子数组重新排序得到同一个二叉查找树的方案数",
                     "/algorithm/leetcode/1609.奇偶树",
