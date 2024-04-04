@@ -883,6 +883,7 @@ module.exports = [
                     "/algorithm/leetcode/1705.吃苹果的最大数目",
                     "/algorithm/leetcode/1710.卡车上的最大单元数",
                     "/algorithm/leetcode/1713.得到子序列的最少操作次数",
+                    "/algorithm/leetcode/1719.重构一棵树的方案数",
                     "/algorithm/leetcode/1922.统计好数字的数目",
                     "/algorithm/leetcode/2058.找出临界点之间的最小和最大距离",
                     "/algorithm/leetcode/2181.合并零之间的节点",
