@@ -853,6 +853,7 @@ module.exports = [
                     "/algorithm/leetcode/1164.指定日期的产品价格",
                     "/algorithm/leetcode/1174.即时食物配送II",
                     "/algorithm/leetcode/1186.删除一次得到子数组最大和",
+                    "/algorithm/leetcode/1192.查找集群内的关键连接 ",
                     "/algorithm/leetcode/1206.设计跳表",
                     "/algorithm/leetcode/1261.在受污染的二叉树中查找元素",
                     "/algorithm/leetcode/1302.层数最深叶子节点的和",
