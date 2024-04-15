@@ -893,6 +893,7 @@ module.exports = [
                     "/algorithm/leetcode/2236.判断根结点是否等于子结点之和",
                     "/algorithm/leetcode/2265.统计值等于子树平均值的节点数",
                     "/algorithm/leetcode/2289.使数组按非递减顺序排列",
+                    "/algorithm/leetcode/2322.从树中删除边的最小分数",
                     "/algorithm/leetcode/2326.螺旋矩阵 IV",
                     "/algorithm/leetcode/2385.感染二叉树需要的总时间",
                     "/algorithm/leetcode/2440.创建价值相同的连通块",
