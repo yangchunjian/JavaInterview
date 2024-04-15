@@ -671,6 +671,7 @@ module.exports = [
                     "/algorithm/leetcode/824.山羊拉丁文",
                     "/algorithm/leetcode/825.适龄的朋友",
                     "/algorithm/leetcode/826.安排工作以达到最大收益",
+                    "/algorithm/leetcode/827.最大人工岛",
                     "/algorithm/leetcode/828.统计子串中的唯一字符",
                     "/algorithm/leetcode/829.连续整数求和",
                     "/algorithm/leetcode/830.较大分组的位置",
