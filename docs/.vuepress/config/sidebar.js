@@ -687,6 +687,7 @@ module.exports = [
                     "/algorithm/leetcode/840.矩阵中的幻方",
                     "/algorithm/leetcode/841.钥匙和房间",
                     "/algorithm/leetcode/842.将数组拆分成斐波那契序列",
+                    "/algorithm/leetcode/843.猜猜这个单词",
                     "/algorithm/leetcode/844.比较含退格的字符串",
                     "/algorithm/leetcode/845.数组中的最长山脉",
                     "/algorithm/leetcode/846.一手顺子",
