@@ -691,6 +691,7 @@ module.exports = [
                     "/algorithm/leetcode/844.比较含退格的字符串",
                     "/algorithm/leetcode/845.数组中的最长山脉",
                     "/algorithm/leetcode/846.一手顺子",
+                    "/algorithm/leetcode/847.访问所有节点的最短路径",
                     "/algorithm/leetcode/848.字母移位",
                     "/algorithm/leetcode/849.到最近的人的最大距离",
                     "/algorithm/leetcode/850.矩形面积 II",
