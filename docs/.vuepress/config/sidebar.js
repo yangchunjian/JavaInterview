@@ -706,6 +706,7 @@ module.exports = [
                     "/algorithm/leetcode/859.亲密字符串",
                     "/algorithm/leetcode/860.柠檬水找零",
                     "/algorithm/leetcode/861.翻转矩阵后的得分",
+                    "/algorithm/leetcode/862.和至少为 K 的最短子数组",
                     "/algorithm/leetcode/863.二叉树中所有距离为 K 的结点",
                     "/algorithm/leetcode/865.具有所有最深节点的最小子树",
                     "/algorithm/leetcode/866.回文素数",
