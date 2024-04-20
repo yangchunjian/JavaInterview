@@ -698,6 +698,7 @@ module.exports = [
                     "/algorithm/leetcode/851.喧闹和富有",
                     "/algorithm/leetcode/852.山脉数组的峰顶索引",
                     "/algorithm/leetcode/853.车队",
+                    "/algorithm/leetcode/854.相似度为 K 的字符串",
                     "/algorithm/leetcode/855.考场就座",
                     "/algorithm/leetcode/856.括号的分数",
                     "/algorithm/leetcode/858.镜面反射",
