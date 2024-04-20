@@ -701,6 +701,7 @@ module.exports = [
                     "/algorithm/leetcode/854.相似度为 K 的字符串",
                     "/algorithm/leetcode/855.考场就座",
                     "/algorithm/leetcode/856.括号的分数",
+                    "/algorithm/leetcode/857.雇佣 K 名工人的最低成本",
                     "/algorithm/leetcode/858.镜面反射",
                     "/algorithm/leetcode/859.亲密字符串",
                     "/algorithm/leetcode/860.柠檬水找零",
