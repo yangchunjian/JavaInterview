@@ -80,7 +80,7 @@ module.exports = {
   // 博主信息 (显示在首页侧边栏)
   blogger: {
     // avatar: 'https://www.yangchunjian.com/docbook/imgs/dearlocation.jpeg',
-    avatar: '/img/weixin.jpeg',
+    avatar: 'https://yjava.cn/imgs/wechat.png',
     name: 'JavaInterview',
     slogan: '『Java面试+Java学习』',
   },
