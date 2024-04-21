@@ -715,6 +715,7 @@ module.exports = [
                     "/algorithm/leetcode/868.二进制间距",
                     "/algorithm/leetcode/869.重新排序得到 2 的幂",
                     "/algorithm/leetcode/870.优势洗牌",
+                    "/algorithm/leetcode/871.最低加油次数",
                     "/algorithm/leetcode/872.叶子相似的树",
                     "/algorithm/leetcode/873.最长的斐波那契子序列的长度",
                     "/algorithm/leetcode/874.模拟行走机器人",
