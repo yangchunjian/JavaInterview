@@ -721,6 +721,8 @@ module.exports = [
                     "/algorithm/leetcode/874.模拟行走机器人",
                     "/algorithm/leetcode/875.爱吃香蕉的珂珂",
                     "/algorithm/leetcode/877.石子游戏",
+                    "/algorithm/leetcode/878.第 N 个神奇数字",
+                    "/algorithm/leetcode/879.盈利计划",
                     "/algorithm/leetcode/880.索引处的解码字符串",
                     "/algorithm/leetcode/881.救生艇",
                     "/algorithm/leetcode/883.三维形体投影面积",
