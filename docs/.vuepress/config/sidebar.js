@@ -896,6 +896,7 @@ module.exports = [
                     "/algorithm/leetcode/1710.卡车上的最大单元数",
                     "/algorithm/leetcode/1713.得到子序列的最少操作次数",
                     "/algorithm/leetcode/1719.重构一棵树的方案数",
+                    "/algorithm/leetcode/1766.互质树",
                     "/algorithm/leetcode/1922.统计好数字的数目",
                     "/algorithm/leetcode/2058.找出临界点之间的最小和最大距离",
                     "/algorithm/leetcode/2181.合并零之间的节点",
@@ -908,6 +909,8 @@ module.exports = [
                     "/algorithm/leetcode/2385.感染二叉树需要的总时间",
                     "/algorithm/leetcode/2440.创建价值相同的连通块",
                     "/algorithm/leetcode/2458.移除子树后的二叉树高度",
+                    "/algorithm/leetcode/2860.让所有学生保持开心的分组方法数",
+                    "/algorithm/leetcode/2961.双模幂运算",
                     "/algorithm/leetcode/LCR054.把二叉搜索树转换为累加树",
                     "/algorithm/leetcode/LCR192.把字符串转换成整数(atoi)",
                 ]
