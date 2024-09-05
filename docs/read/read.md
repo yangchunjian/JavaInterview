@@ -86,4 +86,4 @@ implementation 'cn.javainterview:javainterview-all:1.0.8'
 
 交流/加群/互看朋友圈，欢迎添加我的微信（备注“JavaInterview”即可）。
 
-![](https://yjava.cn/imgs/wechat.png)
+![](https://javainterview.cn/img/me/wx.png)
