@@ -67,8 +67,3 @@ implementation 'cn.javainterview:javainterview-all:2.1.0'
 
 ![我的公众号](https://javainterview.cn/img/qrcode_for_gh_82720717e427_344.jpg)
 
-## 联系我
-
-交流/加群/互看朋友圈，欢迎添加我的微信（备注“JavaInterview”即可）。
-
-![](https://yjava.cn/imgs/wechat.png)
