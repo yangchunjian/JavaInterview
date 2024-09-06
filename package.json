@@ -38,6 +38,8 @@
     "dayjs": "^1.11.3",
     "vuepress-plugin-code-copy": "^1.0.6",
     "vuepress-plugin-reading-progress": "^1.0.10",
+    "vuepress-plugin-rss": "^2.0.0",
+    "vuepress-plugin-rss-support": "^1.1.1",
     "vuepress-theme-vue": "^1.1.1"
   },
   "main": "index.js",
