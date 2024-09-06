@@ -65,5 +65,5 @@ implementation 'cn.javainterview:javainterview-all:2.1.0'
 
 微信公众号**JavaInterviewCn**，会发布一些技术、面经、职场等经验干货，欢迎关注，推荐一波~
 
-![我的公众号](https://javainterview.cn/img/qrcode_for_gh_82720717e427_344.jpg)
+![我的公众号](https://javainterview.cn/img/me/gzh.jpg)
 
