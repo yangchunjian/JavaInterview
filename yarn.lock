@@ -11442,7 +11442,7 @@ vuepress-plugin-disqus@^0.2.0:
   dependencies:
     vue-disqus "^3.0.5"
 
-vuepress-plugin-feed@^0.1.8:
+vuepress-plugin-feed@^0.1.8, vuepress-plugin-feed@^0.1.9:
   version "0.1.9"
   resolved "https://registry.npmmirror.com/vuepress-plugin-feed/-/vuepress-plugin-feed-0.1.9.tgz"
   integrity sha512-iOJkR7zPmJAX0TEVdxNsUT07xNQB6lZFpU7DqsYzO01FhaPkMOOVM5Vx5a/iOOuOggAeoI9H9yuah+cRmCImlw==

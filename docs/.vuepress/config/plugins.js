@@ -1,5 +1,14 @@
+// set your global feed options - override in page frontmatter `feed`
+const feed_options = {
+    canonical_base: 'https://javainterview.cn',
+    count: 5000,
+};
+
 // 插件配置
 module.exports = [
+    // rss 配置
+    [ 'feed', feed_options ],
+
     //一条线插件
     // ["ribbon-animation", {
     //     size: 90,   // 默认数据

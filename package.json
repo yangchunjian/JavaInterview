@@ -13,6 +13,7 @@
     "vuepress-plugin-baidu-tongji": "^1.0.1",
     "vuepress-plugin-comment": "^0.7.3",
     "vuepress-plugin-copyright": "^1.0.2",
+    "vuepress-plugin-feed": "^0.1.9",
     "vuepress-plugin-fulltext-search": "^2.2.1",
     "vuepress-plugin-reading-time": "^0.1.1",
     "vuepress-plugin-reading-time1": "^1.31.0-beta.1",
