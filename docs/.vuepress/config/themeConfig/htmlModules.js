@@ -1,119 +1,58 @@
-/** 插入自定义html模块 (可用于插入广告模块等)
- * {
- *   homeSidebarB: htmlString, 首页侧边栏底部
- *
- *   sidebarT: htmlString, 全局左侧边栏顶部
- *   sidebarB: htmlString, 全局左侧边栏底部
- *
- *   pageT: htmlString, 全局页面顶部
- *   pageB: htmlString, 全局页面底部
- *   pageTshowMode: string, 页面顶部-显示方式：未配置默认全局；'article' => 仅文章页①； 'custom' => 仅自定义页①
- *   pageBshowMode: string, 页面底部-显示方式：未配置默认全局；'article' => 仅文章页①； 'custom' => 仅自定义页①
- *
- *   windowLB: htmlString, 全局窗口左下角②
- *   windowRB: htmlString, 全局窗口右下角②
- * }
- *
- * ①注：在.md文件front matter配置`article: false`的页面是自定义页，未配置的默认是文章页（首页除外）。
- * ②注：windowLB 和 windowRB：1.展示区块宽高最大是200*200px。2.请给自定义元素定一个不超过200px的固定宽高。3.在屏宽小于960px时无论如何都不会显示。
- */
-
+// 官方文档：https://doc.xugaoyi.com/pages/a20ce8/#%E8%87%AA%E5%AE%9A%E4%B9%89html%E6%A8%A1%E5%9D%97
 module.exports = {
-  homeSidebarB:
-    `<!-- 纵向自适应 -->
-    <ins class="adsbygoogle"
-        style="display:block;padding: 0.95rem;"
-        data-ad-client="ca-pub-7828333725993554"
-        data-ad-slot="7802654582"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>`,
-  // sidebarT:
-  //   `<!--  固定100% * 150px可显示，max-height:150px 未见显示-->
-  //   <ins class="adsbygoogle"
-  //         style="display:inline-block;width:100%;max-height:150px"
-  //         data-ad-client="ca-pub-7828333725993554"
-  //         data-ad-slot="6625304284"></ins>
-  //     <script>
-  //         (adsbygoogle = window.adsbygoogle || []).push({});
-  //     </script>`,
-//   sidebarB:
-//     `<!-- 正方形 -->
-//       <ins class="adsbygoogle"
-//           style="display:block"
-//           data-ad-client="ca-pub-7828333725993554"
-//           data-ad-slot="3508773082"
-//           data-ad-format="auto"
-//           data-full-width-responsive="true"></ins>
-//       <script>
-//           (adsbygoogle = window.adsbygoogle || []).push({});
-//       </script>`,
-//   pageT:
-//     `<!-- 固定100% * 90px可显示，max-height:90px未见显示-->
-//      <ins class="adsbygoogle"
-//           style="display:inline-block;width:100%;max-height:90px"
-//           data-ad-client="ca-pub-7828333725993554"
-//           data-ad-slot="6625304284"></ins>
-//       <script>
-//           (adsbygoogle = window.adsbygoogle || []).push({});
-//       </script>`,
-  // pageTshowMode: 'article',
-//   pageB:
-//     `<!-- 横向自适应 -->
-//       <ins class="adsbygoogle"
-//           style="display:block"
-//           data-ad-client="ca-pub-7828333725993554"
-//           data-ad-slot="6620245489"
-//           data-ad-format="auto"
-//           data-full-width-responsive="true"></ins>
-//       <script>
-//           (adsbygoogle = window.adsbygoogle || []).push({});
-//       </script>`,
-  // pageBshowMode: 'article',
-  // windowLB: // 会遮挡部分侧边栏
-  //   `<!-- 固定200*200px -->
-  //     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  //     <ins class="adsbygoogle"
-  //         style="display:inline-block;width:200px;height:200px"
-  //         data-ad-client="ca-pub-7828333725993554"
-  //         data-ad-slot="6625304284"></ins>
-  //     <script>
-  //         (adsbygoogle = window.adsbygoogle || []).push({});
-  //     </script>`,
-//   windowRB:
-//      `<!-- 固定160*160px -->
-//       <ins class="adsbygoogle"
-//           style="display:inline-block;max-width:160px;max-height:160px"
-//           data-ad-client="ca-pub-7828333725993554"
-//           data-ad-slot="8377369658"></ins>
-//       <script>
-//           (adsbygoogle = window.adsbygoogle || []).push({});
-//       </script>
-//       `,
-}
-
-
-module.exports = {
-  // homeSidebarB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
-    homeSidebarB:  `<div style="padding: 0.95rem">
-    <p style="
-      color: var(--textColor);
-      opacity: 0.9;
-      font-size: 20px;
-      font-weight: bold;
-      margin: 0 0 8px 0;
-    ">公众号</p>
-    <img src="/img/qrcode_for_gh_82720717e427_344.jpg"  style="width:100%;" />
-    <p>
-    积沙成塔
-    </p>
+    homeSidebarB:
+        `<div style="padding: 0.95rem">
+      <p style="
+        color: var(--textColor);
+        opacity: 0.9;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0 0 8px 0;">推荐关注！</p>
+      <a href="#" target="_blank">
+        <img src="/img/qrcode_for_gh_82720717e427_344.jpg"  style="width:100%;" />
+      </a>
     </div>`,
-//   sidebarT: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
-//   sidebarB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
-//   pageT: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
-//   pageB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
-//   windowLB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
-//   windowRB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
+
+    // `<div style="padding: 0.95rem">
+    // <p style="
+    //   color: var(--textColor);
+    //   opacity: 0.9;
+    //   font-size: 20px;
+    //   font-weight: bold;
+    //   margin: 0 0 8px 0;
+    // ">本站工具</p>
+    // <p>
+    //   <a href="https://eryajf.github.io/Learning-Weekly/" arget="_blank" > 学习周刊 <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>
+    //   </br><a href="http://nav.eryajf.net" arget="_blank" > 我的导航 <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>
+    //   </br><a href="http://ip.eryajf.net" arget="_blank" > 出口IP查询 <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>
+    //   </br><a href="http://m.eryajf.net" arget="_blank" > 开源软件国内镜像 <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>
+    //   </br><a href="http://ob-plugin.eryajf.net" arget="_blank" > Ob插件周刊 <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>
+    // </p>
+    // </div>`,
+    // 利用广告模块儿,添加访问地球🌎
+    // homeSidebarB: `<div style="width:100%;height:122px;color:#fff;background: #eee;"><a href="https://www.revolvermaps.com/livestats/5srkcv15atq/"><img src="//rf.revolvermaps.com/h/m/a/0/ff0000/128/10/5srkcv15atq.png" width="256" height="128" alt="Map" style="border:0;"></a></div>`,
+    pageT: `<div style="
+  color:#f56c6c;
+  letter-spacing:0;
+  background: #fef0f0;
+  border-radius: 4px;
+  border: solid 1px;
+  display: block;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 0;
+  box-sizing: border-box;
+">
+  文章发布较早，内容可能过时，阅读注意甄别。
+</div>`,
+    pageB: `<div class="donation">
+  <button>打赏</button>
+  <div class="main">
+      <div class="pic">
+          <img src="/img/me/wx-skm.png" alt="微信">
+          <img src="/img/me/zfb-skm.png" alt="支付宝">
+      </div>
+  </div>
+</div>`,
 }

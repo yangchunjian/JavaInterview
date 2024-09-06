@@ -1,6 +1,6 @@
 const nav = require('./themeConfig/nav.js');
 const sidebar = require('./sidebar.js');
-// const htmlModules = require('./themeConfig/htmlModules.js');
+const htmlModules = require('./themeConfig/htmlModules.js');
 
 
 // 主题配置
@@ -92,5 +92,5 @@ module.exports = {
     },
     titleTag: 'Java',
   },
-  // htmlModules // 插入hmtl(广告)模块
+  htmlModules // 插入hmtl(广告)模块
 }
