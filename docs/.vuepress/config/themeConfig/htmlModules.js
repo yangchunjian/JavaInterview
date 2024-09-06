@@ -7,7 +7,7 @@ module.exports = {
         opacity: 0.9;
         font-size: 20px;
         font-weight: bold;
-        margin: 0 0 8px 0;">推荐关注！</p>
+        margin: 0 0 8px 0;">公众号更有货，推荐关注！</p>
       <a href="#" target="_blank">
         <img src="/img/qrcode_for_gh_82720717e427_344.jpg"  style="width:100%;" />
       </a>
