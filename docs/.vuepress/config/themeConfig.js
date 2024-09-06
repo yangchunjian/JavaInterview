@@ -80,9 +80,31 @@ module.exports = {
   // 博主信息 (显示在首页侧边栏)
   blogger: {
     // avatar: 'https://www.yangchunjian.com/docbook/imgs/dearlocation.jpeg',
-    avatar: 'https://javainterview.cn/img/qrcode_for_gh_82720717e427_344.jpg',
+    avatar: '/img/me/avatar-min.gif',
     name: 'JavaInterview',
     slogan: '『Java面试+Java学习』',
+  },
+
+  social: {
+    // 社交图标，显示于博主信息栏和页脚栏
+    // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
+    icons: [
+      {
+        iconClass: 'icon-github',
+        title: 'GitHub',
+        link: 'https://github.com/yangchunjian',
+      },
+      {
+        iconClass: 'icon-youjian',
+        title: '发邮件',
+        link: 'mailto:1091938307@qq.com',
+      },
+      {
+        iconClass: 'icon-rss',
+        title: '订阅',
+        link: 'https://javainterview.cn/rss.xml',
+      },
+    ],
   },
   // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
   extendFrontmatter: {

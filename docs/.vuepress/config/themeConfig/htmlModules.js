@@ -54,5 +54,13 @@ module.exports = {
           <img src="/img/me/zfb-skm.png" alt="支付宝">
       </div>
   </div>
-</div>`,
+</div><div style="text-align:center;padding: 0.95rem">
+      <p style="
+        color: var(--textColor);
+        opacity: 0.9;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0 0 8px 0;">推荐关注公众号！</p>
+        <img src="/img/me/gzh.jpg"/>
+    </div>`,
 }
