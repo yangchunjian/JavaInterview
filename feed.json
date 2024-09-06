@@ -1,0 +1,95 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "JavaInterview",
+    "home_page_url": "https://javainterview.cn",
+    "feed_url": "https://javainterview.cn/feed.json",
+    "description": "java,面试,后端,JavaInterview,interview,技术",
+    "items": [
+        {
+            "id": "https://javainterview.cn/pages/c2d291/",
+            "url": "https://javainterview.cn/pages/c2d291/",
+            "title": "删除链表的倒数第 N 个结点",
+            "summary": "删除链表的倒数第 N 个结点",
+            "date_modified": "2022-09-22T22:32:29.000Z"
+        },
+        {
+            "id": "https://javainterview.cn/pages/b458b0/",
+            "url": "https://javainterview.cn/pages/b458b0/",
+            "title": "合并两个有序链表",
+            "summary": "合并两个有序链表",
+            "date_modified": "2022-09-22T22:39:01.000Z"
+        },
+        {
+            "id": "https://javainterview.cn/pages/deeada/",
+            "url": "https://javainterview.cn/pages/deeada/",
+            "title": "合并K个升序链表",
+            "summary": "合并K个升序链表",
+            "date_modified": "2022-09-22T23:03:57.000Z"
+        },
+        {
+            "id": "https://javainterview.cn/pages/18e56e/",
+            "url": "https://javainterview.cn/pages/18e56e/",
+            "title": "螺旋矩阵 IV",
+            "summary": "螺旋矩阵 IV",
+            "image": "https://javainterview.cn/../../../media/pictures/leetcode/ex1new.jpeg",
+            "date_modified": "2022-09-02T09:43:30.000Z"
+        },
+        {
+            "id": "https://javainterview.cn/pages/5fd235/",
+            "url": "https://javainterview.cn/pages/5fd235/",
+            "title": "两两交换链表中的节点",
+            "summary": "两两交换链表中的节点",
+            "date_modified": "2022-09-22T23:51:24.000Z"
+        },
+        {
+            "id": "https://javainterview.cn/pages/f9e524/",
+            "url": "https://javainterview.cn/pages/f9e524/",
+            "title": "K 个一组翻转链表",
+            "summary": "K 个一组翻转链表",
+            "date_modified": "2022-09-26T23:27:17.000Z"
+        },
+        {
+            "id": "https://javainterview.cn/pages/2475fd/",
+            "url": "https://javainterview.cn/pages/2475fd/",
+            "title": "双模幂运算",
+            "summary": "2961.双模幂运算",
+            "date_modified": "2024-09-06T10:28:52.000Z"
+        },
+        {
+            "id": "https://javainterview.cn/pages/bc66e0/",
+            "url": "https://javainterview.cn/pages/bc66e0/",
+            "title": "旋转链表",
+            "summary": "旋转链表",
+            "date_modified": "2022-09-26T23:29:18.000Z"
+        },
+        {
+            "id": "https://javainterview.cn/pages/cc013e/",
+            "url": "https://javainterview.cn/pages/cc013e/",
+            "title": "最小路径和",
+            "summary": "最小路径和",
+            "date_modified": "2022-10-19T21:42:54.000Z"
+        },
+        {
+            "id": "https://javainterview.cn/pages/825c0b/",
+            "url": "https://javainterview.cn/pages/825c0b/",
+            "title": "文本左右对齐",
+            "summary": "文本左右对齐",
+            "date_modified": "2022-05-21T12:57:49.000Z"
+        },
+        {
+            "id": "https://javainterview.cn/pages/121a13/",
+            "url": "https://javainterview.cn/pages/121a13/",
+            "title": "把字符串转换成整数(atoi)",
+            "summary": "把字符串转换成整数(atoi)",
+            "date_modified": "2023-07-16T18:36:45.000Z"
+        },
+        {
+            "id": "https://javainterview.cn/pages/e65db1/",
+            "url": "https://javainterview.cn/pages/e65db1/",
+            "title": "把二叉搜索树转换为累加树",
+            "summary": "把二叉搜索树转换为累加树",
+            "image": "https://javainterview.cn/../../../media/pictures/leetcode/img.png",
+            "date_modified": "2024-03-12T23:51:02.000Z"
+        }
+    ]
+}
