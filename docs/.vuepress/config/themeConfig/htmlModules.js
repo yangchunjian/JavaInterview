@@ -7,7 +7,8 @@ module.exports = {
         opacity: 0.9;
         font-size: 20px;
         font-weight: bold;
-        margin: 0 0 8px 0;">推荐关注公众号！</p>
+        margin: 0 0 8px 0;
+        text-align: center;">公众号更有货</p>
       <a href="#" target="_blank">
         <img src="/img/qrcode_for_gh_82720717e427_344.jpg"  style="width:100%;" />
       </a>
@@ -55,12 +56,6 @@ module.exports = {
       </div>
   </div>
 </div><div style="text-align:center;padding: 0.95rem">
-      <p style="
-        color: var(--textColor);
-        opacity: 0.9;
-        font-size: 20px;
-        font-weight: bold;
-        margin: 0 0 8px 0;">推荐关注公众号！</p>
         <img src="/img/me/gzh.jpg"/>
     </div>`,
 }

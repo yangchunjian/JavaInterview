@@ -81,7 +81,7 @@ module.exports = {
   blogger: {
     // avatar: 'https://www.yangchunjian.com/docbook/imgs/dearlocation.jpeg',
     avatar: '/img/me/avatar-min.gif',
-    name: 'JavaInterview',
+    // name: 'JavaInterview',
     slogan: '『Java面试+Java学习』',
   },
 
