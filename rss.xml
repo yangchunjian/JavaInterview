@@ -4,16 +4,74 @@
         <title>JavaInterview</title>
         <link>https://javainterview.cn</link>
         <description>java,面试,后端,JavaInterview,interview,技术</description>
-        <lastBuildDate>Mon, 23 Sep 2024 12:31:44 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 Sep 2024 13:21:46 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <atom:link href="https://javainterview.cn/feed.atom" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[力扣模版]]></title>
-            <link>https://javainterview.cn/pages/bfb30c/</link>
-            <guid>https://javainterview.cn/pages/bfb30c/</guid>
-            <pubDate>Mon, 23 Sep 2024 11:55:29 GMT</pubDate>
+            <link>https://javainterview.cn/pages/9ee76b/</link>
+            <guid>https://javainterview.cn/pages/9ee76b/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
             <description><![CDATA[`java]]></description>
+        </item>
+        <item>
+            <title><![CDATA[合并石头的最低成本]]></title>
+            <link>https://javainterview.cn/pages/141149/</link>
+            <guid>https://javainterview.cn/pages/141149/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
+            <description><![CDATA[合并石头的最低成本]]></description>
+        </item>
+        <item>
+            <title><![CDATA[网格照明]]></title>
+            <link>https://javainterview.cn/pages/1f89e1/</link>
+            <guid>https://javainterview.cn/pages/1f89e1/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
+            <description><![CDATA[网格照明]]></description>
+            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/illu_1.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[至少有 1 位重复的数字]]></title>
+            <link>https://javainterview.cn/pages/d4dcb9/</link>
+            <guid>https://javainterview.cn/pages/d4dcb9/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
+            <description><![CDATA[至少有 1 位重复的数字]]></description>
+        </item>
+        <item>
+            <title><![CDATA[逃离大迷宫]]></title>
+            <link>https://javainterview.cn/pages/bd032f/</link>
+            <guid>https://javainterview.cn/pages/bd032f/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
+            <description><![CDATA[逃离大迷宫]]></description>
+        </item>
+        <item>
+            <title><![CDATA[最长重复子串]]></title>
+            <link>https://javainterview.cn/pages/187ad1/</link>
+            <guid>https://javainterview.cn/pages/187ad1/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
+            <description><![CDATA[最长重复子串]]></description>
+        </item>
+        <item>
+            <title><![CDATA[产品销售分析 I]]></title>
+            <link>https://javainterview.cn/pages/701905/</link>
+            <guid>https://javainterview.cn/pages/701905/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
+            <description><![CDATA[产品销售分析 I]]></description>
+        </item>
+        <item>
+            <title><![CDATA[产品销售分析 III]]></title>
+            <link>https://javainterview.cn/pages/84267a/</link>
+            <guid>https://javainterview.cn/pages/84267a/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
+            <description><![CDATA[产品销售分析 III]]></description>
+        </item>
+        <item>
+            <title><![CDATA[项目员工 I]]></title>
+            <link>https://javainterview.cn/pages/54f978/</link>
+            <guid>https://javainterview.cn/pages/54f978/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
+            <description><![CDATA[项目员工 I]]></description>
         </item>
         <item>
             <title><![CDATA[删除链表的倒数第 N 个结点]]></title>
@@ -37,6 +95,13 @@
             <description><![CDATA[合并K个升序链表]]></description>
         </item>
         <item>
+            <title><![CDATA[两两交换链表中的节点]]></title>
+            <link>https://javainterview.cn/pages/5fd235/</link>
+            <guid>https://javainterview.cn/pages/5fd235/</guid>
+            <pubDate>Thu, 22 Sep 2022 23:51:24 GMT</pubDate>
+            <description><![CDATA[两两交换链表中的节点]]></description>
+        </item>
+        <item>
             <title><![CDATA[螺旋矩阵 IV]]></title>
             <link>https://javainterview.cn/pages/18e56e/</link>
             <guid>https://javainterview.cn/pages/18e56e/</guid>
@@ -44,13 +109,6 @@
             <description><![CDATA[螺旋矩阵 IV]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/ex1new.jpeg">
             </enclosure>
-        </item>
-        <item>
-            <title><![CDATA[两两交换链表中的节点]]></title>
-            <link>https://javainterview.cn/pages/5fd235/</link>
-            <guid>https://javainterview.cn/pages/5fd235/</guid>
-            <pubDate>Thu, 22 Sep 2022 23:51:24 GMT</pubDate>
-            <description><![CDATA[两两交换链表中的节点]]></description>
         </item>
         <item>
             <title><![CDATA[K 个一组翻转链表]]></title>
@@ -61,9 +119,9 @@
         </item>
         <item>
             <title><![CDATA[双模幂运算]]></title>
-            <link>https://javainterview.cn/pages/244588/</link>
-            <guid>https://javainterview.cn/pages/244588/</guid>
-            <pubDate>Mon, 23 Sep 2024 11:55:29 GMT</pubDate>
+            <link>https://javainterview.cn/pages/14755b/</link>
+            <guid>https://javainterview.cn/pages/14755b/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
             <description><![CDATA[2961.双模幂运算]]></description>
         </item>
         <item>
@@ -89,100 +147,121 @@
         </item>
         <item>
             <title><![CDATA[细分图中的可到达节点]]></title>
-            <link>https://javainterview.cn/pages/81ee5a/</link>
-            <guid>https://javainterview.cn/pages/81ee5a/</guid>
-            <pubDate>Mon, 23 Sep 2024 11:55:29 GMT</pubDate>
+            <link>https://javainterview.cn/pages/18e84a/</link>
+            <guid>https://javainterview.cn/pages/18e84a/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
             <description><![CDATA[细分图中的可到达节点]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/origfinal.png">
             </enclosure>
         </item>
         <item>
             <title><![CDATA[鸡蛋掉落]]></title>
-            <link>https://javainterview.cn/pages/b6ff5b/</link>
-            <guid>https://javainterview.cn/pages/b6ff5b/</guid>
-            <pubDate>Mon, 23 Sep 2024 11:55:29 GMT</pubDate>
+            <link>https://javainterview.cn/pages/fe44dc/</link>
+            <guid>https://javainterview.cn/pages/fe44dc/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
             <description><![CDATA[鸡蛋掉落]]></description>
         </item>
         <item>
             <title><![CDATA[子序列宽度之和]]></title>
-            <link>https://javainterview.cn/pages/b948f4/</link>
-            <guid>https://javainterview.cn/pages/b948f4/</guid>
-            <pubDate>Mon, 23 Sep 2024 11:55:29 GMT</pubDate>
+            <link>https://javainterview.cn/pages/1be985/</link>
+            <guid>https://javainterview.cn/pages/1be985/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
             <description><![CDATA[子序列宽度之和]]></description>
         </item>
         <item>
             <title><![CDATA[超级回文数]]></title>
-            <link>https://javainterview.cn/pages/e61c2f/</link>
-            <guid>https://javainterview.cn/pages/e61c2f/</guid>
-            <pubDate>Mon, 23 Sep 2024 11:55:29 GMT</pubDate>
+            <link>https://javainterview.cn/pages/b47124/</link>
+            <guid>https://javainterview.cn/pages/b47124/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
             <description><![CDATA[906.超级回文数]]></description>
         </item>
         <item>
             <title><![CDATA[猫和老鼠]]></title>
-            <link>https://javainterview.cn/pages/db4531/</link>
-            <guid>https://javainterview.cn/pages/db4531/</guid>
-            <pubDate>Mon, 23 Sep 2024 11:55:29 GMT</pubDate>
+            <link>https://javainterview.cn/pages/38058c/</link>
+            <guid>https://javainterview.cn/pages/38058c/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
             <description><![CDATA[913.猫和老鼠]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/cat1.jpg">
             </enclosure>
         </item>
         <item>
             <title><![CDATA[播放列表的数量]]></title>
-            <link>https://javainterview.cn/pages/7e87dd/</link>
-            <guid>https://javainterview.cn/pages/7e87dd/</guid>
-            <pubDate>Mon, 23 Sep 2024 11:55:29 GMT</pubDate>
+            <link>https://javainterview.cn/pages/6a4126/</link>
+            <guid>https://javainterview.cn/pages/6a4126/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
             <description><![CDATA[920.播放列表的数量]]></description>
         </item>
         <item>
             <title><![CDATA[尽量减少恶意软件的传播]]></title>
-            <link>https://javainterview.cn/pages/2f83bd/</link>
-            <guid>https://javainterview.cn/pages/2f83bd/</guid>
-            <pubDate>Mon, 23 Sep 2024 11:55:29 GMT</pubDate>
+            <link>https://javainterview.cn/pages/d5b4b7/</link>
+            <guid>https://javainterview.cn/pages/d5b4b7/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
             <description><![CDATA[尽量减少恶意软件的传播]]></description>
         </item>
         <item>
             <title><![CDATA[三等分]]></title>
-            <link>https://javainterview.cn/pages/1522f5/</link>
-            <guid>https://javainterview.cn/pages/1522f5/</guid>
-            <pubDate>Mon, 23 Sep 2024 11:55:29 GMT</pubDate>
+            <link>https://javainterview.cn/pages/1cd4bf/</link>
+            <guid>https://javainterview.cn/pages/1cd4bf/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
             <description><![CDATA[三等分]]></description>
         </item>
         <item>
             <title><![CDATA[尽量减少恶意软件的传播 II]]></title>
-            <link>https://javainterview.cn/pages/02444e/</link>
-            <guid>https://javainterview.cn/pages/02444e/</guid>
-            <pubDate>Mon, 23 Sep 2024 11:55:29 GMT</pubDate>
+            <link>https://javainterview.cn/pages/126394/</link>
+            <guid>https://javainterview.cn/pages/126394/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
             <description><![CDATA[尽量减少恶意软件的传播 II]]></description>
         </item>
         <item>
             <title><![CDATA[戳印序列]]></title>
-            <link>https://javainterview.cn/pages/714bf3/</link>
-            <guid>https://javainterview.cn/pages/714bf3/</guid>
-            <pubDate>Mon, 23 Sep 2024 11:55:29 GMT</pubDate>
+            <link>https://javainterview.cn/pages/319c37/</link>
+            <guid>https://javainterview.cn/pages/319c37/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
             <description><![CDATA[戳印序列]]></description>
         </item>
         <item>
             <title><![CDATA[不同的子序列 II]]></title>
-            <link>https://javainterview.cn/pages/4cbc93/</link>
-            <guid>https://javainterview.cn/pages/4cbc93/</guid>
-            <pubDate>Mon, 23 Sep 2024 11:55:29 GMT</pubDate>
+            <link>https://javainterview.cn/pages/fe5c4a/</link>
+            <guid>https://javainterview.cn/pages/fe5c4a/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
             <description><![CDATA[不同的子序列 II]]></description>
         </item>
         <item>
             <title><![CDATA[最短超级串]]></title>
-            <link>https://javainterview.cn/pages/aa82c3/</link>
-            <guid>https://javainterview.cn/pages/aa82c3/</guid>
-            <pubDate>Mon, 23 Sep 2024 11:55:29 GMT</pubDate>
+            <link>https://javainterview.cn/pages/2b430b/</link>
+            <guid>https://javainterview.cn/pages/2b430b/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
             <description><![CDATA[最短超级串]]></description>
         </item>
         <item>
             <title><![CDATA[按公因数计算最大组件大小]]></title>
-            <link>https://javainterview.cn/pages/973034/</link>
-            <guid>https://javainterview.cn/pages/973034/</guid>
-            <pubDate>Mon, 23 Sep 2024 11:55:29 GMT</pubDate>
+            <link>https://javainterview.cn/pages/6d4f0e/</link>
+            <guid>https://javainterview.cn/pages/6d4f0e/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
             <description><![CDATA[按公因数计算最大组件大小]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/952ex1.png">
             </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[K 个不同整数的子数组]]></title>
+            <link>https://javainterview.cn/pages/9157ee/</link>
+            <guid>https://javainterview.cn/pages/9157ee/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
+            <description><![CDATA[K 个不同整数的子数组]]></description>
+        </item>
+        <item>
+            <title><![CDATA[平方数组的数目]]></title>
+            <link>https://javainterview.cn/pages/094df0/</link>
+            <guid>https://javainterview.cn/pages/094df0/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
+            <description><![CDATA[平方数组的数目]]></description>
+        </item>
+        <item>
+            <title><![CDATA[K 连续位的最小翻转次数]]></title>
+            <link>https://javainterview.cn/pages/36f125/</link>
+            <guid>https://javainterview.cn/pages/36f125/</guid>
+            <pubDate>Tue, 24 Sep 2024 12:40:06 GMT</pubDate>
+            <description><![CDATA[K 连续位的最小翻转次数]]></description>
         </item>
         <item>
             <title><![CDATA[把二叉搜索树转换为累加树]]></title>
