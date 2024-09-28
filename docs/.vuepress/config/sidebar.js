@@ -961,15 +961,6 @@ module.exports = [
                     "/algorithm/nowcoder/nowcoder-BM4.合并两个排序的链表",
                 ]
             },
-            {
-                title: "设计模式",
-                children: [
-                    "/algorithm/designpattern/adapter",
-                    "/algorithm/designpattern/strategy",
-                    "/algorithm/designpattern/observer",
-                ]
-            },
-
         ]
     },
     {
