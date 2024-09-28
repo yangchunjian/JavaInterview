@@ -876,7 +876,7 @@ module.exports = [
                     "/algorithm/leetcode/1080.根到叶路径上的不足节点",
                     "/algorithm/leetcode/1092.最短公共超序列",
                     "/algorithm/leetcode/1095. 山脉数组中查找目标值",
-                    "/algorithm/leetcode/1096. 花括号展开II",
+                    "/algorithm/leetcode/1096.花括号展开2",
                     "/algorithm/leetcode/1103.分糖果 II",
                     "/algorithm/leetcode/1104.二叉树寻路",
                     "/algorithm/leetcode/1105.填充书架",
