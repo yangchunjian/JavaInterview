@@ -5,13 +5,16 @@ tag:
   - nowcoder
   - 牛客
 author: JavaInterview.cn
-permalink: /pages/5d3dd7/
+permalink: /nowcoder
 categories: 
   - algorithm
 tags: 
   - Java
 date: 2022-04-21 22:12:56
 titleTag: Java
+feed:
+  enable: true
+description: 牛客
 ---
 
 ## 数组
