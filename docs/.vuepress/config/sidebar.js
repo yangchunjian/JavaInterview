@@ -975,51 +975,6 @@ module.exports = [
         children: [
             "/test/smoke",
         ]
-    },
-    {
-        title: '数据库',
-        children: [
-            "/database/mysql/mysql",
-            "/database/redis/redis",
-            "/database/elasticsearch/elasticsearch",
-        ]
-    },
-    {
-        title: '中间件',
-        children: [
-            {
-                title: "消息队列",
-                children: [
-                    "/middleware/mq/kafka/kafka",
-                    "/middleware/mq/rocket/rocket",
-                ]
-            },
-            {
-                title: "配置中心",
-                children: [
-                    "/middleware/config/apollo/apollo",
-                    "/middleware/config/disconf/disconf",
-                ]
-
-            },
-
-            {
-                title: "定时任务",
-                children: [
-                    "/middleware/time/xxljob/xxljob",
-                ]
-
-            },
-            {
-                title: "Spring",
-                children: [
-                    "/middleware/spring/springmvc/springmvc",
-                    "/middleware/spring/springboot/springboot",
-                    "/middleware/spring/springcloud/springcloud",
-                ]
-
-            },
-
-        ]
     }
+
 ]
