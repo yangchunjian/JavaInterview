@@ -194,12 +194,6 @@ module.exports = [
         title: '技术',
         children: [
             {
-                title: "书籍",
-                children: [
-                    "/skill/book/书籍列表",
-                ]
-            },
-            {
                 title: "工具",
                 children: [
 
