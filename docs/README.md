@@ -41,7 +41,7 @@ features: ## 可选的
 ## simplePostListLength: 10 ## 简约版文章列表显示的文章数量，默认10。（仅在postList设置为simple时生效）
 ## hideRightBar: true ## 是否隐藏右侧边栏
             
-footer: Copyright © 2018-2022 JavaInterview.cn
+footer: Copyright © JavaInterview.cn
 
 ---
 <div style="text-align: center;">
@@ -49,7 +49,7 @@ footer: Copyright © 2018-2022 JavaInterview.cn
         👀 本站总访问量:<span id="busuanzi_value_site_pv"></span> 次
     </span>
     <span id="busuanzi_container_site_uv" style='display:none'>
-        | 🚴 本站总访客数:<span id="busuanzi_value_site_uv"></span> 人 | 
+        | 🚴 本站总访客数:<span id="busuanzi_value_site_uv"></span> 人 
     </span>
 
 [//]: # (    <span>)
