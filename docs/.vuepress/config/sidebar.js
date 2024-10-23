@@ -921,7 +921,7 @@ module.exports = [
                     "/algorithm/leetcode/1289. 下降路径最小和2",
                     "/algorithm/leetcode/1291. 顺次数",
                     "/algorithm/leetcode/1292. 元素和小于等于阈值的正方形的最大边长",
-                    "/algorithm/leetcode/1293. 网格中的最短路径",
+                    // "/algorithm/leetcode/1293. 网格中的最短路径",
                     "/algorithm/leetcode/1295. 统计位数为偶数的数字",
                     "/algorithm/leetcode/1296. 划分数组为连续数字的集合",
                     "/algorithm/leetcode/1297. 子串的最大出现次数",
