@@ -916,7 +916,7 @@ module.exports = [
                     "/algorithm/leetcode/1283. 使结果不超过阈值的最小除数",
                     "/algorithm/leetcode/1284. 转化为全零矩阵的最少反转次数",
                     "/algorithm/leetcode/1286. 字母组合迭代器",
-                    "/algorithm/leetcode/1287. 有序数组中出现次数超过25%的元素",
+                    "/algorithm/leetcode/1287. 有序数组中出现次数超过0.25的元素",
                     "/algorithm/leetcode/1288. 删除被覆盖区间",
                     "/algorithm/leetcode/1289. 下降路径最小和2",
                     "/algorithm/leetcode/1291. 顺次数",
