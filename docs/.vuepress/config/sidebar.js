@@ -952,7 +952,7 @@ module.exports = [
                     "/algorithm/leetcode/1324. 竖直打印单词",
                     "/algorithm/leetcode/1326. 灌溉花园的最少水龙头数目",
                     "/algorithm/leetcode/1327. 列出指定时间段内所有的下单产品",
-                    "/algorithm/leetco„de/1328. 破坏回文串",
+                    "/algorithm/leetcode/1328.破坏回文串",
                     "/algorithm/leetcode/1329. 将矩阵按对角线排序",
                     "/algorithm/leetcode/1330. 翻转子数组得到最大的数组值",
                     "/algorithm/leetcode/1331. 数组序号转换",
