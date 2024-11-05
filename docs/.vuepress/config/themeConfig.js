@@ -68,7 +68,7 @@ module.exports = {
     // 网站成立年份(若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
     since: 2019,
     // 网站作者(关闭请设置为false)
-    author: '<a href="https://yangchunjian.com" target="_blank">javainterview</a>',
+    author: '<a href="https://yjava.cn" target="_blank">javainterview</a>',
     createYear: 2019, // 博客创建年份
     copyrightInfo: '<a href="https://JavaInterview.cn" target="_blank">JavaInterview.cn</a>', // 博客版权信息，支持a标签或换行标签</br>
     // 访问量统计功能(不蒜子)
