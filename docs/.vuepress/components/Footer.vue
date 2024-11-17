@@ -20,7 +20,7 @@ export default {
   },
   data() {
     return {
-      defaultLitten: `<a href="https://yangchunjian.com" target="_blank">javainterview</a>`,
+      defaultLitten: `<a href="https://yjava.cn" target="_blank">javainterview</a>`,
       nowYear: new Date().getFullYear()
     };
   },

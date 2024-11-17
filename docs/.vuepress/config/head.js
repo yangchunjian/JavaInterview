@@ -41,12 +41,12 @@ module.exports = [
   //   'script', {}, `
   //       (function() {
   //          if (location.href.indexOf('docbox') > -1) {
-  //                  location.href = 'https://yangchunjian.com'
+  //                  location.href = 'https://yjava.cn'
   //          }
   //          var links = document.getElementsByTagName("a");
   //          for (var i = 0; i < links.length; i++) {
   //            if(links[i].href.indexOf('docbox') > -1){
-  //               links[i].href = "https://yangchunjian.com";
+  //               links[i].href = "https://yjava.cn";
   //            }
   //          }
   //       })();
@@ -56,8 +56,8 @@ module.exports = [
   // [
   //   'script', {}, `
   //       (function() {
-	//          if (location.href.indexOf('yangchunjian.com') > -1 || location.href.indexOf('yangchunjian.com') > -1) {
-  //          		location.href = 'https://yangchunjian.com'
+	//          if (location.href.indexOf('yjava.cn') > -1 || location.href.indexOf('yjava.cn') > -1) {
+  //          		location.href = 'https://yjava.cn'
   //          }
   //       })();
   //       `
