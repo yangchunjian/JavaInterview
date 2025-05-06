@@ -5,6 +5,7 @@
   "description": "JavaInterview",
   "license": "MIT",
   "author": "javainterview",
+  "packageManager": "pnpm@9.11.0",
   "devDependencies": {
     "@vuepress/plugin-last-updated": "^1.9.7",
     "@vuepress/plugin-medium-zoom": "^1.9.7",
