@@ -37,7 +37,7 @@ jobs:
 
       - name: 构建文档
         env:
-          NODE_OPTIONS: --max_old_space_size=18990
+          NODE_OPTIONS: --max_old_space_size=17990
         run: |-
           npm run docs:build
           > docs/.vuepress/dist/.nojekyll
