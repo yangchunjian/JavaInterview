@@ -22,7 +22,7 @@ jobs:
 
       # 生成静态文件
       - name: Build
-        run: npm install && export NODE_OPTIONS="--openssl-legacy-provider --max_old_space_size=18990" && npm run docs:build
+        run: npm install && export NODE_OPTIONS="--openssl-legacy-provider --max_old_space_size=19990" && npm run docs:build
 
       # 部署到 GitHub Pages
       - name: Deploy
