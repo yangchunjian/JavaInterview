@@ -16,10 +16,11 @@ module.exports = {
 
     head,
     plugins,
-    themeConfig,
-    chainWebpack: config => {
-        config.plugin('compression')
-            .use(require('compression-webpack-plugin'))
-            .end();
-    }
+    themeConfig
+    // ,
+    // chainWebpack: config => {
+    //     config.plugin('compression')
+    //         .use(require('compression-webpack-plugin'))
+    //         .end();
+    // }
 }
