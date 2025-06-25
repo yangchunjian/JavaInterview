@@ -14,10 +14,10 @@ module.exports = [
         {
             showIcon:
                 "https://javainterview.cn/assets/icon/logo_title50x50.png",
-            showText: "😊欢迎回~",
+            showText: "欢迎回~",
             hideIcon:
                 "https://javainterview.cn/assets/icon/logo_title50x50.png",
-            hideText: "😂不要走~",
+            hideText: "不要走~",
             recoverTime: 2000, //  持续时间
         },
     ],
