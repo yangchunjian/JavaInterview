@@ -31,8 +31,8 @@ jobs:
           branch: gh-pages
           folder: docs/.vuepress/dist
 
-      - name: Disable LFS lock verify for Gitee
-        run: git config --global lfs.https://gitee.com/yangchunjian/JavaInterview.git/info/lfs.locksverify false
+      # - name: Disable LFS lock verify for Gitee
+      #   run: git config --global lfs.https://gitee.com/yangchunjian/JavaInterview.git/info/lfs.locksverify false
 
       - name: Mirror the Github organization repos to Gitee.
         uses: Yikun/hub-mirror-action@master
