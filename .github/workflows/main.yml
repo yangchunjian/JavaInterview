@@ -26,7 +26,7 @@ jobs:
 
       # 部署到 GitHub Pages
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           #          ACCESS_TOKEN: ${{ secrets.token_new }} # 也就是我们刚才生成的 secret
           # ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # 也就是我们刚才生成的 secret
