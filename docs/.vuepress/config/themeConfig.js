@@ -8,7 +8,6 @@ module.exports = {
   nav,
   logo: '/assets/icon/logo200x100.png',
   hostname: "https://javainterview.cn/",
-  sidebar: 'auto', //  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义
   // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
   author: {
     name: 'JavaInterview.cn', // 必需
