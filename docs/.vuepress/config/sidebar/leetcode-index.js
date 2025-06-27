@@ -972,6 +972,7 @@ module.exports = [
     "/algorithm/leetcode/1641. 统计字典序元音字符串的数目",
     "/algorithm/leetcode/1642. 可以到达的最远建筑",
     "/algorithm/leetcode/1643. 第K条最小指令",
+    "/algorithm/leetcode/1644.测试路径",
     "/algorithm/leetcode/1670.设计前中后队列",
     "/algorithm/leetcode/1703.得到连续 K 个 1 的最少相邻交换次数",
     "/algorithm/leetcode/1705.吃苹果的最大数目",
