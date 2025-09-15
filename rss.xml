@@ -4,7 +4,7 @@
         <title>JavaInterview</title>
         <link>https://javainterview.cn</link>
         <description>java,面试,后端,JavaInterview,interview,技术</description>
-        <lastBuildDate>Sun, 07 Sep 2025 12:08:04 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 15 Sep 2025 13:17:51 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <atom:link href="https://javainterview.cn/feed.atom" rel="self" type="application/rss+xml"/>
@@ -88,13 +88,6 @@
             <description><![CDATA[项目员工 I]]></description>
         </item>
         <item>
-            <title><![CDATA[山脉数组中查找目标值]]></title>
-            <link>https://javainterview.cn/pages/099bbd/</link>
-            <guid>https://javainterview.cn/pages/099bbd/</guid>
-            <pubDate>Sun, 22 Sep 2024 18:45:34 GMT</pubDate>
-            <description><![CDATA[山脉数组中查找目标值]]></description>
-        </item>
-        <item>
             <title><![CDATA[花括号展开2]]></title>
             <link>https://javainterview.cn/pages/964d36/</link>
             <guid>https://javainterview.cn/pages/964d36/</guid>
@@ -104,18 +97,18 @@
             </enclosure>
         </item>
         <item>
+            <title><![CDATA[山脉数组中查找目标值]]></title>
+            <link>https://javainterview.cn/pages/099bbd/</link>
+            <guid>https://javainterview.cn/pages/099bbd/</guid>
+            <pubDate>Sun, 22 Sep 2024 18:45:34 GMT</pubDate>
+            <description><![CDATA[山脉数组中查找目标值]]></description>
+        </item>
+        <item>
             <title><![CDATA[解析布尔表达式]]></title>
             <link>https://javainterview.cn/pages/104d0b/</link>
             <guid>https://javainterview.cn/pages/104d0b/</guid>
             <pubDate>Sun, 22 Sep 2024 18:45:34 GMT</pubDate>
             <description><![CDATA[解析布尔表达式]]></description>
-        </item>
-        <item>
-            <title><![CDATA[每月交易 I]]></title>
-            <link>https://javainterview.cn/pages/bfd80c/</link>
-            <guid>https://javainterview.cn/pages/bfd80c/</guid>
-            <pubDate>Sun, 22 Sep 2024 18:45:34 GMT</pubDate>
-            <description><![CDATA[每月交易 I]]></description>
         </item>
         <item>
             <title><![CDATA[查找集群内的关键连接]]></title>
@@ -125,6 +118,13 @@
             <description><![CDATA[查找集群内的关键连接]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/critical-connections-in-a-network.png">
             </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[每月交易 I]]></title>
+            <link>https://javainterview.cn/pages/bfd80c/</link>
+            <guid>https://javainterview.cn/pages/bfd80c/</guid>
+            <pubDate>Sun, 22 Sep 2024 18:45:34 GMT</pubDate>
+            <description><![CDATA[每月交易 I]]></description>
         </item>
         <item>
             <title><![CDATA[最后一个能进入巴士的人]]></title>
@@ -194,20 +194,6 @@
             <description><![CDATA[平均售价]]></description>
         </item>
         <item>
-            <title><![CDATA[重构 2 行二进制矩阵]]></title>
-            <link>https://javainterview.cn/pages/e9b880/</link>
-            <guid>https://javainterview.cn/pages/e9b880/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[重构 2 行二进制矩阵]]></description>
-        </item>
-        <item>
-            <title><![CDATA[统计封闭岛屿的数目]]></title>
-            <link>https://javainterview.cn/pages/31eb9b/</link>
-            <guid>https://javainterview.cn/pages/31eb9b/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[统计封闭岛屿的数目]]></description>
-        </item>
-        <item>
             <title><![CDATA[奇数值单元格的数目]]></title>
             <link>https://javainterview.cn/pages/2368bd/</link>
             <guid>https://javainterview.cn/pages/2368bd/</guid>
@@ -217,11 +203,25 @@
             </enclosure>
         </item>
         <item>
+            <title><![CDATA[重构 2 行二进制矩阵]]></title>
+            <link>https://javainterview.cn/pages/e9b880/</link>
+            <guid>https://javainterview.cn/pages/e9b880/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[重构 2 行二进制矩阵]]></description>
+        </item>
+        <item>
             <title><![CDATA[得分最高的单词集合]]></title>
             <link>https://javainterview.cn/pages/3b39b6/</link>
             <guid>https://javainterview.cn/pages/3b39b6/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
             <description><![CDATA[得分最高的单词集合]]></description>
+        </item>
+        <item>
+            <title><![CDATA[统计封闭岛屿的数目]]></title>
+            <link>https://javainterview.cn/pages/31eb9b/</link>
+            <guid>https://javainterview.cn/pages/31eb9b/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[统计封闭岛屿的数目]]></description>
         </item>
         <item>
             <title><![CDATA[二维网格迁移]]></title>
@@ -249,24 +249,6 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[统计参与通信的服务器]]></title>
-            <link>https://javainterview.cn/pages/74bc06/</link>
-            <guid>https://javainterview.cn/pages/74bc06/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[统计参与通信的服务器]]></description>
-            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/untitled-diagram-6.jpg">
-            </enclosure>
-        </item>
-        <item>
-            <title><![CDATA[访问所有点的最小时间]]></title>
-            <link>https://javainterview.cn/pages/8b5769/</link>
-            <guid>https://javainterview.cn/pages/8b5769/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[访问所有点的最小时间]]></description>
-            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/1626_example_1.png">
-            </enclosure>
-        </item>
-        <item>
             <title><![CDATA[搜索推荐系统]]></title>
             <link>https://javainterview.cn/pages/68afd5/</link>
             <guid>https://javainterview.cn/pages/68afd5/</guid>
@@ -279,6 +261,15 @@
             <guid>https://javainterview.cn/pages/b61935/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
             <description><![CDATA[停在原地的方案数]]></description>
+        </item>
+        <item>
+            <title><![CDATA[访问所有点的最小时间]]></title>
+            <link>https://javainterview.cn/pages/8b5769/</link>
+            <guid>https://javainterview.cn/pages/8b5769/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[访问所有点的最小时间]]></description>
+            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/1626_example_1.png">
+            </enclosure>
         </item>
         <item>
             <title><![CDATA[找出井字棋的获胜者]]></title>
@@ -295,6 +286,15 @@
             <guid>https://javainterview.cn/pages/08504d/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
             <description><![CDATA[不浪费原料的汉堡制作方案]]></description>
+        </item>
+        <item>
+            <title><![CDATA[统计参与通信的服务器]]></title>
+            <link>https://javainterview.cn/pages/74bc06/</link>
+            <guid>https://javainterview.cn/pages/74bc06/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[统计参与通信的服务器]]></description>
+            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/untitled-diagram-6.jpg">
+            </enclosure>
         </item>
         <item>
             <title><![CDATA[统计全为1的正方形子矩阵]]></title>
@@ -318,13 +318,6 @@
             <description><![CDATA[学生们参加各科测试的次数]]></description>
         </item>
         <item>
-            <title><![CDATA[整数的各位积和之差]]></title>
-            <link>https://javainterview.cn/pages/cfcdbb/</link>
-            <guid>https://javainterview.cn/pages/cfcdbb/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[整数的各位积和之差]]></description>
-        </item>
-        <item>
             <title><![CDATA[用户分组]]></title>
             <link>https://javainterview.cn/pages/eb6a2c/</link>
             <guid>https://javainterview.cn/pages/eb6a2c/</guid>
@@ -341,11 +334,25 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[删除被覆盖区间]]></title>
-            <link>https://javainterview.cn/pages/a1937a/</link>
-            <guid>https://javainterview.cn/pages/a1937a/</guid>
+            <title><![CDATA[整数的各位积和之差]]></title>
+            <link>https://javainterview.cn/pages/cfcdbb/</link>
+            <guid>https://javainterview.cn/pages/cfcdbb/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[删除被覆盖区间]]></description>
+            <description><![CDATA[整数的各位积和之差]]></description>
+        </item>
+        <item>
+            <title><![CDATA[字母组合迭代器]]></title>
+            <link>https://javainterview.cn/pages/ed73c6/</link>
+            <guid>https://javainterview.cn/pages/ed73c6/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[字母组合迭代器]]></description>
+        </item>
+        <item>
+            <title><![CDATA[有序数组中出现次数超过0.25的元素]]></title>
+            <link>https://javainterview.cn/pages/224eb7/</link>
+            <guid>https://javainterview.cn/pages/224eb7/</guid>
+            <pubDate>Sat, 26 Oct 2024 20:04:44 GMT</pubDate>
+            <description><![CDATA[有序数组中出现次数超过25%的元素]]></description>
         </item>
         <item>
             <title><![CDATA[转化为全零矩阵的最少反转次数]]></title>
@@ -357,18 +364,13 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[有序数组中出现次数超过0.25的元素]]></title>
-            <link>https://javainterview.cn/pages/224eb7/</link>
-            <guid>https://javainterview.cn/pages/224eb7/</guid>
-            <pubDate>Sat, 26 Oct 2024 20:04:44 GMT</pubDate>
-            <description><![CDATA[有序数组中出现次数超过25%的元素]]></description>
-        </item>
-        <item>
-            <title><![CDATA[字母组合迭代器]]></title>
-            <link>https://javainterview.cn/pages/ed73c6/</link>
-            <guid>https://javainterview.cn/pages/ed73c6/</guid>
+            <title><![CDATA[下降路径最小和2]]></title>
+            <link>https://javainterview.cn/pages/ab4749/</link>
+            <guid>https://javainterview.cn/pages/ab4749/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[字母组合迭代器]]></description>
+            <description><![CDATA[下降路径最小和2]]></description>
+            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/falling-grid.jpg">
+            </enclosure>
         </item>
         <item>
             <title><![CDATA[顺次数]]></title>
@@ -376,13 +378,6 @@
             <guid>https://javainterview.cn/pages/a28c35/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
             <description><![CDATA[顺次数]]></description>
-        </item>
-        <item>
-            <title><![CDATA[统计位数为偶数的数字]]></title>
-            <link>https://javainterview.cn/pages/f73df0/</link>
-            <guid>https://javainterview.cn/pages/f73df0/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[统计位数为偶数的数字]]></description>
         </item>
         <item>
             <title><![CDATA[元素和小于等于阈值的正方形的最大边长]]></title>
@@ -394,20 +389,25 @@
             </enclosure>
         </item>
         <item>
+            <title><![CDATA[删除被覆盖区间]]></title>
+            <link>https://javainterview.cn/pages/a1937a/</link>
+            <guid>https://javainterview.cn/pages/a1937a/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[删除被覆盖区间]]></description>
+        </item>
+        <item>
+            <title><![CDATA[统计位数为偶数的数字]]></title>
+            <link>https://javainterview.cn/pages/f73df0/</link>
+            <guid>https://javainterview.cn/pages/f73df0/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[统计位数为偶数的数字]]></description>
+        </item>
+        <item>
             <title><![CDATA[划分数组为连续数字的集合]]></title>
             <link>https://javainterview.cn/pages/9a76f4/</link>
             <guid>https://javainterview.cn/pages/9a76f4/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
             <description><![CDATA[划分数组为连续数字的集合]]></description>
-        </item>
-        <item>
-            <title><![CDATA[下降路径最小和2]]></title>
-            <link>https://javainterview.cn/pages/ab4749/</link>
-            <guid>https://javainterview.cn/pages/ab4749/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[下降路径最小和2]]></description>
-            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/falling-grid.jpg">
-            </enclosure>
         </item>
         <item>
             <title><![CDATA[子串的最大出现次数]]></title>
@@ -438,18 +438,18 @@
             <description><![CDATA[转变数组后最接近目标值的数组和]]></description>
         </item>
         <item>
-            <title><![CDATA[最大得分的路径数目]]></title>
-            <link>https://javainterview.cn/pages/b94bdc/</link>
-            <guid>https://javainterview.cn/pages/b94bdc/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[最大得分的路径数目]]></description>
-        </item>
-        <item>
             <title><![CDATA[和为零的 N 个不同整数]]></title>
             <link>https://javainterview.cn/pages/47391e/</link>
             <guid>https://javainterview.cn/pages/47391e/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
             <description><![CDATA[和为零的 N 个不同整数]]></description>
+        </item>
+        <item>
+            <title><![CDATA[最大得分的路径数目]]></title>
+            <link>https://javainterview.cn/pages/b94bdc/</link>
+            <guid>https://javainterview.cn/pages/b94bdc/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[最大得分的路径数目]]></description>
         </item>
         <item>
             <title><![CDATA[跳跃游戏3]]></title>
@@ -459,18 +459,18 @@
             <description><![CDATA[跳跃游戏3]]></description>
         </item>
         <item>
+            <title><![CDATA[子数组异或查询]]></title>
+            <link>https://javainterview.cn/pages/df6314/</link>
+            <guid>https://javainterview.cn/pages/df6314/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[子数组异或查询]]></description>
+        </item>
+        <item>
             <title><![CDATA[口算难题]]></title>
             <link>https://javainterview.cn/pages/1a4eaf/</link>
             <guid>https://javainterview.cn/pages/1a4eaf/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
             <description><![CDATA[口算难题]]></description>
-        </item>
-        <item>
-            <title><![CDATA[解码字母到整数映射]]></title>
-            <link>https://javainterview.cn/pages/f60fae/</link>
-            <guid>https://javainterview.cn/pages/f60fae/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[解码字母到整数映射]]></description>
         </item>
         <item>
             <title><![CDATA[获取你好友已观看的视频]]></title>
@@ -482,11 +482,11 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[子数组异或查询]]></title>
-            <link>https://javainterview.cn/pages/df6314/</link>
-            <guid>https://javainterview.cn/pages/df6314/</guid>
+            <title><![CDATA[解码字母到整数映射]]></title>
+            <link>https://javainterview.cn/pages/f60fae/</link>
+            <guid>https://javainterview.cn/pages/f60fae/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[子数组异或查询]]></description>
+            <description><![CDATA[解码字母到整数映射]]></description>
         </item>
         <item>
             <title><![CDATA[让字符串成为回文串的最少插入次数]]></title>
@@ -496,18 +496,18 @@
             <description><![CDATA[让字符串成为回文串的最少插入次数]]></description>
         </item>
         <item>
-            <title><![CDATA[矩阵区域和]]></title>
-            <link>https://javainterview.cn/pages/bc4808/</link>
-            <guid>https://javainterview.cn/pages/bc4808/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[矩阵区域和]]></description>
-        </item>
-        <item>
             <title><![CDATA[解压缩编码列表]]></title>
             <link>https://javainterview.cn/pages/83039f/</link>
             <guid>https://javainterview.cn/pages/83039f/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
             <description><![CDATA[解压缩编码列表]]></description>
+        </item>
+        <item>
+            <title><![CDATA[矩阵区域和]]></title>
+            <link>https://javainterview.cn/pages/bc4808/</link>
+            <guid>https://javainterview.cn/pages/bc4808/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[矩阵区域和]]></description>
         </item>
         <item>
             <title><![CDATA[不同的循环子字符串]]></title>
@@ -551,11 +551,11 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[竖直打印单词]]></title>
-            <link>https://javainterview.cn/pages/8f3c7b/</link>
-            <guid>https://javainterview.cn/pages/8f3c7b/</guid>
+            <title><![CDATA[餐馆营业额变化增长]]></title>
+            <link>https://javainterview.cn/pages/bb040e/</link>
+            <guid>https://javainterview.cn/pages/bb040e/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[竖直打印单词]]></description>
+            <description><![CDATA[餐馆营业额变化增长]]></description>
         </item>
         <item>
             <title><![CDATA[6和9组成的最大数字]]></title>
@@ -565,11 +565,11 @@
             <description><![CDATA[6和9组成的最大数字]]></description>
         </item>
         <item>
-            <title><![CDATA[餐馆营业额变化增长]]></title>
-            <link>https://javainterview.cn/pages/bb040e/</link>
-            <guid>https://javainterview.cn/pages/bb040e/</guid>
+            <title><![CDATA[竖直打印单词]]></title>
+            <link>https://javainterview.cn/pages/8f3c7b/</link>
+            <guid>https://javainterview.cn/pages/8f3c7b/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[餐馆营业额变化增长]]></description>
+            <description><![CDATA[竖直打印单词]]></description>
         </item>
         <item>
             <title><![CDATA[灌溉花园的最少水龙头数目]]></title>
@@ -588,6 +588,13 @@
             <description><![CDATA[列出指定时间段内所有的下单产品]]></description>
         </item>
         <item>
+            <title><![CDATA[破坏回文串]]></title>
+            <link>https://javainterview.cn/pages/79d2c2/</link>
+            <guid>https://javainterview.cn/pages/79d2c2/</guid>
+            <pubDate>Sat, 26 Oct 2024 20:04:44 GMT</pubDate>
+            <description><![CDATA[1328.破坏回文串]]></description>
+        </item>
+        <item>
             <title><![CDATA[将矩阵按对角线排序]]></title>
             <link>https://javainterview.cn/pages/86b7c6/</link>
             <guid>https://javainterview.cn/pages/86b7c6/</guid>
@@ -597,13 +604,6 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[破坏回文串]]></title>
-            <link>https://javainterview.cn/pages/79d2c2/</link>
-            <guid>https://javainterview.cn/pages/79d2c2/</guid>
-            <pubDate>Sat, 26 Oct 2024 20:04:44 GMT</pubDate>
-            <description><![CDATA[1328.破坏回文串]]></description>
-        </item>
-        <item>
             <title><![CDATA[翻转子数组得到最大的数组值]]></title>
             <link>https://javainterview.cn/pages/6cd6a6/</link>
             <guid>https://javainterview.cn/pages/6cd6a6/</guid>
@@ -611,11 +611,11 @@
             <description><![CDATA[翻转子数组得到最大的数组值]]></description>
         </item>
         <item>
-            <title><![CDATA[数组序号转换]]></title>
-            <link>https://javainterview.cn/pages/2301f3/</link>
-            <guid>https://javainterview.cn/pages/2301f3/</guid>
+            <title><![CDATA[删除回文子序列]]></title>
+            <link>https://javainterview.cn/pages/d7bf3e/</link>
+            <guid>https://javainterview.cn/pages/d7bf3e/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[数组序号转换]]></description>
+            <description><![CDATA[删除回文子序列]]></description>
         </item>
         <item>
             <title><![CDATA[餐厅过滤器]]></title>
@@ -625,11 +625,11 @@
             <description><![CDATA[餐厅过滤器]]></description>
         </item>
         <item>
-            <title><![CDATA[删除回文子序列]]></title>
-            <link>https://javainterview.cn/pages/d7bf3e/</link>
-            <guid>https://javainterview.cn/pages/d7bf3e/</guid>
+            <title><![CDATA[数组序号转换]]></title>
+            <link>https://javainterview.cn/pages/2301f3/</link>
+            <guid>https://javainterview.cn/pages/2301f3/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[删除回文子序列]]></description>
+            <description><![CDATA[数组序号转换]]></description>
         </item>
         <item>
             <title><![CDATA[工作计划的最低难度]]></title>
@@ -657,13 +657,6 @@
             <description><![CDATA[将数字变成 0 的操作次数]]></description>
         </item>
         <item>
-            <title><![CDATA[电影评分]]></title>
-            <link>https://javainterview.cn/pages/999c1f/</link>
-            <guid>https://javainterview.cn/pages/999c1f/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[电影评分]]></description>
-        </item>
-        <item>
             <title><![CDATA[跳跃游戏5]]></title>
             <link>https://javainterview.cn/pages/8faf43/</link>
             <guid>https://javainterview.cn/pages/8faf43/</guid>
@@ -671,6 +664,13 @@
             <description><![CDATA[跳跃游戏5]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/meta-chart.jpeg">
             </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[大小为 K 且平均值大于等于阈值的子数组数目]]></title>
+            <link>https://javainterview.cn/pages/7c8d60/</link>
+            <guid>https://javainterview.cn/pages/7c8d60/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[大小为 K 且平均值大于等于阈值的子数组数目]]></description>
         </item>
         <item>
             <title><![CDATA[时钟指针的夹角]]></title>
@@ -682,18 +682,11 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[大小为 K 且平均值大于等于阈值的子数组数目]]></title>
-            <link>https://javainterview.cn/pages/7c8d60/</link>
-            <guid>https://javainterview.cn/pages/7c8d60/</guid>
+            <title><![CDATA[电影评分]]></title>
+            <link>https://javainterview.cn/pages/999c1f/</link>
+            <guid>https://javainterview.cn/pages/999c1f/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[大小为 K 且平均值大于等于阈值的子数组数目]]></description>
-        </item>
-        <item>
-            <title><![CDATA[数组大小减半]]></title>
-            <link>https://javainterview.cn/pages/fde924/</link>
-            <guid>https://javainterview.cn/pages/fde924/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[数组大小减半]]></description>
+            <description><![CDATA[电影评分]]></description>
         </item>
         <item>
             <title><![CDATA[跳跃游戏4]]></title>
@@ -701,6 +694,13 @@
             <guid>https://javainterview.cn/pages/327b3f/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
             <description><![CDATA[跳跃游戏4]]></description>
+        </item>
+        <item>
+            <title><![CDATA[数组大小减半]]></title>
+            <link>https://javainterview.cn/pages/fde924/</link>
+            <guid>https://javainterview.cn/pages/fde924/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[数组大小减半]]></description>
         </item>
         <item>
             <title><![CDATA[检查整数及其两倍数是否存在]]></title>
@@ -717,21 +717,28 @@
             <description><![CDATA[制造字母异位词的最小步骤数]]></description>
         </item>
         <item>
-            <title><![CDATA[推文计数]]></title>
-            <link>https://javainterview.cn/pages/6a79fa/</link>
-            <guid>https://javainterview.cn/pages/6a79fa/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[推文计数]]></description>
-            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/1348.png">
-            </enclosure>
-        </item>
-        <item>
             <title><![CDATA[参加考试的最大学生数]]></title>
             <link>https://javainterview.cn/pages/56aeba/</link>
             <guid>https://javainterview.cn/pages/56aeba/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
             <description><![CDATA[参加考试的最大学生数]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/1349image.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[最后 K 个数的乘积]]></title>
+            <link>https://javainterview.cn/pages/d89a3a/</link>
+            <guid>https://javainterview.cn/pages/d89a3a/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[最后 K 个数的乘积]]></description>
+        </item>
+        <item>
+            <title><![CDATA[推文计数]]></title>
+            <link>https://javainterview.cn/pages/6a79fa/</link>
+            <guid>https://javainterview.cn/pages/6a79fa/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[推文计数]]></description>
+            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/1348.png">
             </enclosure>
         </item>
         <item>
@@ -765,11 +772,11 @@
             <description><![CDATA[多次求和构造目标数组]]></description>
         </item>
         <item>
-            <title><![CDATA[最后 K 个数的乘积]]></title>
-            <link>https://javainterview.cn/pages/d89a3a/</link>
-            <guid>https://javainterview.cn/pages/d89a3a/</guid>
+            <title><![CDATA[包含所有三种字符的子字符串数目]]></title>
+            <link>https://javainterview.cn/pages/dabbe7/</link>
+            <guid>https://javainterview.cn/pages/dabbe7/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[最后 K 个数的乘积]]></description>
+            <description><![CDATA[包含所有三种字符的子字符串数目]]></description>
         </item>
         <item>
             <title><![CDATA[每隔 n 个顾客打折]]></title>
@@ -779,20 +786,6 @@
             <description><![CDATA[每隔 n 个顾客打折]]></description>
         </item>
         <item>
-            <title><![CDATA[日期之间隔几天]]></title>
-            <link>https://javainterview.cn/pages/f88cac/</link>
-            <guid>https://javainterview.cn/pages/f88cac/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[日期之间隔几天]]></description>
-        </item>
-        <item>
-            <title><![CDATA[包含所有三种字符的子字符串数目]]></title>
-            <link>https://javainterview.cn/pages/dabbe7/</link>
-            <guid>https://javainterview.cn/pages/dabbe7/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[包含所有三种字符的子字符串数目]]></description>
-        </item>
-        <item>
             <title><![CDATA[有效的快递序列数目]]></title>
             <link>https://javainterview.cn/pages/dc76a8/</link>
             <guid>https://javainterview.cn/pages/dc76a8/</guid>
@@ -800,18 +793,11 @@
             <description><![CDATA[有效的快递序列数目]]></description>
         </item>
         <item>
-            <title><![CDATA[形成三的最大倍数]]></title>
-            <link>https://javainterview.cn/pages/e1d97c/</link>
-            <guid>https://javainterview.cn/pages/e1d97c/</guid>
-            <pubDate>Sun, 03 Nov 2024 16:27:04 GMT</pubDate>
-            <description><![CDATA[形成三的最大倍数]]></description>
-        </item>
-        <item>
-            <title><![CDATA[有多少小于当前数字的数字]]></title>
-            <link>https://javainterview.cn/pages/2242b7/</link>
-            <guid>https://javainterview.cn/pages/2242b7/</guid>
+            <title><![CDATA[日期之间隔几天]]></title>
+            <link>https://javainterview.cn/pages/f88cac/</link>
+            <guid>https://javainterview.cn/pages/f88cac/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[有多少小于当前数字的数字]]></description>
+            <description><![CDATA[日期之间隔几天]]></description>
         </item>
         <item>
             <title><![CDATA[通过投票对团队排名]]></title>
@@ -821,6 +807,20 @@
             <description><![CDATA[通过投票对团队排名]]></description>
         </item>
         <item>
+            <title><![CDATA[有多少小于当前数字的数字]]></title>
+            <link>https://javainterview.cn/pages/2242b7/</link>
+            <guid>https://javainterview.cn/pages/2242b7/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[有多少小于当前数字的数字]]></description>
+        </item>
+        <item>
+            <title><![CDATA[形成三的最大倍数]]></title>
+            <link>https://javainterview.cn/pages/e1d97c/</link>
+            <guid>https://javainterview.cn/pages/e1d97c/</guid>
+            <pubDate>Sun, 03 Nov 2024 16:27:04 GMT</pubDate>
+            <description><![CDATA[形成三的最大倍数]]></description>
+        </item>
+        <item>
             <title><![CDATA[使网格图至少有一条有效路径的最小代价]]></title>
             <link>https://javainterview.cn/pages/df9478/</link>
             <guid>https://javainterview.cn/pages/df9478/</guid>
@@ -828,6 +828,13 @@
             <description><![CDATA[使网格图至少有一条有效路径的最小代价]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/1368grid1.png">
             </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[上升下降字符串]]></title>
+            <link>https://javainterview.cn/pages/667a4a/</link>
+            <guid>https://javainterview.cn/pages/667a4a/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[上升下降字符串]]></description>
         </item>
         <item>
             <title><![CDATA[每个元音包含偶数次的最长子字符串]]></title>
@@ -844,13 +851,6 @@
             <description><![CDATA[生成每种字符都是奇数个的字符串]]></description>
         </item>
         <item>
-            <title><![CDATA[上升下降字符串]]></title>
-            <link>https://javainterview.cn/pages/667a4a/</link>
-            <guid>https://javainterview.cn/pages/667a4a/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[上升下降字符串]]></description>
-        </item>
-        <item>
             <title><![CDATA[二进制字符串前缀一致的次数]]></title>
             <link>https://javainterview.cn/pages/42079f/</link>
             <guid>https://javainterview.cn/pages/42079f/</guid>
@@ -863,6 +863,13 @@
             <guid>https://javainterview.cn/pages/89e60c/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
             <description><![CDATA[使用唯一标识码替换员工ID]]></description>
+        </item>
+        <item>
+            <title><![CDATA[两个数组间的距离值]]></title>
+            <link>https://javainterview.cn/pages/b2cad2/</link>
+            <guid>https://javainterview.cn/pages/b2cad2/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[两个数组间的距离值]]></description>
         </item>
         <item>
             <title><![CDATA[最大的团队表现值]]></title>
@@ -879,6 +886,15 @@
             <description><![CDATA[将整数按权重排序]]></description>
         </item>
         <item>
+            <title><![CDATA[3n 块披萨]]></title>
+            <link>https://javainterview.cn/pages/6bd1b3/</link>
+            <guid>https://javainterview.cn/pages/6bd1b3/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[3n 块披萨]]></description>
+            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/1388sample_3_1723.png">
+            </enclosure>
+        </item>
+        <item>
             <title><![CDATA[安排电影院座位]]></title>
             <link>https://javainterview.cn/pages/39a738/</link>
             <guid>https://javainterview.cn/pages/39a738/</guid>
@@ -886,13 +902,6 @@
             <description><![CDATA[安排电影院座位]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/cinema_seats_3.png">
             </enclosure>
-        </item>
-        <item>
-            <title><![CDATA[两个数组间的距离值]]></title>
-            <link>https://javainterview.cn/pages/b2cad2/</link>
-            <guid>https://javainterview.cn/pages/b2cad2/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[两个数组间的距离值]]></description>
         </item>
         <item>
             <title><![CDATA[按既定顺序创建目标数组]]></title>
@@ -909,20 +918,11 @@
             <description><![CDATA[四因数]]></description>
         </item>
         <item>
-            <title><![CDATA[3n 块披萨]]></title>
-            <link>https://javainterview.cn/pages/6bd1b3/</link>
-            <guid>https://javainterview.cn/pages/6bd1b3/</guid>
+            <title><![CDATA[股票的资本损益]]></title>
+            <link>https://javainterview.cn/pages/ef7744/</link>
+            <guid>https://javainterview.cn/pages/ef7744/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[3n 块披萨]]></description>
-            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/1388sample_3_1723.png">
-            </enclosure>
-        </item>
-        <item>
-            <title><![CDATA[最长快乐前缀]]></title>
-            <link>https://javainterview.cn/pages/babad3/</link>
-            <guid>https://javainterview.cn/pages/babad3/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[最长快乐前缀]]></description>
+            <description><![CDATA[股票的资本损益]]></description>
         </item>
         <item>
             <title><![CDATA[检查网格中是否存在有效路径]]></title>
@@ -934,18 +934,11 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[股票的资本损益]]></title>
-            <link>https://javainterview.cn/pages/ef7744/</link>
-            <guid>https://javainterview.cn/pages/ef7744/</guid>
+            <title><![CDATA[最长快乐前缀]]></title>
+            <link>https://javainterview.cn/pages/babad3/</link>
+            <guid>https://javainterview.cn/pages/babad3/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[股票的资本损益]]></description>
-        </item>
-        <item>
-            <title><![CDATA[设计地铁系统]]></title>
-            <link>https://javainterview.cn/pages/262f00/</link>
-            <guid>https://javainterview.cn/pages/262f00/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[设计地铁系统]]></description>
+            <description><![CDATA[最长快乐前缀]]></description>
         </item>
         <item>
             <title><![CDATA[统计作战单位数]]></title>
@@ -967,6 +960,13 @@
             <guid>https://javainterview.cn/pages/5f9c40/</guid>
             <pubDate>Sat, 07 Sep 2024 10:20:57 GMT</pubDate>
             <description><![CDATA[统计最大组的数目]]></description>
+        </item>
+        <item>
+            <title><![CDATA[设计地铁系统]]></title>
+            <link>https://javainterview.cn/pages/262f00/</link>
+            <guid>https://javainterview.cn/pages/262f00/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[设计地铁系统]]></description>
         </item>
         <item>
             <title><![CDATA[构造 K 个回文字符串]]></title>
@@ -999,25 +999,11 @@
             <description><![CDATA[非递增顺序的最小子序列]]></description>
         </item>
         <item>
-            <title><![CDATA[最长快乐字符串]]></title>
-            <link>https://javainterview.cn/pages/63d8cb/</link>
-            <guid>https://javainterview.cn/pages/63d8cb/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[最长快乐字符串]]></description>
-        </item>
-        <item>
             <title><![CDATA[将二进制表示减到 1 的步骤数]]></title>
             <link>https://javainterview.cn/pages/c2b3a3/</link>
             <guid>https://javainterview.cn/pages/c2b3a3/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
             <description><![CDATA[将二进制表示减到 1 的步骤数]]></description>
-        </item>
-        <item>
-            <title><![CDATA[石子游戏 III]]></title>
-            <link>https://javainterview.cn/pages/02141d/</link>
-            <guid>https://javainterview.cn/pages/02141d/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[石子游戏 III]]></description>
         </item>
         <item>
             <title><![CDATA[排名靠前的旅行者]]></title>
@@ -1034,6 +1020,20 @@
             <description><![CDATA[数组中的字符串匹配]]></description>
         </item>
         <item>
+            <title><![CDATA[最长快乐字符串]]></title>
+            <link>https://javainterview.cn/pages/63d8cb/</link>
+            <guid>https://javainterview.cn/pages/63d8cb/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[最长快乐字符串]]></description>
+        </item>
+        <item>
+            <title><![CDATA[石子游戏 III]]></title>
+            <link>https://javainterview.cn/pages/02141d/</link>
+            <guid>https://javainterview.cn/pages/02141d/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[石子游戏 III]]></description>
+        </item>
+        <item>
             <title><![CDATA[查询带键的排列]]></title>
             <link>https://javainterview.cn/pages/067b2a/</link>
             <guid>https://javainterview.cn/pages/067b2a/</guid>
@@ -1041,25 +1041,11 @@
             <description><![CDATA[查询带键的排列]]></description>
         </item>
         <item>
-            <title><![CDATA[逐步求和得到正数的最小值]]></title>
-            <link>https://javainterview.cn/pages/38556e/</link>
-            <guid>https://javainterview.cn/pages/38556e/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[逐步求和得到正数的最小值]]></description>
-        </item>
-        <item>
             <title><![CDATA[HTML 实体解析器]]></title>
             <link>https://javainterview.cn/pages/ad37ee/</link>
             <guid>https://javainterview.cn/pages/ad37ee/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
             <description><![CDATA[HTML 实体解析器]]></description>
-        </item>
-        <item>
-            <title><![CDATA[和为 K 的最少斐波那契数字数目]]></title>
-            <link>https://javainterview.cn/pages/d12b39/</link>
-            <guid>https://javainterview.cn/pages/d12b39/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[和为 K 的最少斐波那契数字数目]]></description>
         </item>
         <item>
             <title><![CDATA[给 N x 3 网格图涂色的方案数]]></title>
@@ -1071,11 +1057,18 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[重新格式化字符串]]></title>
-            <link>https://javainterview.cn/pages/410b77/</link>
-            <guid>https://javainterview.cn/pages/410b77/</guid>
+            <title><![CDATA[和为 K 的最少斐波那契数字数目]]></title>
+            <link>https://javainterview.cn/pages/d12b39/</link>
+            <guid>https://javainterview.cn/pages/d12b39/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[重新格式化字符串]]></description>
+            <description><![CDATA[和为 K 的最少斐波那契数字数目]]></description>
+        </item>
+        <item>
+            <title><![CDATA[逐步求和得到正数的最小值]]></title>
+            <link>https://javainterview.cn/pages/38556e/</link>
+            <guid>https://javainterview.cn/pages/38556e/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[逐步求和得到正数的最小值]]></description>
         </item>
         <item>
             <title><![CDATA[恢复数组]]></title>
@@ -1083,6 +1076,13 @@
             <guid>https://javainterview.cn/pages/98507f/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
             <description><![CDATA[恢复数组]]></description>
+        </item>
+        <item>
+            <title><![CDATA[重新格式化字符串]]></title>
+            <link>https://javainterview.cn/pages/410b77/</link>
+            <guid>https://javainterview.cn/pages/410b77/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[重新格式化字符串]]></description>
         </item>
         <item>
             <title><![CDATA[长度为 n 的开心字符串中字典序第 k 小的字符串]]></title>
@@ -1106,18 +1106,20 @@
             <description><![CDATA[点菜展示表]]></description>
         </item>
         <item>
+            <title><![CDATA[生成数组]]></title>
+            <link>https://javainterview.cn/pages/e6ba0f/</link>
+            <guid>https://javainterview.cn/pages/e6ba0f/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[生成数组]]></description>
+            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/1420e.png">
+            </enclosure>
+        </item>
+        <item>
             <title><![CDATA[可获得的最大点数]]></title>
             <link>https://javainterview.cn/pages/549401/</link>
             <guid>https://javainterview.cn/pages/549401/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
             <description><![CDATA[可获得的最大点数]]></description>
-        </item>
-        <item>
-            <title><![CDATA[分割字符串的最大得分]]></title>
-            <link>https://javainterview.cn/pages/2b5194/</link>
-            <guid>https://javainterview.cn/pages/2b5194/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[分割字符串的最大得分]]></description>
         </item>
         <item>
             <title><![CDATA[对角线遍历 II]]></title>
@@ -1129,27 +1131,11 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[生成数组]]></title>
-            <link>https://javainterview.cn/pages/e6ba0f/</link>
-            <guid>https://javainterview.cn/pages/e6ba0f/</guid>
+            <title><![CDATA[分割字符串的最大得分]]></title>
+            <link>https://javainterview.cn/pages/2b5194/</link>
+            <guid>https://javainterview.cn/pages/2b5194/</guid>
             <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[生成数组]]></description>
-            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/1420e.png">
-            </enclosure>
-        </item>
-        <item>
-            <title><![CDATA[拥有最多糖果的孩子]]></title>
-            <link>https://javainterview.cn/pages/85ea67/</link>
-            <guid>https://javainterview.cn/pages/85ea67/</guid>
-            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[拥有最多糖果的孩子]]></description>
-        </item>
-        <item>
-            <title><![CDATA[改变一个整数能得到的最大差值]]></title>
-            <link>https://javainterview.cn/pages/25b536/</link>
-            <guid>https://javainterview.cn/pages/25b536/</guid>
-            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[改变一个整数能得到的最大差值]]></description>
+            <description><![CDATA[分割字符串的最大得分]]></description>
         </item>
         <item>
             <title><![CDATA[带限制的子序列和]]></title>
@@ -1159,11 +1145,53 @@
             <description><![CDATA[带限制的子序列和]]></description>
         </item>
         <item>
+            <title><![CDATA[拥有最多糖果的孩子]]></title>
+            <link>https://javainterview.cn/pages/85ea67/</link>
+            <guid>https://javainterview.cn/pages/85ea67/</guid>
+            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
+            <description><![CDATA[拥有最多糖果的孩子]]></description>
+        </item>
+        <item>
+            <title><![CDATA[每个人戴不同帽子的方案数]]></title>
+            <link>https://javainterview.cn/pages/e7f23d/</link>
+            <guid>https://javainterview.cn/pages/e7f23d/</guid>
+            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
+            <description><![CDATA[每个人戴不同帽子的方案数]]></description>
+        </item>
+        <item>
+            <title><![CDATA[改变一个整数能得到的最大差值]]></title>
+            <link>https://javainterview.cn/pages/25b536/</link>
+            <guid>https://javainterview.cn/pages/25b536/</guid>
+            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
+            <description><![CDATA[改变一个整数能得到的最大差值]]></description>
+        </item>
+        <item>
             <title><![CDATA[检查一个字符串是否可以打破另一个字符串]]></title>
             <link>https://javainterview.cn/pages/963c1e/</link>
             <guid>https://javainterview.cn/pages/963c1e/</guid>
             <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
             <description><![CDATA[检查一个字符串是否可以打破另一个字符串]]></description>
+        </item>
+        <item>
+            <title><![CDATA[旅行终点站]]></title>
+            <link>https://javainterview.cn/pages/69615e/</link>
+            <guid>https://javainterview.cn/pages/69615e/</guid>
+            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
+            <description><![CDATA[旅行终点站]]></description>
+        </item>
+        <item>
+            <title><![CDATA[有序矩阵中的第k个最小数组和]]></title>
+            <link>https://javainterview.cn/pages/60b3fd/</link>
+            <guid>https://javainterview.cn/pages/60b3fd/</guid>
+            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
+            <description><![CDATA[有序矩阵中的第k个最小数组和]]></description>
+        </item>
+        <item>
+            <title><![CDATA[绝对差不超过限制的最长连续子数组]]></title>
+            <link>https://javainterview.cn/pages/326903/</link>
+            <guid>https://javainterview.cn/pages/326903/</guid>
+            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
+            <description><![CDATA[绝对差不超过限制的最长连续子数组]]></description>
         </item>
         <item>
             <title><![CDATA[是否所有1都至少相隔k个元素]]></title>
@@ -1175,46 +1203,11 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[旅行终点站]]></title>
-            <link>https://javainterview.cn/pages/69615e/</link>
-            <guid>https://javainterview.cn/pages/69615e/</guid>
-            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[旅行终点站]]></description>
-        </item>
-        <item>
-            <title><![CDATA[绝对差不超过限制的最长连续子数组]]></title>
-            <link>https://javainterview.cn/pages/326903/</link>
-            <guid>https://javainterview.cn/pages/326903/</guid>
-            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[绝对差不超过限制的最长连续子数组]]></description>
-        </item>
-        <item>
-            <title><![CDATA[有序矩阵中的第k个最小数组和]]></title>
-            <link>https://javainterview.cn/pages/60b3fd/</link>
-            <guid>https://javainterview.cn/pages/60b3fd/</guid>
-            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[有序矩阵中的第k个最小数组和]]></description>
-        </item>
-        <item>
-            <title><![CDATA[每个人戴不同帽子的方案数]]></title>
-            <link>https://javainterview.cn/pages/e7f23d/</link>
-            <guid>https://javainterview.cn/pages/e7f23d/</guid>
-            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[每个人戴不同帽子的方案数]]></description>
-        </item>
-        <item>
             <title><![CDATA[形成两个异或相等数组的三元组数目]]></title>
             <link>https://javainterview.cn/pages/649bcb/</link>
             <guid>https://javainterview.cn/pages/649bcb/</guid>
             <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
             <description><![CDATA[形成两个异或相等数组的三元组数目]]></description>
-        </item>
-        <item>
-            <title><![CDATA[连续字符]]></title>
-            <link>https://javainterview.cn/pages/d96b5a/</link>
-            <guid>https://javainterview.cn/pages/d96b5a/</guid>
-            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[连续字符]]></description>
         </item>
         <item>
             <title><![CDATA[最简分数]]></title>
@@ -1233,6 +1226,13 @@
             </enclosure>
         </item>
         <item>
+            <title><![CDATA[连续字符]]></title>
+            <link>https://javainterview.cn/pages/d96b5a/</link>
+            <guid>https://javainterview.cn/pages/d96b5a/</guid>
+            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
+            <description><![CDATA[连续字符]]></description>
+        </item>
+        <item>
             <title><![CDATA[数位成本和为目标值的最大数字]]></title>
             <link>https://javainterview.cn/pages/f8e317/</link>
             <guid>https://javainterview.cn/pages/f8e317/</guid>
@@ -1245,13 +1245,6 @@
             <guid>https://javainterview.cn/pages/841b69/</guid>
             <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
             <description><![CDATA[在既定时间做作业的学生人数]]></description>
-        </item>
-        <item>
-            <title><![CDATA[重新排列句子中的单词]]></title>
-            <link>https://javainterview.cn/pages/8e74bf/</link>
-            <guid>https://javainterview.cn/pages/8e74bf/</guid>
-            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[重新排列句子中的单词]]></description>
         </item>
         <item>
             <title><![CDATA[收藏清单]]></title>
@@ -1270,11 +1263,25 @@
             </enclosure>
         </item>
         <item>
+            <title><![CDATA[重新排列句子中的单词]]></title>
+            <link>https://javainterview.cn/pages/8e74bf/</link>
+            <guid>https://javainterview.cn/pages/8e74bf/</guid>
+            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
+            <description><![CDATA[重新排列句子中的单词]]></description>
+        </item>
+        <item>
             <title><![CDATA[检查单词是否为句中其他单词的前缀]]></title>
             <link>https://javainterview.cn/pages/7d566e/</link>
             <guid>https://javainterview.cn/pages/7d566e/</guid>
             <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
             <description><![CDATA[检查单词是否为句中其他单词的前缀]]></description>
+        </item>
+        <item>
+            <title><![CDATA[定长子串中元音的最大数目]]></title>
+            <link>https://javainterview.cn/pages/7f6d3c/</link>
+            <guid>https://javainterview.cn/pages/7f6d3c/</guid>
+            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
+            <description><![CDATA[定长子串中元音的最大数目]]></description>
         </item>
         <item>
             <title><![CDATA[两个子序列的最大点积]]></title>
@@ -1291,13 +1298,6 @@
             <guid>https://javainterview.cn/pages/7af8e6/</guid>
             <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
             <description><![CDATA[通过翻转子数组使两个数组相等]]></description>
-        </item>
-        <item>
-            <title><![CDATA[定长子串中元音的最大数目]]></title>
-            <link>https://javainterview.cn/pages/7f6d3c/</link>
-            <guid>https://javainterview.cn/pages/7f6d3c/</guid>
-            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[定长子串中元音的最大数目]]></description>
         </item>
         <item>
             <title><![CDATA[检查一个字符串是否包含所有长度为 K 的二进制子串]]></title>
@@ -1325,13 +1325,6 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[数组中两元素的最大乘积]]></title>
-            <link>https://javainterview.cn/pages/606a3f/</link>
-            <guid>https://javainterview.cn/pages/606a3f/</guid>
-            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[数组中两元素的最大乘积]]></description>
-        </item>
-        <item>
             <title><![CDATA[切割后面积最大的蛋糕]]></title>
             <link>https://javainterview.cn/pages/351c71/</link>
             <guid>https://javainterview.cn/pages/351c71/</guid>
@@ -1339,6 +1332,13 @@
             <description><![CDATA[切割后面积最大的蛋糕]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/leetcode_max_area_2.png">
             </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[数组中两元素的最大乘积]]></title>
+            <link>https://javainterview.cn/pages/606a3f/</link>
+            <guid>https://javainterview.cn/pages/606a3f/</guid>
+            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
+            <description><![CDATA[数组中两元素的最大乘积]]></description>
         </item>
         <item>
             <title><![CDATA[重新规划路线]]></title>
@@ -1371,11 +1371,11 @@
             <description><![CDATA[数组中的k个最强值]]></description>
         </item>
         <item>
-            <title><![CDATA[子矩形查询]]></title>
-            <link>https://javainterview.cn/pages/f9aa33/</link>
-            <guid>https://javainterview.cn/pages/f9aa33/</guid>
+            <title><![CDATA[粉刷房子III]]></title>
+            <link>https://javainterview.cn/pages/8e4ffd/</link>
+            <guid>https://javainterview.cn/pages/8e4ffd/</guid>
             <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[子矩形查询]]></description>
+            <description><![CDATA[粉刷房子III]]></description>
         </item>
         <item>
             <title><![CDATA[商品折扣后的最终价格]]></title>
@@ -1385,25 +1385,11 @@
             <description><![CDATA[商品折扣后的最终价格]]></description>
         </item>
         <item>
-            <title><![CDATA[找两个和为目标值且不重叠的子数组]]></title>
-            <link>https://javainterview.cn/pages/7f5740/</link>
-            <guid>https://javainterview.cn/pages/7f5740/</guid>
+            <title><![CDATA[子矩形查询]]></title>
+            <link>https://javainterview.cn/pages/f9aa33/</link>
+            <guid>https://javainterview.cn/pages/f9aa33/</guid>
             <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[找两个和为目标值且不重叠的子数组]]></description>
-        </item>
-        <item>
-            <title><![CDATA[粉刷房子III]]></title>
-            <link>https://javainterview.cn/pages/8e4ffd/</link>
-            <guid>https://javainterview.cn/pages/8e4ffd/</guid>
-            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[粉刷房子III]]></description>
-        </item>
-        <item>
-            <title><![CDATA[一维数组的动态和]]></title>
-            <link>https://javainterview.cn/pages/fbec56/</link>
-            <guid>https://javainterview.cn/pages/fbec56/</guid>
-            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[一维数组的动态和]]></description>
+            <description><![CDATA[子矩形查询]]></description>
         </item>
         <item>
             <title><![CDATA[安排邮筒]]></title>
@@ -1415,11 +1401,25 @@
             </enclosure>
         </item>
         <item>
+            <title><![CDATA[找两个和为目标值且不重叠的子数组]]></title>
+            <link>https://javainterview.cn/pages/7f5740/</link>
+            <guid>https://javainterview.cn/pages/7f5740/</guid>
+            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
+            <description><![CDATA[找两个和为目标值且不重叠的子数组]]></description>
+        </item>
+        <item>
             <title><![CDATA[不同整数的最少数目]]></title>
             <link>https://javainterview.cn/pages/35f282/</link>
             <guid>https://javainterview.cn/pages/35f282/</guid>
             <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
             <description><![CDATA[不同整数的最少数目]]></description>
+        </item>
+        <item>
+            <title><![CDATA[一维数组的动态和]]></title>
+            <link>https://javainterview.cn/pages/fbec56/</link>
+            <guid>https://javainterview.cn/pages/fbec56/</guid>
+            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
+            <description><![CDATA[一维数组的动态和]]></description>
         </item>
         <item>
             <title><![CDATA[制作m束花所需的最少天数]]></title>
@@ -1429,18 +1429,18 @@
             <description><![CDATA[制作m束花所需的最少天数]]></description>
         </item>
         <item>
-            <title><![CDATA[按日期分组销售产品]]></title>
-            <link>https://javainterview.cn/pages/b07926/</link>
-            <guid>https://javainterview.cn/pages/b07926/</guid>
-            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[按日期分组销售产品]]></description>
-        </item>
-        <item>
             <title><![CDATA[数组异或操作]]></title>
             <link>https://javainterview.cn/pages/bfcddb/</link>
             <guid>https://javainterview.cn/pages/bfcddb/</guid>
             <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
             <description><![CDATA[数组异或操作]]></description>
+        </item>
+        <item>
+            <title><![CDATA[按日期分组销售产品]]></title>
+            <link>https://javainterview.cn/pages/b07926/</link>
+            <guid>https://javainterview.cn/pages/b07926/</guid>
+            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
+            <description><![CDATA[按日期分组销售产品]]></description>
         </item>
         <item>
             <title><![CDATA[保证文件名唯一]]></title>
@@ -1480,6 +1480,15 @@
             <description><![CDATA[n的第k个因子]]></description>
         </item>
         <item>
+            <title><![CDATA[并行课程II]]></title>
+            <link>https://javainterview.cn/pages/e98b26/</link>
+            <guid>https://javainterview.cn/pages/e98b26/</guid>
+            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
+            <description><![CDATA[并行课程II]]></description>
+            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/leetcode_parallel_courses_1.png">
+            </enclosure>
+        </item>
+        <item>
             <title><![CDATA[判断路径是否相交]]></title>
             <link>https://javainterview.cn/pages/20ed5e/</link>
             <guid>https://javainterview.cn/pages/20ed5e/</guid>
@@ -1496,22 +1505,6 @@
             <description><![CDATA[删掉一个元素以后全为1的最长子数组]]></description>
         </item>
         <item>
-            <title><![CDATA[满足条件的子序列数目]]></title>
-            <link>https://javainterview.cn/pages/d734bc/</link>
-            <guid>https://javainterview.cn/pages/d734bc/</guid>
-            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[满足条件的子序列数目]]></description>
-        </item>
-        <item>
-            <title><![CDATA[并行课程II]]></title>
-            <link>https://javainterview.cn/pages/e98b26/</link>
-            <guid>https://javainterview.cn/pages/e98b26/</guid>
-            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[并行课程II]]></description>
-            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/leetcode_parallel_courses_1.png">
-            </enclosure>
-        </item>
-        <item>
             <title><![CDATA[检查数组对是否可以被k整除]]></title>
             <link>https://javainterview.cn/pages/d783a3/</link>
             <guid>https://javainterview.cn/pages/d783a3/</guid>
@@ -1519,11 +1512,25 @@
             <description><![CDATA[检查数组对是否可以被k整除]]></description>
         </item>
         <item>
+            <title><![CDATA[满足条件的子序列数目]]></title>
+            <link>https://javainterview.cn/pages/d734bc/</link>
+            <guid>https://javainterview.cn/pages/d734bc/</guid>
+            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
+            <description><![CDATA[满足条件的子序列数目]]></description>
+        </item>
+        <item>
             <title><![CDATA[满足不等式的最大值]]></title>
             <link>https://javainterview.cn/pages/bd3ccd/</link>
             <guid>https://javainterview.cn/pages/bd3ccd/</guid>
             <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
             <description><![CDATA[满足不等式的最大值]]></description>
+        </item>
+        <item>
+            <title><![CDATA[判断能否形成等差数列]]></title>
+            <link>https://javainterview.cn/pages/c3d6f3/</link>
+            <guid>https://javainterview.cn/pages/c3d6f3/</guid>
+            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
+            <description><![CDATA[判断能否形成等差数列]]></description>
         </item>
         <item>
             <title><![CDATA[所有蚂蚁掉下来前的最后一刻]]></title>
@@ -1535,13 +1542,6 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[判断能否形成等差数列]]></title>
-            <link>https://javainterview.cn/pages/c3d6f3/</link>
-            <guid>https://javainterview.cn/pages/c3d6f3/</guid>
-            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[判断能否形成等差数列]]></description>
-        </item>
-        <item>
             <title><![CDATA[统计全1子矩形]]></title>
             <link>https://javainterview.cn/pages/2c1249/</link>
             <guid>https://javainterview.cn/pages/2c1249/</guid>
@@ -1549,6 +1549,13 @@
             <description><![CDATA[统计全1子矩形]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/ones1-grid.jpg">
             </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[转变日期格式]]></title>
+            <link>https://javainterview.cn/pages/d8ad92/</link>
+            <guid>https://javainterview.cn/pages/d8ad92/</guid>
+            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
+            <description><![CDATA[转变日期格式]]></description>
         </item>
         <item>
             <title><![CDATA[最多K次交换相邻数位后得到的最小整数]]></title>
@@ -1560,25 +1567,11 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[转变日期格式]]></title>
-            <link>https://javainterview.cn/pages/d8ad92/</link>
-            <guid>https://javainterview.cn/pages/d8ad92/</guid>
-            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[转变日期格式]]></description>
-        </item>
-        <item>
             <title><![CDATA[子数组和排序后的区间和]]></title>
             <link>https://javainterview.cn/pages/de82f7/</link>
             <guid>https://javainterview.cn/pages/de82f7/</guid>
             <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
             <description><![CDATA[子数组和排序后的区间和]]></description>
-        </item>
-        <item>
-            <title><![CDATA[石子游戏IV]]></title>
-            <link>https://javainterview.cn/pages/4b3475/</link>
-            <guid>https://javainterview.cn/pages/4b3475/</guid>
-            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[石子游戏IV]]></description>
         </item>
         <item>
             <title><![CDATA[三次操作后最大值与最小值的最小差]]></title>
@@ -1602,13 +1595,11 @@
             <description><![CDATA[仅含1的子串数]]></description>
         </item>
         <item>
-            <title><![CDATA[概率最大的路径]]></title>
-            <link>https://javainterview.cn/pages/524659/</link>
-            <guid>https://javainterview.cn/pages/524659/</guid>
+            <title><![CDATA[石子游戏IV]]></title>
+            <link>https://javainterview.cn/pages/4b3475/</link>
+            <guid>https://javainterview.cn/pages/4b3475/</guid>
             <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[概率最大的路径]]></description>
-            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/1558_ex1.png">
-            </enclosure>
+            <description><![CDATA[石子游戏IV]]></description>
         </item>
         <item>
             <title><![CDATA[服务中心的最佳位置]]></title>
@@ -1636,18 +1627,13 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[最多的不重叠子字符串]]></title>
-            <link>https://javainterview.cn/pages/ba0bf5/</link>
-            <guid>https://javainterview.cn/pages/ba0bf5/</guid>
+            <title><![CDATA[概率最大的路径]]></title>
+            <link>https://javainterview.cn/pages/524659/</link>
+            <guid>https://javainterview.cn/pages/524659/</guid>
             <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[最多的不重叠子字符串]]></description>
-        </item>
-        <item>
-            <title><![CDATA[和为奇数的子数组数目]]></title>
-            <link>https://javainterview.cn/pages/bb7a16/</link>
-            <guid>https://javainterview.cn/pages/bb7a16/</guid>
-            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[和为奇数的子数组数目]]></description>
+            <description><![CDATA[概率最大的路径]]></description>
+            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/1558_ex1.png">
+            </enclosure>
         </item>
         <item>
             <title><![CDATA[找到最接近目标值的函数值]]></title>
@@ -1673,11 +1659,34 @@
             <description><![CDATA[字符串的好分割数目]]></description>
         </item>
         <item>
+            <title><![CDATA[最多的不重叠子字符串]]></title>
+            <link>https://javainterview.cn/pages/ba0bf5/</link>
+            <guid>https://javainterview.cn/pages/ba0bf5/</guid>
+            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
+            <description><![CDATA[最多的不重叠子字符串]]></description>
+        </item>
+        <item>
             <title><![CDATA[形成目标数组的子数组最少增加次数]]></title>
             <link>https://javainterview.cn/pages/bcb28a/</link>
             <guid>https://javainterview.cn/pages/bcb28a/</guid>
             <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
             <description><![CDATA[形成目标数组的子数组最少增加次数]]></description>
+        </item>
+        <item>
+            <title><![CDATA[重新排列字符串]]></title>
+            <link>https://javainterview.cn/pages/9bdcbf/</link>
+            <guid>https://javainterview.cn/pages/9bdcbf/</guid>
+            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
+            <description><![CDATA[重新排列字符串]]></description>
+            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/q1.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[和为奇数的子数组数目]]></title>
+            <link>https://javainterview.cn/pages/bb7a16/</link>
+            <guid>https://javainterview.cn/pages/bb7a16/</guid>
+            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
+            <description><![CDATA[和为奇数的子数组数目]]></description>
         </item>
         <item>
             <title><![CDATA[患某种疾病的患者]]></title>
@@ -1694,22 +1703,6 @@
             <description><![CDATA[最少的后缀翻转次数]]></description>
         </item>
         <item>
-            <title><![CDATA[重新排列字符串]]></title>
-            <link>https://javainterview.cn/pages/9bdcbf/</link>
-            <guid>https://javainterview.cn/pages/9bdcbf/</guid>
-            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[重新排列字符串]]></description>
-            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/q1.jpg">
-            </enclosure>
-        </item>
-        <item>
-            <title><![CDATA[统计好三元组]]></title>
-            <link>https://javainterview.cn/pages/2a89f3/</link>
-            <guid>https://javainterview.cn/pages/2a89f3/</guid>
-            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[统计好三元组]]></description>
-        </item>
-        <item>
             <title><![CDATA[压缩字符串II]]></title>
             <link>https://javainterview.cn/pages/338059/</link>
             <guid>https://javainterview.cn/pages/338059/</guid>
@@ -1717,13 +1710,11 @@
             <description><![CDATA[压缩字符串II]]></description>
         </item>
         <item>
-            <title><![CDATA[最大得分]]></title>
-            <link>https://javainterview.cn/pages/672e2c/</link>
-            <guid>https://javainterview.cn/pages/672e2c/</guid>
+            <title><![CDATA[统计好三元组]]></title>
+            <link>https://javainterview.cn/pages/2a89f3/</link>
+            <guid>https://javainterview.cn/pages/2a89f3/</guid>
             <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[最大得分]]></description>
-            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/sample_1_1893.png">
-            </enclosure>
+            <description><![CDATA[统计好三元组]]></description>
         </item>
         <item>
             <title><![CDATA[找出数组游戏的赢家]]></title>
@@ -1744,11 +1735,13 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[第k个缺失的正整数]]></title>
-            <link>https://javainterview.cn/pages/a361fa/</link>
-            <guid>https://javainterview.cn/pages/a361fa/</guid>
+            <title><![CDATA[最大得分]]></title>
+            <link>https://javainterview.cn/pages/672e2c/</link>
+            <guid>https://javainterview.cn/pages/672e2c/</guid>
             <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[第k个缺失的正整数]]></description>
+            <description><![CDATA[最大得分]]></description>
+            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/sample_1_1893.png">
+            </enclosure>
         </item>
         <item>
             <title><![CDATA[K次操作转变字符串]]></title>
@@ -1758,11 +1751,18 @@
             <description><![CDATA[K次操作转变字符串]]></description>
         </item>
         <item>
-            <title><![CDATA[整理字符串]]></title>
-            <link>https://javainterview.cn/pages/98d402/</link>
-            <guid>https://javainterview.cn/pages/98d402/</guid>
+            <title><![CDATA[平衡括号字符串的最少插入次数]]></title>
+            <link>https://javainterview.cn/pages/5f19dc/</link>
+            <guid>https://javainterview.cn/pages/5f19dc/</guid>
             <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[整理字符串]]></description>
+            <description><![CDATA[平衡括号字符串的最少插入次数]]></description>
+        </item>
+        <item>
+            <title><![CDATA[第k个缺失的正整数]]></title>
+            <link>https://javainterview.cn/pages/a361fa/</link>
+            <guid>https://javainterview.cn/pages/a361fa/</guid>
+            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
+            <description><![CDATA[第k个缺失的正整数]]></description>
         </item>
         <item>
             <title><![CDATA[找出最长的超赞子字符串]]></title>
@@ -1772,18 +1772,11 @@
             <description><![CDATA[找出最长的超赞子字符串]]></description>
         </item>
         <item>
-            <title><![CDATA[平衡括号字符串的最少插入次数]]></title>
-            <link>https://javainterview.cn/pages/5f19dc/</link>
-            <guid>https://javainterview.cn/pages/5f19dc/</guid>
+            <title><![CDATA[整理字符串]]></title>
+            <link>https://javainterview.cn/pages/98d402/</link>
+            <guid>https://javainterview.cn/pages/98d402/</guid>
             <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[平衡括号字符串的最少插入次数]]></description>
-        </item>
-        <item>
-            <title><![CDATA[找出第N个二进制字符串中的第K位]]></title>
-            <link>https://javainterview.cn/pages/168271/</link>
-            <guid>https://javainterview.cn/pages/168271/</guid>
-            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[找出第N个二进制字符串中的第K位]]></description>
+            <description><![CDATA[整理字符串]]></description>
         </item>
         <item>
             <title><![CDATA[和为目标值且不重叠的非空子数组的最大数目]]></title>
@@ -1802,13 +1795,11 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[两球之间的磁力]]></title>
-            <link>https://javainterview.cn/pages/e633a1/</link>
-            <guid>https://javainterview.cn/pages/e633a1/</guid>
+            <title><![CDATA[找出第N个二进制字符串中的第K位]]></title>
+            <link>https://javainterview.cn/pages/168271/</link>
+            <guid>https://javainterview.cn/pages/168271/</guid>
             <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[两球之间的磁力]]></description>
-            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/q3v1.jpg">
-            </enclosure>
+            <description><![CDATA[找出第N个二进制字符串中的第K位]]></description>
         </item>
         <item>
             <title><![CDATA[使数组中所有元素相等的最小操作数]]></title>
@@ -1825,6 +1816,15 @@
             <description><![CDATA[存在连续三个奇数的数组]]></description>
         </item>
         <item>
+            <title><![CDATA[两球之间的磁力]]></title>
+            <link>https://javainterview.cn/pages/e633a1/</link>
+            <guid>https://javainterview.cn/pages/e633a1/</guid>
+            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
+            <description><![CDATA[两球之间的磁力]]></description>
+            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/q3v1.jpg">
+            </enclosure>
+        </item>
+        <item>
             <title><![CDATA[可以到达所有点的最少点数目]]></title>
             <link>https://javainterview.cn/pages/b96ba3/</link>
             <guid>https://javainterview.cn/pages/b96ba3/</guid>
@@ -1834,18 +1834,20 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[千位分隔数]]></title>
-            <link>https://javainterview.cn/pages/17cb39/</link>
-            <guid>https://javainterview.cn/pages/17cb39/</guid>
-            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[千位分隔数]]></description>
-        </item>
-        <item>
             <title><![CDATA[吃掉N个橘子的最少天数]]></title>
             <link>https://javainterview.cn/pages/12e0a3/</link>
             <guid>https://javainterview.cn/pages/12e0a3/</guid>
             <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
             <description><![CDATA[吃掉N个橘子的最少天数]]></description>
+        </item>
+        <item>
+            <title><![CDATA[得到目标数组的最少函数调用次数]]></title>
+            <link>https://javainterview.cn/pages/0cf8c0/</link>
+            <guid>https://javainterview.cn/pages/0cf8c0/</guid>
+            <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
+            <description><![CDATA[得到目标数组的最少函数调用次数]]></description>
+            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/sample_2_1887.png">
+            </enclosure>
         </item>
         <item>
             <title><![CDATA[圆形赛道上经过次数最多的扇区]]></title>
@@ -1864,13 +1866,11 @@
             <description><![CDATA[你可以获得的最大硬币数目]]></description>
         </item>
         <item>
-            <title><![CDATA[得到目标数组的最少函数调用次数]]></title>
-            <link>https://javainterview.cn/pages/0cf8c0/</link>
-            <guid>https://javainterview.cn/pages/0cf8c0/</guid>
+            <title><![CDATA[千位分隔数]]></title>
+            <link>https://javainterview.cn/pages/17cb39/</link>
+            <guid>https://javainterview.cn/pages/17cb39/</guid>
             <pubDate>Tue, 06 May 2025 08:58:31 GMT</pubDate>
-            <description><![CDATA[得到目标数组的最少函数调用次数]]></description>
-            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/sample_2_1887.png">
-            </enclosure>
+            <description><![CDATA[千位分隔数]]></description>
         </item>
         <item>
             <title><![CDATA[查找大小为M的最新分组]]></title>
@@ -1910,6 +1910,13 @@
             </enclosure>
         </item>
         <item>
+            <title><![CDATA[删除最短的子数组使剩余数组有序]]></title>
+            <link>https://javainterview.cn/pages/c5a9b8/</link>
+            <guid>https://javainterview.cn/pages/c5a9b8/</guid>
+            <pubDate>Thu, 08 May 2025 21:05:28 GMT</pubDate>
+            <description><![CDATA[删除最短的子数组使剩余数组有序]]></description>
+        </item>
+        <item>
             <title><![CDATA[矩阵对角线元素的和]]></title>
             <link>https://javainterview.cn/pages/7d2e6e/</link>
             <guid>https://javainterview.cn/pages/7d2e6e/</guid>
@@ -1919,18 +1926,18 @@
             </enclosure>
         </item>
         <item>
+            <title><![CDATA[统计所有可行路径]]></title>
+            <link>https://javainterview.cn/pages/b18857/</link>
+            <guid>https://javainterview.cn/pages/b18857/</guid>
+            <pubDate>Sat, 10 May 2025 10:21:45 GMT</pubDate>
+            <description><![CDATA[统计所有可行路径]]></description>
+        </item>
+        <item>
             <title><![CDATA[分割字符串的方案数]]></title>
             <link>https://javainterview.cn/pages/a24264/</link>
             <guid>https://javainterview.cn/pages/a24264/</guid>
             <pubDate>Thu, 08 May 2025 21:05:28 GMT</pubDate>
             <description><![CDATA[分割字符串的方案数]]></description>
-        </item>
-        <item>
-            <title><![CDATA[删除最短的子数组使剩余数组有序]]></title>
-            <link>https://javainterview.cn/pages/c5a9b8/</link>
-            <guid>https://javainterview.cn/pages/c5a9b8/</guid>
-            <pubDate>Thu, 08 May 2025 21:05:28 GMT</pubDate>
-            <description><![CDATA[删除最短的子数组使剩余数组有序]]></description>
         </item>
         <item>
             <title><![CDATA[替换所有的问号]]></title>
@@ -1940,11 +1947,20 @@
             <description><![CDATA[替换所有的问号]]></description>
         </item>
         <item>
-            <title><![CDATA[统计所有可行路径]]></title>
-            <link>https://javainterview.cn/pages/b18857/</link>
-            <guid>https://javainterview.cn/pages/b18857/</guid>
+            <title><![CDATA[使绳子变成彩色的最短时间]]></title>
+            <link>https://javainterview.cn/pages/c9dde7/</link>
+            <guid>https://javainterview.cn/pages/c9dde7/</guid>
             <pubDate>Sat, 10 May 2025 10:21:45 GMT</pubDate>
-            <description><![CDATA[统计所有可行路径]]></description>
+            <description><![CDATA[使绳子变成彩色的最短时间]]></description>
+            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/ballon1.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[数的平方等于两数乘积的方法数]]></title>
+            <link>https://javainterview.cn/pages/50b99f/</link>
+            <guid>https://javainterview.cn/pages/50b99f/</guid>
+            <pubDate>Sat, 10 May 2025 10:21:45 GMT</pubDate>
+            <description><![CDATA[数的平方等于两数乘积的方法数]]></description>
         </item>
         <item>
             <title><![CDATA[保证图可完全遍历]]></title>
@@ -1956,20 +1972,11 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[数的平方等于两数乘积的方法数]]></title>
-            <link>https://javainterview.cn/pages/50b99f/</link>
-            <guid>https://javainterview.cn/pages/50b99f/</guid>
+            <title><![CDATA[统计不开心的朋友]]></title>
+            <link>https://javainterview.cn/pages/de06ab/</link>
+            <guid>https://javainterview.cn/pages/de06ab/</guid>
             <pubDate>Sat, 10 May 2025 10:21:45 GMT</pubDate>
-            <description><![CDATA[数的平方等于两数乘积的方法数]]></description>
-        </item>
-        <item>
-            <title><![CDATA[使绳子变成彩色的最短时间]]></title>
-            <link>https://javainterview.cn/pages/c9dde7/</link>
-            <guid>https://javainterview.cn/pages/c9dde7/</guid>
-            <pubDate>Sat, 10 May 2025 10:21:45 GMT</pubDate>
-            <description><![CDATA[使绳子变成彩色的最短时间]]></description>
-            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/ballon1.jpg">
-            </enclosure>
+            <description><![CDATA[统计不开心的朋友]]></description>
         </item>
         <item>
             <title><![CDATA[进店却未进行过交易的顾客]]></title>
@@ -1986,13 +1993,6 @@
             <description><![CDATA[二进制矩阵中的特殊位置]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/special1.jpg">
             </enclosure>
-        </item>
-        <item>
-            <title><![CDATA[统计不开心的朋友]]></title>
-            <link>https://javainterview.cn/pages/de06ab/</link>
-            <guid>https://javainterview.cn/pages/de06ab/</guid>
-            <pubDate>Sat, 10 May 2025 10:21:45 GMT</pubDate>
-            <description><![CDATA[统计不开心的朋友]]></description>
         </item>
         <item>
             <title><![CDATA[连接所有点的最小费用]]></title>
@@ -2025,20 +2025,6 @@
             <description><![CDATA[银行账户概要II]]></description>
         </item>
         <item>
-            <title><![CDATA[所有排列中的最大和]]></title>
-            <link>https://javainterview.cn/pages/a774ef/</link>
-            <guid>https://javainterview.cn/pages/a774ef/</guid>
-            <pubDate>Sat, 10 May 2025 10:21:45 GMT</pubDate>
-            <description><![CDATA[所有排列中的最大和]]></description>
-        </item>
-        <item>
-            <title><![CDATA[使数组和能被P整除]]></title>
-            <link>https://javainterview.cn/pages/9ee4b7/</link>
-            <guid>https://javainterview.cn/pages/9ee4b7/</guid>
-            <pubDate>Sat, 10 May 2025 10:21:45 GMT</pubDate>
-            <description><![CDATA[使数组和能被P整除]]></description>
-        </item>
-        <item>
             <title><![CDATA[奇怪的打印机II]]></title>
             <link>https://javainterview.cn/pages/3b745d/</link>
             <guid>https://javainterview.cn/pages/3b745d/</guid>
@@ -2046,6 +2032,13 @@
             <description><![CDATA[奇怪的打印机II]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/sample_1_1929.png">
             </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[所有排列中的最大和]]></title>
+            <link>https://javainterview.cn/pages/a774ef/</link>
+            <guid>https://javainterview.cn/pages/a774ef/</guid>
+            <pubDate>Sat, 10 May 2025 10:21:45 GMT</pubDate>
+            <description><![CDATA[所有排列中的最大和]]></description>
         </item>
         <item>
             <title><![CDATA[重新排列单词间的空格]]></title>
@@ -2064,13 +2057,11 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[文件夹操作日志搜集器]]></title>
-            <link>https://javainterview.cn/pages/b9ef2b/</link>
-            <guid>https://javainterview.cn/pages/b9ef2b/</guid>
-            <pubDate>Sat, 17 May 2025 08:47:21 GMT</pubDate>
-            <description><![CDATA[文件夹操作日志搜集器]]></description>
-            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/sample_11_1957.png">
-            </enclosure>
+            <title><![CDATA[使数组和能被P整除]]></title>
+            <link>https://javainterview.cn/pages/9ee4b7/</link>
+            <guid>https://javainterview.cn/pages/9ee4b7/</guid>
+            <pubDate>Sat, 10 May 2025 10:21:45 GMT</pubDate>
+            <description><![CDATA[使数组和能被P整除]]></description>
         </item>
         <item>
             <title><![CDATA[拆分字符串使唯一子字符串的数目最大]]></title>
@@ -2080,18 +2071,27 @@
             <description><![CDATA[拆分字符串使唯一子字符串的数目最大]]></description>
         </item>
         <item>
-            <title><![CDATA[王位继承顺序]]></title>
-            <link>https://javainterview.cn/pages/e1f637/</link>
-            <guid>https://javainterview.cn/pages/e1f637/</guid>
-            <pubDate>Sat, 17 May 2025 08:47:21 GMT</pubDate>
-            <description><![CDATA[王位继承顺序]]></description>
-        </item>
-        <item>
             <title><![CDATA[连通两组点的最小成本]]></title>
             <link>https://javainterview.cn/pages/ba43ee/</link>
             <guid>https://javainterview.cn/pages/ba43ee/</guid>
             <pubDate>Sat, 17 May 2025 08:47:21 GMT</pubDate>
             <description><![CDATA[连通两组点的最小成本]]></description>
+        </item>
+        <item>
+            <title><![CDATA[文件夹操作日志搜集器]]></title>
+            <link>https://javainterview.cn/pages/b9ef2b/</link>
+            <guid>https://javainterview.cn/pages/b9ef2b/</guid>
+            <pubDate>Sat, 17 May 2025 08:47:21 GMT</pubDate>
+            <description><![CDATA[文件夹操作日志搜集器]]></description>
+            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/sample_11_1957.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[王位继承顺序]]></title>
+            <link>https://javainterview.cn/pages/e1f637/</link>
+            <guid>https://javainterview.cn/pages/e1f637/</guid>
+            <pubDate>Sat, 17 May 2025 08:47:21 GMT</pubDate>
+            <description><![CDATA[王位继承顺序]]></description>
         </item>
         <item>
             <title><![CDATA[经营摩天轮的最大利润]]></title>
@@ -2103,13 +2103,6 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[1603. 设计停车系统]]></title>
-            <link>https://javainterview.cn/pages/33ec84/</link>
-            <guid>https://javainterview.cn/pages/33ec84/</guid>
-            <pubDate>Sat, 17 May 2025 08:47:21 GMT</pubDate>
-            <description><![CDATA[设计停车系统]]></description>
-        </item>
-        <item>
             <title><![CDATA[1601. 最多可达成的换楼请求数目]]></title>
             <link>https://javainterview.cn/pages/8a8579/</link>
             <guid>https://javainterview.cn/pages/8a8579/</guid>
@@ -2119,18 +2112,18 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[1604. 警告一小时内使用相同员工卡大于等于三次的人]]></title>
-            <link>https://javainterview.cn/pages/913760/</link>
-            <guid>https://javainterview.cn/pages/913760/</guid>
-            <pubDate>Tue, 03 Jun 2025 19:23:25 GMT</pubDate>
-            <description><![CDATA[警告一小时内使用相同员工卡大于等于三次的人]]></description>
-        </item>
-        <item>
             <title><![CDATA[1605. 给定行和列的和求可行矩阵]]></title>
             <link>https://javainterview.cn/pages/852ebe/</link>
             <guid>https://javainterview.cn/pages/852ebe/</guid>
             <pubDate>Tue, 03 Jun 2025 19:27:34 GMT</pubDate>
             <description><![CDATA[给定行和列的和求可行矩阵]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1603. 设计停车系统]]></title>
+            <link>https://javainterview.cn/pages/33ec84/</link>
+            <guid>https://javainterview.cn/pages/33ec84/</guid>
+            <pubDate>Sat, 17 May 2025 08:47:21 GMT</pubDate>
+            <description><![CDATA[设计停车系统]]></description>
         </item>
         <item>
             <title><![CDATA[1608. 特殊数组的特征值]]></title>
@@ -2140,13 +2133,11 @@
             <description><![CDATA[特殊数组的特征值]]></description>
         </item>
         <item>
-            <title><![CDATA[1610. 可见点的最大数目]]></title>
-            <link>https://javainterview.cn/pages/8879da/</link>
-            <guid>https://javainterview.cn/pages/8879da/</guid>
-            <pubDate>Tue, 03 Jun 2025 19:29:35 GMT</pubDate>
-            <description><![CDATA[可见点的最大数目]]></description>
-            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/89a07e9b-00ab-4967-976a-c723b2aa8656.png">
-            </enclosure>
+            <title><![CDATA[1604. 警告一小时内使用相同员工卡大于等于三次的人]]></title>
+            <link>https://javainterview.cn/pages/913760/</link>
+            <guid>https://javainterview.cn/pages/913760/</guid>
+            <pubDate>Tue, 03 Jun 2025 19:23:25 GMT</pubDate>
+            <description><![CDATA[警告一小时内使用相同员工卡大于等于三次的人]]></description>
         </item>
         <item>
             <title><![CDATA[1606. 找到处理最多请求的服务器]]></title>
@@ -2181,6 +2172,24 @@
             </enclosure>
         </item>
         <item>
+            <title><![CDATA[1617. 统计子树中城市之间最大距离]]></title>
+            <link>https://javainterview.cn/pages/472e02/</link>
+            <guid>https://javainterview.cn/pages/472e02/</guid>
+            <pubDate>Tue, 03 Jun 2025 19:40:29 GMT</pubDate>
+            <description><![CDATA[统计子树中城市之间最大距离]]></description>
+            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/p1.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[1610. 可见点的最大数目]]></title>
+            <link>https://javainterview.cn/pages/8879da/</link>
+            <guid>https://javainterview.cn/pages/8879da/</guid>
+            <pubDate>Tue, 03 Jun 2025 19:29:35 GMT</pubDate>
+            <description><![CDATA[可见点的最大数目]]></description>
+            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/89a07e9b-00ab-4967-976a-c723b2aa8656.png">
+            </enclosure>
+        </item>
+        <item>
             <title><![CDATA[1616. 分割两个字符串得到回文串]]></title>
             <link>https://javainterview.cn/pages/864bb5/</link>
             <guid>https://javainterview.cn/pages/864bb5/</guid>
@@ -2204,6 +2213,20 @@
             </enclosure>
         </item>
         <item>
+            <title><![CDATA[1622. 奇妙序列]]></title>
+            <link>https://javainterview.cn/pages/29f6bd/</link>
+            <guid>https://javainterview.cn/pages/29f6bd/</guid>
+            <pubDate>Tue, 03 Jun 2025 19:40:29 GMT</pubDate>
+            <description><![CDATA[奇妙序列]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1624. 两个相同字符之间的最长子字符串]]></title>
+            <link>https://javainterview.cn/pages/2b7d69/</link>
+            <guid>https://javainterview.cn/pages/2b7d69/</guid>
+            <pubDate>Tue, 03 Jun 2025 19:40:29 GMT</pubDate>
+            <description><![CDATA[两个相同字符之间的最长子字符串]]></description>
+        </item>
+        <item>
             <title><![CDATA[1621. 大小为K的不重叠线段的数目]]></title>
             <link>https://javainterview.cn/pages/6bd8c2/</link>
             <guid>https://javainterview.cn/pages/6bd8c2/</guid>
@@ -2213,44 +2236,18 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[1617. 统计子树中城市之间最大距离]]></title>
-            <link>https://javainterview.cn/pages/472e02/</link>
-            <guid>https://javainterview.cn/pages/472e02/</guid>
-            <pubDate>Tue, 03 Jun 2025 19:40:29 GMT</pubDate>
-            <description><![CDATA[统计子树中城市之间最大距离]]></description>
-            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/p1.png">
-            </enclosure>
-        </item>
-        <item>
-            <title><![CDATA[1622. 奇妙序列]]></title>
-            <link>https://javainterview.cn/pages/29f6bd/</link>
-            <guid>https://javainterview.cn/pages/29f6bd/</guid>
-            <pubDate>Tue, 03 Jun 2025 19:40:29 GMT</pubDate>
-            <description><![CDATA[奇妙序列]]></description>
-        </item>
-        <item>
-            <title><![CDATA[1625. 执行操作后字典序最小的字符串]]></title>
-            <link>https://javainterview.cn/pages/4e243a/</link>
-            <guid>https://javainterview.cn/pages/4e243a/</guid>
-            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[轮转：将 s 向右轮转 b 位。例如，s = "3456" 且 b = 1，则执行此操作后 s 变成 "6345"。
-请你返回在 s 上执行上述操作任意次后可以得到的 字典序最小 的字符串。]]></description>
-        </item>
-        <item>
             <title><![CDATA[1626. 无矛盾的最佳球队]]></title>
             <link>https://javainterview.cn/pages/aa1b67/</link>
             <guid>https://javainterview.cn/pages/aa1b67/</guid>
             <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[输出：34
-    解释：你可以选中所有球员。
-示例 2：]]></description>
+            <description><![CDATA[给你两个列表 scores 和 ages，其中每组 scores[i] 和 ages[i] 表示第 i 名球员的分数和年龄。请你返回 所有可能的无矛盾球队中得分最高那支的分数 。]]></description>
         </item>
         <item>
             <title><![CDATA[1627. 带阈值的图连通性]]></title>
             <link>https://javainterview.cn/pages/a5bf19/</link>
             <guid>https://javainterview.cn/pages/a5bf19/</guid>
             <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[示例 1：]]></description>
+            <description><![CDATA[返回数组 answer ，其中answer.length == queries.length 。如果第 i 个查询中指向的城市 ai 和 bi 连通，则 answer[i] 为 true ；如果不连通，则 answer[i] 为 false 。]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/1627ex1.jpg">
             </enclosure>
         </item>
@@ -2262,32 +2259,35 @@
             <description><![CDATA[示例 1：]]></description>
         </item>
         <item>
+            <title><![CDATA[1625. 执行操作后字典序最小的字符串]]></title>
+            <link>https://javainterview.cn/pages/4e243a/</link>
+            <guid>https://javainterview.cn/pages/4e243a/</guid>
+            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
+            <description><![CDATA[输入：s = "5525", a = 9, b = 2
+    输出："2050"
+    解释：执行操作如下：
+    初态："5525"
+    轮转："2555"
+    累加："2454"
+    累加："2353"
+    轮转："5323"
+    累加："5222"
+    累加："5121"
+    轮转："2151"
+    累加："2050"​​​​​
+    无法获得字典序小于 "2050" 的字符串。
+示例 2：]]></description>
+        </item>
+        <item>
             <title><![CDATA[1631. 最小体力消耗路径]]></title>
             <link>https://javainterview.cn/pages/8b90ee/</link>
             <guid>https://javainterview.cn/pages/8b90ee/</guid>
             <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[示例 2：]]></description>
+            <description><![CDATA[输入：heights = [[1,2,1,1,1],[1,2,1,2,1],[1,2,1,2,1],[1,2,1,2,1],[1,1,1,2,1]]
+    输出：0
+    解释：上图所示路径不需要消耗任何体力。]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/1631ex1.png">
             </enclosure>
-        </item>
-        <item>
-            <title><![CDATA[1630. 等差子数组]]></title>
-            <link>https://javainterview.cn/pages/6f5783/</link>
-            <guid>https://javainterview.cn/pages/6f5783/</guid>
-            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[输出：[true,false,true]
-    解释：
-    第 0 个查询，对应子数组 [4,6,5] 。可以重新排列为等差数列 [6,5,4] 。
-    第 1 个查询，对应子数组 [4,6,5,9] 。无法重新排列形成等差数列。
-    第 2 个查询，对应子数组 [5,9,3,7] 。可以重新排列为等差数列 [3,5,7,9] 。
-示例 2：]]></description>
-        </item>
-        <item>
-            <title><![CDATA[1624. 两个相同字符之间的最长子字符串]]></title>
-            <link>https://javainterview.cn/pages/2b7d69/</link>
-            <guid>https://javainterview.cn/pages/2b7d69/</guid>
-            <pubDate>Tue, 03 Jun 2025 19:40:29 GMT</pubDate>
-            <description><![CDATA[两个相同字符之间的最长子字符串]]></description>
         </item>
         <item>
             <title><![CDATA[1632. 矩阵转换后的秩]]></title>
@@ -2301,16 +2301,6 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[1636. 按照频率将数组升序排序]]></title>
-            <link>https://javainterview.cn/pages/463566/</link>
-            <guid>https://javainterview.cn/pages/463566/</guid>
-            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[return b - a;
-            }
-            return aCount - bCount;
-        });]]></description>
-        </item>
-        <item>
             <title><![CDATA[1633. 各赛事的用户注册率]]></title>
             <link>https://javainterview.cn/pages/a97a20/</link>
             <guid>https://javainterview.cn/pages/a97a20/</guid>
@@ -2321,26 +2311,33 @@
     Bob 注册了 207 赛事，注册率为 ((1/3) * 100) = 33.33%]]></description>
         </item>
         <item>
+            <title><![CDATA[1630. 等差子数组]]></title>
+            <link>https://javainterview.cn/pages/6f5783/</link>
+            <guid>https://javainterview.cn/pages/6f5783/</guid>
+            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[1636. 按照频率将数组升序排序]]></title>
+            <link>https://javainterview.cn/pages/463566/</link>
+            <guid>https://javainterview.cn/pages/463566/</guid>
+            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
+            <description><![CDATA[给你一个整数数组 nums ，请你将数组按照每个值的频率 升序 排序。如果有多个值的频率相同，请你按照数值本身将它们 降序 排序。]]></description>
+        </item>
+        <item>
             <title><![CDATA[1637. 两点之间不包含任何点的最宽垂直区域]]></title>
             <link>https://javainterview.cn/pages/07666c/</link>
             <guid>https://javainterview.cn/pages/07666c/</guid>
             <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
+            <description><![CDATA[垂直区域 的定义是固定宽度，而 y 轴上无限延伸的一块区域（也就是高度为无穷大）。 最宽垂直区域 为宽度最大的一个垂直区域。]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/points3.png">
             </enclosure>
-        </item>
-        <item>
-            <title><![CDATA[1639. 通过给定词典构造目标字符串的方案数]]></title>
-            <link>https://javainterview.cn/pages/d5b0ab/</link>
-            <guid>https://javainterview.cn/pages/d5b0ab/</guid>
-            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[给你一个字符串列表 words 和一个目标字符串 target 。words 中所有字符串都 长度相同  。]]></description>
         </item>
         <item>
             <title><![CDATA[1640. 能否连接形成数组]]></title>
             <link>https://javainterview.cn/pages/74e907/</link>
             <guid>https://javainterview.cn/pages/74e907/</guid>
             <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[如果可以连接 pieces 中的数组形成 arr ，返回 true ；否则，返回 false 。]]></description>
+            <description><![CDATA[示例 1：]]></description>
         </item>
         <item>
             <title><![CDATA[1641. 统计字典序元音字符串的数目]]></title>
@@ -2350,34 +2347,28 @@
             <description><![CDATA[示例 2：]]></description>
         </item>
         <item>
-            <title><![CDATA[1643. 第K条最小指令]]></title>
-            <link>https://javainterview.cn/pages/98cff6/</link>
-            <guid>https://javainterview.cn/pages/98cff6/</guid>
-            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[然而，Bob 很挑剔。因为他的幸运数字是 k，他想要遵循 按字典序排列后的第 k 条最小指令 的导航前往目的地 destination 。k  的编号 从 1 开始 。]]></description>
-        </item>
-        <item>
             <title><![CDATA[1642. 可以到达的最远建筑]]></title>
             <link>https://javainterview.cn/pages/40790f/</link>
             <guid>https://javainterview.cn/pages/40790f/</guid>
             <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[输出：4
-    解释：从建筑物 0 出发，你可以按此方案完成旅程：
-    不使用砖块或梯子到达建筑物 1 ，因为 4 >= 2
-    使用 5 个砖块到达建筑物 2 。你必须使用砖块或梯子，因为 2 = 6
-    使用唯一的梯子到达建筑物 4 。你必须使用砖块或梯子，因为 6 < 9
-      无法越过建筑物 4 ，因为没有更多砖块或梯子。]]></description>
+            <description><![CDATA[如果以最佳方式使用给定的梯子和砖块，返回你可以到达的最远建筑物的下标（下标 从 0 开始 ）。]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/q4.gif">
             </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[1643. 第K条最小指令]]></title>
+            <link>https://javainterview.cn/pages/98cff6/</link>
+            <guid>https://javainterview.cn/pages/98cff6/</guid>
+            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
+            <description><![CDATA[给你一个整数数组 destination 和一个整数 k ，请你返回可以为 Bob 提供前往目的地 destination 导航的 按字典序排列后的第 k 条最小指令 。]]></description>
         </item>
         <item>
             <title><![CDATA[1646. 获取生成数组中的最大值]]></title>
             <link>https://javainterview.cn/pages/a206c9/</link>
             <guid>https://javainterview.cn/pages/a206c9/</guid>
             <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[输出：1
-    解释：根据规则，nums[0]、nums[1] 和 nums[2] 之中的最大值是 1
-示例 3：]]></description>
+            <description><![CDATA[因此，nums = [0,1,1,2,1,3,2,3]，最大值 3
+示例 2：]]></description>
         </item>
         <item>
             <title><![CDATA[1647. 字符频次唯一的最小删除次数]]></title>
@@ -2390,20 +2381,6 @@
         return ans;
     }
 }]]></description>
-        </item>
-        <item>
-            <title><![CDATA[矩阵中战斗力最弱的 K 行]]></title>
-            <link>https://javainterview.cn/pages/584e4b/</link>
-            <guid>https://javainterview.cn/pages/584e4b/</guid>
-            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
-            <description><![CDATA[矩阵中战斗力最弱的 K 行]]></description>
-        </item>
-        <item>
-            <title><![CDATA[1649. 通过指令创建有序数组]]></title>
-            <link>https://javainterview.cn/pages/fffaf1/</link>
-            <guid>https://javainterview.cn/pages/fffaf1/</guid>
-            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[提示：]]></description>
         </item>
         <item>
             <title><![CDATA[1648. 销售价值减少的颜色球]]></title>
@@ -2422,37 +2399,41 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[1652. 拆炸弹]]></title>
-            <link>https://javainterview.cn/pages/deed88/</link>
-            <guid>https://javainterview.cn/pages/deed88/</guid>
-            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[}
-        return newCode;
-    }
-}]]></description>
-        </item>
-        <item>
             <title><![CDATA[1653. 使字符串平衡的最少删除次数]]></title>
             <link>https://javainterview.cn/pages/08d118/</link>
             <guid>https://javainterview.cn/pages/08d118/</guid>
             <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[1652. 拆炸弹]]></title>
+            <link>https://javainterview.cn/pages/deed88/</link>
+            <guid>https://javainterview.cn/pages/deed88/</guid>
+            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
+            <description><![CDATA[你有一个炸弹需要拆除，时间紧迫！你的情报员会给你一个长度为 n 的 循环 数组 code 以及一个密钥 k 。]]></description>
+        </item>
+        <item>
             <title><![CDATA[1654. 到家的最少跳跃次数]]></title>
             <link>https://javainterview.cn/pages/c1d79c/</link>
             <guid>https://javainterview.cn/pages/c1d79c/</guid>
             <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[有一只跳蚤的家在数轴上的位置 x 处。请你帮助它从位置 0 出发，到达它的家。]]></description>
+            <description><![CDATA[它可以 往后 跳恰好 b 个位置（即往左跳）。
+它不能 连续 往后跳 2 次。
+它不能跳到任何 forbidden 数组中的位置。
+跳蚤可以往前跳 超过 它的家的位置，但是它 不能跳到负整数 的位置。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1649. 通过指令创建有序数组]]></title>
+            <link>https://javainterview.cn/pages/fffaf1/</link>
+            <guid>https://javainterview.cn/pages/fffaf1/</guid>
+            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
+            <description><![CDATA[比方说，如果要将 3 插入到 nums = [1,2,3,5] ，那么插入操作的 代价 为 min(2, 1) (元素 1 和  2 小于 3 ，元素 5 大于 3 ），插入后 nums 变成 [1,2,3,3,5] 。]]></description>
         </item>
         <item>
             <title><![CDATA[1655. 分配重复整数]]></title>
             <link>https://javainterview.cn/pages/843b69/</link>
             <guid>https://javainterview.cn/pages/843b69/</guid>
             <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[第 i 位顾客 恰好 有 quantity[i] 个整数。
-第 i 位顾客拿到的整数都是 相同的 。
-每位顾客都满足上述两个要求。
-如果你可以分配 nums 中的整数满足上面的要求，那么请返回 true ，否则返回 false 。]]></description>
+            <description><![CDATA[示例 2：]]></description>
         </item>
         <item>
             <title><![CDATA[1656. 设计有序流]]></title>
@@ -2464,11 +2445,11 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[1658. 将x减到0的最小操作数]]></title>
-            <link>https://javainterview.cn/pages/d07cec/</link>
-            <guid>https://javainterview.cn/pages/d07cec/</guid>
+            <title><![CDATA[1657. 确定两个字符串是否接近]]></title>
+            <link>https://javainterview.cn/pages/56181b/</link>
+            <guid>https://javainterview.cn/pages/56181b/</guid>
             <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[1 9]]></description>
+            <description><![CDATA[示例 2：]]></description>
         </item>
         <item>
             <title><![CDATA[1659. 最大化网格幸福感]]></title>
@@ -2480,13 +2461,16 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[1657. 确定两个字符串是否接近]]></title>
-            <link>https://javainterview.cn/pages/56181b/</link>
-            <guid>https://javainterview.cn/pages/56181b/</guid>
+            <title><![CDATA[1658. 将x减到0的最小操作数]]></title>
+            <link>https://javainterview.cn/pages/d07cec/</link>
+            <guid>https://javainterview.cn/pages/d07cec/</guid>
             <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[if (cnt1[i] != cnt2[i]) return false;
+            <description><![CDATA[}
+            if (currentSum == sum - x) {
+                maxPart = Math.max(maxPart, right - left);
+            }
         }
-        return true;
+        return maxPart == -1 ? -1 : nums.length - maxPart;
     }
 }]]></description>
         </item>
@@ -2504,11 +2488,25 @@
             <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[1663. 具有给定数值的最小字符串]]></title>
+            <link>https://javainterview.cn/pages/881267/</link>
+            <guid>https://javainterview.cn/pages/881267/</guid>
+            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
+            <description><![CDATA[小写字符 的 数值 是它在字母表中的位置（从 1 开始），因此 a 的数值为 1 ，b 的数值为 2 ，c 的数值为 3 ，以此类推。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1664. 生成平衡数组的方案数]]></title>
+            <link>https://javainterview.cn/pages/2d7962/</link>
+            <guid>https://javainterview.cn/pages/2d7962/</guid>
+            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
+            <description><![CDATA[比方说，如果 nums = [6,1,7,4,1] ，那么：]]></description>
+        </item>
+        <item>
             <title><![CDATA[1665. 完成所有任务的最少初始能量]]></title>
             <link>https://javainterview.cn/pages/fb6212/</link>
             <guid>https://javainterview.cn/pages/fb6212/</guid>
             <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[给你一个任务数组 tasks ，其中 tasks[i] = [actuali, minimumi] ：]]></description>
+            <description><![CDATA[比方说，如果任务为 [10, 12] 且你当前的能量为 11 ，那么你不能开始这个任务。如果你当前的能量为 13 ，你可以完成这个任务，且完成它后剩余能量为 3 。]]></description>
         </item>
         <item>
             <title><![CDATA[1667. 修复表中的名字]]></title>
@@ -2519,11 +2517,12 @@
 该表包含用户的 ID 和名字。名字仅由小写和大写字符组成。]]></description>
         </item>
         <item>
-            <title><![CDATA[1664. 生成平衡数组的方案数]]></title>
-            <link>https://javainterview.cn/pages/2d7962/</link>
-            <guid>https://javainterview.cn/pages/2d7962/</guid>
+            <title><![CDATA[1671. 得到山形数组的最少删除次数]]></title>
+            <link>https://javainterview.cn/pages/2eaacd/</link>
+            <guid>https://javainterview.cn/pages/2eaacd/</guid>
             <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[示例 1：]]></description>
+            <description><![CDATA[解释：数组本身就是山形数组，所以我们不需要删除任何元素。
+示例 2：]]></description>
         </item>
         <item>
             <title><![CDATA[1668. 最大重复子字符串]]></title>
@@ -2535,43 +2534,32 @@
 示例 3：]]></description>
         </item>
         <item>
-            <title><![CDATA[1663. 具有给定数值的最小字符串]]></title>
-            <link>https://javainterview.cn/pages/881267/</link>
-            <guid>https://javainterview.cn/pages/881267/</guid>
-            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[输入：n = 5, k = 73
-    输出："aaszz"]]></description>
-        </item>
-        <item>
             <title><![CDATA[1672. 最富有客户的资产总量]]></title>
             <link>https://javainterview.cn/pages/99865c/</link>
             <guid>https://javainterview.cn/pages/99865c/</guid>
             <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[示例 3：]]></description>
-        </item>
-        <item>
-            <title><![CDATA[1673. 找出最具竞争力的子序列]]></title>
-            <link>https://javainterview.cn/pages/46af74/</link>
-            <guid>https://javainterview.cn/pages/46af74/</guid>
-            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[1 ]]></description>
-        </item>
-        <item>
-            <title><![CDATA[1671. 得到山形数组的最少删除次数]]></title>
-            <link>https://javainterview.cn/pages/2eaacd/</link>
-            <guid>https://javainterview.cn/pages/2eaacd/</guid>
-            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[}
-        return ans;
-    }
-}]]></description>
+            <description><![CDATA[第 3 位客户的资产总量 = 8
+    第 2 位客户是最富有的，资产总量是 10
+示例 3：]]></description>
         </item>
         <item>
             <title><![CDATA[1674. 使数组互补的最少操作次数]]></title>
             <link>https://javainterview.cn/pages/9aa92e/</link>
             <guid>https://javainterview.cn/pages/9aa92e/</guid>
             <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[}
+            <description><![CDATA[示例 2：]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1673. 找出最具竞争力的子序列]]></title>
+            <link>https://javainterview.cn/pages/46af74/</link>
+            <guid>https://javainterview.cn/pages/46af74/</guid>
+            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
+            <description><![CDATA[res[j] = list.get(j);
+                }
+            }
+        }
+        return res;
+    }
 }]]></description>
         </item>
         <item>
@@ -2596,33 +2584,25 @@
 示例 3：]]></description>
         </item>
         <item>
-            <title><![CDATA[1679. K和数对的最大数目]]></title>
-            <link>https://javainterview.cn/pages/9c26ef/</link>
-            <guid>https://javainterview.cn/pages/9c26ef/</guid>
+            <title><![CDATA[1683. 无效的推文]]></title>
+            <link>https://javainterview.cn/pages/bb0532/</link>
+            <guid>https://javainterview.cn/pages/bb0532/</guid>
             <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[示例 2：]]></description>
+            <description><![CDATA[这个表包含某社交媒体 App 中所有的推文。]]></description>
         </item>
         <item>
             <title><![CDATA[1681. 最小不兼容性]]></title>
             <link>https://javainterview.cn/pages/feab60/</link>
             <guid>https://javainterview.cn/pages/feab60/</guid>
             <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[注意到 [1,1] 和 [2,4] 可以得到更小的和，但是第一个集合有 2 个相同的元素，所以不可行。
-示例 2：]]></description>
-        </item>
-        <item>
-            <title><![CDATA[1683. 无效的推文]]></title>
-            <link>https://javainterview.cn/pages/bb0532/</link>
-            <guid>https://javainterview.cn/pages/bb0532/</guid>
-            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
-            <description><![CDATA[查询结果格式如下所示：]]></description>
-        </item>
-        <item>
-            <title><![CDATA[1685. 有序数组中差绝对值之和]]></title>
-            <link>https://javainterview.cn/pages/65b8e8/</link>
-            <guid>https://javainterview.cn/pages/65b8e8/</guid>
-            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
             <description><![CDATA[示例 2：]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1679. K和数对的最大数目]]></title>
+            <link>https://javainterview.cn/pages/9c26ef/</link>
+            <guid>https://javainterview.cn/pages/9c26ef/</guid>
+            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
+            <description><![CDATA[不再有和为 6 的数对，因此最多执行 1 次操作。]]></description>
         </item>
         <item>
             <title><![CDATA[1684. 统计一致字符串的数目]]></title>
@@ -2633,79 +2613,93 @@
     解释：字符串 "cc"，"acd"，"ac" 和 "d" 是一致字符串。]]></description>
         </item>
         <item>
-            <title><![CDATA[1686. 石子游戏VI]]></title>
-            <link>https://javainterview.cn/pages/8941c5/</link>
-            <guid>https://javainterview.cn/pages/8941c5/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[Alice 获胜。
-示例 2：]]></description>
+            <title><![CDATA[1685. 有序数组中差绝对值之和]]></title>
+            <link>https://javainterview.cn/pages/65b8e8/</link>
+            <guid>https://javainterview.cn/pages/65b8e8/</guid>
+            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
+            <description><![CDATA[new int[n]]]></description>
         </item>
         <item>
             <title><![CDATA[1687. 从仓库到码头运输箱子]]></title>
-            <link>https://javainterview.cn/pages/87e368/</link>
-            <guid>https://javainterview.cn/pages/87e368/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[示例 1：]]></description>
+            <link>https://javainterview.cn/pages/e9f518/</link>
+            <guid>https://javainterview.cn/pages/e9f518/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[输出：4
+    解释：最优策略如下：
+    卡车将所有箱子装上车，到达码头 1 ，然后去码头 2 ，然后再回到码头 1 ，最后回到仓库，总共需要 4 趟行程。
+    所以总行程数为 4 。
+    注意到第一个和第三个箱子不能同时被卸货，因为箱子需要按顺序处理（也就是第二个箱子需要先被送到码头 2 ，然后才能处理第三个箱子）。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1686. 石子游戏VI]]></title>
+            <link>https://javainterview.cn/pages/983bd4/</link>
+            <guid>https://javainterview.cn/pages/983bd4/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[Bob 会获胜。]]></description>
         </item>
         <item>
             <title><![CDATA[1688. 比赛中的配对次数]]></title>
-            <link>https://javainterview.cn/pages/51531e/</link>
-            <guid>https://javainterview.cn/pages/51531e/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[提示：]]></description>
+            <link>https://javainterview.cn/pages/ed7235/</link>
+            <guid>https://javainterview.cn/pages/ed7235/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[1689. 十-二进制数的最少数目]]></title>
-            <link>https://javainterview.cn/pages/4a80ce/</link>
-            <guid>https://javainterview.cn/pages/4a80ce/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
+            <link>https://javainterview.cn/pages/e98305/</link>
+            <guid>https://javainterview.cn/pages/e98305/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[如果一个十进制数字不含任何前导零，且每一位上的数字不是 0 就是 1 ，那么该数字就是一个 十-二进制数 。例如，101 和 1100 都是 十-二进制数，而 112 和 3001 不是。]]></description>
         </item>
         <item>
             <title><![CDATA[1690. 石子游戏VII]]></title>
-            <link>https://javainterview.cn/pages/c787d6/</link>
-            <guid>https://javainterview.cn/pages/c787d6/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[石子游戏中，爱丽丝和鲍勃轮流进行自己的回合，爱丽丝先开始 。]]></description>
+            <link>https://javainterview.cn/pages/530ac4/</link>
+            <guid>https://javainterview.cn/pages/530ac4/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[鲍勃发现他总是输掉游戏（可怜的鲍勃，他总是输），所以他决定尽力 减小得分的差值 。爱丽丝的目标是最大限度地 扩大得分的差值 。]]></description>
         </item>
         <item>
             <title><![CDATA[1691. 堆叠长方体的最大高度]]></title>
-            <link>https://javainterview.cn/pages/3b3ecb/</link>
-            <guid>https://javainterview.cn/pages/3b3ecb/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[如果 widthi ]]></description>
+            <link>https://javainterview.cn/pages/d165a2/</link>
+            <guid>https://javainterview.cn/pages/d165a2/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[返回 堆叠长方体 cuboids 可以得到的 最大高度 。]]></description>
         </item>
         <item>
             <title><![CDATA[1693. 每天的领导和合伙人]]></title>
-            <link>https://javainterview.cn/pages/c021ff/</link>
-            <guid>https://javainterview.cn/pages/c021ff/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[该表没有主键(具有唯一值的列)。它可能包含重复项。
-    该表包含日期、产品的名称，以及售给的领导和合伙人的编号。
+            <link>https://javainterview.cn/pages/d13192/</link>
+            <guid>https://javainterview.cn/pages/d13192/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[该表包含日期、产品的名称，以及售给的领导和合伙人的编号。
     名称只包含小写英文字母。]]></description>
         </item>
         <item>
+            <title><![CDATA[1695. 删除子数组的最大得分]]></title>
+            <link>https://javainterview.cn/pages/526d12/</link>
+            <guid>https://javainterview.cn/pages/526d12/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[1 ]]></description>
+        </item>
+        <item>
             <title><![CDATA[1694. 重新格式化电话号码]]></title>
-            <link>https://javainterview.cn/pages/2dc776/</link>
-            <guid>https://javainterview.cn/pages/2dc776/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[解释：数字是 "123456"
-    步骤 1：共有超过 4 个数字，所以先取 3 个数字分为一组。第 1 个块是 "123" 。
-    步骤 2：剩下 3 个数字，将它们放入单个含 3 个数字的块。第 2 个块是 "456" 。
+            <link>https://javainterview.cn/pages/8ab0c2/</link>
+            <guid>https://javainterview.cn/pages/8ab0c2/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[步骤 2：剩下 3 个数字，将它们放入单个含 3 个数字的块。第 2 个块是 "456" 。
     连接这些块后得到 "123-456" 。
 示例 2：]]></description>
         </item>
         <item>
             <title><![CDATA[1696. 跳跃游戏VI]]></title>
-            <link>https://javainterview.cn/pages/cd5f2c/</link>
-            <guid>https://javainterview.cn/pages/cd5f2c/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
+            <link>https://javainterview.cn/pages/9a3fe1/</link>
+            <guid>https://javainterview.cn/pages/9a3fe1/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
             <description><![CDATA[-104 4]]></description>
         </item>
         <item>
             <title><![CDATA[1697. 检查边长度限制的路径是否存在]]></title>
-            <link>https://javainterview.cn/pages/e3ab06/</link>
-            <guid>https://javainterview.cn/pages/e3ab06/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
+            <link>https://javainterview.cn/pages/b720b4/</link>
+            <guid>https://javainterview.cn/pages/b720b4/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
             <description><![CDATA[输入：n = 5, edgeList = [[0,1,10],[1,2,5],[2,3,9],[3,4,13]], queries = [[0,4,14],[1,4,13]]
     输出：[true,false]
     解释：上图为给定数据。]]></description>
@@ -2714,16 +2708,16 @@
         </item>
         <item>
             <title><![CDATA[1701. 平均等待时间]]></title>
-            <link>https://javainterview.cn/pages/f31106/</link>
-            <guid>https://javainterview.cn/pages/f31106/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
+            <link>https://javainterview.cn/pages/4de05c/</link>
+            <guid>https://javainterview.cn/pages/4de05c/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
             <description><![CDATA[提示：]]></description>
         </item>
         <item>
             <title><![CDATA[1702. 修改后的最大二进制字符串]]></title>
-            <link>https://javainterview.cn/pages/3b0a05/</link>
-            <guid>https://javainterview.cn/pages/3b0a05/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
+            <link>https://javainterview.cn/pages/fe232d/</link>
+            <guid>https://javainterview.cn/pages/fe232d/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
             <description><![CDATA[sb.append("1");
         }
         return sb.toString();
@@ -2732,113 +2726,111 @@
         </item>
         <item>
             <title><![CDATA[1700. 无法吃午餐的学生数量]]></title>
-            <link>https://javainterview.cn/pages/d53edc/</link>
-            <guid>https://javainterview.cn/pages/d53edc/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
+            <link>https://javainterview.cn/pages/5e8320/</link>
+            <guid>https://javainterview.cn/pages/5e8320/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
             <description><![CDATA[}
 }
 `]]></description>
         </item>
         <item>
-            <title><![CDATA[1695. 删除子数组的最大得分]]></title>
-            <link>https://javainterview.cn/pages/7ce2b3/</link>
-            <guid>https://javainterview.cn/pages/7ce2b3/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-        </item>
-        <item>
             <title><![CDATA[1704. 判断字符串的两半是否相似]]></title>
-            <link>https://javainterview.cn/pages/1a8764/</link>
-            <guid>https://javainterview.cn/pages/1a8764/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[给你一个偶数长度的字符串 s 。将其拆分成长度相同的两半，前一半为 a ，后一半为 b 。]]></description>
+            <link>https://javainterview.cn/pages/4c1ba9/</link>
+            <guid>https://javainterview.cn/pages/4c1ba9/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[1706. 球会落何处]]></title>
-            <link>https://javainterview.cn/pages/29f25c/</link>
-            <guid>https://javainterview.cn/pages/29f25c/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[箱子中的每个单元格都有一个对角线挡板，跨过单元格的两个角，可以将球导向左侧或者右侧。]]></description>
+            <link>https://javainterview.cn/pages/a1930f/</link>
+            <guid>https://javainterview.cn/pages/a1930f/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[用一个大小为 m x n 的二维网格 grid 表示一个箱子。你有 n 颗球。箱子的顶部和底部都是开着的。]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/ball.jpg">
             </enclosure>
         </item>
         <item>
             <title><![CDATA[1707. 与数组中元素的最大异或值]]></title>
-            <link>https://javainterview.cn/pages/0e8bdf/</link>
-            <guid>https://javainterview.cn/pages/0e8bdf/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[返回一个整数数组 answer 作为查询的答案，其中 answer.length == queries.length 且 answer[i] 是第 i 个查询的答案。]]></description>
+            <link>https://javainterview.cn/pages/fdbf8a/</link>
+            <guid>https://javainterview.cn/pages/fdbf8a/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[第 i 个查询的答案是 xi 和任何 nums 数组中不超过 mi 的元素按位异或（XOR）得到的最大值。换句话说，答案是 max(nums[j] XOR xi) ，其中所有 j 均满足 nums[j] ]]></description>
         </item>
         <item>
             <title><![CDATA[1711. 大餐计数]]></title>
-            <link>https://javainterview.cn/pages/d09eb9/</link>
-            <guid>https://javainterview.cn/pages/d09eb9/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[它们各自的美味程度之和分别为 4 、8 、8 和 16 ，都是 2 的幂。
-示例 2：]]></description>
+            <link>https://javainterview.cn/pages/c00756/</link>
+            <guid>https://javainterview.cn/pages/c00756/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[示例 1：]]></description>
         </item>
         <item>
             <title><![CDATA[1712. 将数组分成三个子数组的方案数]]></title>
-            <link>https://javainterview.cn/pages/111eed/</link>
-            <guid>https://javainterview.cn/pages/111eed/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[[1] [2,2] [2,5,0]
-    [1,2] [2,2] [5,0]
-示例 3：]]></description>
+            <link>https://javainterview.cn/pages/9e8f40/</link>
+            <guid>https://javainterview.cn/pages/9e8f40/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[输出：1
+    解释：唯一一种好的分割方案是将 nums 分成 [1] [1] [1] 。
+示例 2：]]></description>
         </item>
         <item>
             <title><![CDATA[1716. 计算力扣银行的钱]]></title>
-            <link>https://javainterview.cn/pages/2461ef/</link>
-            <guid>https://javainterview.cn/pages/2461ef/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[提示：]]></description>
-        </item>
-        <item>
-            <title><![CDATA[1717. 删除子字符串的最大得分]]></title>
-            <link>https://javainterview.cn/pages/8b3d2e/</link>
-            <guid>https://javainterview.cn/pages/8b3d2e/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[示例 2：]]></description>
+            <link>https://javainterview.cn/pages/5d13c8/</link>
+            <guid>https://javainterview.cn/pages/5d13c8/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[示例 3：]]></description>
         </item>
         <item>
             <title><![CDATA[1718. 构建字典序最大的可行序列]]></title>
-            <link>https://javainterview.cn/pages/c46687/</link>
-            <guid>https://javainterview.cn/pages/c46687/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[private int n;]]></description>
+            <link>https://javainterview.cn/pages/198fa3/</link>
+            <guid>https://javainterview.cn/pages/198fa3/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[输入：n = 3
+    输出：[3,1,2,3,2]
+    解释：[2,3,2,1,3] 也是一个可行的序列，但是 [3,1,2,3,2] 是字典序最大的序列。
+示例 2：]]></description>
         </item>
         <item>
-            <title><![CDATA[1720. 解码异或后的数组]]></title>
-            <link>https://javainterview.cn/pages/721c65/</link>
-            <guid>https://javainterview.cn/pages/721c65/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[异或满足归零率，恒等率，交换律，结合律。]]></description>
+            <title><![CDATA[1638. 统计只差一个字符的子串数目]]></title>
+            <link>https://javainterview.cn/pages/a5a8ed/</link>
+            <guid>https://javainterview.cn/pages/a5a8ed/</guid>
+            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
+            <description><![CDATA[示例 2：]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1717. 删除子字符串的最大得分]]></title>
+            <link>https://javainterview.cn/pages/0b5c36/</link>
+            <guid>https://javainterview.cn/pages/0b5c36/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[示例 2：]]></description>
         </item>
         <item>
             <title><![CDATA[1722. 执行交换操作后的最小汉明距离]]></title>
-            <link>https://javainterview.cn/pages/fb77c3/</link>
-            <guid>https://javainterview.cn/pages/fb77c3/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[输出：2
-    解释：不能对 source 执行交换操作。
-    source 和 target 间的汉明距离是 2 ，二者有 2 处元素不同，在下标 1 和下标 2 。
-示例 3：]]></description>
+            <link>https://javainterview.cn/pages/6510e1/</link>
+            <guid>https://javainterview.cn/pages/6510e1/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[source 和 target 间的汉明距离是 1 ，二者有 1 处元素不同，在下标 3 。]]></description>
         </item>
         <item>
-            <title><![CDATA[1725. 可以形成最大正方形的矩形数目]]></title>
-            <link>https://javainterview.cn/pages/27f9d4/</link>
-            <guid>https://javainterview.cn/pages/27f9d4/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
+            <title><![CDATA[1720. 解码异或后的数组]]></title>
+            <link>https://javainterview.cn/pages/ecdf26/</link>
+            <guid>https://javainterview.cn/pages/ecdf26/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
             <description><![CDATA[}
-    }
-    return count;
+        return result;
     }
 }]]></description>
         </item>
         <item>
+            <title><![CDATA[1725. 可以形成最大正方形的矩形数目]]></title>
+            <link>https://javainterview.cn/pages/1d2aba/</link>
+            <guid>https://javainterview.cn/pages/1d2aba/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[}]]></description>
+        </item>
+        <item>
             <title><![CDATA[1723. 完成所有工作的最短时间]]></title>
-            <link>https://javainterview.cn/pages/df5491/</link>
-            <guid>https://javainterview.cn/pages/df5491/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
+            <link>https://javainterview.cn/pages/933993/</link>
+            <guid>https://javainterview.cn/pages/933993/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
             <description><![CDATA[}
             works[i] -= jobs[index];
             //不应该有人空闲
@@ -2851,9 +2843,9 @@
         </item>
         <item>
             <title><![CDATA[1727. 重新排列后的最大子矩阵]]></title>
-            <link>https://javainterview.cn/pages/cd4e37/</link>
-            <guid>https://javainterview.cn/pages/cd4e37/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
+            <link>https://javainterview.cn/pages/e0a4d6/</link>
+            <guid>https://javainterview.cn/pages/e0a4d6/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
             <description><![CDATA[res = Math.max(res, temp[j] * (n - j));
         }
         return res;
@@ -2863,86 +2855,56 @@
             </enclosure>
         </item>
         <item>
+            <title><![CDATA[1726. 同积元组]]></title>
+            <link>https://javainterview.cn/pages/87e7a3/</link>
+            <guid>https://javainterview.cn/pages/87e7a3/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[1728. 猫和老鼠II]]></title>
-            <link>https://javainterview.cn/pages/1de42a/</link>
-            <guid>https://javainterview.cn/pages/1de42a/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[if (dpnext[0]][next[2]] != UNKNOWN) continue;
-                // 必赢
-                if ((dppoll[0]][poll[2]] == CATWIN && poll[2] == MOUSETURE) ||
-                        dppoll[0]][poll[2]] == MOUSEWIN && poll[2] == CATTURE) {
-                    dpnext[0]]next[2]] = dp[poll[0]][poll[2]];
-                    q.add(next);
-                } // 必输得一种情况
-                else {
-                    // 所有都是必输，则当前必输
-                    if (--degreesnext[0]][next[2]] == 0) {
-                        dpnext[0]][next[2]] = next[2] == CATTURE ? MOUSEWIN : CAT_WIN;
-                        q.add(next);
-                    }
-                }
-            }
-        }
-        return dpMOUSE[MOUSETURE] == MOUSEWIN;
-    }
-}]]></description>
+            <link>https://javainterview.cn/pages/0381eb/</link>
+            <guid>https://javainterview.cn/pages/0381eb/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[一只猫和一只老鼠在玩一个叫做猫和老鼠的游戏。]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/sample_111_1955.png">
             </enclosure>
         </item>
         <item>
             <title><![CDATA[1729. 求关注者的数量]]></title>
-            <link>https://javainterview.cn/pages/69017a/</link>
-            <guid>https://javainterview.cn/pages/69017a/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
+            <link>https://javainterview.cn/pages/5a419d/</link>
+            <guid>https://javainterview.cn/pages/5a419d/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[(userid, followerid) 是这个表的主键（具有唯一值的列的组合）。
+    该表包含一个关注关系中关注者和用户的编号，其中关注者关注用户。]]></description>
         </item>
         <item>
             <title><![CDATA[1731. 每位经理的下属员工数量]]></title>
-            <link>https://javainterview.cn/pages/6f1025/</link>
-            <guid>https://javainterview.cn/pages/6f1025/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[表：Employees]]></description>
-        </item>
-        <item>
-            <title><![CDATA[1726. 同积元组]]></title>
-            <link>https://javainterview.cn/pages/88bd5a/</link>
-            <guid>https://javainterview.cn/pages/88bd5a/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[示例 1：]]></description>
+            <link>https://javainterview.cn/pages/16c4c7/</link>
+            <guid>https://javainterview.cn/pages/16c4c7/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[该表包含员工以及需要听取他们汇报的上级经理的 ID 的信息。 有些员工不需要向任何人汇报（reports_to 为空）。]]></description>
         </item>
         <item>
             <title><![CDATA[1732. 找到最高海拔]]></title>
-            <link>https://javainterview.cn/pages/6c3912/</link>
-            <guid>https://javainterview.cn/pages/6c3912/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[示例 1：]]></description>
+            <link>https://javainterview.cn/pages/0f3cba/</link>
+            <guid>https://javainterview.cn/pages/0f3cba/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[1 ]]></description>
         </item>
         <item>
             <title><![CDATA[1733. 需要教语言的最少人数]]></title>
-            <link>https://javainterview.cn/pages/296357/</link>
-            <guid>https://javainterview.cn/pages/296357/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[friendships[i] = [u​​​​​​i​​​, v​​​​​​i] 表示 u​​​​​​​​​​​i​​​​​ 和 vi 为好友关系。
-你可以选择 一门 语言并教会一些用户，使得所有好友之间都可以相互沟通。请返回你 最少 需要教会多少名用户。]]></description>
-        </item>
-        <item>
-            <title><![CDATA[1735. 生成乘积数组的方案数]]></title>
-            <link>https://javainterview.cn/pages/5669cb/</link>
-            <guid>https://javainterview.cn/pages/5669cb/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[示例 2 ：]]></description>
-        </item>
-        <item>
-            <title><![CDATA[1737. 满足三条件之一需改变的最少字符数]]></title>
-            <link>https://javainterview.cn/pages/cd8287/</link>
-            <guid>https://javainterview.cn/pages/cd8287/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[提示：]]></description>
+            <link>https://javainterview.cn/pages/f3ba04/</link>
+            <guid>https://javainterview.cn/pages/f3ba04/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[输出：1
+    解释：你可以选择教用户 1 第二门语言，也可以选择教用户 2 第一门语言。
+示例 2：]]></description>
         </item>
         <item>
             <title><![CDATA[1734. 解码异或后的排列]]></title>
-            <link>https://javainterview.cn/pages/f55aca/</link>
-            <guid>https://javainterview.cn/pages/f55aca/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
+            <link>https://javainterview.cn/pages/188090/</link>
+            <guid>https://javainterview.cn/pages/188090/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
             <description><![CDATA[nums[i]= encoded[i-1]^nums[i-1];
         }
         return nums;
@@ -2950,313 +2912,387 @@
 }]]></description>
         </item>
         <item>
-            <title><![CDATA[1739. 放置盒子]]></title>
-            <link>https://javainterview.cn/pages/572eb9/</link>
-            <guid>https://javainterview.cn/pages/572eb9/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
+            <title><![CDATA[1736. 替换隐藏数字得到的最晚时间]]></title>
+            <link>https://javainterview.cn/pages/f26492/</link>
+            <guid>https://javainterview.cn/pages/f26492/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
             <description><![CDATA[}
-        return ans;
+        return res;
     }
 }]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1735. 生成乘积数组的方案数]]></title>
+            <link>https://javainterview.cn/pages/d7f20a/</link>
+            <guid>https://javainterview.cn/pages/d7f20a/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[ans[i] = ans[i] % mod;
+                cn[j] = 0;
+            }
+        }
+        return ans;
+    }]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1738. 找出第K大的异或坐标值]]></title>
+            <link>https://javainterview.cn/pages/60a541/</link>
+            <guid>https://javainterview.cn/pages/60a541/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[1639. 通过给定词典构造目标字符串的方案数]]></title>
+            <link>https://javainterview.cn/pages/d5b0ab/</link>
+            <guid>https://javainterview.cn/pages/d5b0ab/</guid>
+            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
+            <description><![CDATA[给你一个字符串列表 words 和一个目标字符串 target 。words 中所有字符串都 长度相同  。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1737. 满足三条件之一需改变的最少字符数]]></title>
+            <link>https://javainterview.cn/pages/562a62/</link>
+            <guid>https://javainterview.cn/pages/562a62/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[操作的最终目标是满足下列三个条件 之一 ：]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1739. 放置盒子]]></title>
+            <link>https://javainterview.cn/pages/b35abe/</link>
+            <guid>https://javainterview.cn/pages/b35abe/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[如果盒子 x 需要放置在盒子 y 的顶部，那么盒子 y 竖直的四个侧面都 必须 与另一个盒子或墙相邻。
+给你一个整数 n ，返回接触地面的盒子的 最少 可能数量。]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/3-boxes.png">
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[1738. 找出第K大的异或坐标值]]></title>
-            <link>https://javainterview.cn/pages/ed3aed/</link>
-            <guid>https://javainterview.cn/pages/ed3aed/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[}
-        }
-        Arrays.sort(flat);
-        return flat[n * m - k];
-    }
-}]]></description>
-        </item>
-        <item>
-            <title><![CDATA[1736. 替换隐藏数字得到的最晚时间]]></title>
-            <link>https://javainterview.cn/pages/29a348/</link>
-            <guid>https://javainterview.cn/pages/29a348/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-        </item>
-        <item>
             <title><![CDATA[1741. 查找每个员工花费的总时间]]></title>
-            <link>https://javainterview.cn/pages/423083/</link>
-            <guid>https://javainterview.cn/pages/423083/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[表: Employees]]></description>
+            <link>https://javainterview.cn/pages/59336b/</link>
+            <guid>https://javainterview.cn/pages/59336b/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[在 SQL 中，(empid, eventday, in_time) 是这个表的主键。
+    该表显示了员工在办公室的出入情况。
+    eventday 是此事件发生的日期，intime 是员工进入办公室的时间，而 out_time 是他们离开办公室的时间。
+    intime 和 outtime 的取值在1到1440之间。
+    题目保证同一天没有两个事件在时间上是相交的，并且保证 intime 小于 outtime。]]></description>
         </item>
         <item>
             <title><![CDATA[1742. 盒子中小球的最大数量]]></title>
-            <link>https://javainterview.cn/pages/fc5e31/</link>
-            <guid>https://javainterview.cn/pages/fc5e31/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[给你两个整数 lowLimit 和 highLimit ，返回放有最多小球的盒子中的小球数量。如果有多个盒子都满足放有最多小球，只需返回其中任一盒子的小球数量。]]></description>
+            <link>https://javainterview.cn/pages/4b3778/</link>
+            <guid>https://javainterview.cn/pages/4b3778/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[编号 1 的盒子放有最多小球，小球数量为 2 。
+示例 2：]]></description>
         </item>
         <item>
             <title><![CDATA[1743. 从相邻元素对还原数组]]></title>
-            <link>https://javainterview.cn/pages/4944d0/</link>
-            <guid>https://javainterview.cn/pages/4944d0/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[示例 1：]]></description>
-        </item>
-        <item>
-            <title><![CDATA[1744. 你能在你最喜欢的那天吃到你最喜欢的糖果吗？]]></title>
-            <link>https://javainterview.cn/pages/90e0b7/</link>
-            <guid>https://javainterview.cn/pages/90e0b7/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[answer[i] 为 true 的条件是：在每天吃 不超过 dailyCapi 颗糖果的前提下，你可以在第 favoriteDayi 天吃到第 favoriteTypei 类糖果；否则 answer[i] 为 false 。
-注意，只要满足上面 3 条规则中的第二条规则，你就可以在同一天吃不同类型的糖果。]]></description>
-        </item>
-        <item>
-            <title><![CDATA[1748. 唯一元素的和]]></title>
-            <link>https://javainterview.cn/pages/3334d5/</link>
-            <guid>https://javainterview.cn/pages/3334d5/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[}else if(counts[n]==2){
-                sum-=n;
-            }
-        }
-        return sum;
-    }
-}]]></description>
+            <link>https://javainterview.cn/pages/a87ca6/</link>
+            <guid>https://javainterview.cn/pages/a87ca6/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[输出：[-2,4,1,-3]
+    解释：数组中可能存在负数。
+    另一种解答是 [-3,1,4,-2] ，也会被视作正确答案。
+示例 3：]]></description>
         </item>
         <item>
             <title><![CDATA[1745. 分割回文串IV]]></title>
-            <link>https://javainterview.cn/pages/372a4b/</link>
-            <guid>https://javainterview.cn/pages/372a4b/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
+            <link>https://javainterview.cn/pages/fa3c20/</link>
+            <guid>https://javainterview.cn/pages/fa3c20/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
             <description><![CDATA[}
         }]]></description>
         </item>
         <item>
-            <title><![CDATA[1749. 任意子数组和的绝对值的最大值]]></title>
-            <link>https://javainterview.cn/pages/87175d/</link>
-            <guid>https://javainterview.cn/pages/87175d/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[1752. 检查数组是否经排序和轮转得到]]></title>
-            <link>https://javainterview.cn/pages/2f73d5/</link>
-            <guid>https://javainterview.cn/pages/2f73d5/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[给你一个数组 nums 。nums 的源数组中，所有元素与 nums 相同，但按非递减顺序排列。]]></description>
+            <title><![CDATA[1744. 你能在你最喜欢的那天吃到你最喜欢的糖果吗？]]></title>
+            <link>https://javainterview.cn/pages/2a7d2b/</link>
+            <guid>https://javainterview.cn/pages/2a7d2b/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[输出：[false,true,true,false,false]]]></description>
         </item>
         <item>
             <title><![CDATA[1750. 删除字符串两端相同字符后的最短长度]]></title>
-            <link>https://javainterview.cn/pages/208da5/</link>
-            <guid>https://javainterview.cn/pages/208da5/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[选择字符串 s 一个 非空 的前缀，这个前缀的所有字符都相同。
-选择字符串 s 一个 非空 的后缀，这个后缀的所有字符都相同。
-前缀和后缀在字符串中任意位置都不能有交集。
-前缀和后缀包含的所有字符都要相同。
-同时删除前缀和后缀。
-请你返回对字符串 s 执行上面操作任意次以后（可能 0 次），能得到的 最短长度 。]]></description>
+            <link>https://javainterview.cn/pages/506014/</link>
+            <guid>https://javainterview.cn/pages/506014/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[res -= 1;
+            }
+            while (cur == s.charAt(right) && left ]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1748. 唯一元素的和]]></title>
+            <link>https://javainterview.cn/pages/4e25d4/</link>
+            <guid>https://javainterview.cn/pages/4e25d4/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[1749. 任意子数组和的绝对值的最大值]]></title>
+            <link>https://javainterview.cn/pages/a1baeb/</link>
+            <guid>https://javainterview.cn/pages/a1baeb/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[请你找出 nums 中 和的绝对值 最大的任意子数组（可能为空），并返回该 最大值 。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1752. 检查数组是否经排序和轮转得到]]></title>
+            <link>https://javainterview.cn/pages/df8893/</link>
+            <guid>https://javainterview.cn/pages/df8893/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[示例 1：]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1751. 最多可以参加的会议数目II]]></title>
+            <link>https://javainterview.cn/pages/b71007/</link>
+            <guid>https://javainterview.cn/pages/b71007/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[请你返回能得到的会议价值 最大和 。]]></description>
+            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/screenshot-2021-01-11-at-60048-pm.png">
+            </enclosure>
         </item>
         <item>
             <title><![CDATA[1753. 移除石子的最大得分]]></title>
-            <link>https://javainterview.cn/pages/ea62a3/</link>
-            <guid>https://javainterview.cn/pages/ea62a3/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[从第一和第三堆取，石子状态现在是 (0, 4, 4)
-    从第二和第三堆取，石子状态现在是 (0, 3, 3)
+            <link>https://javainterview.cn/pages/2a9e94/</link>
+            <guid>https://javainterview.cn/pages/2a9e94/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[从第二和第三堆取，石子状态现在是 (0, 3, 3)
     从第二和第三堆取，石子状态现在是 (0, 2, 2)
     从第二和第三堆取，石子状态现在是 (0, 1, 1)
     从第二和第三堆取，石子状态现在是 (0, 0, 0)
       总分：6 分 。]]></description>
         </item>
         <item>
-            <title><![CDATA[1755. 最接近目标值的子序列和]]></title>
-            <link>https://javainterview.cn/pages/32e38c/</link>
-            <guid>https://javainterview.cn/pages/32e38c/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[输入：nums = [1,2,3], goal = -7
-    输出：7]]></description>
+            <title><![CDATA[1754. 构造字典序最大的合并字符串]]></title>
+            <link>https://javainterview.cn/pages/923f42/</link>
+            <guid>https://javainterview.cn/pages/923f42/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[示例 1：]]></description>
         </item>
         <item>
-            <title><![CDATA[1751. 最多可以参加的会议数目II]]></title>
-            <link>https://javainterview.cn/pages/17cc00/</link>
-            <guid>https://javainterview.cn/pages/17cc00/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[示例 2：]]></description>
-            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/screenshot-2021-01-11-at-60048-pm.png">
-            </enclosure>
+            <title><![CDATA[1755. 最接近目标值的子序列和]]></title>
+            <link>https://javainterview.cn/pages/6af1c8/</link>
+            <guid>https://javainterview.cn/pages/6af1c8/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[折半处理]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1758. 生成交替二进制字符串的最少操作数]]></title>
+            <link>https://javainterview.cn/pages/e67e62/</link>
+            <guid>https://javainterview.cn/pages/e67e62/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[return Math.min(a, n - a);
+   }
+}]]></description>
         </item>
         <item>
             <title><![CDATA[1757. 可回收且低脂的产品]]></title>
-            <link>https://javainterview.cn/pages/64e19f/</link>
-            <guid>https://javainterview.cn/pages/64e19f/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
+            <link>https://javainterview.cn/pages/efed91/</link>
+            <guid>https://javainterview.cn/pages/efed91/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
             <description><![CDATA[解释：
     只有产品 id 为 1 和 3 的产品，既是低脂又是可回收的产品。]]></description>
         </item>
         <item>
-            <title><![CDATA[1754. 构造字典序最大的合并字符串]]></title>
-            <link>https://javainterview.cn/pages/53a80f/</link>
-            <guid>https://javainterview.cn/pages/53a80f/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[输出："abdcabcabcaba"]]></description>
-        </item>
-        <item>
             <title><![CDATA[1759. 统计同质子字符串的数目]]></title>
-            <link>https://javainterview.cn/pages/1e4543/</link>
-            <guid>https://javainterview.cn/pages/1e4543/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[1758. 生成交替二进制字符串的最少操作数]]></title>
-            <link>https://javainterview.cn/pages/428277/</link>
-            <guid>https://javainterview.cn/pages/428277/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[给你一个仅由字符 '0' 和 '1' 组成的字符串 s 。一步操作中，你可以将任一 '0' 变成 '1' ，或者将 '1' 变成 '0' 。]]></description>
+            <link>https://javainterview.cn/pages/45645a/</link>
+            <guid>https://javainterview.cn/pages/45645a/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[1760. 袋子里最少数目的球]]></title>
-            <link>https://javainterview.cn/pages/b7fc6d/</link>
-            <guid>https://javainterview.cn/pages/b7fc6d/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[选择任意一个袋子，并将袋子里的球分到 2 个新的袋子中，每个袋子里都有 正整数 个球。
-  比方说，一个袋子里有 5 个球，你可以把它们分到两个新袋子里，分别有 1 个和 4 个球，或者分别有 2 个和 3 个球。
-  你的开销是单个袋子里球数目的 最大值 ，你想要 最小化 开销。]]></description>
+            <link>https://javainterview.cn/pages/6b5228/</link>
+            <guid>https://javainterview.cn/pages/6b5228/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[给你一个整数数组 nums ，其中 nums[i] 表示第 i 个袋子里球的数目。同时给你一个整数 maxOperations 。]]></description>
         </item>
         <item>
             <title><![CDATA[1761. 一个图中连通三元组的最小度数]]></title>
-            <link>https://javainterview.cn/pages/2273e1/</link>
-            <guid>https://javainterview.cn/pages/2273e1/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[输入：n = 6, edges = [[1,2],[1,3],[3,2],[4,1],[5,2],[3,6]]
-    输出：3
-    解释：只有一个三元组 [1,2,3] 。构成度数的边在上图中已被加粗。
-示例 2：]]></description>
+            <link>https://javainterview.cn/pages/8ba520/</link>
+            <guid>https://javainterview.cn/pages/8ba520/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[一个 连通三元组 指的是 三个 节点组成的集合且这三个点之间 两两 有边。]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/trios1.png">
             </enclosure>
         </item>
         <item>
             <title><![CDATA[1763. 最长的美好子字符串]]></title>
-            <link>https://javainterview.cn/pages/94da82/</link>
-            <guid>https://javainterview.cn/pages/94da82/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[示例 3：]]></description>
+            <link>https://javainterview.cn/pages/524b21/</link>
+            <guid>https://javainterview.cn/pages/524b21/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[给你一个字符串 s ，请你返回 s 最长的 美好子字符串 。如果有多个答案，请你返回 最早 出现的一个。如果不存在美好子字符串，请你返回一个空字符串。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1764. 通过连接另一个数组的子数组得到一个数组]]></title>
+            <link>https://javainterview.cn/pages/a38d12/</link>
+            <guid>https://javainterview.cn/pages/a38d12/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[如果不存在下标为 k 的元素 nums[k] 属于不止一个子数组，就称这些子数组是 不相交 的。子数组指的是原数组中连续元素组成的一个序列。]]></description>
         </item>
         <item>
             <title><![CDATA[1765. 地图中的最高点]]></title>
-            <link>https://javainterview.cn/pages/1bdba5/</link>
-            <guid>https://javainterview.cn/pages/1bdba5/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[输入：isWater = [[0,1],[0,0]]
-    输出：[[1,0],[2,1]]
-    解释：上图展示了给各个格子安排的高度。
-    蓝色格子是水域格，绿色格子是陆地格。
-示例 2：]]></description>
+            <link>https://javainterview.cn/pages/47adbc/</link>
+            <guid>https://javainterview.cn/pages/47adbc/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[示例 1：]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/screenshot-2021-01-11-at-82045-am.png">
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[1764. 通过连接另一个数组的子数组得到一个数组]]></title>
-            <link>https://javainterview.cn/pages/08297d/</link>
-            <guid>https://javainterview.cn/pages/08297d/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[[10,-2] 必须出现在 [1,2,3,4] 之前。
-示例 3：]]></description>
-        </item>
-        <item>
             <title><![CDATA[1768. 交替合并字符串]]></title>
-            <link>https://javainterview.cn/pages/303037/</link>
-            <guid>https://javainterview.cn/pages/303037/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[public String mergeAlternately(String word1, String word2) {]]></description>
+            <link>https://javainterview.cn/pages/6a933e/</link>
+            <guid>https://javainterview.cn/pages/6a933e/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[示例 3：]]></description>
         </item>
         <item>
             <title><![CDATA[1769. 移动所有球到每个盒子所需的最小操作数]]></title>
-            <link>https://javainterview.cn/pages/1e82e3/</link>
-            <guid>https://javainterview.cn/pages/1e82e3/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[if(chs[i] == '1') rn--;
+            <link>https://javainterview.cn/pages/3ff6e4/</link>
+            <guid>https://javainterview.cn/pages/3ff6e4/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[3) 第 3 个盒子：将一个小球从第 1 个盒子移动到第 3 个盒子，需要 2 步操作。将一个小球从第 2 个盒子移动到第 3 个盒子，需要 1 步操作。共计 3 步操作。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1770. 执行乘法运算的最大分数]]></title>
+            <link>https://javainterview.cn/pages/782d1c/</link>
+            <guid>https://javainterview.cn/pages/782d1c/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[提示：]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1771. 由子序列构造的最长回文串的长度]]></title>
+            <link>https://javainterview.cn/pages/ff163c/</link>
+            <guid>https://javainterview.cn/pages/ff163c/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[}
         }
-        return res;
+        return res == 1 ? 0 : res;
     }
 }]]></description>
         </item>
         <item>
-            <title><![CDATA[1770. 执行乘法运算的最大分数]]></title>
-            <link>https://javainterview.cn/pages/73e442/</link>
-            <guid>https://javainterview.cn/pages/73e442/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[}
-        }]]></description>
-        </item>
-        <item>
             <title><![CDATA[1773. 统计匹配检索规则的物品数量]]></title>
-            <link>https://javainterview.cn/pages/44afd2/</link>
-            <guid>https://javainterview.cn/pages/44afd2/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[1771. 由子序列构造的最长回文串的长度]]></title>
-            <link>https://javainterview.cn/pages/fb1a48/</link>
-            <guid>https://javainterview.cn/pages/fb1a48/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[给你两个字符串 word1 和 word2 ，请你按下述方法构造一个字符串：]]></description>
+            <link>https://javainterview.cn/pages/9983b9/</link>
+            <guid>https://javainterview.cn/pages/9983b9/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[1774. 最接近目标价格的甜点成本]]></title>
-            <link>https://javainterview.cn/pages/91577f/</link>
-            <guid>https://javainterview.cn/pages/91577f/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[必须选择 一种 冰激凌基料。
-可以添加 一种或多种 配料，也可以不添加任何配料。
-每种类型的配料 最多两份 。
-给你以下三个输入：]]></description>
+            <link>https://javainterview.cn/pages/d5797f/</link>
+            <guid>https://javainterview.cn/pages/d5797f/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[你打算做甜点，现在需要购买配料。目前共有 n 种冰激凌基料和 m 种配料可供选购。而制作甜点需要遵循以下几条规则：]]></description>
         </item>
         <item>
             <title><![CDATA[1775. 通过最少操作次数使数组的和相等]]></title>
-            <link>https://javainterview.cn/pages/7deec1/</link>
-            <guid>https://javainterview.cn/pages/7deec1/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[示例 1：]]></description>
+            <link>https://javainterview.cn/pages/856322/</link>
+            <guid>https://javainterview.cn/pages/856322/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[每次操作中，你可以选择 任意 数组中的任意一个整数，将它变成 1 到 6 之间 任意 的值（包含 1 和 6）。]]></description>
         </item>
         <item>
             <title><![CDATA[1776. 车队II]]></title>
-            <link>https://javainterview.cn/pages/42dab4/</link>
-            <guid>https://javainterview.cn/pages/42dab4/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[请你返回一个数组 answer ，其中 answer[i] 是第 i 辆车与下一辆车相遇的时间（单位：秒），如果这辆车不会与下一辆车相遇，则 answer[i] 为 -1 。答案精度误差需在 10-5 以内。]]></description>
+            <link>https://javainterview.cn/pages/9223eb/</link>
+            <guid>https://javainterview.cn/pages/9223eb/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[speedi 是第 i 辆车的初始速度（单位：米/秒）。
+简单起见，所有车子可以视为在数轴上移动的点。当两辆车占据同一个位置时，我们称它们相遇了。一旦两辆车相遇，它们会合并成一个车队，这个车队里的车有着同样的位置和相同的速度，速度为这个车队里 最慢 一辆车的速度。]]></description>
         </item>
         <item>
             <title><![CDATA[1779. 找到最近的有相同X或Y坐标的点]]></title>
-            <link>https://javainterview.cn/pages/07e12c/</link>
-            <guid>https://javainterview.cn/pages/07e12c/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[示例 2：]]></description>
-        </item>
-        <item>
-            <title><![CDATA[1780. 判断一个数字是否可以表示成三的幂的和]]></title>
-            <link>https://javainterview.cn/pages/60f6da/</link>
-            <guid>https://javainterview.cn/pages/60f6da/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[}
-}]]></description>
+            <link>https://javainterview.cn/pages/e2d244/</link>
+            <guid>https://javainterview.cn/pages/e2d244/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[示例 1：]]></description>
         </item>
         <item>
             <title><![CDATA[1781. 所有子字符串美丽值之和]]></title>
-            <link>https://javainterview.cn/pages/ff321a/</link>
-            <guid>https://javainterview.cn/pages/ff321a/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[}
+            <link>https://javainterview.cn/pages/898ae8/</link>
+            <guid>https://javainterview.cn/pages/898ae8/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[用两个指针枚举所有子串，统计每一个子串的美丽数；]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1780. 判断一个数字是否可以表示成三的幂的和]]></title>
+            <link>https://javainterview.cn/pages/4e8312/</link>
+            <guid>https://javainterview.cn/pages/4e8312/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[public boolean checkPowersOfThree(int n) {
+        while(n>0){
+            if(n%3==2) return false;
+            n /= 3;
         }
-        return res;
+        return true;
     }
 }]]></description>
         </item>
         <item>
             <title><![CDATA[1782. 统计点对的数目]]></title>
-            <link>https://javainterview.cn/pages/8a7cc2/</link>
-            <guid>https://javainterview.cn/pages/8a7cc2/</guid>
-            <pubDate>Sun, 07 Sep 2025 11:51:48 GMT</pubDate>
-            <description><![CDATA[}]]></description>
+            <link>https://javainterview.cn/pages/14d04b/</link>
+            <guid>https://javainterview.cn/pages/14d04b/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[answers[0] = 6。所有的点对(a, b)中边数和都大于2，故有6个；
+    answers[1] = 5。所有的点对(a, b)中除了(3,4)边数等于3，其它点对边数和都大于3，故有5个。
+示例 2：]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/1692844033-Kvxjvr-image.png">
             </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[1784. 检查二进制字符串字段]]></title>
+            <link>https://javainterview.cn/pages/bc9da4/</link>
+            <guid>https://javainterview.cn/pages/bc9da4/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[1785. 构成特定和需要添加的最少元素]]></title>
+            <link>https://javainterview.cn/pages/04c983/</link>
+            <guid>https://javainterview.cn/pages/04c983/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[给你一个整数数组 nums ，和两个整数 limit 与 goal 。数组 nums 有一条重要属性：abs(nums[i]) ]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1789. 员工的直属部门]]></title>
+            <link>https://javainterview.cn/pages/c56041/</link>
+            <guid>https://javainterview.cn/pages/c56041/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[这张表的主键为 employeeid, departmentid (具有唯一值的列的组合)
+    employee_id 是员工的ID
+    department_id 是部门的ID，表示员工与该部门有关系
+    primary_flag 是一个枚举类型，值分别为('Y', 'N'). 如果值为'Y',表示该部门是员工的直属部门。 如果值是'N',则否]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1792. 最大平均通过率]]></title>
+            <link>https://javainterview.cn/pages/cc843b/</link>
+            <guid>https://javainterview.cn/pages/cc843b/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[示例 2：]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1790. 仅执行一次字符串交换能否使两个字符串相等]]></title>
+            <link>https://javainterview.cn/pages/d19e55/</link>
+            <guid>https://javainterview.cn/pages/d19e55/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[注意如果超过了2个不一样的地方，直接返回false]]></description>
+        </item>
+        <item>
+            <title><![CDATA[1786. 从第一个节点出发到最后一个节点的受限路径数]]></title>
+            <link>https://javainterview.cn/pages/d113b9/</link>
+            <guid>https://javainterview.cn/pages/d113b9/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[输出：3
+解释：每个圆包含黑色的节点编号和蓝色的 distanceToLastNode 值。三条受限路径分别是：
+1) 1 --> 2 --> 5
+2) 1 --> 2 --> 3 --> 5
+3) 1 --> 3 --> 5]]></description>
+            <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/restricted_paths_ex1.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[1791. 找出星型图的中心节点]]></title>
+            <link>https://javainterview.cn/pages/8c9250/</link>
+            <guid>https://javainterview.cn/pages/8c9250/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[1787. 使所有区间的异或结果为零]]></title>
+            <link>https://javainterview.cn/pages/afcb3d/</link>
+            <guid>https://javainterview.cn/pages/afcb3d/</guid>
+            <pubDate>Mon, 15 Sep 2025 13:01:46 GMT</pubDate>
+            <description><![CDATA[返回数组中 要更改的最小元素数 ，以使所有长度为 k 的区间异或结果等于零。]]></description>
         </item>
         <item>
             <title><![CDATA[删除链表的倒数第 N 个结点]]></title>
@@ -3273,13 +3309,6 @@
             <description><![CDATA[合并两个有序链表]]></description>
         </item>
         <item>
-            <title><![CDATA[合并K个升序链表]]></title>
-            <link>https://javainterview.cn/pages/deeada/</link>
-            <guid>https://javainterview.cn/pages/deeada/</guid>
-            <pubDate>Thu, 22 Sep 2022 23:03:57 GMT</pubDate>
-            <description><![CDATA[合并K个升序链表]]></description>
-        </item>
-        <item>
             <title><![CDATA[螺旋矩阵 IV]]></title>
             <link>https://javainterview.cn/pages/18e56e/</link>
             <guid>https://javainterview.cn/pages/18e56e/</guid>
@@ -3287,6 +3316,13 @@
             <description><![CDATA[螺旋矩阵 IV]]></description>
             <enclosure url="https://javainterview.cn/../../../media/pictures/leetcode/ex1new.jpeg">
             </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[合并K个升序链表]]></title>
+            <link>https://javainterview.cn/pages/deeada/</link>
+            <guid>https://javainterview.cn/pages/deeada/</guid>
+            <pubDate>Thu, 22 Sep 2022 23:03:57 GMT</pubDate>
+            <description><![CDATA[合并K个升序链表]]></description>
         </item>
         <item>
             <title><![CDATA[两两交换链表中的节点]]></title>
@@ -3308,6 +3344,13 @@
             <guid>https://javainterview.cn/pages/0dd21b/</guid>
             <pubDate>Sat, 07 Sep 2024 10:20:57 GMT</pubDate>
             <description><![CDATA[2961.双模幂运算]]></description>
+        </item>
+        <item>
+            <title><![CDATA[矩阵中战斗力最弱的 K 行]]></title>
+            <link>https://javainterview.cn/pages/584e4b/</link>
+            <guid>https://javainterview.cn/pages/584e4b/</guid>
+            <pubDate>Sat, 28 Sep 2024 07:21:03 GMT</pubDate>
+            <description><![CDATA[矩阵中战斗力最弱的 K 行]]></description>
         </item>
         <item>
             <title><![CDATA[旋转链表]]></title>
@@ -3343,12 +3386,6 @@
             <guid>https://javainterview.cn/pages/825c0b/</guid>
             <pubDate>Sat, 21 May 2022 12:57:49 GMT</pubDate>
             <description><![CDATA[文本左右对齐]]></description>
-        </item>
-        <item>
-            <title><![CDATA[1638. 统计只差一个字符的子串数目]]></title>
-            <link>https://javainterview.cn/pages/a5a8ed/</link>
-            <guid>https://javainterview.cn/pages/a5a8ed/</guid>
-            <pubDate>Mon, 09 Jun 2025 20:14:58 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[细分图中的可到达节点]]></title>
@@ -3455,18 +3492,18 @@
             <description><![CDATA[K 个不同整数的子数组]]></description>
         </item>
         <item>
-            <title><![CDATA[平方数组的数目]]></title>
-            <link>https://javainterview.cn/pages/344c46/</link>
-            <guid>https://javainterview.cn/pages/344c46/</guid>
-            <pubDate>Sun, 22 Sep 2024 18:45:34 GMT</pubDate>
-            <description><![CDATA[平方数组的数目]]></description>
-        </item>
-        <item>
             <title><![CDATA[K 连续位的最小翻转次数]]></title>
             <link>https://javainterview.cn/pages/41f4c1/</link>
             <guid>https://javainterview.cn/pages/41f4c1/</guid>
             <pubDate>Sun, 22 Sep 2024 18:45:34 GMT</pubDate>
             <description><![CDATA[K 连续位的最小翻转次数]]></description>
+        </item>
+        <item>
+            <title><![CDATA[平方数组的数目]]></title>
+            <link>https://javainterview.cn/pages/344c46/</link>
+            <guid>https://javainterview.cn/pages/344c46/</guid>
+            <pubDate>Sun, 22 Sep 2024 18:45:34 GMT</pubDate>
+            <description><![CDATA[平方数组的数目]]></description>
         </item>
         <item>
             <title><![CDATA[把二叉搜索树转换为累加树]]></title>
